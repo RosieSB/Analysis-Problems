@@ -101,7 +101,7 @@ $$
 
 Equation ([eq:sqrta-sqrtb](#eq:sqrta-sqrtb)) now follows by subtracting $\sqrt{|b|}$ from both sides.
 
-(iii) Let $(a_n)$ be a real sequence converging to $l\in\R$. By (ii),
+(iii) Let $(a_n)$ be a real sequence converging to $l\in\mathbb{R}$. By (ii),
 
 $$
 \left|\sqrt{|a_{n}|}-\sqrt{|l|}\right| \leq \sqrt{\big|a_n-l\big|}
@@ -115,35 +115,35 @@ $$
 \big|\sqrt{|a_{n}|}-\sqrt{|l|}\big| \leq \sqrt{\varepsilon^2} = \varepsilon.
 $$
 
-Thus $\ds\lim_{n\rightarrow\infty}\sqrt{|a_n|} = \sqrt{|l|}$.
+Thus $\displaystyle\lim_{n\rightarrow\infty}\sqrt{|a_n|} = \sqrt{|l|}$.
 
 
-5. When it exists, the supremum of a set $A\subseteq\R$ is defined to be the unique number $\alpha\in\R$ such that
+5. When it exists, the supremum of a set $A\subseteq\mathbb{R}$ is defined to be the unique number $\alpha\in\mathbb{R}$ such that
     - $\alpha$ is an upper bound for $A$, and
     - if $M$ is any other upper bound for $A$, then $\alpha\leq M$.
 We write $\sup A$ for the supremum of $A$, when it exists.
 
-The definition of the infimum is similar: when it exists, the infimum of $A$ is the unique number $\beta\in\R$ such that
+The definition of the infimum is similar: when it exists, the infimum of $A$ is the unique number $\beta\in\mathbb{R}$ such that
 
 (i) $\beta$ is a lower bound for $A$, and
   
 (ii) if $L$ is any other lower bound for $A$, then $\alpha\geq L$.
 We write $\inf A$ for the infimum of $A$, when it exists.
 
-The axiom of completeness for the real numbers says that every non-empty bounded above subset of $\R$ has a supremum. Equivalently, it says that every non-empty bounded below subset of $\R$ has an infimum.
+The axiom of completeness for the real numbers says that every non-empty bounded above subset of $\mathbb{R}$ has a supremum. Equivalently, it says that every non-empty bounded below subset of $\mathbb{R}$ has an infimum.
 
 For more details, see page 32 of your Semester 2 MAS107 notes.
 
 
-6. (i) $\ds\sup\left\{\frac{m}{n}:m,n\in\N \text{ s.t } m<n\right\}=1$,
+6. (i) $\displaystyle\sup\left\{\frac{m}{n}:m,n\in\N \text{ s.t } m<n\right\}=1$,
 
-$\ds\inf\left\{\frac{m}{n}:m,n\in\N \text{ s.t } m<n\right\}=0$.
+$\displaystyle\inf\left\{\frac{m}{n}:m,n\in\N \text{ s.t } m<n\right\}=0$.
 
-(ii) $\ds\sup\left\{\frac{(-1)^m}{n}:m,n\in\N \text{ s.t } m<n\right\}=\frac{1}{3}$,
+(ii) $\displaystyle\sup\left\{\frac{(-1)^m}{n}:m,n\in\N \text{ s.t } m<n\right\}=\frac{1}{3}$,
 
-$\ds\inf\left\{\frac{(-1)^m}{n}:m,n\in\N \text{ s.t } m<n\right\}=-\frac{1}{2}$.
+$\displaystyle\inf\left\{\frac{(-1)^m}{n}:m,n\in\N \text{ s.t } m<n\right\}=-\frac{1}{2}$.
 
-(iii) $\ds\sup\left\{\frac{n}{3n + 1} :n\in\N\right\}=\frac{1}{3}$, $\ds\inf\left\{\frac{n}{3n + 1} :n\in\N\right\}=\frac{1}{4}$.
+(iii) $\displaystyle\sup\left\{\frac{n}{3n + 1} :n\in\N\right\}=\frac{1}{3}$, $\displaystyle\inf\left\{\frac{n}{3n + 1} :n\in\N\right\}=\frac{1}{4}$.
 
 7. (i) This is false --- for a counter-example, take any singleton set. Then $\sup A=\inf A=1$.
 

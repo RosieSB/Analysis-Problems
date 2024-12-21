@@ -5,4 +5,4 @@ format: jb-book
 root: intro
 chapters:
 - file: Problems
-- file: Solutions
+- file: Solutions-upto37
