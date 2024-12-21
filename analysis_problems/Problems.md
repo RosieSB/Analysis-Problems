@@ -17,9 +17,8 @@ kernelspec:
 # Problems
 ## Preliminary problems
 
-[label={P\arabic*.}]1.  %P1
-Which of the following statements is the correct definition of convergence of a real sequence $(x_n)$ to a limit $l\in\R$? How would you correct the incorrect statements?
-
+1. Which of the following statements is the correct definition of convergence of a real sequence $(x_n)$ to a limit $l\in\R$? How would you correct the incorrect statements?
+<br>
 [Note: There is more than one correct answer.]
     1. $\varepsilon>0$ $N\in\N$ then $|x_n-l|<\varepsilon$.
     2. $\forall\varepsilon>0$ $\exists N\in\N$ s.t.  $|x_n-l|<\varepsilon$ $\forall n\geq N$.
