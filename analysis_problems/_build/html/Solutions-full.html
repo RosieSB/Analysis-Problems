@@ -1,0 +1,2204 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Solutions &#8212; MAS2004/9 Semester 2 Problems</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css?v=4c010e0d" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Solutions-full';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="MAS2004/9 Semester 2 Problems - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="MAS2004/9 Semester 2 Problems - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problems.html">Problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Solutions.html">Solutions</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FSolutions-full.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Solutions-full.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Solutions</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminary-problems">Preliminary problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limits-of-functions">1.1. Limits of functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuity">1.2. Continuity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differentiation">1.3. Differentiation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sequences-and-series-of-functions">1.4. Sequences and series of functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration">1.5. Integration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#question-162">Question 162</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="solutions">
+<span id="sol"></span><h1>Solutions<a class="headerlink" href="#solutions" title="Link to this heading">#</a></h1>
+<section id="preliminary-problems">
+<h2>Preliminary problems<a class="headerlink" href="#preliminary-problems" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li></li>
+</ol>
+<p>The correct statements are (ii) and (v).</p>
+<p>In statement (iv), the quantifiers <span class="math notranslate nohighlight">\(\forall\)</span> and <span class="math notranslate nohighlight">\(\exists\)</span> are the wrong way round, while in (i) they are missing altogether. Statement (iii) asserts that last part, <span class="math notranslate nohighlight">\(|x_n-l|&lt;\varepsilon\)</span> <span class="math notranslate nohighlight">\(\forall n\geq N\)</span>, should hold for all <span class="math notranslate nohighlight">\(\varepsilon\)</span> and for all <span class="math notranslate nohighlight">\(N\)</span> — so again, there is an issue with the quantifiers.</p>
+<p>Bonus exercise: prove that (iv) holds if and only if <span class="math notranslate nohighlight">\((x_n)\)</span> is the constant sequence <span class="math notranslate nohighlight">\(x_n=l\)</span> for all <span class="math notranslate nohighlight">\(n\in\N\)</span>.</p>
+<p>\vspace{1em}
+2. %P2 - HW1 QUESTION
+Let <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>. According to the definition, we must prove there is an <span class="math notranslate nohighlight">\(N\in\N\)</span> for which <span class="math notranslate nohighlight">\(\left|\frac{2n}{3n-1}-\frac{2}{3}\right|&lt;\varepsilon\)</span> whenever <span class="math notranslate nohighlight">\(n\geq N\)</span>.</p>
+<p>Now,
+$<span class="math notranslate nohighlight">\(
+\left|x_n-\frac{2}{3}\right| = \left|\frac{2n}{3n-1}-\frac{2}{3}\right| = \frac{6n-(6n-2)}{3(3n-1)} = \frac{2}{3(3n-1)}.
+\)</span><span class="math notranslate nohighlight">\(
+This will be strictly less than \)</span>\varepsilon<span class="math notranslate nohighlight">\( whenever \)</span>3n-1&gt;\frac{2}{3\varepsilon}<span class="math notranslate nohighlight">\(., or in other words, whenever
+\)</span><span class="math notranslate nohighlight">\(
+n&gt;\frac{1}{3}\left(\frac{2}{3\varepsilon}+1\right)=\frac{2+3\varepsilon}{9\varepsilon}.
+\)</span><span class="math notranslate nohighlight">\(
+Let \)</span>N<span class="math notranslate nohighlight">\( be any integer greater than \)</span>\frac{2+3\varepsilon}{9\varepsilon}<span class="math notranslate nohighlight">\(. Then \)</span>\left|x_n-\frac{2}{3}\right|&lt;\varepsilon<span class="math notranslate nohighlight">\( for all \)</span>n\geq N<span class="math notranslate nohighlight">\(, and we have proven that \)</span>x_n\rightarrow\frac{2}{3}<span class="math notranslate nohighlight">\( as \)</span>n\rightarrow\infty$ using the definition.</p>
+<p>\vspace{1em}
+3. %P3 - HW1 QUESTION
+The Bolzano–Weierstrass theorem states that every bounded sequence has a convergent subsequence. Its proof combines the following two results:
+- The monotone convergence theorem (Theorem 3.10 in the MAS107 notes), which states that bounded monotone sequences must converge. <br> More specifically, every monotone increasing sequence that is bounded above converges to its supremum, and every monotone decreasing sequence bounded below converges to its infimum.
+- Theorem 3.13 from MAS107: Every sequence has a monotone subsequence.
+Proof of Bolzano–Weierstrass: \
+If <span class="math notranslate nohighlight">\((x_n)\)</span> is a bounded sequence, then it has a monotone subsequence, <span class="math notranslate nohighlight">\((x_{n_k})\)</span>, by Theorem 3.13. This subsequence must also be bounded since <span class="math notranslate nohighlight">\((x_n)\)</span> is bounded, and hence it converges by the monotone convergence theorem.</p>
+<p>\vspace{1em}4. %P4
+[label={(\roman*)}]    1. Let <span class="math notranslate nohighlight">\(a, b \geq 0\)</span>. Then,
+$<span class="math notranslate nohighlight">\(
+\left(\sqrt{a+b}\right)^2 = a+b,
+\)</span><span class="math notranslate nohighlight">\(
+while,
+\)</span><span class="math notranslate nohighlight">\(
+\left(\sqrt{a}+\sqrt{b}\right)^2 = a + 2\sqrt{a}\sqrt{b} + b \geq a+b.
+\)</span><span class="math notranslate nohighlight">\(
+Therefore
+\)</span><span class="math notranslate nohighlight">\(
+\left(\sqrt{a}+\sqrt{b}\right)^2 \geq \left(\sqrt{a+b}\right)^2.
+\)</span><span class="math notranslate nohighlight">\(	
+Since \)</span>\sqrt{a}<span class="math notranslate nohighlight">\(, \)</span>\sqrt{b}<span class="math notranslate nohighlight">\( and \)</span>\sqrt{a+b}<span class="math notranslate nohighlight">\( are all non-negative and the square root function is increasing, we can square root both sides to get
+\)</span><span class="math notranslate nohighlight">\(
+\sqrt{a}+\sqrt{b}\geq\sqrt{a+b}.
+\)</span><span class="math notranslate nohighlight">\(
+    2.  Note that the inequality we have been asked to prove is symmetric in \)</span>a<span class="math notranslate nohighlight">\( and \)</span>b<span class="math notranslate nohighlight">\(, in the sense that exchanging the roles of \)</span>a<span class="math notranslate nohighlight">\( and \)</span>b$ does not affect the value of either side.</p>
+<p>This means we can assume without loss of generality that <span class="math notranslate nohighlight">\(\sqrt{|a|}\geq\sqrt{|b|}\)</span>. Then,
+$<span class="math notranslate nohighlight">\(
+\left|\sqrt{|a|} - \sqrt{|b|}\right| = \sqrt{|a|}-\sqrt{|b|},
+\)</span><span class="math notranslate nohighlight">\(
+and we need only show that
+\)</span>$</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a5427234-9620-4e8a-8d53-4ad1e07d9aa8">
+<span class="eqno">()<a class="headerlink" href="#equation-a5427234-9620-4e8a-8d53-4ad1e07d9aa8" title="Permalink to this equation">#</a></span>\[\begin{equation}\label{eq:sqrta-sqrtb}
+\sqrt{|a|} - \sqrt{|b|} \leq \sqrt{|a - b|}.
+\end{equation}\]</div>
+<div class="math notranslate nohighlight">
+\[
+We use a trick similar to the proof of Corollary~\iflatexml 0.2.6, \else[cor:tri](#cor:tri), \fi and write
+\]</div>
+<p>\sqrt{|a|} = \sqrt{\big|(a-b) + b\big|}.
+$<span class="math notranslate nohighlight">\(
+By the triangle inequality, we have that \)</span>|a| = \big|(a-b) + b\big| \leq |a-b|+|b|$.</p>
+<p>Since the square root function is increasing, we can square root both sides to get
+$<span class="math notranslate nohighlight">\(
+\sqrt{|a|} \leq \sqrt{|a-b|+|b|}.
+\)</span><span class="math notranslate nohighlight">\(
+Applying the result from (i) to the right-hand side, it follows that
+\)</span><span class="math notranslate nohighlight">\(
+\sqrt{|a|} \leq \sqrt{|a-b|+|b|} \leq \sqrt{|a-b|}+\sqrt{|b|}.
+\)</span><span class="math notranslate nohighlight">\(
+Equation ([eq:sqrta-sqrtb](#eq:sqrta-sqrtb)) now follows by subtracting \)</span>\sqrt{|b|}<span class="math notranslate nohighlight">\( from both sides.
+    3. Let \)</span>(a_n)<span class="math notranslate nohighlight">\( be a real sequence converging to \)</span>l\in\R<span class="math notranslate nohighlight">\(. By (ii),
+\)</span><span class="math notranslate nohighlight">\(
+\left|\sqrt{|a_{n}|}-\sqrt{|l|}\right| \leq \sqrt{\big|a_n-l\big|}
+\)</span><span class="math notranslate nohighlight">\(
+for all \)</span>n\in\N$.</p>
+<p>Let <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>. Since <span class="math notranslate nohighlight">\(a_n\rightarrow l\)</span>, there is <span class="math notranslate nohighlight">\(N\in\N\)</span> such that <span class="math notranslate nohighlight">\(|a_n-l|&lt;\varepsilon^2\)</span> whenever <span class="math notranslate nohighlight">\(n\geq N\)</span>. Hence for <span class="math notranslate nohighlight">\(n\geq N\)</span>,
+$<span class="math notranslate nohighlight">\(
+\big|\sqrt{|a_{n}|}-\sqrt{|l|}\big| \leq \sqrt{\varepsilon^2} = \varepsilon.
+\)</span><span class="math notranslate nohighlight">\(
+Thus \)</span>\ds\lim_{n\rightarrow\infty}\sqrt{|a_n|} = \sqrt{|l|}$.
+\vspace{1em}5. %P5</p>
+<p>When it exists, the supremum of a set <span class="math notranslate nohighlight">\(A\subseteq\R\)</span> is defined to be the unique number <span class="math notranslate nohighlight">\(\alpha\in\R\)</span> such that
+- <span class="math notranslate nohighlight">\(\alpha\)</span> is an upper bound for <span class="math notranslate nohighlight">\(A\)</span>, and
+- if <span class="math notranslate nohighlight">\(M\)</span> is any other upper bound for <span class="math notranslate nohighlight">\(A\)</span>, then <span class="math notranslate nohighlight">\(\alpha\leq M\)</span>.
+We write <span class="math notranslate nohighlight">\(\sup A\)</span> for the supremum of <span class="math notranslate nohighlight">\(A\)</span>, when it exists.</p>
+<p>The definition of the infimum is similar: when it exists, the infimum of <span class="math notranslate nohighlight">\(A\)</span> is the unique number <span class="math notranslate nohighlight">\(\beta\in\R\)</span> such that[label={(\roman*)}]    1. <span class="math notranslate nohighlight">\(\beta\)</span> is a lower bound for <span class="math notranslate nohighlight">\(A\)</span>, and
+2. if <span class="math notranslate nohighlight">\(L\)</span> is any other lower bound for <span class="math notranslate nohighlight">\(A\)</span>, then <span class="math notranslate nohighlight">\(\alpha\geq L\)</span>.
+We write <span class="math notranslate nohighlight">\(\inf A\)</span> for the infimum of <span class="math notranslate nohighlight">\(A\)</span>, when it exists.</p>
+<p>The axiom of completeness for the real numbers says that every non-empty bounded above subset of <span class="math notranslate nohighlight">\(\R\)</span> has a supremum. Equivalently, it says that every non-empty bounded below subset of <span class="math notranslate nohighlight">\(\R\)</span> has an infimum.</p>
+<p>For more details, see page 32 of your Semester 2 MAS107 notes.</p>
+<p>\vspace{1em}6. %P6
+[label={(\roman*)}]    1. <span class="math notranslate nohighlight">\(\ds\sup\left\{\frac{m}{n}:m,n\in\N \text{ s.t } m&lt;n\right\}=1\)</span>,</p>
+<p><span class="math notranslate nohighlight">\(\ds\inf\left\{\frac{m}{n}:m,n\in\N \text{ s.t } m&lt;n\right\}=0\)</span>.
+2. <span class="math notranslate nohighlight">\(\ds\sup\left\{\frac{(-1)^m}{n}:m,n\in\N \text{ s.t } m&lt;n\right\}=\frac{1}{3}\)</span>,</p>
+<p><span class="math notranslate nohighlight">\(\ds\inf\left\{\frac{(-1)^m}{n}:m,n\in\N \text{ s.t } m&lt;n\right\}=-\frac{1}{2}\)</span>.
+3. <span class="math notranslate nohighlight">\(\ds\sup\left\{\frac{n}{3n + 1} :n\in\N\right\}=\frac{1}{3}\)</span>, <span class="math notranslate nohighlight">\(\ds\inf\left\{\frac{n}{3n + 1} :n\in\N\right\}=\frac{1}{4}\)</span>.
+\vspace{1em}7. %P7
+[label={(\roman*)}]    1. This is false — for a counter-example, take any singleton set. Then <span class="math notranslate nohighlight">\(\sup A=\inf A=1\)</span>.</p>
+<p>A correct version of the statement would be <span class="math notranslate nohighlight">\(\inf A \leq \sup A\)</span>.
+2. True. The analogous statement for <span class="math notranslate nohighlight">\(\sup\)</span> was called the characteristic property of the supremum in your MAS107 lecture notes — see Lemma 2.8 on page 36.
+3. True. Since <span class="math notranslate nohighlight">\(\sup B\)</span> is an upper bound for <span class="math notranslate nohighlight">\(B\)</span>, and <span class="math notranslate nohighlight">\(A\)</span> is a subset of <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(\sup B\)</span> must be an upper bound for <span class="math notranslate nohighlight">\(A\)</span>. But <span class="math notranslate nohighlight">\(\sup A\)</span> is a the least upper bound for <span class="math notranslate nohighlight">\(A\)</span>, hence <span class="math notranslate nohighlight">\(\sup A\leq \sup B\)</span>.</p>
+<p>The analogous property for <span class="math notranslate nohighlight">\(\inf\)</span> is that <span class="math notranslate nohighlight">\(\inf A\geq\inf B\)</span> whenever <span class="math notranslate nohighlight">\(A\subseteq B\)</span>.
+4. False. For a counter-example, take <span class="math notranslate nohighlight">\(B=\left\{\frac{1}{n}:n\in\N\right\}\)</span>, for which <span class="math notranslate nohighlight">\(\inf B=0\)</span>.
+5. True. Let <span class="math notranslate nohighlight">\(s=\max\{\sup A,\sup B\}\)</span>. Then <span class="math notranslate nohighlight">\(s\geq \sup A\)</span> and <span class="math notranslate nohighlight">\(s\geq \sup B\)</span>, so <span class="math notranslate nohighlight">\(s\)</span> is an upper bound for both <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>. Therefore, <span class="math notranslate nohighlight">\(s\)</span> is an upper bound for <span class="math notranslate nohighlight">\(A\cup B\)</span>. But <span class="math notranslate nohighlight">\(\sup(A\cup B)\)</span> is the least upper bound of <span class="math notranslate nohighlight">\(A\cup B\)</span>, and so <span class="math notranslate nohighlight">\(s\geq\sup(A\cup B)\)</span>. Also, since <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are both subsets of <span class="math notranslate nohighlight">\(A\cup B\)</span>, we have by statement (iii) that <span class="math notranslate nohighlight">\(s=\max\{\sup A,\sup B)\leq\sup(A\cup B)\)</span>. Hence <span class="math notranslate nohighlight">\(\max\{\sup A,\sup B)=\sup(A\cup B)\)</span>.</p>
+</section>
+<section id="limits-of-functions">
+<h2>1.1. Limits of functions<a class="headerlink" href="#limits-of-functions" title="Link to this heading">#</a></h2>
+<p>One has to identify the real numbers where the given formula does not make sense, usually because of a zero in a denominator somewhere, and exclude them.
+[label={(\roman*)}]    1. <span class="math notranslate nohighlight">\(A=\R \setminus \{0, -1\}\)</span>.
+2. <span class="math notranslate nohighlight">\(f_{2}(x) = \ds\frac{(x-1)(x+4)}{(x-1)(x+2)(x+3)}\)</span>, so
+<span class="math notranslate nohighlight">\(A=\R \setminus \{1, -2, -3\}\)</span>.
+3. <span class="math notranslate nohighlight">\(f_{3}(x) = \ds\frac{x+4}{(x+2)(x+3)}\)</span>, so
+<span class="math notranslate nohighlight">\(A=\R \setminus \{-2, -3\}\)</span>.
+4. <span class="math notranslate nohighlight">\(A=\R \setminus \{1\}\)</span>.
+5. <span class="math notranslate nohighlight">\(A=\R \setminus \{0\}\)</span>.
+\vspace{1em}2. %2 - HW1 QUESTION
+[label={(\roman*)}]    1. <span class="math notranslate nohighlight">\(L=[0,1]\cup[2,3]\)</span>.
+2. <span class="math notranslate nohighlight">\(L=\emptyset\)</span>.  (All convergent sequences in <span class="math notranslate nohighlight">\(\Z\)</span> are eventually constant.)
+3. <span class="math notranslate nohighlight">\(L=\R\)</span>.
+4. <span class="math notranslate nohighlight">\(L=[0,1]\)</span>
+5. <span class="math notranslate nohighlight">\(L=\{0\}\)</span>
+\vspace{1em}3. %3
+We had <span class="math notranslate nohighlight">\(A= \R \setminus \{1, -2, -3\}\)</span>, and <span class="math notranslate nohighlight">\(f_2:A\to\R\)</span>; <span class="math notranslate nohighlight">\(\ds f_{2}(x)= \frac{(x + 4)}{(x + 2)(x + 3)}\)</span>.</p>
+<p>Let <span class="math notranslate nohighlight">\((x_n)\)</span> be a sequence in <span class="math notranslate nohighlight">\(A\)</span> converging to <span class="math notranslate nohighlight">\(1\)</span>. Then, using algebra of limits for real sequences,
+$<span class="math notranslate nohighlight">\(
+\lim_{n\to\infty}f_2(x_n)= \lim_{n\to\infty} \frac{(x_n + 4)}{(x_n + 2)(x_n + 3)} =  \frac{(1 + 4)}{(1 + 2)(1 + 3)} = \frac{5}{12},
+\)</span><span class="math notranslate nohighlight">\(
+where the last equality is using algebra of limits. So \)</span>\ds\lim_{x \rightarrow 1}f_{2}(x) = \frac{5}{12}$.</p>
+<p>Let <span class="math notranslate nohighlight">\(x_n=-2 + \frac{1}{n}\)</span>, so that <span class="math notranslate nohighlight">\((x_n)\)</span> is a sequence in <span class="math notranslate nohighlight">\(A\)</span> converging to <span class="math notranslate nohighlight">\(-2\)</span>. Then we see that <span class="math notranslate nohighlight">\((f_2(x_n))\)</span> diverges to <span class="math notranslate nohighlight">\(+\infty\)</span> and so <span class="math notranslate nohighlight">\(\lim_{x \rightarrow -2}f_{2}(x)\)</span>  does not exist.</p>
+<p>Similarly, considering <span class="math notranslate nohighlight">\(x_n=-3 + \frac{1}{n}\)</span>,  we see that <span class="math notranslate nohighlight">\(\lim_{x \rightarrow -3}f_{2}(x)\)</span> does not exist.</p>
+<p>\vspace{1em}
+4. %4
+The first part follows by using the definition of the limit of a function in terms of limits of sequences, and then applying the result of Problem~<a class="reference internal" href="#q:25"><span class="xref myst">q:25</span></a> (iii).</p>
+<p>To be precise let <span class="math notranslate nohighlight">\((x_{n})\)</span> be any sequence in <span class="math notranslate nohighlight">\(\R \setminus \{a\}\)</span> that converges to <span class="math notranslate nohighlight">\(a\)</span>. Then since we are given that <span class="math notranslate nohighlight">\(\lim_{x \rightarrow a} f(x) = l\)</span>, we must have that <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} f(x_{n}) = l\)</span>. But then by Problem~<a class="reference internal" href="#q:25"><span class="xref myst">q:25</span></a> (iii), we have <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} \sqrt{f(x_{n}}) = \sqrt{l}\)</span>. So by definition of the limit of a function, <span class="math notranslate nohighlight">\(\lim_{x \rightarrow a} \sqrt{f(x)} = \sqrt{l}\)</span>.</p>
+<p>\medskip
+Using algebra of limits,  <span class="math notranslate nohighlight">\(\lim_{x \rightarrow 1}\ds\frac{x+1}{x^{2}}=\frac{1+1}{1^2}=2\)</span> and
+then by the first part <span class="math notranslate nohighlight">\(\lim_{x \rightarrow 1}\sqrt{\ds\frac{x+1}{x^{2}}} = \sqrt{2}\)</span>.</p>
+<p>\vspace{1em}
+5. %5
+Let <span class="math notranslate nohighlight">\(f:A\to \R\)</span> and suppose that <span class="math notranslate nohighlight">\(\lim_{x \rightarrow a} f(x) = l\)</span> and <span class="math notranslate nohighlight">\(\lim_{x \rightarrow a} f(x) = l'\)</span>. Then given any sequence <span class="math notranslate nohighlight">\((x_{n})\)</span> in <span class="math notranslate nohighlight">\(A \setminus \{a\}\)</span> that converges to <span class="math notranslate nohighlight">\(a\)</span>, we have <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} f(x_{n}) = l\)</span> and also <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} f(x_{n}) = l'\)</span>. But then <span class="math notranslate nohighlight">\(l = l'\)</span>, by uniqueness of limits.</p>
+<p>\vspace{1em}
+6. %6 - HW2 QUESTION
+When <span class="math notranslate nohighlight">\(x &gt; 0, \ds\frac{|x|}{x} = \ds\frac{x}{|x|} = \ds\frac{x}{x} = 1 = \sign(x)\)</span>,</p>
+<p>when <span class="math notranslate nohighlight">\(x &lt; 0, \ds\frac{|x|}{x} = \ds\frac{x}{|x|} = -\ds\frac{x}{x} = -1 = \sign(x)\)</span>.</p>
+<p>The left limit is <span class="math notranslate nohighlight">\(\ds\lim_{x \rightarrow 0^-} \sign(x) = -1\)</span>, since for any sequence <span class="math notranslate nohighlight">\((x_n)\)</span> approaching <span class="math notranslate nohighlight">\(0\)</span> from the left, we have <span class="math notranslate nohighlight">\(\sign(x) = -1\)</span> for all <span class="math notranslate nohighlight">\(n\)</span>.</p>
+<p>Similarly, the right limit is <span class="math notranslate nohighlight">\(\ds\lim_{x \rightarrow 0^+} \sign(x) = 1\)</span>,  since for any sequence <span class="math notranslate nohighlight">\((x_n)\)</span> approaching <span class="math notranslate nohighlight">\(0\)</span> from the right,
+we have <span class="math notranslate nohighlight">\(\sign(x) = 1\)</span> for all <span class="math notranslate nohighlight">\(n\)</span>.</p>
+<p>Since the left and right limits are different, <span class="math notranslate nohighlight">\(\ds\lim_{x \rightarrow 0}\sign(x)\)</span> does not exist.</p>
+<p>\vspace{1em}
+7. %7 - HW2 QUESTION
+[label={(\roman*)}]    1. For <span class="math notranslate nohighlight">\(a\neq 1\)</span>, the left and right limits exist and are both equal to <span class="math notranslate nohighlight">\(f(a)\)</span>, using the algebra of limits. The only point at which left and right limits disagree is <span class="math notranslate nohighlight">\(a = 1\)</span>, with
+$<span class="math notranslate nohighlight">\(
+\lim_{x \rightarrow 1-}f(x) = 0, \; \text{ and } \; \lim_{x \rightarrow 1+}f(x) = 1.
+\)</span><span class="math notranslate nohighlight">\(
+    2. In this case, left and right limits disagree at every \)</span>n \in \mathbb{Z}<span class="math notranslate nohighlight">\(, with \)</span>\lim_{x \rightarrow a-}[x] = n-1, \lim_{x \rightarrow n+}[x] = n<span class="math notranslate nohighlight">\(. At every other real number, the left and right limits exist and are both equal to the value of the function there.
+    3. Here, left and right limits disagree at \)</span>x = 0, 1<span class="math notranslate nohighlight">\( and \)</span>2<span class="math notranslate nohighlight">\(. We have
+\)</span><span class="math notranslate nohighlight">\(
+\lim_{x \rightarrow 0^-}h(x) = 3, \hspace{1em} \lim_{x \rightarrow 1-}h(x) = -2, \hspace{1em}  \lim_{x \rightarrow 2-}h(x) = 10,
+\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+\lim_{x \rightarrow 0^+}h(x) = -2, \hspace{1em} \lim_{x \rightarrow 1+}h(x) = 10, \hspace{1em}  \lim_{x \rightarrow 2+}h(x) = 3.
+\)</span><span class="math notranslate nohighlight">\(
+\vspace{1em}undefined. %8
+The largest subset of \)</span>\R<span class="math notranslate nohighlight">\( for which the formula \)</span>f(x)=\sin\left(\frac{1}{x}\right)<span class="math notranslate nohighlight">\( makes sense is \)</span>A = \R \setminus {0}$.</p>
+<p>Observe that for any real number <span class="math notranslate nohighlight">\(\theta\in\R\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+f\left(\frac{1}{\theta+2\pi n}\right) = \sin(\theta+2\pi n) = \sin(\theta).
+\]</div>
+<p>To prove <span class="math notranslate nohighlight">\(f\)</span> has no limit at <span class="math notranslate nohighlight">\(0\)</span>, we need only choose two values of <span class="math notranslate nohighlight">\(\theta\)</span> for which sine takes distinct values. We choose <span class="math notranslate nohighlight">\(\theta=\frac{\pi}{2}\)</span> and <span class="math notranslate nohighlight">\(\theta=\frac{3\pi}{2}\)</span>.</p>
+<p>By choosing the right values for <span class="math notranslate nohighlight">\(\theta\)</span>, we can use this to construct two distinct sequences <span class="math notranslate nohighlight">\((x_n)\)</span> and <span class="math notranslate nohighlight">\((y_n)\)</span> that both converge to <span class="math notranslate nohighlight">\(0\)</span>, but for which <span class="math notranslate nohighlight">\(\sin(x_n)\)</span> and <span class="math notranslate nohighlight">\(\sin(y_n)\)</span> have different limits.</p>
+<p>We use <span class="math notranslate nohighlight">\(\theta=\frac{\pi}{2}\)</span> and <span class="math notranslate nohighlight">\(\theta=\frac{3\pi}{2}\)</span> (other choices possible).</p>
+<p>For each <span class="math notranslate nohighlight">\(n\in\N\)</span>, let <span class="math notranslate nohighlight">\(x_n=\frac{1}{\frac{\pi}{2} + 2\pi n}\)</span> and <span class="math notranslate nohighlight">\(y_n=\frac{1}{3\frac{\pi}{2} + 2\pi n}\)</span>. Then</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{n\rightarrow\infty} x_{n} =\lim_{n\rightarrow\infty} y_n= 0,
+\]</div>
+<p>while for all <span class="math notranslate nohighlight">\(n\in\N\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+f(x_n) = \sin\left(\frac{\pi}{2}\right) =1 \hspace{2em} \text{ and } \hspace{2em} f(y_n)=\sin\left(\frac{3\pi}{2}\right)=-1.
+\]</div>
+<p>So <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} f(x_{n}) = 1\)</span>, but <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} f(y_n) = -1\)</span>. Since these limits are not equal, <span class="math notranslate nohighlight">\(\lim_{x\to 0} f(x)\)</span> does not exist.</p>
+<p>Of course, we could have chosen any values of <span class="math notranslate nohighlight">\(\theta\)</span> we liked, and constructed a sequence <span class="math notranslate nohighlight">\((x_n)\)</span> with limit <span class="math notranslate nohighlight">\(0\)</span> for which <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty}f(x_n)\)</span> is equal to any real number we liked in the interval <span class="math notranslate nohighlight">\([-1,1]\)</span>. The graph of this function below may give some intuition as to how this is possible.</p>
+<p>\iflatexml
+<img alt="" src="figs/sin(1,x)" />
+\else
+$<span class="math notranslate nohighlight">\(
+\begin{tikzpicture}
+\begin{axis}[width=.9\linewidth, xlabel=\)</span>x<span class="math notranslate nohighlight">\(, ylabel=\)</span>y<span class="math notranslate nohighlight">\(, unit vector ratio*=1 1 1, xmin=-4, xmax=4, ymin=-1.5, ymax=1.5, axis lines=middle, tick align=outside, xtick={-0.6366,0.6366}, ytick={-1,1}, xticklabels={\)</span>-\frac{2}{\pi}<span class="math notranslate nohighlight">\(,\)</span>\frac{2}{\pi}<span class="math notranslate nohighlight">\(}, yticklabels={\)</span>-1<span class="math notranslate nohighlight">\(,\)</span>1<span class="math notranslate nohighlight">\(}, samples=10000]
+\addplot[domain=-4:-.0001,no marks,thick] {sin(deg(1/x))};
+\addplot[domain=.0001:4,no marks,thick] {sin(deg(1/x))};
+\end{axis}
+\end{tikzpicture}
+\)</span><span class="math notranslate nohighlight">\(
+\fi
+Graph of the function \)</span>f:\mathbb{R}\to\mathbb{R}<span class="math notranslate nohighlight">\(; \)</span>f(x)=\sin\left(\frac{1}{x}\right)$.</p>
+<p>\vspace{1em}
+NaN. %9
+The largest subset of <span class="math notranslate nohighlight">\(\R\)</span> for which the formula <span class="math notranslate nohighlight">\(f(x)=x\sin\left(\frac{1}{x}\right)\)</span> makes sense is <span class="math notranslate nohighlight">\(A = \R \setminus \{0\}\)</span>.</p>
+<p>We claim that <span class="math notranslate nohighlight">\(\ds\lim_{x \rightarrow 0} x \sin\left(\frac{1}{x}\right) = 0\)</span>.</p>
+<p>To see this, let <span class="math notranslate nohighlight">\((x_{n})\)</span> be an arbitrary sequence in <span class="math notranslate nohighlight">\(A\)</span> that converges to <span class="math notranslate nohighlight">\(0\)</span>. The sine function takes values only in the interval <span class="math notranslate nohighlight">\([-1,1]\)</span>, and so</p>
+<p>\left|x_n\sin\left(\frac{1}{x_n}\right)\right| \leq |x_n|
+$$</p>
+<div class="math notranslate nohighlight">
+\[
+-|x_{n}| \leq x_{n}\sin\left(\frac{1}{x_n}\right) \leq |x_{n}|
+\]</div>
+<p>for all <span class="math notranslate nohighlight">\(n\in\N\)</span>. Since <span class="math notranslate nohighlight">\(\ds\lim_{n\to \infty} x_n=0\)</span>, we have $ \ds\lim_{n\to \infty} |x_n| =0$. Therefore, but the sandwich rule, <span class="math notranslate nohighlight">\(\ds\lim_{n\rightarrow 0}x_n\sin\left(\frac{1}{x_n}\right) = 0\)</span>.</p>
+<p>Since <span class="math notranslate nohighlight">\((x_n)\)</span> was arbitrary, <span class="math notranslate nohighlight">\(\ds\lim_{x \rightarrow 0} x \sin\left(\frac{1}{x}\right) = 0\)</span>.</p>
+<p>You should contrast the picture below with that for the previous question.</p>
+<p>\iflatexml
+<img alt="" src="figs/xsin(1,x)" />
+\else
+$<span class="math notranslate nohighlight">\(
+\begin{tikzpicture}
+\begin{axis}[width=.9\linewidth, xlabel=\)</span>x<span class="math notranslate nohighlight">\(, ylabel=\)</span>y<span class="math notranslate nohighlight">\(, unit vector ratio*=1 1 1, xmin=-4, xmax=4, ymin=-1.5, ymax=1.5, axis lines=middle, tick align=outside, xtick={-0.3183,0.3183}, ytick={-1,1}, xticklabels={\)</span>-\frac{1}{\pi}\hspace{.7em}<span class="math notranslate nohighlight">\(,\)</span>\frac{1}{\pi}<span class="math notranslate nohighlight">\(}, yticklabels={\)</span>-1<span class="math notranslate nohighlight">\(,\)</span>1$}, samples=1000]
+\addplot[domain=-4:-.01,no marks,thick] {x<em>sin(deg(1/x))};
+\addplot[domain=.01:4,no marks,thick] {x</em>sin(deg(1/x))};</p>
+<p>\end{axis}
+\end{tikzpicture}
+$<span class="math notranslate nohighlight">\(
+\fi
+Graph of the function \)</span>f:\mathbb{R}\to\mathbb{R}<span class="math notranslate nohighlight">\(; \)</span>f(x)=x\sin\left(\frac{1}{x}\right)$.</p>
+<ol class="arabic simple" start="8">
+<li></li>
+</ol>
+<p>\vspace{1em}
+9. %10
+We’ll just do <span class="math notranslate nohighlight">\(\ds\lim_{x \rightarrow \infty}f(x)\)</span> here, as <span class="math notranslate nohighlight">\(\ds\lim_{x \rightarrow -\infty}f(x)\)</span> is so similar.
+[label={(\roman*)}]    1. Let <span class="math notranslate nohighlight">\(X\subset\R\)</span> and <span class="math notranslate nohighlight">\(f:X\to\R\)</span>. We say that <span class="math notranslate nohighlight">\(\lim_{x \rightarrow \infty}f(x) = l\)</span> if whenever <span class="math notranslate nohighlight">\((x_{n})\)</span> is a sequence that diverges to infinity, with <span class="math notranslate nohighlight">\(x_{n}\in X\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>, then <span class="math notranslate nohighlight">\(\lim_{x \rightarrow \infty}f(x_{n}) = l\)</span>.
+2. The analogue of the <span class="math notranslate nohighlight">\((\varepsilon- \delta)\)</span> criterion is <span class="math notranslate nohighlight">\((\varepsilon-K)\)</span>: given any <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span>, there exists <span class="math notranslate nohighlight">\(K &gt; 0\)</span> such that if <span class="math notranslate nohighlight">\(x &gt; K\)</span> then <span class="math notranslate nohighlight">\(|f(x) -l| &lt; \varepsilon\)</span>.</p>
+<p>For the proof, suppose the <span class="math notranslate nohighlight">\((\varepsilon- K)\)</span> criterion holds and <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} x_{n} = \infty\)</span>. Then given any <span class="math notranslate nohighlight">\(L &gt; 0\)</span>, there exists <span class="math notranslate nohighlight">\(N\in\mathbb{N}\)</span> such that if <span class="math notranslate nohighlight">\(n\geq N\)</span>, we have <span class="math notranslate nohighlight">\(x_{n} &gt; L\)</span>. Now take <span class="math notranslate nohighlight">\(L\)</span> to be <span class="math notranslate nohighlight">\(K\)</span> from the criterion and we get that for all <span class="math notranslate nohighlight">\(n\geq N, |f(x_{n}) - l| &lt; \varepsilon\)</span>. Hence <span class="math notranslate nohighlight">\(\lim_{x \rightarrow \infty}f(x_{n}) = l\)</span>, as required.</p>
+<p>For the converse, we again imitate the proof of Theorem \iflatexml 1.2.6 \else <a class="reference internal" href="#ed"><span class="xref myst">ed</span></a> \fi. So suppose the <span class="math notranslate nohighlight">\((\varepsilon-K)\)</span> criterion does not hold.
+This time choose successively <span class="math notranslate nohighlight">\(K = 1, 2, \ldots\)</span> and construct <span class="math notranslate nohighlight">\(x_{n}\)</span> in the domain <span class="math notranslate nohighlight">\(X\)</span> of <span class="math notranslate nohighlight">\(f\)</span> such that <span class="math notranslate nohighlight">\(x_{n} &gt; n\)</span>, and <span class="math notranslate nohighlight">\(|f(x_{n}) - l| \geq \varepsilon\)</span> for each <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>. So <span class="math notranslate nohighlight">\(f\)</span> does not converge to <span class="math notranslate nohighlight">\(l\)</span> as <span class="math notranslate nohighlight">\(x\to\infty\)</span>.
+3. Given any <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span>, choose <span class="math notranslate nohighlight">\(K = \frac{1}{\varepsilon}\)</span>. Then <span class="math notranslate nohighlight">\(x &gt; K \Rightarrow \frac{1}{x} &lt; \varepsilon\)</span>, and so
+<span class="math notranslate nohighlight">\(\lim_{x\to\infty} \frac{1}{x}=0\)</span>. The case where <span class="math notranslate nohighlight">\(x\to-\infty\)</span> is similar.
+\vspace{1em}10. %11
+[label={(\roman*)}]    1. Let <span class="math notranslate nohighlight">\(f:X\to\R\)</span> be a function, where <span class="math notranslate nohighlight">\(X\subseteq\R\)</span>. We say that <span class="math notranslate nohighlight">\(\lim_{x \rightarrow \infty} f(x) = \infty\)</span> if for any sequence <span class="math notranslate nohighlight">\((x_{n})\)</span> in <span class="math notranslate nohighlight">\(X\)</span> which diverges to infinity, we also have that <span class="math notranslate nohighlight">\((f(x_{n}))\)</span> diverges to infinity.</p>
+<p>The analogue of <span class="math notranslate nohighlight">\((\varepsilon - \delta)\)</span> is:
+$<span class="math notranslate nohighlight">\(
+\begin{quote}Given any \)</span>M &gt; 0<span class="math notranslate nohighlight">\(, there exists \)</span>K &gt; 0<span class="math notranslate nohighlight">\( such that \)</span>x &gt; K<span class="math notranslate nohighlight">\( implies \)</span>f(x) &gt; M<span class="math notranslate nohighlight">\(.\end{quote}
+\)</span><span class="math notranslate nohighlight">\(
+The other cases are similar.
+    2. Let \)</span>f:\R\to[0,\infty)<span class="math notranslate nohighlight">\(, \)</span>g:\R\to[0,\infty)<span class="math notranslate nohighlight">\(, and suppose \)</span>\ds\lim_{x\rightarrow\infty}f(x)=\infty<span class="math notranslate nohighlight">\( and \)</span>\ds\lim_{x\rightarrow\infty}g(x)=l<span class="math notranslate nohighlight">\(, where \)</span>l&gt;0$.</p>
+<p>Let <span class="math notranslate nohighlight">\(M &gt; 0\)</span>. Since <span class="math notranslate nohighlight">\(\lim_{x\rightarrow\infty}f(x)=\infty\)</span>, there exists <span class="math notranslate nohighlight">\(K_1 &gt; 0\)</span> such that
+$<span class="math notranslate nohighlight">\(
+f(x)&gt;\frac{2M}{l} \hspace{2em} \forall x &gt; K_1.
+\)</span><span class="math notranslate nohighlight">\(
+Since \)</span>\lim_{x\rightarrow\infty}g(x)=l<span class="math notranslate nohighlight">\(, for all \)</span>\varepsilon&gt;0<span class="math notranslate nohighlight">\( we can find \)</span>K_2&gt;0<span class="math notranslate nohighlight">\( such that \)</span>x&gt;K_2<span class="math notranslate nohighlight">\( implies \)</span>|g(x)-l|&lt;\varepsilon<span class="math notranslate nohighlight">\(. In other words,
+\)</span><span class="math notranslate nohighlight">\(
+l-\varepsilon &lt; g(x) &lt; l+\varepsilon, \hspace{2em} \forall x&gt;K_2.
+\)</span><span class="math notranslate nohighlight">\(
+This is true for all \)</span>\varepsilon<span class="math notranslate nohighlight">\(. We apply it specifically to \)</span>\varepsilon = \frac{l}{2}<span class="math notranslate nohighlight">\(. Then, there is \)</span>K_2&gt;0<span class="math notranslate nohighlight">\( such that
+\)</span><span class="math notranslate nohighlight">\(
+\frac{l}{2} &lt; g(x) &lt; \frac{3l}{2}, \hspace{2em} \forall x&gt;K_2.
+\)</span><span class="math notranslate nohighlight">\(
+Let \)</span>K=\max{K_1,K_2}<span class="math notranslate nohighlight">\(. If \)</span>x&gt;K<span class="math notranslate nohighlight">\(, then \)</span>x&gt;K_1<span class="math notranslate nohighlight">\( and \)</span>x&gt;K_2<span class="math notranslate nohighlight">\(, so \)</span>f(x)&gt;\frac{2M}{l}<span class="math notranslate nohighlight">\( and \)</span>\frac{l}{2} &lt; g(x) &lt; \frac{3l}{2}$.</p>
+<p>Hence for <span class="math notranslate nohighlight">\(x&gt;K\)</span>,
+$<span class="math notranslate nohighlight">\(
+f(x)g(x) &gt; \frac{2M}{l}\frac{l}{2} = M.
+\)</span><span class="math notranslate nohighlight">\(
+That is, \)</span>\lim_{x\rightarrow\infty}f(x)g(x) = \infty$.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>3. Let $p:\R\to\R$ be a polynomial of even degree $m$, with positive leading coefficient. Write $m = 2n$ and let
+</pre></div>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+p(x) &amp;= a_{2n}x^{2n} + a_{2n-1}x^{2n-1} + \cdots + a_{1}x + a_{0}\\
+&amp;= x^{2n}\left(a_{2n} + \frac{a_{2n-1}}{x} + \cdots + \frac{a_{1}}{x^{2n-1}} + \frac{a_{0}}{x^{2n}}\right). 
+\end{align*}
+\end{split}\]</div>
+<p>We use part (ii). Take <span class="math notranslate nohighlight">\(f(x) = x^{2n}\)</span> and <span class="math notranslate nohighlight">\(\ds g(x) = a_{2n} + \frac{a_{2n-1}}{x} + \cdots + \frac{a_{1}}{x^{2n-1}} + \frac{a_{0}}{x^{2n}}\)</span>.</p>
+<p>Observe that <span class="math notranslate nohighlight">\(\ds\lim_{x \rightarrow \infty}f(x) = \infty\)</span> and <span class="math notranslate nohighlight">\(\ds\lim_{x \rightarrow \infty}g(x) = a_{2n}\)</span>. Hence by part (ii),
+$<span class="math notranslate nohighlight">\(
+\lim_{x \rightarrow \infty}p(x) = \lim_{x \rightarrow \infty}f(x)g(x) = \infty.
+\)</span>$</p>
+<p>If <span class="math notranslate nohighlight">\(n\)</span> is odd, <span class="math notranslate nohighlight">\(\lim_{x \rightarrow \infty}p(x) = \infty\)</span>, but <span class="math notranslate nohighlight">\(\lim_{x \rightarrow -\infty}p(x) = -\infty\)</span>.</p>
+</section>
+<section id="continuity">
+<h2>1.2. Continuity<a class="headerlink" href="#continuity" title="Link to this heading">#</a></h2>
+<p>For each of (i) to (v), the function is continuous at each point of its domain. For (i), (ii) and (iii), we have rational functions, which are continuous on all points of <span class="math notranslate nohighlight">\(A\)</span> (which is the subset of <span class="math notranslate nohighlight">\(\R\)</span> where the denominator is non-zero). For (iv) and (v), we have compositions of rational functions with the exponential and cosine functions, which are continuous on the whole of <span class="math notranslate nohighlight">\(\R\)</span>. Again, the functions are continuous on all points of <span class="math notranslate nohighlight">\(A\)</span> (which is the subset of <span class="math notranslate nohighlight">\(\R\)</span> where the denominator of the rational function is non-zero).</p>
+<p>\vspace{1em}
+2. %13
+If <span class="math notranslate nohighlight">\((x_{n})\)</span> is any sequence that converges to <span class="math notranslate nohighlight">\(a\)</span>, we know that <span class="math notranslate nohighlight">\(f(x_n)\)</span> converges to <span class="math notranslate nohighlight">\(f(a)\)</span> as <span class="math notranslate nohighlight">\(f\)</span> is continuous at <span class="math notranslate nohighlight">\(a\)</span>, and
+we need to show that <span class="math notranslate nohighlight">\((|f|(x_n))\)</span> converges to <span class="math notranslate nohighlight">\(|f|(a)\)</span>.</p>
+<p>By Corollary~\iflatexml 0.2.6 \else <a class="reference internal" href="#cor:tri"><span class="xref myst">cor:tri</span></a>\fi, if <span class="math notranslate nohighlight">\((x_{n})\)</span> is any sequence that converges to <span class="math notranslate nohighlight">\(a\)</span>,
+$$</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+0 \leq ||f|(a)| -|f|(x_{n})| &amp;= ||f(a) - |f(x_{n})|| \\
+&amp;\leq |f(a) - f(x_{n})| \rightarrow 0~\mbox{as}~n \rightarrow \infty, 
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}
+as $f$ is continuous.
+So by the sandwich rule, $\lim_{n\rightarrow\infty} |f|(x_{n}) = |f|(a)$, and so $f$ is continuous at $a$.\\
+\vspace{1em}
+3. %14
+Let $(x_{n})$ be a sequence in $A$ that converges to $a$. Since $f$ is continuous at $a$ we have $\lim_{n\rightarrow\infty} f(x_{n}) = f(a)$. And then, since $g$ is continuous at $f(a)$, we have $\lim_{n\rightarrow\infty} g(f(x_{n})) = g(f(a))$, and the result follows.\\
+\vspace{1em}
+4. %15
+$f \circ g:\R\to \R$ given by $(f \circ g)(x) = \frac{1}{1  + x^{2}}$. It is continuous on $\R$ by Theorem \iflatexml  2.1.5(iv) \else [AOL3](#AOL3)(iv) \fi.\\$g \circ f:\R \setminus \{0\} \to \R \setminus \{0\}$ given by $(g \circ f)(x) = {1  + \frac{1}{x^2}}$. It is continuous on $\R \setminus \{0\}$ by Theorem \iflatexml  2.1.5(iv) \else [AOL3](#AOL3)(iv) \fi.
+5. %16
+[label={(\roman*)}]    1. Continuous on $\R \setminus \{1\}$. Jump discontinuity at $1$ with $J_{f}(1) = 1$.
+    2. Continuous on $\R \setminus \Z$. Jump discontinuity at $n$ with $J_{g}(n) = 1$ for all $n\in\mathbb{Z}_+$.
+    3. Continuous at $\R \setminus \{0,1,2\}$. Each of $0, 1, 2$ is a jump discontinuity and we have $J_{h}(0) =-5, J_{h}(1) = 12, J_{h}(2) = -7.$
+\vspace{1em}6. %17 - HW2 question
+[label={(\roman*)}]    1. For $x \neq 0, f(x) = x+2$. Since $\lim_{x \rightarrow 0}f(x) = 2$, the required continuous extension is $\tilde{f}$ where
+\end{aligned}\end{align} \]</div>
+<p>\tilde{f}(x) = \left{\begin{array}{c c} \ds\frac{(1 + x)^{2} - 1}{x} &amp; ~\mbox{if}~x \neq 0\
+&amp; \
+2 &amp; ~\mbox{if}~x = 0. \end{array} \right.
+$<span class="math notranslate nohighlight">\(
+7. The largest domain is \)</span>A=\R \setminus {-2, 2}<span class="math notranslate nohighlight">\( (the set where the denominator is non-zero). For \)</span>x \neq 2, -2$,</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}
+f(x) = \frac{(x-2)(x^{2} + 2x + 4)}{(x-2)(x+2)}=\frac{x^{2} + 2x + 4}{x + 2}.
+$$ This is a rational function, and hence continuous everywhere the denominator is non-zero by Theorem \iflatexml  2.1.5(iv) \else [AOL3](#AOL3)(iv) \fi.\\We claim that $\lim_{x \rightarrow -2}f(x)$ does not exist. To see this, consider the sequence $(x_{n})$, whose $n$\textsuperscript{th} term is $-2 + \frac{1}{n}$, and check that\end{aligned}\end{align} \]</div>
+<p>f(x_{n}) = n\left(-4 -\frac{2}{n} + \frac{1}{n^2}\right) \rightarrow -\infty~\mbox{when}~n \rightarrow \infty.
+$$</p>
+<p>Thus <span class="math notranslate nohighlight">\(f\)</span> has no continuous extension to the point <span class="math notranslate nohighlight">\(x =-2\)</span>.</p>
+<p>But on the other hand,</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{x \rightarrow 2}f(x) = \lim_{x\rightarrow 2}  \frac{x^{2} + 2x + 4}{x + 2} = \frac{12}{4} = 3,
+\]</div>
+<p>and so <span class="math notranslate nohighlight">\(f\)</span> has a continuous extension</p>
+<div class="math notranslate nohighlight">
+\[
+\tilde{f}:\R \setminus \{-2\}\to\R; \hspace{1em} \tilde{f}(x) = \frac{x^2+2x+4}{x+2}.
+\]</div>
+<p>We can see this behaviour in the graph of the function:</p>
+<p>\iflatexml
+<img alt="" src="figs/(x%5E2+2x+4),(x+2)" />
+\else
+$<span class="math notranslate nohighlight">\(
+\begin{tikzpicture}
+\begin{axis}[width=.85\linewidth, xlabel=\)</span>x<span class="math notranslate nohighlight">\(, ylabel=\)</span>y<span class="math notranslate nohighlight">\(, unit vector ratio*=1 1 1, xmin=-13, xmax=13, ymin=-13, ymax=13, axis lines=middle, tick align=outside, xtick={-2}, ytick={2}, xticklabels={\)</span>-2<span class="math notranslate nohighlight">\(}, yticklabels={\)</span>2<span class="math notranslate nohighlight">\(}, samples=1000]
+\addplot[domain=-13:-2.1,no marks,thick] {(x^2+2*x+4)/(x+2)};
+\addplot[domain=-1.9:13,no marks,thick] {(x^2+2*x+4)/(x+2)};
+\draw[dashed] (axis cs:-2,-13)--(axis cs:-2,13);
+\end{axis}
+\end{tikzpicture}
+\)</span><span class="math notranslate nohighlight">\(
+\fi
+Graph of the function \)</span>\tilde{f}:\mathbb{R}\setminus{-2}\to\mathbb{R}<span class="math notranslate nohighlight">\(; \)</span>f(x)=\frac{x^2+2x+4}{x+2}$.</p>
+<p>\vspace{1em}8. %18
+Assume <span class="math notranslate nohighlight">\(g\)</span> is continuous and <span class="math notranslate nohighlight">\(g(a) &gt; 0\)</span>.
+Suppose, for a contradiction, that  there is no  <span class="math notranslate nohighlight">\(\delta &gt; 0\)</span> such that <span class="math notranslate nohighlight">\(g(x) &gt; 0\)</span>  for all $ x \in (a - \delta, a + \delta)$. Then, in particular, for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span> there exists <span class="math notranslate nohighlight">\(x_{n} \in \left(a - \frac{1}{n}, a + \frac{1}{n}\right)\)</span> such that <span class="math notranslate nohighlight">\(g(x_{n}) \leq 0\)</span>. By the sandwich rule, we have <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} x_{n} = a\)</span>. So, by continuity of <span class="math notranslate nohighlight">\(g\)</span> at <span class="math notranslate nohighlight">\(a\)</span>, we have <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} g(x_{n})\)</span> exists and equals <span class="math notranslate nohighlight">\(g(a)\)</span>. But <span class="math notranslate nohighlight">\(g(x_n)\leq 0\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>, and so
+$<span class="math notranslate nohighlight">\(
+g(a)=\lim_{n\rightarrow\infty} g(x_{n}) \leq 0,
+\)</span>$
+which is a contradiction.</p>
+<p>\vspace{1em}
+9. %19
+[label={(\roman*)}]    1. $<span class="math notranslate nohighlight">\(
+\max\{a, b\} = \left\{\begin{array}{c c} a &amp; ~\mbox{if}~a \geq b\\
+b &amp; ~\mbox{if}~a &lt; b.\\ \end{array} \right.
+\)</span><span class="math notranslate nohighlight">\(
+On the other hand,
+\)</span><span class="math notranslate nohighlight">\(
+\frac{1}{2}( a+b) + \frac{1}{2}|a-b| = \left\{\begin{array}{c c c} \frac{1}{2}(a+b) + \frac{1}{2}(a- b) &amp; = a &amp; ~\mbox{if}~a \geq b\\[.5em]
+\frac{1}{2}(a+b) + \frac{1}{2}(b- a) &amp;=  b &amp; ~\mbox{if}~a &lt; b,\\ \end{array} \right.
+\)</span>$
+and the result follows.</p>
+<p>Then for all <span class="math notranslate nohighlight">\(x \in A\cap B,\)</span>
+$<span class="math notranslate nohighlight">\(
+\max\{f, g\}(x) = \frac{1}{2}(f(x) + g(x)) + \frac{1}{2}|f(x) - g(x)|,
+\)</span><span class="math notranslate nohighlight">\(
+and continuity follows by Theorem \iflatexml  2.1.5(i) \else [AOL3](#AOL3)(i) \fi and (iii) and Problem~[q:56](#q:56).
+    2. Check that for all \)</span>a, b \in \R<span class="math notranslate nohighlight">\(,
+\)</span><span class="math notranslate nohighlight">\(
+\min\{a, b\} = \frac{1}{2}(a + b) - \frac{1}{2}|a - b|,
+\)</span>$
+and then argue as in (i).</p>
+<p>Alternatively, one could derive (ii) from (i) by using <span class="math notranslate nohighlight">\(\min\{f,g\} = - \max\{-f, -g\}\)</span>.
+\vspace{1em}10. %20
+[label={(\roman*)}]    1. <span class="math notranslate nohighlight">\(f(0) = f(0 + 0) = f(0) + f(0) = 2f(0)\)</span>, hence <span class="math notranslate nohighlight">\(f(0) = 0\)</span>.
+2. By (i), <span class="math notranslate nohighlight">\(0 = f(0) = f(x + -x) = f(x) + f(-x)\)</span>. So <span class="math notranslate nohighlight">\(f(-x)=-f(x)\)</span>.
+3. If <span class="math notranslate nohighlight">\(a \neq 0\)</span> then any sequence <span class="math notranslate nohighlight">\((x_{n})\)</span> which converges to <span class="math notranslate nohighlight">\(a\)</span> can be written as <span class="math notranslate nohighlight">\(x_{n} = a + y_{n}\)</span> where <span class="math notranslate nohighlight">\((y_{n})\)</span> converges to zero. If <span class="math notranslate nohighlight">\(f\)</span> is continuous at <span class="math notranslate nohighlight">\(0\)</span>, then $ \lim_{n\rightarrow\infty} f(y_{n})$ exists and equals <span class="math notranslate nohighlight">\(f(0)\)</span>, which is
+<span class="math notranslate nohighlight">\(0\)</span> by part (i). So
+$<span class="math notranslate nohighlight">\(
+\lim_{n\rightarrow\infty} f(x_{n}) = \lim_{n\rightarrow\infty} f(a + y_{n}) = f(a) + \lim_{n\rightarrow\infty} f(y_{n}) = f(a) + f(0) = f(a).
+\)</span><span class="math notranslate nohighlight">\(
+    4. Firstly, assume \)</span>n\in\mathbb{N}<span class="math notranslate nohighlight">\( and use induction. It is true for \)</span>n = 1<span class="math notranslate nohighlight">\(. Assume it holds for some \)</span>n\in\mathbb{N}<span class="math notranslate nohighlight">\(, then
+\)</span><span class="math notranslate nohighlight">\(
+f(n+1) = f(n) + f(1) = nk + k = (n+1)k.
+\)</span><span class="math notranslate nohighlight">\(
+So by induction, the result holds for all \)</span>n\in\mathbb{N}<span class="math notranslate nohighlight">\(.
+Combine this with part (ii), to extend to all \)</span>n\in \mathbb{Z}<span class="math notranslate nohighlight">\(.
+    5. Consider \)</span>\frac{p}{q}\in\Q<span class="math notranslate nohighlight">\(, where \)</span>p\in \mathbb{Z}<span class="math notranslate nohighlight">\( and \)</span>q\in \N<span class="math notranslate nohighlight">\(. By (iv),
+\)</span><span class="math notranslate nohighlight">\(
+pk = f(p) = f\left(q\cdot \frac{p}{q}\right) = qf\left(\frac{p}{q}\right),
+\)</span><span class="math notranslate nohighlight">\( and the result follows.
+    6. We have already proved this for rational \)</span>x<span class="math notranslate nohighlight">\(, so suppose that \)</span>x<span class="math notranslate nohighlight">\( is irrational. Then we can find a sequence \)</span>\left(\frac{p_{n}}{q_{n}}\right)<span class="math notranslate nohighlight">\( of rational numbers that converges to \)</span>x<span class="math notranslate nohighlight">\( (as we did in the solution to Example 4.2.4). Then using (iii), (v) and algebra of limits, we have
+\)</span><span class="math notranslate nohighlight">\(
+f(x) = \lim_{n\rightarrow\infty} f\left(\frac{p_n}{q_n}\right) =   \lim_{n\rightarrow\infty} k \frac{p_n}{q_n}=k \lim_{n\rightarrow\infty} \frac{p_n}{q_n} = kx.
+\)</span><span class="math notranslate nohighlight">\(
+\vspace{1em}11. %21
+Suppose that \)</span>x \in \Q<span class="math notranslate nohighlight">\(. Then as in the solution to Example 4.2.4 we can find a sequence \)</span>(x_{n})<span class="math notranslate nohighlight">\( of irrationals that converges to \)</span>x<span class="math notranslate nohighlight">\( and then
+\)</span><span class="math notranslate nohighlight">\(
+\lim_{n\rightarrow\infty} g(x_{n}) = 0 \neq g(x),
+\)</span><span class="math notranslate nohighlight">\(
+and so \)</span>g<span class="math notranslate nohighlight">\( is not continuous at \)</span>x$.</p>
+<p>\vspace{1em}
+12. %22 - HW2 question
+The function <span class="math notranslate nohighlight">\({\bf 1}_{(a, b)}\)</span> is left continuous at <span class="math notranslate nohighlight">\(a\)</span> (but not right continuous), and right continuous at <span class="math notranslate nohighlight">\(b\)</span> (but not left continuous).
+To prove the left continuity at <span class="math notranslate nohighlight">\(a\)</span>, let <span class="math notranslate nohighlight">\((x_{n})\)</span> be any sequence in <span class="math notranslate nohighlight">\(\R\)</span> which converges to <span class="math notranslate nohighlight">\(a\)</span> with <span class="math notranslate nohighlight">\(x_{n} &lt; a\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>. Then
+$ \lim_{n\rightarrow\infty} {\bf 1}<em>{(a, b)}(x</em>{n}) = 0 = {\bf 1}<em>{(a, b)}(a). $ On the other hand to see that it is not right continuous at <span class="math notranslate nohighlight">\(a\)</span>, let <span class="math notranslate nohighlight">\((y_{n})\)</span> be any sequence in <span class="math notranslate nohighlight">\(\R\)</span> which converges to <span class="math notranslate nohighlight">\(a\)</span> with <span class="math notranslate nohighlight">\(a &lt; y_{n} &lt; b\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>. Then
+$ \lim</em>{n\rightarrow\infty} {\bf 1}<em>{(a, b)}(y</em>{n}) = 1 \neq {\bf 1}_{(a, b)}(a). $ The other assertion is proved similarly.</p>
+<p>[Contrast this with <span class="math notranslate nohighlight">\({\bf 1}_{[a, b]}\)</span>, which was discussed in the notes.]</p>
+<p>\vspace{1em}
+13. %23
+Since <span class="math notranslate nohighlight">\(f\)</span> is continuous on <span class="math notranslate nohighlight">\([a, b]\)</span>, so is <span class="math notranslate nohighlight">\(g\)</span>. We have <span class="math notranslate nohighlight">\(g(a) = f(a) - \gamma &lt; 0\)</span> and <span class="math notranslate nohighlight">\(g(b) = f(b) - \gamma &gt; 0\)</span>. Hence by the intermediate value theorem (Theorem \iflatexml  2.3.1 \else <a class="reference internal" href="#ivp"><span class="xref myst">ivp</span></a> \fi), there exists <span class="math notranslate nohighlight">\(c \in (a, b)\)</span> with <span class="math notranslate nohighlight">\(g(c) = 0\)</span>, i.e. <span class="math notranslate nohighlight">\(f(c) = \gamma\)</span>, as was required.</p>
+<p>\vspace{1em}
+14. %24
+[label={(\roman*)}]    1. If <span class="math notranslate nohighlight">\(f\)</span> is continuous on <span class="math notranslate nohighlight">\(\R\)</span> it is continuous on <span class="math notranslate nohighlight">\([a, b]\)</span> for each <span class="math notranslate nohighlight">\(a &lt; b\)</span>. If <span class="math notranslate nohighlight">\(f\)</span> is not a constant, we must be able to find <span class="math notranslate nohighlight">\(a, b\)</span> such that <span class="math notranslate nohighlight">\(f(a) \neq f(b)\)</span>. Now either <span class="math notranslate nohighlight">\(f(a) &lt; f(b)\)</span> or <span class="math notranslate nohighlight">\(f(a) &gt; f(b)\)</span>. Assume the former (without loss of generality). Then there exists <span class="math notranslate nohighlight">\(m, n \in \Z\)</span> with <span class="math notranslate nohighlight">\(m &lt; n\)</span> such that <span class="math notranslate nohighlight">\(f(a) = m\)</span> and <span class="math notranslate nohighlight">\(f(b) = n\)</span>. Hence by Corollary~\iflatexml 2.3.2 \else <a class="reference internal" href="#ivp2"><span class="xref myst">ivp2</span></a>\fi, there exists <span class="math notranslate nohighlight">\(c \in (a, b)\)</span> so that <span class="math notranslate nohighlight">\(f(c) = m + \frac{1}{2} \notin\mathbb{Z}\)</span>, and that is the desired contradiction.
+2. Argue as in (i), using the fact that between any two rational numbers, we can find an irrational number.
+\vspace{1em}15. %25 - HW3 question
+{\it Something} is <span class="math notranslate nohighlight">\(x\)</span>. That is, define <span class="math notranslate nohighlight">\(g:[a,b]\to\R\)</span> given by
+<span class="math notranslate nohighlight">\(g(x) = f(x) - x\)</span>. Then <span class="math notranslate nohighlight">\(g\)</span> is continuous (because <span class="math notranslate nohighlight">\(f\)</span> is and the function <span class="math notranslate nohighlight">\(h(x)=x\)</span> is, and using algebra of limits).
+Since the range of <span class="math notranslate nohighlight">\(f\)</span> is contained in <span class="math notranslate nohighlight">\((a, b)\)</span>, we have <span class="math notranslate nohighlight">\(f(a) &gt; a\)</span> and <span class="math notranslate nohighlight">\(f(b) &lt; b\)</span>, and so <span class="math notranslate nohighlight">\(g(a) = f(a) - a &gt; 0\)</span> and <span class="math notranslate nohighlight">\(g(b) = f(b) - b &lt; 0\)</span>.
+So we can apply the intermediate value theorem to
+the function <span class="math notranslate nohighlight">\(g\)</span> on <span class="math notranslate nohighlight">\([a,b]\)</span>. This says that there exists <span class="math notranslate nohighlight">\(c \in (a, b)\)</span> such that <span class="math notranslate nohighlight">\(g(c) = 0\)</span>, i.e. <span class="math notranslate nohighlight">\(f(c) = c\)</span>.</p>
+<p>For the counter–example, consider <span class="math notranslate nohighlight">\(f(x) = x^2\)</span>. It is continuous on <span class="math notranslate nohighlight">\((0, 1)\)</span> but there is no <span class="math notranslate nohighlight">\(c \in (0, 1)\)</span> for which <span class="math notranslate nohighlight">\(c^2 = c\)</span>.</p>
+<p>\vspace{1em}
+16. %26
+Define <span class="math notranslate nohighlight">\(\gamma = \inf_{x \in [a, b]}f(x)\)</span> and assume that it is not attained, so <span class="math notranslate nohighlight">\(\gamma &lt; f(x)\)</span> for all <span class="math notranslate nohighlight">\(x \in [a,b]\)</span>. Then consider the function <span class="math notranslate nohighlight">\(h:[a,b]\to \R\)</span> given by <span class="math notranslate nohighlight">\(h(x) = \ds\frac{1}{f(x) - \gamma}\)</span>. This is continuous, and hence bounded on <span class="math notranslate nohighlight">\([a, b]\)</span>. So there exists <span class="math notranslate nohighlight">\(K \geq 0\)</span> such that <span class="math notranslate nohighlight">\(|h(x)| \leq K\)</span> for all <span class="math notranslate nohighlight">\(x \in [a, b]\)</span>. By Problem
+15(ii), given any <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span>, there exists <span class="math notranslate nohighlight">\(x \in [a, b]\)</span> such that <span class="math notranslate nohighlight">\(f(x) &lt; \gamma + \varepsilon\)</span>. Now take <span class="math notranslate nohighlight">\(\varepsilon = \frac{1}{K}\)</span> to deduce that <span class="math notranslate nohighlight">\(h(x) &gt; K\)</span>, which yields the required contradiction.</p>
+<p>\vspace{1em}
+17. %27
+By algebra of limits, <span class="math notranslate nohighlight">\(\frac{1}{f}\)</span> is continuous on <span class="math notranslate nohighlight">\([0, 1]\)</span> and so is bounded by Theorem \iflatexml 2.3.6 \else <a class="reference internal" href="#thm:evt"><span class="xref myst">thm:evt</span></a> \fi .</p>
+<p>\vspace{1em}
+18. %28 - HW3 question
+If <span class="math notranslate nohighlight">\(f\)</span> is continuous on <span class="math notranslate nohighlight">\([0, 1]\)</span>, then it is bounded by Theorem \iflatexml 2.3.6 \else <a class="reference internal" href="#thm:evt"><span class="xref myst">thm:evt</span></a> \fi , and so there exists <span class="math notranslate nohighlight">\(L \geq 0\)</span> such that <span class="math notranslate nohighlight">\(|f(x)| \leq L\)</span> for all <span class="math notranslate nohighlight">\(x \in [0, 1]\)</span>. Hence the range of <span class="math notranslate nohighlight">\(f\)</span> is a subset of  <span class="math notranslate nohighlight">\([-L, L]\)</span> and cannot be all of <span class="math notranslate nohighlight">\(\R\)</span>.</p>
+<p>\vspace{1em}
+19. %29
+Since <span class="math notranslate nohighlight">\((x_{n})\)</span> is bounded, by the Bolzano–Weierstrass theorem it has a convergent subsequence <span class="math notranslate nohighlight">\((x_{n_{k}})\)</span>. Let <span class="math notranslate nohighlight">\(c=\lim_{k \rightarrow \infty}x_{n_{k}}\)</span> and note that <span class="math notranslate nohighlight">\(c \in [0, 1]\)</span>, since <span class="math notranslate nohighlight">\(x_{n_k}\in[0,1]\)</span> for all <span class="math notranslate nohighlight">\(k\)</span>.</p>
+<p>A straight-forward induction argument shows that <span class="math notranslate nohighlight">\(f(x_{n_{k}}) \leq r^{n_{k}-1}f(x_{n_{1}})\)</span> for all <span class="math notranslate nohighlight">\(k\in\N\)</span>. But then, since the range of <span class="math notranslate nohighlight">\(f\)</span> is contained in <span class="math notranslate nohighlight">\([0,1]\)</span>, we have
+$<span class="math notranslate nohighlight">\(
+0 \leq f(x_{n_{k}}) \leq r^{n_{k}-1}
+\)</span><span class="math notranslate nohighlight">\(
+for all \)</span>k\in\N<span class="math notranslate nohighlight">\(. Since \)</span>r &lt; 1<span class="math notranslate nohighlight">\(, \)</span>\lim_{k\to\infty} r^{n_k-1} =0<span class="math notranslate nohighlight">\(. By the sandwich rule, \$ \lim_{k \rightarrow \infty}f(x_{n_{k}}) = 0\$ and by continuity of \)</span>f<span class="math notranslate nohighlight">\( at \)</span>c<span class="math notranslate nohighlight">\(, \)</span>f(c) = \lim_{k \rightarrow \infty}f(x_{n_{k}})<span class="math notranslate nohighlight">\(, so \)</span>f(c)=0$.</p>
+<p>\vspace{1em}
+20. %30
+For all <span class="math notranslate nohighlight">\(x &gt; y\)</span>,
+$<span class="math notranslate nohighlight">\(
+x^{n} - y^{n} = (x - y)(x^{n-1} + x^{n-2}y + \cdots + xy^{n-1} + y^{n-1}) &gt; 0.
+\)</span>$</p>
+<p>\vspace{1em}
+21. %31
+For all <span class="math notranslate nohighlight">\(-\frac{\pi}{2} \leq x &lt; y \leq \frac{\pi}{2}\)</span>,
+$<span class="math notranslate nohighlight">\(
+\sin(y) - \sin(x) = 2\sin\left(\frac{y - x}{2}\right)\cos\left(\frac{y + x}{2}\right) &gt; 0,
+\)</span><span class="math notranslate nohighlight">\(
+so the function is strictly monotonic increasing on this interval. It is also continuous (stated in notes), and so by Theorem \iflatexml 2.3.10 \else [thm:IFT](#thm:IFT) \fi , it is has a continuous inverse \)</span>f^{-1}(x) = \arcsin(x)<span class="math notranslate nohighlight">\( (or \)</span>\sin^{-1}(x)<span class="math notranslate nohighlight">\() defined on \)</span>[-1, 1]<span class="math notranslate nohighlight">\(. Outside the interval \)</span>\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]<span class="math notranslate nohighlight">\(, the function \)</span>f<span class="math notranslate nohighlight">\( might fail to be strictly increasing. In fact it is strictly decreasing on each interval of the form \)</span>\left((4n+1)\frac{\pi}{2}, (4n + 3)\frac{\pi}{2}\right)<span class="math notranslate nohighlight">\(, and strictly increasing on each interval of the form \)</span>\left((4n-1)\frac{\pi}{2}, (4n + 1)\frac{\pi}{2}\right)<span class="math notranslate nohighlight">\(, where \)</span>n\in\mathbb{Z}_+$.</p>
+<p>\vspace{1em}
+22. %32
+We seek a continuous extension of the mapping <span class="math notranslate nohighlight">\(x\mapsto \frac{1-x}{1-x^{\frac{m}{n}}}\)</span> to a domain that includes <span class="math notranslate nohighlight">\(1\)</span>. Then, we can use continuity to evaluate the limit as <span class="math notranslate nohighlight">\(x\rightarrow 1\)</span>.</p>
+<p>Observe that, if we write <span class="math notranslate nohighlight">\(y = x^{\frac{1}{n}}\)</span>, then
+$<span class="math notranslate nohighlight">\(
+\frac{1 - x}{1 - x^{\frac{m}{n}}} = \frac{1 - y^{n}}{1 - y^{m}} = \frac{\;\frac{1}{1-y^m}\;}{\;\frac{1}{1-y^n}\;} = \frac{1+y+y^2+\ldots+y^{m-1}}{1+y+y^2+\ldots+y^{n-1}},
+\)</span><span class="math notranslate nohighlight">\(
+by the geometric sum formula. Note that the left hand side is not defined at \)</span>x=1$, but the right hand side is.</p>
+<p>Let <span class="math notranslate nohighlight">\(f:[0,\infty)\to[0,\infty)\)</span>; <span class="math notranslate nohighlight">\(f(x)=x^{\frac{1}{n}}\)</span>, and let
+$<span class="math notranslate nohighlight">\(
+g:\mathbb{R}\to\mathbb{R};\hspace{1em} g(y)=\frac{1+y+y^2+\ldots+y^m}{1+y+y^2+\ldots+y^m}.
+\)</span><span class="math notranslate nohighlight">\(
+Both \)</span>f<span class="math notranslate nohighlight">\( and \)</span>g<span class="math notranslate nohighlight">\( are continuous at every point in their domain (for \)</span>f<span class="math notranslate nohighlight">\(, this was proven in Example \iflatexml \else [nthroot](#nthroot)\fi). Hence by the composition theorem for continuous functions (Theorem \iflatexml 2.1.6 \else [fof](#fof) \fi), the map
+\)</span><span class="math notranslate nohighlight">\(
+g\circ f:[0,\infty)\to\mathbb{R}; \hspace{1em} g\circ f(x) = \frac{1+x^{\frac{1}{n}}+x^{\frac{2}{n}}+\ldots+x^{\frac{m-1}{n}}}{1+x^{\frac{1}{n}}+x^{\frac{2}{n}}+\ldots+x^{\frac{n-1}{n}}}
+\)</span><span class="math notranslate nohighlight">\(
+is continuous. Also, by our initial calculation,
+\)</span><span class="math notranslate nohighlight">\(
+g\circ f(x) = \frac{1 - x}{1 - x^{\frac{m}{n}}}
+\)</span><span class="math notranslate nohighlight">\(
+whenever \)</span>x\geq 0<span class="math notranslate nohighlight">\( and \)</span>x^{\frac{m}{n}}\neq 1<span class="math notranslate nohighlight">\(. Therefore,
+\)</span><span class="math notranslate nohighlight">\(
+\lim_{x\rightarrow 1}\frac{1 - x}{1 - x^{\frac{m}{n}}} = \lim_{x\rightarrow 1}g\circ f(x) = g\circ f(1) = \frac{1+1+\ldots+1}{1+1+\ldots+1} = \frac{m}{n},
+\)</span><span class="math notranslate nohighlight">\(
+by continuity of \)</span>g\circ f$.</p>
+<p>\vspace{1em}
+23. %33
+We claim that if <span class="math notranslate nohighlight">\(a &lt; x &lt; b\)</span>, we have <span class="math notranslate nohighlight">\(f(a) &lt; f(x) &lt; f(b)\)</span>. To see this, note that if <span class="math notranslate nohighlight">\(f(a) \geq f(x)\)</span> then either <span class="math notranslate nohighlight">\(f(a) = f(x)\)</span>, or <span class="math notranslate nohighlight">\(f(a) &gt; f(x)\)</span>.</p>
+<p>If <span class="math notranslate nohighlight">\(f(a)=f(x)\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> cannot be bijective, which is a contradiction. T</p>
+<p>Suppose that <span class="math notranslate nohighlight">\(f(a)&gt;f(x)\)</span>. Applying Corollary~\iflatexml 2.3.7 \else <a class="reference internal" href="#interval"><span class="xref myst">interval</span></a>\fi to <span class="math notranslate nohighlight">\(f|_{[x,b]}\)</span>, the image of <span class="math notranslate nohighlight">\([x,b]\)</span> under <span class="math notranslate nohighlight">\(f\)</span> must an interval, <span class="math notranslate nohighlight">\([m,M]\)</span>, say. Note that <span class="math notranslate nohighlight">\(f(a)\in(m,M)\)</span>: indeed, <span class="math notranslate nohighlight">\(f(a)&gt;f(x)&gt;M\)</span>, and <span class="math notranslate nohighlight">\(f(a)&lt;f(b)&lt;m\)</span>. Therefore, by the intermediate value theorem (or Corollary~\iflatexml 2.3.2 \else <a class="reference internal" href="#ivp2"><span class="xref myst">ivp2</span></a>\fi more specifically), there exists <span class="math notranslate nohighlight">\(c \in (x, b)\)</span> such that <span class="math notranslate nohighlight">\(f(c) = f(a)\)</span>, and this again violates the injectivity of the mapping <span class="math notranslate nohighlight">\(f\)</span>. A similar argument can be used to show that we cannot have <span class="math notranslate nohighlight">\(f(b) \leq f(x)\)</span>.</p>
+<p>Finally, applying our initial result to <span class="math notranslate nohighlight">\(f|_{[a, y]}\)</span>, we see that if <span class="math notranslate nohighlight">\(a&lt;x&lt;y&lt;b\)</span>, then <span class="math notranslate nohighlight">\(f(a) &lt; f(x) &lt; f(y)\)</span>. Hence <span class="math notranslate nohighlight">\(f\)</span> is strictly monotonic increasing.</p>
+<p>\vspace{1em}
+24. %34
+First observe that <span class="math notranslate nohighlight">\(f+g\)</span> is monotonic increasing since both <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(g\)</span> are. Choose <span class="math notranslate nohighlight">\(a \in \R\)</span>. Given <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span>, there exists <span class="math notranslate nohighlight">\(\delta &gt; 0\)</span> so that if <span class="math notranslate nohighlight">\(x &gt; a + \delta\)</span> then
+$<span class="math notranslate nohighlight">\(
+|f(x) + g(x) - f(a) - g(a)|  =  f(x) + g(x) - f(a) - g(a) &lt; \varepsilon,
+\)</span><span class="math notranslate nohighlight">\(
+and so
+\)</span><span class="math notranslate nohighlight">\(
+|f(x) - f(a)| = f(x) - f(a) &lt; \varepsilon +g(a) - g(x) &lt; \varepsilon,
+\)</span><span class="math notranslate nohighlight">\(
+as \)</span>g<span class="math notranslate nohighlight">\( is increasing. This proves that \)</span>g<span class="math notranslate nohighlight">\( is right--continuous at \)</span>a<span class="math notranslate nohighlight">\(. A similar argument (interchanging the roles of \)</span>a<span class="math notranslate nohighlight">\( and \)</span>x<span class="math notranslate nohighlight">\() proves that it is left--continuous, and hence continuous at \)</span>a<span class="math notranslate nohighlight">\(.
+Then \)</span>g = (f + g) - f$ is the difference of two continuous functions, and hence is itself continuous.</p>
+<p>\vspace{1em}
+25. %35
+[label={(\roman*)}]    1. If <span class="math notranslate nohighlight">\(0&lt;a&lt;1\)</span>, then <span class="math notranslate nohighlight">\(0&lt;a&lt;\sqrt{a}&lt;1\)</span>. So <span class="math notranslate nohighlight">\((x_n)\)</span> is monotonic increasing and bounded above by <span class="math notranslate nohighlight">\(1\)</span>, and hence converges to some limit <span class="math notranslate nohighlight">\(0\leq l\leq 1\)</span>. By continuity of the square root function, <span class="math notranslate nohighlight">\(\sqrt{l}=\lim_{n\rightarrow\infty}\sqrt{x_n}\)</span>. But <span class="math notranslate nohighlight">\(\sqrt{x_n}=x_{n+1}\rightarrow l\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow\infty\)</span>. By uniqueness of limits, <span class="math notranslate nohighlight">\(\sqrt{l}=l\)</span>, and so <span class="math notranslate nohighlight">\(l=1\)</span>.</p>
+<p>If instead <span class="math notranslate nohighlight">\(a&gt;1\)</span>, then <span class="math notranslate nohighlight">\(a&gt;\sqrt{a}&gt;1\)</span>, and so <span class="math notranslate nohighlight">\((x_n)\)</span> is monotonic decreasing and bounded below by <span class="math notranslate nohighlight">\(1\)</span>. So the sequences converges to a limit, and by an identical argument to above, this limit has to be <span class="math notranslate nohighlight">\(1\)</span>.
+2. For all <span class="math notranslate nohighlight">\(a&gt;0, n\in\mathbb{N}, f(a) = f\left(a^{\frac{1}{2}}\right) = \cdots = f\left(a^{\frac{1}{2^{n-1}}}\right)\)</span>. That is, <span class="math notranslate nohighlight">\(f(a)=f(x_n)\)</span> for all <span class="math notranslate nohighlight">\(n\in\N\)</span>. By continuity,
+$<span class="math notranslate nohighlight">\(
+f(a) = \lim_{n\rightarrow\infty} f(x_n) = f\left(\lim_{n\rightarrow\infty} x_n\right) = f(1).
+\)</span><span class="math notranslate nohighlight">\(
+If \)</span>a&lt;0<span class="math notranslate nohighlight">\(, then \)</span>a^2&gt;0<span class="math notranslate nohighlight">\( and so \)</span>f(a)=f\left(a^2\right)=f(1)<span class="math notranslate nohighlight">\(. Finally, by continuity,
+\)</span><span class="math notranslate nohighlight">\(
+f(0)=\lim_{x\rightarrow 0}f(x) = \lim_{x\rightarrow 0}f(1) = f(1),
+\)</span><span class="math notranslate nohighlight">\(
+and we have shown that \)</span>f(x)=f(1)<span class="math notranslate nohighlight">\( for all \)</span>x\in\mathbb{R}$.</p>
+</section>
+<section id="differentiation">
+<h2>1.3. Differentiation<a class="headerlink" href="#differentiation" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li></li>
+</ol>
+<p>This is Definition \iflatexml 1.2.3 \else <a class="reference internal" href="#def:functionlimit"><span class="xref myst">def:functionlimit</span></a> \fi in the notes:</p>
+<p>The function <span class="math notranslate nohighlight">\(f\)</span> has limit <span class="math notranslate nohighlight">\(l\)</span> at the point <span class="math notranslate nohighlight">\(a\)</span> if for every sequence  <span class="math notranslate nohighlight">\((x_n)\)</span> in <span class="math notranslate nohighlight">\(A\)</span> with <span class="math notranslate nohighlight">\(x_n\neq a\)</span> for all <span class="math notranslate nohighlight">\(n\)</span> and <span class="math notranslate nohighlight">\(\lim_{n\to\infty} x_n=a\)</span>, we have <span class="math notranslate nohighlight">\(\lim_{n\to\infty}f(x_n)=l\)</span>. We write <span class="math notranslate nohighlight">\(\lim_{x\to a}f(x)=l\)</span>.</p>
+<p>\vspace{1em}
+2. %37 - HW4 question
+[label={(\roman*)}]    1. This is Definition \iflatexml 3.2.1 \else <a class="reference internal" href="#def:functionlimit"><span class="xref myst">def:functionlimit</span></a> \fi in the notes: we say that <span class="math notranslate nohighlight">\(f\)</span> is {\it differentiable} at <span class="math notranslate nohighlight">\(a \in A\)</span> if $ \lim_{x \rightarrow a}\frac{f(x) - f(a)}{x - a}$ exists. Or, equivalently,
+$ \lim_{h \rightarrow 0}\frac{f(a +h) - f(a)}{h}$ exists.</p>
+<p>That is, we fix <span class="math notranslate nohighlight">\(a\in A\)</span> and we consider the function <span class="math notranslate nohighlight">\(g\)</span> given by <span class="math notranslate nohighlight">\(g(h)=\frac{f(a +h) - f(a)}{h}\)</span>. Then <span class="math notranslate nohighlight">\(f\)</span> is differentiable at <span class="math notranslate nohighlight">\(a\)</span> if the limit of <span class="math notranslate nohighlight">\(g\)</span> as <span class="math notranslate nohighlight">\(h\)</span> goes to zero exists.
+2. This is Definition \iflatexml 1.2.3 \else <a class="reference internal" href="#def:functionlimit"><span class="xref myst">def:functionlimit</span></a> \fi from the notes, the definition of limit of a function in terms of sequences. It’s very important to understand that it’s not applied directly to <span class="math notranslate nohighlight">\(f\)</span> here; it’s applied to the function <span class="math notranslate nohighlight">\(g\)</span> above:</p>
+<p><span class="math notranslate nohighlight">\(f\)</span> is differentiable at <span class="math notranslate nohighlight">\(a\)</span> if there exists some number <span class="math notranslate nohighlight">\(f'(a) \in \R\)</span> for which, given any sequence <span class="math notranslate nohighlight">\((h_{n})\)</span> that converges to <span class="math notranslate nohighlight">\(0\)</span>, with <span class="math notranslate nohighlight">\(h_n\neq 0\)</span> for all <span class="math notranslate nohighlight">\(n\)</span>, we have
+$<span class="math notranslate nohighlight">\(
+\frac{f(a + h_{n}) - f(a)}{h_{n}} \rightarrow f'(a) \hspace{1em} \text{ as } \hspace{1em} n\rightarrow\infty.
+\)</span><span class="math notranslate nohighlight">\(
+    3. This is asking for the equivalent description of limit of a function given by the \)</span>(\varepsilon - \delta)<span class="math notranslate nohighlight">\( criterion (Theorem \iflatexml 1.2.6 \else [ed](#ed) \fi).
+Again it needs to be applied to \)</span>g<span class="math notranslate nohighlight">\( as above not \)</span>f$ itself:</p>
+<p>We say <span class="math notranslate nohighlight">\(f\)</span> is differentiable at <span class="math notranslate nohighlight">\(a\)</span> if there exists a number <span class="math notranslate nohighlight">\(f'(a)\)</span> for which, given <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>, there exists <span class="math notranslate nohighlight">\(\delta &gt; 0\)</span> such that if <span class="math notranslate nohighlight">\(0&lt;|h| &lt; \delta\)</span>, then 	
+$<span class="math notranslate nohighlight">\(
+\left|\ds\frac{f(a+h) - f(a)}{h} - f'(a)\right| &lt; \varepsilon.
+\)</span><span class="math notranslate nohighlight">\(
+\vspace{1em}3. Let \)</span>x\in\R\setminus{0}<span class="math notranslate nohighlight">\(. Then
+\)</span>$</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{f(x + h) -f(x)}{h} &amp;= \frac{1}{h}\left(\frac{1}{x+ h} -\frac{1}{x}\right)\\
+&amp;= -\frac{1}{x(x+h)} \rightarrow -\frac{1}{x^{2}},~\mbox{as}~h \rightarrow 0. 
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}Thus $f$ is differentiable at all $x\in\R\setminus\{0\}$ and
+$f'(x)=-\frac{1}{x^2}$ for all $x\in\R\setminus\{0\}$.\\The extended function (where we define its value at $x=0$ to be zero) is not continuous at $x=0$, since $\lim_{x \rightarrow 0^+}\frac{1}{x} =\infty$.
+Therefore it is not differentiable at $x=0$, by Theorem \iflatexml  3.2.4 \else [dcont](#dcont) \fi.\\
+\vspace{1em}
+4. As in the hint, let \$g(h) = e^{kh} - 1 - kh \$. Then
+\end{aligned}\end{align} \]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{f(x + h) -f(x)}{h} &amp;= \frac{1}{h}(e^{k(x +h)} - e^{kx})\\
+&amp;= e^{kx}\frac{1}{h}(e^{kh} - 1) = e^{kx}\left(k + \frac{g(h)}{h}\right) \rightarrow ke^{kx},~\mbox{as}~h \rightarrow 0,
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}using the given fact that  $\lim_{h \rightarrow 0}\frac{g(h)}{h} = 0$. Thus $f$ is differentiable at each $x\in\R$ and $f'(x)=ke^{kx}$.\\
+\vspace{1em}
+5. 
+[label={(\roman*)}]    1. Using the product and chain rules for differentiation, and that $\sin$ is differentiable with derivative $\cos$,
+if $x \neq 0$, $f$ is differentiable at $x$ with $f'(x) = \sin\left(\frac{1}{x}\right) - \frac{1}{x}\cos\left(\frac{1}{x}\right)$.
+    2. But
+$\frac{f(x) - f(0)}{x} = \sin\left(\frac{1}{x}\right)$ has no limit as $x \rightarrow 0$ (see Problem~[q:50](#q:50)), so $f$ is not differentiable at $0$.
+\vspace{1em}6. Again using the product and chain rules
+and standard derivatives,
+for $x \neq 0$,
+$f$ is differentiable at $x$ with
+\$ f'(x) = 2x\sin\left(\frac{1}{x}\right) - \cos\left(\frac{1}{x}\right)\$. At $x = 0,$
+\end{aligned}\end{align} \]</div>
+<p>\lim_{x \rightarrow 0}\frac{f(x) - f(0)}{x} = \lim_{x \rightarrow 0}x\sin\left(\frac{1}{x}\right) = 0,
+$<span class="math notranslate nohighlight">\(
+by Problem~[q:51](#q:51). So
+\)</span>f<span class="math notranslate nohighlight">\( is differentiable at \)</span>0<span class="math notranslate nohighlight">\( with
+\)</span>f’(0) = 0<span class="math notranslate nohighlight">\(. For the second derivative, with \)</span>x \neq 0<span class="math notranslate nohighlight">\(, we have
+\)</span><span class="math notranslate nohighlight">\(
+f^{\prime \prime}(x) = 2\sin\left(\frac{1}{x}\right) - \frac{2}{x}\cos\left(\frac{1}{x}\right) - \frac{1}{x^{2}}\sin\left(\frac{1}{x}\right).
+\)</span><span class="math notranslate nohighlight">\(
+But \)</span>f^{\prime \prime}<span class="math notranslate nohighlight">\( doesn't exist at \)</span>x = 0$, as in Problem~<a class="reference internal" href="#q:83"><span class="xref myst">q:83</span></a>.</p>
+<p>\vspace{1em}</p>
+<p>undefined. We give sketches of simple examples of functions as described. There should be some kind of <code class="docutils literal notranslate"><span class="pre">corner''</span> <span class="pre">or</span> </code>cusp’’
+at the relevant points, so that there is clearly no well-defined gradient there. But the functions are required to be continuous, so there should be no jump or other discontinuity.
+[label={(\roman*)}]7. \hspace{1em}</p>
+<p>\iflatexml
+<img alt="" src="figs/nondiff1,2" />
+\else
+$<span class="math notranslate nohighlight">\(
+\begin{tikzpicture}
+\begin{axis}[width=.9\linewidth, xlabel=\)</span>x<span class="math notranslate nohighlight">\(, ylabel=\)</span>y<span class="math notranslate nohighlight">\(, unit vector ratio*=1 1 1, xmin=-.3, xmax=1.3, ymin=-.25, ymax=.7, axis lines=middle, tick align=outside, xtick={.5,1}, ytick={0}, xticklabels={\)</span>\frac{1}{2}<span class="math notranslate nohighlight">\(,\)</span>1<span class="math notranslate nohighlight">\(}, yticklabels={}, samples=1000]
+\addplot[domain=0:1,no marks,thick] {abs(x-.5)};
+\draw[dashed] (axis cs:1,0)--(axis cs:1,5);
+\end{axis}
+\end{tikzpicture}
+\)</span><span class="math notranslate nohighlight">\(
+\fi
+Graph of a function \)</span>f:[0,1]\to\R<span class="math notranslate nohighlight">\( that is not differentiable at \)</span>\frac{1}{2}$, but is everywhere else.
+8. \hspace{1em}</p>
+<p>\iflatexml
+<img alt="" src="figs/nondiff1,3_2,3" />
+\else
+$<span class="math notranslate nohighlight">\(
+\begin{tikzpicture}
+\begin{axis}[width=.9\linewidth, xlabel=\)</span>x<span class="math notranslate nohighlight">\(, ylabel=\)</span>y<span class="math notranslate nohighlight">\(, unit vector ratio*=1 1 1, xmin=-.3, xmax=1.3, ymin=-.25, ymax=.5, axis lines=middle, tick align=outside, xtick={.333,.666,1}, ytick={0}, xticklabels={\)</span>\frac{1}{3}<span class="math notranslate nohighlight">\(,\)</span>\frac{2}{3}<span class="math notranslate nohighlight">\(,\)</span>1<span class="math notranslate nohighlight">\(}, yticklabels={}, samples=1000]
+\addplot[domain=0:.333,no marks,thick] {.333-x};
+\addplot[domain=.333:.666,no marks,thick] {-(3*x-1)*(3*x-2)};
+\addplot[domain=.666:1,no marks,thick] {x-.666};
+\draw[dashed] (axis cs:1,0)--(axis cs:1,5);
+\end{axis}
+\end{tikzpicture}
+\)</span><span class="math notranslate nohighlight">\(
+\fi
+Graph of a function \)</span>f:[0,1]\to\R<span class="math notranslate nohighlight">\( that is differentiable at all points in its domain apart from \)</span>\frac{1}{3}<span class="math notranslate nohighlight">\( and \)</span>\frac{2}{3}<span class="math notranslate nohighlight">\(.
+\vspace{1em}undefined. It helps to sketch the graph. On the interval \)</span>[0,1]<span class="math notranslate nohighlight">\(, we have \)</span>[x]=0<span class="math notranslate nohighlight">\( and so the graph resembles \)</span>y=x<span class="math notranslate nohighlight">\(. This pattern then repeats, and we have the following graph for \)</span>f(x)=x-[x]$:</p>
+<p>\iflatexml
+<img alt="" src="figs/x-%5Bx%5D" />
+\else
+$<span class="math notranslate nohighlight">\(
+\begin{tikzpicture}
+\begin{axis}[width=.9\linewidth, xlabel=\)</span>x<span class="math notranslate nohighlight">\(, ylabel=\)</span>y<span class="math notranslate nohighlight">\(, unit vector ratio*=1 1 1, xmin=-2.5, xmax=2.5, ymin=-1, ymax=1.5, axis lines=middle, tick align=outside, xtick={-2,-1,1,2}, ytick={1}, xticklabels={\)</span>-2<span class="math notranslate nohighlight">\(,\)</span>-1<span class="math notranslate nohighlight">\(,\)</span>1<span class="math notranslate nohighlight">\(,\)</span>2<span class="math notranslate nohighlight">\(}, yticklabels={\)</span>1$}, samples=1000]
+\addplot[domain=-2.5:-2,no marks,thick] {x-floor(x)};
+\addplot[domain=-1.999:-1,no marks,thick] {x-floor(x)};
+\addplot[domain=-.999:-.001,no marks,thick] {x-floor(x)};
+\addplot[domain=0.001:.999,no marks,thick] {x-floor(x)};
+\addplot[domain=1.001:2,no marks,thick] {x-floor(x)};
+\addplot[domain=2.001:2.5,no marks,thick] {x-floor(x)};
+\node[fill=black,scale=.4,circle] at (axis cs:-2,0){};
+\node[fill=black,circle,scale=.4] at (axis cs:-2,1){};
+\node[fill=white,circle,scale=.3] at (axis cs:-2,1){};
+\node[fill=black,scale=.4,circle] at (axis cs:-1,0){};
+\node[fill=black,circle,scale=.4] at (axis cs:-1,1){};
+\node[fill=white,circle,scale=.3] at (axis cs:-1,1){};
+\node[fill=black,scale=.4,circle] at (axis cs:0,0){};
+\node[fill=black,circle,scale=.4] at (axis cs:0,1){};
+\node[fill=white,circle,scale=.3] at (axis cs:0,1){};
+\node[fill=black,scale=.4,circle] at (axis cs:1,0){};
+\node[fill=black,circle,scale=.4] at (axis cs:1,1){};
+\node[fill=white,circle,scale=.3] at (axis cs:1,1){};
+\node[fill=black,scale=.4,circle] at (axis cs:2,0){};
+\node[fill=black,circle,scale=.4] at (axis cs:2,1){};
+\node[fill=white,circle,scale=.3] at (axis cs:2,1){};</p>
+<p>\end{axis}
+\end{tikzpicture}
+$<span class="math notranslate nohighlight">\(
+\fi
+Graph of the function \)</span>f:\mathbb{R}\to\mathbb{R}<span class="math notranslate nohighlight">\(; \)</span>f(x)=x-[x]$.</p>
+<p>The function <span class="math notranslate nohighlight">\(f\)</span> is differentiable for all <span class="math notranslate nohighlight">\(x \in \R \setminus \Z\)</span>. For such points, taking <span class="math notranslate nohighlight">\(h&gt;0\)</span> sufficiently small, we have
+<span class="math notranslate nohighlight">\([x+h]=[x]\)</span> and so</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{f(x+h)-f(x)}{h} = \frac{(x + h)- [x + h] - x + [x]}{h} = \frac{h}{h}=1.
+\]</div>
+<p>Thus <span class="math notranslate nohighlight">\(f'(x) = 1\)</span>  for all <span class="math notranslate nohighlight">\(x \in \R \setminus \Z\)</span>. If <span class="math notranslate nohighlight">\(x \in \Z\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is not continuous at <span class="math notranslate nohighlight">\(x\)</span>  (it has a jump discontinuity of <span class="math notranslate nohighlight">\(-1\)</span> there) and so cannot be differentiable there (by Theorem \iflatexml  3.2.4 \else <a class="reference internal" href="#dcont"><span class="xref myst">dcont</span></a> \fi).</p>
+<p>\vspace{1em}
+9. %44
+First observe that if <span class="math notranslate nohighlight">\(f\)</span> is differentiable at <span class="math notranslate nohighlight">\(a\)</span>, then
+$<span class="math notranslate nohighlight">\(
+f'(a) = \lim_{h \rightarrow 0}\frac{f(a + h) - f(a)}{h} = \lim_{h \rightarrow 0}\frac{f(a - h) - f(a)}{-h} = \lim_{h \rightarrow 0}\frac{f(a) - f(a-h)}{h}.
+\)</span><span class="math notranslate nohighlight">\( So
+\)</span>$</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{f(a+ h) - f(a - h)}{2h} &amp;=  \frac{1}{2}\left(\frac{f(a + h) - f(a)}{h} +  \frac{f(a) - f(a-h)}{h}\right) \\
+&amp;\hspace{7em}\rightarrow  \frac{1}{2}2f'(a) = f'(a),~\mbox{as}~h \rightarrow 0. 
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[
+On the other hand, by Example 5.2.5, $f:\R\to\R$ given by
+$f(x)=|x|$ is not differentiable at $x=0$. But
+\]</div>
+<p>\lim_{h \rightarrow 0^+} \ds\frac{|h|-|{}-h|}{2h} =0.
+$$</p>
+<ol class="arabic simple" start="10">
+<li></li>
+</ol>
+<p>g_{a}: (-\varepsilon,\varepsilon)\setminus {0} \rightarrow \R;\hspace{1em} g_{a}(h) = \frac{f(a+h) - f(a)}{h}.
+$$</p>
+<p>f’<em>-(a)=f’</em>+(a) = f’(a).
+$$</p>
+<p>\vspace{1em}
+11. %45
+[label={(\roman*)}]    1. True: <span class="math notranslate nohighlight">\(f\)</span> is continuous at zero as <span class="math notranslate nohighlight">\(f(0) = 0= \lim_{x \rightarrow 0^-}f(x) = \lim_{x \rightarrow 0^+}f(x)\)</span>.
+2. True: <span class="math notranslate nohighlight">\(f'(0)\)</span> exists and is zero. To see this compute
+$<span class="math notranslate nohighlight">\(
+f'_{+}(0) = \lim_{h \rightarrow 0^+}\frac{h^{2}}{h} = \lim_{h \rightarrow 0^+} h= 0.
+\)</span><span class="math notranslate nohighlight">\(
+and
+\)</span><span class="math notranslate nohighlight">\(
+f'_{-}(0)= \lim_{h \rightarrow 0^-}\frac{-h^{2}}{h} = \lim_{h \rightarrow 0^-} -h =0.
+\)</span><span class="math notranslate nohighlight">\(
+    3. True: \)</span>f’<span class="math notranslate nohighlight">\( is continuous at zero since \)</span>f’:\R\to\R<span class="math notranslate nohighlight">\( is given by
+\)</span><span class="math notranslate nohighlight">\(
+f'(x) = \left\{\begin{array}{c c} -2x &amp; ~\mbox{if}~x &lt; 0\\ 0&amp; ~\mbox{if}~x =0 \\ 2x &amp; ~\mbox{if}~x &gt; 0 \end{array} \right.,
+\)</span><span class="math notranslate nohighlight">\(
+so \)</span>f’(0) = \lim_{x \rightarrow 0^-} f’(x) = \lim_{x \rightarrow 0^+}f’(x) = 0<span class="math notranslate nohighlight">\(.
+    4. False:  \)</span>f^{\prime \prime}<em>{+}(0) = \lim</em>{h \rightarrow 0^+}\frac{2h - 0}{h} = 2, f^{\prime \prime}<em>{-}(0) = \lim</em>{h \rightarrow 0^-}\frac{-2h - 0}{h} = -2<span class="math notranslate nohighlight">\(, and so \)</span>f^{\prime \prime}(0)<span class="math notranslate nohighlight">\( does not exist.
+\vspace{1em}12. %46
+[label={(\roman*)}]    1. Yes:
+\)</span>f<span class="math notranslate nohighlight">\( is differentiable on \)</span>[a, b]<span class="math notranslate nohighlight">\( and hence continuous on \)</span>[a, b]<span class="math notranslate nohighlight">\( by Theorem \iflatexml  3.2.4 \else [dcont](#dcont) \fi, so it attains its sup and inf on \)</span>[a, b]<span class="math notranslate nohighlight">\( by the extreme value theorem, Theorem \iflatexml 2.3.6 \else [thm:evt](#thm:evt) \fi, and these are the maximum and minimum (respectively).
+    2. No: the maximum or minimum could be \)</span>f(a)=f(b)<span class="math notranslate nohighlight">\(.
+If \)</span>f(a)<span class="math notranslate nohighlight">\( is not the maximum value, then this must occur in \)</span>(a, b)<span class="math notranslate nohighlight">\(.
+Similarly for the minimum.
+If \)</span>f(a) = f(b)<span class="math notranslate nohighlight">\( is both the maximum and minimum value, then \)</span>f<span class="math notranslate nohighlight">\( is constant, and the value occurs in \)</span>(a, b)<span class="math notranslate nohighlight">\(.
+\vspace{1em}13. %47
+Following the hint, define \)</span>g:\R\rightarrow \R<span class="math notranslate nohighlight">\( by
+\)</span><span class="math notranslate nohighlight">\(
+g(x) = a_{0}x + \frac{a_{1}}{2}x^{2} + \frac{a_{2}}{3}x^{3}  + \cdots + \frac{a_{n}}{n+1}x^{n}.
+\)</span><span class="math notranslate nohighlight">\(
+Then \)</span>g<span class="math notranslate nohighlight">\( is a polynomial, so it is differentiable on \)</span>[0, 1]<span class="math notranslate nohighlight">\( and using standard derivatives, \)</span>g’(x)=f(x)<span class="math notranslate nohighlight">\(. Also \)</span>g(0) = g(1) = 0<span class="math notranslate nohighlight">\(. So by Rolle's theorem, there exists \)</span>c \in (0, 1)<span class="math notranslate nohighlight">\( such that \)</span>g’(c) = 0<span class="math notranslate nohighlight">\(, i.e.\)</span>f(c) = 0$.</p>
+<p>\vspace{1em}
+14. %48
+[label={(\roman*)}]    1. Let <span class="math notranslate nohighlight">\(x, y\)</span> be such that <span class="math notranslate nohighlight">\(a \leq x &lt; y \leq b\)</span>. We want to show that <span class="math notranslate nohighlight">\(f(x)=f(y)\)</span>.</p>
+<p>Apply the mean value theorem to the restriction of <span class="math notranslate nohighlight">\(f\)</span> to the interval <span class="math notranslate nohighlight">\([x, y]\)</span>, to find there exists <span class="math notranslate nohighlight">\(d \in (x, y)\)</span> for which
+$<span class="math notranslate nohighlight">\(
+f(y) - f(x) = f'(d)(y-x).
+\)</span><span class="math notranslate nohighlight">\(
+By assumption, \)</span>f’(c)=0<span class="math notranslate nohighlight">\( for all \)</span>c\in(a,b)<span class="math notranslate nohighlight">\(, so \)</span>f’(d)=0$.</p>
+<p>Thus <span class="math notranslate nohighlight">\(f(x)=f(y)\)</span>. Since this holds for all <span class="math notranslate nohighlight">\(x,y\in [a,b]\)</span>, <span class="math notranslate nohighlight">\(f\)</span> is constant on <span class="math notranslate nohighlight">\([a,b]\)</span>.
+2. Define <span class="math notranslate nohighlight">\(f:\R\to\R\)</span> by <span class="math notranslate nohighlight">\(f = h-g\)</span>. Then the function <span class="math notranslate nohighlight">\(f\)</span> is continuous on <span class="math notranslate nohighlight">\([a,b]\)</span> and differentiable on <span class="math notranslate nohighlight">\((a,b)\)</span>, because <span class="math notranslate nohighlight">\(g\)</span> and <span class="math notranslate nohighlight">\(h\)</span> are, and <span class="math notranslate nohighlight">\(f'(x)=h'(x)-g'(x)=0\)</span> for all <span class="math notranslate nohighlight">\(x\in (a,b)\)</span>. Thus <span class="math notranslate nohighlight">\(f\)</span> satisfies all the conditions of (i). By part (i), <span class="math notranslate nohighlight">\(f\)</span> is constant on <span class="math notranslate nohighlight">\([a,b]\)</span>. That is, there exists some <span class="math notranslate nohighlight">\(k\in \mathbb{R}\)</span>, such that <span class="math notranslate nohighlight">\(f(x)=k\)</span> for all <span class="math notranslate nohighlight">\(x\in [a,b]\)</span>. Thus <span class="math notranslate nohighlight">\(h(x)=g(x)+k\)</span> for all <span class="math notranslate nohighlight">\(x\in [a,b]\)</span>.
+\vspace{1em}15. %49
+By the mean value theorem, <span class="math notranslate nohighlight">\(f(b) = f(a) + f'(c)(b - a)\)</span> for some <span class="math notranslate nohighlight">\(c\in (a,b)\)</span>. So, since <span class="math notranslate nohighlight">\(m \leq f'(c) \leq M\)</span>, for all <span class="math notranslate nohighlight">\(c \in (a, b)\)</span>,
+$<span class="math notranslate nohighlight">\(
+f(a) + m(b - a) \leq f(b) \leq f(a) + M(b - a).
+\)</span>$</p>
+<ol class="arabic simple" start="16">
+<li></li>
+</ol>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+%	(f^{-1})'(y) &amp;= \frac{1}{f'(x)}=-\frac{1}{\sin(x)}=-\frac{1}{\sqrt{1-\cos^2(x)}}\\
+%	&amp;=-\frac{1}{\sqrt{1 - y^{2}}},
+%	\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned} for all $y \in (-1, 1)$, where $y=f(x)=\cos(x)$.\\
+\vspace{1em}
+17. %50
+The polynomial $p$ is of odd degree so it has at least one real root by Corollary~\iflatexml 2.3.3 \else [pol](#pol)\fi. Also $p$ is differentiable with $p'(x) = 3x^{2} + r &gt; 0$, for all $x \in \R$, so $p$ is strictly monotonic increasing on any closed interval $[a, b]$, and hence on the whole of $\R$, by Corollary~\iflatexml 3.5.2 \else [mond](#mond)\fi. Then by the inverse function theorem (Theorem \iflatexml 2.3.10 \else [thm:IFT](#thm:IFT) \fi), $p$ is invertible and hence injective, and so there is exactly one zero.\\
+\vspace{1em}
+18. %51
+Let $r&gt;1$ and fix $y\in (0,1)$. Apply the mean value theorem to the function $f:[y,1]\to\R$ given by $f(x) = x^r$. Then there exists $c \in (y, 1)$ such that
+\end{aligned}\end{align} \]</div>
+<p>\frac{f(1)-f(y)}{1-y}=f’(c)=rc^{r-1}.
+$<span class="math notranslate nohighlight">\(
+Now, \)</span>0&lt;c&lt;1<span class="math notranslate nohighlight">\(, and \)</span>r&gt;1<span class="math notranslate nohighlight">\(, so \)</span>c^{r-1}&lt;1<span class="math notranslate nohighlight">\(. Thus
+\)</span><span class="math notranslate nohighlight">\(
+1 - y^r = rc^{r-1}( 1- y) &lt; r(1 - y).
+\)</span>$</p>
+<p>\vspace{1em}
+19. %52
+Consider the first case. Here we have
+$<span class="math notranslate nohighlight">\(
+f''(a) = \lim_{h \rightarrow 0}\frac{f'(a + h) - f'(a)}{h} =  \lim_{h \rightarrow 0}\frac{f'(a + h)}{h} &lt; 0.
+\)</span><span class="math notranslate nohighlight">\(
+In particular, \)</span>f^{\prime \prime}<em>{+}(a) = \lim</em>{h \rightarrow 0^+}\frac{f’(a + h)}{h} &lt; 0<span class="math notranslate nohighlight">\(, and so \)</span>f’(a + h) &lt; 0<span class="math notranslate nohighlight">\( for sufficiently small positive \)</span>h<span class="math notranslate nohighlight">\(, (say \)</span>0 &lt; h &lt; \delta<span class="math notranslate nohighlight">\(), in which case, by Corollary~\iflatexml 3.5.2 \else [mond](#mond)\fi, \)</span>f<span class="math notranslate nohighlight">\( is strictly decreasing on \)</span>[a,  a + \delta]<span class="math notranslate nohighlight">\(. We also have \)</span>f^{\prime \prime}<em>{-}(a) = \lim</em>{h \rightarrow 0^-}\frac{f’(a + h)}{h} &lt; 0<span class="math notranslate nohighlight">\(, and so \)</span>f’(a + h) &gt; 0<span class="math notranslate nohighlight">\( for sufficiently small negative \)</span>h<span class="math notranslate nohighlight">\(, (say \)</span>-\delta_{1} &lt; h &lt; 0<span class="math notranslate nohighlight">\(), in which case, by Corollary~\iflatexml 3.5.2 \else [mond](#mond)\fi, \)</span>f<span class="math notranslate nohighlight">\( is strictly increasing on \)</span>[a- \delta_{1}, a]<span class="math notranslate nohighlight">\(. Then it follows that \)</span>f<span class="math notranslate nohighlight">\( has a local minimum at \)</span>a$. The other case is similar.</p>
+<ol class="arabic simple" start="20">
+<li><p><span class="math notranslate nohighlight">\(g\)</span> is differentiable and hence continuous on <span class="math notranslate nohighlight">\([a, b]\)</span>. We have <span class="math notranslate nohighlight">\(g'(b) = f'(b) - \gamma &gt; 0\)</span> and <span class="math notranslate nohighlight">\(g'(a) = f'(a) - \gamma &lt; 0\)</span>, so <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> are not extreme points for <span class="math notranslate nohighlight">\(g\)</span>. But <span class="math notranslate nohighlight">\(g\)</span> must attain its sup and inf in <span class="math notranslate nohighlight">\([a, b]\)</span> by Theorem \iflatexml 2.3.6 \else <a class="reference internal" href="#thm:evt"><span class="xref myst">thm:evt</span></a> \fi. Since <span class="math notranslate nohighlight">\(f'\)</span> is continuous on <span class="math notranslate nohighlight">\([a, b]\)</span>, so is <span class="math notranslate nohighlight">\(g'\)</span>, and by Problem~<a class="reference internal" href="#q:61"><span class="xref myst">q:61</span></a>, <span class="math notranslate nohighlight">\(g' &gt; 0\)</span> in a neighbourhood of <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(g' &lt; 0\)</span> in a neighbourhood of <span class="math notranslate nohighlight">\(a\)</span>. Then by Corollary <a class="reference internal" href="#mond"><span class="xref myst">mond</span></a>, <span class="math notranslate nohighlight">\(g\)</span> is increasing in a neighbourhood of <span class="math notranslate nohighlight">\(b\)</span> and decreasing in a neighbourhood of <span class="math notranslate nohighlight">\(a\)</span>. So it attains its minimum  in <span class="math notranslate nohighlight">\((a, b)\)</span>, and this is an extreme point. Hence <span class="math notranslate nohighlight">\(g'(c) = 0\)</span> and the result follows.</p></li>
+</ol>
+<ol class="arabic simple" start="21">
+<li></li>
+</ol>
+<p>h(a) = h(b) = \frac{f(a)g(b) - f(b)g(a)}{g(b) - g(a)}.
+$$</p>
+<ol class="arabic simple" start="22">
+<li></li>
+</ol>
+<p>\lim_{h \rightarrow 0^+}\frac{f(a+ h) - 2f(a) + f(a-h)}{h^{2}} = \lim_{h \rightarrow 0^+}\frac{f’(a+h) - f’(a-h)}{2h},
+$$</p>
+<ol class="arabic simple" start="23">
+<li></li>
+</ol>
+<p>[label={(\roman*)}]</p>
+<p>\left|\frac{f’(x)}{g’(x)}-L\right| &lt; L \hspace{2em} \text{ for all } x\in(a,a+\delta_1).
+$$</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>2. Let $a&lt;x&lt;y&lt;a+\delta$ Since $g&#39;$ does not vanish on $(a,b)$, we can apply Cauchy&#39;s mean value theorem to $f$ and $g$ and for the interval $[x,y]$. Therefore, there is $c_{x,y}\in(x,y)$ such that
+</pre></div>
+</div>
+<p>\frac{f’(c_{x,y})}{g’(c_{x,y})} = \frac{f(x)-f(y)}{g(x)-g(y)}.
+$$</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>3. We know that $c\in(x,y)\subseteq(a,a+\delta)$, and so by part (i)
+</pre></div>
+</div>
+<p>L-\varepsilon &lt; \frac{f’(c_{x,y})}{g’(c_{x,y})} &lt; L+\varepsilon.
+$$</p>
+<p>L-\varepsilon &lt; \frac{f(x)-f(y)}{g(x)-g(y)} &lt; L+\varepsilon,
+$$</p>
+<div class="amsmath math notranslate nohighlight" id="equation-8c913729-a5f3-474e-92c3-7d7e9b41947f">
+<span class="eqno">()<a class="headerlink" href="#equation-8c913729-a5f3-474e-92c3-7d7e9b41947f" title="Permalink to this equation">#</a></span>\[\begin{equation}\label{eq:57}
+%	(L-\varepsilon)\left(1-\frac{g(y)}{g(x)}\right) &lt; \frac{f(x)}{g(x)}-\frac{f(y)}{g(x)} &lt; (L+\varepsilon)\left(1-\frac{g(y)}{g(x)}\right).
+%	\end{equation}\]</div>
+<div class="math notranslate nohighlight">
+\[%
+    4. We now let $x\rightarrow a^+$ while holding $y$ fixed (this is possible since $a&lt;x&lt;y$). Note that $\frac{g(y)}{g(x)},\frac{f(y)}{g(x)}\rightarrow 0$ as $x\rightarrow a^+$, and hence in the limit $x\rightarrow a^+$, ([eq:57](#eq:57)) becomes
+%	\]</div>
+<p>L-\varepsilon \leq \lim_{x\rightarrow a-}\frac{f(x)}{g(x)} \leq L+\varepsilon.
+$$</p>
+<p>\lim_{x\rightarrow a-}\frac{f(x)}{g(x)} = L.
+$$</p>
+<p>[label={(\roman*)}]</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>2. $(-1)^{n}\frac{x^{2n}}{(2n)!}\sin(\theta x)$, for some  $0 &lt; \theta &lt; 1$.
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>3. $(-1)^{n+1}\frac{x^{2n+1}}{(2n+1)!}\sin(\theta x)$, for some  $0 &lt; \theta &lt; 1$.
+</pre></div>
+</div>
+</section>
+<section id="sequences-and-series-of-functions">
+<h2>1.4. Sequences and series of functions<a class="headerlink" href="#sequences-and-series-of-functions" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li></li>
+</ol>
+<p>For <span class="math notranslate nohighlight">\(x\in [0,\pi ]\)</span> we have <span class="math notranslate nohighlight">\(0\leq \sin x&lt;1\)</span> except when <span class="math notranslate nohighlight">\(x=\frac{\pi}{2}\)</span>, where <span class="math notranslate nohighlight">\(\sin x=1\)</span>. Thus <span class="math notranslate nohighlight">\(f_n(x)\)</span> converges pointwise to the function <span class="math notranslate nohighlight">\(f\colon [0, \pi ]\rightarrow \R\)</span> defined by
+$<span class="math notranslate nohighlight">\(
+f(x) = \left\{ \begin{array}{ll}
+0 &amp; x\neq \frac{\pi}{2}, \\
+1 &amp; x=\frac{\pi}{2}. \\
+\end{array} \right.
+\)</span>$</p>
+<p>Each function <span class="math notranslate nohighlight">\(f_n\)</span> is continuous. The function <span class="math notranslate nohighlight">\(f\)</span> is not continuous. So the sequence <span class="math notranslate nohighlight">\((f_n)\)</span> does not converge uniformly (otherwise we would have a contradiction to Theorem \iflatexml 4.2.1 \else <a class="reference internal" href="#ucont"><span class="xref myst">ucont</span></a> \fi — the uniform limit theorem).</p>
+<p>\vspace{1em}
+2. %54
+[label={(\roman*)}]    1. Observe that <span class="math notranslate nohighlight">\((f_n)\)</span> converges pointwise to the function
+$<span class="math notranslate nohighlight">\(
+f(x) = \left\{ \begin{array}{ll}
+0 &amp; x=0, \\
+1 &amp; x&gt;0. \\
+\end{array} \right.
+\)</span>$</p>
+<p>Each function <span class="math notranslate nohighlight">\((f_n)\)</span> is continuous, but the function <span class="math notranslate nohighlight">\(f\)</span> is not continuous at <span class="math notranslate nohighlight">\(0\)</span>, so the convergence cannot be uniform.
+2. Let <span class="math notranslate nohighlight">\(x\in \R\)</span>. Then for any <span class="math notranslate nohighlight">\(n\geq x\)</span>, we have <span class="math notranslate nohighlight">\(f_n (x) =0\)</span>, so the sequence <span class="math notranslate nohighlight">\((f_n)\)</span> converges pointwise to
+the zero function.</p>
+<p>On the other hand
+$<span class="math notranslate nohighlight">\(
+M_n = \sup \{ |f_n(t) -0| : t\in \R \} = \infty,
+\)</span><span class="math notranslate nohighlight">\(
+so certainly \)</span>(M_n)<span class="math notranslate nohighlight">\( does not converge to zero, and the sequence \)</span>(f_n)<span class="math notranslate nohighlight">\( therefore does not converge uniformly to the zero function.
+    3. For \)</span>x&gt;1<span class="math notranslate nohighlight">\(, \)</span>\frac{1}{x^n} \rightarrow 0<span class="math notranslate nohighlight">\( as \)</span>n\rightarrow \infty<span class="math notranslate nohighlight">\(. Hence for each \)</span>x\in (1,\infty )<span class="math notranslate nohighlight">\(, \)</span>\frac{e^x}{x^n}\rightarrow 0<span class="math notranslate nohighlight">\( as \)</span>n\rightarrow \infty<span class="math notranslate nohighlight">\(, and the sequence \)</span>(f_n)$ converges pointwise to the zero function.</p>
+<p>But <span class="math notranslate nohighlight">\(\frac{e^x}{x^n}\rightarrow \infty\)</span> as <span class="math notranslate nohighlight">\(x\rightarrow \infty\)</span>, so
+$<span class="math notranslate nohighlight">\(
+M_n = \sup \{ |f_n(t) -0| : t\in (1,\infty ) \} = \infty.
+\)</span>$</p>
+<p>So certainly <span class="math notranslate nohighlight">\((M_n)\)</span> does not converge to zero, and the sequence <span class="math notranslate nohighlight">\((f_n)\)</span> therefore does not converge uniformly to the zero function.
+4. We know that <span class="math notranslate nohighlight">\(e^{-k}\rightarrow 0\)</span> as <span class="math notranslate nohighlight">\(k\rightarrow \infty\)</span>, so <span class="math notranslate nohighlight">\(f_n(x)\rightarrow 0\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span> if <span class="math notranslate nohighlight">\(x\neq 0\)</span>. If <span class="math notranslate nohighlight">\(x=0\)</span>, then <span class="math notranslate nohighlight">\(f_n(x)=1\)</span> for all <span class="math notranslate nohighlight">\(n\)</span>.
+So
+<span class="math notranslate nohighlight">\((f_n)\)</span> converges pointwise to the function
+$<span class="math notranslate nohighlight">\(
+f(x) = \left\{ \begin{array}{ll}
+1 &amp; x=0, \\
+0 &amp; x\neq 0. \\
+\end{array} \right.
+\)</span>$</p>
+<p>Each function <span class="math notranslate nohighlight">\((f_n)\)</span> is continuous, but the function <span class="math notranslate nohighlight">\(f\)</span> is not continuous at <span class="math notranslate nohighlight">\(0\)</span>, so the convergence cannot be uniform.
+5. The sequence <span class="math notranslate nohighlight">\((f_n)\)</span> clearly does not converge pointwise.
+3. %55
+We consider <span class="math notranslate nohighlight">\(g_n:D\to\R\)</span>, and consider the cases <span class="math notranslate nohighlight">\(D=[0,1]\)</span> and <span class="math notranslate nohighlight">\(D=[0,\infty)\)</span>, with <span class="math notranslate nohighlight">\(g_n(x)\)</span> given by different expressions in each part below.</p>
+<p>By Proposion \iflatexml 4.1.7 \else <a class="reference internal" href="#prop:uconv"><span class="xref myst">prop:uconv</span></a>\fi, <span class="math notranslate nohighlight">\((g_n)\)</span> will converge uniformly to a function <span class="math notranslate nohighlight">\(g\)</span> if and only if
+$<span class="math notranslate nohighlight">\(
+M_n := \sup \{ |g_n(t) -g(t)| : t\in D \} \rightarrow 0 \text{ as } n\rightarrow \infty.
+\)</span><span class="math notranslate nohighlight">\(
+[label={(\roman*)}]    1. If \)</span>\ds g_n(x)=\frac{x}{n}<span class="math notranslate nohighlight">\(, then for each \)</span>x<span class="math notranslate nohighlight">\(, \)</span>g_n(x)\rightarrow 0<span class="math notranslate nohighlight">\( as \)</span>n\rightarrow \infty<span class="math notranslate nohighlight">\(, so the sequence \)</span>(g_n)$ converges pointwise to the zero function.</p>
+<p>On the interval <span class="math notranslate nohighlight">\([0,1]\)</span>,
+$<span class="math notranslate nohighlight">\(
+M_n = \sup \{ |g_n(t) -0 | : t\in [0,1] \}  = \frac{1}{n}
+\)</span>$</p>
+<p>Note that <span class="math notranslate nohighlight">\(M_n\rightarrow 0\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span>, so on the interval <span class="math notranslate nohighlight">\([0,1]\)</span>, the sequence <span class="math notranslate nohighlight">\((g_n)\)</span> converges uniformly to the zero function.</p>
+<p>On the other hand,  on <span class="math notranslate nohighlight">\([0,\infty )\)</span>,
+$<span class="math notranslate nohighlight">\(
+M_n = \sup \{ |g_n(t) -0 | : t\in [0,\infty ) \}  = \infty,
+\)</span><span class="math notranslate nohighlight">\(
+so the sequence \)</span>(g_n)<span class="math notranslate nohighlight">\( does not converge uniformly on \)</span>[0,\infty )<span class="math notranslate nohighlight">\(.
+    2. Now consider \)</span>\ds g_n(x) := \frac{x^n}{1+x^n}<span class="math notranslate nohighlight">\(. Observe that
+\)</span><span class="math notranslate nohighlight">\(
+g_n (x) = \frac{1}{1+\frac{1}{x^n}} \rightarrow \left\{ \begin{array}{ll}
+0 &amp; x&lt;1, \\
+\frac{1}{2} &amp; x=1, \\
+1 &amp; x&gt;1. \\
+\end{array} \right.
+\)</span>$</p>
+<p>Thus the pointwise limit function is not continuous on <span class="math notranslate nohighlight">\([0,1]\)</span> or on <span class="math notranslate nohighlight">\([0,\infty )\)</span>, so convergence is not uniform on either interval.
+3. Let <span class="math notranslate nohighlight">\(\ds g_n(x) =  \frac{x^n}{n+x^n}\)</span>.</p>
+<p>If <span class="math notranslate nohighlight">\(0\leq x\leq 1\)</span>, then <span class="math notranslate nohighlight">\(\frac{n}{x^n} \rightarrow \infty\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span>, so <span class="math notranslate nohighlight">\(g_n(x)\rightarrow 0\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span>. If <span class="math notranslate nohighlight">\(x&gt;1\)</span>, then <span class="math notranslate nohighlight">\(\frac{n}{x^n} \rightarrow 0\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span>, so <span class="math notranslate nohighlight">\(g_n(x)\rightarrow 1\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span>. So <span class="math notranslate nohighlight">\((g_n)\)</span> converges pointwise to
+$<span class="math notranslate nohighlight">\(
+g (x) =  \left\{ \begin{array}{ll}
+0 &amp; x\leq 1, \\
+1 &amp; x&gt;1. \\
+\end{array} \right.
+\)</span>$</p>
+<p>On the interval <span class="math notranslate nohighlight">\([0,1]\)</span>,
+$<span class="math notranslate nohighlight">\(
+M_n = \sup \{ |g_n(t) -0 | : t\in [0,1] \}  = \frac{1}{1+n} \rightarrow 0
+\)</span><span class="math notranslate nohighlight">\(
+as \)</span>n\rightarrow \infty<span class="math notranslate nohighlight">\(. So the sequence \)</span>(g_n)<span class="math notranslate nohighlight">\( converges uniformly to the zero function on \)</span>[0,1]$.</p>
+<p>On the other hand the above pointwise limit <span class="math notranslate nohighlight">\(g\)</span> is not continuous on <span class="math notranslate nohighlight">\([0,\infty )\)</span>, whereas each function <span class="math notranslate nohighlight">\(g_n\)</span> is continuous on <span class="math notranslate nohighlight">\([0,\infty )\)</span>, so convergence is not uniform on <span class="math notranslate nohighlight">\([0,\infty )\)</span>.
+\vspace{1em}4. %56
+[label={(\roman*)}]    1. Observe that, for all <span class="math notranslate nohighlight">\(x\in[0,1]\)</span>, <span class="math notranslate nohighlight">\(h_n(x)\rightarrow 1\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span>.
+So <span class="math notranslate nohighlight">\((h_n)\)</span> converges pointwise to the constant function <span class="math notranslate nohighlight">\(h:[0,1]\to\R\)</span>, <span class="math notranslate nohighlight">\(h(x)=1\)</span> for all <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p>Let
+$<span class="math notranslate nohighlight">\(
+M_n = \sup \{ |h_n(x)-1| : x\in [0,1] \} = 1 - \left(1-\frac{1}{n}\right)^2 =\frac{1}{n^2}-\frac{2}{n}.
+\)</span>$</p>
+<p>So <span class="math notranslate nohighlight">\(M_n\rightarrow 0\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span>. So <span class="math notranslate nohighlight">\((h_n)\)</span> converges uniformly to the constant function <span class="math notranslate nohighlight">\(h\)</span>.
+2. We know that <span class="math notranslate nohighlight">\(x^n \rightarrow 0\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span> if <span class="math notranslate nohighlight">\(0\leq x&lt;1\)</span>, and <span class="math notranslate nohighlight">\(x^n\rightarrow 1\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span> if <span class="math notranslate nohighlight">\(x=1\)</span>. Hence <span class="math notranslate nohighlight">\((h_n)\)</span> converges pointwise to the function <span class="math notranslate nohighlight">\(h\)</span>, where
+$<span class="math notranslate nohighlight">\(
+h (x) =\left\{ \begin{array}{ll}
+x &amp; 0\leq x&lt;1, \\
+0 &amp; x=1. \\
+\end{array} \right.
+\)</span>$</p>
+<p>Each function <span class="math notranslate nohighlight">\(h_n\)</span> is continuous, and this limit is not continuous, so convergence is not uniform.
+3. The sequence <span class="math notranslate nohighlight">\((h_n(x))\)</span> has pointwise limit <span class="math notranslate nohighlight">\(\frac{1}{1-x}\)</span> if <span class="math notranslate nohighlight">\(0\leq x&lt;1\)</span> (geometric series), but it does not converge if <span class="math notranslate nohighlight">\(x=1\)</span>. Because it does not converge when <span class="math notranslate nohighlight">\(x=1\)</span>, the sequence of functions <span class="math notranslate nohighlight">\((h_n)\)</span> does not converge
+pointwise  on <span class="math notranslate nohighlight">\([0,1]\)</span> (and so it certainly does not converge uniformly on <span class="math notranslate nohighlight">\([0,1]\)</span>).
+\vspace{1em}5. %57
+[label={(\roman*)}]    1. For each <span class="math notranslate nohighlight">\(t\)</span>, we have
+$<span class="math notranslate nohighlight">\(
+f_n(t) = \frac{n+\cos x}{2n+\sin^2 x} = \frac{1+\frac{\cos x}{n}}{2+\frac{\sin^2 x}{n}} \rightarrow \frac{1}{2}
+\)</span><span class="math notranslate nohighlight">\(
+as \)</span>n\rightarrow \infty<span class="math notranslate nohighlight">\(. So the sequence \)</span>(f_n)<span class="math notranslate nohighlight">\( converges pointwise to the constant function \)</span>f:\R\to\R<span class="math notranslate nohighlight">\(,
+with \)</span>f(x)=\frac{1}{2}<span class="math notranslate nohighlight">\( for all \)</span>x\in\R<span class="math notranslate nohighlight">\(.
+    2. Note that, for all \)</span>x\in\R<span class="math notranslate nohighlight">\(,
+\)</span>$</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\left|f_n(x) - \frac{1}{2}\right| =  \left| \frac{2n+2\cos x -2n -\sin^2 x}{2(2n+\sin^2 x)} \right| 
+&amp;= \left| \frac{2\cos x -\sin^2 x}{2(2n+\sin^2 x)} \right| \\
+&amp;\leq \frac{2+1}{2(2n)}=\frac{3}{4n} \rightarrow 0 
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}
+as $n\rightarrow \infty$.\\It follows that $(f_n)$ converges to $f$ uniformly.
+    3. Using the quotient rule,
+\end{aligned}\end{align} \]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f_n'(x) &amp;= \frac{-\sin(x)(2n+\sin^2(x))-(n+\cos(x))\cdot 2\sin(x)\cos(x)}{\left(2n+\sin^2(x)\right)^2} \\
+&amp;= \frac{-\sin(x)\left(2n+\sin^2(x)+2n\cos(x)+2\cos^2(x)\right)}{\left(2n+\sin^2(x)\right)^2} \\
+&amp;= \frac{-\sin(x)\left(2n+1+2n\cos(x)+\cos^2(x)\right)}{\left(2n+\sin^2(x)\right)^2}.
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}Since $f$ is a constant function, $f'(x)=0$ for all $x\in\R$. We show that $f_n'(x)\rightarrow 0$ as $n\rightarrow\infty$, for each $x\in\R$.\\We have:
+\end{aligned}\end{align} \]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+|f_n'(x)| &amp;= \frac{|\sin(x)|\left|2n+1+2n\cos(x)+\cos^2(x)\right|}{\left(2n+\sin^2(x)\right)^2} \\
+&amp;\leq \frac{2n+1+2n|\cos(x)|+|\cos(x)|^2}{\left(2n\right)^2},
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[
+(using the triangle inequality and the fact that $\sin^2(x)\geq 0$), so
+\]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+|f_n'(x)| &amp;\leq \frac{4n+2}{4n^2} = \frac{2n+1}{2n^2} \rightarrow 0 \text{ as } n\rightarrow \infty.
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}
+Therefore $f_n'(x)\rightarrow 0$ as $n\rightarrow \infty$, for all $x\in\R$.\\The conditions of Theorem \iflatexml 4.2.3 \else [udiff](#udiff)\fi will be satisfied if we can prove that $f_n'\rightarrow 0$ uniformly.\\We have already shown that $|f_n'(x)|\leq \frac{2n+1}{2n^2}$ for all $x\in\R$ and $n\in\N$, so most of the work is already done here. We have
+\end{aligned}\end{align} \]</div>
+<p>M_n := \sup{|f_n(x)|:x\in\R} \leq \frac{2n+1}{2n^2}\rightarrow 0 \text{ as } n\rightarrow\infty,
+$<span class="math notranslate nohighlight">\(
+so by Proposition \iflatexml 4.1.7 \else [prop:uconv](#prop:uconv)\fi, \)</span>f_n’\rightarrow 0<span class="math notranslate nohighlight">\( uniformly. So \)</span>(f_n)<span class="math notranslate nohighlight">\( satisfies the conditions of Theorem \iflatexml 4.2.3 \else [udiff](#udiff)\fi.
+\vspace{1em}6. %58
+[label={(\roman*)}]    1. As indicated in the question, we need to check continuity at \)</span>x=0<span class="math notranslate nohighlight">\( and \)</span>x=1$.</p>
+<p>Let <span class="math notranslate nohighlight">\(0&lt;x&lt;1\)</span>, so
+$<span class="math notranslate nohighlight">\(
+f_n(x) = \frac{x^{\frac{1}{n}}-1}{\ln x}.
+\)</span>$</p>
+<p>We have <span class="math notranslate nohighlight">\(x^{\frac{1}{n}} -1 \rightarrow -1 \neq 0\)</span> as <span class="math notranslate nohighlight">\(x\rightarrow 0\)</span>, and <span class="math notranslate nohighlight">\(\ln x\rightarrow -\infty\)</span> as <span class="math notranslate nohighlight">\(x\rightarrow 0\)</span>. So clearly
+$<span class="math notranslate nohighlight">\(
+\frac{x^{\frac{1}{n}}-1}{\ln x} \rightarrow 0 =f_n(0)
+\)</span><span class="math notranslate nohighlight">\(
+as \)</span>x\rightarrow 0<span class="math notranslate nohighlight">\(, and \)</span>f_n<span class="math notranslate nohighlight">\( is continuous at \)</span>0$.</p>
+<p>On the other hand,
+$<span class="math notranslate nohighlight">\(
+x^{\frac{1}{n}} -1 \rightarrow 1-1=0 \qquad \text{and}\qquad \ln x\rightarrow 0
+\)</span><span class="math notranslate nohighlight">\(
+as \)</span>x\rightarrow 1<span class="math notranslate nohighlight">\(, so by L'H\^opital's rule,
+\)</span><span class="math notranslate nohighlight">\(
+\lim_{x\rightarrow 1} \frac{x^{\frac{1}{n}} -1}{\ln x} = \lim_{x\rightarrow 1} \frac{\left(\frac{1}{n}\right)x^{\frac{1}{n}-1}}{\frac{1}{x}} = \frac{1}{n} = f_n(1),
+\)</span><span class="math notranslate nohighlight">\(
+so  \)</span>f_n<span class="math notranslate nohighlight">\( is continuous at \)</span>1<span class="math notranslate nohighlight">\(.
+    2. Since we can assume the function \)</span>f_n<span class="math notranslate nohighlight">\( is increasing, we have
+\)</span><span class="math notranslate nohighlight">\(
+|f_n(x) |\leq \frac{1}{n}
+\)</span><span class="math notranslate nohighlight">\(
+for all \)</span>x\in [0,1]<span class="math notranslate nohighlight">\(. But \)</span>\frac{1}{n}\rightarrow 0<span class="math notranslate nohighlight">\( as \)</span>n\rightarrow \infty<span class="math notranslate nohighlight">\(, so it follows that \)</span>(f_n)$ converges uniformly to the
+zero function.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>3. The result now follows immediately by the uniform convergence theorem for integrals.
+</pre></div>
+</div>
+<p>\left| \frac{e^{t^4}}{n} \right| \leq \frac{e}{n} \rightarrow 0
+$$</p>
+<p>\lim_{n\rightarrow \infty} \int_0^1  \frac{e^{t^4}}{n}\ dt = \int_0^1 0\ dt=0 .
+$$</p>
+<p>|t^{2-\frac{\sin nt}{n}} -t^2 | = |t^2| | t^{-\frac{\sin(nt)}{n}} -1 | \leq 4(t^{\frac{1}{n}}-1)\leq 4(2^{\frac{1}{n}}-1) \rightarrow 0
+$$</p>
+<p>\lim_{n\rightarrow \infty} \int_1^2  t^{2-\frac{\sin (nt)}{n}} \ dt = \int_1^2 t^2\ dt = \left[ \frac{t^3}{3} \right]_1^2 = \frac{8}{3} - \frac{1}{3} = \frac{7}{3} .
+$$</p>
+<p>undefined. %See Example 3.13 in the notes, showing that the answer to both parts is ``no’’.</p>
+<ol class="arabic simple" start="8">
+<li></li>
+</ol>
+<p>[label={(\roman*)}]</p>
+<p>\left| \frac{1}{x} - \frac{1}{y} \right| \geq \frac{|x-y|}{\theta^2}.
+$$</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>2. The function $g$ is continuous, with a closed bounded domain, and is therefore uniformly continuous.
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>3. The function $h$ is uniformly continuous. One way to see this is to use the mean value theorem. Note that, since $x\geq 1$,
+</pre></div>
+</div>
+<p>|h’(x)| = \frac{1}{x^2} \leq  1
+$$</p>
+<p>| h(y)-h(x)|\leq|y-x|.
+$$</p>
+<p>\vspace{1em}9. %59
+Let <span class="math notranslate nohighlight">\(s_n(x)=\sum_{i=1}^n f_i(x)\)</span>.
+Then <span class="math notranslate nohighlight">\((s_n)\)</span> converges uniformly to <span class="math notranslate nohighlight">\(f\)</span>, and by Proposition \iflatexml 4.1.7 \else <a class="reference internal" href="#prop:uconv"><span class="xref myst">prop:uconv</span></a>\fi, this is equivalent to <span class="math notranslate nohighlight">\(\sup\{|s_n(x)-f(x)|\}\to 0\)</span> as <span class="math notranslate nohighlight">\(n\to\infty\)</span>.
+So
+$$</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sup\{|f_n(x)|\}&amp;=\sup\{|s_n(x)-s_{n-1}(x)|\}\\
+&amp;\leq \sup \{|s_n(x)-f(x)|+|f(x)-s_{n-1}(x)|\}\\
+&amp;\leq \sup \{|s_n(x)-f(x)|\}+\sup\{|f(x)-s_{n-1}(x)|\}\\
+&amp;\qquad\to 0, \quad\text{as $n\to\infty$.}
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}
+So by Proposition \iflatexml 4.1.7 \else [prop:uconv](#prop:uconv)\fi, $(f_n)$ converges uniformly to $0$.\\
+\vspace{1em}
+10. %60
+For each $n\in\N$, define $f_n,g_n:\R\to\R$ by $f_n(x)=\frac{(-1)^nx^{2n+1}}{(2n+1)!}$ and $g_n(x)=\frac{(-1)^nx^{2n}}{(2n)!}$.
+[label={(\roman*)}]    1. To establish absolute pointwise summability of $(f_n)$, observe that for each **fixed** $x\in\R$,
+\end{aligned}\end{align} \]</div>
+<p>\frac{|f_{n+1}(x)|}{|f_n(x)|} = \frac{x^{2n+3}(2n+1)!}{(2n+3)!x^{2n+1}} = \frac{x^2}{(2n+3)(2n+1)} \rightarrow 0,
+$<span class="math notranslate nohighlight">\(
+as \)</span>n\rightarrow\infty<span class="math notranslate nohighlight">\(. Therefore by the ratio test, \)</span>s(x) = \sum_{n=0}^\infty f_n(x)<span class="math notranslate nohighlight">\( is absolutely convergent for each \)</span>x\in\R$.</p>
+<p>A similar argument applied instead to the seqence <span class="math notranslate nohighlight">\((g_n)\)</span> will show absolute pointwise convergence of the series associate with <span class="math notranslate nohighlight">\(c\)</span> (make sure you can write out the details yourself, though!).
+2. Let <span class="math notranslate nohighlight">\(R&gt;0\)</span>, and restrict each <span class="math notranslate nohighlight">\(f_n\)</span> defined above to the interval <span class="math notranslate nohighlight">\([-R,R]\)</span>. Let <span class="math notranslate nohighlight">\(M_n=\frac{R^{2n+1}}{(2n+1)!}\)</span> for each <span class="math notranslate nohighlight">\(n\in\N\)</span>. Then
+$<span class="math notranslate nohighlight">\(
+|f_n(x)| = \frac{x^{2n+1}}{(2n+1)!} \leq M_n
+\)</span><span class="math notranslate nohighlight">\(
+for all \)</span>x\in[-R,R]<span class="math notranslate nohighlight">\( and \)</span>n\in\N<span class="math notranslate nohighlight">\(. By the same ratio test argument as above, \)</span>(M_n)<span class="math notranslate nohighlight">\( is a summable sequence of real numbers, and so by the Weierstrass \)</span>M<span class="math notranslate nohighlight">\(-test the series \)</span>s:=\sum_{n=0}^\infty f_n<span class="math notranslate nohighlight">\( converges uniformly on \)</span>[-R,R]$.</p>
+<p>Applying the same argument to <span class="math notranslate nohighlight">\((g_n)\)</span> establishes the result for <span class="math notranslate nohighlight">\(c\)</span>.
+3. Observe that <span class="math notranslate nohighlight">\(f_n\)</span> and <span class="math notranslate nohighlight">\(g_n\)</span> are differentiable everywhere for all <span class="math notranslate nohighlight">\(n\in\N\)</span>, and for each <span class="math notranslate nohighlight">\(x\in\R\)</span>,
+$<span class="math notranslate nohighlight">\(
+f_n'(x) = \frac{(-1)^n(2n+1)x^{2n}}{(2n+1)!}=\frac{(-1)^nx^{2n}}{(2n)!}=g_n(x) \hspace{2em} \text{ for } n=0,1,2,\ldots
+\)</span><span class="math notranslate nohighlight">\(
+and
+\)</span><span class="math notranslate nohighlight">\(
+g_n'(x) = \frac{(-1)^n(2n)x^{2n-1}}{(2n)!} = \frac{(-1)^nx^{2n-1}}{(2n-1)!} = -f_{n-1}(x) \hspace{2em} \text{ for } n=1,2,\ldots.
+\)</span><span class="math notranslate nohighlight">\(
+Also, \)</span>g_0(x)=1<span class="math notranslate nohighlight">\(, so \)</span>g_0’(x)=0<span class="math notranslate nohighlight">\( for all \)</span>x$.</p>
+<p>We can now apply Theorem \iflatexml  4.3.3 \else <a class="reference internal" href="#dterm"><span class="xref myst">dterm</span></a> \fi to the sequences <span class="math notranslate nohighlight">\((f_n)\)</span> and <span class="math notranslate nohighlight">\((g_n)\)</span> to obtained the desired results for <span class="math notranslate nohighlight">\(s\)</span> and <span class="math notranslate nohighlight">\(c\)</span>. The uniform summability of <span class="math notranslate nohighlight">\((f_n')\)</span> and <span class="math notranslate nohighlight">\((g_n')\)</span> follows from that of <span class="math notranslate nohighlight">\((g_n)\)</span> and <span class="math notranslate nohighlight">\((f_n)\)</span>, respectively. Clearly each term <span class="math notranslate nohighlight">\(f_n'\)</span> and <span class="math notranslate nohighlight">\(g_n'\)</span> are also continuous, and so by Theorem \iflatexml  4.3.3 \else <a class="reference internal" href="#dterm"><span class="xref myst">dterm</span></a> \fi, <span class="math notranslate nohighlight">\(s=\sum_{n=0}^\infty f_n\)</span> and <span class="math notranslate nohighlight">\(c=\sum_{n=0}^\infty g_n\)</span> are both differentiable on <span class="math notranslate nohighlight">\((-R,R)\)</span>, and can be differentiated term by term. But <span class="math notranslate nohighlight">\(R\)</span> was arbitrary, and so in fact we have shown that <span class="math notranslate nohighlight">\(s\)</span> and <span class="math notranslate nohighlight">\(c\)</span> are differentiable everywhere, with derivatives given by
+$<span class="math notranslate nohighlight">\(
+s'(x) = \sum_{n=0}^\infty g_n(x) = c(x)
+\)</span><span class="math notranslate nohighlight">\(
+and
+\)</span><span class="math notranslate nohighlight">\(
+c'(x) = \sum_{n=1}^\infty (-f_{n-1}(x)) = -s(x),
+\)</span><span class="math notranslate nohighlight">\(
+for all \)</span>x\in\R<span class="math notranslate nohighlight">\(.
+    4. The real crux of this part of this question is that the series' for \)</span>\exp<span class="math notranslate nohighlight">\(, \)</span>s(x)<span class="math notranslate nohighlight">\( and \)</span>c(x)<span class="math notranslate nohighlight">\( are absolutely convergent for each \)</span>x\in R$. This allows us to rearrange their terms without disturbing any convergence properties — this was the content of Theorem 4.18 in MAS107.</p>
+<p>Using rearrangement, we have for each <span class="math notranslate nohighlight">\(x\in\R\)</span>,
+$$</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\exp(ix) = \sum_{n=0}^\infty\frac{(ix)^n}{n!} &amp;= \sum_{n \text{ even}}^\infty\frac{(ix)^n}{n!}  + \sum_{n \text{ odd}}^\infty\frac{(ix)^n}{n!} \\
+&amp;= \sum_{k=0}^\infty\frac{(ix)^{2k}}{(2k)!} + \sum_{k=0}^\infty\frac{(ix)^{2k+1}}{(2k+1)!} \\
+&amp;= \sum_{k=0}^\infty\frac{(-1)^kx^{2k}}{(2k)!} + \sum_{k=0}^\infty\frac{i(-1)^kx^{2k+1}}{(2k+1)!} \\
+&amp;= c(x) + is(x).
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[
+\vspace{1em}11. %61
+[label={(\roman*)}]    1. Let $M_n =\frac{1}{n}^2$. Note that
+\]</div>
+<p>\frac{1}{n^2+x^2} \leq \frac{1}{n^2}
+$<span class="math notranslate nohighlight">\(
+for all \)</span>x\in \R<span class="math notranslate nohighlight">\(, and the series \)</span>\sum_{n=1}^\infty M_n<span class="math notranslate nohighlight">\( converges. So by the Weierstrass \)</span>M<span class="math notranslate nohighlight">\(-test, the series \$ \sum_{n=1}^\infty \frac{1}{n^2 +x^2}\$ converges uniformly on \)</span>\R$.</p>
+<p>It also converges uniformly on <span class="math notranslate nohighlight">\([0,1]\)</span> by the same argument.
+2. Observe that, for each <span class="math notranslate nohighlight">\(n\in \N\)</span>,
+$<span class="math notranslate nohighlight">\(
+\sup \left\{ \left| \frac{(-1)^nx^{2n+1}}{(2n+1)!} \right| : x\in \R \right\} = \infty
+\)</span><span class="math notranslate nohighlight">\(
+so the series cannot converge uniformly on \)</span>\R<span class="math notranslate nohighlight">\(. (The series converging uniformly means the sequence
+of partial sums \)</span>s_n<span class="math notranslate nohighlight">\( converging uniformly. But then you would have \)</span>s_{n+1}-s_n$ converging uniformly
+to the zero function, which is not the case.)</p>
+<p>But let
+$<span class="math notranslate nohighlight">\(
+M_n = \sup \left\{ \left| \frac{(-1)^nx^{2n+1}}{(2n+1)!} \right|  : x\in [0,1] \right\} = \frac{1}{(2n+1)!}.
+\)</span>$</p>
+<p>Then the terms of the series are bounded above by <span class="math notranslate nohighlight">\(M_n\)</span>, and <span class="math notranslate nohighlight">\(\sum_{n=0}^\infty M_n\)</span> converges. So the series converges uniformly on <span class="math notranslate nohighlight">\([0,1]\)</span>.
+3. <span class="math notranslate nohighlight">\(\sin (nx)\)</span> does not converge to <span class="math notranslate nohighlight">\(0\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span> at certain values of <span class="math notranslate nohighlight">\(x\)</span>,
+(for example <span class="math notranslate nohighlight">\(x=\frac{\pi}{4}\in [0,1]\)</span>),  so the series does not converge, let alone uniformly, either on <span class="math notranslate nohighlight">\([0,1]\)</span> or <span class="math notranslate nohighlight">\(\R\)</span>.
+4. (*) The series <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty  \frac{\sin (nx)}{n}\)</span> does not converge uniformly on <span class="math notranslate nohighlight">\([0,1]\)</span>.
+So it does not converge uniformly on <span class="math notranslate nohighlight">\(\R\)</span> either. To see this, suppose it does converge uniformly. Then the
+limit <span class="math notranslate nohighlight">\(f(x)\)</span> would be a continuous function on <span class="math notranslate nohighlight">\([0,1]\)</span>. Since <span class="math notranslate nohighlight">\(f\)</span> is continuous at <span class="math notranslate nohighlight">\(0\)</span>, we have
+$<span class="math notranslate nohighlight">\(
+0=f(0)=\lim_{N\to\infty} f(\frac{\pi}{N})=\lim_{N\to\infty} \sum_{n=1}^N \frac{\sin\left(\frac{n\pi}{N}\right)}{n}.
+\)</span><span class="math notranslate nohighlight">\(
+On the other hand,
+\)</span>$</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum_{n=1}^N \frac{\sin\left(\frac{n\pi}{N}\right)}{n}&amp;\geq \frac{1}{N}\left( \sum_{n=1}^N \sin\left(\frac{n\pi}{N}\right)\right)\\
+&amp;\quad =\frac{1}{N}\left( \frac{\sin(\frac{N}{2}\frac{\pi}{N})\sin(\frac{N+1}{2}\frac{\pi}{N})}{\sin(\frac{\pi}{2N})}\right).\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[
+As \$ N\to \infty\$, this has limit
+\]</div>
+<p>\lim_{N\to\infty} \frac{1}{N}\left(\frac{\sin(\frac{\left(1+\frac{1}{N}\right)\pi}{2})}{\sin(\frac{\pi}{2N})}\right)
+=\lim_{x\to 0}\frac{2}{\pi}\frac{x}{\sin(x)}=\frac{2}{\pi},
+$<span class="math notranslate nohighlight">\(
+giving
+a contradiction.
+\vspace{1em}12. %62
+[label={(\roman*)}]    1. Let \)</span>M_n =a^n<span class="math notranslate nohighlight">\(. Then for \)</span>x\in [0,a]<span class="math notranslate nohighlight">\(, we have \)</span>|x^n|\leq M_n<span class="math notranslate nohighlight">\(, and since \)</span>|a|&lt;1<span class="math notranslate nohighlight">\(, the series \)</span>\sum_{n=1}^\infty M_n$ converges.</p>
+<p>Hence, by the Weierstrass <span class="math notranslate nohighlight">\(M\)</span>-test, the series converges uniformly for <span class="math notranslate nohighlight">\(x\in [0,a]\)</span>.
+2. Let
+$<span class="math notranslate nohighlight">\(
+S_n(x) = 1+x+x^2+\cdots + x^n.
+\)</span>$</p>
+<p>Let
+$<span class="math notranslate nohighlight">\(
+A_n = \sup \{ S_n (x) : x\in [0,1 ) \} = S_n(1) =1+1 + \cdots + 1 = n.
+\)</span>$</p>
+<p>The sequence  <span class="math notranslate nohighlight">\((A_n)\)</span> does not converge. It follows that the sequence of partial sums <span class="math notranslate nohighlight">\((S_n(x))\)</span> does not converge uniformly on <span class="math notranslate nohighlight">\([0,1)\)</span>. Hence the series does not converge uniformly on <span class="math notranslate nohighlight">\([0,1)\)</span>.
+\vspace{1em}13. %63
+Let <span class="math notranslate nohighlight">\(f_n:[0,2\pi]\to\R\)</span> be given by
+$<span class="math notranslate nohighlight">\(
+f_n (x) = \frac{\sin (nx )}{n^2}.
+\)</span>$</p>
+<p>Then <span class="math notranslate nohighlight">\(f_n\)</span> is continuous. Note that
+$<span class="math notranslate nohighlight">\(
+|f_n (x )| \leq  \frac{1}{n^2}
+\)</span><span class="math notranslate nohighlight">\(
+for all \)</span>x \in [0,2\pi]<span class="math notranslate nohighlight">\(, and
+\)</span><span class="math notranslate nohighlight">\(
+\sum_{n=1}^\infty \frac{1}{n^2}
+\)</span>$
+converges.</p>
+<p>Hence, by the Weierstrass <span class="math notranslate nohighlight">\(M\)</span>-test, the series <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty f_n (x )\)</span> converges uniformly for <span class="math notranslate nohighlight">\(x \in [0,2\pi]\)</span>. The uniform limit of a series of continuous functions is continuous, so <span class="math notranslate nohighlight">\(f\)</span> is therefore continuous.</p>
+<p>\end{document}</p>
+</section>
+<section id="integration">
+<h2>1.5. Integration<a class="headerlink" href="#integration" title="Link to this heading">#</a></h2>
+<p>Let <span class="math notranslate nohighlight">\(f:[1,4]\to\R\)</span>; <span class="math notranslate nohighlight">\(f(x)=\frac{1}{x}\)</span>, and let <span class="math notranslate nohighlight">\(P=\{1,\frac{3}{2},2,4\}\)</span>.[label={(\roman*)}]1. Here is a sketch of the graph of <span class="math notranslate nohighlight">\(f\)</span>, the partition <span class="math notranslate nohighlight">\(P\)</span>, and the associated upper and lower Riemann sums.</p>
+<p>\iflatexml
+<img alt="" src="figs/int1i.png" />
+\else
+$<span class="math notranslate nohighlight">\(
+\begin{tikzpicture}
+\begin{axis}[width=.7*\textwidth, xlabel=\)</span>x<span class="math notranslate nohighlight">\(, ylabel=\)</span>y<span class="math notranslate nohighlight">\(, unit vector ratio*=.5 1 1, xmin=-.5, xmax=5, ymin=-.3, ymax=1.2, xtick={1,1.5,2,4},  xticklabels={\)</span>1<span class="math notranslate nohighlight">\(,\)</span>\frac{3}{2}<span class="math notranslate nohighlight">\(,\)</span>2<span class="math notranslate nohighlight">\(,\)</span>3<span class="math notranslate nohighlight">\(,\)</span>4<span class="math notranslate nohighlight">\(}, ytick={1,2/3,1/2,1/4}, yticklabels={\)</span>1<span class="math notranslate nohighlight">\(,\)</span>\frac{2}{3}<span class="math notranslate nohighlight">\(,\)</span>\frac{1}{2}<span class="math notranslate nohighlight">\(,\)</span>\frac{1}{4}$},</p>
+<p>axis lines=middle, tick align=outside,samples=1000,thick]</p>
+<p>\draw[red] (axis cs:1,0)–(axis cs:1,1)–(axis cs:3/2,1)–(axis cs:3/2,0);
+\draw[red] (axis cs:3/2,2/3)–(axis cs:2,2/3)–(axis cs:2,0);
+\draw[red] (axis cs:2,1/2)–(axis cs:4,1/2)–(axis cs:4,0);</p>
+<p>\draw[blue] (axis cs:1,0)–(axis cs:1,2/3)–(axis cs:3/2,2/3)–(axis cs:3/2,0);
+\draw[blue] (axis cs:3/2,1/2)–(axis cs:2,1/2)–(axis cs:2,0);
+\draw[blue] (axis cs:2,1/4)–(axis cs:4,1/4)–(axis cs:4,0);
+\addplot[domain=1:4,no marks] {1/x};
+\end{axis}
+\end{tikzpicture}
+$<span class="math notranslate nohighlight">\(
+\fi
+\)</span>y=\frac{1}{x}$, with upper and lower sums.</p>
+<p>We have <span class="math notranslate nohighlight">\(U(f,P) = \sum_{k=1}^4M_k(x_k-x_{k-1})\)</span>, where <span class="math notranslate nohighlight">\(x_0=1\)</span>, <span class="math notranslate nohighlight">\(x_1=\frac{3}{2}\)</span>, <span class="math notranslate nohighlight">\(x_2=2\)</span>, <span class="math notranslate nohighlight">\(x_3=4\)</span>, and</p>
+<div class="math notranslate nohighlight">
+\[
+M_1=\sup\left\{\frac{1}{x}:1\leq x\leq\frac{3}{2}\right\}=1, \hspace{1em} M_2=\sup\left\{\frac{1}{x}:\frac{3}{2}\leq x\leq 2\right\}=\frac{2}{3},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+M_3=\sup\left\{\frac{1}{x}:2\leq x\leq 4\right\}=\frac{1}{2}.
+\]</div>
+<p>Therefore,
+$$</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+U(f,P) &amp;= 1\cdot\left(\frac{3}{2}-1\right) + \frac{2}{3}\cdot\left(2-\frac{3}{2}\right) + \frac{1}{2}\cdot(4-2) \\
+&amp;= \frac{1}{2} + \frac{1}{3} + 1 = \frac{11}{6}.
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[
+Similarly, $L(f,P) = \sum_{k=1}^4m_k(x_k-x_{k-1})$, where\]</div>
+<p>m_1=\inf\left{\frac{1}{x}:1\leq x\leq\frac{3}{2}\right}=\frac{2}{3}, \hspace{1em} m_2=\inf\left{\frac{1}{x}:\frac{3}{2}\leq x\leq 2\right}=\frac{1}{2},
+$$</p>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+m_3=\inf\left\{\frac{1}{x}:2\leq x\leq 4\right\}=\frac{1}{4}.
+\]</div>
+<p>Hence
+$$</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+L(f,P) = \frac{2}{3}\cdot\left(\frac{3}{2}-1\right) + \frac{1}{2}\left(2-\frac{3}{2}\right) + \frac{1}{4}(4-2) \\
+&amp;= \frac{1}{3} + \frac{1}{4} + \frac{1}{2} = \frac{13}{12},
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[
+and so\]</div>
+<p>U(f,P)-L(f,P) = \frac{11}{6}-\frac{13}{12} = \frac{9}{12} = \frac{3}{4}.
+$<span class="math notranslate nohighlight">\(
+2. Adding the point \)</span>P$ has the following effect:</p>
+<p>\iflatexml
+<img alt="" src="figs/int1ii.png" />
+\else
+$<span class="math notranslate nohighlight">\(
+\begin{tikzpicture}
+\begin{axis}[width=.7*\textwidth, xlabel=\)</span>x<span class="math notranslate nohighlight">\(, ylabel=\)</span>y<span class="math notranslate nohighlight">\(, unit vector ratio*=.5 1 1, xmin=-.5, xmax=5, ymin=-.3, ymax=1.2, xtick={1,1.5,2,3,4}, xticklabels={\)</span>1<span class="math notranslate nohighlight">\(,\)</span>\frac{3}{2}<span class="math notranslate nohighlight">\(,\)</span>2<span class="math notranslate nohighlight">\(,\)</span>3<span class="math notranslate nohighlight">\(,\)</span>4<span class="math notranslate nohighlight">\(}, ytick={1,2/3,1/2,1/3,1/4}, yticklabels={\)</span>1<span class="math notranslate nohighlight">\(,\)</span>\frac{2}{3}<span class="math notranslate nohighlight">\(,\)</span>\frac{1}{2}<span class="math notranslate nohighlight">\(,\)</span>\frac{1}{3}\hspace{1em}<span class="math notranslate nohighlight">\(,\)</span>\frac{1}{4}$},</p>
+<p>axis lines=middle, tick align=outside,samples=1000,thick]
+\draw[thin] (axis cs:0,1/3)–(axis cs:-.4,1/3);</p>
+<p>\draw[red] (axis cs:1,0)–(axis cs:1,1)–(axis cs:3/2,1)–(axis cs:3/2,0);
+\draw[red] (axis cs:3/2,2/3)–(axis cs:2,2/3)–(axis cs:2,0);
+\draw[red] (axis cs:2,1/2)–(axis cs:3,1/2)–(axis cs:3,0);
+\draw[red] (axis cs:3,1/3)–(axis cs:4,1/3)–(axis cs:4,0);</p>
+<p>\draw[blue] (axis cs:1,0)–(axis cs:1,2/3)–(axis cs:3/2,2/3)–(axis cs:3/2,0);
+\draw[blue] (axis cs:3/2,1/2)–(axis cs:2,1/2)–(axis cs:2,0);
+\draw[blue] (axis cs:2,1/3)–(axis cs:3,1/3)–(axis cs:3,0);
+\draw[blue] (axis cs:3,1/4)–(axis cs:4,1/4)–(axis cs:4,0);
+\addplot[domain=1:4,no marks] {1/x};
+\end{axis}
+\end{tikzpicture}
+$<span class="math notranslate nohighlight">\(
+\fi
+Upper and lower sums with additional point \)</span>3$.</p>
+<p>We now have <span class="math notranslate nohighlight">\(x_0=1\)</span>, <span class="math notranslate nohighlight">\(x_1=\frac{3}{2}\)</span>, <span class="math notranslate nohighlight">\(x_2=2\)</span>, <span class="math notranslate nohighlight">\(x_3=3\)</span> and <span class="math notranslate nohighlight">\(x_4=4\)</span>. <span class="math notranslate nohighlight">\(M_1\)</span>, <span class="math notranslate nohighlight">\(M_2\)</span>, <span class="math notranslate nohighlight">\(m_1\)</span> and <span class="math notranslate nohighlight">\(m_2\)</span> are not affected by the additional point, while</p>
+<div class="math notranslate nohighlight">
+\[
+M_3 = \sup\left\{\frac{1}{x}:2\leq x\leq 3\right\}=\frac{1}{2},\hspace{1em} M_4 =\sup\left\{\frac{1}{x}:3\leq x\leq 4\right\}=\frac{1}{3},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+m_3 = \inf\left\{\frac{1}{x}:2\leq x\leq 3\right\}=\frac{1}{3}, \hspace{1em} \text{and} \hspace{1em} m_4 =\inf\left\{\frac{1}{x}:3\leq x\leq 4\right\}=\frac{1}{4}.
+\]</div>
+<p>Therefore</p>
+<div class="math notranslate nohighlight">
+\[
+U(f,P) = 1\left(\frac{1}{2}\right) + \frac{2}{3}\left(\frac{1}{2}\right) + \frac{1}{2}(1) + \frac{1}{3}(1) = \frac{1}{2}+\frac{1}{3}+\frac{1}{2}+\frac{1}{3} = \frac{5}{3},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+L(f,P) = \frac{2}{3}\left(\frac{1}{2}\right) + \frac{1}{2}\left(\frac{1}{2}\right) + \frac{1}{3}(1) + \frac{1}{4}(1) = \frac{1}{3}+\frac{1}{4}+\frac{1}{3}+\frac{1}{4} = \frac{7}{6},
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+U(f,P) - L(f,P) = \frac{5}{3}-\frac{7}{6} = \frac{1}{2}.
+\]</div>
+<p>So the size of <span class="math notranslate nohighlight">\(U(f,P)-L(f,P)\)</span> has decreased after adding the point <span class="math notranslate nohighlight">\(3\)</span> to <span class="math notranslate nohighlight">\(P\)</span>.
+3. Mimicking the proof of Theorem \iflatexml 5.2.5 \else <a class="reference internal" href="#thm:mono"><span class="xref myst">thm:mono</span></a> \fi, let <span class="math notranslate nohighlight">\(x_k=1+\frac{3}{n}k\)</span> for <span class="math notranslate nohighlight">\(k=0,\ldots,n\)</span>. Then, <span class="math notranslate nohighlight">\(P=\{x_0,\ldots,x_n\}\)</span> partitions <span class="math notranslate nohighlight">\([1,3]\)</span> uniformly into <span class="math notranslate nohighlight">\(n\)</span> intervals, each of width <span class="math notranslate nohighlight">\(\frac{3}{n}\)</span>. Since <span class="math notranslate nohighlight">\(\frac{1}{x}\)</span> is decreasing,</p>
+<div class="math notranslate nohighlight">
+\[
+M_k = \sup\left\{\frac{1}{x}:x\in[x_{k-1},x_k]\right\} =\frac{1}{x_{k-1}}
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+m_k = \inf\left\{\frac{1}{x}:x\in[x_{k-1},x_k]\right\} =\frac{1}{x_k}
+\]</div>
+<p>for each <span class="math notranslate nohighlight">\(k\)</span>. So,
+$$</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+U(f,P) - L(f,P) &amp;= \sum_{k=1}^n\left(\frac{1}{x_k} - \frac{1}{x_{k-1}}\right)\frac{3}{n} \\
+&amp;= \frac{3}{n}\left(\frac{1}{x_n}-\frac{1}{x_0}\right) = \frac{3}{n}\left(1-\frac{1}{4}\right) = \frac{9}{4n}.
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}
+We have been asked to find $P$ so that $U(f,P)-L(f,P)&lt;\frac{2}{5}$, so we choose $n$ so that $\frac{9}{4n}&lt;\frac{2}{5}$. That is, $n&gt;\frac{45}{8}$. In fact, $n=6$ will do.\\So $x_k=1+\frac{1}{2}k$ for $k=0,\ldots,6$, and $P=\left\{1,\frac{3}{2},2,\frac{5}{2},3,\frac{7}{2},4\right\}$.\\\iflatexml
+![](figs/int1iii.png)
+\else
+\end{aligned}\end{align} \]</div>
+<p>\begin{tikzpicture}
+\begin{axis}[width=.7*\textwidth, xlabel=<span class="math notranslate nohighlight">\(x\)</span>, ylabel=<span class="math notranslate nohighlight">\(y\)</span>, unit vector ratio*=1 1 1, xmin=-.5, xmax=5, ymin=-.5, ymax=1.5, xtick={1,1.5,2,2.5,3,3.5,4}, xticklabels={<span class="math notranslate nohighlight">\(1\)</span>,<span class="math notranslate nohighlight">\(\frac{3}{2}\)</span>,<span class="math notranslate nohighlight">\(2\)</span>,<span class="math notranslate nohighlight">\(\frac{5}{2}\)</span>,<span class="math notranslate nohighlight">\(3\)</span>,<span class="math notranslate nohighlight">\(\frac{7}{2}\)</span>,<span class="math notranslate nohighlight">\(4\)</span>}, ytick={0},</p>
+<p>axis lines=middle, tick align=outside,samples=1000,thick]</p>
+<p>\draw[red] (axis cs:1,0)–(axis cs:1,1)–(axis cs:3/2,1)–(axis cs:3/2,0);
+\draw[red] (axis cs:3/2,2/3)–(axis cs:2,2/3)–(axis cs:2,0);
+\draw[red] (axis cs:2,1/2)–(axis cs:5/2,1/2)–(axis cs:5/2,0);
+\draw[red] (axis cs:5/2,2/5)–(axis cs:3,2/5)–(axis cs:3,0);
+\draw[red] (axis cs:3,1/3)–(axis cs:7/2,1/3)–(axis cs:7/2,0);
+\draw[red] (axis cs:7/2,2/7)–(axis cs:4,2/7)–(axis cs:4,0);</p>
+<p>\draw[blue] (axis cs:1,0)–(axis cs:1,2/3)–(axis cs:3/2,2/3)–(axis cs:3/2,0);
+\draw[blue] (axis cs:3/2,1/2)–(axis cs:2,1/2)–(axis cs:2,0);
+\draw[blue] (axis cs:2,2/5)–(axis cs:5/2,2/5)–(axis cs:5/2,0);
+\draw[blue] (axis cs:5/2,1/3)–(axis cs:3,1/3)–(axis cs:3,0);
+\draw[blue] (axis cs:3,2/7)–(axis cs:7/2,2/7)–(axis cs:7/2,0);
+\draw[blue] (axis cs:7/2,1/4)–(axis cs:4,1/4)–(axis cs:4,0);
+\addplot[domain=1:4,no marks] {1/x};
+\end{axis}
+\end{tikzpicture}
+$<span class="math notranslate nohighlight">\(
+\fi
+A partition for which \)</span>U(f,P)-L(f,P)&lt;\frac{2}{5}<span class="math notranslate nohighlight">\(.
+\vspace{1em}4. Let \)</span>g:[0,1]\to\R<span class="math notranslate nohighlight">\(; \)</span>\ds g(x)=\left{\begin{array}{cc} 1 &amp; \text{for } 0\leq x&lt;1 \ 2 &amp;\text{for } x=1 \end{array}\right.<span class="math notranslate nohighlight">\(.
+[label={(\roman*)}]    1. Let \)</span>P={x_0,x_1,\ldots x_n}<span class="math notranslate nohighlight">\( be any partition \)</span>[0,1]<span class="math notranslate nohighlight">\(, with \)</span>0=x_0&lt;x_1&lt;\ldots&lt;x_n=1<span class="math notranslate nohighlight">\(. Then for \)</span>k=1,\ldots n<span class="math notranslate nohighlight">\(,
+\)</span><span class="math notranslate nohighlight">\(
+m_k=\inf\{g(x) : x\in[x_{k-1},x_k\} = 1.
+\)</span><span class="math notranslate nohighlight">\(
+Therefore
+\)</span><span class="math notranslate nohighlight">\(
+L(g,P) = \sum_{k=1}^n(x_k-x_{k-1}) = x_n-x_0 = 1.
+\)</span><span class="math notranslate nohighlight">\(
+    2. For \)</span>k\neq n<span class="math notranslate nohighlight">\(, \)</span>1\notin[x_{k-1},x_k]<span class="math notranslate nohighlight">\( and so
+\)</span><span class="math notranslate nohighlight">\(
+M_k=\sup\{g(x) : x\in[x_{k-1},x_k\} = 1.
+\)</span><span class="math notranslate nohighlight">\(
+On the other hand,
+\)</span><span class="math notranslate nohighlight">\(
+M_n=\sup\{g(x) : x\in[x_{n-1},1\} = 2.
+\)</span><span class="math notranslate nohighlight">\(
+Therefore
+\)</span><span class="math notranslate nohighlight">\(
+U(g,P) = (x_1-x_0) + (x_2-x_1) + \ldots (x_{n-1},x_{n-2}) + 2(x_n-x_{n-1}) = 2x_n-x_{n-1}-x_0 = 2-x_{n-1}.
+\)</span>$</p>
+<p>Let <span class="math notranslate nohighlight">\(x_k=\frac{k}{n}\)</span> for <span class="math notranslate nohighlight">\(k=0,\ldots,n\)</span>, where <span class="math notranslate nohighlight">\(n\in\N\)</span> is yet to be chosen. Then
+$<span class="math notranslate nohighlight">\(
+U(g,P) = 2-\frac{n-1}{n} = 1+\frac{1}{n}.
+\)</span><span class="math notranslate nohighlight">\(
+Taking \)</span>n=10<span class="math notranslate nohighlight">\( will give a partition \)</span>P<span class="math notranslate nohighlight">\( so that \)</span>U(g,P)=1+\frac{1}{10}<span class="math notranslate nohighlight">\(.
+    3. Now let \)</span>\varepsilon&gt;0<span class="math notranslate nohighlight">\(, and let \)</span>n<span class="math notranslate nohighlight">\( be any integer strictly greater than \)</span>\frac{1}{\varepsilon}<span class="math notranslate nohighlight">\(. The partition described in (ii) then satisfies
+\)</span><span class="math notranslate nohighlight">\(
+U(g,P) = 1+\frac{1}{n} &lt; 1+\varepsilon.
+\)</span><span class="math notranslate nohighlight">\(
+\vspace{1em}5. 
+[label={(\roman*)}]    1. By Proposition \iflatexml 5.3.1(ii) \else[propsint](#propsint)[abc](#abc)\fi,
+\)</span><span class="math notranslate nohighlight">\(
+\int_0^3 r(t)\, dt = \int_0^11dt+\int_1^2edt+\int_2^3e^4dt = 1+e+e^4,
+\)</span><span class="math notranslate nohighlight">\(
+and similarly
+\)</span><span class="math notranslate nohighlight">\(
+\int_0^3 s(t)\, dt = \int_0^1edt+\int_1^2e^4dt+\int_2^3e^9dt = e+e^4+e^9.
+\)</span><span class="math notranslate nohighlight">\(
+    2. Note that \)</span>r(t)\leq f(t)\leq s(t)<span class="math notranslate nohighlight">\( for all \)</span>t<span class="math notranslate nohighlight">\(, and so by  \iflatexml 5.3.1(i) \else[propsint](#propsint)[leq](#leq)\fi,
+\)</span><span class="math notranslate nohighlight">\(
+1+e+e^4  = \int_0^3 r(t)\, dt \leq \int_0^3 f(t)\, dt \leq \int_0^3 s(t)\, dt = e+e^4+e^9.
+\)</span><span class="math notranslate nohighlight">\(
+\vspace{1em}6. Let \)</span>f,g:[a,b]\to\R<span class="math notranslate nohighlight">\( be integrable functions.
+[label={(\roman*)}]7. For any subset \)</span>A\subset[a,b]$,</p>
+<div class="math notranslate nohighlight">
+\[
+\sup\{f(x)+g(x):x\in A\} \leq \sup\{f(x):x\in A\} + \sup\{g(x):x\in A\},
+\]</div>
+<p>and similarly</p>
+<div class="math notranslate nohighlight">
+\[
+\inf\{f(x)+g(x):x\in A\} \geq \inf\{f(x):x\in A\} + \inf\{g(x):x\in A\}.
+\]</div>
+<p>It is then immediate from the definition of the upper and lower sums that</p>
+<div class="math notranslate nohighlight">
+\[
+U(f+g,P) \leq U(f,P)+U(g,P)
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+L(f+g,P) \geq L(f,P)+L(g,P).
+\]</div>
+<p>For the example where this is strict, a good strategy is to look for functions with features that ``cancel out’’ in some sense. For example, you could take</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+f(x) = \left\{\begin{array}{cc} 1 &amp; \text{ if } 0\leq x\leq 1 \\  -1 &amp; \text{ if } 1\leq x\leq 2\end{array}\right.
+\end{split}\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+g(x) = \left\{\begin{array}{cc} -1 &amp; \text{ if } 0\leq x\leq 1 \\  1 &amp; \text{ if } 1\leq x\leq 2.\end{array}\right.
+\end{split}\]</div>
+<p>Then <span class="math notranslate nohighlight">\(f+g\)</span> is the zero function, so <span class="math notranslate nohighlight">\(L(f+g,P)=U(f+g,P)=0\)</span>. On the other hand</p>
+<div class="math notranslate nohighlight">
+\[
+U(f,P)+U(g,P) = 1+1 = 2,
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+L(f,P)+L(g,P) = -1 -1 =-2.
+\]</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Let $P_1$ and $P_2$ be partitions of $[a,b]$.
+</pre></div>
+</div>
+<p>Then
+$$</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+U(f+g) &amp;\leq U(f+g,P_1\cup P_2) \\
+&amp;\leq U(f,P_1\cup P_2) + U(g,P_1\cup P_2) \\
+&amp;\leq U(f,P_1) + U(g,P_2),
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}
+since $P_1\cup P_2$ is a refinement of both partitions $P_1$ and $P_2$.\\The proof of the lower sum statement is similar.
+    2. Taking $\inf$ over $P_1$,
+\end{aligned}\end{align} \]</div>
+<p>U(f+g) \leq U(f) + U(g,P_2),
+$<span class="math notranslate nohighlight">\(
+and then taking \)</span>\inf<span class="math notranslate nohighlight">\( over \)</span>P_2<span class="math notranslate nohighlight">\(,
+\)</span><span class="math notranslate nohighlight">\(
+U(f+g) \leq U(f)+U(g).
+\)</span><span class="math notranslate nohighlight">\(
+Since \)</span>f<span class="math notranslate nohighlight">\( and \)</span>g<span class="math notranslate nohighlight">\( are integrable, this shows that
+\)</span><span class="math notranslate nohighlight">\(
+U(f+g) \leq \int_a^bf(x)dx + \int_a^bg(x)dx.
+\)</span><span class="math notranslate nohighlight">\(
+A similar argument shows that
+\)</span><span class="math notranslate nohighlight">\(
+L(f+g) \geq \int_a^bf(x)dx + \int_a^bg(x)dx.
+\)</span><span class="math notranslate nohighlight">\(
+Hence
+\)</span><span class="math notranslate nohighlight">\(
+\int_a^bf(x)dx + \int_a^bg(x)dx \leq L(f+g) \leq U(f+g) \leq \int_a^bf(x)dx + \int_a^bg(x)dx.
+\)</span><span class="math notranslate nohighlight">\(
+The only option is
+\)</span><span class="math notranslate nohighlight">\(
+L(f+g)=U(f+g)=\int_a^bf(x)dx + \int_a^bg(x)dx.
+\)</span><span class="math notranslate nohighlight">\(
+That is, \)</span>f+g<span class="math notranslate nohighlight">\( is integrable and
+\)</span><span class="math notranslate nohighlight">\(
+\int_a^b(f(t)+g(t))dt = \int_a^bf(x)dx + \int_a^bg(x)dx.
+\)</span><span class="math notranslate nohighlight">\(
+\vspace{1em}8. Let \)</span>P<span class="math notranslate nohighlight">\( be the partition \)</span>a=x_0&lt;x_1&lt;\ldots&lt;x_n=b<span class="math notranslate nohighlight">\(. If \)</span>k\geq 0<span class="math notranslate nohighlight">\(, then
+\)</span><span class="math notranslate nohighlight">\(
+\sup_{x\in[x_{k-1},x_k]}kf(x) = k\sup_{x\in[x_{k-1},x_k]}f(x)
+\)</span><span class="math notranslate nohighlight">\(
+and
+\)</span><span class="math notranslate nohighlight">\(
+\inf_{x\in[x_{k-1},x_k]}kf(x) = k\inf_{x\in[x_{k-1},x_k]}f(x).
+\)</span><span class="math notranslate nohighlight">\(
+Therefore \)</span>U(kf,P)=kU(f,P)<span class="math notranslate nohighlight">\( and \)</span>L(kf,P)=kL(f,P)<span class="math notranslate nohighlight">\(, and taking infima/suprema, \)</span>U(kf)=kU(f)<span class="math notranslate nohighlight">\( and \)</span>L(kf)=kL(f)$.</p>
+<p>Since <span class="math notranslate nohighlight">\(f\)</span> is integrable, <span class="math notranslate nohighlight">\(U(f)=L(f)=\int_a^bf(x)dx\)</span>, and hence
+$<span class="math notranslate nohighlight">\(
+U(kf)=kU(f)=kL(f)=L(kf)=k\int_a^bf(x)dx.
+\)</span><span class="math notranslate nohighlight">\(
+It follows that \)</span>kf<span class="math notranslate nohighlight">\( is integrable, with \)</span>\ds\int_a^bkf(x)dx=k\int_a^bf(x)dx$.</p>
+<p>To extend this result to include negative <span class="math notranslate nohighlight">\(k\)</span>, it is sufficient to prove the <span class="math notranslate nohighlight">\(k=-1\)</span> case. Note that
+$<span class="math notranslate nohighlight">\(
+\sup_{x\in[x_{k-1},x_k]}\big(-f(x)\big) = -\inf_{x\in[x_{k-1},x_k]}f(x),
+\)</span><span class="math notranslate nohighlight">\(
+and
+\)</span><span class="math notranslate nohighlight">\(
+\inf_{x\in[x_{k-1},x_k]}\big(-f(x)\big) = -\sup_{x\in[x_{k-1},x_k]}f(x).
+\)</span><span class="math notranslate nohighlight">\(
+Therefore, \)</span>U(-f,P)=-L(f,P)<span class="math notranslate nohighlight">\( and \)</span>L(-f,P)=-U(f,P)<span class="math notranslate nohighlight">\(, and so
+\)</span>$</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+U(-f) &amp;= \inf\{U(-f,P):\text{ partitions } P \text{ of } [a,b]\} \\
+&amp;= \inf\{-L(f,P):\text{ partitions } P \text{ of } [a,b]\} \\
+&amp;= -\sup\{L(f,P):\text{ partitions } P \text{ of } [a,b]\} = -L(f).
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[
+Similarly,
+\]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+L(-f) &amp;= \sup\{L(-f,P):\text{ partitions } P \text{ of } [a,b]\} \\
+&amp;= \sup\{-U(f,P):\text{ partitions } P \text{ of } [a,b]\} \\
+&amp;= -\inf\{U(f,P):\text{ partitions } P \text{ of } [a,b]\} = -U(f).
+\end{align*}\]</div>
+<div class="math notranslate nohighlight">
+\[
+Therefore $U(-f) = -L(f) = -U(f) = L(-f)$, so $-f$ is integrable, and
+\]</div>
+<p>\int_a^b(-f(x))dx = -\int_a^b f(x)dx.
+$$</p>
+<p>\vspace{1em}
+9. We have 	
+$<span class="math notranslate nohighlight">\(
+M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\},
+\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}.
+\)</span><span class="math notranslate nohighlight">\(
+[label={(\roman*)}]    1. If \)</span>m\geq 0<span class="math notranslate nohighlight">\(, then \)</span>f<span class="math notranslate nohighlight">\( is a non-negative function, so \)</span>M=M’<span class="math notranslate nohighlight">\(, \)</span>m=m’<span class="math notranslate nohighlight">\(, and \)</span>M-m=M’-m’$.</p>
+<p>If <span class="math notranslate nohighlight">\(m\leq M\leq 0\)</span> then <span class="math notranslate nohighlight">\(M'=-m\)</span>, <span class="math notranslate nohighlight">\(m'=-M\)</span>, and so again <span class="math notranslate nohighlight">\(M'-m'=M-m\)</span>.</p>
+<p>If <span class="math notranslate nohighlight">\(m&lt;0&lt;M\)</span>, then <span class="math notranslate nohighlight">\(M'=\max\{M,-m\}\leq M+(-m)\)</span>, since both <span class="math notranslate nohighlight">\(M\)</span> and <span class="math notranslate nohighlight">\(-m\)</span> are positive numbers. Then,
+$<span class="math notranslate nohighlight">\(
+M'-m' \leq M' \leq M-m,
+\)</span><span class="math notranslate nohighlight">\(
+since \)</span>m’\geq 0<span class="math notranslate nohighlight">\(.
+    2. Let \)</span>f:[a,b]\to\R<span class="math notranslate nohighlight">\( be integrable, and let \)</span>P<span class="math notranslate nohighlight">\( be the partition \)</span>a=x_0&lt;x_1&lt;\ldots&lt;x_n=b<span class="math notranslate nohighlight">\(. for \)</span>k=1,\ldots,n<span class="math notranslate nohighlight">\(. let
+\)</span><span class="math notranslate nohighlight">\(
+M_k=\sup_{x\in[x_{k-1},x_k]}f(x), \; m_k=\inf{x\in[x_{k-1},x_k]}f(x),
+\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+M_k'=\sup_{x\in[x_{k-1},x_k]}|f(x)|, \; \text{ and } \; m_k'=\inf{x\in[x_{k-1},x_k]}|f(x)|.
+\)</span><span class="math notranslate nohighlight">\(
+Then by part (i), \)</span>M_k-m_k\geq M_k’-m_k’<span class="math notranslate nohighlight">\( for each \)</span>k$.</p>
+<p>Therefore,
+$<span class="math notranslate nohighlight">\(
+U(|f|,P) - L(|f|,P) = \sum_{k=1}^n(M_k'-m_k')(x_k-x_{k-1}) \leq \sum_{k=1}^n(M_k-m_k)(x_k-x_{k-1}) = U(f,P)-L(f,P).
+\)</span><span class="math notranslate nohighlight">\(
+    3. Since \)</span>f<span class="math notranslate nohighlight">\( is integrable, for all \)</span>\varepsilon&gt;0<span class="math notranslate nohighlight">\(, we can choose the a partition \)</span>P<span class="math notranslate nohighlight">\( so that \)</span>U(f,P)-L(f,P)&lt;\varepsilon<span class="math notranslate nohighlight">\(. Using the result of part (ii). it follows that \)</span>U(|f|,P)-L(|f|,P)&lt;\varepsilon<span class="math notranslate nohighlight">\( for this partition, and so \)</span>|f|$ is integrable.</p>
+<p>Since <span class="math notranslate nohighlight">\(-|f(x)|\leq f(x)\leq |f(x)|\)</span> for all <span class="math notranslate nohighlight">\(x\in[a,b]\)</span>, Proposition <a class="reference internal" href="#propsint"><span class="xref myst">propsint</span></a>(<a class="reference internal" href="#leq"><span class="xref myst">leq</span></a>) and (<a class="reference internal" href="#linear"><span class="xref myst">linear</span></a> imply that
+$<span class="math notranslate nohighlight">\(
+-\int_a^b|f(x)|dx \leq \int_a^b f(x)dx \leq \int_a^b|f(x)|dx.
+\)</span><span class="math notranslate nohighlight">\(
+That is,
+\)</span><span class="math notranslate nohighlight">\(
+\left|\int_a^b f(x)dx\right| \leq \int_a^b|f(x)|dx.
+\)</span><span class="math notranslate nohighlight">\(
+\vspace{1em}10. We have
+\)</span><span class="math notranslate nohighlight">\(
+\int_{a(x)}^{b(x)} f(t)dt =  \int_0^{b(x)} f(t)dt - \int_0^{a(x)} f(t)\ dt.
+\)</span><span class="math notranslate nohighlight">\(
+Write \)</span>F(x)=\int_0^x f(t)dt.<span class="math notranslate nohighlight">\( Then by the fundamental theorem of calculus, \$ F'(t)=f(t)\$. Then
+\)</span><span class="math notranslate nohighlight">\(
+\int_0^{b(x)} f(t)dt=F(b(x)),
+\)</span><span class="math notranslate nohighlight">\(
+and using the chain rule
+\)</span><span class="math notranslate nohighlight">\(
+\frac{d}{dx}\int_0^{b(x)} f(t)dt =F'(b(t))b'(t)=f(b(t))b'(t).
+\)</span>$</p>
+<p>Similarly,
+$<span class="math notranslate nohighlight">\(
+\frac{d}{dx}\int_0^{a(x)} f(y)dt =f(a(x))a'(x).
+\)</span>$</p>
+<p>Subtracting these
+$<span class="math notranslate nohighlight">\(
+\frac{d}{dx}\int_{a(x)}^{b(x)} f(t)dt =f(b(x))b'(x) - f(a(x))a'(x),
+\)</span>$
+as required.</p>
+<p>\vspace{1em}
+11.
+[label={(\roman*)}]    1. It follows immediately from the fundamental theorem of calculus that <span class="math notranslate nohighlight">\(l\)</span> is differentiable, with <span class="math notranslate nohighlight">\(l'(x)=\frac{1}{x}\)</span>.
+2. By Proposition \iflatexml 5.3.1(ii) \else <a class="reference internal" href="#propsint"><span class="xref myst">propsint</span></a>(ii) \fi in the lecture notes,
+$<span class="math notranslate nohighlight">\(
+l(xy) =\int_1^{xy}\frac{1}{t}\, dt= \int_1^x \frac{1}{t}\, dt + \int_x^{xy} \frac{1}{t}\, dt = l(y) + \int_x^{xy}\frac{1}{t}dt.
+\)</span><span class="math notranslate nohighlight">\(
+In the second integral, set \)</span>a(x)=xy<span class="math notranslate nohighlight">\(, \)</span>b(x)=x<span class="math notranslate nohighlight">\( and use Question [q:116](#q:116). We have \)</span>a’(x)=y<span class="math notranslate nohighlight">\( and \)</span>b’(x)=1<span class="math notranslate nohighlight">\(, so
+\)</span><span class="math notranslate nohighlight">\(
+\frac{d}{dx}\int_x^{xy} \frac{1}{t}dt = \frac{1}{b(x)}b'(x) - \frac{1}{a(x)}a'(x) = \frac{1}{x} - \frac{y}{xy} =0.
+\)</span><span class="math notranslate nohighlight">\(
+Therefore \)</span>\int_x^{xy}\frac{1}{t}dt<span class="math notranslate nohighlight">\( is constant as a function of \)</span>x<span class="math notranslate nohighlight">\(. In particular, it coincides with its value when \)</span>x=1<span class="math notranslate nohighlight">\(:
+\)</span><span class="math notranslate nohighlight">\(
+\int_x^{xy}\frac{1}{t}dt = \int_1^{y}\frac{1}{t}dt = l(y),
+\)</span><span class="math notranslate nohighlight">\(
+and \)</span>l(xy)=l(x)+l(y)$ follows.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>3. By the above $l\left(\frac{x}{y}\right) = l(x) + l\left(\frac{1}{y}\right)$. So it suffices to check that $l\left(\frac{1}{y}\right)=-l(y)$. We have
+</pre></div>
+</div>
+<p>l\left(\frac{1}{y}\right) = \int_1^{\frac{1}{y}} \frac{1}{t}, dt.
+$$</p>
+<p>L\left(\frac{1}{y}\right) = \int_y^1 \frac{y}{u}\ \frac{1}{y}\ du = - \int_1^y \frac{1}{u}\ du = - L(y),
+$$</p>
+<p>[label={(\roman*)}]</p>
+<p>f(x^{k+1}) = f(x^k \cdot x) = f(x^k) +f(x) = kf(x)+f(x) = (k+1)f(x) .
+$$</p>
+<p>f\left(\frac{1}{x}\right) +f(x) = f\left(\frac{x}{x}\right) =f(1) =0
+$$</p>
+<p>f(x^{-n}) = f(\frac{1}{x^n} ) = -f(x^n) = -nf(x) .
+$$</p>
+<p>bf\left(x^{\frac{a}{b}}\right) = f\left(\left(x^{\frac{a}{b}}\right)^b\right) = f\left(x^a\right) = af(x)
+$$</p>
+<p>f(x^a) = \lim_{n\rightarrow \infty} f(x^{a_n}) = \lim_{n\rightarrow \infty} a_n f(x) = af(x) .
+$$</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>2. Let $x&gt;0$. Observe
+</pre></div>
+</div>
+<p>f(x) = f(e^{\ln x})) = f(e)\ln x
+$$</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>3. By part (ii), it suffices to prove $L(e) =1$. We have
+</pre></div>
+</div>
+<p>L(e) = \int_1^e \frac{1}{t}, dt.
+$$</p>
+<p>L(e) = \int_0^1 \frac{1}{e^u} e^u\ du = \int_0^1 du = 1
+$$</p>
+<p>\vspace{1em}13. Define <span class="math notranslate nohighlight">\(G\colon [a,b]\rightarrow \R\)</span> by
+$<span class="math notranslate nohighlight">\(
+G(x) = \int_a^x f(t)\, dt
+\)</span>$</p>
+<p>Then <span class="math notranslate nohighlight">\(G\)</span> is a continuous function. This was mentioned in the lectures. To see why, let <span class="math notranslate nohighlight">\(h&gt;0\)</span>. Since the function <span class="math notranslate nohighlight">\(f\)</span> is Riemann integrable, it is bounded, so we have <span class="math notranslate nohighlight">\(M\in \R\)</span> such that <span class="math notranslate nohighlight">\(|f(t)|\leq M\)</span> for all <span class="math notranslate nohighlight">\(t\in [a,b]\)</span>. Then
+$<span class="math notranslate nohighlight">\(
+|G(x+h) - G(x) | =\left| \int_x^{x+h} f(t)\, dt \right| \leq \int_x^{x+h} |f(t)|\, dt \leq Mh.
+\)</span>$</p>
+<p>Similarly <span class="math notranslate nohighlight">\(|G(x-h) - G(x) | \leq Mh\)</span>.</p>
+<p>So <span class="math notranslate nohighlight">\(G(x+h)\rightarrow G(x)\)</span> as <span class="math notranslate nohighlight">\(h\rightarrow 0\)</span>, and <span class="math notranslate nohighlight">\(G\)</span> is continuous.</p>
+<p>Thus we can define a continuous function <span class="math notranslate nohighlight">\(F\colon [a,b]\rightarrow \R\)</span> by
+$<span class="math notranslate nohighlight">\(
+F(x) = \int_a^x f(t)\, dt - \int_x^b f(t)\, dt.
+\)</span>$</p>
+<p>Observe that
+$<span class="math notranslate nohighlight">\(
+F(a) = -\int_a^b f(t)\, dt,  \qquad F(b) = \int_a^b f(t)\, dt=-F(a).
+\)</span>$</p>
+<p>If <span class="math notranslate nohighlight">\(\int_a^b f(t)\, dt =0\)</span>, then we can take <span class="math notranslate nohighlight">\(x=a\)</span> and we have the required result. Otherwise, either <span class="math notranslate nohighlight">\(F(a)&lt;0\)</span> and <span class="math notranslate nohighlight">\(F(b)&gt;0\)</span> or <span class="math notranslate nohighlight">\(F(a)&gt;0\)</span> and <span class="math notranslate nohighlight">\(F(b)&lt;0\)</span>.</p>
+<p>Either way, by the intermediate value theorem, we have <span class="math notranslate nohighlight">\(x\in [a,b]\)</span> such that <span class="math notranslate nohighlight">\(F(x)=0\)</span>, that is to say
+$<span class="math notranslate nohighlight">\(
+\int_a^x f(t)\, dt = \int_x^b f(t)\, dt.
+\)</span>$</p>
+<p>\vspace{1em}
+14.
+[label={(\roman*)}]    1. Consider the step functions <span class="math notranslate nohighlight">\(m\mathbf{1}_{[a,b]}\)</span> and <span class="math notranslate nohighlight">\(M\mathbf{1}_{[a,b]}\)</span> with
+<span class="math notranslate nohighlight">\(m\mathbf{1}_{[a,b]}(x)\leq f(x)\leq M\mathbf{1}_{[a,b]}(x)\)</span> for all <span class="math notranslate nohighlight">\(x\in[a,b]\)</span>. Thus we have</p>
+<div class="math notranslate nohighlight">
+\[
+m(b-a)=\int_a^b m\mathbf{1}_{[a,b]}(x)\, dx \leq \int_a^b f(x)\, dx \leq \int_a^b M\mathbf{1}_{[a,b]}(x)\, dx= M(b-a) .
+\]</div>
+<p>Let <span class="math notranslate nohighlight">\(\mu = \frac{1}{b-a} \int_a^b f(x)\, dx\)</span>.
+Then <span class="math notranslate nohighlight">\(\int_a^b f(x)\, dx=(b-a)\mu\)</span> and <span class="math notranslate nohighlight">\(m\leq \mu\leq M\)</span>, so <span class="math notranslate nohighlight">\(\mu \in [m,M]\)</span>.
+2. Let <span class="math notranslate nohighlight">\(m = \inf \{ f(x) : x\in [a,b] \}\)</span> and <span class="math notranslate nohighlight">\(M = \sup \{ f(x) : x\in [a,b] \}\)</span>. Then by part (i) we have <span class="math notranslate nohighlight">\(\mu \in [m,M]\)</span> where
+$<span class="math notranslate nohighlight">\(
+\int_a^b f(x)\, dx =(b-a)\mu.
+\)</span>$</p>
+<p>But as <span class="math notranslate nohighlight">\(f\)</span> is a continuous function on a closed bounded interval, <span class="math notranslate nohighlight">\(m\)</span> is the minimum value of <span class="math notranslate nohighlight">\(f\)</span>, and <span class="math notranslate nohighlight">\(M\)</span> is the maximum value. As
+<span class="math notranslate nohighlight">\(\mu\in [m,M]\)</span> and <span class="math notranslate nohighlight">\(f\)</span> is continuous, by the intermediate value theorem there is some <span class="math notranslate nohighlight">\(\xi \in [a,b]\)</span> such that <span class="math notranslate nohighlight">\(f(\xi ) = \mu\)</span>. Hence
+$<span class="math notranslate nohighlight">\(
+\int_a^b f(x)\, dx =(b-a)f(\xi ).
+\)</span><span class="math notranslate nohighlight">\(
+\vspace{1em}15. Let  \)</span>m = \inf { f(x) : x\in [a,b] }<span class="math notranslate nohighlight">\( and \)</span>M = \sup { f(x) : x\in [a,b] }<span class="math notranslate nohighlight">\(. Then \)</span>m\leq f(x)\leq M<span class="math notranslate nohighlight">\( for all \)</span>x\in [a,b]<span class="math notranslate nohighlight">\(. As \)</span>g(x)\geq 0<span class="math notranslate nohighlight">\(, we have
+\)</span><span class="math notranslate nohighlight">\(
+mg(x)\leq f(x)g(x)\leq Mg(x)
+\)</span><span class="math notranslate nohighlight">\(
+for all \)</span>x\in [a,b]$, and so</p>
+<div class="math notranslate nohighlight">
+\[
+m \int_a^b g(x)\, dx \leq \int_a^b f(x)g(x)\, dx \leq M\int_a^b g(x)\, dx.
+\]</div>
+<p>Let
+$<span class="math notranslate nohighlight">\(
+I= \int_a^b g(x)\, dx.
+\)</span>$</p>
+<p>If <span class="math notranslate nohighlight">\(I=0\)</span>, then the above tells us that
+$<span class="math notranslate nohighlight">\(
+\int_a^b f(x)g(x)\, dx =0
+\)</span><span class="math notranslate nohighlight">\(
+and any \)</span>\xi \in [a,b]<span class="math notranslate nohighlight">\( satisfies
+\)</span><span class="math notranslate nohighlight">\(
+\int_a^b f(x)g(x)\, dx = f(\xi ) \int_a^b g(x)\, dx .
+\)</span>$</p>
+<p>As <span class="math notranslate nohighlight">\(g(x)\geq 0\)</span>, we need to prove the result when <span class="math notranslate nohighlight">\(I&gt;0\)</span>. Then
+$<span class="math notranslate nohighlight">\(
+m \leq \frac{1}{I} \int_a^b f(x)g(x)\, dx \leq M.
+\)</span>$</p>
+<p>By the intermediate value theorem, as in the solution to Q121(ii), we have <span class="math notranslate nohighlight">\(\xi \in [m,M]\)</span> such that
+$<span class="math notranslate nohighlight">\(
+f(\xi ) = \frac{1}{I}  \int_a^b f(x)g(x)\, dx
+\)</span><span class="math notranslate nohighlight">\(
+or in other words
+\)</span><span class="math notranslate nohighlight">\(
+\int_a^b f(x)g(x)\, dx = f(\xi ) \int_a^b g(x)\, dx .
+\)</span>$</p>
+<p>We do need the assumption <span class="math notranslate nohighlight">\(g(x)\geq 0\)</span>. To see this, consider the function <span class="math notranslate nohighlight">\(g(x) = x\)</span> for <span class="math notranslate nohighlight">\(x\in [-1,1]\)</span>. Then
+$<span class="math notranslate nohighlight">\(
+\int_{-1}^1 g(x)\, dx =0,
+\)</span><span class="math notranslate nohighlight">\(
+so the result would say that for any continuous function \)</span>f\colon [-1,1]\rightarrow \R<span class="math notranslate nohighlight">\( we have
+\)</span><span class="math notranslate nohighlight">\(
+\int_{-1}^1 xf(x)\, dx =0.
+\)</span>$</p>
+<p>But this is clearly not the case, taking for example <span class="math notranslate nohighlight">\(f(x)=x\)</span>.</p>
+<p>\end{document}</p>
+</section>
+<section id="question-162">
+<h2>Question 162<a class="headerlink" href="#question-162" title="Link to this heading">#</a></h2>
+<p>[label={(\roman*)}]1. Let <span class="math notranslate nohighlight">\(0&lt;t&lt;1\)</span>, so
+$<span class="math notranslate nohighlight">\(
+f_x(t) = \frac{t^x-1}{\ln t}
+\)</span>$</p>
+<p>We have <span class="math notranslate nohighlight">\(t^x -1 \rightarrow -1 \neq 0\)</span> as <span class="math notranslate nohighlight">\(t\rightarrow 0\)</span>, and <span class="math notranslate nohighlight">\(\ln t\rightarrow -\infty\)</span> as <span class="math notranslate nohighlight">\(t\rightarrow 0\)</span>. So clearly
+$<span class="math notranslate nohighlight">\(
+\frac{t^x-1}{\ln t} \rightarrow 0 =f_x(0)
+\)</span><span class="math notranslate nohighlight">\(
+as \)</span>t\rightarrow 0<span class="math notranslate nohighlight">\(, and \)</span>f_x<span class="math notranslate nohighlight">\( is continuous at \)</span>0$.</p>
+<p>On the other hand,
+$<span class="math notranslate nohighlight">\(
+t^x -1 \rightarrow 1-1=0 \qquad \ln t\rightarrow 0
+\)</span><span class="math notranslate nohighlight">\(
+as \)</span>t\rightarrow 1<span class="math notranslate nohighlight">\(, so by L'Hopital's rule, we can differentiate the top and bottom:
+\)</span><span class="math notranslate nohighlight">\(
+\lim_{t\rightarrow 1} \frac{t^x -1}{\ln t} = \lim_{t\rightarrow 1} \frac{xt^{x-1}}{\frac{1}{t}} = x = f_x(1)
+\)</span><span class="math notranslate nohighlight">\(
+so  \)</span>f_x<span class="math notranslate nohighlight">\( is continuous at \)</span>1<span class="math notranslate nohighlight">\(.
+2. We say the sequence \)</span>(f_n)<span class="math notranslate nohighlight">\( {\em converges uniformly} to a function \)</span>f\colon [0,1]\rightarrow \R<span class="math notranslate nohighlight">\( when for all \)</span>\varepsilon &gt;0<span class="math notranslate nohighlight">\(, we have \)</span>N\in \N<span class="math notranslate nohighlight">\( such that \)</span>|f_n (t) -f(t)|&lt;\varepsilon<span class="math notranslate nohighlight">\( for all \)</span>n\geq N<span class="math notranslate nohighlight">\( and \)</span>t\in [0,1]<span class="math notranslate nohighlight">\(.
+3. Since we can assume the function \)</span>f_x<span class="math notranslate nohighlight">\( is increasing, we have that
+\)</span><span class="math notranslate nohighlight">\(
+|f_x(t)| \leq |f_x(1)| = x
+\)</span><span class="math notranslate nohighlight">\(
+for all \)</span>t\in [0,1]$.</p>
+<p>Let <span class="math notranslate nohighlight">\((x_n)\)</span> be a sequence of positive real numbers with limit <span class="math notranslate nohighlight">\(0\)</span>. Then <span class="math notranslate nohighlight">\(|f_{x_n}(t)| \leq x_n\)</span> for all <span class="math notranslate nohighlight">\(t\)</span>, and <span class="math notranslate nohighlight">\(x_n\rightarrow 0\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span>. Therefore <span class="math notranslate nohighlight">\((f_{x_n})\)</span> converges uniformly to <span class="math notranslate nohighlight">\(0\)</span>.</p>
+<p>The result now follows by the uniform convergence theorem for integrals.
+4. It suffices that <span class="math notranslate nohighlight">\(h\)</span> and <span class="math notranslate nohighlight">\(\frac{\partial h}{\partial x}\)</span> are continuous on the domain <span class="math notranslate nohighlight">\((0,\infty )\times[0,1 ]\)</span>.
+5. Let
+$<span class="math notranslate nohighlight">\(
+I = \int_0^1 \frac{t^x-1}{\ln t} \ dt = \int_0^1 \frac{e^{x\ln t}-1}{\ln t} \ dt
+\)</span>$</p>
+<p>Differentiating under the integral sign, as above
+$<span class="math notranslate nohighlight">\(
+\frac{dI}{dx} = \int_0^1 \frac{e^{x\ln t} \ln t}{\ln t} \ dt = \int_0^1 e^{x\ln t}\ dt = \int_0^1 t^x\ dx = \left[ \frac{1}{x+1}t^{x+1} \right]_{t=0}^{t=1} = \frac{1}{x+1}
+\)</span>$</p>
+<p>So, integrating the right hand side
+$<span class="math notranslate nohighlight">\(
+I = \ln (x+1) +C
+\)</span><span class="math notranslate nohighlight">\(
+where \)</span>C$ is constant.</p>
+<p>By the above, if we let <span class="math notranslate nohighlight">\(x\rightarrow 0\)</span>, the right-hand side converges to <span class="math notranslate nohighlight">\(C\)</span>, and the left-hand side converges to <span class="math notranslate nohighlight">\(0\)</span>. Therefore <span class="math notranslate nohighlight">\(C=0\)</span>, and
+$<span class="math notranslate nohighlight">\(
+I = \ln (x+1)
+\)</span>$
+as required.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminary-problems">Preliminary problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limits-of-functions">1.1. Limits of functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuity">1.2. Continuity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differentiation">1.3. Differentiation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sequences-and-series-of-functions">1.4. Sequences and series of functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration">1.5. Integration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#question-162">Question 162</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Rosie Shewell Brockway
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
