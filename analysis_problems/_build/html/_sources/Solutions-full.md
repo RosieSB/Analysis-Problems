@@ -1,7 +1,7 @@
 (sol)=
 # Solutions
 
-## Preliminary problems
+## 1. Preliminary problems
 
 [P1.](P1)
 The correct statements are (ii) and (v).
@@ -10,6 +10,7 @@ In statement (iv), the quantifiers $\forall$ and $\exists$ are the wrong way rou
 
 Bonus exercise: prove that (iv) holds if and only if $(x_n)$ is the constant sequence $x_n=l$ for all $n\in\mathbb{N}$.
 
+---
 
 [P2.](P2) (Homework 1 question)
 
@@ -29,6 +30,9 @@ $$
 
 Let $N$ be any integer greater than $\frac{2+3\varepsilon}{9\varepsilon}$. Then $\left|x_n-\frac{2}{3}\right|<\varepsilon$ for all $n\geq N$, and we have proven that $x_n\rightarrow\frac{2}{3}$ as $n\rightarrow\infty$ using the definition.
 
+
+---
+
 [P3.](P3) (Homework 1 question)
 
 The Bolzano--Weierstrass theorem states that every bounded sequence has a convergent subsequence. Its proof combines the following two results:
@@ -39,6 +43,9 @@ The Bolzano--Weierstrass theorem states that every bounded sequence has a conver
 
 **Proof of Bolzano--Weierstrass:** <br>
 If $(x_n)$ is a bounded sequence, then it has a monotone subsequence, $(x_{n_k})$, by Theorem 3.13. This subsequence must also be bounded since $(x_n)$ is bounded, and hence it converges by the monotone convergence theorem.
+
+
+---
 
 [P4.](P4)(i) Let $a, b \geq 0$. Then,
 $$
@@ -114,6 +121,9 @@ $$
 
 Thus $\displaystyle\lim_{n\rightarrow\infty}\sqrt{|a_n|} = \sqrt{|l|}$.
 
+
+---
+
 [P5.](P5) When it exists, the supremum of a set $A\subseteq\mathbb{R}$ is defined to be the unique number $\alpha\in\mathbb{R}$ such that
 
 - $\alpha$ is an upper bound for $A$, and
@@ -134,11 +144,15 @@ The axiom of completeness for the real numbers says that every non-empty bounded
 
 For more details, see page 32 of your Semester 2 MAS107 notes.
 
+---
+
 [P6.](P6)(i) $\displaystyle\sup\left\{\frac{m}{n}:m,n\in\mathbb{N} \text{ s.t } m<n\right\}=1$, $\displaystyle\inf\left\{\frac{m}{n}:m,n\in\mathbb{N} \text{ s.t } m<n\right\}=0$.
 
 (ii) $\displaystyle\sup\left\{\frac{(-1)^m}{n}:m,n\in\mathbb{N} \text{ s.t } m<n\right\}=\frac{1}{3}$, $\displaystyle\inf\left\{\frac{(-1)^m}{n}:m,n\in\mathbb{N} \text{ s.t } m<n\right\}=-\frac{1}{2}$.
 
 (iii) $\displaystyle\sup\left\{\frac{n}{3n + 1} :n\in\mathbb{N}\right\}=\frac{1}{3}$, $\displaystyle\inf\left\{\frac{n}{3n + 1} :n\in\mathbb{N}\right\}=\frac{1}{4}$.
+
+---
 
 [P7.](P7)(i) This is false --- for a counter-example, take any singleton set. Then $\sup A=\inf A=1$.
 
@@ -152,7 +166,7 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 
 (v) True. Let $s=\max\{\sup A,\sup B\}$. Then $s\geq \sup A$ and $s\geq \sup B$, so $s$ is an upper bound for both $A$ and $B$. Therefore, $s$ is an upper bound for $A\cup B$. But $\sup(A\cup B)$ is the least upper bound of $A\cup B$, and so $s\geq\sup(A\cup B)$. Also, since $A$ and $B$ are both subsets of $A\cup B$, we have by statement (iii) that $s=\max\{\sup A,\sup B)\leq\sup(A\cup B)$. Hence $\max\{\sup A,\sup B)=\sup(A\cup B)$.
 
-## 1.1. Limits of functions
+## 2. Limits of functions
 
 [1.](1) One has to identify the real numbers where the given formula does not make sense, usually because of a zero in a denominator somewhere, and exclude them.
 
@@ -166,6 +180,8 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 
 (v) $A=\mathbb{R} \setminus \{0\}$.
 
+---
+
 [2.](2) (Homework 1 question)
    
 (i) $L=[0,1]\cup[2,3]$.
@@ -177,6 +193,8 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 (iv) $L=[0,1]$
    
 (v) $L=\{0\}$
+
+---
 
 [3.](3) We had $A= \mathbb{R} \setminus \{1, -2, -3\}$, and $f_2:A\to\mathbb{R}$; $\displaystyle f_{2}(x)= \frac{(x + 4)}{(x + 2)(x + 3)}$.
 
@@ -192,6 +210,8 @@ Let $x_n=-2 + \frac{1}{n}$, so that $(x_n)$ is a sequence in $A$ converging to $
 
 Similarly, considering $x_n=-3 + \frac{1}{n}$,  we see that $\lim_{x \rightarrow -3}f_{2}(x)$ does not exist.
 
+---
+
 [4.](4) The first part follows by using the definition of the limit of a function in terms of limits of sequences, and then applying the result of Problem~[q:25](#q:25) (iii).
 <br>
 To be precise let $(x_{n})$ be any sequence in $\mathbb{R} \setminus \{a\}$ that converges to $a$. Then since we are given that $\lim_{x \rightarrow a} f(x) = l$, we must have that $\lim_{n\rightarrow\infty} f(x_{n}) = l$. But then by Problem~[q:25](#q:25) (iii), we have $\lim_{n\rightarrow\infty} \sqrt{f(x_{n}}) = \sqrt{l}$. So by definition of the limit of a function, $\lim_{x \rightarrow a} \sqrt{f(x)} = \sqrt{l}$.
@@ -199,7 +219,11 @@ To be precise let $(x_{n})$ be any sequence in $\mathbb{R} \setminus \{a\}$ that
 Using algebra of limits,  $\lim_{x \rightarrow 1}\displaystyle\frac{x+1}{x^{2}}=\frac{1+1}{1^2}=2$ and
 then by the first part $\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1}{x^{2}}} = \sqrt{2}$.
 
+---
+
 [5.](5) Let $f:A\to \mathbb{R}$ and suppose that $\lim_{x \rightarrow a} f(x) = l$ and $\lim_{x \rightarrow a} f(x) = l'$. Then given any sequence $(x_{n})$ in $A \setminus \{a\}$ that converges to $a$, we have $\lim_{n\rightarrow\infty} f(x_{n}) = l$ and also $\lim_{n\rightarrow\infty} f(x_{n}) = l'$. But then $l = l'$, by uniqueness of limits.
+
+---
 
 [6.](6) (Homework 2 question)
 <br>
@@ -212,6 +236,8 @@ The left limit is $\displaystyle\lim_{x \rightarrow 0^-} \sign(x) = -1$, since f
 Similarly, the right limit is $\displaystyle\lim_{x \rightarrow 0^+} \sign(x) = 1$,  since for any sequence $(x_n)$ approaching $0$ from the right, we have $\sign(x) = 1$ for all $n$.
 <br>
 Since the left and right limits are different, $\displaystyle\lim_{x \rightarrow 0}\sign(x)$ does not exist.
+
+---
 
 [7.](7) (Homework 2 question)
    
@@ -229,6 +255,8 @@ $$
 $$
 \lim_{x \rightarrow 0^+}h(x) = -2, \hspace{1em} \lim_{x \rightarrow 1+}h(x) = 10, \hspace{1em}  \lim_{x \rightarrow 2+}h(x) = 3.
 $$
+
+---
 
 [8.](8) The largest subset of $\mathbb{R}$ for which the formula $f(x)=\sin\left(\frac{1}{x}\right)$ makes sense is $A = \mathbb{R} \setminus \{0\}$.
 <br>
@@ -263,6 +291,8 @@ Of course, we could have chosen any values of $\theta$ we liked, and constructed
 ![](figs/sin(1,x))
 Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=\sin\left(\frac{1}{x}\right)$.
 
+---
+
 [9.](9) The largest subset of $\mathbb{R}$ for which the formula $f(x)=x\sin\left(\frac{1}{x}\right)$ makes sense is $A = \mathbb{R} \setminus \{0\}$.
 <br>
 We claim that $\displaystyle\lim_{x \rightarrow 0} x \sin\left(\frac{1}{x}\right) = 0$.
@@ -289,6 +319,8 @@ You should contrast the picture below with that for the previous question.
 Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=x\sin\left(\frac{1}{x}\right)$.
 
 
+---
+
 [10.](10) We'll just do $\displaystyle\lim_{x \rightarrow \infty}f(x)$ here, as $\displaystyle\lim_{x \rightarrow -\infty}f(x)$ is so similar.
 
 (i) Let $X\subset\mathbb{R}$ and $f:X\to\mathbb{R}$. We say that $\lim_{x \rightarrow \infty}f(x) = l$ if whenever $(x_{n})$ is a sequence that diverges to infinity, with $x_{n}\in X$ for all $n\in\mathbb{N}$, then $\lim_{x \rightarrow \infty}f(x_{n}) = l$.
@@ -300,6 +332,8 @@ For the proof, suppose the $(\varepsilon- K)$ criterion holds and $\lim_{n\right
 For the converse, we again imitate the proof of Theorem 2.1. So suppose the $(\varepsilon-K)$ criterion does not hold. This time choose successively $K = 1, 2, \ldots$ and construct $x_{n}$ in the domain $X$ of $f$ such that $x_{n} > n$, and $|f(x_{n}) - l| \geq \varepsilon$ for each $n\in\mathbb{N}$. So $f$ does not converge to $l$ as $x\to\infty$.
 
 (iii) Given any $\varepsilon > 0$, choose $K = \frac{1}{\varepsilon}$. Then $x > K \Rightarrow \frac{1}{x} < \varepsilon$, and so $\lim_{x\to\infty} \frac{1}{x}=0$. The case where $x\to-\infty$ is similar.
+
+---
 
 [11.](11)
 (i) Let $f:X\to\mathbb{R}$ be a function, where $X\subseteq\mathbb{R}$. We say that $\lim_{x \rightarrow \infty} f(x) = \infty$ if for any sequence $(x_{n})$ in $X$ which diverges to infinity, we also have that $(f(x_{n}))$ diverges to infinity.
@@ -345,8 +379,13 @@ $$
 
 If $n$ is odd, $\lim_{x \rightarrow \infty}p(x) = \infty$, but $\lim_{x \rightarrow -\infty}p(x) = -\infty$.
 
-## 1.2. Continuity
+
+## 3. Continuity
+
+
 [12.](12) For each of (i) to (v), the function is continuous at each point of its domain. For (i), (ii) and (iii), we have rational functions, which are continuous on all points of $A$ (which is the subset of $\mathbb{R}$ where the denominator is non-zero). For (iv) and (v), we have compositions of rational functions with the exponential and cosine functions, which are continuous on the whole of $\mathbb{R}$. Again, the functions are continuous on all points of $A$ (which is the subset of $\mathbb{R}$ where the denominator of the rational function is non-zero).
+
+---
 
 [13.](13) If $(x_{n})$ is any sequence that converges to $a$, we know that $f(x_n)$ converges to $f(a)$ as $f$ is continuous at $a$, and
 we need to show that $(|f|(x_n))$ converges to $|f|(a)$.
@@ -358,16 +397,24 @@ By Corollary 1.1, if $(x_{n})$ is any sequence that converges to $a$,
 \end{align*}
 as $f$ is continuous. So by the sandwich rule, $\lim_{n\rightarrow\infty} |f|(x_{n}) = |f|(a)$, and so $f$ is continuous at $a$.
 
+---
+
 [14.](14) Let $(x_{n})$ be a sequence in $A$ that converges to $a$. Since $f$ is continuous at $a$ we have $\lim_{n\rightarrow\infty} f(x_{n}) = f(a)$. And then, since $g$ is continuous at $f(a)$, we have $\lim_{n\rightarrow\infty} g(f(x_{n})) = g(f(a))$, and the result follows.
+
+---
 
 [15.](15) $f \circ g:\mathbb{R}\to \mathbb{R}$ given by $(f \circ g)(x) = \frac{1}{1  + x^{2}}$. It is continuous on $\mathbb{R}$ by Theorem 3.2(iv).
 <br>
 $g \circ f:\mathbb{R} \setminus \{0\} \to \mathbb{R} \setminus \{0\}$ given by $(g \circ f)(x) = {1  + \frac{1}{x^2}}$. It is continuous on $\mathbb{R} \setminus \{0\}$ by Theorem 3.2(iv).
 
+---
+
 [16.](16)
 (i) Continuous on $\mathbb{R} \setminus \{1\}$. Jump discontinuity at $1$ with $J_{f}(1) = 1$.
 (ii) Continuous on $\mathbb{R} \setminus \mathbb{Z}$. Jump discontinuity at $n$ with $J_{g}(n) = 1$ for all $n\in\mathbb{Z}_+$.
 (iii) Continuous at $\mathbb{R} \setminus \{0,1,2\}$. Each of $0, 1, 2$ is a jump discontinuity and we have $J_{h}(0) =-5, J_{h}(1) = 12, J_{h}(2) = -7.$
+
+---
 
 [17.](17) HW2 question
    
@@ -412,6 +459,8 @@ We can see this behaviour in the graph of the function:
 ![](figs/(x%5E2+2x+4),(x+2))
 Graph of the function $\tilde{f}:\mathbb{R}\setminus\{-2\}\to\mathbb{R}$; $f(x)=\frac{x^2+2x+4}{x+2}$.
 
+---
+
 [18.](18) Assume $g$ is continuous and $g(a) > 0$. Suppose, for a contradiction, that  there is no  $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. Then, in particular, for all $n\in\mathbb{N}$ there exists $x_{n} \in \left(a - \frac{1}{n}, a + \frac{1}{n}\right)$ such that $g(x_{n}) \leq 0$. By the sandwich rule, we have $\lim_{n\rightarrow\infty} x_{n} = a$. So, by continuity of $g$ at $a$, we have $\lim_{n\rightarrow\infty} g(x_{n})$ exists and equals $g(a)$. But $g(x_n)\leq 0$ for all $n\in\mathbb{N}$, and so
 
 $$
@@ -419,6 +468,8 @@ g(a)=\lim_{n\rightarrow\infty} g(x_{n}) \leq 0,
 $$
 
 which is a contradiction.
+
+---
 
 [19.](19)
 (i) 
@@ -448,6 +499,8 @@ $$
 and then argue as in (i).
 
 Alternatively, one could derive (ii) from (i) by using $\min\{f,g\} = - \max\{-f, -g\}$.
+
+---
 
 [20.](20)
 (i) $f(0) = f(0 + 0) = f(0) + f(0) = 2f(0)$, hence $f(0) = 0$.
@@ -479,6 +532,8 @@ $$
 f(x) = \lim_{n\rightarrow\infty} f\left(\frac{p_n}{q_n}\right) =   \lim_{n\rightarrow\infty} k \frac{p_n}{q_n}=k \lim_{n\rightarrow\infty} \frac{p_n}{q_n} = kx.
 $$
 
+---
+
 [21.](21) Suppose that $x \in \mathbb{Q}$. Then as in the solution to Example 4.2.4 we can find a sequence $(x_{n})$ of irrationals that converges to $x$ and then
 
 $$
@@ -486,6 +541,8 @@ $$
 $$
 
 and so $g$ is not continuous at $x$.
+
+---
 
 [22.](22) HW2 question
 <br>
@@ -495,11 +552,17 @@ $ \lim_{n\rightarrow\infty} {\bf 1}_{(a, b)}(y_{n}) = 1 \neq {\bf 1}_{(a, b)}(a)
 <br>
 [Contrast this with ${\bf 1}_{[a, b]}$, which was discussed in the notes.]
 
+---
+
 [23.](23) Since $f$ is continuous on $[a, b]$, so is $g$. We have $g(a) = f(a) - \gamma < 0$ and $g(b) = f(b) - \gamma > 0$. Hence by the intermediate value theorem (Theorem 3.4), there exists $c \in (a, b)$ with $g(c) = 0$, i.e. $f(c) = \gamma$, as was required.
+
+---
 
 [24.](24)
 (i) If $f$ is continuous on $\mathbb{R}$ it is continuous on $[a, b]$ for each $a < b$. If $f$ is not a constant, we must be able to find $a, b$ such that $f(a) \neq f(b)$. Now either $f(a) < f(b)$ or $f(a) > f(b)$. Assume the former (without loss of generality). Then there exists $m, n \in \mathbb{Z}$ with $m < n$ such that $f(a) = m$ and $f(b) = n$. Hence by Corollary 3.1, there exists $c \in (a, b)$ so that $f(c) = m + \frac{1}{2} \notin\mathbb{Z}$, and that is the desired contradiction.
 (ii) Argue as in (i), using the fact that between any two rational numbers, we can find an irrational number.
+
+---
 
 [25.](25) (Homework 3 question)
 <br>
@@ -507,14 +570,22 @@ $ \lim_{n\rightarrow\infty} {\bf 1}_{(a, b)}(y_{n}) = 1 \neq {\bf 1}_{(a, b)}(a)
 <br>
 For the counter--example, consider $f(x) = x^2$. It is continuous on $(0, 1)$ but there is no $c \in (0, 1)$ for which $c^2 = c$.
 
+---
+
 [26.](26) Define $\gamma = \inf_{x \in [a, b]}f(x)$ and assume that it is not attained, so $\gamma < f(x)$ for all $x \in [a,b]$. Then consider the function $h:[a,b]\to \mathbb{R}$ given by $h(x) = \displaystyle\frac{1}{f(x) - \gamma}$. This is continuous, and hence bounded on $[a, b]$. So there exists $K \geq 0$ such that $|h(x)| \leq K$ for all $x \in [a, b]$. By Problem
 15(ii), given any $\varepsilon > 0$, there exists $x \in [a, b]$ such that $f(x) < \gamma + \varepsilon$. Now take $\varepsilon = \frac{1}{K}$ to deduce that $h(x) > K$, which yields the required contradiction.
 
+---
+
 [27.](27) By algebra of limits, $\frac{1}{f}$ is continuous on $[0, 1]$ and so is bounded by Theorem 3.5.
+
+---
 
 [28.](28) (Homework 3 question)
 <br>
 If $f$ is continuous on $[0, 1]$, then it is bounded by Theorem 3.5, and so there exists $L \geq 0$ such that $|f(x)| \leq L$ for all $x \in [0, 1]$. Hence the range of $f$ is a subset of  $[-L, L]$ and cannot be all of $\mathbb{R}$.
+
+---
 
 [29.](29) Since $(x_{n})$ is bounded, by the Bolzano--Weierstrass theorem it has a convergent subsequence $(x_{n_{k}})$. Let $c=\lim_{k \rightarrow \infty}x_{n_{k}}$ and note that $c \in [0, 1]$, since $x_{n_k}\in[0,1]$ for all $k$.
 <br>
@@ -526,11 +597,15 @@ $$
 
 for all $k\in\mathbb{N}$. Since $r < 1$, $\lim_{k\to\infty} r^{n_k-1} =0$. By the sandwich rule, $ \lim_{k \rightarrow \infty}f(x_{n_{k}}) = 0$ and by continuity of $f$ at $c$, $f(c) = \lim_{k \rightarrow \infty}f(x_{n_{k}})$, so $f(c)=0$.
 
+---
+
 [30.](30) For all $x > y$,
 
 $$
 x^{n} - y^{n} = (x - y)(x^{n-1} + x^{n-2}y + \cdots + xy^{n-1} + y^{n-1}) > 0.
 $$
+
+---
 
 [31.](31) For all $-\frac{\pi}{2} \leq x < y \leq \frac{\pi}{2}$,
 
@@ -539,6 +614,8 @@ $$
 $$
 
 so the function is strictly monotonic increasing on this interval. It is also continuous (stated in notes), and so by Theorem 3.6, it is has a continuous inverse $f^{-1}(x) = \arcsin(x)$ (or $\sin^{-1}(x)$) defined on $[-1, 1]$. Outside the interval $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$, the function $f$ might fail to be strictly increasing. In fact it is strictly decreasing on each interval of the form $\left((4n+1)\frac{\pi}{2}, (4n + 3)\frac{\pi}{2}\right)$, and strictly increasing on each interval of the form $\left((4n-1)\frac{\pi}{2}, (4n + 1)\frac{\pi}{2}\right)$, where $n\in\mathbb{Z}_+$.
+
+---
 
 [32.](32) We seek a continuous extension of the mapping $x\mapsto \frac{1-x}{1-x^{\frac{m}{n}}}$ to a domain that includes $1$. Then, we can use continuity to evaluate the limit as $x\rightarrow 1$.
 <br>
@@ -576,6 +653,8 @@ $$
 
 by continuity of $g\circ f$.
 
+---
+
 [33.](33) We claim that if $a < x < b$, we have $f(a) < f(x) < f(b)$. To see this, note that if $f(a) \geq f(x)$ then either $f(a) = f(x)$, or $f(a) > f(x)$.
 <br>
 If $f(a)=f(x)$, then $f$ cannot be bijective, which is a contradiction. 
@@ -583,6 +662,8 @@ If $f(a)=f(x)$, then $f$ cannot be bijective, which is a contradiction.
 Suppose that $f(a)>f(x)$. Applying Corollary 3.3 to $f|_{[x,b]}$, the image of $[x,b]$ under $f$ must an interval, $[m,M]$, say. Note that $f(a)\in(m,M)$: indeed, $f(a)>f(x)>M$, and $f(a)<f(b)<m$. Therefore, by the intermediate value theorem (or Corollary 3.1 more specifically), there exists $c \in (x, b)$ such that $f(c) = f(a)$, and this again violates the injectivity of the mapping $f$. A similar argument can be used to show that we cannot have $f(b) \leq f(x)$.
 <br>
 Finally, applying our initial result to $f|_{[a, y]}$, we see that if $a<x<y<b$, then $f(a) < f(x) < f(y)$. Hence $f$ is strictly monotonic increasing.
+
+---
 
 [34.](34) First observe that $f+g$ is monotonic increasing since both $f$ and $g$ are. Choose $a \in \mathbb{R}$. Given $\varepsilon > 0$, there exists $\delta > 0$ so that if $x > a + \delta$ then
 
@@ -597,6 +678,8 @@ $$
 $$
 
 as $g$ is increasing. This proves that $g$ is right--continuous at $a$. A similar argument (interchanging the roles of $a$ and $x$) proves that it is left--continuous, and hence continuous at $a$. Then $g = (f + g) - f$ is the difference of two continuous functions, and hence is itself continuous.
+
+---
 
 [35.](35) 
 (i) If $0<a<1$, then $0<a<\sqrt{a}<1$. So $(x_n)$ is monotonic increasing and bounded above by $1$, and hence converges to some limit $0\leq l\leq 1$. By continuity of the square root function, $\sqrt{l}=\lim_{n\rightarrow\infty}\sqrt{x_n}$. But $\sqrt{x_n}=x_{n+1}\rightarrow l$ as $n\rightarrow\infty$. By uniqueness of limits, $\sqrt{l}=l$, and so $l=1$.
@@ -617,7 +700,7 @@ $$
 
 and we have shown that $f(x)=f(1)$ for all $x\in\mathbb{R}$.
 
-## 1.3. Differentiation
+## 4. Differentiation
 
 [36.](36) This is Definition 2.2 in the notes:
 <br>
@@ -628,6 +711,8 @@ $$
 $$
 
 We write $\lim_{x\to a}f(x)=l$.
+
+---
 
 [37.](37) (Homework 4 question)
 (i) This is Definition 4.1 in the notes: we say that $f$ is {\it differentiable} at $a \in A$ if $ \lim_{x \rightarrow a}\frac{f(x) - f(a)}{x - a}$ exists. Or, equivalently, $ \lim_{h \rightarrow 0}\frac{f(a +h) - f(a)}{h}$ exists.
@@ -649,6 +734,8 @@ $$
 \left|\displaystyle\frac{f(a+h) - f(a)}{h} - f'(a)\right| < \varepsilon.
 $$
 
+---
+
 [38.](38) Let $x\in\mathbb{R}\setminus\{0\}$. Then
 \begin{align*}
 \frac{f(x + h) -f(x)}{h} &= \frac{1}{h}\left(\frac{1}{x+ h} -\frac{1}{x}\right)\\
@@ -657,6 +744,8 @@ $$
 Thus $f$ is differentiable at all $x\in\mathbb{R}\setminus\{0\}$ and $f'(x)=-\frac{1}{x^2}$ for all $x\in\mathbb{R}\setminus\{0\}$.
 <br>
 The extended function (where we define its value at $x=0$ to be zero) is not continuous at $x=0$, since $\lim_{x \rightarrow 0^+}\frac{1}{x} =\infty$. Therefore it is not differentiable at $x=0$, by Theorem 4.1.
+
+---
 
 [39.](39) As in the hint, let $g(h) = e^{kh} - 1 - kh $. Then
 
@@ -669,11 +758,15 @@ $$
 
 using the given fact that  $\lim_{h \rightarrow 0}\frac{g(h)}{h} = 0$. Thus $f$ is differentiable at each $x\in\mathbb{R}$ and $f'(x)=ke^{kx}$.
 
+---
+
 [40.](40) 
 (i) Using the product and chain rules for differentiation, and that $\sin$ is differentiable with derivative $\cos$,
 if $x \neq 0$, $f$ is differentiable at $x$ with $f'(x) = \sin\left(\frac{1}{x}\right) - \frac{1}{x}\cos\left(\frac{1}{x}\right)$.
 (ii) But
 $\frac{f(x) - f(0)}{x} = \sin\left(\frac{1}{x}\right)$ has no limit as $x \rightarrow 0$ (see Problem~[q:50](#q:50)), so $f$ is not differentiable at $0$.
+
+---
 
 [41.](41) Again using the product and chain rules and standard derivatives,
 for $x \neq 0$, $f$ is differentiable at $x$ with $f'(x) = 2x\sin\left(\frac{1}{x}\right) - \cos\left(\frac{1}{x}\right)$. At $x = 0,$
@@ -690,6 +783,8 @@ $$
 
 But $f^{\prime \prime}$ doesn't exist at $x = 0$, as in Problem~[q:83](#q:83).
 
+---
+
 [42.](42) We give sketches of simple examples of functions as described. There should be some kind of "corner" or "cusp" at the relevant points, so that there is clearly no well-defined gradient there. But the functions are required to be continuous, so there should be no jump or other discontinuity.
 
 (i)
@@ -700,6 +795,8 @@ Graph of a function $f:[0,1]\to\mathbb{R}$ that is not differentiable at $\frac{
 
 ![](figs/nondiff1,3_2,3)
 Graph of a function $f:[0,1]\to\mathbb{R}$ that is differentiable at all points in its domain apart from $\frac{1}{3}$ and $\frac{2}{3}$.
+
+---
 
 [43.](43) It helps to sketch the graph. On the interval $[0,1]$, we have $[x]=0$ and so the graph resembles $y=x$. This pattern then repeats, and we have the following graph for $f(x)=x-[x]$:
 
@@ -715,6 +812,8 @@ $$
 
 Thus $f'(x) = 1$  for all $x \in \mathbb{R} \setminus \mathbb{Z}$. If $x \in \mathbb{Z}$, then $f$ is not continuous at $x$  (it has a jump discontinuity of $-1$ there) and so cannot be differentiable there (by Theorem  4.1).
 
+
+---
 
 [44.](44) First observe that if $f$ is differentiable at $a$, then
 
@@ -734,6 +833,8 @@ $f(x)=|x|$ is not differentiable at $x=0$. But
 $$
 \lim_{h \rightarrow 0^+} \displaystyle\frac{|h|-|{}-h|}{2h} =0.
 $$
+
+---
 
 [45.](45)
 (i) True: $f$ is continuous at zero as $f(0) = 0= \lim_{x \rightarrow 0^-}f(x) = \lim_{x \rightarrow 0^+}f(x)$.
@@ -758,11 +859,15 @@ so $f'(0) = \lim_{x \rightarrow 0^-} f'(x) = \lim_{x \rightarrow 0^+}f'(x) = 0$.
 
 (iv) False:  $f^{\prime \prime}_{+}(0) = \lim_{h \rightarrow 0^+}\frac{2h - 0}{h} = 2, f^{\prime \prime}_{-}(0) = \lim_{h \rightarrow 0^-}\frac{-2h - 0}{h} = -2$, and so $f^{\prime \prime}(0)$ does not exist.
 
+---
+
 [46.](46)
 (i) Yes: $f$ is differentiable on $[a, b]$ and hence continuous on $[a, b]$ by Theorem  4.1, so it attains its sup and inf on $[a, b]$ by the extreme value theorem, Theorem 3.5, and these are the maximum and minimum (respectively).
 
 (ii) No: the maximum or minimum could be $f(a)=f(b)$.
 If $f(a)$ is not the maximum value, then this must occur in $(a, b)$. Similarly for the minimum. If $f(a) = f(b)$ is both the maximum and minimum value, then $f$ is constant, and the value occurs in $(a, b)$.
+
+---
 
 [47.](47) Following the hint, define $g:\mathbb{R}\rightarrow \mathbb{R}$ by
 
@@ -771,6 +876,8 @@ g(x) = a_{0}x + \frac{a_{1}}{2}x^{2} + \frac{a_{2}}{3}x^{3}  + \cdots + \frac{a_
 $$
 
 Then $g$ is a polynomial, so it is differentiable on $[0, 1]$ and using standard derivatives, $g'(x)=f(x)$. Also $g(0) = g(1) = 0$. So by Rolle's theorem, there exists $c \in (0, 1)$ such that $g'(c) = 0$, i.e.$f(c) = 0$.
+
+---
 
 [48.](48)
 (i) Let $x, y$ be such that $a \leq x < y \leq b$. We want to show that $f(x)=f(y)$.
@@ -787,6 +894,8 @@ Thus $f(x)=f(y)$. Since this holds for all $x,y\in [a,b]$, $f$ is constant on $[
 
 (ii) Define $f:\mathbb{R}\to\mathbb{R}$ by $f = h-g$. Then the function $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$, because $g$ and $h$ are, and $f'(x)=h'(x)-g'(x)=0$ for all $x\in (a,b)$. Thus $f$ satisfies all the conditions of (i). By part (i), $f$ is constant on $[a,b]$. That is, there exists some $k\in \mathbb{R}$, such that $f(x)=k$ for all $x\in [a,b]$. Thus $h(x)=g(x)+k$ for all $x\in [a,b]$.
 
+---
+
 [49.](49) By the mean value theorem, $f(b) = f(a) + f'(c)(b - a)$ for some $c\in (a,b)$. So, since $m \leq f'(c) \leq M$, for all $c \in (a, b)$,
 
 $$
@@ -794,7 +903,11 @@ f(a) + m(b - a) \leq f(b) \leq f(a) + M(b - a).
 $$
 
 
+---
+
 [50.](50) The polynomial $p$ is of odd degree so it has at least one real root by Corollary 3.2. Also $p$ is differentiable with $p'(x) = 3x^{2} + r > 0$, for all $x \in \mathbb{R}$, so $p$ is strictly monotonic increasing on any closed interval $[a, b]$, and hence on the whole of $\mathbb{R}$, by Corollary 4.1. Then by the inverse function theorem (Theorem 3.6), $p$ is invertible and hence injective, and so there is exactly one zero.
+
+---
 
 [51.](51) Let $r>1$ and fix $y\in (0,1)$. Apply the mean value theorem to the function $f:[y,1]\to\mathbb{R}$ given by $f(x) = x^r$. Then there exists $c \in (y, 1)$ such that
 
@@ -808,6 +921,8 @@ $$
 1 - y^r = rc^{r-1}( 1- y) < r(1 - y).
 $$
 
+---
+
 [52.](52) Consider the first case. Here we have
 
 $$
@@ -818,7 +933,7 @@ In particular, $f^{\prime \prime}_{+}(a) = \lim_{h \rightarrow 0^+}\frac{f'(a + 
 
 
 
-## 1.4. Sequences and series of functions
+## 5. Sequences and series of functions
 
 [53.](53) For $x\in [0,\pi ]$ we have $0\leq \sin x<1$ except when $x=\frac{\pi}{2}$, where $\sin x=1$. Thus $f_n(x)$ converges pointwise to the function $f\colon [0, \pi ]\rightarrow \mathbb{R}$ defined by
 
@@ -831,6 +946,8 @@ $$
 
 Each function $f_n$ is continuous. The function $f$ is not continuous. So the sequence $(f_n)$ does not converge uniformly (otherwise we would have a contradiction to Theorem 5.1 --- the uniform limit theorem).
 
+
+---
 
 [54.](54) 
 (i) Observe that $(f_n)$ converges pointwise to the function
@@ -876,6 +993,8 @@ $$
 Each function $(f_n)$ is continuous, but the function $f$ is not continuous at $0$, so the convergence cannot be uniform.
 
 (v) The sequence $(f_n)$ clearly does not converge pointwise.
+
+---
 
 [55.](55) We consider $g_n:D\to\mathbb{R}$, and consider the cases $D=[0,1]$ and $D=[0,\infty)$, with $g_n(x)$ given by different expressions in each part below.
 <br>
@@ -936,6 +1055,8 @@ as $n\rightarrow \infty$. So the sequence $(g_n)$ converges uniformly to the zer
 <br>
 On the other hand the above pointwise limit $g$ is not continuous on $[0,\infty )$, whereas each function $g_n$ is continuous on $[0,\infty )$, so convergence is not uniform on $[0,\infty )$.
 
+---
+
 [56.](56) 
 (i) Observe that, for all $x\in[0,1]$, $h_n(x)\rightarrow 1$ as $n\rightarrow \infty$.
 So $(h_n)$ converges pointwise to the constant function $h:[0,1]\to\mathbb{R}$, $h(x)=1$ for all $x$.
@@ -959,6 +1080,8 @@ $$
 Each function $h_n$ is continuous, and this limit is not continuous, so convergence is not uniform.
 
 (iii) The sequence $(h_n(x))$ has pointwise limit $\frac{1}{1-x}$ if $0\leq x<1$ (geometric series), but it does not converge if $x=1$. Because it does not converge when $x=1$, the sequence of functions $(h_n)$ does not converge pointwise  on $[0,1]$ (and so it certainly does not converge uniformly on $[0,1]$).
+
+---
 
 [57.](57)
 (i) For each $t$, we have
@@ -1008,6 +1131,8 @@ $$
 
 so by Proposition 5.2, $f_n'\rightarrow 0$ uniformly. So $(f_n)$ satisfies the conditions of Theorem 5.2.
 
+---
+
 [58.](58) 
 (i) As indicated in the question, we need to check continuity at $x=0$ and $x=1$.
 <br>
@@ -1048,6 +1173,8 @@ $$
 for all $x\in [0,1]$. But $\frac{1}{n}\rightarrow 0$ as $n\rightarrow \infty$, so it follows that $(f_n)$ converges uniformly to the zero function.
 
 
+---
+
 [59.](59) Let $s_n(x)=\sum_{i=1}^n f_i(x)$. Then $(s_n)$ converges uniformly to $f$, and by Proposition 5.2, this is equivalent to $\sup\{|s_n(x)-f(x)|\}\to 0$ as $n\to\infty$. So
 \begin{align*}
 \sup\{|f_n(x)|\}&=\sup\{|s_n(x)-s_{n-1}(x)|\}\\
@@ -1056,6 +1183,8 @@ for all $x\in [0,1]$. But $\frac{1}{n}\rightarrow 0$ as $n\rightarrow \infty$, s
 &\qquad\to 0, \quad\text{as $n\to\infty$.}
 \end{align*}
 So by Proposition 5.2, $(f_n)$ converges uniformly to $0$.
+
+---
 
 [60.](60) For each $n\in\mathbb{N}$, define $f_n,g_n:\mathbb{R}\to\mathbb{R}$ by $f_n(x)=\frac{(-1)^nx^{2n+1}}{(2n+1)!}$ and $g_n(x)=\frac{(-1)^nx^{2n}}{(2n)!}$.
 
@@ -1117,6 +1246,8 @@ Using rearrangement, we have for each $x\in\mathbb{R}$,
 &= c(x) + is(x).
 \end{align*}
 
+---
+
 [61.](61)
 (i) Let $M_n =\frac{1}{n}^2$. Note that
 $$
@@ -1166,6 +1297,8 @@ $$
 $$
 giving a contradiction.
 
+---
+
 [62.](62) 
 (i) Let $M_n =a^n$. Then for $x\in [0,a]$, we have $|x^n|\leq M_n$, and since $|a|<1$, the series $\sum_{n=1}^\infty M_n$ converges.
 
@@ -1182,6 +1315,8 @@ A_n = \sup \{ S_n (x) : x\in [0,1 ) \} = S_n(1) =1+1 + \cdots + 1 = n.
 $$
 
 The sequence  $(A_n)$ does not converge. It follows that the sequence of partial sums $(S_n(x))$ does not converge uniformly on $[0,1)$. Hence the series does not converge uniformly on $[0,1)$.
+
+---
 
 [63.](63) 
 Let $f_n:[0,2\pi]\to\mathbb{R}$ be given by
@@ -1206,7 +1341,7 @@ converges.
 
 Hence, by the Weierstrass $M$-test, the series $\sum_{n=1}^\infty f_n (x )$ converges uniformly for $x \in [0,2\pi]$. The uniform limit of a series of continuous functions is continuous, so $f$ is therefore continuous.
 
-## 1.5. Integration
+## 6. Integration
 
 [64.](64) Let $f:[1,4]\to\mathbb{R}$; $f(x)=\frac{1}{x}$, and let $P=\{1,\frac{3}{2},2,4\}$.1. 
 
@@ -1313,6 +1448,8 @@ So $x_k=1+\frac{1}{2}k$ for $k=0,\ldots,6$, and $P=\left\{1,\frac{3}{2},2,\frac{
 ![](figs/int1iii.png)
 A partition for which $U(f,P)-L(f,P)<\frac{2}{5}$.
 
+---
+
 [65.](65) Let $g:[0,1]\to\mathbb{R}$; $\displaystyle g(x)=\left\{\begin{array}{cc} 1 & \text{for } 0\leq x<1 \\ 2 &\text{for } x=1 \end{array}\right.$.
   
 (i) Let $P=\{x_0,x_1,\ldots x_n\}$ be any partition $[0,1]$, with $0=x_0<x_1<\ldots<x_n=1$. Then for $k=1,\ldots n$,
@@ -1359,6 +1496,8 @@ $$
 U(g,P) = 1+\frac{1}{n} < 1+\varepsilon.
 $$
 
+---
+
 [66.](66) 
 (i) By Proposition 5.3.1(ii) ,
 $$
@@ -1376,6 +1515,8 @@ $$
 $$
 1+e+e^4  = \int_0^3 r(t)\, dt \leq \int_0^3 f(t)\, dt \leq \int_0^3 s(t)\, dt = e+e^4+e^9.
 $$
+
+---
 
 [67.](67) Let $f,g:[a,b]\to\mathbb{R}$ be integrable functions.
 
@@ -1479,6 +1620,8 @@ $$
 \int_a^b(f(t)+g(t))dt = \int_a^bf(x)dx + \int_a^bg(x)dx.
 $$
 
+---
+
 [68.](68) Let $P$ be the partition $a=x_0<x_1<\ldots<x_n=b$. If $k\geq 0$, then
 
 $$
@@ -1531,6 +1674,8 @@ $$
 \int_a^b(-f(x))dx = -\int_a^b f(x)dx.
 $$
 
+---
+
 [69.](69) We have $M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}$, and $M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}$.
 
 (i) If $m\geq 0$, then $f$ is a non-negative function, so $M=M'$, $m=m'$, and $M-m=M'-m'$.
@@ -1575,6 +1720,8 @@ $$
 \left|\int_a^b f(x)dx\right| \leq \int_a^b|f(x)|dx.
 $$
 
+---
+
 [70.](70) We have
 
 $$
@@ -1607,6 +1754,8 @@ $$
 
 as required.
 
+---
+
 [71.](71) 
 (i) It follows immediately from the fundamental theorem of calculus that $l$ is differentiable, with $l'(x)=\frac{1}{x}$.
  
@@ -1630,6 +1779,8 @@ $$
 
 and $l(xy)=l(x)+l(y)$ follows.
 
+
+---
 
 [72.](72) Define $G\colon [a,b]\rightarrow \mathbb{R}$ by
 
@@ -1667,6 +1818,8 @@ $$
 \int_a^x f(t)\, dt = \int_x^b f(t)\, dt.
 $$
 
+---
+
 [73.](73) 
 (i) Consider the step functions $m\mathbf{1}_{[a,b]}$ and $M\mathbf{1}_{[a,b]}$ with $m\mathbf{1}_{[a,b]}(x)\leq f(x)\leq M\mathbf{1}_{[a,b]}(x)$ for all $x\in[a,b]$. Thus we have
 
@@ -1687,6 +1840,8 @@ But as $f$ is a continuous function on a closed bounded interval, $m$ is the min
 $$
 \int_a^b f(x)\, dx =(b-a)f(\xi ).
 $$
+
+---
 
 [74.](74) Let  $m = \inf \{ f(x) : x\in [a,b] \}$ and $M = \sup \{ f(x) : x\in [a,b] \}$. Then $m\leq f(x)\leq M$ for all $x\in [a,b]$. As $g(x)\geq 0$, we have
 

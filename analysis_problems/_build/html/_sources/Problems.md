@@ -15,7 +15,7 @@ kernelspec:
 
 (prob)=
 # Problems
-## Preliminary problems
+## 1. Preliminary problems
 
 (P1)=
 P1. Which of the following statements is the correct definition of convergence of a real sequence $(x_n)$ to a limit $l\in\mathbb{R}$? How would you correct the incorrect statements?
@@ -79,7 +79,7 @@ P7. Let $A$ and $B$ be bounded and non-empty subsets of $\mathbb{R}$. Which of t
     
   (v) $\sup(A\cup B) = \max\{\sup A,\sup B\}$.
 
-## 1.1. Limits of functions
+## 2. Limits of functions
 (1)=
 1. For each of the following formulas, what is the largest subset $X$ of $\mathbb{R}$  which may be taken as the domain of a function with that formula?
 
@@ -94,7 +94,8 @@ P7. Let $A$ and $B$ be bounded and non-empty subsets of $\mathbb{R}$. Which of t
     (v) $f_{5}(x) = \cos\left(\displaystyle\frac{1}{\pi x}\right)$.
 
 (2)=
-2. For each of the sets $X\subseteq\mathbb{R}$ below, calculate the associated set $L$ of its limit points. Where possible, please provide a sketch with your answers.
+2. For each of the sets $X\subseteq\mathbb{R}$ below, calculate the associated set $L$ of its limit points. 
+
     (i) $X=(0,1)\cup[2,3)\cup\{4,5\}$,
     
     (ii) $X=\mathbb{Z}$, 
@@ -115,24 +116,29 @@ $$
 Calculate the value of each limit, if it exists.
 
 (4)=
-4. If $f: \mathbb{R} \rightarrow [0, \infty)$ satisfies $\displaystyle\lim_{x \rightarrow a} f(x) = l$, where $l > 0$, show that $\displaystyle\lim_{x \rightarrow a} \sqrt{f(x)} = \sqrt{l}$.
-<br>
+4. If $f: \mathbb{R} \rightarrow [0, \infty)$ satisfies $\displaystyle\lim_{x \rightarrow a} f(x) = l$, where $l > 0$, show that 
+
+$$
+\lim_{x \rightarrow a} \sqrt{f(x)} = \sqrt{l}.
+$$
+
 Hence calculate $\displaystyle\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1}{x^{2}}}$.
-<br>
+<br><br>
 [Hint: For the first part, use the result of [P4 (iii)](P4) from the preliminary exercises.]
 
 (5)=
 5. Why are limits of functions unique? 
 
 (6)=
-6. HW2 question
-Verify that $\sgn(x) = \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|}$, for $x \neq 0$ (see Example 1.1.3  in the notes for the definition).
+6. (Homework 2 question) <br> 
+Verify that $\text{sgn}(x) = \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|}$, for $x \neq 0$ (see Example 1.1.3  in the notes for the definition).
 <br>
-Show that $\displaystyle\lim_{x \rightarrow 0}\sgn(x)$ does not exist. Show that both the left and right limits exist at $x=0$, and find their values.
+Show that $\displaystyle\lim_{x \rightarrow 0}\text{sgn}    (x)$ does not exist. Show that both the left and right limits exist at $x=0$, and find their values.
 
 (7)=
-7. HW2 question
+7. (Homework 2 question) <br>
 For the following functions, each of which is defined on the whole of $\mathbb{R}$, find every point at which both the left and right limits exist, but are different from each other, and find the values of these limits.
+
     (i) $f(x) = \begin{cases} 1 -x & \text{if }x < 1\\ x^{2}& \text{if }x \geq 1. \end{cases}$
 
     (ii) $g(x) = [x]$, where
@@ -168,7 +174,7 @@ For the following functions, each of which is defined on the whole of $\mathbb{R
     
     (iii) Let $p: \mathbb{R} \rightarrow \mathbb{R}$ be an even polynomial of degree $m$, where the leading coefficient (i.e.~the coefficient of $x^{m}$) is positive. Show that $\displaystyle\lim_{x \rightarrow \infty}p(x) = \lim_{x \rightarrow -\infty}p(x) = \infty$. What happens when $m$ is odd?
 
-## 1.2. Continuity
+## 3. Continuity
 
 (12)=
 12. Return to [Problem 1](#1). Consider each function there, defined on the largest subset $A$ of $\mathbb{R}$
@@ -194,7 +200,8 @@ Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \
     (ii) Identify those discontinuities which are jumps, and calculate the size of each jump.
 
 (17)=
-17. HW2 question
+17. (Homework 2 question)
+    
     (i) Define $f:  \mathbb{R} \setminus \{0\} \rightarrow \mathbb{R}$ by
    
     $$
@@ -249,7 +256,7 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 21. Show that Dirichlet's "other" function, as discussed in Example 2.2.5 in the notes, is discontinuous at every rational point in its domain.
 
 (22)=
-22. HW2 question
+22. (Homework 2 question) <br>
 What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:\mathbb{R}\to\mathbb{R}$ at the points $a$ and $b$?
 
 (23)=
@@ -257,6 +264,7 @@ What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:
 
 (24)=
 24. Use Corollary 2.3.2
+
     (i) Every continuous function from $\mathbb{R}$ to $\mathbb{Z}$ is constant.
 
     (ii) Every continuous function from $\mathbb{R}$ to $\mathbb{Q}$ is constant.
@@ -264,7 +272,7 @@ What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:
 (25)=
 25. Prove the following {\it fixed point theorem}: if $f:[a,b] \rightarrow (a,b)$ is continuous, then there exists $c \in (a, b)$ such that $f(c) = c$.
 <br>
-[Hint: This is a similar proof to that of [Problem 23](#23). This time you need to consider a function of the form $g(x) = f(x) - $ *something*. What is *something*?] Give a counter-example to demonstrate that the claim is false if the domain of $f$ is restricted to $(0, 1)$.
+[Hint: This is a similar proof to that of [Problem 23](#23). This time you need to consider a function of the form $g(x) = f(x) - $ (*something*). What is *something*?] Give a counter-example to demonstrate that the claim is false if the domain of $f$ is restricted to $(0, 1)$.
 
 (26)=
 26. Complete the proof of the extreme value theorem (Theorem 2.3.6), i.e. prove that a continuous function $f:[a,b]\to\mathbb{R}$ attains its infimum.
@@ -295,11 +303,12 @@ What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:
 
 (35)=
 35. $^*$ 
+
     (i) Let $(x_{n})$ be a sequence in $\mathbb{R}$ for which $x_{1} = a > 0$ and $x_{n+1} = \sqrt{x_{n}}$, for all $n\in\mathbb{N}$. Show that $\displaystyle\lim_{n \rightarrow \infty} x_{n} = 1$.
 
     (ii) Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function for which $f(x) = f(x^{2})$ for all $x \in \mathbb{R}$. Use the result of (i) to show that $f$ is constant.
 
-## 1.3. Differentiation
+## 4. Differentiation
 
 (36)=
 36. Let $f:A\to\mathbb{R}$ and let $a\in\mathbb{R}$ be such that there is some sequence $(x_n)$ in $A$ with
@@ -309,13 +318,13 @@ the function $f$ has limit $l$ at the point $a$? What notation do we use to writ
 [This question is asking you to recall (or revise if you can't recall) Definition 2.2 from the lecture notes.That's a key definition and we build on it when we define what it means to be differentiable --- see the next question.]
 
 (37)=
-37.
+37. 
     (i) Give the definition of what it means for a function $f:A\to\mathbb{R}$ to be differentiable at $a \in A$.
    
     (ii) State carefully what this means in terms of limits of sequences.
    
     (iii) State carefully what this means in terms of the $\varepsilon-\delta$ criterion.
-    [ The first part is just asking you to give Definition 3.2.1 and the other parts are checking that you know what this means.
+    [The first part is just asking you to give Definition 3.2.1 and the other parts are checking that you know what this means.
     <br>
     The key points from Chapter 2 are Definition 2.2 of a limit of a function and Theorem 1.2.6 giving the sequential criterion. But you need to see how to apply these, not just copy them out. Here they have to be applied to the relevant function for the definition of differentiability, not $f$ itself. ]
 
@@ -371,6 +380,7 @@ By considering $f:\mathbb{R}\to\mathbb{R}$ given by $f(x) = |x|$, show that the 
 45. A function $f:\mathbb{R} \rightarrow \mathbb{R}$ is defined by $f(x) = \begin{cases} -x^{2} & \text{if }x < 0,\\ x^{2} & \text{if }x \geq 0. \end{cases}$
 <br>
 Determine whether each of the following is true or false. Justify your answers.
+
     (i) $f$ is continuous at $0$.
 
     (ii) $f'(0)$ exists.
@@ -421,13 +431,14 @@ $$
 (52)=
 52. Let $f:\mathbb{R} \rightarrow \mathbb{R}$ be twice differentiable at $a$ with $f'(a) = 0$. If $f^{\prime \prime}(a) < 0$, show that $f$ has a local maximum at $a$, while if $f^{\prime \prime}(a) > 0$, show that $f$ has a local minimum at $a$.
 
-## Sequences and series of functions
+## 5. Sequences and series of functions
 
 (53)=
 53. Consider the sequence of functions  $(f_n)$, where $f_n:[0,\pi ]\to \mathbb{R}$ is defined by $f_n(x) = \sin^n (x)$ for each $n\in\mathbb{N}$. Show that the sequence $(f_n)$ converges pointwise. Does the sequence $(f_n)$  converge uniformly? Justify your answer.
 
 (54)=
 54. For each of the following sequences of functions $(f_n)$ determine the pointwise limit (if it exists), and decide whether $(f_n)$ converges uniformly to this limit.
+
     (i) $f_n:[0,1]\to\mathbb{R}$, $f_n (x) = x^{\frac{1}{n}}$.
    
     (ii) $f_n:\mathbb{R}\to\mathbb{R}$, where $\displaystyle f_n (x)  = \left\{ \begin{array}{ll} 0 & x\leq n, \\ x-n & x\geq n \\ \end{array} \right.$.
@@ -440,6 +451,7 @@ $$
 
 (55)=
 55. For each of the following sequences of functions $(g_n)$ find the pointwise limit, and determine whether the sequence converges uniformly on $[0,1]$, and on $[0,\infty)$.
+
     (i) $\displaystyle g_n(x) = \frac{x}{n}$.
    
     (ii) $\displaystyle g_n(x) = \frac{x^n}{1+x^n}$.
@@ -448,6 +460,7 @@ $$
 
 (56)=
 56. For each of the following sequences of functions $(h_n)$, where $h_n\colon [0,1]\rightarrow \mathbb{R}$, find the pointwise limit, if it exists, and in that case determine whether the sequence converges uniformly.
+
     (i) $h_n(x) = \left(1-\frac{x}{n}\right)^2$.
     
     (ii) $h_n(x) = x-x^n$.
@@ -486,6 +499,7 @@ $$
 
 (60)=
 60. The functions $c,s:\mathbb{R}\to\mathbb{R}$ are defined by the infinite series $s(x) = \sum_{n=0}^\infty\frac{(-1)^nx^{2n+1}}{(2n+1)!}$, $c(x) = \sum_{n=0}^\infty\frac{(-1)^kx^{2n}}{(2n)!}$.
+
     (i) Prove that these functions are well-defined as pointwise limits, and that their series converge absolutely.
 
     (ii) Show that when restricted to a closed bounded interval $[-R,R]$, where $R>0$, both series' converge uniformly.
@@ -523,7 +537,7 @@ $$
 
 and that this function is continuous.
 
-## 1.5. Integration
+## 6. Integration
 
 (64)=
 64. Let $f:[1,4]\to\mathbb{R}$; $\displaystyle f(x)=\frac{1}{x}$. Let $P$ be the partition consisting of points $\left\{1,\frac{3}{2},2,4\right\}$.
