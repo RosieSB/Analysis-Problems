@@ -181,7 +181,7 @@ Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \
 [Hint: Use the formulation of continuity with sequences (Theorem 2.1.2(ii)) and Corollary 0.2.6 from the notes.]
 
 (14)=
-14. Prove Theorem 2.1.6 in the notes (i.e.~that composition of continuous functions is continuous). [Hint: Use sequences.]
+14. Prove Theorem 3.3 in the notes (i.e.~that composition of continuous functions is continuous). [Hint: Use sequences.]
 
 (15)=
 15. Define $f:\mathbb{R} \setminus \{0\}\to \mathbb{R}$ and $g: \mathbb{R} \rightarrow \mathbb{R}\setminus \{0\}$ by $f(x) = \frac{1}{x}$, and $g(x) = 1 + x^{2}$. Write down the functions $f \circ g$, and $g \circ f$, giving their domains explicitly. What can you say about continuity of these functions?
@@ -305,7 +305,7 @@ What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:
 $x_n\neq a$ for all $n$ and $\displaystyle\lim_{n\to\infty} x_n=a$. What does it mean to say that
 the function $f$ has limit $l$ at the point $a$? What notation do we use to write this?
 <br>
-[This question is asking you to recall (or revise if you can't recall) Definition 1.2.3 from the lecture notes.That's a key definition and we build on it when we define what it means to be differentiable --- see the next question.]
+[This question is asking you to recall (or revise if you can't recall) Definition 2.2 from the lecture notes.That's a key definition and we build on it when we define what it means to be differentiable --- see the next question.]
 
 (37)=
 37.
@@ -316,7 +316,7 @@ the function $f$ has limit $l$ at the point $a$? What notation do we use to writ
     (iii) State carefully what this means in terms of the $\varepsilon-\delta$ criterion.
     [ The first part is just asking you to give Definition 3.2.1 and the other parts are checking that you know what this means.
     <br>
-    The key points from Chapter 2 are Definition 1.2.3 of a limit of a function and Theorem 1.2.6 giving the sequential criterion. But you need to see how to apply these, not just copy them out. Here they have to be applied to the relevant function for the definition of differentiability, not $f$ itself. ]
+    The key points from Chapter 2 are Definition 2.2 of a limit of a function and Theorem 1.2.6 giving the sequential criterion. But you need to see how to apply these, not just copy them out. Here they have to be applied to the relevant function for the definition of differentiability, not $f$ itself. ]
 
 (38)=
 38. Give a rigorous proof that the function $f:\mathbb{R}\setminus\{0\}\to \mathbb{R}$ given by
