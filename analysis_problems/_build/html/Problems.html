@@ -66,7 +66,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Problems';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Solutions" href="Solutions.html" />
+    <link rel="next" title="Solutions" href="Solutions-full.html" />
     <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -173,7 +173,7 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Problems</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Solutions.html">Solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Solutions-full.html">Solutions</a></li>
 </ul>
 
     </div>
@@ -387,7 +387,7 @@
 <span id="prob"></span><h1>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h1>
 <section id="preliminary-problems">
 <h2>Preliminary problems<a class="headerlink" href="#preliminary-problems" title="Link to this heading">#</a></h2>
-<p>P1. Which of the following statements is the correct definition of convergence of a real sequence <span class="math notranslate nohighlight">\((x_n)\)</span> to a limit <span class="math notranslate nohighlight">\(l\in\mathbb{R}\)</span>? How would you correct the incorrect statements?
+<p id="p1">P1. Which of the following statements is the correct definition of convergence of a real sequence <span class="math notranslate nohighlight">\((x_n)\)</span> to a limit <span class="math notranslate nohighlight">\(l\in\mathbb{R}\)</span>? How would you correct the incorrect statements?
 <br>
 [Note: There is more than one correct answer.]</p>
 <p>(i) <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span> <span class="math notranslate nohighlight">\(N\in\mathbb{N}\)</span> then <span class="math notranslate nohighlight">\(|x_n-l|&lt;\varepsilon\)</span>.</p>
@@ -395,13 +395,13 @@
 <p>(iii) For all <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span> and <span class="math notranslate nohighlight">\(N\in\mathbb{N}\)</span>, we have <span class="math notranslate nohighlight">\(|x_n-l|&lt;\varepsilon\)</span> whenever <span class="math notranslate nohighlight">\(n\geq N\)</span>.</p>
 <p>(iv) <span class="math notranslate nohighlight">\(\exists\varepsilon&gt;0\)</span> s.t. <span class="math notranslate nohighlight">\(\forall N\in\mathbb{N}\)</span>, <span class="math notranslate nohighlight">\(|x_n-l|&lt;\varepsilon\)</span> <span class="math notranslate nohighlight">\(\forall n\geq N\)</span>.</p>
 <p>(v) Given any <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>, there is <span class="math notranslate nohighlight">\(N\in\mathbb{N}\)</span> such that <span class="math notranslate nohighlight">\(|x_n-l|&lt;\varepsilon\)</span> whenever <span class="math notranslate nohighlight">\(n\geq N\)</span>.</p>
-<p>P2. Prove using the <span class="math notranslate nohighlight">\((\varepsilon-N)\)</span>-definition of convergence that the sequence <span class="math notranslate nohighlight">\((x_n)\)</span> given by <span class="math notranslate nohighlight">\(x_n = \frac{2n}{3n-1}\)</span> converges to <span class="math notranslate nohighlight">\(\frac{2}{3}\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow\infty\)</span>.</p>
-<p>P3. Using your MAS107 notes or another resource, look up and carefully state the Bolzano–Weierstrass theorem.
+<p id="p2">P2. Prove using the <span class="math notranslate nohighlight">\((\varepsilon-N)\)</span>-definition of convergence that the sequence <span class="math notranslate nohighlight">\((x_n)\)</span> given by <span class="math notranslate nohighlight">\(x_n = \frac{2n}{3n-1}\)</span> converges to <span class="math notranslate nohighlight">\(\frac{2}{3}\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow\infty\)</span>.</p>
+<p id="p3">P3. Using your MAS107 notes or another resource, look up and carefully state the Bolzano–Weierstrass theorem.
 <br>
 Its proof combines two other important results about sequences from MAS107. What do these results say?
 <br>
 [Note: We will use all three of these theorems at various points this semester. Check you are clear on what each of them is saying, and remember your lecturers and tutors are here to help.]</p>
-<p>P4.<br />
+<p id="p4">P4.<br />
 (i) If <span class="math notranslate nohighlight">\(a, b \geq 0\)</span>, show that <span class="math notranslate nohighlight">\(\sqrt{a + b} \leq \sqrt{a} + \sqrt{b}\)</span>.
 <br>
 [Hint: Consider the square of both sides. You may use that the square root function is increasing.]</p>
@@ -409,12 +409,12 @@ Its proof combines two other important results about sequences from MAS107. What
 <br>
 [Hint: Imitate the proof of Corollary 0.2.6 in the lecture notes.]</p>
 <p>(iii) Hence prove that if the sequence <span class="math notranslate nohighlight">\((a_{n})\)</span> converges to <span class="math notranslate nohighlight">\(l\)</span>, then <span class="math notranslate nohighlight">\(\left(\sqrt{|a_{n}|}\right)\)</span> converges to <span class="math notranslate nohighlight">\(\sqrt{|l|}\)</span>.</p>
-<p>P5. Look up and carefully define the <em>supremum</em> and <em>infimum</em> of a set <span class="math notranslate nohighlight">\(A\subseteq\mathbb{R}\)</span>. What conditions must be met for each of these to exist?</p>
-<p>P6. Compute, without proof, the suprema and infima (if they exist) of the following sets:</p>
+<p id="p5">P5. Look up and carefully define the <em>supremum</em> and <em>infimum</em> of a set <span class="math notranslate nohighlight">\(A\subseteq\mathbb{R}\)</span>. What conditions must be met for each of these to exist?</p>
+<p id="p6">P6. Compute, without proof, the suprema and infima (if they exist) of the following sets:</p>
 <p>(i) <span class="math notranslate nohighlight">\(\left\{\frac{m}{n}:m,n\in\mathbb{N} \text{ s.t } m&lt;n\right\}\)</span>.</p>
 <p>(ii) <span class="math notranslate nohighlight">\(\left\{\frac{(-1)^m}{n}:m,n\in\mathbb{N} \text{ s.t } m&lt;n\right\}\)</span>.</p>
 <p>(iii) <span class="math notranslate nohighlight">\(\left\{\frac{n}{3n + 1} :n\in\mathbb{N}\right\}\)</span>.</p>
-<p>P7. Let <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> be bounded and non-empty subsets of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>. Which of the following statements are true, and which are false?</p>
+<p id="p7">P7. Let <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> be bounded and non-empty subsets of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>. Which of the following statements are true, and which are false?</p>
 <p>(i) <span class="math notranslate nohighlight">\(\inf A &lt; \sup A\)</span>.</p>
 <p>(ii) For all <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>, there is <span class="math notranslate nohighlight">\(x\in A\)</span> such that <span class="math notranslate nohighlight">\(x-\inf A &lt; \varepsilon\)</span>.</p>
 <p>(iii) <span class="math notranslate nohighlight">\(A\subseteq B\)</span> implies <span class="math notranslate nohighlight">\(\sup A \leq \sup B\)</span>.</p>
@@ -423,14 +423,16 @@ Its proof combines two other important results about sequences from MAS107. What
 </section>
 <section id="limits-of-functions">
 <h2>1.1. Limits of functions<a class="headerlink" href="#limits-of-functions" title="Link to this heading">#</a></h2>
-<ol class="arabic">
-<li><p>For each of the following formulas, what is the largest subset <span class="math notranslate nohighlight">\(X\)</span> of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>  which may be taken as the domain of a function with that formula?
-(i) <span class="math notranslate nohighlight">\(f_{1}(x) = \displaystyle\frac{x^{2} + 2x + 7}{x(x+1)}\)</span>,</p>
+<ol class="arabic" id="id1">
+<li><p>For each of the following formulas, what is the largest subset <span class="math notranslate nohighlight">\(X\)</span> of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>  which may be taken as the domain of a function with that formula?</p>
+<p>(i) <span class="math notranslate nohighlight">\(f_{1}(x) = \displaystyle\frac{x^{2} + 2x + 7}{x(x+1)}\)</span>,</p>
 <p>(ii) <span class="math notranslate nohighlight">\(f_{2}(x) = \displaystyle\frac{(x-1)(x+4)}{x^{3} + 4x^{2} + x - 6}\)</span>,</p>
 <p>(iii) <span class="math notranslate nohighlight">\(f_{3}(x) = \displaystyle\frac{x+4}{x^{2}+5x + 6}\)</span>,</p>
 <p>(iv) <span class="math notranslate nohighlight">\(f_{4}(x) = \exp{\left(-\displaystyle\frac{1}{x-1}\right)}\)</span>,</p>
 <p>(v) <span class="math notranslate nohighlight">\(f_{5}(x) = \cos\left(\displaystyle\frac{1}{\pi x}\right)\)</span>.</p>
 </li>
+</ol>
+<ol class="arabic" id="id2" start="2">
 <li><p>For each of the sets <span class="math notranslate nohighlight">\(X\subseteq\mathbb{R}\)</span> below, calculate the associated set <span class="math notranslate nohighlight">\(L\)</span> of its limit points. Where possible, please provide a sketch with your answers.
 (i) <span class="math notranslate nohighlight">\(X=(0,1)\cup[2,3)\cup\{4,5\}\)</span>,</p>
 <p>(ii) <span class="math notranslate nohighlight">\(X=\mathbb{Z}\)</span>,</p>
@@ -438,24 +440,32 @@ Its proof combines two other important results about sequences from MAS107. What
 <p>(iv) <span class="math notranslate nohighlight">\(X=\{x\in\mathbb{Q}:0&lt;x&lt;1\}\)</span>,</p>
 <p>(v) <span class="math notranslate nohighlight">\(X=\displaystyle\left\{\frac{1}{n}:n\in\mathbb{N}\right\}\)</span>.</p>
 </li>
-<li><p>For <span class="math notranslate nohighlight">\(f_2:A\to \mathbb{R}\)</span> as in part (ii) of the question <a class="reference internal" href="#q:44"><span class="xref myst">q:44</span></a>, investigate each of</p></li>
+</ol>
+<ol class="arabic simple" id="id3" start="3">
+<li><p>For <span class="math notranslate nohighlight">\(f_2:A\to \mathbb{R}\)</span> as in part (ii) of the question <a class="reference internal" href="#id1">1</a>, investigate each of</p></li>
 </ol>
 <div class="math notranslate nohighlight">
 \[
 \lim_{x \rightarrow 1}f_{2}(x), \hspace{3em} \lim_{x \rightarrow -2}f_{2}(x) \hspace{2em} \text{ and } \hspace{2em} \lim_{x \rightarrow -3}f_{2}(x).
 \]</div>
 <p>Calculate the value of each limit, if it exists.</p>
-<ol class="arabic" start="4">
+<ol class="arabic simple" id="id4" start="4">
 <li><p>If <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow [0, \infty)\)</span> satisfies <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow a} f(x) = l\)</span>, where <span class="math notranslate nohighlight">\(l &gt; 0\)</span>, show that <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow a} \sqrt{f(x)} = \sqrt{l}\)</span>.
 <br>
 Hence calculate <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1}{x^{2}}}\)</span>.
 <br>
 [Hint: For the first part, use the result of <a class="reference internal" href="#iii"><span class="xref myst">iii</span></a> from the preliminary exercises.]</p></li>
+</ol>
+<ol class="arabic simple" id="id5" start="5">
 <li><p>Why are limits of functions unique?</p></li>
+</ol>
+<ol class="arabic simple" id="id6" start="6">
 <li><p>HW2 question
 Verify that <span class="math notranslate nohighlight">\(\sgn(x) = \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|}\)</span>, for <span class="math notranslate nohighlight">\(x \neq 0\)</span> (see Example 1.1.3  in the notes for the definition).
 <br>
 Show that <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow 0}\sgn(x)\)</span> does not exist. Show that both the left and right limits exist at <span class="math notranslate nohighlight">\(x=0\)</span>, and find their values.</p></li>
+</ol>
+<ol class="arabic" id="id7" start="7">
 <li><p>HW2 question
 For the following functions, each of which is defined on the whole of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>, find every point at which both the left and right limits exist, but are different from each other, and find the values of these limits.
 (i) <span class="math notranslate nohighlight">\(f(x) = \begin{cases} 1 -x &amp; \text{if }x &lt; 1\\ x^{2}&amp; \text{if }x \geq 1. \end{cases}\)</span></p>
@@ -465,14 +475,22 @@ For the following functions, each of which is defined on the whole of <span clas
 <p>denotes the integer part of <span class="math notranslate nohighlight">\(x\)</span>.</p>
 <p>(iii) <span class="math notranslate nohighlight">\(h(x) =3 - 5{\bf 1}_{(0, 1]}(x) + 7{\bf 1}_{(1, 2]}(x)\)</span>. [Here we have used the notation for indicator functions — see Example 1.1.4 in the notes.]</p>
 </li>
+</ol>
+<ol class="arabic simple" id="id8" start="8">
 <li><p>What is the largest subset <span class="math notranslate nohighlight">\(A\)</span> of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> for which we can specify a function by <span class="math notranslate nohighlight">\(f(x) = \sin\left(\frac{1}{x}\right)\)</span>? Does <span class="math notranslate nohighlight">\(f:A\to\mathbb{R}\)</span> have a limit at <span class="math notranslate nohighlight">\(x = 0\)</span>? [Hint: Consider sequences whose <span class="math notranslate nohighlight">\(n\)</span>th term is <span class="math notranslate nohighlight">\(\frac{1}{\theta + 2n\pi}\)</span>, and think about good choices for <span class="math notranslate nohighlight">\(\theta\)</span>.]</p></li>
+</ol>
+<ol class="arabic simple" id="id9" start="9">
 <li><p>What is the largest subset <span class="math notranslate nohighlight">\(A\)</span> of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> for which we can specify a function by <span class="math notranslate nohighlight">\(f(x) = x\sin\left(\frac{1}{x}\right)\)</span>? Does <span class="math notranslate nohighlight">\(f:A\to\mathbb{R}\)</span>  have a limit at <span class="math notranslate nohighlight">\(x = 0\)</span>?</p></li>
+</ol>
+<ol class="arabic" id="id10" start="10">
 <li><p>In the notes, we gave meaning to <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow a} f(x)\)</span> where <span class="math notranslate nohighlight">\(f:\mathbb{R} \rightarrow \mathbb{R}\)</span> is a function and <span class="math notranslate nohighlight">\(a \in \mathbb{R}\)</span>. In this question, you can investigate what happens when <span class="math notranslate nohighlight">\(x\)</span> tends to <span class="math notranslate nohighlight">\(\infty\)</span> or <span class="math notranslate nohighlight">\(-\infty\)</span>.</p>
 <p>(i) Formulate a rigorous definition, in terms of <span class="math notranslate nohighlight">\(\varepsilon\)</span>’s and <span class="math notranslate nohighlight">\(\delta\)</span>’s, of what it means for <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow \infty}f(x)\)</span> and <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow -\infty}f(x)\)</span> to exist.</p>
 <p>(ii) Find an analogue of the sequential criterion for this case, and prove the analogous result to Theorem 1.2.6. <br>
 [Hint: For the analogue of <span class="math notranslate nohighlight">\((\varepsilon-\delta)\)</span>, think very carefully about how you are going to control the behaviour of <span class="math notranslate nohighlight">\(x\)</span>. Remember that you cannot treat <span class="math notranslate nohighlight">\(\infty\)</span> as if it were a number!]</p>
 <p>(iii) Check that you can prove that <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow \infty}\frac{1}{x} = \lim_{x \rightarrow -\infty}\frac{1}{x} = 0\)</span>, using your criterion.</p>
 </li>
+</ol>
+<ol class="arabic" id="id11" start="11">
 <li><p>(i) Formulate a rigorous definition for <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow \infty}f(x) = \infty\)</span> in terms of sequences  and write down an analogue of the <span class="math notranslate nohighlight">\((\varepsilon-\delta)\)</span> criterion. [The cases  <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow \infty}f(x) = -\infty\)</span> and <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow -\infty}f(x) = \pm \infty\)</span> can be treated similarly.]</p>
 <p>(ii) Let <span class="math notranslate nohighlight">\(f:\mathbb{R} \rightarrow [0, \infty)\)</span> and <span class="math notranslate nohighlight">\(g:\mathbb{R} \rightarrow [0, \infty)\)</span>, and suppose that <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow \infty}f(x) = \infty\)</span> and <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow \infty}g(x) = l\)</span>, where <span class="math notranslate nohighlight">\(l &gt; 0\)</span>. Define <span class="math notranslate nohighlight">\(h(x) = f(x)g(x)\)</span> for all <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>. Show that <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow \infty}h(x) = \infty\)</span>.</p>
 <p>(iii) Let <span class="math notranslate nohighlight">\(p: \mathbb{R} \rightarrow \mathbb{R}\)</span> be an even polynomial of degree <span class="math notranslate nohighlight">\(m\)</span>, where the leading coefficient (i.e.~the coefficient of <span class="math notranslate nohighlight">\(x^{m}\)</span>) is positive. Show that <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow \infty}p(x) = \lim_{x \rightarrow -\infty}p(x) = \infty\)</span>. What happens when <span class="math notranslate nohighlight">\(m\)</span> is odd?</p>
@@ -481,19 +499,29 @@ For the following functions, each of which is defined on the whole of <span clas
 </section>
 <section id="continuity">
 <h2>1.2. Continuity<a class="headerlink" href="#continuity" title="Link to this heading">#</a></h2>
-<ol class="arabic" start="12">
-<li><p>Return to Problem <a class="reference internal" href="#q:44"><span class="xref myst">q:44</span></a>. Consider each function there, defined on the largest subset <span class="math notranslate nohighlight">\(A\)</span> of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>
+<ol class="arabic simple" id="id12" start="12">
+<li><p>Return to <a class="reference internal" href="#id1">Problem 1</a>. Consider each function there, defined on the largest subset <span class="math notranslate nohighlight">\(A\)</span> of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>
 which can be taken as its domain, as found in that problem. For each function, what is the maximum subset of <span class="math notranslate nohighlight">\(A\)</span> on which it is continuous?</p></li>
+</ol>
+<ol class="arabic simple" id="id13" start="13">
 <li><p>Let <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span> be continuous at a point <span class="math notranslate nohighlight">\(a\)</span>.
 Prove that <span class="math notranslate nohighlight">\(|f|\)</span> is continuous at <span class="math notranslate nohighlight">\(a\)</span>, where <span class="math notranslate nohighlight">\(|f|(x) = |f(x)|\)</span>, for all <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>.
 <br>
 [Hint: Use the formulation of continuity with sequences (Theorem 2.1.2(ii)) and Corollary 0.2.6 from the notes.]</p></li>
+</ol>
+<ol class="arabic simple" id="id14" start="14">
 <li><p>Prove Theorem 2.1.6 in the notes (i.e.~that composition of continuous functions is continuous). [Hint: Use sequences.]</p></li>
+</ol>
+<ol class="arabic simple" id="id15" start="15">
 <li><p>Define <span class="math notranslate nohighlight">\(f:\mathbb{R} \setminus \{0\}\to \mathbb{R}\)</span> and <span class="math notranslate nohighlight">\(g: \mathbb{R} \rightarrow \mathbb{R}\setminus \{0\}\)</span> by <span class="math notranslate nohighlight">\(f(x) = \frac{1}{x}\)</span>, and <span class="math notranslate nohighlight">\(g(x) = 1 + x^{2}\)</span>. Write down the functions <span class="math notranslate nohighlight">\(f \circ g\)</span>, and <span class="math notranslate nohighlight">\(g \circ f\)</span>, giving their domains explicitly. What can you say about continuity of these functions?</p></li>
+</ol>
+<ol class="arabic" id="id16" start="16">
 <li><p>For each of the functions in Problem <a class="reference internal" href="#q:49"><span class="xref myst">q:49</span></a>:
 (i) Find the maximum subset of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> on which it is continuous.</p>
 <p>(ii) Identify those discontinuities which are jumps, and calculate the size of each jump.</p>
 </li>
+</ol>
+<ol class="arabic" id="id17" start="17">
 <li><p>HW2 question
 (i) Define <span class="math notranslate nohighlight">\(f:  \mathbb{R} \setminus \{0\} \rightarrow \mathbb{R}\)</span> by</p>
 <div class="math notranslate nohighlight">
@@ -508,7 +536,11 @@ Prove that <span class="math notranslate nohighlight">\(|f|\)</span> is continuo
     \]</div>
 <p>and explain why <span class="math notranslate nohighlight">\(f\)</span> is continuous at every point of <span class="math notranslate nohighlight">\(A\)</span>. The complement <span class="math notranslate nohighlight">\(A^{c}\)</span> of <span class="math notranslate nohighlight">\(A\)</span> in <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> comprises two points. Show that <span class="math notranslate nohighlight">\(f\)</span> may be extended to be continuous at only one of these points, and write down this continuous extension.</p>
 </li>
+</ol>
+<ol class="arabic simple" id="id18" start="18">
 <li><p>Suppose that the function <span class="math notranslate nohighlight">\(g: \mathbb{R} \rightarrow \mathbb{R}\)</span> is continuous at <span class="math notranslate nohighlight">\(a\)</span> with <span class="math notranslate nohighlight">\(g(a) &gt; 0\)</span>. Show that there exists <span class="math notranslate nohighlight">\(\delta &gt; 0\)</span> such that <span class="math notranslate nohighlight">\(g(x) &gt; 0\)</span>  for all <span class="math notranslate nohighlight">\( x \in (a - \delta, a + \delta)\)</span>. [Hint: Assume <span class="math notranslate nohighlight">\(g(a) &gt; 0\)</span> and try a proof by contradiction.]</p></li>
+</ol>
+<ol class="arabic" id="id19" start="19">
 <li><p>(i) For any <span class="math notranslate nohighlight">\(x, y \in \mathbb{R}\)</span> show that
 $<span class="math notranslate nohighlight">\(
 \max\{x, y\} = \frac{1}{2}(x + y) + \frac{1}{2}|x - y|.
@@ -520,6 +552,8 @@ Hence show that if both \)</span>f:A\to \mathbb{R}<span class="math notranslate 
     \]</div>
 <p>(ii) Find a similar expression for <span class="math notranslate nohighlight">\(\min\{x, y\}\)</span>, and hence prove continuity of <span class="math notranslate nohighlight">\(\min\{f, g\}\)</span> at <span class="math notranslate nohighlight">\(a\)</span>.</p>
 </li>
+</ol>
+<ol class="arabic" id="id20" start="20">
 <li><p>The aim of this question is to prove the following: the only functions <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span> which are continuous at zero and satisfy <span class="math notranslate nohighlight">\(f(x+y) = f(x) + f(y)\)</span> for all <span class="math notranslate nohighlight">\(x,y \in \mathbb{R}\)</span> are the linear mappings <span class="math notranslate nohighlight">\(f(x) = kx\)</span> for all <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>, where <span class="math notranslate nohighlight">\(k \in \mathbb{R}\)</span> is fixed.
 <br>
 Begin by considering <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span>, such that <span class="math notranslate nohighlight">\(f(x+y) = f(x) + f(y)\)</span> for all <span class="math notranslate nohighlight">\(x,y \in \mathbb{R}\)</span>.</p>
@@ -530,26 +564,56 @@ Begin by considering <span class="math notranslate nohighlight">\(f: \mathbb{R} 
 <p>(v) If <span class="math notranslate nohighlight">\(f(1) = k\)</span>, prove that <span class="math notranslate nohighlight">\(f\left(\frac{p}{q}\right) = k\frac{p}{q}\)</span> for all <span class="math notranslate nohighlight">\(\frac{p}{q} \in \mathbb{Q}\)</span>.</p>
 <p>(vi) If <span class="math notranslate nohighlight">\(f(1) = k\)</span> and <span class="math notranslate nohighlight">\(f\)</span> is continuous at zero, prove that <span class="math notranslate nohighlight">\(f(x) =kx\)</span> for all <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>.</p>
 </li>
+</ol>
+<ol class="arabic simple" id="id21" start="21">
 <li><p>Show that Dirichlet’s “other” function, as discussed in Example 2.2.5 in the notes, is discontinuous at every rational point in its domain.</p></li>
+</ol>
+<ol class="arabic simple" id="id22" start="22">
 <li><p>HW2 question
 What can you say about left/right continuity of the function  <span class="math notranslate nohighlight">\({\bf 1}_{(a, b)}:\mathbb{R}\to\mathbb{R}\)</span> at the points <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span>?</p></li>
+</ol>
+<ol class="arabic simple" id="id23" start="23">
 <li><p>Prove Corollary 2.3.2. [Hint: Apply the intermediate value theorem to the function <span class="math notranslate nohighlight">\(g(x) = f(x) - \gamma\)</span>, for <span class="math notranslate nohighlight">\(x \in [a, b]\)</span>.]</p></li>
+</ol>
+<ol class="arabic" id="id24" start="24">
 <li><p>Use Corollary 2.3.2
 (i) Every continuous function from <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> to <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span> is constant.</p>
 <p>(ii) Every continuous function from <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> to <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span> is constant.</p>
 </li>
+</ol>
+<ol class="arabic simple" id="id25" start="25">
 <li><p>Prove the following {\it fixed point theorem}: if <span class="math notranslate nohighlight">\(f:[a,b] \rightarrow (a,b)\)</span> is continuous, then there exists <span class="math notranslate nohighlight">\(c \in (a, b)\)</span> such that <span class="math notranslate nohighlight">\(f(c) = c\)</span>.
 <br>
 [Hint: This is a similar proof to that of Problem <a class="reference internal" href="#q:66"><span class="xref myst">q:66</span></a>. This time you need to consider a function of the form <span class="math notranslate nohighlight">\(g(x) = f(x) - \)</span> <em>something</em>. What is <em>something</em>?] Give a counter-example to demonstrate that the claim is false if the domain of <span class="math notranslate nohighlight">\(f\)</span> is restricted to <span class="math notranslate nohighlight">\((0, 1)\)</span>.</p></li>
+</ol>
+<ol class="arabic simple" id="id26" start="26">
 <li><p>Complete the proof of the extreme value theorem (Theorem 2.3.6), i.e. prove that a continuous function <span class="math notranslate nohighlight">\(f:[a,b]\to\mathbb{R}\)</span> attains its infimum.</p></li>
+</ol>
+<ol class="arabic simple" id="id27" start="27">
 <li><p>Show that if <span class="math notranslate nohighlight">\(f:[0,1] \rightarrow \mathbb{R}\)</span> is continuous and <span class="math notranslate nohighlight">\(0\)</span> is not in the range of  <span class="math notranslate nohighlight">\(f\)</span>, then the function <span class="math notranslate nohighlight">\(\frac{1}{f}:[0,1]\to \mathbb{R}\)</span> is bounded, where for each <span class="math notranslate nohighlight">\(x \in [0,1], \left(\frac{1}{f}\right)(x) = \frac{1}{f(x)}\)</span>.</p></li>
+</ol>
+<ol class="arabic simple" id="id28" start="28">
 <li><p>Explain why there are no continuous functions having domain <span class="math notranslate nohighlight">\([0, 1]\)</span> and range <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>. [Hint: Use Theorem 2.3.6.]</p></li>
+</ol>
+<ol class="arabic simple" id="id29" start="29">
 <li><p>Suppose that the function <span class="math notranslate nohighlight">\(f:[0,1] \rightarrow [0,1]\)</span> is continuous, and fix <span class="math notranslate nohighlight">\(0 &lt; r &lt; 1\)</span>. Suppose that we are given a sequence <span class="math notranslate nohighlight">\((x_{n})\)</span> in <span class="math notranslate nohighlight">\([0,1]\)</span> such that <span class="math notranslate nohighlight">\(f(x_{n+1}) \leq rf(x_{n})\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>. Show that there exists <span class="math notranslate nohighlight">\(c \in [0, 1]\)</span> for which <span class="math notranslate nohighlight">\(f(c) = 0\)</span>. [Hint: Use the Bolzano-Weierstrass theorem.]</p></li>
+</ol>
+<ol class="arabic simple" id="id30" start="30">
 <li><p>Show that for each <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>, the function <span class="math notranslate nohighlight">\(f: [0, \infty)\to\mathbb{R}\)</span> given by <span class="math notranslate nohighlight">\(f(x) =x^{n}\)</span> is strictly monotonic increasing.</p></li>
+</ol>
+<ol class="arabic simple" id="id31" start="31">
 <li><p>Show that the function <span class="math notranslate nohighlight">\(f(x) = \sin(x)\)</span> has a continuous inverse when restricted to the interval <span class="math notranslate nohighlight">\(\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]\)</span>. What goes wrong outside this interval? [Hint: Use an appropriate trigonometric identity.]</p></li>
+</ol>
+<ol class="arabic simple" id="id32" start="32">
 <li><p>Find <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow 1}\frac{1 - x}{1 - x^{\frac{m}{n}}}\)</span>, where <span class="math notranslate nohighlight">\(m, n \in \mathbb{N}\)</span>.</p></li>
+</ol>
+<ol class="arabic simple" id="id33" start="33">
 <li><p>If <span class="math notranslate nohighlight">\(f:[a, b] \rightarrow \mathbb{R}\)</span> is continuous and bijective, and <span class="math notranslate nohighlight">\(f(a) &lt; f(b)\)</span>, show that <span class="math notranslate nohighlight">\(f\)</span> is strictly monotonic increasing.</p></li>
+</ol>
+<ol class="arabic simple" id="id34" start="34">
 <li><p><span class="math notranslate nohighlight">\(^*\)</span> Show that if <span class="math notranslate nohighlight">\(f, g: \mathbb{R} \rightarrow \mathbb{R}\)</span>  are monotonic increasing, with <span class="math notranslate nohighlight">\(f+g\)</span> continuous, then both <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(g\)</span> are continuous.</p></li>
+</ol>
+<ol class="arabic" id="id35" start="35">
 <li><p><span class="math notranslate nohighlight">\(^*\)</span>
 (i) Let <span class="math notranslate nohighlight">\((x_{n})\)</span> be a sequence in <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> for which <span class="math notranslate nohighlight">\(x_{1} = a &gt; 0\)</span> and <span class="math notranslate nohighlight">\(x_{n+1} = \sqrt{x_{n}}\)</span>, for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>. Show that <span class="math notranslate nohighlight">\(\displaystyle\lim_{n \rightarrow \infty} x_{n} = 1\)</span>.</p>
 <p>(ii) Let <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span> be a continuous function for which <span class="math notranslate nohighlight">\(f(x) = f(x^{2})\)</span> for all <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>. Use the result of (i) to show that <span class="math notranslate nohighlight">\(f\)</span> is constant.</p>
@@ -558,12 +622,14 @@ What can you say about left/right continuity of the function  <span class="math 
 </section>
 <section id="differentiation">
 <h2>1.3. Differentiation<a class="headerlink" href="#differentiation" title="Link to this heading">#</a></h2>
-<ol class="arabic" start="36">
+<ol class="arabic simple" id="id36" start="36">
 <li><p>Let <span class="math notranslate nohighlight">\(f:A\to\mathbb{R}\)</span> and let <span class="math notranslate nohighlight">\(a\in\mathbb{R}\)</span> be such that there is some sequence <span class="math notranslate nohighlight">\((x_n)\)</span> in <span class="math notranslate nohighlight">\(A\)</span> with
 <span class="math notranslate nohighlight">\(x_n\neq a\)</span> for all <span class="math notranslate nohighlight">\(n\)</span> and <span class="math notranslate nohighlight">\(\displaystyle\lim_{n\to\infty} x_n=a\)</span>. What does it mean to say that
 the function <span class="math notranslate nohighlight">\(f\)</span> has limit <span class="math notranslate nohighlight">\(l\)</span> at the point <span class="math notranslate nohighlight">\(a\)</span>? What notation do we use to write this?
 <br>
 [This question is asking you to recall (or revise if you can’t recall) Definition 1.2.3 from the lecture notes.That’s a key definition and we build on it when we define what it means to be differentiable — see the next question.]</p></li>
+</ol>
+<ol class="arabic" id="id37" start="37">
 <li><p>(i) Give the definition of what it means for a function <span class="math notranslate nohighlight">\(f:A\to\mathbb{R}\)</span> to be differentiable at <span class="math notranslate nohighlight">\(a \in A\)</span>.</p>
 <p>(ii) State carefully what this means in terms of limits of sequences.</p>
 <p>(iii) State carefully what this means in terms of the <span class="math notranslate nohighlight">\(\varepsilon-\delta\)</span> criterion.
@@ -571,16 +637,24 @@ the function <span class="math notranslate nohighlight">\(f\)</span> has limit <
 <br>
 The key points from Chapter 2 are Definition 1.2.3 of a limit of a function and Theorem 1.2.6 giving the sequential criterion. But you need to see how to apply these, not just copy them out. Here they have to be applied to the relevant function for the definition of differentiability, not <span class="math notranslate nohighlight">\(f\)</span> itself. ]</p>
 </li>
+</ol>
+<ol class="arabic simple" id="id38" start="38">
 <li><p>Give a rigorous proof that the function <span class="math notranslate nohighlight">\(f:\mathbb{R}\setminus\{0\}\to \mathbb{R}\)</span> given by
 <span class="math notranslate nohighlight">\(f(x) = \frac{1}{x}\)</span> is differentiable for all <span class="math notranslate nohighlight">\(x \in \mathbb{R} \setminus \{0\}\)</span> from the definition of the derivative and find <span class="math notranslate nohighlight">\(f'(x)\)</span> explicitly. Can we extend the function so that it is differentiable on the whole of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> by defining its value at zero to be zero?</p></li>
+</ol>
+<ol class="arabic simple" id="id39" start="39">
 <li><p>Let <span class="math notranslate nohighlight">\(k\in \mathbb{R}\setminus\{0\}\)</span>. Give a rigorous proof from the definition of the derivative that  <span class="math notranslate nohighlight">\(f:\mathbb{R}\to \mathbb{R}\)</span> given by  <span class="math notranslate nohighlight">\(f(x) = e^{kx}\)</span> is differentiable for all <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>, and find <span class="math notranslate nohighlight">\(f'(x)\)</span> explicitly.
 <br>
 [Hint: For fixed <span class="math notranslate nohighlight">\(k\in \mathbb{R}\)</span>, let <span class="math notranslate nohighlight">\(g:\mathbb{R}\to\mathbb{R}\)</span> be given by <span class="math notranslate nohighlight">\(g(h)=e^{kh} - 1 - kh \)</span>.
 You may use the fact that  <span class="math notranslate nohighlight">\(\displaystyle\lim_{h \rightarrow 0}\frac{g(h)}{h} = 0\)</span>. (This follows from the series expansion of the exponential function, which you already know, and we will study more later.) ]</p></li>
+</ol>
+<ol class="arabic" id="id40" start="40">
 <li><p>Consider the function  <span class="math notranslate nohighlight">\(f:\mathbb{R}\to \mathbb{R}\)</span> given by <span class="math notranslate nohighlight">\(f(x) = \begin{cases} x\sin\left(\frac{1}{x}\right) &amp; \text{if }x \neq 0,\\ 0 &amp; \text{if }x = 0.\end{cases}\)</span></p>
 <p>(i) Show that <span class="math notranslate nohighlight">\(f\)</span> is differentiable at every <span class="math notranslate nohighlight">\(x \neq 0\)</span>. (You can use standard derivatives and facts about derivatives, such as the product and chain rules.)</p>
 <p>(ii) Show that <span class="math notranslate nohighlight">\(f\)</span> is not differentiable at <span class="math notranslate nohighlight">\(x = 0\)</span>. (Use the definition of the derivative as a limit. You may assume that <span class="math notranslate nohighlight">\(\sin\left(\frac{1}{x}\right)\)</span> has no limit as <span class="math notranslate nohighlight">\(x\)</span> tends to <span class="math notranslate nohighlight">\(0\)</span>. This was Problem <a class="reference internal" href="#q:50"><span class="xref myst">q:50</span></a>.)</p>
 </li>
+</ol>
+<ol class="arabic simple" id="id41" start="41">
 <li><p>Show that the function  <span class="math notranslate nohighlight">\(f:\mathbb{R}\to \mathbb{R}\)</span> given by</p></li>
 </ol>
 <div class="math notranslate nohighlight">
@@ -590,13 +664,17 @@ f(x) = \begin{cases} x^2\sin\left(\frac{1}{x}\right) &amp; \text{if }x \neq 0,\\
 <p>is differentiable at every <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>. What can you say about its second derivative?
 <br>
 [Hint: You will need to consider the case <span class="math notranslate nohighlight">\(x=0\)</span> separately from <span class="math notranslate nohighlight">\(x\in\mathbb{R}\setminus\{0\}\)</span>. You may assume that the limit as <span class="math notranslate nohighlight">\(x\)</span> tends to <span class="math notranslate nohighlight">\(0\)</span> of <span class="math notranslate nohighlight">\(x\sin\left(\frac{1}{x}\right)\)</span> exists and equals <span class="math notranslate nohighlight">\(0\)</span>. This was studied in Problem <a class="reference internal" href="#q:51"><span class="xref myst">q:51</span></a>. ]</p>
-<ol class="arabic" start="42">
+<ol class="arabic" id="id42" start="42">
 <li><p>(i) Sketch the graph of any continuous function <span class="math notranslate nohighlight">\(f:[0,1]\to \mathbb{R}\)</span> which is not differentiable at <span class="math notranslate nohighlight">\(x=\frac{1}{2}\)</span>, but is differentiable at all other points. [You do <em>not</em> need to give a formula.]</p>
 <p>(ii) Sketch the graph of any continuous function <span class="math notranslate nohighlight">\(f:[0,1]\to \mathbb{R}\)</span> which is not differentiable at <span class="math notranslate nohighlight">\(x=\frac{1}{3}\)</span> and is not differentiable at <span class="math notranslate nohighlight">\(x=\frac{2}{3}\)</span>, but is differentiable at all other points. [You do <em>not</em> need to give a formula.]</p>
 </li>
+</ol>
+<ol class="arabic simple" id="id43" start="43">
 <li><p>Let <span class="math notranslate nohighlight">\(f:\mathbb{R}\to \mathbb{R}\)</span> be given by <span class="math notranslate nohighlight">\(f(x) = x - [x]\)</span> for all <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>, where <span class="math notranslate nohighlight">\([x]\)</span> denotes the integer part of <span class="math notranslate nohighlight">\(f\)</span> (see (<a class="reference internal" href="#equation-eq-x">(1)</a>)).
 <br>
 Explain carefully at which points <span class="math notranslate nohighlight">\(f\)</span>  is differentiable, and find the value of its derivative there. [It will probably help to sketch the graph!]</p></li>
+</ol>
+<ol class="arabic simple" id="id44" start="44">
 <li><p>Show that if <span class="math notranslate nohighlight">\(f:\mathbb{R} \rightarrow \mathbb{R}\)</span> is differentiable at <span class="math notranslate nohighlight">\(a\)</span> then</p></li>
 </ol>
 <div class="math notranslate nohighlight">
@@ -604,7 +682,7 @@ Explain carefully at which points <span class="math notranslate nohighlight">\(f
 \lim_{h \downarrow 0} \displaystyle\frac{f(a + h) - f(a - h)}{2h} = f'(a).
 \]</div>
 <p>By considering <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span> given by <span class="math notranslate nohighlight">\(f(x) = |x|\)</span>, show that the limit on the left-hand side may exist, even when <span class="math notranslate nohighlight">\(f\)</span> is not differentiable at <span class="math notranslate nohighlight">\(a\)</span>.</p>
-<ol class="arabic" start="45">
+<ol class="arabic" id="id45" start="45">
 <li><p>A function <span class="math notranslate nohighlight">\(f:\mathbb{R} \rightarrow \mathbb{R}\)</span> is defined by <span class="math notranslate nohighlight">\(f(x) = \begin{cases} -x^{2} &amp; \text{if }x &lt; 0,\\ x^{2} &amp; \text{if }x \geq 0. \end{cases}\)</span>
 <br>
 Determine whether each of the following is true or false. Justify your answers.
@@ -613,9 +691,13 @@ Determine whether each of the following is true or false. Justify your answers.
 <p>(iii) <span class="math notranslate nohighlight">\(f':\mathbb{R}\to\mathbb{R}\)</span> is continuous at <span class="math notranslate nohighlight">\(0\)</span>.</p>
 <p>(iv) <span class="math notranslate nohighlight">\(f^{\prime \prime}(0)\)</span> exists.</p>
 </li>
+</ol>
+<ol class="arabic" id="id46" start="46">
 <li><p>(i) Must any differentiable function <span class="math notranslate nohighlight">\(f:[a, b] \rightarrow \mathbb{R}\)</span> have a maximum and minimum value? Why?</p>
 <p>(ii) If <span class="math notranslate nohighlight">\(f:[a, b] \rightarrow \mathbb{R}\)</span> is differentiable  and <span class="math notranslate nohighlight">\(f(a) = f(b)\)</span>, must <span class="math notranslate nohighlight">\(f\)</span> have a maximum and minimum value in <span class="math notranslate nohighlight">\((a, b)\)</span>?</p>
 </li>
+</ol>
+<ol class="arabic simple" id="id47" start="47">
 <li><p>Let <span class="math notranslate nohighlight">\(a_{0}, a_{1}, \ldots, a_{n}\)</span> be real numbers such that</p></li>
 </ol>
 <div class="math notranslate nohighlight">
@@ -623,33 +705,39 @@ Determine whether each of the following is true or false. Justify your answers.
 a_{0} + \frac{a_{1}}{2} + \frac{a_{2}}{3} + \cdots + \frac{a_{n}}{n+1} = 0.
 \]</div>
 <p>Consider <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span> given by <span class="math notranslate nohighlight">\(f(x) = a_{0}+ a_{1}x + a_{2}x^{2} + \cdots + a_{n}x^{n}\)</span>. Show that there is some <span class="math notranslate nohighlight">\(c\in (0,1)\)</span> such that <span class="math notranslate nohighlight">\(f(c)=0\)</span>. [Hint: Integrate the function <span class="math notranslate nohighlight">\(f\)</span> term–by–term, and think about how to use Rolle’s theorem.]</p>
-<ol class="arabic" start="48">
+<ol class="arabic" id="id48" start="48">
 <li><p>(i) Use the mean value theorem to show the following. If <span class="math notranslate nohighlight">\(f:\mathbb{R} \rightarrow \mathbb{R}\)</span> is continuous on <span class="math notranslate nohighlight">\([a, b]\)</span> and differentiable on <span class="math notranslate nohighlight">\((a, b)\)</span> with <span class="math notranslate nohighlight">\(f'(c)= 0\)</span> for all <span class="math notranslate nohighlight">\(c \in (a, b)\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is constant on <span class="math notranslate nohighlight">\([a, b]\)</span>.</p>
 <p>(ii) Use part (i) to show that if <span class="math notranslate nohighlight">\(g, h:\mathbb{R}\to\mathbb{R}\)</span> are both continuous on <span class="math notranslate nohighlight">\([a, b]\)</span> and differentiable on <span class="math notranslate nohighlight">\((a, b)\)</span> with <span class="math notranslate nohighlight">\(h'(x) = g'(x)\)</span> for all <span class="math notranslate nohighlight">\(x \in (a, b)\)</span>, then there exists <span class="math notranslate nohighlight">\(k \in \mathbb{R}\)</span> such that <span class="math notranslate nohighlight">\(h(x) = g(x) + k\)</span>, for all <span class="math notranslate nohighlight">\(x \in [a, b]\)</span>.</p>
 </li>
+</ol>
+<ol class="arabic simple" id="id49" start="49">
 <li><p>If <span class="math notranslate nohighlight">\(f:\mathbb{R} \rightarrow \mathbb{R}\)</span> is continuous on <span class="math notranslate nohighlight">\([a, b]\)</span> and differentiable on <span class="math notranslate nohighlight">\((a, b)\)</span> and there exist <span class="math notranslate nohighlight">\(m, M \in \mathbb{R}\)</span> such that <span class="math notranslate nohighlight">\(m \leq f'(c) \leq M\)</span>, for all <span class="math notranslate nohighlight">\(c \in (a, b)\)</span>, show that</p></li>
 </ol>
 <div class="math notranslate nohighlight">
 \[
 f(a) + m(b - a) \leq f(b) \leq f(a) + M(b-a).
 \]</div>
-<ol class="arabic simple" start="50">
+<ol class="arabic simple" id="id50" start="50">
 <li><p>If <span class="math notranslate nohighlight">\(r &gt; 0\)</span> and <span class="math notranslate nohighlight">\(q \in \mathbb{R}\)</span> show that the polynomial <span class="math notranslate nohighlight">\(p(x) = x^{3} + rx + q\)</span> has exactly one real zero.
 [ You may assume the result of Corollary 2.3.3: <span class="math notranslate nohighlight">\(p\)</span> has at least one real root. So you need to show that there can’t be more than one. ]</p></li>
+</ol>
+<ol class="arabic simple" id="id51" start="51">
 <li><p>Let <span class="math notranslate nohighlight">\(r&gt;1\)</span> and fix <span class="math notranslate nohighlight">\(y\in (0,1)\)</span>. By applying the mean value theorem to the function <span class="math notranslate nohighlight">\(f(x)=x^r\)</span> on <span class="math notranslate nohighlight">\([y,1]\)</span>, show that</p></li>
 </ol>
 <div class="math notranslate nohighlight">
 \[
 1 - y^r &lt; r(1 - y).
 \]</div>
-<ol class="arabic simple" start="52">
+<ol class="arabic simple" id="id52" start="52">
 <li><p>Let <span class="math notranslate nohighlight">\(f:\mathbb{R} \rightarrow \mathbb{R}\)</span> be twice differentiable at <span class="math notranslate nohighlight">\(a\)</span> with <span class="math notranslate nohighlight">\(f'(a) = 0\)</span>. If <span class="math notranslate nohighlight">\(f^{\prime \prime}(a) &lt; 0\)</span>, show that <span class="math notranslate nohighlight">\(f\)</span> has a local maximum at <span class="math notranslate nohighlight">\(a\)</span>, while if <span class="math notranslate nohighlight">\(f^{\prime \prime}(a) &gt; 0\)</span>, show that <span class="math notranslate nohighlight">\(f\)</span> has a local minimum at <span class="math notranslate nohighlight">\(a\)</span>.</p></li>
 </ol>
 </section>
 <section id="sequences-and-series-of-functions">
 <h2>Sequences and series of functions<a class="headerlink" href="#sequences-and-series-of-functions" title="Link to this heading">#</a></h2>
-<ol class="arabic" start="53">
+<ol class="arabic simple" id="id53" start="53">
 <li><p>Consider the sequence of functions  <span class="math notranslate nohighlight">\((f_n)\)</span>, where <span class="math notranslate nohighlight">\(f_n:[0,\pi ]\to \mathbb{R}\)</span> is defined by <span class="math notranslate nohighlight">\(f_n(x) = \sin^n (x)\)</span> for each <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>. Show that the sequence <span class="math notranslate nohighlight">\((f_n)\)</span> converges pointwise. Does the sequence <span class="math notranslate nohighlight">\((f_n)\)</span>  converge uniformly? Justify your answer.</p></li>
+</ol>
+<ol class="arabic" id="id54" start="54">
 <li><p>For each of the following sequences of functions <span class="math notranslate nohighlight">\((f_n)\)</span> determine the pointwise limit (if it exists), and decide whether <span class="math notranslate nohighlight">\((f_n)\)</span> converges uniformly to this limit.
 (i) <span class="math notranslate nohighlight">\(f_n:[0,1]\to\mathbb{R}\)</span>, <span class="math notranslate nohighlight">\(f_n (x) = x^{\frac{1}{n}}\)</span>.</p>
 <p>(ii) <span class="math notranslate nohighlight">\(f_n:\mathbb{R}\to\mathbb{R}\)</span>, where <span class="math notranslate nohighlight">\(\displaystyle f_n (x)  = \left\{ \begin{array}{ll} 0 &amp; x\leq n, \\ x-n &amp; x\geq n \\ \end{array} \right.\)</span>.</p>
@@ -657,21 +745,29 @@ f(a) + m(b - a) \leq f(b) \leq f(a) + M(b-a).
 <p>(iv) <span class="math notranslate nohighlight">\(f_n:[-1,1]\to\mathbb{R}\)</span>, <span class="math notranslate nohighlight">\(f_n(x) = e^{-nx^2}\)</span>.</p>
 <p>(v) <span class="math notranslate nohighlight">\(f_n:\mathbb{R}\to\mathbb{R}\)</span>, <span class="math notranslate nohighlight">\(f_n(x) = e^{-x^2}{n}\)</span>.</p>
 </li>
+</ol>
+<ol class="arabic" id="id55" start="55">
 <li><p>For each of the following sequences of functions <span class="math notranslate nohighlight">\((g_n)\)</span> find the pointwise limit, and determine whether the sequence converges uniformly on <span class="math notranslate nohighlight">\([0,1]\)</span>, and on <span class="math notranslate nohighlight">\([0,\infty)\)</span>.
 (i) <span class="math notranslate nohighlight">\(\displaystyle g_n(x) = \frac{x}{n}\)</span>.</p>
 <p>(ii) <span class="math notranslate nohighlight">\(\displaystyle g_n(x) = \frac{x^n}{1+x^n}\)</span>.</p>
 <p>(iii) <span class="math notranslate nohighlight">\(\displaystyle g_n (x) = \frac{x^n}{n+x^n}\)</span>.</p>
 </li>
+</ol>
+<ol class="arabic" id="id56" start="56">
 <li><p>For each of the following sequences of functions <span class="math notranslate nohighlight">\((h_n)\)</span>, where <span class="math notranslate nohighlight">\(h_n\colon [0,1]\rightarrow \mathbb{R}\)</span>, find the pointwise limit, if it exists, and in that case determine whether the sequence converges uniformly.
 (i) <span class="math notranslate nohighlight">\(h_n(x) = \left(1-\frac{x}{n}\right)^2\)</span>.</p>
 <p>(ii) <span class="math notranslate nohighlight">\(h_n(x) = x-x^n\)</span>.</p>
 <p>(iii) <span class="math notranslate nohighlight">\(h_n (x) = \sum_{k=0}^n x^k\)</span>.</p>
 </li>
+</ol>
+<ol class="arabic" id="id57" start="57">
 <li><p>Define <span class="math notranslate nohighlight">\(f_n\colon \mathbb{R}\rightarrow \mathbb{R}\)</span> by <span class="math notranslate nohighlight">\(f_n (x) = \frac{n+\cos x}{2n+\sin^2 x}\)</span>.</p>
 <p>(i) Find the pointwise limit of the sequence of functions <span class="math notranslate nohighlight">\((f_n)\)</span>.</p>
 <p>(ii) Show that the sequence <span class="math notranslate nohighlight">\((f_n)\)</span> converges uniformly.</p>
 <p>(iii) Calculate <span class="math notranslate nohighlight">\(f_n'\)</span> and show that <span class="math notranslate nohighlight">\(f'(x) = \lim_{n\rightarrow \infty} f_n'(x)\)</span>. Does <span class="math notranslate nohighlight">\((f_n)\)</span> satisfy the conditions of Theorem 4.2.3?</p>
 </li>
+</ol>
+<ol class="arabic" id="id58" start="58">
 <li><p>(i) Let <span class="math notranslate nohighlight">\(n\in \mathbb{N}\)</span>. Show that we can define a continuous function <span class="math notranslate nohighlight">\(f_n\colon [0,1]\rightarrow \mathbb{R}\)</span> by</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -684,7 +780,11 @@ f(a) + m(b - a) \leq f(b) \leq f(a) + M(b-a).
 <p>(Note: you only need check continuity at <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=1\)</span>.)</p>
 <p>(ii) Does the sequence <span class="math notranslate nohighlight">\((f_n)\)</span> converge  uniformly to a limit? Justify your answer. If you wish, you may assume without proof that each function <span class="math notranslate nohighlight">\(f_n\)</span> is monotone increasing.</p>
 </li>
+</ol>
+<ol class="arabic simple" id="id59" start="59">
 <li><p>Let <span class="math notranslate nohighlight">\(f_n:[a,b]\to\mathbb{R}\)</span>. Suppose that <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty f_n\)</span> converges uniformly to <span class="math notranslate nohighlight">\(f\)</span>. Show that the sequence <span class="math notranslate nohighlight">\((f_n)\)</span> converges uniformly to the zero function.</p></li>
+</ol>
+<ol class="arabic" id="id60" start="60">
 <li><p>The functions <span class="math notranslate nohighlight">\(c,s:\mathbb{R}\to\mathbb{R}\)</span> are defined by the infinite series <span class="math notranslate nohighlight">\(s(x) = \sum_{n=0}^\infty\frac{(-1)^nx^{2n+1}}{(2n+1)!}\)</span>, <span class="math notranslate nohighlight">\(c(x) = \sum_{n=0}^\infty\frac{(-1)^kx^{2n}}{(2n)!}\)</span>.
 (i) Prove that these functions are well-defined as pointwise limits, and that their series converge absolutely.</p>
 <p>(ii) Show that when restricted to a closed bounded interval <span class="math notranslate nohighlight">\([-R,R]\)</span>, where <span class="math notranslate nohighlight">\(R&gt;0\)</span>, both series’ converge uniformly.</p>
@@ -693,15 +793,21 @@ f(a) + m(b - a) \leq f(b) \leq f(a) + M(b-a).
 <p>(iv) Prove that <span class="math notranslate nohighlight">\(c^2+s^2=1\)</span>. [Hint: Differentiate the function <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span> given by <span class="math notranslate nohighlight">\(f(x)=c(x)^2+s(x)^2\)</span> for each <span class="math notranslate nohighlight">\(x\)</span>.]</p>
 <p>(v)* Show that <span class="math notranslate nohighlight">\(\exp(ix)=c(x)+is(x)\)</span> for all <span class="math notranslate nohighlight">\(x\in\mathbb{R}\)</span>, where <span class="math notranslate nohighlight">\(\exp\)</span> is the function from Example 4.3.5. You should justify any rearrangements of terms in infinite series (MAS107 Theorem 4.18 may help).</p>
 </li>
+</ol>
+<ol class="arabic" id="id61" start="61">
 <li><p>By using the Weierstrass <span class="math notranslate nohighlight">\(M\)</span>-test or otherwise, for each of the following series, determine whether it  converges uniformly on <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> and  whether it converges uniformly on <span class="math notranslate nohighlight">\([0,1]\)</span>.</p>
 <p>(i) <span class="math notranslate nohighlight">\(\displaystyle\sum_{n=1}^\infty \frac{1}{n^2 +x^2}\)</span></p>
 <p>(ii) <span class="math notranslate nohighlight">\(\displaystyle\sum_{n=0}^\infty \frac{(-1)^nx^{2n+1}}{(2n+1)!}\)</span></p>
 <p>(iii) <span class="math notranslate nohighlight">\(\displaystyle\sum_{n=1}^\infty \sin (nx)\)</span></p>
 <p>(iv)* <span class="math notranslate nohighlight">\(\displaystyle\sum_{n=1}^\infty \frac{\sin (nx)}{n}\)</span></p>
 </li>
+</ol>
+<ol class="arabic" id="id62" start="62">
 <li><p>(i) Show the series <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty x^n\)</span> converges uniformly for <span class="math notranslate nohighlight">\(x\in [0,a]\)</span> whenever <span class="math notranslate nohighlight">\(0&lt;a&lt;1\)</span>.</p>
 <p>(ii) Does the series converge uniformly on <span class="math notranslate nohighlight">\([0,1)\)</span>~? Explain.</p>
 </li>
+</ol>
+<ol class="arabic simple" id="id63" start="63">
 <li><p>Prove that there is a function <span class="math notranslate nohighlight">\(f\colon [0,2\pi] \rightarrow \mathbb{R}\)</span> defined by</p></li>
 </ol>
 <div class="math notranslate nohighlight">
@@ -712,17 +818,21 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
 </section>
 <section id="integration">
 <h2>1.5. Integration<a class="headerlink" href="#integration" title="Link to this heading">#</a></h2>
-<ol class="arabic" start="64">
+<ol class="arabic" id="id64" start="64">
 <li><p>Let <span class="math notranslate nohighlight">\(f:[1,4]\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(\displaystyle f(x)=\frac{1}{x}\)</span>. Let <span class="math notranslate nohighlight">\(P\)</span> be the partition consisting of points <span class="math notranslate nohighlight">\(\left\{1,\frac{3}{2},2,4\right\}\)</span>.</p>
 <p>(i) Compute <span class="math notranslate nohighlight">\(L(f,P)\)</span>, <span class="math notranslate nohighlight">\(U(f,P)\)</span> and <span class="math notranslate nohighlight">\(U(f,P)-L(f,P)\)</span>.</p>
 <p>(ii) What happens to the value of <span class="math notranslate nohighlight">\(U(f,P)-L(f,P)\)</span> when we add the point <span class="math notranslate nohighlight">\(3\)</span> to the partition?</p>
 <p>(iii) Find a partition <span class="math notranslate nohighlight">\(P'\)</span> of <span class="math notranslate nohighlight">\([1,4]\)</span> for which <span class="math notranslate nohighlight">\(U(f,P')-L(f,P')&lt;\frac{2}{5}\)</span>.</p>
 </li>
+</ol>
+<ol class="arabic" id="id65" start="65">
 <li><p>Let <span class="math notranslate nohighlight">\(g:[0,1]\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(\displaystyle g(x)=\left\{\begin{array}{cc} 1 &amp; \text{for } 0\leq x&lt;1 \\ 2 &amp;\text{for } x=1 \end{array}\right.\)</span>.</p>
 <p>(i) Show that <span class="math notranslate nohighlight">\(L(g,P)=1\)</span> for every partition <span class="math notranslate nohighlight">\(P\)</span> of <span class="math notranslate nohighlight">\([0,1]\)</span>.</p>
 <p>(ii) Construct a partition <span class="math notranslate nohighlight">\(P\)</span> for which <span class="math notranslate nohighlight">\(U(g,P)&lt;1+\frac{1}{10}\)</span></p>
 <p>(iii) Given <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>, construct a partition <span class="math notranslate nohighlight">\(P_\varepsilon\)</span> such that <span class="math notranslate nohighlight">\(U(g,P_\varepsilon)&lt;1+\varepsilon\)</span>.</p>
 </li>
+</ol>
+<ol class="arabic" id="id66" start="66">
 <li><p>(Exam question)</p>
 <p>(i) Define step functions <span class="math notranslate nohighlight">\(r,s\colon \mathbb{R} \rightarrow \mathbb{R}\)</span> by</p>
 <div class="math notranslate nohighlight">
@@ -742,6 +852,8 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
     \]</div>
 <p>[Hint: there’s no need to calculate the integral in the middle; use the previous parts to prove the inequalities.]</p>
 </li>
+</ol>
+<ol class="arabic" id="id67" start="67">
 <li><p>Let <span class="math notranslate nohighlight">\(f,g:[a,b]\to\mathbb{R}\)</span> be integrable functions.</p>
 <p>(i) Show that if <span class="math notranslate nohighlight">\(P\)</span> is a partition of <span class="math notranslate nohighlight">\([a,b]\)</span>, then</p>
 <div class="math notranslate nohighlight">
@@ -781,6 +893,8 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
     \int_a^b(f(x)+g(x))dx = \int_a^bf(x)dx + \int_a^bg(x)dx.
     \]</div>
 </li>
+</ol>
+<ol class="arabic simple" id="id68" start="68">
 <li><p>Show that if <span class="math notranslate nohighlight">\(k\in\mathbb{R}\)</span> and <span class="math notranslate nohighlight">\(f:[a,b]\to\mathbb{R}\)</span> is integrable, then so is <span class="math notranslate nohighlight">\(kf:[a,b]\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(x\mapsto kf(x)\)</span>, and</p></li>
 </ol>
 <div class="math notranslate nohighlight">
@@ -788,7 +902,7 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
 \int_a^b kf(x)dx = k\int_a^bf(x).
 \]</div>
 <p>[Hint: It may help to treat the cases <span class="math notranslate nohighlight">\(k\geq 0\)</span> and <span class="math notranslate nohighlight">\(k&lt;0\)</span> separately.]</p>
-<ol class="arabic" start="69">
+<ol class="arabic" id="id69" start="69">
 <li><p>Let <span class="math notranslate nohighlight">\(f\)</span> be bounded on a set <span class="math notranslate nohighlight">\(A\subseteq\mathbb{R}\)</span>, let <span class="math notranslate nohighlight">\(M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}\)</span>, and let <span class="math notranslate nohighlight">\(M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}\)</span>.</p>
 <p>(i) Show that <span class="math notranslate nohighlight">\(M-m\geq M'-m'\)</span>.</p>
 <p>(ii) Show that if <span class="math notranslate nohighlight">\(f\)</span> is integrable <span class="math notranslate nohighlight">\([a,b]\)</span>, then</p>
@@ -799,13 +913,15 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
 <p>for any partition <span class="math notranslate nohighlight">\(P\)</span> of <span class="math notranslate nohighlight">\([a,b]\)</span>.</p>
 <p>(iii) Complete the proof of Proposition 5.3.1(iii) that is, show that <span class="math notranslate nohighlight">\(|f|\)</span> is integrable whenever <span class="math notranslate nohighlight">\(f\)</span> is.</p>
 </li>
+</ol>
+<ol class="arabic simple" id="id70" start="70">
 <li><p>Let <span class="math notranslate nohighlight">\(f\colon \mathbb{R} \rightarrow \mathbb{R}\)</span> be a continuous function, and let <span class="math notranslate nohighlight">\(a,b\colon \mathbb{R} \rightarrow \mathbb{R}\)</span> be differentiable functions. Prove that</p></li>
 </ol>
 <div class="math notranslate nohighlight">
 \[
 \frac{d}{dx} \int_{a(x)}^{b(x)} f(t)dt = b'(x)f(b(x))-a'(x)f(a(x)).
 \]</div>
-<ol class="arabic" start="71">
+<ol class="arabic" id="id71" start="71">
 <li><p>Define a function <span class="math notranslate nohighlight">\(l:(0,\infty ) \rightarrow \mathbb{R}\)</span> by <span class="math notranslate nohighlight">\(l(x) = \int_1^x \frac{1}{t}dt\)</span>.
 <br>
 Show the following directly from the definition of <span class="math notranslate nohighlight">\(l\)</span> via an integral (that is, <em>without</em> using any properties of the function <span class="math notranslate nohighlight">\(\ln\)</span>).</p>
@@ -813,7 +929,7 @@ Show the following directly from the definition of <span class="math notranslate
 <p>(ii) <span class="math notranslate nohighlight">\(l(xy) = l(x)+l(y)\)</span> for all <span class="math notranslate nohighlight">\(x,y &gt;0\)</span>.</p>
 </li>
 </ol>
-<p>72.<span class="math notranslate nohighlight">\(^*\)</span> Let <span class="math notranslate nohighlight">\(f\colon [a,b]\rightarrow \mathbb{R}\)</span> be Riemann integrable. Prove that there is a number <span class="math notranslate nohighlight">\(x\in [a,b]\)</span> such that</p>
+<p id="id72">72.<span class="math notranslate nohighlight">\(^*\)</span> Let <span class="math notranslate nohighlight">\(f\colon [a,b]\rightarrow \mathbb{R}\)</span> be Riemann integrable. Prove that there is a number <span class="math notranslate nohighlight">\(x\in [a,b]\)</span> such that</p>
 <div class="math notranslate nohighlight">
 \[
 \int_a^x f(t)dt = \int_x^b f(t)dt.
@@ -823,7 +939,7 @@ Show the following directly from the definition of <span class="math notranslate
 \[
 F(x) = \int_a^x f(t)dt - \int_x^b f(t)dt .\qquad ]
 \]</div>
-<ol class="arabic" start="73">
+<ol class="arabic" id="id73" start="73">
 <li><p>(i) Let <span class="math notranslate nohighlight">\(f\colon [a,b]\rightarrow \mathbb{R}\)</span> be Riemann integrable. Suppose there are <span class="math notranslate nohighlight">\(m,M\in \mathbb{R}\)</span> such that <span class="math notranslate nohighlight">\(m\leq f(x)\leq M\)</span> for all <span class="math notranslate nohighlight">\(x\in [a,b]\)</span>. Prove that there is a number <span class="math notranslate nohighlight">\(\mu \in [m,M]\)</span> such that
 $<span class="math notranslate nohighlight">\(
 \int_a^b f(x)\ dx = (b-a)\mu .
@@ -835,6 +951,8 @@ $<span class="math notranslate nohighlight">\(
     \]</div>
 <p>[Hint: The intermediate value theorem is useful.]</p>
 </li>
+</ol>
+<ol class="arabic simple" id="id74" start="74">
 <li><p>Let <span class="math notranslate nohighlight">\(f\colon [a,b]\rightarrow \mathbb{R}\)</span> be continuous, and let <span class="math notranslate nohighlight">\(g\colon [a,b]\rightarrow [0,\infty )\)</span> be integrable. Prove that there is some <span class="math notranslate nohighlight">\(c \in [a,b]\)</span> such that</p></li>
 </ol>
 <div class="math notranslate nohighlight">
@@ -885,7 +1003,7 @@ $<span class="math notranslate nohighlight">\(
       </div>
     </a>
     <a class="right-next"
-       href="Solutions.html"
+       href="Solutions-full.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>

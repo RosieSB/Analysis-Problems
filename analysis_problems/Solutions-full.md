@@ -3,7 +3,7 @@
 
 ## Preliminary problems
 
-P1.
+[P1.](P1)
 The correct statements are (ii) and (v).
 
 In statement (iv), the quantifiers $\forall$ and $\exists$ are the wrong way round, while in (i) they are missing altogether. Statement (iii) asserts that last part, $|x_n-l|<\varepsilon$ $\forall n\geq N$, should hold for all $\varepsilon$ and for all $N$ --- so again, there is an issue with the quantifiers.
@@ -11,7 +11,7 @@ In statement (iv), the quantifiers $\forall$ and $\exists$ are the wrong way rou
 Bonus exercise: prove that (iv) holds if and only if $(x_n)$ is the constant sequence $x_n=l$ for all $n\in\mathbb{N}$.
 
 
-P2. (HW1 QUESTION)
+[P2.](P2) (Homework 1 question)
 
 Let $\varepsilon>0$. According to the definition, we must prove there is an $N\in\mathbb{N}$ for which $\left|\frac{2n}{3n-1}-\frac{2}{3}\right|<\varepsilon$ whenever $n\geq N$.
 
@@ -29,152 +29,144 @@ $$
 
 Let $N$ be any integer greater than $\frac{2+3\varepsilon}{9\varepsilon}$. Then $\left|x_n-\frac{2}{3}\right|<\varepsilon$ for all $n\geq N$, and we have proven that $x_n\rightarrow\frac{2}{3}$ as $n\rightarrow\infty$ using the definition.
 
-P3. HW1 QUESTION
+[P3.](P3) (Homework 1 question)
 
 The Bolzano--Weierstrass theorem states that every bounded sequence has a convergent subsequence. Its proof combines the following two results:
 
-    - The monotone convergence theorem (Theorem 3.10 in the MAS107 notes), which states that bounded monotone sequences must converge. <br> More specifically, every monotone increasing sequence that is bounded above converges to its supremum, and every monotone decreasing sequence bounded below converges to its infimum.
+- The monotone convergence theorem (Theorem 3.10 in the MAS107 notes), which states that bounded monotone sequences must converge. <br> More specifically, every monotone increasing sequence that is bounded above converges to its supremum, and every monotone decreasing sequence bounded below converges to its infimum.
 
-    - Theorem 3.13 from MAS107: Every sequence has a monotone subsequence.
+- Theorem 3.13 from MAS107: Every sequence has a monotone subsequence.
 
-Proof of Bolzano--Weierstrass: <br>
-
+**Proof of Bolzano--Weierstrass:** <br>
 If $(x_n)$ is a bounded sequence, then it has a monotone subsequence, $(x_{n_k})$, by Theorem 3.13. This subsequence must also be bounded since $(x_n)$ is bounded, and hence it converges by the monotone convergence theorem.
 
+[P4.](P4)(i) Let $a, b \geq 0$. Then,
+$$
+\left(\sqrt{a+b}\right)^2 = a+b,
+$$
 
-P4.
-   
-    (i) Let $a, b \geq 0$. Then,
+while,
 
-    $$
-    \left(\sqrt{a+b}\right)^2 = a+b,
-    $$
+$$
+\left(\sqrt{a}+\sqrt{b}\right)^2 = a + 2\sqrt{a}\sqrt{b} + b \geq a+b.
+$$
 
-    while,
+Therefore
 
-    $$
-    \left(\sqrt{a}+\sqrt{b}\right)^2 = a + 2\sqrt{a}\sqrt{b} + b \geq a+b.
-    $$
+$$
+\left(\sqrt{a}+\sqrt{b}\right)^2 \geq \left(\sqrt{a+b}\right)^2.
+$$	
 
-    Therefore
+Since $\sqrt{a}$, $\sqrt{b}$ and $\sqrt{a+b}$ are all non-negative and the square root function is increasing, we can square root both sides to get
 
-    $$
-    \left(\sqrt{a}+\sqrt{b}\right)^2 \geq \left(\sqrt{a+b}\right)^2.
-    $$	
+$$
+\sqrt{a}+\sqrt{b}\geq\sqrt{a+b}.
+$$
 
-    Since $\sqrt{a}$, $\sqrt{b}$ and $\sqrt{a+b}$ are all non-negative and the square root function is increasing, we can square root both sides to get
+(ii)  Note that the inequality we have been asked to prove is symmetric in $a$ and $b$, in the sense that exchanging the roles of $a$ and $b$ does not affect the value of either side.
 
-    $$
-    \sqrt{a}+\sqrt{b}\geq\sqrt{a+b}.
-    $$
+This means we can assume without loss of generality that $\sqrt{|a|}\geq\sqrt{|b|}$. Then,
 
-    (ii)  Note that the inequality we have been asked to prove is symmetric in $a$ and $b$, in the sense that exchanging the roles of $a$ and $b$ does not affect the value of either side.
+$$
+\left|\sqrt{|a|} - \sqrt{|b|}\right| = \sqrt{|a|}-\sqrt{|b|},
+$$
 
-    This means we can assume without loss of generality that $\sqrt{|a|}\geq\sqrt{|b|}$. Then,
-    $$
-    \left|\sqrt{|a|} - \sqrt{|b|}\right| = \sqrt{|a|}-\sqrt{|b|},
-    $$
-
-    and we need only show that
-
-    ```{math}
-    :label: eq:sqrta-sqrtb
-    \sqrt{|a|} - \sqrt{|b|} \leq \sqrt{|a - b|}.
-    ```
-    We use a trick similar to the proof of Corollary~\iflatexml 0.2.6, \else[cor:tri](#cor:tri), \fi and write
+and we need only show that
+```{math}
+:label: eq:sqrta-sqrtb
+\sqrt{|a|} - \sqrt{|b|} \leq \sqrt{|a - b|}.
+```
+We use a trick similar to the proof of Corollary~\iflatexml 0.2.6, \else[cor:tri](#cor:tri), \fi and write
     
-    $$
-    \sqrt{|a|} = \sqrt{\big|(a-b) + b\big|}.
-    $$
+$$
+\sqrt{|a|} = \sqrt{\big|(a-b) + b\big|}.
+$$
 
-    By the triangle inequality, we have that $|a| = \big|(a-b) + b\big| \leq |a-b|+|b|$.
+By the triangle inequality, we have that $|a| = \big|(a-b) + b\big| \leq |a-b|+|b|$.
 
-    Since the square root function is increasing, we can square root both sides to get
+Since the square root function is increasing, we can square root both sides to get
     
-    $$
-    \sqrt{|a|} \leq \sqrt{|a-b|+|b|}.
-    $$
+$$
+\sqrt{|a|} \leq \sqrt{|a-b|+|b|}.
+$$
     
-    Applying the result from (i) to the right-hand side, it follows that
+Applying the result from (i) to the right-hand side, it follows that
     
-    $$
-    \sqrt{|a|} \leq \sqrt{|a-b|+|b|} \leq \sqrt{|a-b|}+\sqrt{|b|}.
-    $$
+$$
+\sqrt{|a|} \leq \sqrt{|a-b|+|b|} \leq \sqrt{|a-b|}+\sqrt{|b|}.
+$$
     
-    Equation ([eq:sqrta-sqrtb](#eq:sqrta-sqrtb)) now follows by subtracting $\sqrt{|b|}$ from both sides.
+Equation ([eq:sqrta-sqrtb](#eq:sqrta-sqrtb)) now follows by subtracting $\sqrt{|b|}$ from both sides.
     
-    (iii) Let $(a_n)$ be a real sequence converging to $l\in\mathbb{R}$. By (ii),
+(iii) Let $(a_n)$ be a real sequence converging to $l\in\mathbb{R}$. By (ii),
     
-    $$
-    \left|\sqrt{|a_{n}|}-\sqrt{|l|}\right| \leq \sqrt{\big|a_n-l\big|}
-    $$
+$$
+\left|\sqrt{|a_{n}|}-\sqrt{|l|}\right| \leq \sqrt{\big|a_n-l\big|}
+$$
     
-    for all $n\in\mathbb{N}$.
+for all $n\in\mathbb{N}$.
 
-    Let $\varepsilon>0$. Since $a_n\rightarrow l$, there is $N\in\mathbb{N}$ such that $|a_n-l|<\varepsilon^2$ whenever $n\geq N$. Hence for $n\geq N$,
+Let $\varepsilon>0$. Since $a_n\rightarrow l$, there is $N\in\mathbb{N}$ such that $|a_n-l|<\varepsilon^2$ whenever $n\geq N$. Hence for $n\geq N$,
     
-    $$
-    \big|\sqrt{|a_{n}|}-\sqrt{|l|}\big| \leq \sqrt{\varepsilon^2} = \varepsilon.
-    $$
+$$
+\big|\sqrt{|a_{n}|}-\sqrt{|l|}\big| \leq \sqrt{\varepsilon^2} = \varepsilon.
+$$
     
-    Thus $\displaystyle\lim_{n\rightarrow\infty}\sqrt{|a_n|} = \sqrt{|l|}$.
+Thus $\displaystyle\lim_{n\rightarrow\infty}\sqrt{|a_n|} = \sqrt{|l|}$.
 
-P5. When it exists, the supremum of a set $A\subseteq\mathbb{R}$ is defined to be the unique number $\alpha\in\mathbb{R}$ such that
+[P5.](P5) When it exists, the supremum of a set $A\subseteq\mathbb{R}$ is defined to be the unique number $\alpha\in\mathbb{R}$ such that
     
-    - $\alpha$ is an upper bound for $A$, and
+- $\alpha$ is an upper bound for $A$, and
     
-    - if $M$ is any other upper bound for $A$, then $\alpha\leq M$.
+- if $M$ is any other upper bound for $A$, then $\alpha\leq M$.
 
 We write $\sup A$ for the supremum of $A$, when it exists.
 
 The definition of the infimum is similar: when it exists, the infimum of $A$ is the unique number $\beta\in\mathbb{R}$ such that    
 
-    (i) $\beta$ is a lower bound for $A$, and
+(i) $\beta$ is a lower bound for $A$, and
 
-    (ii) if $L$ is any other lower bound for $A$, then $\alpha\geq L$.
-    <br>
-    We write $\inf A$ for the infimum of $A$, when it exists.
-    <br>
-    The axiom of completeness for the real numbers says that every non-empty bounded above subset of $\mathbb{R}$ has a supremum. Equivalently, it says that every non-empty bounded below subset of $\mathbb{R}$ has an infimum.
+(ii) if $L$ is any other lower bound for $A$, then $\alpha\geq L$.
 
-    For more details, see page 32 of your Semester 2 MAS107 notes.
+We write $\inf A$ for the infimum of $A$, when it exists.
 
+The axiom of completeness for the real numbers says that every non-empty bounded above subset of $\mathbb{R}$ has a supremum. Equivalently, it says that every non-empty bounded below subset of $\mathbb{R}$ has an infimum.
 
-P6.
-    (i) $\displaystyle\sup\left\{\frac{m}{n}:m,n\in\mathbb{N} \text{ s.t } m<n\right\}=1$, $\displaystyle\inf\left\{\frac{m}{n}:m,n\in\mathbb{N} \text{ s.t } m<n\right\}=0$.
+For more details, see page 32 of your Semester 2 MAS107 notes.
+
+[P6.](P6)(i) $\displaystyle\sup\left\{\frac{m}{n}:m,n\in\mathbb{N} \text{ s.t } m<n\right\}=1$, $\displaystyle\inf\left\{\frac{m}{n}:m,n\in\mathbb{N} \text{ s.t } m<n\right\}=0$.
     
-    (ii) $\displaystyle\sup\left\{\frac{(-1)^m}{n}:m,n\in\mathbb{N} \text{ s.t } m<n\right\}=\frac{1}{3}$, $\displaystyle\inf\left\{\frac{(-1)^m}{n}:m,n\in\mathbb{N} \text{ s.t } m<n\right\}=-\frac{1}{2}$.
+(ii) $\displaystyle\sup\left\{\frac{(-1)^m}{n}:m,n\in\mathbb{N} \text{ s.t } m<n\right\}=\frac{1}{3}$, $\displaystyle\inf\left\{\frac{(-1)^m}{n}:m,n\in\mathbb{N} \text{ s.t } m<n\right\}=-\frac{1}{2}$.
 
-    (iii) $\displaystyle\sup\left\{\frac{n}{3n + 1} :n\in\mathbb{N}\right\}=\frac{1}{3}$, $\displaystyle\inf\left\{\frac{n}{3n + 1} :n\in\mathbb{N}\right\}=\frac{1}{4}$.
+(iii) $\displaystyle\sup\left\{\frac{n}{3n + 1} :n\in\mathbb{N}\right\}=\frac{1}{3}$, $\displaystyle\inf\left\{\frac{n}{3n + 1} :n\in\mathbb{N}\right\}=\frac{1}{4}$.
 
-P7.
-    (i) This is false --- for a counter-example, take any singleton set. Then $\sup A=\inf A=1$.
+[P7.](P7)(i) This is false --- for a counter-example, take any singleton set. Then $\sup A=\inf A=1$.
 
-    A correct version of the statement would be $\inf A \leq \sup A$.
+A correct version of the statement would be $\inf A \leq \sup A$.
     
-    (ii) True. The analogous statement for $\sup$ was called the characteristic property of the supremum in your MAS107 lecture notes --- see Lemma 2.8 on page 36.
+(ii) True. The analogous statement for $\sup$ was called the characteristic property of the supremum in your MAS107 lecture notes --- see Lemma 2.8 on page 36.
     
-    (iii) True. Since $\sup B$ is an upper bound for $B$, and $A$ is a subset of $B$, $\sup B$ must be an upper bound for $A$. But $\sup A$ is a the least upper bound for $A$, hence $\sup A\leq \sup B$.
-    <br>The analogous property for $\inf$ is that $\inf A\geq\inf B$ whenever $A\subseteq B$.
+(iii) True. Since $\sup B$ is an upper bound for $B$, and $A$ is a subset of $B$, $\sup B$ must be an upper bound for $A$. But $\sup A$ is a the least upper bound for $A$, hence $\sup A\leq \sup B$. The analogous property for $\inf$ is that $\inf A\geq\inf B$ whenever $A\subseteq B$.
     
-    (iv) False. For a counter-example, take $B=\left\{\frac{1}{n}:n\in\mathbb{N}\right\}$, for which $\inf B=0$.
+(iv) False. For a counter-example, take $B=\left\{\frac{1}{n}:n\in\mathbb{N}\right\}$, for which $\inf B=0$.
     
-    (v) True. Let $s=\max\{\sup A,\sup B\}$. Then $s\geq \sup A$ and $s\geq \sup B$, so $s$ is an upper bound for both $A$ and $B$. Therefore, $s$ is an upper bound for $A\cup B$. But $\sup(A\cup B)$ is the least upper bound of $A\cup B$, and so $s\geq\sup(A\cup B)$. Also, since $A$ and $B$ are both subsets of $A\cup B$, we have by statement (iii) that $s=\max\{\sup A,\sup B)\leq\sup(A\cup B)$. Hence $\max\{\sup A,\sup B)=\sup(A\cup B)$.
+(v) True. Let $s=\max\{\sup A,\sup B\}$. Then $s\geq \sup A$ and $s\geq \sup B$, so $s$ is an upper bound for both $A$ and $B$. Therefore, $s$ is an upper bound for $A\cup B$. But $\sup(A\cup B)$ is the least upper bound of $A\cup B$, and so $s\geq\sup(A\cup B)$. Also, since $A$ and $B$ are both subsets of $A\cup B$, we have by statement (iii) that $s=\max\{\sup A,\sup B)\leq\sup(A\cup B)$. Hence $\max\{\sup A,\sup B)=\sup(A\cup B)$.
 
 ## 1.1. Limits of functions
 
-One has to identify the real numbers where the given formula does not make sense, usually because of a zero in a denominator somewhere, and exclude them.
+[1.](1) One has to identify the real numbers where the given formula does not make sense, usually because of a zero in a denominator somewhere, and exclude them.
 
-    (i) $A=\mathbb{R} \setminus \{0, -1\}$.
+(i) $A=\mathbb{R} \setminus \{0, -1\}$.
 
-    (ii) $f_{2}(x) = \displaystyle\frac{(x-1)(x+4)}{(x-1)(x+2)(x+3)}$, so $A=\mathbb{R} \setminus \{1, -2, -3\}$.
+(ii) $f_{2}(x) = \displaystyle\frac{(x-1)(x+4)}{(x-1)(x+2)(x+3)}$, so $A=\mathbb{R} \setminus \{1, -2, -3\}$.
     
-    (iii) $f_{3}(x) = \displaystyle\frac{x+4}{(x+2)(x+3)}$, so $A=\mathbb{R} \setminus \{-2, -3\}$.
+(iii) $f_{3}(x) = \displaystyle\frac{x+4}{(x+2)(x+3)}$, so $A=\mathbb{R} \setminus \{-2, -3\}$.
     
-    (iv) $A=\mathbb{R} \setminus \{1\}$.
+(iv) $A=\mathbb{R} \setminus \{1\}$.
     
-    (v) $A=\mathbb{R} \setminus \{0\}$.
-2. HW1 QUESTION
+(v) $A=\mathbb{R} \setminus \{0\}$.
+
+[2.](2) (Homework 1 question)
    
     (i) $L=[0,1]\cup[2,3]$.
    
@@ -209,7 +201,7 @@ then by the first part $\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1}{x^{2
 
 5. Let $f:A\to \mathbb{R}$ and suppose that $\lim_{x \rightarrow a} f(x) = l$ and $\lim_{x \rightarrow a} f(x) = l'$. Then given any sequence $(x_{n})$ in $A \setminus \{a\}$ that converges to $a$, we have $\lim_{n\rightarrow\infty} f(x_{n}) = l$ and also $\lim_{n\rightarrow\infty} f(x_{n}) = l'$. But then $l = l'$, by uniqueness of limits.
 
-6. HW2 QUESTION
+6. (Homework 2 question)
 <br>
 When $x > 0, \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|} = \displaystyle\frac{x}{x} = 1 = \sign(x)$,
 <br>
@@ -221,7 +213,7 @@ Similarly, the right limit is $\displaystyle\lim_{x \rightarrow 0^+} \sign(x) = 
 <br>
 Since the left and right limits are different, $\displaystyle\lim_{x \rightarrow 0}\sign(x)$ does not exist.
 
-7. HW2 QUESTION
+7. (Homework 2 question)
    
     (i) For $a\neq 1$, the left and right limits exist and are both equal to $f(a)$, using the algebra of limits. The only point at which left and right limits disagree is $a = 1$, with
     $$
@@ -305,8 +297,7 @@ Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=x\sin\left(\frac{1}{x}\
     <br>
     For the proof, suppose the $(\varepsilon- K)$ criterion holds and $\lim_{n\rightarrow\infty} x_{n} = \infty$. Then given any $L > 0$, there exists $N\in\mathbb{N}$ such that if $n\geq N$, we have $x_{n} > L$. Now take $L$ to be $K$ from the criterion and we get that for all $n\geq N, |f(x_{n}) - l| < \varepsilon$. Hence $\lim_{x \rightarrow \infty}f(x_{n}) = l$, as required.
     <br>
-    For the converse, we again imitate the proof of Theorem \iflatexml 1.2.6 \else [ed](#ed) \fi. So suppose the $(\varepsilon-K)$ criterion does not hold.
-    This time choose successively $K = 1, 2, \ldots$ and construct $x_{n}$ in the domain $X$ of $f$ such that $x_{n} > n$, and $|f(x_{n}) - l| \geq \varepsilon$ for each $n\in\mathbb{N}$. So $f$ does not converge to $l$ as $x\to\infty$.
+    For the converse, we again imitate the proof of Theorem 1.2.6. So suppose the $(\varepsilon-K)$ criterion does not hold. This time choose successively $K = 1, 2, \ldots$ and construct $x_{n}$ in the domain $X$ of $f$ such that $x_{n} > n$, and $|f(x_{n}) - l| \geq \varepsilon$ for each $n\in\mathbb{N}$. So $f$ does not converge to $l$ as $x\to\infty$.
     
     (iii) Given any $\varepsilon > 0$, choose $K = \frac{1}{\varepsilon}$. Then $x > K \Rightarrow \frac{1}{x} < \varepsilon$, and so $\lim_{x\to\infty} \frac{1}{x}=0$. The case where $x\to-\infty$ is similar.
 
@@ -510,7 +501,7 @@ $ \lim_{n\rightarrow\infty} {\bf 1}_{(a, b)}(y_{n}) = 1 \neq {\bf 1}_{(a, b)}(a)
     (i) If $f$ is continuous on $\mathbb{R}$ it is continuous on $[a, b]$ for each $a < b$. If $f$ is not a constant, we must be able to find $a, b$ such that $f(a) \neq f(b)$. Now either $f(a) < f(b)$ or $f(a) > f(b)$. Assume the former (without loss of generality). Then there exists $m, n \in \mathbb{Z}$ with $m < n$ such that $f(a) = m$ and $f(b) = n$. Hence by Corollary~\iflatexml 2.3.2 \else [ivp2](#ivp2)\fi, there exists $c \in (a, b)$ so that $f(c) = m + \frac{1}{2} \notin\mathbb{Z}$, and that is the desired contradiction.
     (ii) Argue as in (i), using the fact that between any two rational numbers, we can find an irrational number.
 
-25. HW3 question
+25. (Homework 3 question)
 <br>
 *Something* is $x$. That is, define $g:[a,b]\to\mathbb{R}$ given by $g(x) = f(x) - x$. Then $g$ is continuous (because $f$ is and the function $h(x)=x$ is, and using algebra of limits). Since the range of $f$ is contained in $(a, b)$, we have $f(a) > a$ and $f(b) < b$, and so $g(a) = f(a) - a > 0$ and $g(b) = f(b) - b < 0$. So we can apply the intermediate value theorem to the function $g$ on $[a,b]$. This says that there exists $c \in (a, b)$ such that $g(c) = 0$, i.e. $f(c) = c$.
 <br>
@@ -519,11 +510,11 @@ For the counter--example, consider $f(x) = x^2$. It is continuous on $(0, 1)$ bu
 26. Define $\gamma = \inf_{x \in [a, b]}f(x)$ and assume that it is not attained, so $\gamma < f(x)$ for all $x \in [a,b]$. Then consider the function $h:[a,b]\to \mathbb{R}$ given by $h(x) = \displaystyle\frac{1}{f(x) - \gamma}$. This is continuous, and hence bounded on $[a, b]$. So there exists $K \geq 0$ such that $|h(x)| \leq K$ for all $x \in [a, b]$. By Problem
 15(ii), given any $\varepsilon > 0$, there exists $x \in [a, b]$ such that $f(x) < \gamma + \varepsilon$. Now take $\varepsilon = \frac{1}{K}$ to deduce that $h(x) > K$, which yields the required contradiction.
 
-27. By algebra of limits, $\frac{1}{f}$ is continuous on $[0, 1]$ and so is bounded by Theorem \iflatexml 2.3.6 \else [thm:evt](#thm:evt) \fi .
+27. By algebra of limits, $\frac{1}{f}$ is continuous on $[0, 1]$ and so is bounded by Theorem 2.3.6.
 
-28. HW3 question
+28. (Homework 3 question)
 <br>
-If $f$ is continuous on $[0, 1]$, then it is bounded by Theorem \iflatexml 2.3.6 \else [thm:evt](#thm:evt) \fi , and so there exists $L \geq 0$ such that $|f(x)| \leq L$ for all $x \in [0, 1]$. Hence the range of $f$ is a subset of  $[-L, L]$ and cannot be all of $\mathbb{R}$.
+If $f$ is continuous on $[0, 1]$, then it is bounded by Theorem 2.3.6, and so there exists $L \geq 0$ such that $|f(x)| \leq L$ for all $x \in [0, 1]$. Hence the range of $f$ is a subset of  $[-L, L]$ and cannot be all of $\mathbb{R}$.
 
 29. Since $(x_{n})$ is bounded, by the Bolzano--Weierstrass theorem it has a convergent subsequence $(x_{n_{k}})$. Let $c=\lim_{k \rightarrow \infty}x_{n_{k}}$ and note that $c \in [0, 1]$, since $x_{n_k}\in[0,1]$ for all $k$.
 <br>
@@ -632,7 +623,7 @@ as $g$ is increasing. This proves that $g$ is right--continuous at $a$. A simila
 <br>
 The function $f$ has limit $l$ at the point $a$ if for every sequence  $(x_n)$ in $A$ with $x_n\neq a$ for all $n$ and $\lim_{n\to\infty} x_n=a$, we have $\lim_{n\to\infty}f(x_n)=l$. We write $\lim_{x\to a}f(x)=l$.
 
-37. HW4 question
+37. (Homework 4 question)
     (i) This is Definition \iflatexml 3.2.1 \else [def:functionlimit](#def:functionlimit) \fi in the notes: we say that $f$ is {\it differentiable} at $a \in A$ if $ \lim_{x \rightarrow a}\frac{f(x) - f(a)}{x - a}$ exists. Or, equivalently, $ \lim_{h \rightarrow 0}\frac{f(a +h) - f(a)}{h}$ exists.
     <br>
     That is, we fix $a\in A$ and we consider the function $g$ given by $g(h)=\frac{f(a +h) - f(a)}{h}$. Then $f$ is differentiable at $a$ if the limit of $g$ as $h$ goes to zero exists.
@@ -1530,7 +1521,7 @@ $$
 \int_a^b(-f(x))dx = -\int_a^b f(x)dx.
 $$
 
-69. We have $M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}$, and $M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}$.
+[69.](69) We have $M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}$, and $M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}$.
 
     (i) If $m\geq 0$, then $f$ is a non-negative function, so $M=M'$, $m=m'$, and $M-m=M'-m'$.
 
@@ -1574,7 +1565,7 @@ $$
     \left|\int_a^b f(x)dx\right| \leq \int_a^b|f(x)|dx.
     $$
 
-70. We have
+[70.](70) We have
 
 $$
 \int_{a(x)}^{b(x)} f(t)dt =  \int_0^{b(x)} f(t)dt - \int_0^{a(x)} f(t)\ dt.
@@ -1606,7 +1597,7 @@ $$
 
 as required.
 
-71. 
+[71.](71) 
     (i) It follows immediately from the fundamental theorem of calculus that $l$ is differentiable, with $l'(x)=\frac{1}{x}$.
  
     (ii) By Proposition \iflatexml 5.3.1(ii) \else [propsint](#propsint)(ii) \fi in the lecture notes,
@@ -1630,7 +1621,7 @@ as required.
     and $l(xy)=l(x)+l(y)$ follows.
 
 
-72. Define $G\colon [a,b]\rightarrow \mathbb{R}$ by
+[72.](72) Define $G\colon [a,b]\rightarrow \mathbb{R}$ by
 
 $$
 G(x) = \int_a^x f(t)\, dt
@@ -1666,7 +1657,7 @@ $$
 \int_a^x f(t)\, dt = \int_x^b f(t)\, dt.
 $$
 
-73. 
+[73.](73) 
     (i) Consider the step functions $m\mathbf{1}_{[a,b]}$ and $M\mathbf{1}_{[a,b]}$ with $m\mathbf{1}_{[a,b]}(x)\leq f(x)\leq M\mathbf{1}_{[a,b]}(x)$ for all $x\in[a,b]$. Thus we have
     
     $$
@@ -1687,7 +1678,7 @@ $$
     \int_a^b f(x)\, dx =(b-a)f(\xi ).
     $$
 
-74. Let  $m = \inf \{ f(x) : x\in [a,b] \}$ and $M = \sup \{ f(x) : x\in [a,b] \}$. Then $m\leq f(x)\leq M$ for all $x\in [a,b]$. As $g(x)\geq 0$, we have
+[74.](74) Let  $m = \inf \{ f(x) : x\in [a,b] \}$ and $M = \sup \{ f(x) : x\in [a,b] \}$. Then $m\leq f(x)\leq M$ for all $x\in [a,b]$. As $g(x)\geq 0$, we have
 
 $$
 mg(x)\leq f(x)g(x)\leq Mg(x)

@@ -386,11 +386,11 @@
 <span id="sol"></span><h1>Solutions<a class="headerlink" href="#solutions" title="Link to this heading">#</a></h1>
 <section id="preliminary-problems">
 <h2>Preliminary problems<a class="headerlink" href="#preliminary-problems" title="Link to this heading">#</a></h2>
-<p>P1.
+<p><a class="reference internal" href="Problems.html#p1"><span class="std std-ref">P1.</span></a>
 The correct statements are (ii) and (v).</p>
 <p>In statement (iv), the quantifiers <span class="math notranslate nohighlight">\(\forall\)</span> and <span class="math notranslate nohighlight">\(\exists\)</span> are the wrong way round, while in (i) they are missing altogether. Statement (iii) asserts that last part, <span class="math notranslate nohighlight">\(|x_n-l|&lt;\varepsilon\)</span> <span class="math notranslate nohighlight">\(\forall n\geq N\)</span>, should hold for all <span class="math notranslate nohighlight">\(\varepsilon\)</span> and for all <span class="math notranslate nohighlight">\(N\)</span> — so again, there is an issue with the quantifiers.</p>
 <p>Bonus exercise: prove that (iv) holds if and only if <span class="math notranslate nohighlight">\((x_n)\)</span> is the constant sequence <span class="math notranslate nohighlight">\(x_n=l\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>.</p>
-<p>P2. (HW1 QUESTION)</p>
+<p><a class="reference internal" href="Problems.html#p2"><span class="std std-ref">P2.</span></a> (Homework 1 question)</p>
 <p>Let <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>. According to the definition, we must prove there is an <span class="math notranslate nohighlight">\(N\in\mathbb{N}\)</span> for which <span class="math notranslate nohighlight">\(\left|\frac{2n}{3n-1}-\frac{2}{3}\right|&lt;\varepsilon\)</span> whenever <span class="math notranslate nohighlight">\(n\geq N\)</span>.</p>
 <p>Now,</p>
 <div class="math notranslate nohighlight">
@@ -403,155 +403,114 @@ The correct statements are (ii) and (v).</p>
 n&gt;\frac{1}{3}\left(\frac{2}{3\varepsilon}+1\right)=\frac{2+3\varepsilon}{9\varepsilon}.
 \]</div>
 <p>Let <span class="math notranslate nohighlight">\(N\)</span> be any integer greater than <span class="math notranslate nohighlight">\(\frac{2+3\varepsilon}{9\varepsilon}\)</span>. Then <span class="math notranslate nohighlight">\(\left|x_n-\frac{2}{3}\right|&lt;\varepsilon\)</span> for all <span class="math notranslate nohighlight">\(n\geq N\)</span>, and we have proven that <span class="math notranslate nohighlight">\(x_n\rightarrow\frac{2}{3}\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow\infty\)</span> using the definition.</p>
-<p>P3. HW1 QUESTION</p>
+<p><a class="reference internal" href="Problems.html#p3"><span class="std std-ref">P3.</span></a> (Homework 1 question)</p>
 <p>The Bolzano–Weierstrass theorem states that every bounded sequence has a convergent subsequence. Its proof combines the following two results:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- The monotone convergence theorem (Theorem 3.10 in the MAS107 notes), which states that bounded monotone sequences must converge. &lt;br&gt; More specifically, every monotone increasing sequence that is bounded above converges to its supremum, and every monotone decreasing sequence bounded below converges to its infimum.
-
-- Theorem 3.13 from MAS107: Every sequence has a monotone subsequence.
-</pre></div>
-</div>
-<p>Proof of Bolzano–Weierstrass: <br></p>
-<p>If <span class="math notranslate nohighlight">\((x_n)\)</span> is a bounded sequence, then it has a monotone subsequence, <span class="math notranslate nohighlight">\((x_{n_k})\)</span>, by Theorem 3.13. This subsequence must also be bounded since <span class="math notranslate nohighlight">\((x_n)\)</span> is bounded, and hence it converges by the monotone convergence theorem.</p>
-<p>P4.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(i) Let $a, b \geq 0$. Then,
-
-$$
+<ul class="simple">
+<li><p>The monotone convergence theorem (Theorem 3.10 in the MAS107 notes), which states that bounded monotone sequences must converge. <br> More specifically, every monotone increasing sequence that is bounded above converges to its supremum, and every monotone decreasing sequence bounded below converges to its infimum.</p></li>
+<li><p>Theorem 3.13 from MAS107: Every sequence has a monotone subsequence.</p></li>
+</ul>
+<p><strong>Proof of Bolzano–Weierstrass:</strong> <br>
+If <span class="math notranslate nohighlight">\((x_n)\)</span> is a bounded sequence, then it has a monotone subsequence, <span class="math notranslate nohighlight">\((x_{n_k})\)</span>, by Theorem 3.13. This subsequence must also be bounded since <span class="math notranslate nohighlight">\((x_n)\)</span> is bounded, and hence it converges by the monotone convergence theorem.</p>
+<p><a class="reference internal" href="Problems.html#p4"><span class="std std-ref">P4.</span></a>(i) Let <span class="math notranslate nohighlight">\(a, b \geq 0\)</span>. Then,
+$<span class="math notranslate nohighlight">\(
 \left(\sqrt{a+b}\right)^2 = a+b,
-$$
-
-while,
-
-$$
+\)</span>$</p>
+<p>while,</p>
+<div class="math notranslate nohighlight">
+\[
 \left(\sqrt{a}+\sqrt{b}\right)^2 = a + 2\sqrt{a}\sqrt{b} + b \geq a+b.
-$$
-
-Therefore
-
-$$
+\]</div>
+<p>Therefore</p>
+<div class="math notranslate nohighlight">
+\[
 \left(\sqrt{a}+\sqrt{b}\right)^2 \geq \left(\sqrt{a+b}\right)^2.
-$$	
-
-Since $\sqrt{a}$, $\sqrt{b}$ and $\sqrt{a+b}$ are all non-negative and the square root function is increasing, we can square root both sides to get
-
-$$
+\]</div>
+<p>Since <span class="math notranslate nohighlight">\(\sqrt{a}\)</span>, <span class="math notranslate nohighlight">\(\sqrt{b}\)</span> and <span class="math notranslate nohighlight">\(\sqrt{a+b}\)</span> are all non-negative and the square root function is increasing, we can square root both sides to get</p>
+<div class="math notranslate nohighlight">
+\[
 \sqrt{a}+\sqrt{b}\geq\sqrt{a+b}.
-$$
-
-(ii)  Note that the inequality we have been asked to prove is symmetric in $a$ and $b$, in the sense that exchanging the roles of $a$ and $b$ does not affect the value of either side.
-
-This means we can assume without loss of generality that $\sqrt{|a|}\geq\sqrt{|b|}$. Then,
-$$
+\]</div>
+<p>(ii)  Note that the inequality we have been asked to prove is symmetric in <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span>, in the sense that exchanging the roles of <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> does not affect the value of either side.</p>
+<p>This means we can assume without loss of generality that <span class="math notranslate nohighlight">\(\sqrt{|a|}\geq\sqrt{|b|}\)</span>. Then,</p>
+<div class="math notranslate nohighlight">
+\[
 \left|\sqrt{|a|} - \sqrt{|b|}\right| = \sqrt{|a|}-\sqrt{|b|},
-$$
-
-and we need only show that
-
-```{math}
-:label: eq:sqrta-sqrtb
-\sqrt{|a|} - \sqrt{|b|} \leq \sqrt{|a - b|}.
-```
-We use a trick similar to the proof of Corollary~\iflatexml 0.2.6, \else[cor:tri](#cor:tri), \fi and write
-
-$$
+\]</div>
+<p>and we need only show that</p>
+<div class="math notranslate nohighlight" id="equation-eq-sqrta-sqrtb">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eq-sqrta-sqrtb" title="Link to this equation">#</a></span>\[\sqrt{|a|} - \sqrt{|b|} \leq \sqrt{|a - b|}.\]</div>
+<p>We use a trick similar to the proof of Corollary~\iflatexml 0.2.6, \else<a class="reference internal" href="#cor:tri"><span class="xref myst">cor:tri</span></a>, \fi and write</p>
+<div class="math notranslate nohighlight">
+\[
 \sqrt{|a|} = \sqrt{\big|(a-b) + b\big|}.
-$$
-
-By the triangle inequality, we have that $|a| = \big|(a-b) + b\big| \leq |a-b|+|b|$.
-
-Since the square root function is increasing, we can square root both sides to get
-
-$$
+\]</div>
+<p>By the triangle inequality, we have that <span class="math notranslate nohighlight">\(|a| = \big|(a-b) + b\big| \leq |a-b|+|b|\)</span>.</p>
+<p>Since the square root function is increasing, we can square root both sides to get</p>
+<div class="math notranslate nohighlight">
+\[
 \sqrt{|a|} \leq \sqrt{|a-b|+|b|}.
-$$
-
-Applying the result from (i) to the right-hand side, it follows that
-
-$$
+\]</div>
+<p>Applying the result from (i) to the right-hand side, it follows that</p>
+<div class="math notranslate nohighlight">
+\[
 \sqrt{|a|} \leq \sqrt{|a-b|+|b|} \leq \sqrt{|a-b|}+\sqrt{|b|}.
-$$
-
-Equation ([eq:sqrta-sqrtb](#eq:sqrta-sqrtb)) now follows by subtracting $\sqrt{|b|}$ from both sides.
-
-(iii) Let $(a_n)$ be a real sequence converging to $l\in\mathbb{R}$. By (ii),
-
-$$
+\]</div>
+<p>Equation (<a class="reference internal" href="#equation-eq-sqrta-sqrtb">(2)</a>) now follows by subtracting <span class="math notranslate nohighlight">\(\sqrt{|b|}\)</span> from both sides.</p>
+<p>(iii) Let <span class="math notranslate nohighlight">\((a_n)\)</span> be a real sequence converging to <span class="math notranslate nohighlight">\(l\in\mathbb{R}\)</span>. By (ii),</p>
+<div class="math notranslate nohighlight">
+\[
 \left|\sqrt{|a_{n}|}-\sqrt{|l|}\right| \leq \sqrt{\big|a_n-l\big|}
-$$
-
-for all $n\in\mathbb{N}$.
-
-Let $\varepsilon&gt;0$. Since $a_n\rightarrow l$, there is $N\in\mathbb{N}$ such that $|a_n-l|&lt;\varepsilon^2$ whenever $n\geq N$. Hence for $n\geq N$,
-
-$$
+\]</div>
+<p>for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>.</p>
+<p>Let <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>. Since <span class="math notranslate nohighlight">\(a_n\rightarrow l\)</span>, there is <span class="math notranslate nohighlight">\(N\in\mathbb{N}\)</span> such that <span class="math notranslate nohighlight">\(|a_n-l|&lt;\varepsilon^2\)</span> whenever <span class="math notranslate nohighlight">\(n\geq N\)</span>. Hence for <span class="math notranslate nohighlight">\(n\geq N\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
 \big|\sqrt{|a_{n}|}-\sqrt{|l|}\big| \leq \sqrt{\varepsilon^2} = \varepsilon.
-$$
-
-Thus $\displaystyle\lim_{n\rightarrow\infty}\sqrt{|a_n|} = \sqrt{|l|}$.
-</pre></div>
-</div>
-<p>P5. When it exists, the supremum of a set <span class="math notranslate nohighlight">\(A\subseteq\mathbb{R}\)</span> is defined to be the unique number <span class="math notranslate nohighlight">\(\alpha\in\mathbb{R}\)</span> such that</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- $\alpha$ is an upper bound for $A$, and
-
-- if $M$ is any other upper bound for $A$, then $\alpha\leq M$.
-</pre></div>
-</div>
+\]</div>
+<p>Thus <span class="math notranslate nohighlight">\(\displaystyle\lim_{n\rightarrow\infty}\sqrt{|a_n|} = \sqrt{|l|}\)</span>.</p>
+<p><a class="reference internal" href="Problems.html#p5"><span class="std std-ref">P5.</span></a> When it exists, the supremum of a set <span class="math notranslate nohighlight">\(A\subseteq\mathbb{R}\)</span> is defined to be the unique number <span class="math notranslate nohighlight">\(\alpha\in\mathbb{R}\)</span> such that</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\alpha\)</span> is an upper bound for <span class="math notranslate nohighlight">\(A\)</span>, and</p></li>
+<li><p>if <span class="math notranslate nohighlight">\(M\)</span> is any other upper bound for <span class="math notranslate nohighlight">\(A\)</span>, then <span class="math notranslate nohighlight">\(\alpha\leq M\)</span>.</p></li>
+</ul>
 <p>We write <span class="math notranslate nohighlight">\(\sup A\)</span> for the supremum of <span class="math notranslate nohighlight">\(A\)</span>, when it exists.</p>
 <p>The definition of the infimum is similar: when it exists, the infimum of <span class="math notranslate nohighlight">\(A\)</span> is the unique number <span class="math notranslate nohighlight">\(\beta\in\mathbb{R}\)</span> such that</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(i) $\beta$ is a lower bound for $A$, and
-
-(ii) if $L$ is any other lower bound for $A$, then $\alpha\geq L$.
-&lt;br&gt;
-We write $\inf A$ for the infimum of $A$, when it exists.
-&lt;br&gt;
-The axiom of completeness for the real numbers says that every non-empty bounded above subset of $\mathbb{R}$ has a supremum. Equivalently, it says that every non-empty bounded below subset of $\mathbb{R}$ has an infimum.
-
-For more details, see page 32 of your Semester 2 MAS107 notes.
-</pre></div>
-</div>
-<p>P6.
-(i) <span class="math notranslate nohighlight">\(\displaystyle\sup\left\{\frac{m}{n}:m,n\in\mathbb{N} \text{ s.t } m&lt;n\right\}=1\)</span>, <span class="math notranslate nohighlight">\(\displaystyle\inf\left\{\frac{m}{n}:m,n\in\mathbb{N} \text{ s.t } m&lt;n\right\}=0\)</span>.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(ii) $\displaystyle\sup\left\{\frac{(-1)^m}{n}:m,n\in\mathbb{N} \text{ s.t } m&lt;n\right\}=\frac{1}{3}$, $\displaystyle\inf\left\{\frac{(-1)^m}{n}:m,n\in\mathbb{N} \text{ s.t } m&lt;n\right\}=-\frac{1}{2}$.
-
-(iii) $\displaystyle\sup\left\{\frac{n}{3n + 1} :n\in\mathbb{N}\right\}=\frac{1}{3}$, $\displaystyle\inf\left\{\frac{n}{3n + 1} :n\in\mathbb{N}\right\}=\frac{1}{4}$.
-</pre></div>
-</div>
-<p>P7.
-(i) This is false — for a counter-example, take any singleton set. Then <span class="math notranslate nohighlight">\(\sup A=\inf A=1\)</span>.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>A correct version of the statement would be $\inf A \leq \sup A$.
-
-(ii) True. The analogous statement for $\sup$ was called the characteristic property of the supremum in your MAS107 lecture notes --- see Lemma 2.8 on page 36.
-
-(iii) True. Since $\sup B$ is an upper bound for $B$, and $A$ is a subset of $B$, $\sup B$ must be an upper bound for $A$. But $\sup A$ is a the least upper bound for $A$, hence $\sup A\leq \sup B$.
-&lt;br&gt;The analogous property for $\inf$ is that $\inf A\geq\inf B$ whenever $A\subseteq B$.
-
-(iv) False. For a counter-example, take $B=\left\{\frac{1}{n}:n\in\mathbb{N}\right\}$, for which $\inf B=0$.
-
-(v) True. Let $s=\max\{\sup A,\sup B\}$. Then $s\geq \sup A$ and $s\geq \sup B$, so $s$ is an upper bound for both $A$ and $B$. Therefore, $s$ is an upper bound for $A\cup B$. But $\sup(A\cup B)$ is the least upper bound of $A\cup B$, and so $s\geq\sup(A\cup B)$. Also, since $A$ and $B$ are both subsets of $A\cup B$, we have by statement (iii) that $s=\max\{\sup A,\sup B)\leq\sup(A\cup B)$. Hence $\max\{\sup A,\sup B)=\sup(A\cup B)$.
-</pre></div>
-</div>
+<p>(i) <span class="math notranslate nohighlight">\(\beta\)</span> is a lower bound for <span class="math notranslate nohighlight">\(A\)</span>, and</p>
+<p>(ii) if <span class="math notranslate nohighlight">\(L\)</span> is any other lower bound for <span class="math notranslate nohighlight">\(A\)</span>, then <span class="math notranslate nohighlight">\(\alpha\geq L\)</span>.</p>
+<p>We write <span class="math notranslate nohighlight">\(\inf A\)</span> for the infimum of <span class="math notranslate nohighlight">\(A\)</span>, when it exists.</p>
+<p>The axiom of completeness for the real numbers says that every non-empty bounded above subset of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> has a supremum. Equivalently, it says that every non-empty bounded below subset of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> has an infimum.</p>
+<p>For more details, see page 32 of your Semester 2 MAS107 notes.</p>
+<p><a class="reference internal" href="Problems.html#p6"><span class="std std-ref">P6.</span></a>(i) <span class="math notranslate nohighlight">\(\displaystyle\sup\left\{\frac{m}{n}:m,n\in\mathbb{N} \text{ s.t } m&lt;n\right\}=1\)</span>, <span class="math notranslate nohighlight">\(\displaystyle\inf\left\{\frac{m}{n}:m,n\in\mathbb{N} \text{ s.t } m&lt;n\right\}=0\)</span>.</p>
+<p>(ii) <span class="math notranslate nohighlight">\(\displaystyle\sup\left\{\frac{(-1)^m}{n}:m,n\in\mathbb{N} \text{ s.t } m&lt;n\right\}=\frac{1}{3}\)</span>, <span class="math notranslate nohighlight">\(\displaystyle\inf\left\{\frac{(-1)^m}{n}:m,n\in\mathbb{N} \text{ s.t } m&lt;n\right\}=-\frac{1}{2}\)</span>.</p>
+<p>(iii) <span class="math notranslate nohighlight">\(\displaystyle\sup\left\{\frac{n}{3n + 1} :n\in\mathbb{N}\right\}=\frac{1}{3}\)</span>, <span class="math notranslate nohighlight">\(\displaystyle\inf\left\{\frac{n}{3n + 1} :n\in\mathbb{N}\right\}=\frac{1}{4}\)</span>.</p>
+<p><a class="reference internal" href="Problems.html#p7"><span class="std std-ref">P7.</span></a>(i) This is false — for a counter-example, take any singleton set. Then <span class="math notranslate nohighlight">\(\sup A=\inf A=1\)</span>.</p>
+<p>A correct version of the statement would be <span class="math notranslate nohighlight">\(\inf A \leq \sup A\)</span>.</p>
+<p>(ii) True. The analogous statement for <span class="math notranslate nohighlight">\(\sup\)</span> was called the characteristic property of the supremum in your MAS107 lecture notes — see Lemma 2.8 on page 36.</p>
+<p>(iii) True. Since <span class="math notranslate nohighlight">\(\sup B\)</span> is an upper bound for <span class="math notranslate nohighlight">\(B\)</span>, and <span class="math notranslate nohighlight">\(A\)</span> is a subset of <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(\sup B\)</span> must be an upper bound for <span class="math notranslate nohighlight">\(A\)</span>. But <span class="math notranslate nohighlight">\(\sup A\)</span> is a the least upper bound for <span class="math notranslate nohighlight">\(A\)</span>, hence <span class="math notranslate nohighlight">\(\sup A\leq \sup B\)</span>. The analogous property for <span class="math notranslate nohighlight">\(\inf\)</span> is that <span class="math notranslate nohighlight">\(\inf A\geq\inf B\)</span> whenever <span class="math notranslate nohighlight">\(A\subseteq B\)</span>.</p>
+<p>(iv) False. For a counter-example, take <span class="math notranslate nohighlight">\(B=\left\{\frac{1}{n}:n\in\mathbb{N}\right\}\)</span>, for which <span class="math notranslate nohighlight">\(\inf B=0\)</span>.</p>
+<p>(v) True. Let <span class="math notranslate nohighlight">\(s=\max\{\sup A,\sup B\}\)</span>. Then <span class="math notranslate nohighlight">\(s\geq \sup A\)</span> and <span class="math notranslate nohighlight">\(s\geq \sup B\)</span>, so <span class="math notranslate nohighlight">\(s\)</span> is an upper bound for both <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>. Therefore, <span class="math notranslate nohighlight">\(s\)</span> is an upper bound for <span class="math notranslate nohighlight">\(A\cup B\)</span>. But <span class="math notranslate nohighlight">\(\sup(A\cup B)\)</span> is the least upper bound of <span class="math notranslate nohighlight">\(A\cup B\)</span>, and so <span class="math notranslate nohighlight">\(s\geq\sup(A\cup B)\)</span>. Also, since <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are both subsets of <span class="math notranslate nohighlight">\(A\cup B\)</span>, we have by statement (iii) that <span class="math notranslate nohighlight">\(s=\max\{\sup A,\sup B)\leq\sup(A\cup B)\)</span>. Hence <span class="math notranslate nohighlight">\(\max\{\sup A,\sup B)=\sup(A\cup B)\)</span>.</p>
 </section>
 <section id="limits-of-functions">
 <h2>1.1. Limits of functions<a class="headerlink" href="#limits-of-functions" title="Link to this heading">#</a></h2>
-<p>One has to identify the real numbers where the given formula does not make sense, usually because of a zero in a denominator somewhere, and exclude them.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(i) $A=\mathbb{R} \setminus \{0, -1\}$.
+<p><a class="reference internal" href="Problems.html#id1"><span class="std std-ref">1.</span></a> One has to identify the real numbers where the given formula does not make sense, usually because of a zero in a denominator somewhere, and exclude them.</p>
+<p>(i) <span class="math notranslate nohighlight">\(A=\mathbb{R} \setminus \{0, -1\}\)</span>.</p>
+<p>(ii) <span class="math notranslate nohighlight">\(f_{2}(x) = \displaystyle\frac{(x-1)(x+4)}{(x-1)(x+2)(x+3)}\)</span>, so <span class="math notranslate nohighlight">\(A=\mathbb{R} \setminus \{1, -2, -3\}\)</span>.</p>
+<p>(iii) <span class="math notranslate nohighlight">\(f_{3}(x) = \displaystyle\frac{x+4}{(x+2)(x+3)}\)</span>, so <span class="math notranslate nohighlight">\(A=\mathbb{R} \setminus \{-2, -3\}\)</span>.</p>
+<p>(iv) <span class="math notranslate nohighlight">\(A=\mathbb{R} \setminus \{1\}\)</span>.</p>
+<p>(v) <span class="math notranslate nohighlight">\(A=\mathbb{R} \setminus \{0\}\)</span>.</p>
+<p><a class="reference internal" href="Problems.html#id2"><span class="std std-ref">2.</span></a> (Homework 1 question)</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(i) $L=[0,1]\cup[2,3]$.
 
-(ii) $f_{2}(x) = \displaystyle\frac{(x-1)(x+4)}{(x-1)(x+2)(x+3)}$, so $A=\mathbb{R} \setminus \{1, -2, -3\}$.
+(ii) $L=\emptyset$.  (All convergent sequences in $\mathbb{Z}$ are eventually constant.)
 
-(iii) $f_{3}(x) = \displaystyle\frac{x+4}{(x+2)(x+3)}$, so $A=\mathbb{R} \setminus \{-2, -3\}$.
+(iii) $L=\mathbb{R}$.
 
-(iv) $A=\mathbb{R} \setminus \{1\}$.
+(iv) $L=[0,1]$
 
-(v) $A=\mathbb{R} \setminus \{0\}$.
+(v) $L=\{0\}$
 </pre></div>
 </div>
-<ol class="arabic" start="2">
-<li><p>HW1 QUESTION</p>
-<p>(i) <span class="math notranslate nohighlight">\(L=[0,1]\cup[2,3]\)</span>.</p>
-<p>(ii) <span class="math notranslate nohighlight">\(L=\emptyset\)</span>.  (All convergent sequences in <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span> are eventually constant.)</p>
-<p>(iii) <span class="math notranslate nohighlight">\(L=\mathbb{R}\)</span>.</p>
-<p>(iv) <span class="math notranslate nohighlight">\(L=[0,1]\)</span></p>
-<p>(v) <span class="math notranslate nohighlight">\(L=\{0\}\)</span></p>
-</li>
+<ol class="arabic simple" start="3">
 <li><p>We had <span class="math notranslate nohighlight">\(A= \mathbb{R} \setminus \{1, -2, -3\}\)</span>, and <span class="math notranslate nohighlight">\(f_2:A\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(\displaystyle f_{2}(x)= \frac{(x + 4)}{(x + 2)(x + 3)}\)</span>.</p></li>
 </ol>
 <p>Let <span class="math notranslate nohighlight">\((x_n)\)</span> be a sequence in <span class="math notranslate nohighlight">\(A\)</span> converging to <span class="math notranslate nohighlight">\(1\)</span>. Then, using algebra of limits for real sequences,</p>
@@ -570,7 +529,7 @@ To be precise let <span class="math notranslate nohighlight">\((x_{n})\)</span> 
 Using algebra of limits,  <span class="math notranslate nohighlight">\(\lim_{x \rightarrow 1}\displaystyle\frac{x+1}{x^{2}}=\frac{1+1}{1^2}=2\)</span> and
 then by the first part <span class="math notranslate nohighlight">\(\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1}{x^{2}}} = \sqrt{2}\)</span>.</p></li>
 <li><p>Let <span class="math notranslate nohighlight">\(f:A\to \mathbb{R}\)</span> and suppose that <span class="math notranslate nohighlight">\(\lim_{x \rightarrow a} f(x) = l\)</span> and <span class="math notranslate nohighlight">\(\lim_{x \rightarrow a} f(x) = l'\)</span>. Then given any sequence <span class="math notranslate nohighlight">\((x_{n})\)</span> in <span class="math notranslate nohighlight">\(A \setminus \{a\}\)</span> that converges to <span class="math notranslate nohighlight">\(a\)</span>, we have <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} f(x_{n}) = l\)</span> and also <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} f(x_{n}) = l'\)</span>. But then <span class="math notranslate nohighlight">\(l = l'\)</span>, by uniqueness of limits.</p></li>
-<li><p>HW2 QUESTION
+<li><p>(Homework 2 question)
 <br>
 When <span class="math notranslate nohighlight">\(x &gt; 0, \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|} = \displaystyle\frac{x}{x} = 1 = \sign(x)\)</span>,
 <br>
@@ -581,7 +540,7 @@ The left limit is <span class="math notranslate nohighlight">\(\displaystyle\lim
 Similarly, the right limit is <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow 0^+} \sign(x) = 1\)</span>,  since for any sequence <span class="math notranslate nohighlight">\((x_n)\)</span> approaching <span class="math notranslate nohighlight">\(0\)</span> from the right, we have <span class="math notranslate nohighlight">\(\sign(x) = 1\)</span> for all <span class="math notranslate nohighlight">\(n\)</span>.
 <br>
 Since the left and right limits are different, <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow 0}\sign(x)\)</span> does not exist.</p></li>
-<li><p>HW2 QUESTION</p>
+<li><p>(Homework 2 question)</p>
 <p>(i) For <span class="math notranslate nohighlight">\(a\neq 1\)</span>, the left and right limits exist and are both equal to <span class="math notranslate nohighlight">\(f(a)\)</span>, using the algebra of limits. The only point at which left and right limits disagree is <span class="math notranslate nohighlight">\(a = 1\)</span>, with
 $<span class="math notranslate nohighlight">\(
  \lim_{x \rightarrow 1-}f(x) = 0, \; \text{ and } \; \lim_{x \rightarrow 1+}f(x) = 1.
@@ -654,8 +613,7 @@ Graph of the function <span class="math notranslate nohighlight">\(f:\mathbb{R}\
 <br>
 For the proof, suppose the <span class="math notranslate nohighlight">\((\varepsilon- K)\)</span> criterion holds and <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} x_{n} = \infty\)</span>. Then given any <span class="math notranslate nohighlight">\(L &gt; 0\)</span>, there exists <span class="math notranslate nohighlight">\(N\in\mathbb{N}\)</span> such that if <span class="math notranslate nohighlight">\(n\geq N\)</span>, we have <span class="math notranslate nohighlight">\(x_{n} &gt; L\)</span>. Now take <span class="math notranslate nohighlight">\(L\)</span> to be <span class="math notranslate nohighlight">\(K\)</span> from the criterion and we get that for all <span class="math notranslate nohighlight">\(n\geq N, |f(x_{n}) - l| &lt; \varepsilon\)</span>. Hence <span class="math notranslate nohighlight">\(\lim_{x \rightarrow \infty}f(x_{n}) = l\)</span>, as required.
 <br>
-For the converse, we again imitate the proof of Theorem \iflatexml 1.2.6 \else <a class="reference internal" href="#ed"><span class="xref myst">ed</span></a> \fi. So suppose the <span class="math notranslate nohighlight">\((\varepsilon-K)\)</span> criterion does not hold.
-This time choose successively <span class="math notranslate nohighlight">\(K = 1, 2, \ldots\)</span> and construct <span class="math notranslate nohighlight">\(x_{n}\)</span> in the domain <span class="math notranslate nohighlight">\(X\)</span> of <span class="math notranslate nohighlight">\(f\)</span> such that <span class="math notranslate nohighlight">\(x_{n} &gt; n\)</span>, and <span class="math notranslate nohighlight">\(|f(x_{n}) - l| \geq \varepsilon\)</span> for each <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>. So <span class="math notranslate nohighlight">\(f\)</span> does not converge to <span class="math notranslate nohighlight">\(l\)</span> as <span class="math notranslate nohighlight">\(x\to\infty\)</span>.</p>
+For the converse, we again imitate the proof of Theorem 1.2.6. So suppose the <span class="math notranslate nohighlight">\((\varepsilon-K)\)</span> criterion does not hold. This time choose successively <span class="math notranslate nohighlight">\(K = 1, 2, \ldots\)</span> and construct <span class="math notranslate nohighlight">\(x_{n}\)</span> in the domain <span class="math notranslate nohighlight">\(X\)</span> of <span class="math notranslate nohighlight">\(f\)</span> such that <span class="math notranslate nohighlight">\(x_{n} &gt; n\)</span>, and <span class="math notranslate nohighlight">\(|f(x_{n}) - l| \geq \varepsilon\)</span> for each <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>. So <span class="math notranslate nohighlight">\(f\)</span> does not converge to <span class="math notranslate nohighlight">\(l\)</span> as <span class="math notranslate nohighlight">\(x\to\infty\)</span>.</p>
 <p>(iii) Given any <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span>, choose <span class="math notranslate nohighlight">\(K = \frac{1}{\varepsilon}\)</span>. Then <span class="math notranslate nohighlight">\(x &gt; K \Rightarrow \frac{1}{x} &lt; \varepsilon\)</span>, and so <span class="math notranslate nohighlight">\(\lim_{x\to\infty} \frac{1}{x}=0\)</span>. The case where <span class="math notranslate nohighlight">\(x\to-\infty\)</span> is similar.</p>
 </li>
 <li><p>(i) Let <span class="math notranslate nohighlight">\(f:X\to\mathbb{R}\)</span> be a function, where <span class="math notranslate nohighlight">\(X\subseteq\mathbb{R}\)</span>. We say that <span class="math notranslate nohighlight">\(\lim_{x \rightarrow \infty} f(x) = \infty\)</span> if for any sequence <span class="math notranslate nohighlight">\((x_{n})\)</span> in <span class="math notranslate nohighlight">\(X\)</span> which diverges to infinity, we also have that <span class="math notranslate nohighlight">\((f(x_{n}))\)</span> diverges to infinity.
@@ -832,17 +790,17 @@ To prove the left continuity at <span class="math notranslate nohighlight">\(a\)
 <li><p>Since <span class="math notranslate nohighlight">\(f\)</span> is continuous on <span class="math notranslate nohighlight">\([a, b]\)</span>, so is <span class="math notranslate nohighlight">\(g\)</span>. We have <span class="math notranslate nohighlight">\(g(a) = f(a) - \gamma &lt; 0\)</span> and <span class="math notranslate nohighlight">\(g(b) = f(b) - \gamma &gt; 0\)</span>. Hence by the intermediate value theorem (Theorem \iflatexml  2.3.1 \else <a class="reference internal" href="#ivp"><span class="xref myst">ivp</span></a> \fi), there exists <span class="math notranslate nohighlight">\(c \in (a, b)\)</span> with <span class="math notranslate nohighlight">\(g(c) = 0\)</span>, i.e. <span class="math notranslate nohighlight">\(f(c) = \gamma\)</span>, as was required.</p></li>
 <li><p>(i) If <span class="math notranslate nohighlight">\(f\)</span> is continuous on <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> it is continuous on <span class="math notranslate nohighlight">\([a, b]\)</span> for each <span class="math notranslate nohighlight">\(a &lt; b\)</span>. If <span class="math notranslate nohighlight">\(f\)</span> is not a constant, we must be able to find <span class="math notranslate nohighlight">\(a, b\)</span> such that <span class="math notranslate nohighlight">\(f(a) \neq f(b)\)</span>. Now either <span class="math notranslate nohighlight">\(f(a) &lt; f(b)\)</span> or <span class="math notranslate nohighlight">\(f(a) &gt; f(b)\)</span>. Assume the former (without loss of generality). Then there exists <span class="math notranslate nohighlight">\(m, n \in \mathbb{Z}\)</span> with <span class="math notranslate nohighlight">\(m &lt; n\)</span> such that <span class="math notranslate nohighlight">\(f(a) = m\)</span> and <span class="math notranslate nohighlight">\(f(b) = n\)</span>. Hence by Corollary~\iflatexml 2.3.2 \else <a class="reference internal" href="#ivp2"><span class="xref myst">ivp2</span></a>\fi, there exists <span class="math notranslate nohighlight">\(c \in (a, b)\)</span> so that <span class="math notranslate nohighlight">\(f(c) = m + \frac{1}{2} \notin\mathbb{Z}\)</span>, and that is the desired contradiction.
 (ii) Argue as in (i), using the fact that between any two rational numbers, we can find an irrational number.</p></li>
-<li><p>HW3 question
+<li><p>(Homework 3 question)
 <br>
 <em>Something</em> is <span class="math notranslate nohighlight">\(x\)</span>. That is, define <span class="math notranslate nohighlight">\(g:[a,b]\to\mathbb{R}\)</span> given by <span class="math notranslate nohighlight">\(g(x) = f(x) - x\)</span>. Then <span class="math notranslate nohighlight">\(g\)</span> is continuous (because <span class="math notranslate nohighlight">\(f\)</span> is and the function <span class="math notranslate nohighlight">\(h(x)=x\)</span> is, and using algebra of limits). Since the range of <span class="math notranslate nohighlight">\(f\)</span> is contained in <span class="math notranslate nohighlight">\((a, b)\)</span>, we have <span class="math notranslate nohighlight">\(f(a) &gt; a\)</span> and <span class="math notranslate nohighlight">\(f(b) &lt; b\)</span>, and so <span class="math notranslate nohighlight">\(g(a) = f(a) - a &gt; 0\)</span> and <span class="math notranslate nohighlight">\(g(b) = f(b) - b &lt; 0\)</span>. So we can apply the intermediate value theorem to the function <span class="math notranslate nohighlight">\(g\)</span> on <span class="math notranslate nohighlight">\([a,b]\)</span>. This says that there exists <span class="math notranslate nohighlight">\(c \in (a, b)\)</span> such that <span class="math notranslate nohighlight">\(g(c) = 0\)</span>, i.e. <span class="math notranslate nohighlight">\(f(c) = c\)</span>.
 <br>
 For the counter–example, consider <span class="math notranslate nohighlight">\(f(x) = x^2\)</span>. It is continuous on <span class="math notranslate nohighlight">\((0, 1)\)</span> but there is no <span class="math notranslate nohighlight">\(c \in (0, 1)\)</span> for which <span class="math notranslate nohighlight">\(c^2 = c\)</span>.</p></li>
 <li><p>Define <span class="math notranslate nohighlight">\(\gamma = \inf_{x \in [a, b]}f(x)\)</span> and assume that it is not attained, so <span class="math notranslate nohighlight">\(\gamma &lt; f(x)\)</span> for all <span class="math notranslate nohighlight">\(x \in [a,b]\)</span>. Then consider the function <span class="math notranslate nohighlight">\(h:[a,b]\to \mathbb{R}\)</span> given by <span class="math notranslate nohighlight">\(h(x) = \displaystyle\frac{1}{f(x) - \gamma}\)</span>. This is continuous, and hence bounded on <span class="math notranslate nohighlight">\([a, b]\)</span>. So there exists <span class="math notranslate nohighlight">\(K \geq 0\)</span> such that <span class="math notranslate nohighlight">\(|h(x)| \leq K\)</span> for all <span class="math notranslate nohighlight">\(x \in [a, b]\)</span>. By Problem
 15(ii), given any <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span>, there exists <span class="math notranslate nohighlight">\(x \in [a, b]\)</span> such that <span class="math notranslate nohighlight">\(f(x) &lt; \gamma + \varepsilon\)</span>. Now take <span class="math notranslate nohighlight">\(\varepsilon = \frac{1}{K}\)</span> to deduce that <span class="math notranslate nohighlight">\(h(x) &gt; K\)</span>, which yields the required contradiction.</p></li>
-<li><p>By algebra of limits, <span class="math notranslate nohighlight">\(\frac{1}{f}\)</span> is continuous on <span class="math notranslate nohighlight">\([0, 1]\)</span> and so is bounded by Theorem \iflatexml 2.3.6 \else <a class="reference internal" href="#thm:evt"><span class="xref myst">thm:evt</span></a> \fi .</p></li>
-<li><p>HW3 question
+<li><p>By algebra of limits, <span class="math notranslate nohighlight">\(\frac{1}{f}\)</span> is continuous on <span class="math notranslate nohighlight">\([0, 1]\)</span> and so is bounded by Theorem 2.3.6.</p></li>
+<li><p>(Homework 3 question)
 <br>
-If <span class="math notranslate nohighlight">\(f\)</span> is continuous on <span class="math notranslate nohighlight">\([0, 1]\)</span>, then it is bounded by Theorem \iflatexml 2.3.6 \else <a class="reference internal" href="#thm:evt"><span class="xref myst">thm:evt</span></a> \fi , and so there exists <span class="math notranslate nohighlight">\(L \geq 0\)</span> such that <span class="math notranslate nohighlight">\(|f(x)| \leq L\)</span> for all <span class="math notranslate nohighlight">\(x \in [0, 1]\)</span>. Hence the range of <span class="math notranslate nohighlight">\(f\)</span> is a subset of  <span class="math notranslate nohighlight">\([-L, L]\)</span> and cannot be all of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>.</p></li>
+If <span class="math notranslate nohighlight">\(f\)</span> is continuous on <span class="math notranslate nohighlight">\([0, 1]\)</span>, then it is bounded by Theorem 2.3.6, and so there exists <span class="math notranslate nohighlight">\(L \geq 0\)</span> such that <span class="math notranslate nohighlight">\(|f(x)| \leq L\)</span> for all <span class="math notranslate nohighlight">\(x \in [0, 1]\)</span>. Hence the range of <span class="math notranslate nohighlight">\(f\)</span> is a subset of  <span class="math notranslate nohighlight">\([-L, L]\)</span> and cannot be all of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>.</p></li>
 <li><p>Since <span class="math notranslate nohighlight">\((x_{n})\)</span> is bounded, by the Bolzano–Weierstrass theorem it has a convergent subsequence <span class="math notranslate nohighlight">\((x_{n_{k}})\)</span>. Let <span class="math notranslate nohighlight">\(c=\lim_{k \rightarrow \infty}x_{n_{k}}\)</span> and note that <span class="math notranslate nohighlight">\(c \in [0, 1]\)</span>, since <span class="math notranslate nohighlight">\(x_{n_k}\in[0,1]\)</span> for all <span class="math notranslate nohighlight">\(k\)</span>.
 <br>
 A straight-forward induction argument shows that <span class="math notranslate nohighlight">\(f(x_{n_{k}}) \leq r^{n_{k}-1}f(x_{n_{1}})\)</span> for all <span class="math notranslate nohighlight">\(k\in\mathbb{N}\)</span>. But then, since the range of <span class="math notranslate nohighlight">\(f\)</span> is contained in <span class="math notranslate nohighlight">\([0,1]\)</span>, we have</p></li>
@@ -943,7 +901,7 @@ If instead <span class="math notranslate nohighlight">\(a&gt;1\)</span>, then <s
 <li><p>This is Definition \iflatexml 1.2.3 \else <a class="reference internal" href="#def:functionlimit"><span class="xref myst">def:functionlimit</span></a> \fi in the notes:
 <br>
 The function <span class="math notranslate nohighlight">\(f\)</span> has limit <span class="math notranslate nohighlight">\(l\)</span> at the point <span class="math notranslate nohighlight">\(a\)</span> if for every sequence  <span class="math notranslate nohighlight">\((x_n)\)</span> in <span class="math notranslate nohighlight">\(A\)</span> with <span class="math notranslate nohighlight">\(x_n\neq a\)</span> for all <span class="math notranslate nohighlight">\(n\)</span> and <span class="math notranslate nohighlight">\(\lim_{n\to\infty} x_n=a\)</span>, we have <span class="math notranslate nohighlight">\(\lim_{n\to\infty}f(x_n)=l\)</span>. We write <span class="math notranslate nohighlight">\(\lim_{x\to a}f(x)=l\)</span>.</p></li>
-<li><p>HW4 question
+<li><p>(Homework 4 question)
 (i) This is Definition \iflatexml 3.2.1 \else <a class="reference internal" href="#def:functionlimit"><span class="xref myst">def:functionlimit</span></a> \fi in the notes: we say that <span class="math notranslate nohighlight">\(f\)</span> is {\it differentiable} at <span class="math notranslate nohighlight">\(a \in A\)</span> if <span class="math notranslate nohighlight">\( \lim_{x \rightarrow a}\frac{f(x) - f(a)}{x - a}\)</span> exists. Or, equivalently, <span class="math notranslate nohighlight">\( \lim_{h \rightarrow 0}\frac{f(a +h) - f(a)}{h}\)</span> exists.
 <br>
 That is, we fix <span class="math notranslate nohighlight">\(a\in A\)</span> and we consider the function <span class="math notranslate nohighlight">\(g\)</span> given by <span class="math notranslate nohighlight">\(g(h)=\frac{f(a +h) - f(a)}{h}\)</span>. Then <span class="math notranslate nohighlight">\(f\)</span> is differentiable at <span class="math notranslate nohighlight">\(a\)</span> if the limit of <span class="math notranslate nohighlight">\(g\)</span> as <span class="math notranslate nohighlight">\(h\)</span> goes to zero exists.</p>
@@ -1715,44 +1673,51 @@ L(-f) &amp;= \sup\{L(-f,P):\text{ partitions } P \text{ of } [a,b]\} \\
 \[
 \int_a^b(-f(x))dx = -\int_a^b f(x)dx.
 \]</div>
-<ol class="arabic" start="69">
-<li><p>We have <span class="math notranslate nohighlight">\(M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}\)</span>, and <span class="math notranslate nohighlight">\(M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}\)</span>.</p>
-<p>(i) If <span class="math notranslate nohighlight">\(m\geq 0\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is a non-negative function, so <span class="math notranslate nohighlight">\(M=M'\)</span>, <span class="math notranslate nohighlight">\(m=m'\)</span>, and <span class="math notranslate nohighlight">\(M-m=M'-m'\)</span>.</p>
-<p>If <span class="math notranslate nohighlight">\(m\leq M\leq 0\)</span> then <span class="math notranslate nohighlight">\(M'=-m\)</span>, <span class="math notranslate nohighlight">\(m'=-M\)</span>, and so again <span class="math notranslate nohighlight">\(M'-m'=M-m\)</span>.</p>
-<p>If <span class="math notranslate nohighlight">\(m&lt;0&lt;M\)</span>, then <span class="math notranslate nohighlight">\(M'=\max\{M,-m\}\leq M+(-m)\)</span>, since both <span class="math notranslate nohighlight">\(M\)</span> and <span class="math notranslate nohighlight">\(-m\)</span> are positive numbers. Then,
-$<span class="math notranslate nohighlight">\(
-M'-m' \leq M' \leq M-m,
-\)</span><span class="math notranslate nohighlight">\(
-since \)</span>m’\geq 0$.</p>
-<p>(ii) Let <span class="math notranslate nohighlight">\(f:[a,b]\to\mathbb{R}\)</span> be integrable, and let <span class="math notranslate nohighlight">\(P\)</span> be the partition <span class="math notranslate nohighlight">\(a=x_0&lt;x_1&lt;\ldots&lt;x_n=b\)</span>. for <span class="math notranslate nohighlight">\(k=1,\ldots,n\)</span>. let</p>
-<div class="math notranslate nohighlight">
-\[
-    M_k=\sup_{x\in[x_{k-1},x_k]}f(x), \; m_k=\inf{x\in[x_{k-1},x_k]}f(x),
-    \]</div>
-<div class="math notranslate nohighlight">
-\[
-    M_k'=\sup_{x\in[x_{k-1},x_k]}|f(x)|, \; \text{ and } \; m_k'=\inf{x\in[x_{k-1},x_k]}|f(x)|.
-    \]</div>
-<p>Then by part (i), <span class="math notranslate nohighlight">\(M_k-m_k\geq M_k'-m_k'\)</span> for each <span class="math notranslate nohighlight">\(k\)</span>.</p>
-<p>Therefore,</p>
-<div class="math notranslate nohighlight">
-\[
-    U(|f|,P) - L(|f|,P) = \sum_{k=1}^n(M_k'-m_k')(x_k-x_{k-1}) \leq \sum_{k=1}^n(M_k-m_k)(x_k-x_{k-1}) = U(f,P)-L(f,P).
-    \]</div>
-<p>(iii) Since <span class="math notranslate nohighlight">\(f\)</span> is integrable, for all <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>, we can choose the a partition <span class="math notranslate nohighlight">\(P\)</span> so that <span class="math notranslate nohighlight">\(U(f,P)-L(f,P)&lt;\varepsilon\)</span>. Using the result of part (ii). it follows that <span class="math notranslate nohighlight">\(U(|f|,P)-L(|f|,P)&lt;\varepsilon\)</span> for this partition, and so <span class="math notranslate nohighlight">\(|f|\)</span> is integrable.</p>
-<p>Since <span class="math notranslate nohighlight">\(-|f(x)|\leq f(x)\leq |f(x)|\)</span> for all <span class="math notranslate nohighlight">\(x\in[a,b]\)</span>, Proposition <a class="reference internal" href="#propsint"><span class="xref myst">propsint</span></a>(<a class="reference internal" href="#leq"><span class="xref myst">leq</span></a>) and (<a class="reference internal" href="#linear"><span class="xref myst">linear</span></a> imply that</p>
-<div class="math notranslate nohighlight">
-\[
-    -\int_a^b|f(x)|dx \leq \int_a^b f(x)dx \leq \int_a^b|f(x)|dx.
-    \]</div>
-<p>That is,</p>
-<div class="math notranslate nohighlight">
-\[
-    \left|\int_a^b f(x)dx\right| \leq \int_a^b|f(x)|dx.
-    \]</div>
-</li>
-<li><p>We have</p></li>
-</ol>
+<p><a class="reference internal" href="Problems.html#id69"><span class="std std-ref">69.</span></a> We have <span class="math notranslate nohighlight">\(M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}\)</span>, and <span class="math notranslate nohighlight">\(M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}\)</span>.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(i) If $m\geq 0$, then $f$ is a non-negative function, so $M=M&#39;$, $m=m&#39;$, and $M-m=M&#39;-m&#39;$.
+
+If $m\leq M\leq 0$ then $M&#39;=-m$, $m&#39;=-M$, and so again $M&#39;-m&#39;=M-m$.
+
+If $m&lt;0&lt;M$, then $M&#39;=\max\{M,-m\}\leq M+(-m)$, since both $M$ and $-m$ are positive numbers. Then,
+$$
+M&#39;-m&#39; \leq M&#39; \leq M-m,
+$$
+since $m&#39;\geq 0$.
+
+(ii) Let $f:[a,b]\to\mathbb{R}$ be integrable, and let $P$ be the partition $a=x_0&lt;x_1&lt;\ldots&lt;x_n=b$. for $k=1,\ldots,n$. let
+
+$$
+M_k=\sup_{x\in[x_{k-1},x_k]}f(x), \; m_k=\inf{x\in[x_{k-1},x_k]}f(x),
+$$
+
+$$
+M_k&#39;=\sup_{x\in[x_{k-1},x_k]}|f(x)|, \; \text{ and } \; m_k&#39;=\inf{x\in[x_{k-1},x_k]}|f(x)|.
+$$
+
+Then by part (i), $M_k-m_k\geq M_k&#39;-m_k&#39;$ for each $k$.
+
+Therefore,
+
+$$
+U(|f|,P) - L(|f|,P) = \sum_{k=1}^n(M_k&#39;-m_k&#39;)(x_k-x_{k-1}) \leq \sum_{k=1}^n(M_k-m_k)(x_k-x_{k-1}) = U(f,P)-L(f,P).
+$$
+
+(iii) Since $f$ is integrable, for all $\varepsilon&gt;0$, we can choose the a partition $P$ so that $U(f,P)-L(f,P)&lt;\varepsilon$. Using the result of part (ii). it follows that $U(|f|,P)-L(|f|,P)&lt;\varepsilon$ for this partition, and so $|f|$ is integrable.
+
+Since $-|f(x)|\leq f(x)\leq |f(x)|$ for all $x\in[a,b]$, Proposition [propsint](#propsint)([leq](#leq)) and ([linear](#linear) imply that
+
+$$
+-\int_a^b|f(x)|dx \leq \int_a^b f(x)dx \leq \int_a^b|f(x)|dx.
+$$
+
+That is,
+
+$$
+\left|\int_a^b f(x)dx\right| \leq \int_a^b|f(x)|dx.
+$$
+</pre></div>
+</div>
+<p><a class="reference internal" href="Problems.html#id70"><span class="std std-ref">70.</span></a> We have</p>
 <div class="math notranslate nohighlight">
 \[
 \int_{a(x)}^{b(x)} f(t)dt =  \int_0^{b(x)} f(t)dt - \int_0^{a(x)} f(t)\ dt.
@@ -1778,27 +1743,30 @@ since \)</span>m’\geq 0$.</p>
 \frac{d}{dx}\int_{a(x)}^{b(x)} f(t)dt =f(b(x))b'(x) - f(a(x))a'(x),
 \]</div>
 <p>as required.</p>
-<ol class="arabic" start="71">
-<li><p>(i) It follows immediately from the fundamental theorem of calculus that <span class="math notranslate nohighlight">\(l\)</span> is differentiable, with <span class="math notranslate nohighlight">\(l'(x)=\frac{1}{x}\)</span>.</p>
-<p>(ii) By Proposition \iflatexml 5.3.1(ii) \else <a class="reference internal" href="#propsint"><span class="xref myst">propsint</span></a>(ii) \fi in the lecture notes,</p>
-<div class="math notranslate nohighlight">
-\[
-    l(xy) =\int_1^{xy}\frac{1}{t}\, dt= \int_1^x \frac{1}{t}\, dt + \int_x^{xy} \frac{1}{t}\, dt = l(y) + \int_x^{xy}\frac{1}{t}dt.
-    \]</div>
-<p>In the second integral, set <span class="math notranslate nohighlight">\(a(x)=xy\)</span>, <span class="math notranslate nohighlight">\(b(x)=x\)</span> and use Question <a class="reference internal" href="#q:116"><span class="xref myst">q:116</span></a>. We have <span class="math notranslate nohighlight">\(a'(x)=y\)</span> and <span class="math notranslate nohighlight">\(b'(x)=1\)</span>, so</p>
-<div class="math notranslate nohighlight">
-\[
-    \frac{d}{dx}\int_x^{xy} \frac{1}{t}dt = \frac{1}{b(x)}b'(x) - \frac{1}{a(x)}a'(x) = \frac{1}{x} - \frac{y}{xy} =0.
-    \]</div>
-<p>Therefore <span class="math notranslate nohighlight">\(\int_x^{xy}\frac{1}{t}dt\)</span> is constant as a function of <span class="math notranslate nohighlight">\(x\)</span>. In particular, it coincides with its value when <span class="math notranslate nohighlight">\(x=1\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[
-    \int_x^{xy}\frac{1}{t}dt = \int_1^{y}\frac{1}{t}dt = l(y),
-    \]</div>
-<p>and <span class="math notranslate nohighlight">\(l(xy)=l(x)+l(y)\)</span> follows.</p>
-</li>
-<li><p>Define <span class="math notranslate nohighlight">\(G\colon [a,b]\rightarrow \mathbb{R}\)</span> by</p></li>
-</ol>
+<p><a class="reference internal" href="Problems.html#id71"><span class="std std-ref">71.</span></a>
+(i) It follows immediately from the fundamental theorem of calculus that <span class="math notranslate nohighlight">\(l\)</span> is differentiable, with <span class="math notranslate nohighlight">\(l'(x)=\frac{1}{x}\)</span>.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(ii) By Proposition \iflatexml 5.3.1(ii) \else [propsint](#propsint)(ii) \fi in the lecture notes,
+
+$$
+l(xy) =\int_1^{xy}\frac{1}{t}\, dt= \int_1^x \frac{1}{t}\, dt + \int_x^{xy} \frac{1}{t}\, dt = l(y) + \int_x^{xy}\frac{1}{t}dt.
+$$
+
+In the second integral, set $a(x)=xy$, $b(x)=x$ and use Question [q:116](#q:116). We have $a&#39;(x)=y$ and $b&#39;(x)=1$, so
+
+$$
+\frac{d}{dx}\int_x^{xy} \frac{1}{t}dt = \frac{1}{b(x)}b&#39;(x) - \frac{1}{a(x)}a&#39;(x) = \frac{1}{x} - \frac{y}{xy} =0.
+$$
+
+Therefore $\int_x^{xy}\frac{1}{t}dt$ is constant as a function of $x$. In particular, it coincides with its value when $x=1$:
+
+$$
+\int_x^{xy}\frac{1}{t}dt = \int_1^{y}\frac{1}{t}dt = l(y),
+$$
+
+and $l(xy)=l(x)+l(y)$ follows.
+</pre></div>
+</div>
+<p><a class="reference internal" href="Problems.html#id72"><span class="std std-ref">72.</span></a> Define <span class="math notranslate nohighlight">\(G\colon [a,b]\rightarrow \mathbb{R}\)</span> by</p>
 <div class="math notranslate nohighlight">
 \[
 G(x) = \int_a^x f(t)\, dt
@@ -1826,26 +1794,28 @@ F(a) = -\int_a^b f(t)\, dt,  \qquad F(b) = \int_a^b f(t)\, dt=-F(a).
 \[
 \int_a^x f(t)\, dt = \int_x^b f(t)\, dt.
 \]</div>
-<ol class="arabic" start="73">
-<li><p>(i) Consider the step functions <span class="math notranslate nohighlight">\(m\mathbf{1}_{[a,b]}\)</span> and <span class="math notranslate nohighlight">\(M\mathbf{1}_{[a,b]}\)</span> with <span class="math notranslate nohighlight">\(m\mathbf{1}_{[a,b]}(x)\leq f(x)\leq M\mathbf{1}_{[a,b]}(x)\)</span> for all <span class="math notranslate nohighlight">\(x\in[a,b]\)</span>. Thus we have</p>
-<div class="math notranslate nohighlight">
-\[
-    m(b-a)=\int_a^b m\mathbf{1}_{[a,b]}(x)\, dx \leq \int_a^b f(x)\, dx \leq \int_a^b M\mathbf{1}_{[a,b]}(x)\, dx= M(b-a).
-    \]</div>
-<p>Let <span class="math notranslate nohighlight">\(\mu = \frac{1}{b-a} \int_a^b f(x)\, dx\)</span>. Then <span class="math notranslate nohighlight">\(\int_a^b f(x)\, dx=(b-a)\mu\)</span> and <span class="math notranslate nohighlight">\(m\leq \mu\leq M\)</span>, so <span class="math notranslate nohighlight">\(\mu \in [m,M]\)</span>.</p>
-<p>(ii) Let <span class="math notranslate nohighlight">\(m = \inf \{ f(x) : x\in [a,b] \}\)</span> and <span class="math notranslate nohighlight">\(M = \sup \{ f(x) : x\in [a,b] \}\)</span>. Then by part (i) we have <span class="math notranslate nohighlight">\(\mu \in [m,M]\)</span> where</p>
-<div class="math notranslate nohighlight">
-\[
-    \int_a^b f(x)\, dx =(b-a)\mu.
-    \]</div>
-<p>But as <span class="math notranslate nohighlight">\(f\)</span> is a continuous function on a closed bounded interval, <span class="math notranslate nohighlight">\(m\)</span> is the minimum value of <span class="math notranslate nohighlight">\(f\)</span>, and <span class="math notranslate nohighlight">\(M\)</span> is the maximum value. As <span class="math notranslate nohighlight">\(\mu\in [m,M]\)</span> and <span class="math notranslate nohighlight">\(f\)</span> is continuous, by the intermediate value theorem there is some <span class="math notranslate nohighlight">\(\xi \in [a,b]\)</span> such that <span class="math notranslate nohighlight">\(f(\xi ) = \mu\)</span>. Hence</p>
-<div class="math notranslate nohighlight">
-\[
-    \int_a^b f(x)\, dx =(b-a)f(\xi ).
-    \]</div>
-</li>
-<li><p>Let  <span class="math notranslate nohighlight">\(m = \inf \{ f(x) : x\in [a,b] \}\)</span> and <span class="math notranslate nohighlight">\(M = \sup \{ f(x) : x\in [a,b] \}\)</span>. Then <span class="math notranslate nohighlight">\(m\leq f(x)\leq M\)</span> for all <span class="math notranslate nohighlight">\(x\in [a,b]\)</span>. As <span class="math notranslate nohighlight">\(g(x)\geq 0\)</span>, we have</p></li>
-</ol>
+<p><a class="reference internal" href="Problems.html#id73"><span class="std std-ref">73.</span></a>
+(i) Consider the step functions <span class="math notranslate nohighlight">\(m\mathbf{1}_{[a,b]}\)</span> and <span class="math notranslate nohighlight">\(M\mathbf{1}_{[a,b]}\)</span> with <span class="math notranslate nohighlight">\(m\mathbf{1}_{[a,b]}(x)\leq f(x)\leq M\mathbf{1}_{[a,b]}(x)\)</span> for all <span class="math notranslate nohighlight">\(x\in[a,b]\)</span>. Thus we have</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$$
+m(b-a)=\int_a^b m\mathbf{1}_{[a,b]}(x)\, dx \leq \int_a^b f(x)\, dx \leq \int_a^b M\mathbf{1}_{[a,b]}(x)\, dx= M(b-a).
+$$
+
+Let $\mu = \frac{1}{b-a} \int_a^b f(x)\, dx$. Then $\int_a^b f(x)\, dx=(b-a)\mu$ and $m\leq \mu\leq M$, so $\mu \in [m,M]$.
+
+(ii) Let $m = \inf \{ f(x) : x\in [a,b] \}$ and $M = \sup \{ f(x) : x\in [a,b] \}$. Then by part (i) we have $\mu \in [m,M]$ where
+
+$$
+\int_a^b f(x)\, dx =(b-a)\mu.
+$$
+
+But as $f$ is a continuous function on a closed bounded interval, $m$ is the minimum value of $f$, and $M$ is the maximum value. As $\mu\in [m,M]$ and $f$ is continuous, by the intermediate value theorem there is some $\xi \in [a,b]$ such that $f(\xi ) = \mu$. Hence
+
+$$
+\int_a^b f(x)\, dx =(b-a)f(\xi ).
+$$
+</pre></div>
+</div>
+<p><a class="reference internal" href="Problems.html#id74"><span class="std std-ref">74.</span></a> Let  <span class="math notranslate nohighlight">\(m = \inf \{ f(x) : x\in [a,b] \}\)</span> and <span class="math notranslate nohighlight">\(M = \sup \{ f(x) : x\in [a,b] \}\)</span>. Then <span class="math notranslate nohighlight">\(m\leq f(x)\leq M\)</span> for all <span class="math notranslate nohighlight">\(x\in [a,b]\)</span>. As <span class="math notranslate nohighlight">\(g(x)\geq 0\)</span>, we have</p>
 <div class="math notranslate nohighlight">
 \[
 mg(x)\leq f(x)g(x)\leq Mg(x)
