@@ -2,7 +2,7 @@
 
 2. Open terminal & navigate to correct directory
 
-cd ~/MAS2004,9/Jupyter/Analysis-Problems
+cd ~/MAS2004,9/Jupyter/
 
 3. Activate virtual environment
 
@@ -12,7 +12,7 @@ source .venv/bin/activate
 
 5. Build the jupyter book
 
-jupyter-book build analysis_problems/
+jupyter-book build Analysis-Problems/analysis_problems/
 
 6. Sync with github using VS code - action should run and create hosted github page at
 
