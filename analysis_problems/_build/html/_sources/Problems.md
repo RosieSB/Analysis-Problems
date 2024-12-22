@@ -106,7 +106,7 @@ P7. Let $A$ and $B$ be bounded and non-empty subsets of $\mathbb{R}$. Which of t
     (v) $X=\displaystyle\left\{\frac{1}{n}:n\in\mathbb{N}\right\}$.
 
 (3)=
-3. For $f_2:A\to \mathbb{R}$ as in part (ii) of the question [1](#1), investigate each of
+3. For $f_2:A\to \mathbb{R}$ as in part (ii) of the [Problem 1](#1), investigate each of
 
 $$
 \lim_{x \rightarrow 1}f_{2}(x), \hspace{3em} \lim_{x \rightarrow -2}f_{2}(x) \hspace{2em} \text{ and } \hspace{2em} \lim_{x \rightarrow -3}f_{2}(x).
@@ -119,7 +119,7 @@ Calculate the value of each limit, if it exists.
 <br>
 Hence calculate $\displaystyle\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1}{x^{2}}}$.
 <br>
-[Hint: For the first part, use the result of [iii](#iii) from the preliminary exercises.]
+[Hint: For the first part, use the result of [P4 (iii)](P4) from the preliminary exercises.]
 
 (5)=
 5. Why are limits of functions unique? 
@@ -187,7 +187,8 @@ Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \
 15. Define $f:\mathbb{R} \setminus \{0\}\to \mathbb{R}$ and $g: \mathbb{R} \rightarrow \mathbb{R}\setminus \{0\}$ by $f(x) = \frac{1}{x}$, and $g(x) = 1 + x^{2}$. Write down the functions $f \circ g$, and $g \circ f$, giving their domains explicitly. What can you say about continuity of these functions?
 
 (16)=
-16. For each of the functions in Problem [q:49](#q:49):
+16. For each of the functions in [Problem 7](#7):
+
     (i) Find the maximum subset of $\mathbb{R}$ on which it is continuous.
     
     (ii) Identify those discontinuities which are jumps, and calculate the size of each jump.
@@ -263,7 +264,7 @@ What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:
 (25)=
 25. Prove the following {\it fixed point theorem}: if $f:[a,b] \rightarrow (a,b)$ is continuous, then there exists $c \in (a, b)$ such that $f(c) = c$.
 <br>
-[Hint: This is a similar proof to that of Problem [q:66](#q:66). This time you need to consider a function of the form $g(x) = f(x) - $ *something*. What is *something*?] Give a counter-example to demonstrate that the claim is false if the domain of $f$ is restricted to $(0, 1)$.
+[Hint: This is a similar proof to that of [Problem 23](#23). This time you need to consider a function of the form $g(x) = f(x) - $ *something*. What is *something*?] Give a counter-example to demonstrate that the claim is false if the domain of $f$ is restricted to $(0, 1)$.
 
 (26)=
 26. Complete the proof of the extreme value theorem (Theorem 2.3.6), i.e. prove that a continuous function $f:[a,b]\to\mathbb{R}$ attains its infimum.
@@ -333,7 +334,7 @@ You may use the fact that  $\displaystyle\lim_{h \rightarrow 0}\frac{g(h)}{h} = 
 
     (i) Show that $f$ is differentiable at every $x \neq 0$. (You can use standard derivatives and facts about derivatives, such as the product and chain rules.)
     
-    (ii) Show that $f$ is not differentiable at $x = 0$. (Use the definition of the derivative as a limit. You may assume that $\sin\left(\frac{1}{x}\right)$ has no limit as $x$ tends to $0$. This was Problem [q:50](#q:50).)
+    (ii) Show that $f$ is not differentiable at $x = 0$. (Use the definition of the derivative as a limit. You may assume that $\sin\left(\frac{1}{x}\right)$ has no limit as $x$ tends to $0$. This was [Problem 8](#8).)
 
 (41)=
 41. Show that the function  $f:\mathbb{R}\to \mathbb{R}$ given by 
@@ -344,7 +345,7 @@ $$
 
 is differentiable at every $x \in \mathbb{R}$. What can you say about its second derivative?
 <br>
-[Hint: You will need to consider the case $x=0$ separately from $x\in\mathbb{R}\setminus\{0\}$. You may assume that the limit as $x$ tends to $0$ of $x\sin\left(\frac{1}{x}\right)$ exists and equals $0$. This was studied in Problem [q:51](#q:51). ]
+[Hint: You will need to consider the case $x=0$ separately from $x\in\mathbb{R}\setminus\{0\}$. You may assume that the limit as $x$ tends to $0$ of $x\sin\left(\frac{1}{x}\right)$ exists and equals $0$. This was studied in [Problem 9](9).]
 
 (42)=
 42.
@@ -353,7 +354,7 @@ is differentiable at every $x \in \mathbb{R}$. What can you say about its second
     (ii) Sketch the graph of any continuous function $f:[0,1]\to \mathbb{R}$ which is not differentiable at $x=\frac{1}{3}$ and is not differentiable at $x=\frac{2}{3}$, but is differentiable at all other points. [You do *not* need to give a formula.]
 
 (43)=
-43. Let $f:\mathbb{R}\to \mathbb{R}$ be given by $f(x) = x - [x]$ for all $x \in \mathbb{R}$, where $[x]$ denotes the integer part of $f$ (see ([eq:[x]](#eq:[x]))).
+43. Let $f:\mathbb{R}\to \mathbb{R}$ be given by $f(x) = x - [x]$ for all $x \in \mathbb{R}$, where $[x]$ denotes the integer part of $f$ (see [](#eq:[x])).
 <br>
 Explain carefully at which points $f$  is differentiable, and find the value of its derivative there. [It will probably help to sketch the graph!]
 
@@ -596,7 +597,7 @@ and that this function is continuous.
     L(f+g,P_1\cup P_2) \geq L(f,P_1) + L(g,P_2)
     $$
     
-    [Hint: Lemma [lem:ref](#lem:ref) may be helpful.]
+    [Hint: Lemma 6.1 may be helpful.]
     
     (iii) Deduce that
     
