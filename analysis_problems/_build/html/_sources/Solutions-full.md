@@ -290,7 +290,7 @@ Of course, we could have chosen any values of $\theta$ we liked, and constructed
 
 ```{figure} ../analysis_problems/figs/sin(1,x).png
 ---
-height: 275px
+width: 700px
 name: s1x
 ---
 Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=\sin\left(\frac{1}{x}\right)$.
@@ -321,9 +321,14 @@ Since $(x_n)$ was arbitrary, $\displaystyle\lim_{x \rightarrow 0} x \sin\left(\f
 <br>
 You should contrast the picture below with that for the previous question.
 
-![](figs/xsin(1,x))
-Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=x\sin\left(\frac{1}{x}\right)$.
 
+```{figure} ../analysis_problems/figs/xsin(1,x).png
+---
+width: 700px
+name: xs1x
+---
+Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=x\sin\left(\frac{1}{x}\right)$.
+```
 
 ---
 
@@ -462,8 +467,13 @@ $$
 
 We can see this behaviour in the graph of the function:
 
-![](figs/(x%5E2+2x+4),(x+2))
+```{figure} ../analysis_problems/figs/(x2+2x+4),(x+2).png
+---
+width: 500px
+name: q17
+---
 Graph of the function $\tilde{f}:\mathbb{R}\setminus\{-2\}\to\mathbb{R}$; $f(x)=\frac{x^2+2x+4}{x+2}$.
+```
 
 ---
 
@@ -794,20 +804,36 @@ But $f^{\prime \prime}$ doesn't exist at $x = 0$, as in [Problem 40](40).
 [42.](42) We give sketches of simple examples of functions as described. There should be some kind of "corner" or "cusp" at the relevant points, so that there is clearly no well-defined gradient there. But the functions are required to be continuous, so there should be no jump or other discontinuity.
 
 (i)
-![](figs/nondiff1,2)
+
+```{figure} ../analysis_problems/figs/nondiff1,2.png
+---
+width: 500px
+name: q42i
+---
 Graph of a function $f:[0,1]\to\mathbb{R}$ that is not differentiable at $\frac{1}{2}$, but is everywhere else.
+```
 
 (ii)
 
-![](figs/nondiff1,3_2,3)
+```{figure} ../analysis_problems/figs/nondiff1,3_2,3.png
+---
+width: 500px
+name: q42ii
+---
 Graph of a function $f:[0,1]\to\mathbb{R}$ that is differentiable at all points in its domain apart from $\frac{1}{3}$ and $\frac{2}{3}$.
+```
 
 ---
 
 [43.](43) It helps to sketch the graph. On the interval $[0,1]$, we have $[x]=0$ and so the graph resembles $y=x$. This pattern then repeats, and we have the following graph for $f(x)=x-[x]$:
 
-![](figs/x-%5Bx%5D)
+```{figure} ../analysis_problems/figs/x-[x].png
+---
+width: 500px
+name: q43
+---
 Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=x-[x]$.
+``` 
 
 The function $f$ is differentiable for all $x \in \mathbb{R} \setminus \mathbb{Z}$. For such points, taking $h>0$ sufficiently small, we have
 $[x+h]=[x]$ and so
@@ -858,9 +884,11 @@ f'_{-}(0)= \lim_{h \rightarrow 0^-}\frac{-h^{2}}{h} = \lim_{h \rightarrow 0^-} -
 $$
 
 (iii) True: $f'$ is continuous at zero since $f':\mathbb{R}\to\mathbb{R}$ is given by
+
 $$
 f'(x) = \left\{\begin{array}{c c} -2x & ~\mbox{if}~x < 0\\ 0& ~\mbox{if}~x =0 \\ 2x & ~\mbox{if}~x > 0 \end{array} \right.,
 $$
+
 so $f'(0) = \lim_{x \rightarrow 0^-} f'(x) = \lim_{x \rightarrow 0^+}f'(x) = 0$.
 
 (iv) False:  $f^{\prime \prime}_{+}(0) = \lim_{h \rightarrow 0^+}\frac{2h - 0}{h} = 2, f^{\prime \prime}_{-}(0) = \lim_{h \rightarrow 0^-}\frac{-2h - 0}{h} = -2$, and so $f^{\prime \prime}(0)$ does not exist.
@@ -1353,8 +1381,13 @@ Hence, by the Weierstrass $M$-test, the series $\sum_{n=1}^\infty f_n (x )$ conv
 
 (i) Here is a sketch of the graph of $f$, the partition $P$, and the associated upper and lower Riemann sums.
 
-![](figs/int1i.png)
+```{figure} ../analysis_problems/figs/int1i.png
+---
+width: 600px
+name: q64i
+---
 $y=\frac{1}{x}$, with upper and lower sums. 
+``` 
 
 We have $U(f,P) = \sum_{k=1}^4M_k(x_k-x_{k-1})$, where $x_0=1$, $x_1=\frac{3}{2}$, $x_2=2$, $x_3=4$, and
 
@@ -1396,8 +1429,13 @@ $$
 
 (ii) Adding the point $P$ has the following effect:
 
-![](figs/int1ii.png)
+```{figure} ../analysis_problems/figs/int1ii.png
+---
+width: 600px
+name: q64ii
+---
 Upper and lower sums with additional point $3$.
+``` 
 
 We now have $x_0=1$, $x_1=\frac{3}{2}$, $x_2=2$, $x_3=3$ and $x_4=4$. $M_1$, $M_2$, $m_1$ and $m_2$ are not affected by the additional point, while
 
@@ -1441,18 +1479,21 @@ m_k = \inf\left\{\frac{1}{x}:x\in[x_{k-1},x_k]\right\} =\frac{1}{x_k}
 $$
 
 for each $k$. So,
-$$
 \begin{align*}
 U(f,P) - L(f,P) &= \sum_{k=1}^n\left(\frac{1}{x_k} - \frac{1}{x_{k-1}}\right)\frac{3}{n} \\
 &= \frac{3}{n}\left(\frac{1}{x_n}-\frac{1}{x_0}\right) = \frac{3}{n}\left(1-\frac{1}{4}\right) = \frac{9}{4n}.
 \end{align*}
-$$
 We have been asked to find $P$ so that $U(f,P)-L(f,P)<\frac{2}{5}$, so we choose $n$ so that $\frac{9}{4n}<\frac{2}{5}$. That is, $n>\frac{45}{8}$. In fact, $n=6$ will do.
 
 So $x_k=1+\frac{1}{2}k$ for $k=0,\ldots,6$, and $P=\left\{1,\frac{3}{2},2,\frac{5}{2},3,\frac{7}{2},4\right\}$.
 
-![](figs/int1iii.png)
+```{figure} ../analysis_problems/figs/int1iii.png
+---
+width: 600px
+name: q64iii
+---
 A partition for which $U(f,P)-L(f,P)<\frac{2}{5}$.
+``` 
 
 ---
 
