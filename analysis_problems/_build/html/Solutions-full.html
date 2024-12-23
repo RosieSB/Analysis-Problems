@@ -66,6 +66,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Solutions-full';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Problems" href="Problems.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -116,8 +117,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -171,9 +170,9 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problems.html">Problems</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Solutions.html">Solutions</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Solutions</a></li>
 </ul>
 
     </div>
@@ -442,7 +441,7 @@ $<span class="math notranslate nohighlight">\(
 \]</div>
 <p>and we need only show that</p>
 <div class="math notranslate nohighlight" id="equation-eq-sqrta-sqrtb">
-<span class="eqno">()<a class="headerlink" href="#equation-eq-sqrta-sqrtb" title="Link to this equation">#</a></span>\[\sqrt{|a|} - \sqrt{|b|} \leq \sqrt{|a - b|}.\]</div>
+<span class="eqno">(2)<a class="headerlink" href="#equation-eq-sqrta-sqrtb" title="Link to this equation">#</a></span>\[\sqrt{|a|} - \sqrt{|b|} \leq \sqrt{|a - b|}.\]</div>
 <p>We use a trick similar to the proof of Corollary 1.1, and write</p>
 <div class="math notranslate nohighlight">
 \[
@@ -459,7 +458,7 @@ $<span class="math notranslate nohighlight">\(
 \[
 \sqrt{|a|} \leq \sqrt{|a-b|+|b|} \leq \sqrt{|a-b|}+\sqrt{|b|}.
 \]</div>
-<p>Equation <a class="reference internal" href="Solutions-upto37.html#equation-eq-sqrta-sqrtb">()</a> now follows by subtracting <span class="math notranslate nohighlight">\(\sqrt{|b|}\)</span> from both sides.</p>
+<p>Equation <a class="reference internal" href="#equation-eq-sqrta-sqrtb">(2)</a> now follows by subtracting <span class="math notranslate nohighlight">\(\sqrt{|b|}\)</span> from both sides.</p>
 <p>(iii) Let <span class="math notranslate nohighlight">\((a_n)\)</span> be a real sequence converging to <span class="math notranslate nohighlight">\(l\in\mathbb{R}\)</span>. By (ii),</p>
 <div class="math notranslate nohighlight">
 \[
@@ -581,9 +580,9 @@ When <span class="math notranslate nohighlight">\(x &gt; 0, \displaystyle\frac{|
 <br>
 when <span class="math notranslate nohighlight">\(x &lt; 0, \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|} = -\displaystyle\frac{x}{x} = -1 = \text{sgn}(x)\)</span>.
 <br>
-The left limit is <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow 0^-} \text{sgn}(x) = -1\)</span>, since for any sequence <span class="math notranslate nohighlight">\((x_n)\)</span> approaching <span class="math notranslate nohighlight">\(0\)</span> from the left, we have <span class="math notranslate nohighlight">\(\text{sgn}(x) = -1\)</span> for all <span class="math notranslate nohighlight">\(n\)</span>.
+The left limit is <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow 0^-} \text{sgn}(x) = -1\)</span>, since for any sequence <span class="math notranslate nohighlight">\((x_n)\)</span> approaching <span class="math notranslate nohighlight">\(0\)</span> from the left, we have <span class="math notranslate nohighlight">\(\text{sgn}(x_n) = -1\)</span> for all <span class="math notranslate nohighlight">\(n\)</span>.
 <br>
-Similarly, the right limit is <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow 0^+} \text{sgn}(x) = 1\)</span>,  since for any sequence <span class="math notranslate nohighlight">\((x_n)\)</span> approaching <span class="math notranslate nohighlight">\(0\)</span> from the right, we have <span class="math notranslate nohighlight">\(\text{sgn}(x) = 1\)</span> for all <span class="math notranslate nohighlight">\(n\)</span>.
+Similarly, the right limit is <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow 0^+} \text{sgn}(x) = 1\)</span>,  since for any sequence <span class="math notranslate nohighlight">\((x_n)\)</span> approaching <span class="math notranslate nohighlight">\(0\)</span> from the right, we have <span class="math notranslate nohighlight">\(\text{sgn}(x_n) = 1\)</span> for all <span class="math notranslate nohighlight">\(n\)</span>.
 <br>
 Since the left and right limits are different, <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow 0}\text{sgn}(x)\)</span> does not exist.</p>
 <hr class="docutils" />
@@ -630,7 +629,7 @@ Of course, we could have chosen any values of <span class="math notranslate nohi
 <figure class="align-default" id="s1x">
 <a class="reference internal image-reference" href="_images/sin(1,x).png"><img alt="_images/sin%281%2Cx%29.png" src="_images/sin%281%2Cx%29.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Graph of the function <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x)=\sin\left(\frac{1}{x}\right)\)</span>.</span><a class="headerlink" href="#s1x" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Graph of the function <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x)=\sin\left(\frac{1}{x}\right)\)</span>.</span><a class="headerlink" href="#s1x" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -656,7 +655,7 @@ You should contrast the picture below with that for the previous question.</p>
 <figure class="align-default" id="xs1x">
 <a class="reference internal image-reference" href="_images/xsin(1,x).png"><img alt="_images/xsin%281%2Cx%29.png" src="_images/xsin%281%2Cx%29.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Graph of the function <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x)=x\sin\left(\frac{1}{x}\right)\)</span>.</span><a class="headerlink" href="#xs1x" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Graph of the function <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x)=x\sin\left(\frac{1}{x}\right)\)</span>.</span><a class="headerlink" href="#xs1x" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -775,7 +774,7 @@ But on the other hand,</p>
 <figure class="align-default" id="q18">
 <a class="reference internal image-reference" href="_images/(x2+2x+4),(x+2).png"><img alt="_images/%28x2%2B2x%2B4%29%2C%28x%2B2%29.png" src="_images/%28x2%2B2x%2B4%29%2C%28x%2B2%29.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-text">Graph of the function <span class="math notranslate nohighlight">\(\tilde{f}:\mathbb{R}\setminus\{-2\}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x)=\frac{x^2+2x+4}{x+2}\)</span>.</span><a class="headerlink" href="#q18" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Graph of the function <span class="math notranslate nohighlight">\(\tilde{f}:\mathbb{R}\setminus\{-2\}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x)=\frac{x^2+2x+4}{x+2}\)</span>.</span><a class="headerlink" href="#q18" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -1032,14 +1031,14 @@ f^{\prime \prime}(x) = 2\sin\left(\frac{1}{x}\right) - \frac{2}{x}\cos\left(\fra
 <figure class="align-default" id="q43i">
 <a class="reference internal image-reference" href="_images/nondiff1,2.png"><img alt="_images/nondiff1%2C2.png" src="_images/nondiff1%2C2.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-text">Graph of a function <span class="math notranslate nohighlight">\(f:[0,1]\to\mathbb{R}\)</span> that is not differentiable at <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>, but is everywhere else.</span><a class="headerlink" href="#q43i" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Graph of a function <span class="math notranslate nohighlight">\(f:[0,1]\to\mathbb{R}\)</span> that is not differentiable at <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>, but is everywhere else.</span><a class="headerlink" href="#q43i" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>(ii)</p>
 <figure class="align-default" id="q43ii">
 <a class="reference internal image-reference" href="_images/nondiff1,3_2,3.png"><img alt="_images/nondiff1%2C3_2%2C3.png" src="_images/nondiff1%2C3_2%2C3.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-text">Graph of a function <span class="math notranslate nohighlight">\(f:[0,1]\to\mathbb{R}\)</span> that is differentiable at all points in its domain apart from <span class="math notranslate nohighlight">\(\frac{1}{3}\)</span> and <span class="math notranslate nohighlight">\(\frac{2}{3}\)</span>.</span><a class="headerlink" href="#q43ii" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Graph of a function <span class="math notranslate nohighlight">\(f:[0,1]\to\mathbb{R}\)</span> that is differentiable at all points in its domain apart from <span class="math notranslate nohighlight">\(\frac{1}{3}\)</span> and <span class="math notranslate nohighlight">\(\frac{2}{3}\)</span>.</span><a class="headerlink" href="#q43ii" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -1047,7 +1046,7 @@ f^{\prime \prime}(x) = 2\sin\left(\frac{1}{x}\right) - \frac{2}{x}\cos\left(\fra
 <figure class="align-default" id="q44">
 <a class="reference internal image-reference" href="_images/x-[x].png"><img alt="_images/x-%5Bx%5D.png" src="_images/x-%5Bx%5D.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-text">Graph of the function <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x)=x-[x]\)</span>.</span><a class="headerlink" href="#q44" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Graph of the function <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x)=x-[x]\)</span>.</span><a class="headerlink" href="#q44" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The function <span class="math notranslate nohighlight">\(f\)</span> is differentiable for all <span class="math notranslate nohighlight">\(x \in \mathbb{R} \setminus \mathbb{Z}\)</span>. For such points, taking <span class="math notranslate nohighlight">\(h&gt;0\)</span> sufficiently small, we have
@@ -1482,7 +1481,7 @@ f_n (x) = \frac{\sin (nx )}{n^2}.
 <figure class="align-default" id="q64i">
 <a class="reference internal image-reference" href="_images/int1i.png"><img alt="_images/int1i.png" src="_images/int1i.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text"><span class="math notranslate nohighlight">\(y=\frac{1}{x}\)</span>, with upper and lower sums.</span><a class="headerlink" href="#q64i" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text"><span class="math notranslate nohighlight">\(y=\frac{1}{x}\)</span>, with upper and lower sums.</span><a class="headerlink" href="#q64i" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We have <span class="math notranslate nohighlight">\(U(f,P) = \sum_{k=1}^4M_k(x_k-x_{k-1})\)</span>, where <span class="math notranslate nohighlight">\(x_0=1\)</span>, <span class="math notranslate nohighlight">\(x_1=\frac{3}{2}\)</span>, <span class="math notranslate nohighlight">\(x_2=2\)</span>, <span class="math notranslate nohighlight">\(x_3=4\)</span>, and</p>
@@ -1525,7 +1524,7 @@ U(f,P)-L(f,P) = \frac{11}{6}-\frac{13}{12} = \frac{9}{12} = \frac{3}{4}.
 <figure class="align-default" id="q64ii">
 <a class="reference internal image-reference" href="_images/int1ii.png"><img alt="_images/int1ii.png" src="_images/int1ii.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Upper and lower sums with additional point <span class="math notranslate nohighlight">\(3\)</span>.</span><a class="headerlink" href="#q64ii" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Upper and lower sums with additional point <span class="math notranslate nohighlight">\(3\)</span>.</span><a class="headerlink" href="#q64ii" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We now have <span class="math notranslate nohighlight">\(x_0=1\)</span>, <span class="math notranslate nohighlight">\(x_1=\frac{3}{2}\)</span>, <span class="math notranslate nohighlight">\(x_2=2\)</span>, <span class="math notranslate nohighlight">\(x_3=3\)</span> and <span class="math notranslate nohighlight">\(x_4=4\)</span>. <span class="math notranslate nohighlight">\(M_1\)</span>, <span class="math notranslate nohighlight">\(M_2\)</span>, <span class="math notranslate nohighlight">\(m_1\)</span> and <span class="math notranslate nohighlight">\(m_2\)</span> are not affected by the additional point, while</p>
@@ -1573,7 +1572,7 @@ U(f,P) - L(f,P) &amp;= \sum_{k=1}^n\left(\frac{1}{x_k} - \frac{1}{x_{k-1}}\right
 <figure class="align-default" id="q64iii">
 <a class="reference internal image-reference" href="_images/int1iii.png"><img alt="_images/int1iii.png" src="_images/int1iii.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">A partition for which <span class="math notranslate nohighlight">\(U(f,P)-L(f,P)&lt;\frac{2}{5}\)</span>.</span><a class="headerlink" href="#q64iii" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">A partition for which <span class="math notranslate nohighlight">\(U(f,P)-L(f,P)&lt;\frac{2}{5}\)</span>.</span><a class="headerlink" href="#q64iii" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -1976,6 +1975,15 @@ f(\xi ) = \frac{1}{I}  \int_a^b f(x)g(x)\, dx
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Problems.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problems</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
