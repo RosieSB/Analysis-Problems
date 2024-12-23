@@ -121,7 +121,16 @@ P7. Let $A$ and $B$ be bounded and non-empty subsets of $\mathbb{R}$. Which of t
     (v) $X=\displaystyle\left\{\frac{1}{n}:n\in\mathbb{N}\right\}$.
 
 (3)=
-3. For $f_2:A\to \mathbb{R}$ as in part (ii) of the [Problem 1](#1), investigate each of
+3. Let $f:\{0\}\cup[1,3]\to\mathbb{R}$; $f(x)=3x^2-1$. 
+
+    (i) Write down the value of $\lim_{x\rightarrow 2}f(x)$.
+
+    (ii) Use the $(\varepsilon-\delta)$ criterion (Definition 2.1) to prove your calculation in (i) is correct.
+
+    (iii) Does $f(x)$ converge as $x\rightarrow 0$? Justify your answer. 
+
+(4)=
+4. For $f_2:A\to \mathbb{R}$ as in part (ii) of the [Problem 1](#1), investigate each of
 
 $$
 \lim_{x \rightarrow 1}f_{2}(x), \hspace{3em} \lim_{x \rightarrow -2}f_{2}(x) \hspace{2em} \text{ and } \hspace{2em} \lim_{x \rightarrow -3}f_{2}(x).
@@ -129,8 +138,8 @@ $$
 
 Calculate the value of each limit, if it exists.
 
-(4)=
-4. If $f: \mathbb{R} \rightarrow [0, \infty)$ satisfies $\displaystyle\lim_{x \rightarrow a} f(x) = l$, where $l > 0$, show that 
+(5)=
+5. If $f: \mathbb{R} \rightarrow [0, \infty)$ satisfies $\displaystyle\lim_{x \rightarrow a} f(x) = l$, where $l > 0$, show that 
 
 $$
 \lim_{x \rightarrow a} \sqrt{f(x)} = \sqrt{l}.
@@ -140,17 +149,17 @@ Hence calculate $\displaystyle\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1
 <br><br>
 [Hint: For the first part, use the result of [P4 (iii)](P4) from the preliminary exercises.]
 
-(5)=
-5. Why are limits of functions unique? 
-
 (6)=
-6. (Homework 2 question) <br> 
+6. Why are limits of functions unique? 
+
+(7)=
+7. (Homework 2 question) <br> 
 Verify that $\text{sgn}(x) = \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|}$, for $x \neq 0$ (see Example 2.3  in the notes for the definition).
 <br>
 Show that $\displaystyle\lim_{x \rightarrow 0}\text{sgn}    (x)$ does not exist. Show that both the left and right limits exist at $x=0$, and find their values.
 
-(7)=
-7. (Homework 2 question) <br>
+(8)=
+8. (Homework 2 question) <br>
 For the following functions, each of which is defined on the whole of $\mathbb{R}$, find every point at which both the left and right limits exist, but are different from each other, and find the values of these limits.
 
     (i) $f(x) = \begin{cases} 1 -x & \text{if }x < 1\\ x^{2}& \text{if }x \geq 1. \end{cases}$
@@ -164,14 +173,14 @@ For the following functions, each of which is defined on the whole of $\mathbb{R
     
     (iii) $h(x) =3 - 5{\bf 1}_{(0, 1]}(x) + 7{\bf 1}_{(1, 2]}(x)$. [Here we have used the notation for indicator functions --- see Example 2.4 in the notes.]
 
-(8)=
-8. What is the largest subset $A$ of $\mathbb{R}$ for which we can specify a function by $f(x) = \sin\left(\frac{1}{x}\right)$? Does $f:A\to\mathbb{R}$ have a limit at $x = 0$? [Hint: Consider sequences whose $n$th term is $\frac{1}{\theta + 2n\pi}$, and think about good choices for $\theta$.]
-
 (9)=
-9. What is the largest subset $A$ of $\mathbb{R}$ for which we can specify a function by $f(x) = x\sin\left(\frac{1}{x}\right)$? Does $f:A\to\mathbb{R}$  have a limit at $x = 0$?
+9. What is the largest subset $A$ of $\mathbb{R}$ for which we can specify a function by $f(x) = \sin\left(\frac{1}{x}\right)$? Does $f:A\to\mathbb{R}$ have a limit at $x = 0$? [Hint: Consider sequences whose $n$th term is $\frac{1}{\theta + 2n\pi}$, and think about good choices for $\theta$.]
 
 (10)=
-10. In the notes, we gave meaning to $\displaystyle\lim_{x \rightarrow a} f(x)$ where $f:\mathbb{R} \rightarrow \mathbb{R}$ is a function and $a \in \mathbb{R}$. In this question, you can investigate what happens when $x$ tends to $\infty$ or $-\infty$.
+10. What is the largest subset $A$ of $\mathbb{R}$ for which we can specify a function by $f(x) = x\sin\left(\frac{1}{x}\right)$? Does $f:A\to\mathbb{R}$  have a limit at $x = 0$?
+
+(11)=
+11. In the notes, we gave meaning to $\displaystyle\lim_{x \rightarrow a} f(x)$ where $f:\mathbb{R} \rightarrow \mathbb{R}$ is a function and $a \in \mathbb{R}$. In this question, you can investigate what happens when $x$ tends to $\infty$ or $-\infty$.
 
     (i) Formulate a rigorous definition, in terms of $\varepsilon$'s and $\delta$'s, of what it means for $\displaystyle\lim_{x \rightarrow \infty}f(x)$ and $\displaystyle\lim_{x \rightarrow -\infty}f(x)$ to exist. 
     <br>
@@ -181,41 +190,41 @@ For the following functions, each of which is defined on the whole of $\mathbb{R
 
     (iii) Check that you can prove that $\displaystyle\lim_{x \rightarrow \infty}\frac{1}{x} = \lim_{x \rightarrow -\infty}\frac{1}{x} = 0$, using your criterion.
 
-(11)=
-11.
+(12)=
+12.
     (i) Formulate a rigorous definition for $\displaystyle\lim_{x \rightarrow \infty}f(x) = \infty$ in terms of sequences  and write down an analogue of the $(\varepsilon-\delta)$ criterion. [The cases  $\displaystyle\lim_{x \rightarrow \infty}f(x) = -\infty$ and $\displaystyle\lim_{x \rightarrow -\infty}f(x) = \pm \infty$ can be treated similarly.]
     
     (ii) Let $f:\mathbb{R} \rightarrow [0, \infty)$ and $g:\mathbb{R} \rightarrow [0, \infty)$, and suppose that $\displaystyle\lim_{x \rightarrow \infty}f(x) = \infty$ and $\displaystyle\lim_{x \rightarrow \infty}g(x) = l$, where $l > 0$. Define $h(x) = f(x)g(x)$ for all $x \in \mathbb{R}$. Show that $\displaystyle\lim_{x \rightarrow \infty}h(x) = \infty$.
     
-    (iii) Let $p: \mathbb{R} \rightarrow \mathbb{R}$ be an even polynomial of degree $m$, where the leading coefficient (i.e.~the coefficient of $x^{m}$) is positive. Show that $\displaystyle\lim_{x \rightarrow \infty}p(x) = \lim_{x \rightarrow -\infty}p(x) = \infty$. What happens when $m$ is odd?
+    (iii) Let $p: \mathbb{R} \rightarrow \mathbb{R}$ be an even polynomial of degree $m$, where the leading coefficient (i.e. the coefficient of $x^{m}$) is positive. Show that $\displaystyle\lim_{x \rightarrow \infty}p(x) = \lim_{x \rightarrow -\infty}p(x) = \infty$. What happens when $m$ is odd?
 
 ## 3. Continuity
 
-(12)=
-12. Return to [Problem 1](#1). Consider each function there, defined on the largest subset $A$ of $\mathbb{R}$
+(13)=
+13. Return to [Problem 1](#1). Consider each function there, defined on the largest subset $A$ of $\mathbb{R}$
 which can be taken as its domain, as found in that problem. For each function, what is the maximum subset of $A$ on which it is continuous?
 
-(13)=
-13. Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be continuous at a point $a$.
+(14)=
+14. Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be continuous at a point $a$.
 Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \mathbb{R}$.
 <br>
 [Hint: Use the formulation of continuity with sequences (Theorem 3.1(ii)) and Corollary 1.1 from the notes.]
 
-(14)=
-14. Prove Theorem 3.3 in the notes (i.e.~that composition of continuous functions is continuous). [Hint: Use sequences.]
-
 (15)=
-15. Define $f:\mathbb{R} \setminus \{0\}\to \mathbb{R}$ and $g: \mathbb{R} \rightarrow \mathbb{R}\setminus \{0\}$ by $f(x) = \frac{1}{x}$, and $g(x) = 1 + x^{2}$. Write down the functions $f \circ g$, and $g \circ f$, giving their domains explicitly. What can you say about continuity of these functions?
+15. Prove Theorem 3.3 in the notes (i.e. that composition of continuous functions is continuous). [Hint: Use sequences.]
 
 (16)=
-16. For each of the functions in [Problem 7](#7):
+16. Define $f:\mathbb{R} \setminus \{0\}\to \mathbb{R}$ and $g: \mathbb{R} \rightarrow \mathbb{R}\setminus \{0\}$ by $f(x) = \frac{1}{x}$, and $g(x) = 1 + x^{2}$. Write down the functions $f \circ g$, and $g \circ f$, giving their domains explicitly. What can you say about continuity of these functions?
+
+(17)=
+17. For each of the functions in [Problem 7](#7):
 
     (i) Find the maximum subset of $\mathbb{R}$ on which it is continuous.
     
     (ii) Identify those discontinuities which are jumps, and calculate the size of each jump.
 
-(17)=
-17. (Homework 2 question)
+(18)=
+18. (Homework 2 question)
     
     (i) Define $f:  \mathbb{R} \setminus \{0\} \rightarrow \mathbb{R}$ by
    
@@ -233,11 +242,11 @@ Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \
 
     and explain why $f$ is continuous at every point of $A$. The complement $A^{c}$ of $A$ in $\mathbb{R}$ comprises two points. Show that $f$ may be extended to be continuous at only one of these points, and write down this continuous extension.
 
-(18)=
-18. Suppose that the function $g: \mathbb{R} \rightarrow \mathbb{R}$ is continuous at $a$ with $g(a) > 0$. Show that there exists $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. [Hint: Assume $g(a) > 0$ and try a proof by contradiction.]
-
 (19)=
-19.
+19. Suppose that the function $g: \mathbb{R} \rightarrow \mathbb{R}$ is continuous at $a$ with $g(a) > 0$. Show that there exists $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. [Hint: Assume $g(a) > 0$ and try a proof by contradiction.]
+
+(20)=
+20.
     (i) For any $x, y \in \mathbb{R}$ show that
     
     $$
@@ -252,8 +261,8 @@ Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \
     
     (ii) Find a similar expression for $\min\{x, y\}$, and hence prove continuity of $\min\{f, g\}$ at $a$.
 
-(20)=
-20. The aim of this question is to prove the following: the only functions $f: \mathbb{R} \rightarrow \mathbb{R}$ which are continuous at zero and satisfy $f(x+y) = f(x) + f(y)$ for all $x,y \in \mathbb{R}$ are the linear mappings $f(x) = kx$ for all $x \in \mathbb{R}$, where $k \in \mathbb{R}$ is fixed.
+(21)=
+21. The aim of this question is to prove the following: the only functions $f: \mathbb{R} \rightarrow \mathbb{R}$ which are continuous at zero and satisfy $f(x+y) = f(x) + f(y)$ for all $x,y \in \mathbb{R}$ are the linear mappings $f(x) = kx$ for all $x \in \mathbb{R}$, where $k \in \mathbb{R}$ is fixed.
 <br>
 Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) = f(x) + f(y)$ for all $x,y \in \mathbb{R}$.
 
@@ -269,57 +278,57 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
     
     (vi) If $f(1) = k$ and $f$ is continuous at zero, prove that $f(x) =kx$ for all $x \in \mathbb{R}$.
 
-(21)=
-21. Show that Dirichlet's "other" function, as discussed in Example 3.8 in the notes, is discontinuous at every rational point in its domain.
-
 (22)=
-22. (Homework 2 question) <br>
+22. Show that Dirichlet's "other" function, as discussed in Example 3.8 in the notes, is discontinuous at every rational point in its domain.
+
+(23)=
+23. (Homework 2 question) <br>
 What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:\mathbb{R}\to\mathbb{R}$ at the points $a$ and $b$?
 
 (23)=
 23. Prove Corollary 3.1. [Hint: Apply the intermediate value theorem to the function $g(x) = f(x) - \gamma$, for $x \in [a, b]$.]
 
-(24)=
-24. Use Corollary 3.1
+(25)=
+25. Use Corollary 3.1
 
     (i) Every continuous function from $\mathbb{R}$ to $\mathbb{Z}$ is constant.
 
     (ii) Every continuous function from $\mathbb{R}$ to $\mathbb{Q}$ is constant.
 
-(25)=
-25. Prove the following {\it fixed point theorem}: if $f:[a,b] \rightarrow (a,b)$ is continuous, then there exists $c \in (a, b)$ such that $f(c) = c$.
-<br>
-[Hint: This is a similar proof to that of [Problem 23](#23). This time you need to consider a function of the form $g(x) = f(x) - $ (*something*). What is *something*?] Give a counter-example to demonstrate that the claim is false if the domain of $f$ is restricted to $(0, 1)$.
-
 (26)=
-26. Complete the proof of the extreme value theorem (Theorem 3.5), i.e. prove that a continuous function $f:[a,b]\to\mathbb{R}$ attains its infimum.
+26. Prove the following {\it fixed point theorem}: if $f:[a,b] \rightarrow (a,b)$ is continuous, then there exists $c \in (a, b)$ such that $f(c) = c$.
+<br>
+[Hint: This is a similar proof to that of [Problem 24](#24). This time you need to consider a function of the form $g(x) = f(x) - $ (*something*). What is *something*?] Give a counter-example to demonstrate that the claim is false if the domain of $f$ is restricted to $(0, 1)$.
 
 (27)=
-27. Show that if $f:[0,1] \rightarrow \mathbb{R}$ is continuous and $0$ is not in the range of  $f$, then the function $\frac{1}{f}:[0,1]\to \mathbb{R}$ is bounded, where for each $x \in [0,1], \left(\frac{1}{f}\right)(x) = \frac{1}{f(x)}$.
+27. Complete the proof of the extreme value theorem (Theorem 3.5), i.e. prove that a continuous function $f:[a,b]\to\mathbb{R}$ attains its infimum.
 
 (28)=
-28. Explain why there are no continuous functions having domain $[0, 1]$ and range $\mathbb{R}$. [Hint: Use Theorem 3.5.]
+28. Show that if $f:[0,1] \rightarrow \mathbb{R}$ is continuous and $0$ is not in the range of  $f$, then the function $\frac{1}{f}:[0,1]\to \mathbb{R}$ is bounded, where for each $x \in [0,1], \left(\frac{1}{f}\right)(x) = \frac{1}{f(x)}$.
 
 (29)=
-29. Suppose that the function $f:[0,1] \rightarrow [0,1]$ is continuous, and fix $0 < r < 1$. Suppose that we are given a sequence $(x_{n})$ in $[0,1]$ such that $f(x_{n+1}) \leq rf(x_{n})$ for all $n\in\mathbb{N}$. Show that there exists $c \in [0, 1]$ for which $f(c) = 0$. [Hint: Use the Bolzano-Weierstrass theorem.]
+29. Explain why there are no continuous functions having domain $[0, 1]$ and range $\mathbb{R}$. [Hint: Use Theorem 3.5.]
 
 (30)=
-30. Show that for each $n\in\mathbb{N}$, the function $f: [0, \infty)\to\mathbb{R}$ given by $f(x) =x^{n}$ is strictly monotonic increasing.
+30. Suppose that the function $f:[0,1] \rightarrow [0,1]$ is continuous, and fix $0 < r < 1$. Suppose that we are given a sequence $(x_{n})$ in $[0,1]$ such that $f(x_{n+1}) \leq rf(x_{n})$ for all $n\in\mathbb{N}$. Show that there exists $c \in [0, 1]$ for which $f(c) = 0$. [Hint: Use the Bolzano-Weierstrass theorem.]
 
 (31)=
-31. Show that the function $f(x) = \sin(x)$ has a continuous inverse when restricted to the interval $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$. What goes wrong outside this interval? [Hint: Use an appropriate trigonometric identity.]
+31. Show that for each $n\in\mathbb{N}$, the function $f: [0, \infty)\to\mathbb{R}$ given by $f(x) =x^{n}$ is strictly monotonic increasing.
 
 (32)=
-32. Find $\displaystyle\lim_{x \rightarrow 1}\frac{1 - x}{1 - x^{\frac{m}{n}}}$, where $m, n \in \mathbb{N}$.
+32. Show that the function $f(x) = \sin(x)$ has a continuous inverse when restricted to the interval $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$. What goes wrong outside this interval? [Hint: Use an appropriate trigonometric identity.]
 
 (33)=
-33. If $f:[a, b] \rightarrow \mathbb{R}$ is continuous and bijective, and $f(a) < f(b)$, show that $f$ is strictly monotonic increasing.
+33. Find $\displaystyle\lim_{x \rightarrow 1}\frac{1 - x}{1 - x^{\frac{m}{n}}}$, where $m, n \in \mathbb{N}$.
 
 (34)=
-34. $^*$ Show that if $f, g: \mathbb{R} \rightarrow \mathbb{R}$  are monotonic increasing, with $f+g$ continuous, then both $f$ and $g$ are continuous.
+34. If $f:[a, b] \rightarrow \mathbb{R}$ is continuous and bijective, and $f(a) < f(b)$, show that $f$ is strictly monotonic increasing.
 
 (35)=
-35. $^*$ 
+35. $^*$ Show that if $f, g: \mathbb{R} \rightarrow \mathbb{R}$  are monotonic increasing, with $f+g$ continuous, then both $f$ and $g$ are continuous.
+
+(36)=
+36. $^*$ 
 
     (i) Let $(x_{n})$ be a sequence in $\mathbb{R}$ for which $x_{1} = a > 0$ and $x_{n+1} = \sqrt{x_{n}}$, for all $n\in\mathbb{N}$. Show that $\displaystyle\lim_{n \rightarrow \infty} x_{n} = 1$.
 
@@ -327,15 +336,15 @@ What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:
 
 ## 4. Differentiation
 
-(36)=
-36. Let $f:A\to\mathbb{R}$ and let $a\in\mathbb{R}$ be such that there is some sequence $(x_n)$ in $A$ with
+(37)=
+37. Let $f:A\to\mathbb{R}$ and let $a\in\mathbb{R}$ be such that there is some sequence $(x_n)$ in $A$ with
 $x_n\neq a$ for all $n$ and $\displaystyle\lim_{n\to\infty} x_n=a$. What does it mean to say that
 the function $f$ has limit $l$ at the point $a$? What notation do we use to write this?
 <br>
 [This question is asking you to recall (or revise if you can't recall) Definition 2.2 from the lecture notes.That's a key definition and we build on it when we define what it means to be differentiable --- see the next question.]
 
-(37)=
-37. 
+(38)=
+38. 
     (i) Give the definition of what it means for a function $f:A\to\mathbb{R}$ to be differentiable at $a \in A$.
    
     (ii) State carefully what this means in terms of limits of sequences.
@@ -345,25 +354,25 @@ the function $f$ has limit $l$ at the point $a$? What notation do we use to writ
     <br>
     The key points from Chapter 2 are `Definition `2.2 of a limit of a function and Theorem 2.1 giving the sequential criterion. But you need to see how to apply these, not just copy them out. Here they have to be applied to the relevant function for the definition of differentiability, not $f$ itself. ]
 
-(38)=
-38. Give a rigorous proof that the function $f:\mathbb{R}\setminus\{0\}\to \mathbb{R}$ given by
+(39)=
+39. Give a rigorous proof that the function $f:\mathbb{R}\setminus\{0\}\to \mathbb{R}$ given by
 $f(x) = \frac{1}{x}$ is differentiable for all $x \in \mathbb{R} \setminus \{0\}$ from the definition of the derivative and find $f'(x)$ explicitly. Can we extend the function so that it is differentiable on the whole of $\mathbb{R}$ by defining its value at zero to be zero?
 
-(39)=
-39. Let $k\in \mathbb{R}\setminus\{0\}$. Give a rigorous proof from the definition of the derivative that  $f:\mathbb{R}\to \mathbb{R}$ given by  $f(x) = e^{kx}$ is differentiable for all $x \in \mathbb{R}$, and find $f'(x)$ explicitly.
+(40)=
+40. Let $k\in \mathbb{R}\setminus\{0\}$. Give a rigorous proof from the definition of the derivative that  $f:\mathbb{R}\to \mathbb{R}$ given by  $f(x) = e^{kx}$ is differentiable for all $x \in \mathbb{R}$, and find $f'(x)$ explicitly.
 <br>
 [Hint: For fixed $k\in \mathbb{R}$, let $g:\mathbb{R}\to\mathbb{R}$ be given by $g(h)=e^{kh} - 1 - kh $.
 You may use the fact that  $\displaystyle\lim_{h \rightarrow 0}\frac{g(h)}{h} = 0$. (This follows from the series expansion of the exponential function, which you already know, and we will study more later.) ]
 
-(40)=
-40. Consider the function  $f:\mathbb{R}\to \mathbb{R}$ given by $f(x) = \begin{cases} x\sin\left(\frac{1}{x}\right) & \text{if }x \neq 0,\\ 0 & \text{if }x = 0.\end{cases}$
+(41)=
+41. Consider the function  $f:\mathbb{R}\to \mathbb{R}$ given by $f(x) = \begin{cases} x\sin\left(\frac{1}{x}\right) & \text{if }x \neq 0,\\ 0 & \text{if }x = 0.\end{cases}$
 
     (i) Show that $f$ is differentiable at every $x \neq 0$. (You can use standard derivatives and facts about derivatives, such as the product and chain rules.)
     
     (ii) Show that $f$ is not differentiable at $x = 0$. (Use the definition of the derivative as a limit. You may assume that $\sin\left(\frac{1}{x}\right)$ has no limit as $x$ tends to $0$. This was [Problem 8](#8).)
 
-(41)=
-41. Show that the function  $f:\mathbb{R}\to \mathbb{R}$ given by 
+(42)=
+42. Show that the function  $f:\mathbb{R}\to \mathbb{R}$ given by 
 
 $$
 f(x) = \begin{cases} x^2\sin\left(\frac{1}{x}\right) & \text{if }x \neq 0,\\ 0 & \text{if }x = 0.\end{cases}
@@ -371,21 +380,21 @@ $$
 
 is differentiable at every $x \in \mathbb{R}$. What can you say about its second derivative?
 <br>
-[Hint: You will need to consider the case $x=0$ separately from $x\in\mathbb{R}\setminus\{0\}$. You may assume that the limit as $x$ tends to $0$ of $x\sin\left(\frac{1}{x}\right)$ exists and equals $0$. This was studied in [Problem 9](9).]
+[Hint: You will need to consider the case $x=0$ separately from $x\in\mathbb{R}\setminus\{0\}$. You may assume that the limit as $x$ tends to $0$ of $x\sin\left(\frac{1}{x}\right)$ exists and equals $0$. This was studied in [Problem 10](10).]
 
-(42)=
-42.
+(43)=
+43.
     (i) Sketch the graph of any continuous function $f:[0,1]\to \mathbb{R}$ which is not differentiable at $x=\frac{1}{2}$, but is differentiable at all other points. [You do *not* need to give a formula.]
 
     (ii) Sketch the graph of any continuous function $f:[0,1]\to \mathbb{R}$ which is not differentiable at $x=\frac{1}{3}$ and is not differentiable at $x=\frac{2}{3}$, but is differentiable at all other points. [You do *not* need to give a formula.]
 
-(43)=
-43. Let $f:\mathbb{R}\to \mathbb{R}$ be given by $f(x) = x - [x]$ for all $x \in \mathbb{R}$, where $[x]$ denotes the integer part of $f$ (see [](#eq:[x])).
+(44)=
+44. Let $f:\mathbb{R}\to \mathbb{R}$ be given by $f(x) = x - [x]$ for all $x \in \mathbb{R}$, where $[x]$ denotes the integer part of $f$ (see [](#eq:[x])).
 <br>
 Explain carefully at which points $f$  is differentiable, and find the value of its derivative there. [It will probably help to sketch the graph!]
 
-(44)=
-44. Show that if $f:\mathbb{R} \rightarrow \mathbb{R}$ is differentiable at $a$ then
+(45)=
+45. Show that if $f:\mathbb{R} \rightarrow \mathbb{R}$ is differentiable at $a$ then
 
 $$
 \lim_{h \downarrow 0} \displaystyle\frac{f(a + h) - f(a - h)}{2h} = f'(a).
@@ -393,8 +402,8 @@ $$
 
 By considering $f:\mathbb{R}\to\mathbb{R}$ given by $f(x) = |x|$, show that the limit on the left-hand side may exist, even when $f$ is not differentiable at $a$.
 
-(45)=
-45. A function $f:\mathbb{R} \rightarrow \mathbb{R}$ is defined by $f(x) = \begin{cases} -x^{2} & \text{if }x < 0,\\ x^{2} & \text{if }x \geq 0. \end{cases}$
+(46)=
+46. A function $f:\mathbb{R} \rightarrow \mathbb{R}$ is defined by $f(x) = \begin{cases} -x^{2} & \text{if }x < 0,\\ x^{2} & \text{if }x \geq 0. \end{cases}$
 <br>
 Determine whether each of the following is true or false. Justify your answers.
 
@@ -406,14 +415,14 @@ Determine whether each of the following is true or false. Justify your answers.
 
     (iv) $f^{\prime \prime}(0)$ exists.
 
-(46)=
-46.
+(47)=
+47.
     (i) Must any differentiable function $f:[a, b] \rightarrow \mathbb{R}$ have a maximum and minimum value? Why?
    
     (ii) If $f:[a, b] \rightarrow \mathbb{R}$ is differentiable  and $f(a) = f(b)$, must $f$ have a maximum and minimum value in $(a, b)$?
 
-(47)=
-47. Let $a_{0}, a_{1}, \ldots, a_{n}$ be real numbers such that
+(48)=
+48. Let $a_{0}, a_{1}, \ldots, a_{n}$ be real numbers such that
 
 $$
 a_{0} + \frac{a_{1}}{2} + \frac{a_{2}}{3} + \cdots + \frac{a_{n}}{n+1} = 0.
@@ -421,40 +430,40 @@ $$
 
 Consider $f:\mathbb{R}\to\mathbb{R}$ given by $f(x) = a_{0}+ a_{1}x + a_{2}x^{2} + \cdots + a_{n}x^{n}$. Show that there is some $c\in (0,1)$ such that $f(c)=0$. [Hint: Integrate the function $f$ term--by--term, and think about how to use Rolle's theorem.]
 
-(48)=
-48.
+(49)=
+49.
     (i) Use the mean value theorem to show the following. If $f:\mathbb{R} \rightarrow \mathbb{R}$ is continuous on $[a, b]$ and differentiable on $(a, b)$ with $f'(c)= 0$ for all $c \in (a, b)$, then $f$ is constant on $[a, b]$.
    
     (ii) Use part (i) to show that if $g, h:\mathbb{R}\to\mathbb{R}$ are both continuous on $[a, b]$ and differentiable on $(a, b)$ with $h'(x) = g'(x)$ for all $x \in (a, b)$, then there exists $k \in \mathbb{R}$ such that $h(x) = g(x) + k$, for all $x \in [a, b]$.
 
-(49)=
-49. If $f:\mathbb{R} \rightarrow \mathbb{R}$ is continuous on $[a, b]$ and differentiable on $(a, b)$ and there exist $m, M \in \mathbb{R}$ such that $m \leq f'(c) \leq M$, for all $c \in (a, b)$, show that
+(50)=
+50. If $f:\mathbb{R} \rightarrow \mathbb{R}$ is continuous on $[a, b]$ and differentiable on $(a, b)$ and there exist $m, M \in \mathbb{R}$ such that $m \leq f'(c) \leq M$, for all $c \in (a, b)$, show that
 
 $$
 f(a) + m(b - a) \leq f(b) \leq f(a) + M(b-a).
 $$
 
-(50)=
-50. If $r > 0$ and $q \in \mathbb{R}$ show that the polynomial $p(x) = x^{3} + rx + q$ has exactly one real zero.
+(51)=
+51. If $r > 0$ and $q \in \mathbb{R}$ show that the polynomial $p(x) = x^{3} + rx + q$ has exactly one real zero.
 [ You may assume the result of Corollary 3.2: $p$ has at least one real root. So you need to show that there can't be more than one. ]
 
-(51)=
-51. Let $r>1$ and fix $y\in (0,1)$. By applying the mean value theorem to the function $f(x)=x^r$ on $[y,1]$, show that
+(52)=
+52. Let $r>1$ and fix $y\in (0,1)$. By applying the mean value theorem to the function $f(x)=x^r$ on $[y,1]$, show that
 
 $$
 1 - y^r < r(1 - y).
 $$
 
-(52)=
-52. Let $f:\mathbb{R} \rightarrow \mathbb{R}$ be twice differentiable at $a$ with $f'(a) = 0$. If $f^{\prime \prime}(a) < 0$, show that $f$ has a local maximum at $a$, while if $f^{\prime \prime}(a) > 0$, show that $f$ has a local minimum at $a$.
+(53)=
+53. Let $f:\mathbb{R} \rightarrow \mathbb{R}$ be twice differentiable at $a$ with $f'(a) = 0$. If $f^{\prime \prime}(a) < 0$, show that $f$ has a local maximum at $a$, while if $f^{\prime \prime}(a) > 0$, show that $f$ has a local minimum at $a$.
 
 ## 5. Sequences and series of functions
 
-(53)=
-53. Consider the sequence of functions  $(f_n)$, where $f_n:[0,\pi ]\to \mathbb{R}$ is defined by $f_n(x) = \sin^n (x)$ for each $n\in\mathbb{N}$. Show that the sequence $(f_n)$ converges pointwise. Does the sequence $(f_n)$  converge uniformly? Justify your answer.
-
 (54)=
-54. For each of the following sequences of functions $(f_n)$ determine the pointwise limit (if it exists), and decide whether $(f_n)$ converges uniformly to this limit.
+54. Consider the sequence of functions  $(f_n)$, where $f_n:[0,\pi ]\to \mathbb{R}$ is defined by $f_n(x) = \sin^n (x)$ for each $n\in\mathbb{N}$. Show that the sequence $(f_n)$ converges pointwise. Does the sequence $(f_n)$  converge uniformly? Justify your answer.
+
+(55)=
+55. For each of the following sequences of functions $(f_n)$ determine the pointwise limit (if it exists), and decide whether $(f_n)$ converges uniformly to this limit.
 
     (i) $f_n:[0,1]\to\mathbb{R}$, $f_n (x) = x^{\frac{1}{n}}$.
    
@@ -466,8 +475,8 @@ $$
    
     (v) $f_n:\mathbb{R}\to\mathbb{R}$, $f_n(x) = e^{-x^2}{n}$.
 
-(55)=
-55. For each of the following sequences of functions $(g_n)$ find the pointwise limit, and determine whether the sequence converges uniformly on $[0,1]$, and on $[0,\infty)$.
+(56)=
+56. For each of the following sequences of functions $(g_n)$ find the pointwise limit, and determine whether the sequence converges uniformly on $[0,1]$, and on $[0,\infty)$.
 
     (i) $\displaystyle g_n(x) = \frac{x}{n}$.
    
@@ -475,8 +484,8 @@ $$
    
     (iii) $\displaystyle g_n (x) = \frac{x^n}{n+x^n}$.
 
-(56)=
-56. For each of the following sequences of functions $(h_n)$, where $h_n\colon [0,1]\rightarrow \mathbb{R}$, find the pointwise limit, if it exists, and in that case determine whether the sequence converges uniformly.
+(57)=
+57. For each of the following sequences of functions $(h_n)$, where $h_n\colon [0,1]\rightarrow \mathbb{R}$, find the pointwise limit, if it exists, and in that case determine whether the sequence converges uniformly.
 
     (i) $h_n(x) = \left(1-\frac{x}{n}\right)^2$.
     
@@ -484,8 +493,8 @@ $$
     
     (iii) $h_n (x) = \sum_{k=0}^n x^k$.
 
-(57)=
-57. Define $f_n\colon \mathbb{R}\rightarrow \mathbb{R}$ by $f_n (x) = \frac{n+\cos x}{2n+\sin^2 x}$.
+(58)=
+58. Define $f_n\colon \mathbb{R}\rightarrow \mathbb{R}$ by $f_n (x) = \frac{n+\cos x}{2n+\sin^2 x}$.
 
     (i) Find the pointwise limit of the sequence of functions $(f_n)$.
 
@@ -493,8 +502,8 @@ $$
 
     (iii) Calculate $f_n'$ and show that $f'(x) = \lim_{n\rightarrow \infty} f_n'(x)$. Does $(f_n)$ satisfy the conditions of Theorem 5.2?
 
-(58)=
-58.
+(59)=
+59.
     (i) Let $n\in \mathbb{N}$. Show that we can define a continuous function $f_n\colon [0,1]\rightarrow \mathbb{R}$ by
 
     $$
@@ -509,13 +518,13 @@ $$
 
     (ii) Does the sequence $(f_n)$ converge  uniformly to a limit? Justify your answer. If you wish, you may assume without proof that each function $f_n$ is monotone increasing.
 
-(59)=
-59. Let $f_n:[a,b]\to\mathbb{R}$. Suppose that $\sum_{n=1}^\infty f_n$ converges uniformly to $f$. Show that the sequence $(f_n)$ converges uniformly to the zero function.
-
-
-
 (60)=
-60. The functions $c,s:\mathbb{R}\to\mathbb{R}$ are defined by the infinite series $s(x) = \sum_{n=0}^\infty\frac{(-1)^nx^{2n+1}}{(2n+1)!}$, $c(x) = \sum_{n=0}^\infty\frac{(-1)^kx^{2n}}{(2n)!}$.
+60. Let $f_n:[a,b]\to\mathbb{R}$. Suppose that $\sum_{n=1}^\infty f_n$ converges uniformly to $f$. Show that the sequence $(f_n)$ converges uniformly to the zero function.
+
+
+
+(61)=
+61. The functions $c,s:\mathbb{R}\to\mathbb{R}$ are defined by the infinite series $s(x) = \sum_{n=0}^\infty\frac{(-1)^nx^{2n+1}}{(2n+1)!}$, $c(x) = \sum_{n=0}^\infty\frac{(-1)^kx^{2n}}{(2n)!}$.
 
     (i) Prove that these functions are well-defined as pointwise limits, and that their series converge absolutely.
 
@@ -528,8 +537,8 @@ $$
     
     (v)* Show that $\exp(ix)=c(x)+is(x)$ for all $x\in\mathbb{R}$, where $\exp$ is the function from Example 5.7. You should justify any rearrangements of terms in infinite series (MAS107 Theorem 4.18 may help).
 
-(61)=
-61. By using the Weierstrass $M$-test or otherwise, for each of the following series, determine whether it  converges uniformly on $\mathbb{R}$ and  whether it converges uniformly on $[0,1]$.
+(62)=
+62. By using the Weierstrass $M$-test or otherwise, for each of the following series, determine whether it  converges uniformly on $\mathbb{R}$ and  whether it converges uniformly on $[0,1]$.
 
     (i) $\displaystyle\sum_{n=1}^\infty \frac{1}{n^2 +x^2}$
     
@@ -539,14 +548,14 @@ $$
 
     (iv)* $\displaystyle\sum_{n=1}^\infty \frac{\sin (nx)}{n}$
 
-(62)=
-62. 
+(63)=
+63. 
     (i) Show the series $\sum_{n=1}^\infty x^n$ converges uniformly for $x\in [0,a]$ whenever $0<a<1$.
    
     (ii) Does the series converge uniformly on $[0,1)$~? Explain.
 
-(63)=
-63. Prove that there is a function $f\colon [0,2\pi] \rightarrow \mathbb{R}$ defined by
+(64)=
+64. Prove that there is a function $f\colon [0,2\pi] \rightarrow \mathbb{R}$ defined by
 
 $$
 f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
@@ -556,8 +565,8 @@ and that this function is continuous.
 
 ## 6. Integration
 
-(64)=
-64. Let $f:[1,4]\to\mathbb{R}$; $\displaystyle f(x)=\frac{1}{x}$. Let $P$ be the partition consisting of points $\left\{1,\frac{3}{2},2,4\right\}$.
+(65)=
+65. Let $f:[1,4]\to\mathbb{R}$; $\displaystyle f(x)=\frac{1}{x}$. Let $P$ be the partition consisting of points $\left\{1,\frac{3}{2},2,4\right\}$.
 
     (i) Compute $L(f,P)$, $U(f,P)$ and $U(f,P)-L(f,P)$.
    
@@ -565,8 +574,8 @@ and that this function is continuous.
    
     (iii) Find a partition $P'$ of $[1,4]$ for which $U(f,P')-L(f,P')<\frac{2}{5}$.
 
-(65)=
-65. Let $g:[0,1]\to\mathbb{R}$; $\displaystyle g(x)=\left\{\begin{array}{cc} 1 & \text{for } 0\leq x<1 \\ 2 &\text{for } x=1 \end{array}\right.$.
+(66)=
+66. Let $g:[0,1]\to\mathbb{R}$; $\displaystyle g(x)=\left\{\begin{array}{cc} 1 & \text{for } 0\leq x<1 \\ 2 &\text{for } x=1 \end{array}\right.$.
 
     (i) Show that $L(g,P)=1$ for every partition $P$ of $[0,1]$.
     
@@ -574,8 +583,8 @@ and that this function is continuous.
     
     (iii) Given $\varepsilon>0$, construct a partition $P_\varepsilon$ such that $U(g,P_\varepsilon)<1+\varepsilon$.
 
-(66)=
-66. (Exam question)
+(67)=
+67. (Exam question)
 
     (i) Define step functions $r,s\colon \mathbb{R} \rightarrow \mathbb{R}$ by
    
@@ -599,8 +608,8 @@ and that this function is continuous.
 
     [Hint: there's no need to calculate the integral in the middle; use the previous parts to prove the inequalities.]
 
-(67)=
-67. Let $f,g:[a,b]\to\mathbb{R}$ be integrable functions.
+(68)=
+68. Let $f,g:[a,b]\to\mathbb{R}$ be integrable functions.
 
     (i) Show that if $P$ is a partition of $[a,b]$, then
     
@@ -648,8 +657,8 @@ and that this function is continuous.
     \int_a^b(f(x)+g(x))dx = \int_a^bf(x)dx + \int_a^bg(x)dx.
     $$
 
-(68)=
-68. Show that if $k\in\mathbb{R}$ and $f:[a,b]\to\mathbb{R}$ is integrable, then so is $kf:[a,b]\to\mathbb{R}$; $x\mapsto kf(x)$, and
+(69)=
+69. Show that if $k\in\mathbb{R}$ and $f:[a,b]\to\mathbb{R}$ is integrable, then so is $kf:[a,b]\to\mathbb{R}$; $x\mapsto kf(x)$, and
 
 $$
 \int_a^b kf(x)dx = k\int_a^bf(x).
@@ -657,8 +666,8 @@ $$
 
 [Hint: It may help to treat the cases $k\geq 0$ and $k<0$ separately.]
 
-(69)=
-69. Let $f$ be bounded on a set $A\subseteq\mathbb{R}$, let $M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}$, and let $M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}$.
+(70)=
+70. Let $f$ be bounded on a set $A\subseteq\mathbb{R}$, let $M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}$, and let $M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}$.
 
     (i) Show that $M-m\geq M'-m'$.
 
@@ -672,15 +681,15 @@ $$
     
     (iii) Complete the proof of Proposition 6.3(iii) that is, show that $|f|$ is integrable whenever $f$ is.
 
-(70)=
-70.  Let $f\colon \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function, and let $a,b\colon \mathbb{R} \rightarrow \mathbb{R}$ be differentiable functions. Prove that
+(71)=
+71.  Let $f\colon \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function, and let $a,b\colon \mathbb{R} \rightarrow \mathbb{R}$ be differentiable functions. Prove that
 
 $$
 \frac{d}{dx} \int_{a(x)}^{b(x)} f(t)dt = b'(x)f(b(x))-a'(x)f(a(x)).
 $$
 
-(71)=
-71. Define a function $l:(0,\infty ) \rightarrow \mathbb{R}$ by $l(x) = \int_1^x \frac{1}{t}dt$.
+(72)=
+72. Define a function $l:(0,\infty ) \rightarrow \mathbb{R}$ by $l(x) = \int_1^x \frac{1}{t}dt$.
 <br>
 Show the following directly from the definition of $l$ via an integral (that is, *without* using any properties of the function $\ln$).
     
@@ -688,8 +697,8 @@ Show the following directly from the definition of $l$ via an integral (that is,
 
     (ii) $l(xy) = l(x)+l(y)$ for all $x,y >0$.
 
-(72)=
-72.$^*$ Let $f\colon [a,b]\rightarrow \mathbb{R}$ be Riemann integrable. Prove that there is a number $x\in [a,b]$ such that
+(73)=
+73.$^*$ Let $f\colon [a,b]\rightarrow \mathbb{R}$ be Riemann integrable. Prove that there is a number $x\in [a,b]$ such that
 
 $$
 \int_a^x f(t)dt = \int_x^b f(t)dt.
@@ -701,8 +710,8 @@ $$
 F(x) = \int_a^x f(t)dt - \int_x^b f(t)dt .\qquad ]
 $$
 
-(73)=
-73.
+(74)=
+74.
     (i) Let $f\colon [a,b]\rightarrow \mathbb{R}$ be Riemann integrable. Suppose there are $m,M\in \mathbb{R}$ such that $m\leq f(x)\leq M$ for all $x\in [a,b]$. Prove that there is a number $\mu \in [m,M]$ such that
 
     $$
@@ -717,8 +726,8 @@ $$
     
     [Hint: The intermediate value theorem is useful.]
 
-(74)=
-74. Let $f\colon [a,b]\rightarrow \mathbb{R}$ be continuous, and let $g\colon [a,b]\rightarrow [0,\infty )$ be integrable. Prove that there is some $c \in [a,b]$ such that
+(75)=
+75. Let $f\colon [a,b]\rightarrow \mathbb{R}$ be continuous, and let $g\colon [a,b]\rightarrow [0,\infty )$ be integrable. Prove that there is some $c \in [a,b]$ such that
 
 $$
 \int_a^b f(x)g(x)\ dx = f(c) \int_a^b g(x)\ dx .
