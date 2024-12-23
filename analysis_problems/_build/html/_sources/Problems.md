@@ -32,8 +32,12 @@ P1. Which of the following statements is the correct definition of convergence o
 
   (v) Given any $\varepsilon>0$, there is $N\in\mathbb{N}$ such that $|x_n-l|<\varepsilon$ whenever $n\geq N$.
 
+<br>
+
 (P2)=
 P2. Prove using the $(\varepsilon-N)$-definition of convergence that the sequence $(x_n)$ given by $x_n = \frac{2n}{3n-1}$ converges to $\frac{2}{3}$ as $n\rightarrow\infty$.
+
+<br>
 
 (P3)=
 P3. Using your MAS107 notes or another resource, look up and carefully state the Bolzano--Weierstrass theorem.
@@ -41,6 +45,8 @@ P3. Using your MAS107 notes or another resource, look up and carefully state the
 Its proof combines two other important results about sequences from MAS107. What do these results say?
 <br>
 [Note: We will use all three of these theorems at various points this semester. Check you are clear on what each of them is saying, and remember your lecturers and tutors are here to help.]
+
+<br>
 
 (P4)=
 P4.  
@@ -50,12 +56,16 @@ P4.
 
   (ii) If $a,b \in \mathbb{R}$, deduce that $\left|\sqrt{|a|} - \sqrt{|b|}\right| \leq \sqrt{|a - b|}$.
     <br>
-  [Hint: Imitate the proof of Corollary 0.2.6 in the lecture notes.]
+  [Hint: Imitate the proof of Corollary 1.1 in the lecture notes.]
   
   (iii) Hence prove that if the sequence $(a_{n})$ converges to $l$, then $\left(\sqrt{|a_{n}|}\right)$ converges to $\sqrt{|l|}$. 
 
+<br>
+
 (P5)=
 P5. Look up and carefully define the *supremum* and *infimum* of a set $A\subseteq\mathbb{R}$. What conditions must be met for each of these to exist?
+
+<br>
 
 (P6)=
 P6. Compute, without proof, the suprema and infima (if they exist) of the following sets:
@@ -65,6 +75,8 @@ P6. Compute, without proof, the suprema and infima (if they exist) of the follow
   (ii) $\left\{\frac{(-1)^m}{n}:m,n\in\mathbb{N} \text{ s.t } m<n\right\}$.
   
   (iii) $\left\{\frac{n}{3n + 1} :n\in\mathbb{N}\right\}$.
+
+<br>
 
 (P7)=
 P7. Let $A$ and $B$ be bounded and non-empty subsets of $\mathbb{R}$. Which of the following statements are true, and which are false?
@@ -78,6 +90,8 @@ P7. Let $A$ and $B$ be bounded and non-empty subsets of $\mathbb{R}$. Which of t
   (iv) If $x>0$ for all $x\in B$, then $\inf B >0$.
     
   (v) $\sup(A\cup B) = \max\{\sup A,\sup B\}$.
+
+<br>
 
 ## 2. Limits of functions
 (1)=
@@ -131,7 +145,7 @@ Hence calculate $\displaystyle\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1
 
 (6)=
 6. (Homework 2 question) <br> 
-Verify that $\text{sgn}(x) = \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|}$, for $x \neq 0$ (see Example 1.1.3  in the notes for the definition).
+Verify that $\text{sgn}(x) = \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|}$, for $x \neq 0$ (see Example 2.3  in the notes for the definition).
 <br>
 Show that $\displaystyle\lim_{x \rightarrow 0}\text{sgn}    (x)$ does not exist. Show that both the left and right limits exist at $x=0$, and find their values.
 
@@ -148,7 +162,7 @@ For the following functions, each of which is defined on the whole of $\mathbb{R
     ```
     denotes the integer part of $x$.
     
-    (iii) $h(x) =3 - 5{\bf 1}_{(0, 1]}(x) + 7{\bf 1}_{(1, 2]}(x)$. [Here we have used the notation for indicator functions --- see Example 1.1.4 in the notes.]
+    (iii) $h(x) =3 - 5{\bf 1}_{(0, 1]}(x) + 7{\bf 1}_{(1, 2]}(x)$. [Here we have used the notation for indicator functions --- see Example 2.4 in the notes.]
 
 (8)=
 8. What is the largest subset $A$ of $\mathbb{R}$ for which we can specify a function by $f(x) = \sin\left(\frac{1}{x}\right)$? Does $f:A\to\mathbb{R}$ have a limit at $x = 0$? [Hint: Consider sequences whose $n$th term is $\frac{1}{\theta + 2n\pi}$, and think about good choices for $\theta$.]
@@ -160,9 +174,10 @@ For the following functions, each of which is defined on the whole of $\mathbb{R
 10. In the notes, we gave meaning to $\displaystyle\lim_{x \rightarrow a} f(x)$ where $f:\mathbb{R} \rightarrow \mathbb{R}$ is a function and $a \in \mathbb{R}$. In this question, you can investigate what happens when $x$ tends to $\infty$ or $-\infty$.
 
     (i) Formulate a rigorous definition, in terms of $\varepsilon$'s and $\delta$'s, of what it means for $\displaystyle\lim_{x \rightarrow \infty}f(x)$ and $\displaystyle\lim_{x \rightarrow -\infty}f(x)$ to exist. 
-
-    (ii) Find an analogue of the sequential criterion for this case, and prove the analogous result to Theorem 1.2.6. <br>
+    <br>
     [Hint: For the analogue of $(\varepsilon-\delta)$, think very carefully about how you are going to control the behaviour of $x$. Remember that you cannot treat $\infty$ as if it were a number!]
+
+    (ii) Find an analogue of the sequential criterion for this case, and prove the analogous result to Theorem 2.1. 
 
     (iii) Check that you can prove that $\displaystyle\lim_{x \rightarrow \infty}\frac{1}{x} = \lim_{x \rightarrow -\infty}\frac{1}{x} = 0$, using your criterion.
 
@@ -184,7 +199,7 @@ which can be taken as its domain, as found in that problem. For each function, w
 13. Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be continuous at a point $a$.
 Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \mathbb{R}$.
 <br>
-[Hint: Use the formulation of continuity with sequences (Theorem 2.1.2(ii)) and Corollary 0.2.6 from the notes.]
+[Hint: Use the formulation of continuity with sequences (Theorem 3.1(ii)) and Corollary 1.1 from the notes.]
 
 (14)=
 14. Prove Theorem 3.3 in the notes (i.e.~that composition of continuous functions is continuous). [Hint: Use sequences.]
@@ -224,9 +239,11 @@ Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \
 (19)=
 19.
     (i) For any $x, y \in \mathbb{R}$ show that
+    
     $$
     \max\{x, y\} = \frac{1}{2}(x + y) + \frac{1}{2}|x - y|.
     $$
+    
     Hence show that if both $f:A\to \mathbb{R}$ and $g: B \rightarrow \mathbb{R}$ are continuous at $a$, then so is $\max\{f, g\}$, where for all $x \in A\cap B$,
     
     $$
@@ -253,17 +270,17 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
     (vi) If $f(1) = k$ and $f$ is continuous at zero, prove that $f(x) =kx$ for all $x \in \mathbb{R}$.
 
 (21)=
-21. Show that Dirichlet's "other" function, as discussed in Example 2.2.5 in the notes, is discontinuous at every rational point in its domain.
+21. Show that Dirichlet's "other" function, as discussed in Example 3.8 in the notes, is discontinuous at every rational point in its domain.
 
 (22)=
 22. (Homework 2 question) <br>
 What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:\mathbb{R}\to\mathbb{R}$ at the points $a$ and $b$?
 
 (23)=
-23. Prove Corollary 2.3.2. [Hint: Apply the intermediate value theorem to the function $g(x) = f(x) - \gamma$, for $x \in [a, b]$.]
+23. Prove Corollary 3.1. [Hint: Apply the intermediate value theorem to the function $g(x) = f(x) - \gamma$, for $x \in [a, b]$.]
 
 (24)=
-24. Use Corollary 2.3.2
+24. Use Corollary 3.1
 
     (i) Every continuous function from $\mathbb{R}$ to $\mathbb{Z}$ is constant.
 
@@ -275,13 +292,13 @@ What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:
 [Hint: This is a similar proof to that of [Problem 23](#23). This time you need to consider a function of the form $g(x) = f(x) - $ (*something*). What is *something*?] Give a counter-example to demonstrate that the claim is false if the domain of $f$ is restricted to $(0, 1)$.
 
 (26)=
-26. Complete the proof of the extreme value theorem (Theorem 2.3.6), i.e. prove that a continuous function $f:[a,b]\to\mathbb{R}$ attains its infimum.
+26. Complete the proof of the extreme value theorem (Theorem 3.5), i.e. prove that a continuous function $f:[a,b]\to\mathbb{R}$ attains its infimum.
 
 (27)=
 27. Show that if $f:[0,1] \rightarrow \mathbb{R}$ is continuous and $0$ is not in the range of  $f$, then the function $\frac{1}{f}:[0,1]\to \mathbb{R}$ is bounded, where for each $x \in [0,1], \left(\frac{1}{f}\right)(x) = \frac{1}{f(x)}$.
 
 (28)=
-28. Explain why there are no continuous functions having domain $[0, 1]$ and range $\mathbb{R}$. [Hint: Use Theorem 2.3.6.]
+28. Explain why there are no continuous functions having domain $[0, 1]$ and range $\mathbb{R}$. [Hint: Use Theorem 3.5.]
 
 (29)=
 29. Suppose that the function $f:[0,1] \rightarrow [0,1]$ is continuous, and fix $0 < r < 1$. Suppose that we are given a sequence $(x_{n})$ in $[0,1]$ such that $f(x_{n+1}) \leq rf(x_{n})$ for all $n\in\mathbb{N}$. Show that there exists $c \in [0, 1]$ for which $f(c) = 0$. [Hint: Use the Bolzano-Weierstrass theorem.]
@@ -324,9 +341,9 @@ the function $f$ has limit $l$ at the point $a$? What notation do we use to writ
     (ii) State carefully what this means in terms of limits of sequences.
    
     (iii) State carefully what this means in terms of the $\varepsilon-\delta$ criterion.
-    [The first part is just asking you to give Definition 3.2.1 and the other parts are checking that you know what this means.
+    [The first part is just asking you to give Definition 4.1 and the other parts are checking that you know what this means.
     <br>
-    The key points from Chapter 2 are Definition 2.2 of a limit of a function and Theorem 1.2.6 giving the sequential criterion. But you need to see how to apply these, not just copy them out. Here they have to be applied to the relevant function for the definition of differentiability, not $f$ itself. ]
+    The key points from Chapter 2 are `Definition `2.2 of a limit of a function and Theorem 2.1 giving the sequential criterion. But you need to see how to apply these, not just copy them out. Here they have to be applied to the relevant function for the definition of differentiability, not $f$ itself. ]
 
 (38)=
 38. Give a rigorous proof that the function $f:\mathbb{R}\setminus\{0\}\to \mathbb{R}$ given by
@@ -419,7 +436,7 @@ $$
 
 (50)=
 50. If $r > 0$ and $q \in \mathbb{R}$ show that the polynomial $p(x) = x^{3} + rx + q$ has exactly one real zero.
-[ You may assume the result of Corollary 2.3.3: $p$ has at least one real root. So you need to show that there can't be more than one. ]
+[ You may assume the result of Corollary 3.2: $p$ has at least one real root. So you need to show that there can't be more than one. ]
 
 (51)=
 51. Let $r>1$ and fix $y\in (0,1)$. By applying the mean value theorem to the function $f(x)=x^r$ on $[y,1]$, show that
@@ -474,7 +491,7 @@ $$
 
     (ii) Show that the sequence $(f_n)$ converges uniformly.
 
-    (iii) Calculate $f_n'$ and show that $f'(x) = \lim_{n\rightarrow \infty} f_n'(x)$. Does $(f_n)$ satisfy the conditions of Theorem 4.2.3?
+    (iii) Calculate $f_n'$ and show that $f'(x) = \lim_{n\rightarrow \infty} f_n'(x)$. Does $(f_n)$ satisfy the conditions of Theorem 5.2?
 
 (58)=
 58.
@@ -505,11 +522,11 @@ $$
     (ii) Show that when restricted to a closed bounded interval $[-R,R]$, where $R>0$, both series' converge uniformly.
 
     (iii) Prove that $s$ and $c$ are differentiable everywhere, with $s'(x)=c(x)$ and $c'(x)=-s(x)$.
-    [Hint: Mimic the approach of Example 4.3.5 in the notes.]
+    [Hint: Mimic the approach of Example 5.7 in the notes.]
     
     (iv) Prove that $c^2+s^2=1$. [Hint: Differentiate the function $f:\mathbb{R}\to\mathbb{R}$ given by $f(x)=c(x)^2+s(x)^2$ for each $x$.]
     
-    (v)* Show that $\exp(ix)=c(x)+is(x)$ for all $x\in\mathbb{R}$, where $\exp$ is the function from Example 4.3.5. You should justify any rearrangements of terms in infinite series (MAS107 Theorem 4.18 may help).
+    (v)* Show that $\exp(ix)=c(x)+is(x)$ for all $x\in\mathbb{R}$, where $\exp$ is the function from Example 5.7. You should justify any rearrangements of terms in infinite series (MAS107 Theorem 4.18 may help).
 
 (61)=
 61. By using the Weierstrass $M$-test or otherwise, for each of the following series, determine whether it  converges uniformly on $\mathbb{R}$ and  whether it converges uniformly on $[0,1]$.
@@ -653,7 +670,7 @@ $$
 
     for any partition $P$ of $[a,b]$.
     
-    (iii) Complete the proof of Proposition 5.3.1(iii) that is, show that $|f|$ is integrable whenever $f$ is.
+    (iii) Complete the proof of Proposition 6.3(iii) that is, show that $|f|$ is integrable whenever $f$ is.
 
 (70)=
 70.  Let $f\colon \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function, and let $a,b\colon \mathbb{R} \rightarrow \mathbb{R}$ be differentiable functions. Prove that
@@ -687,6 +704,7 @@ $$
 (73)=
 73.
     (i) Let $f\colon [a,b]\rightarrow \mathbb{R}$ be Riemann integrable. Suppose there are $m,M\in \mathbb{R}$ such that $m\leq f(x)\leq M$ for all $x\in [a,b]$. Prove that there is a number $\mu \in [m,M]$ such that
+
     $$
     \int_a^b f(x)\ dx = (b-a)\mu .
     $$

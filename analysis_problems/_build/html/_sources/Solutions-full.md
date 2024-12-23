@@ -83,7 +83,7 @@ and we need only show that
 :label: eq:sqrta-sqrtb
 \sqrt{|a|} - \sqrt{|b|} \leq \sqrt{|a - b|}.
 ```
-We use a trick similar to the proof of Corollary 1.1, \fi and write
+We use a trick similar to the proof of Corollary 1.1, and write
 
 $$
 \sqrt{|a|} = \sqrt{\big|(a-b) + b\big|}.
@@ -103,7 +103,7 @@ $$
 \sqrt{|a|} \leq \sqrt{|a-b|+|b|} \leq \sqrt{|a-b|}+\sqrt{|b|}.
 $$
 
-Equation ([eq:sqrta-sqrtb](#eq:sqrta-sqrtb)) now follows by subtracting $\sqrt{|b|}$ from both sides.
+Equation [](#eq:sqrta-sqrtb) now follows by subtracting $\sqrt{|b|}$ from both sides.
 
 (iii) Let $(a_n)$ be a real sequence converging to $l\in\mathbb{R}$. By (ii),
 
@@ -212,9 +212,9 @@ Similarly, considering $x_n=-3 + \frac{1}{n}$,  we see that $\lim_{x \rightarrow
 
 ---
 
-[4.](4) The first part follows by using the definition of the limit of a function in terms of limits of sequences, and then applying the result of Problem~[q:25](#q:25) (iii).
+[4.](4) The first part follows by using the definition of the limit of a function in terms of limits of sequences, and then applying the result of [P4 (iii)](#P4)..
 <br>
-To be precise let $(x_{n})$ be any sequence in $\mathbb{R} \setminus \{a\}$ that converges to $a$. Then since we are given that $\lim_{x \rightarrow a} f(x) = l$, we must have that $\lim_{n\rightarrow\infty} f(x_{n}) = l$. But then by Problem~[q:25](#q:25) (iii), we have $\lim_{n\rightarrow\infty} \sqrt{f(x_{n}}) = \sqrt{l}$. So by definition of the limit of a function, $\lim_{x \rightarrow a} \sqrt{f(x)} = \sqrt{l}$.
+To be precise let $(x_{n})$ be any sequence in $\mathbb{R} \setminus \{a\}$ that converges to $a$. Then since we are given that $\lim_{x \rightarrow a} f(x) = l$, we must have that $\lim_{n\rightarrow\infty} f(x_{n}) = l$. But then by [P4 (iii)](#P4)., we have $\lim_{n\rightarrow\infty} \sqrt{f(x_{n}}) = \sqrt{l}$. So by definition of the limit of a function, $\lim_{x \rightarrow a} \sqrt{f(x)} = \sqrt{l}$.
 <br>
 Using algebra of limits,  $\lim_{x \rightarrow 1}\displaystyle\frac{x+1}{x^{2}}=\frac{1+1}{1^2}=2$ and
 then by the first part $\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1}{x^{2}}} = \sqrt{2}$.
@@ -227,15 +227,15 @@ then by the first part $\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1}{x^{2
 
 [6.](6) (Homework 2 question)
 <br>
-When $x > 0, \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|} = \displaystyle\frac{x}{x} = 1 = \sign(x)$,
+When $x > 0, \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|} = \displaystyle\frac{x}{x} = 1 = \text{sgn}(x)$,
 <br>
-when $x < 0, \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|} = -\displaystyle\frac{x}{x} = -1 = \sign(x)$.
+when $x < 0, \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|} = -\displaystyle\frac{x}{x} = -1 = \text{sgn}(x)$.
 <br>
-The left limit is $\displaystyle\lim_{x \rightarrow 0^-} \sign(x) = -1$, since for any sequence $(x_n)$ approaching $0$ from the left, we have $\sign(x) = -1$ for all $n$.
+The left limit is $\displaystyle\lim_{x \rightarrow 0^-} \text{sgn}(x) = -1$, since for any sequence $(x_n)$ approaching $0$ from the left, we have $\text{sgn}(x) = -1$ for all $n$.
 <br>
-Similarly, the right limit is $\displaystyle\lim_{x \rightarrow 0^+} \sign(x) = 1$,  since for any sequence $(x_n)$ approaching $0$ from the right, we have $\sign(x) = 1$ for all $n$.
+Similarly, the right limit is $\displaystyle\lim_{x \rightarrow 0^+} \text{sgn}(x) = 1$,  since for any sequence $(x_n)$ approaching $0$ from the right, we have $\text{sgn}(x) = 1$ for all $n$.
 <br>
-Since the left and right limits are different, $\displaystyle\lim_{x \rightarrow 0}\sign(x)$ does not exist.
+Since the left and right limits are different, $\displaystyle\lim_{x \rightarrow 0}\text{sgn}(x)$ does not exist.
 
 ---
 
@@ -288,8 +288,14 @@ So $\lim_{n\rightarrow\infty} f(x_{n}) = 1$, but $\lim_{n\rightarrow\infty} f(y_
 <br>
 Of course, we could have chosen any values of $\theta$ we liked, and constructed a sequence $(x_n)$ with limit $0$ for which $\lim_{n\rightarrow\infty}f(x_n)$ is equal to any real number we liked in the interval $[-1,1]$. The graph of this function below may give some intuition as to how this is possible.
 
-![](figs/sin(1,x))
+```{figure} ../analysis_problems/figs/sin(1,x).png
+---
+height: 275px
+name: s1x
+---
 Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=\sin\left(\frac{1}{x}\right)$.
+```
+
 
 ---
 
@@ -488,7 +494,7 @@ Then for all $x \in A\cap B,$
 $$
 \max\{f, g\}(x) = \frac{1}{2}(f(x) + g(x)) + \frac{1}{2}|f(x) - g(x)|,
 $$
-and continuity follows by Theorem  3.2(i) and (iii) and Problem~[q:56](#q:56).
+and continuity follows by Theorem  3.2(i) and (iii) and [Problem 13](13).
 
 (ii) Check that for all $a, b \in \mathbb{R}$,
 
@@ -526,7 +532,7 @@ $$
 pk = f(p) = f\left(q\cdot \frac{p}{q}\right) = qf\left(\frac{p}{q}\right),
 $$ and the result follows.
 
-(vi) We have already proved this for rational $x$, so suppose that $x$ is irrational. Then we can find a sequence $\left(\frac{p_{n}}{q_{n}}\right)$ of rational numbers that converges to $x$ (as we did in the solution to Example 4.2.4). Then using (iii), (v) and algebra of limits, we have
+(vi) We have already proved this for rational $x$, so suppose that $x$ is irrational. Then we can find a sequence $\left(\frac{p_{n}}{q_{n}}\right)$ of rational numbers that converges to $x$ (as we did in the solution to Example 3.7). Then using (iii), (v) and algebra of limits, we have
 
 $$
 f(x) = \lim_{n\rightarrow\infty} f\left(\frac{p_n}{q_n}\right) =   \lim_{n\rightarrow\infty} k \frac{p_n}{q_n}=k \lim_{n\rightarrow\infty} \frac{p_n}{q_n} = kx.
@@ -534,7 +540,7 @@ $$
 
 ---
 
-[21.](21) Suppose that $x \in \mathbb{Q}$. Then as in the solution to Example 4.2.4 we can find a sequence $(x_{n})$ of irrationals that converges to $x$ and then
+[21.](21) Suppose that $x \in \mathbb{Q}$. Then as in the solution to Example 3.7 we can find a sequence $(x_{n})$ of irrationals that converges to $x$ and then
 
 $$
 \lim_{n\rightarrow\infty} g(x_{n}) = 0 \neq g(x),
@@ -764,7 +770,7 @@ using the given fact that  $\lim_{h \rightarrow 0}\frac{g(h)}{h} = 0$. Thus $f$ 
 (i) Using the product and chain rules for differentiation, and that $\sin$ is differentiable with derivative $\cos$,
 if $x \neq 0$, $f$ is differentiable at $x$ with $f'(x) = \sin\left(\frac{1}{x}\right) - \frac{1}{x}\cos\left(\frac{1}{x}\right)$.
 (ii) But
-$\frac{f(x) - f(0)}{x} = \sin\left(\frac{1}{x}\right)$ has no limit as $x \rightarrow 0$ (see Problem~[q:50](#q:50)), so $f$ is not differentiable at $0$.
+$\frac{f(x) - f(0)}{x} = \sin\left(\frac{1}{x}\right)$ has no limit as $x \rightarrow 0$ (see [Problem 8](8)), so $f$ is not differentiable at $0$.
 
 ---
 
@@ -775,13 +781,13 @@ $$
 \lim_{x \rightarrow 0}\frac{f(x) - f(0)}{x} = \lim_{x \rightarrow 0}x\sin\left(\frac{1}{x}\right) = 0,
 $$
 
-by Problem~[q:51](#q:51). So $f$ is differentiable at $0$ with $f'(0) = 0$. For the second derivative, with $x \neq 0$, we have
+by [Problem 9](9). So $f$ is differentiable at $0$ with $f'(0) = 0$. For the second derivative, with $x \neq 0$, we have
 
 $$
 f^{\prime \prime}(x) = 2\sin\left(\frac{1}{x}\right) - \frac{2}{x}\cos\left(\frac{1}{x}\right) - \frac{1}{x^{2}}\sin\left(\frac{1}{x}\right).
 $$
 
-But $f^{\prime \prime}$ doesn't exist at $x = 0$, as in Problem~[q:83](#q:83).
+But $f^{\prime \prime}$ doesn't exist at $x = 0$, as in [Problem 40](40).
 
 ---
 
@@ -1222,7 +1228,7 @@ $$
 
 Also, $g_0(x)=1$, so $g_0'(x)=0$ for all $x$.
 <br>
-We can now apply Theorem 5.4 \fi to the sequences $(f_n)$ and $(g_n)$ to obtained the desired results for $s$ and $c$. The uniform summability of $(f_n')$ and $(g_n')$ follows from that of $(g_n)$ and $(f_n)$, respectively. Clearly each term $f_n'$ and $g_n'$ are also continuous, and so by Theorem 5.4 \fi, $s=\sum_{n=0}^\infty f_n$ and $c=\sum_{n=0}^\infty g_n$ are both differentiable on $(-R,R)$, and can be differentiated term by term. But $R$ was arbitrary, and so in fact we have shown that $s$ and $c$ are differentiable everywhere, with derivatives given by
+We can now apply Theorem 5.4 to the sequences $(f_n)$ and $(g_n)$ to obtained the desired results for $s$ and $c$. The uniform summability of $(f_n')$ and $(g_n')$ follows from that of $(g_n)$ and $(f_n)$, respectively. Clearly each term $f_n'$ and $g_n'$ are also continuous, and so by Theorem 5.4, $s=\sum_{n=0}^\infty f_n$ and $c=\sum_{n=0}^\infty g_n$ are both differentiable on $(-R,R)$, and can be differentiated term by term. But $R$ was arbitrary, and so in fact we have shown that $s$ and $c$ are differentiable everywhere, with derivatives given by
 
 $$
 s'(x) = \sum_{n=0}^\infty g_n(x) = c(x)
@@ -1708,7 +1714,7 @@ $$
 
 (iii) Since $f$ is integrable, for all $\varepsilon>0$, we can choose the a partition $P$ so that $U(f,P)-L(f,P)<\varepsilon$. Using the result of part (ii). it follows that $U(|f|,P)-L(|f|,P)<\varepsilon$ for this partition, and so $|f|$ is integrable.
 
-Since $-|f(x)|\leq f(x)\leq |f(x)|$ for all $x\in[a,b]$, Proposition [propsint](#propsint)([leq](#leq)) and ([linear](#linear) imply that
+Since $-|f(x)|\leq f(x)\leq |f(x)|$ for all $x\in[a,b]$, Proposition 6.3(iii) imply that
 
 $$
 -\int_a^b|f(x)|dx \leq \int_a^b f(x)dx \leq \int_a^b|f(x)|dx.
