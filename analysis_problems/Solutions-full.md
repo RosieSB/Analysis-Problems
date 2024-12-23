@@ -4,7 +4,7 @@
 ## 1. Preliminary problems
 
 [P1.](P1)
-The correct statements are (ii) and (v).
+The correct statements are (ii) and (v). 
 
 In statement (iv), the quantifiers $\forall$ and $\exists$ are the wrong way round, while in (i) they are missing altogether. Statement (iii) asserts that last part, $|x_n-l|<\varepsilon$ $\forall n\geq N$, should hold for all $\varepsilon$ and for all $N$ --- so again, there is an issue with the quantifiers.
 
