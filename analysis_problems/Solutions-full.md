@@ -172,9 +172,9 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 
 (i) $A=\mathbb{R} \setminus \{0, -1\}$.
 
-(ii) $f_{2}(x) = \displaystyle\frac{(x-1)(x+4)}{(x-1)(x+2)(x+3)}$, so $A=\mathbb{R} \setminus \{1, -2, -3\}$.
+(ii) $g_{2}(x) = \displaystyle\frac{(x-1)(x+4)}{(x-1)(x+2)(x+3)}$, so $A=\mathbb{R} \setminus \{1, -2, -3\}$.
 
-(iii) $f_{3}(x) = \displaystyle\frac{x+4}{(x+2)(x+3)}$, so $A=\mathbb{R} \setminus \{-2, -3\}$.
+(iii) $g_{3}(x) = \displaystyle\frac{x+4}{(x+2)(x+3)}$, so $A=\mathbb{R} \setminus \{-2, -3\}$.
 
 (iv) $A=\mathbb{R} \setminus \{1\}$.
 
@@ -196,9 +196,37 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 
 ---
 
-[3.](3) (i) We have $f:\{0\}\cup[1,3]\to\mathbb{R}$; $f(x)=3x^2-1$, so using intuition only, $\lim_{x\rightarrow 2} f(x)=3\cdot 4-1=11$.
+[3.](3) (i) We are given $f:\mathbb{R}\to\mathbb{R}$; $f(x)=4x+7$. Intuition tells us that 
 
-(ii) Let $\varepsilon>0$. We seek $\delta>0$ such that for all $x\in\{0\}\cup[1,3]$, 
+$$
+\lim_{x\rightarrow 2}f(x) = 4\cdot 2+7 = 15.
+$$
+
+To prove this, let $\varepsilon>0$. We seek $\delta>0$ such that $|x-2|<\delta$ implies $|f(x)-15|<\varepsilon$.
+
+Note that
+
+$$
+|f(x)-15| = |4x+7-15| = |4x-8| = 4|x-2|.
+$$
+
+Therefore, putting $\delta=\frac{\varepsilon}{4}$, we get that whenever $|x-2|<\delta$, 
+
+$$
+|f(x)-17| = 4|x-2| < 4\cdot\frac{\varepsilon}{4} = \varepsilon.
+$$
+
+For the limit as $x\rightarrow 0$, we claim that $\lim_{x\rightarrow 0}f(x)=7$. To prove this, note that $|f(x)-7|=4|x|$. This means that given $\varepsilon>0$, if $|x|<\frac{\varepsilon}{4}$ then 
+
+$$
+|f(x)-7|<4\cdot\frac{\varepsilon}{4} = \varepsilon.
+$$
+
+It follows that $\lim_{x\rightarrow 0}f(x)$ exists and is equal to $7$.
+
+(ii) We have $f:\{0\}\cup[1,3]\to\mathbb{R}$; $f(x)=3x^2-1$, so using intuition only, $\lim_{x\rightarrow 2} f(x)=3\cdot 4-1=11$.
+
+Let $\varepsilon>0$. We seek $\delta>0$ such that for all $x\in\{0\}\cup[1,3]$, 
 
 $$
 |x-2|<\delta \; \Rightarrow \; |f(x)-11|<\varepsilon.
@@ -212,17 +240,55 @@ $$
 
 (Here, we have used the fact that $|x+2| = x+2 \leq 5$, for $x\in\{0\}\cup[1,3]$.) 
 
-Hence we can let $\delta:=\frac{1}{15}$ and conclude that if $x\in\{0\}\cup[1,3$ and $|x-2|<\frac{1}{15}$, then 
+Hence we can let $\delta:=\frac{1}{15}$ and conclude that if $x\in\{0\}\cup[1,3]$ and $|x-2|<\frac{1}{15}$, then 
 
 $$
 |f(x)-11|<15\cdot\frac{\varepsilon}{15} =\varepsilon.
 $$
 
-(iii) $\lim_{x\rightarrow 0}f(x)$ is not defined, since $0$ is not a limit point of the domain of $f$.
+For this $f$, $\lim_{x\rightarrow 0}f(x)$ is not defined, since $0$ is not a limit point of the domain of $f$.
+
+
+
+(iii) Finally, let $f:(0,\infty)\to\mathbb{R}$; $f(x)=x+\frac{1}{x}$. The limit of $f(x)$ as $x\rightarrow 2$ ought to be $2+\frac{1}{2}=\frac{5}{2}$.
+
+Let $\varepsilon>0$, and consider
+
+$$
+\left|f(x)-\frac{5}{2}\right| = \left|x+\frac{1}{x}-\frac{5}{2}\right| = \left|\frac{2x^2+2-5x}{2x}\right| = \left(\frac{(x-2)(2x-1)}{2x}\right) = |x-2|\left|1-\frac{1}{2x}\right|.
+$$
+
+Now, for $x>0$, $0<1-\frac{2x}<1$, and so 
+
+$$
+\left|f(x)-\frac{5}{2}\right| = |x-2|\left|1-\frac{1}{2x}\right| < |x-2|.
+$$
+
+Therefore, we can take $\delta:=\varepsilon$ in this case to get that
+
+$$
+|x-2|<\delta \; \Rightarrow \; \left|f(x)-\frac{5}{2}\right|<\varepsilon.
+$$
+
+So $\lim_{x\rightarrow 2}f(x)=\frac{5}{2}$ in this case.
+
+For the last part, note that $f(x)=x+\frac{1}{x}$ does not converge to a finite limit as $x\rightarrow 0$. In fact, $\lim_{x\rightarrow 0}f(x)=\infty$. One way to prove this is to show that $f(x)$ surpasses any possible bound as $x\rightarrow 0$. Note that
+
+$$
+f(x) = x+\frac{1}{x} > \frac{1}{x}.
+$$
+
+Therefore, given an arbitrary number $K>0$, we can take $0<x<\frac{1}{K}$ to ensure that 
+
+$$
+f(x) = x+\frac{1}{x} > \frac{1}{x} > K.
+$$
+
+This proves that $\lim_{x\rightarrow 0} f(x) = \infty$, for this choice of $f$.
 
 ---
 
-[4.](4) We had $A= \mathbb{R} \setminus \{1, -2, -3\}$, and $f_2:A\to\mathbb{R}$; $\displaystyle f_{2}(x)= \frac{(x + 4)}{(x + 2)(x + 3)}$.
+[4.](4) We had $A= \mathbb{R} \setminus \{1, -2, -3\}$, and $f_2:A\to\mathbb{R}$; $\displaystyle g_{2}(x)= \frac{(x + 4)}{(x + 2)(x + 3)}$.
 
 It is considerably easier to use the sequential criterion for functional limits (Theorem 2.1) than it is to proceed directly using the Definition 2.1. We include both methods, for completeness.
 
@@ -234,11 +300,11 @@ $$
 \lim_{n\to\infty}f_2(x_n)= \lim_{n\to\infty} \frac{(x_n + 4)}{(x_n + 2)(x_n + 3)} =  \frac{(1 + 4)}{(1 + 2)(1 + 3)} = \frac{5}{12},
 $$
 
-where the last equality is using algebra of limits. So $\displaystyle\lim_{x \rightarrow 1}f_{2}(x) = \frac{5}{12}$.
+where the last equality is using algebra of limits. So $\displaystyle\lim_{x \rightarrow 1}g_{2}(x) = \frac{5}{12}$.
 
-Let $x_n=-2 + \frac{1}{n}$, so that $(x_n)$ is a sequence in $A$ converging to $-2$. Then we see that $(f_2(x_n))$ diverges to $+\infty$ and so $\lim_{x \rightarrow -2}f_{2}(x)$  does not exist.
+Let $x_n=-2 + \frac{1}{n}$, so that $(x_n)$ is a sequence in $A$ converging to $-2$. Then we see that $(f_2(x_n))$ diverges to $+\infty$ and so $\lim_{x \rightarrow -2}g_{2}(x)$  does not exist.
 
-Similarly, considering $x_n=-3 + \frac{1}{n}$,  we see that $\lim_{x \rightarrow -3}f_{2}(x)$ does not exist.
+Similarly, considering $x_n=-3 + \frac{1}{n}$,  we see that $\lim_{x \rightarrow -3}g_{2}(x)$ does not exist.
 
 **Method 2: $(\varepsilon-\delta)$ criterion**: <br>
 Intuitively speaking, the limit as $x\rightarrow 1$ "should" be $\frac{(1 + 4)}{(1 + 2)(1 + 3)}=\frac{5}{12}$. 

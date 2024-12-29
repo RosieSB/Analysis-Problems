@@ -97,15 +97,15 @@ P7. Let $A$ and $B$ be bounded and non-empty subsets of $\mathbb{R}$. Which of t
 (1)=
 1. For each of the following formulas, what is the largest subset $X$ of $\mathbb{R}$  which may be taken as the domain of a function with that formula?
 
-    (i) $f_{1}(x) = \displaystyle\frac{x^{2} + 2x + 7}{x(x+1)}$,
+    (i) $g_{1}(x) = \displaystyle\frac{x^{2} + 2x + 7}{x(x+1)}$,
 
-    (ii) $f_{2}(x) = \displaystyle\frac{(x-1)(x+4)}{x^{3} + 4x^{2} + x - 6}$,
+    (ii) $g_{2}(x) = \displaystyle\frac{(x-1)(x+4)}{x^{3} + 4x^{2} + x - 6}$,
 
-    (iii) $f_{3}(x) = \displaystyle\frac{x+4}{x^{2}+5x + 6}$,
+    (iii) $g_{3}(x) = \displaystyle\frac{x+4}{x^{2}+5x + 6}$,
 
-    (iv) $f_{4}(x) = \exp{\left(-\displaystyle\frac{1}{x-1}\right)}$,
+    (iv) $g_{4}(x) = \exp{\left(-\displaystyle\frac{1}{x-1}\right)}$,
 
-    (v) $f_{5}(x) = \cos\left(\displaystyle\frac{1}{\pi x}\right)$.
+    (v) $g_{5}(x) = \cos\left(\displaystyle\frac{1}{\pi x}\right)$.
 
 (2)=
 2. For each of the sets $X\subseteq\mathbb{R}$ below, calculate the associated set $L$ of its limit points. 
@@ -121,22 +121,22 @@ P7. Let $A$ and $B$ be bounded and non-empty subsets of $\mathbb{R}$. Which of t
     (v) $X=\displaystyle\left\{\frac{1}{n}:n\in\mathbb{N}\right\}$.
 
 (3)=
-3. Let $f:\{0\}\cup[1,3]\to\mathbb{R}$; $f(x)=3x^2-1$. 
+3. For each of the following functions $f$, calculate $\lim_{x\rightarrow 2}f(x)$, and prove your calculation is correct using the $(\varepsilon-\delta)$ criterion ([Definition 2.2](https://rosiesb.github.io/Analysis-Notes/2LoF.html#functionlimit)). Does $f$ converge to a limit as $x\rightarrow 0$?
+    
+    (i) $f:\mathbb{R}\to\mathbb{R}$; $f(x)=4x+7$.
 
-    (i) Write down the value of $\lim_{x\rightarrow 2}f(x)$.
+    (ii) $f:\{0\}\cup[1,3]\to\mathbb{R}$; $f(x)=3x^2-1$.
 
-    (ii) Use the $(\varepsilon-\delta)$ criterion (Definition 2.1) to prove your calculation in (i) is correct.
-
-    (iii) Does $f(x)$ converge as $x\rightarrow 0$? Justify your answer. 
+    (iii) $f:(0,\infty)\to\mathbb{R}$; $f(x)=x+\frac{1}{x}$.
 
 (4)=
-4. For $f_2:A\to \mathbb{R}$ as in part (ii) of the [Problem 1](#1), investigate each of
+4. For $g_2:X\to \mathbb{R}$ as in part (ii) of the [Problem 1](#1), investigate each of
 
 $$
-\lim_{x \rightarrow 1}f_{2}(x), \hspace{3em} \lim_{x \rightarrow -2}f_{2}(x) \hspace{2em} \text{ and } \hspace{2em} \lim_{x \rightarrow -3}f_{2}(x).
+\lim_{x \rightarrow 1}g_{2}(x), \hspace{3em} \lim_{x \rightarrow -2}g_{2}(x) \hspace{2em} \text{ and } \hspace{2em} \lim_{x \rightarrow -3}g_{2}(x).
 $$
 
-Calculate the value of each limit, if it exists.
+Use the sequential criterion ([Theorem 2.10](https://rosiesb.github.io/Analysis-Notes/2LoF.html#ed)) to prove you are right.
 
 (5)=
 5. If $f: \mathbb{R} \rightarrow [0, \infty)$ satisfies $\displaystyle\lim_{x \rightarrow a} f(x) = l$, where $l > 0$, show that 
@@ -285,8 +285,8 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 23. (Homework 2 question) <br>
 What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:\mathbb{R}\to\mathbb{R}$ at the points $a$ and $b$?
 
-(23)=
-23. Prove Corollary 3.1. [Hint: Apply the intermediate value theorem to the function $g(x) = f(x) - \gamma$, for $x \in [a, b]$.]
+(24)=
+24. Prove Corollary 3.1. [Hint: Apply the intermediate value theorem to the function $g(x) = f(x) - \gamma$, for $x \in [a, b]$.]
 
 (25)=
 25. Use Corollary 3.1
