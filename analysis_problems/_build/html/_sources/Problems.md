@@ -56,7 +56,7 @@ P4.
 
   (ii) If $a,b \in \mathbb{R}$, deduce that $\left|\sqrt{|a|} - \sqrt{|b|}\right| \leq \sqrt{|a - b|}$.
     <br>
-  [Hint: Imitate the proof of Corollary 1.1 in the lecture notes.]
+  [Hint: Immitate the proof of [Corollary 1.1](https://rosiesb.github.io/Analysis-Notes/1Rev.html#cor:tri) in the lecture notes.]
   
   (iii) Hence prove that if the sequence $(a_{n})$ converges to $l$, then $\left(\sqrt{|a_{n}|}\right)$ converges to $\sqrt{|l|}$. 
 
@@ -153,14 +153,14 @@ Hence calculate $\displaystyle\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1
 6. Why are limits of functions unique? 
 
 (7)=
-7. (Homework 2 question) <br> 
-Verify that $\text{sgn}(x) = \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|}$, for $x \neq 0$ (see Example 2.3  in the notes for the definition).
+7. Verify that $\text{sgn}(x) = \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|}$, for $x \neq 0$ (see Example 2.3  in the notes for the definition).
 <br>
-Show that $\displaystyle\lim_{x \rightarrow 0}\text{sgn}    (x)$ does not exist. Show that both the left and right limits exist at $x=0$, and find their values.
+Show that $\displaystyle\lim_{x \rightarrow 0}\text{sgn}(x)$ does not exist. [Hint: Use a well-chosen sequence and [Theorem 2.1](https://rosiesb.github.io/Analysis-Notes/2LoF.html#ed).]
+<br>
+Show that both the left and right limits exist at $x=0$, and find their values. 
 
 (8)=
-8. (Homework 2 question) <br>
-For the following functions, each of which is defined on the whole of $\mathbb{R}$, find every point at which both the left and right limits exist, but are different from each other, and find the values of these limits.
+8. For the following functions, each of which is defined on the whole of $\mathbb{R}$, find every point at which both the left and right limits exist, but are different from each other, and find the values of these limits.
 
     (i) $f(x) = \begin{cases} 1 -x & \text{if }x < 1\\ x^{2}& \text{if }x \geq 1. \end{cases}$
 
@@ -208,7 +208,7 @@ which can be taken as its domain, as found in that problem. For each function, w
 14. Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be continuous at a point $a$.
 Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \mathbb{R}$.
 <br>
-[Hint: Use the formulation of continuity with sequences (Theorem 3.1(ii)) and Corollary 1.1 from the notes.]
+[Hint: Use the formulation of continuity with sequences (Theorem 3.1(ii)) and Corollary 1.1 from the [notes](https://rosiesb.github.io/Analysis-Notes).]
 
 (15)=
 15. Prove Theorem 3.3 in the notes (i.e. that composition of continuous functions is continuous). [Hint: Use sequences.]
@@ -224,9 +224,8 @@ Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \
     (ii) Identify those discontinuities which are jumps, and calculate the size of each jump.
 
 (18)=
-18. (Homework 2 question)
-    
-    (i) Define $f:  \mathbb{R} \setminus \{0\} \rightarrow \mathbb{R}$ by
+18. 
+    (i) Define $f:\mathbb{R} \setminus \{0\} \rightarrow \mathbb{R}$ by
    
     $$
     f(x) = \displaystyle\frac{(1 + x)^{2} - 1}{x}.
@@ -282,8 +281,7 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 22. Show that Dirichlet's "other" function, as discussed in Example 3.8 in the notes, is discontinuous at every rational point in its domain.
 
 (23)=
-23. (Homework 2 question) <br>
-What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:\mathbb{R}\to\mathbb{R}$ at the points $a$ and $b$?
+23. What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:\mathbb{R}\to\mathbb{R}$ at the points $a$ and $b$?
 
 (24)=
 24. Prove Corollary 3.1. [Hint: Apply the intermediate value theorem to the function $g(x) = f(x) - \gamma$, for $x \in [a, b]$.]
