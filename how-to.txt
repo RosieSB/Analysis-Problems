@@ -4,17 +4,21 @@
 
 cd ~/MAS2004,9/Jupyter/
 
-3. Activate virtual environment
+3. Create virtual environment (skip if done before on this machine)
+
+python3 -m venv .venv
+
+4. Activate virtual environment
 
 source .venv/bin/activate
 
-4. Make changes to local files (in "analysis_problems" directory) using VS code
+5. Make changes to local files (in "analysis_problems" directory) using VS code
 
-5. Build the jupyter book
+6. Build the jupyter book
 
 jupyter-book build Analysis-Problems/analysis_problems/
 
-6. Sync with github using VS code - action should run and create hosted github page at
+7. Sync with github using VS code - action should run and create hosted github page at
 
 https://rosiesb.github.io/Analysis-Problems
 

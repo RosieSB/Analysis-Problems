@@ -3,7 +3,8 @@
 
 title: MAS2004/9 Semester 2 Problems
 author: Rosie Shewell Brockway
-logo: logo.png
+logo: desmos-graph.png
+only_build_toc_files: true
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
