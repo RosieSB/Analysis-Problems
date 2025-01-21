@@ -1,18 +1,3 @@
----
-jupytext:
-  cell_metadata_filter: -all
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.11.5
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 (prob)=
 # Problems
 ## 1. Preliminary problems
@@ -553,7 +538,7 @@ $$
     (ii) Does the series converge uniformly on $[0,1)$~? Explain.
 
 (64)=
-64. Prove that there is a function $f\colon [0,2\pi] \rightarrow \mathbb{R}$ defined by
+64. Prove that there is a function $f\colon [0,2\pi] \rightarrow \mathbb{R}$ defined by 
 
 $$
 f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
@@ -561,10 +546,28 @@ $$
 
 and that this function is continuous.
 
+(65)=
+65.* This question is about the controversial series presented by Fourier in 1807, when he first attempted to publish his solution to the diffusion equation (for a rectangular lamina). 
+```{math}
+:label: fourier
+\frac{4}{\pi}\left[\cos\left(\frac{\pi x}{2}\right)-\frac{1}{3}\cos\left(\frac{3\pi x}{2}\right)+\frac{1}{5}\cos\left(\frac{5\pi x}{2}\right)-\frac{1}{7}\cos\left(\frac{7\pi x}{2}\right)+\ldots\right]
+```
+While a perfectly good series, mathematical understanding in europe at the time was simply not equipped to make any sense of it. Completing this question may give you a sense of why Fourier's contemporaries found it so disturbing.
+
+**Disclaimer:** I am not a historian. For more on this fascinating subject, I recommend reading Chapter 1 of [A Radical Approach to Real Analysis by Bressoud](https://find.shef.ac.uk/permalink/f/1lephdb/44SFD_ALMA_DS21193257230001441).
+
+(i) Using [Desmos](https://www.desmos.com/calculator/bd3xikfhb0) or otherwise, determine (or make an educated guess) what function $f:\mathbb{R}\to\mathbb{R}$ is represented by the Fourier series [](fourier), and sketch its graph. What is its period?
+
+(ii) Evaluate the series when $x$ is an odd integer. What do you notice? Do you need to adjust your answer to (i)?
+
+(iii) Calculate $\text{Dom}(f')$, and write down a formula for $f'$.
+
+(iv) Now differentiate the series [](fourier) term by term. Does this series converge pointwise for any values of $x$? You may find Desmos or a similar graphing tool helpful for this part.
+
 ## 6. Integration
 
-(65)=
-65. Let $f:[1,4]\to\mathbb{R}$; $\displaystyle f(x)=\frac{1}{x}$. Let $P$ be the partition consisting of points $\left\{1,\frac{3}{2},2,4\right\}$.
+(66)=
+66. Let $f:[1,4]\to\mathbb{R}$; $\displaystyle f(x)=\frac{1}{x}$. Let $P$ be the partition consisting of points $\left\{1,\frac{3}{2},2,4\right\}$.
 
     (i) Compute $L(f,P)$, $U(f,P)$ and $U(f,P)-L(f,P)$.
    
@@ -572,8 +575,8 @@ and that this function is continuous.
    
     (iii) Find a partition $P'$ of $[1,4]$ for which $U(f,P')-L(f,P')<\frac{2}{5}$.
 
-(66)=
-66. Let $g:[0,1]\to\mathbb{R}$; $\displaystyle g(x)=\left\{\begin{array}{cc} 1 & \text{for } 0\leq x<1 \\ 2 &\text{for } x=1 \end{array}\right.$.
+(67)=
+67. Let $g:[0,1]\to\mathbb{R}$; $\displaystyle g(x)=\left\{\begin{array}{cc} 1 & \text{for } 0\leq x<1 \\ 2 &\text{for } x=1 \end{array}\right.$.
 
     (i) Show that $L(g,P)=1$ for every partition $P$ of $[0,1]$.
     
@@ -581,8 +584,8 @@ and that this function is continuous.
     
     (iii) Given $\varepsilon>0$, construct a partition $P_\varepsilon$ such that $U(g,P_\varepsilon)<1+\varepsilon$.
 
-(67)=
-67. (Exam question)
+(68)=
+68. (Exam question)
 
     (i) Define step functions $r,s\colon \mathbb{R} \rightarrow \mathbb{R}$ by
    
@@ -606,8 +609,8 @@ and that this function is continuous.
 
     [Hint: there's no need to calculate the integral in the middle; use the previous parts to prove the inequalities.]
 
-(68)=
-68. Let $f,g:[a,b]\to\mathbb{R}$ be integrable functions.
+(69)=
+69. Let $f,g:[a,b]\to\mathbb{R}$ be integrable functions.
 
     (i) Show that if $P$ is a partition of $[a,b]$, then
     
@@ -655,8 +658,8 @@ and that this function is continuous.
     \int_a^b(f(x)+g(x))dx = \int_a^bf(x)dx + \int_a^bg(x)dx.
     $$
 
-(69)=
-69. Show that if $k\in\mathbb{R}$ and $f:[a,b]\to\mathbb{R}$ is integrable, then so is $kf:[a,b]\to\mathbb{R}$; $x\mapsto kf(x)$, and
+(70)=
+70. Show that if $k\in\mathbb{R}$ and $f:[a,b]\to\mathbb{R}$ is integrable, then so is $kf:[a,b]\to\mathbb{R}$; $x\mapsto kf(x)$, and
 
 $$
 \int_a^b kf(x)dx = k\int_a^bf(x).
@@ -664,8 +667,8 @@ $$
 
 [Hint: It may help to treat the cases $k\geq 0$ and $k<0$ separately.]
 
-(70)=
-70. Let $f$ be bounded on a set $A\subseteq\mathbb{R}$, let $M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}$, and let $M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}$.
+(71)=
+71. Let $f$ be bounded on a set $A\subseteq\mathbb{R}$, let $M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}$, and let $M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}$.
 
     (i) Show that $M-m\geq M'-m'$.
 
@@ -679,15 +682,15 @@ $$
     
     (iii) Complete the proof of Proposition 6.3(iii) that is, show that $|f|$ is integrable whenever $f$ is.
 
-(71)=
-71.  Let $f\colon \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function, and let $a,b\colon \mathbb{R} \rightarrow \mathbb{R}$ be differentiable functions. Prove that
+(72)=
+72.  Let $f\colon \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function, and let $a,b\colon \mathbb{R} \rightarrow \mathbb{R}$ be differentiable functions. Prove that
 
 $$
 \frac{d}{dx} \int_{a(x)}^{b(x)} f(t)dt = b'(x)f(b(x))-a'(x)f(a(x)).
 $$
 
-(72)=
-72. Define a function $l:(0,\infty ) \rightarrow \mathbb{R}$ by $l(x) = \int_1^x \frac{1}{t}dt$.
+(73)=
+73. Define a function $l:(0,\infty ) \rightarrow \mathbb{R}$ by $l(x) = \int_1^x \frac{1}{t}dt$.
 <br>
 Show the following directly from the definition of $l$ via an integral (that is, *without* using any properties of the function $\ln$).
     
@@ -695,8 +698,8 @@ Show the following directly from the definition of $l$ via an integral (that is,
 
     (ii) $l(xy) = l(x)+l(y)$ for all $x,y >0$.
 
-(73)=
-73.$^*$ Let $f\colon [a,b]\rightarrow \mathbb{R}$ be Riemann integrable. Prove that there is a number $x\in [a,b]$ such that
+(74)=
+74.$^*$ Let $f\colon [a,b]\rightarrow \mathbb{R}$ be Riemann integrable. Prove that there is a number $x\in [a,b]$ such that
 
 $$
 \int_a^x f(t)dt = \int_x^b f(t)dt.
@@ -708,8 +711,8 @@ $$
 F(x) = \int_a^x f(t)dt - \int_x^b f(t)dt .\qquad ]
 $$
 
-(74)=
-74.
+(75)=
+75.
     (i) Let $f\colon [a,b]\rightarrow \mathbb{R}$ be Riemann integrable. Suppose there are $m,M\in \mathbb{R}$ such that $m\leq f(x)\leq M$ for all $x\in [a,b]$. Prove that there is a number $\mu \in [m,M]$ such that
 
     $$
@@ -724,8 +727,8 @@ $$
     
     [Hint: The intermediate value theorem is useful.]
 
-(75)=
-75. Let $f\colon [a,b]\rightarrow \mathbb{R}$ be continuous, and let $g\colon [a,b]\rightarrow [0,\infty )$ be integrable. Prove that there is some $c \in [a,b]$ such that
+(76)=
+76. Let $f\colon [a,b]\rightarrow \mathbb{R}$ be continuous, and let $g\colon [a,b]\rightarrow [0,\infty )$ be integrable. Prove that there is some $c \in [a,b]$ such that
 
 $$
 \int_a^b f(x)g(x)\ dx = f(c) \int_a^b g(x)\ dx .

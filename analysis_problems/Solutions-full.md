@@ -1497,9 +1497,93 @@ converges.
 
 Hence, by the Weierstrass $M$-test, the series $\sum_{n=1}^\infty f_n (x )$ converges uniformly for $x \in [0,2\pi]$. The uniform limit of a series of continuous functions is continuous, so $f$ is therefore continuous.
 
+(65sol)=
+[65.](65)* Note this question is starred, meaning it is intended more for interest and deviates more from the standard benchmark of question for this module
+
+(i) Entering the series partial sums $\frac{4}{\pi}\sum_{k=0}^N\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$ into [Desmos](https://www.desmos.com/calculator/bd3xikfhb0) for a large value of $N$ yields the following:
+
+```{figure} ../analysis_problems/figs/fourier1.png
+---
+width: 400px
+name: fourier1
+---
+Desmos graph for $\frac{4}{\pi}\sum_{k=0}^100\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$
+```
+
+This graph was created with $N=100$, but any $N>50$ looks similar.
+
+The graph suggests that the infinite series $\frac{4}{\pi}\sum_{k=0}^\infty\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$ is the Fourier series of the following square wave:
+
+```{figure} ../analysis_problems/figs/fourier2.png
+---
+width: 600px
+name: fourier2
+---
+Square wave $f(x)=\frac{4}{\pi}\sum_{k=0}^\infty\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$.
+```
+
+In {numref}`fourier2`, we have been deliberately vague about the value of $f(x)$ when $x$ is an odd integer. In fact, direct calculation using the series shows that $f(x)=0$ for all odd integer values of $x$.
+
+```{figure} ../analysis_problems/figs/fourier3.png
+---
+width: 600px
+name: fourier3
+---
+Improved graph of the square wave $f(x)=\frac{4}{\pi}\sum_{k=0}^\infty\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$.
+```
+
+In particular, 
+
+$$
+f(x) = \left\{\begin{array}{cl} 0 & \text{ for } x \text{ an odd integer},\\
+1 & \text{ for } 4k-1<x<4k+1, \; k\in\mathbb{Z}, \\
+-1 & \text{ for } 4k+1<x<4k+3 \; k\in\mathbb{Z}  \end{array}\right.
+$$
+
+Of course, $f$ is a periodic function with period $2$.
+
+(ii) We already showed directly in (i) that $f(x)=0$ whenever $x$ is an odd integer, but this might not have been obvious from the [Desmos graph](https://www.desmos.com/calculator/bd3xikfhb0) alone.
+
+
+(iii) $f$ is differentiable at all points in $\mathbb{R}$ except for the odd integers. So $\text{Dom}(f') = \mathbb{R}\setminus\{2k+1:k\in\mathbb{Z}\}$. For $x\in\text{Dom}(f')$, $f'(x)=0$.
+
+(iv) Differentiating the formal series 
+
+$$
+\frac{4}{\pi}\left[\cos\left(\frac{\pi x}{2}\right)-\frac{1}{3}\cos\left(\frac{3\pi x}{2}\right)+\frac{1}{5}\cos\left(\frac{5\pi x}{2}\right)-\frac{1}{7}\cos\left(\frac{7\pi x}{2}\right)+\ldots\right]
+$$
+
+term-by-term yields
+
+$$
+-2\left[\sin\left(\frac{\pi x}{2}\right)-\sin\left(\frac{3\pi x}{2}\right)+\sin\left(\frac{5\pi x}{2}\right)-\sin\left(\frac{7\pi x}{2}\right)+\ldots\right].
+$$
+
+When $x$ is an even integer, this series converges and equals $0$. A quick plug into [Desmos](https://www.desmos.com/calculator/req6vnpabz) suggests the series diverges for all other values of $x$.
+
+**Extension:** Can you prove this?
+
+````{admonition} Historical note
+:class: note
+In [Problem 65](#65sol), we found that at all points aside from the odd integers, the function
+
+$$
+f(x)=
+\frac{4}{\pi}\left[\cos\left(\frac{\pi x}{2}\right)-\frac{1}{3}\cos\left(\frac{3\pi x}{2}\right)+\frac{1}{5}\cos\left(\frac{5\pi x}{2}\right)-\frac{1}{7}\cos\left(\frac{7\pi x}{2}\right)+\ldots\right]
+$$
+
+is differentiable with derivative equal to $0$. However, differentiating term-by-term yields a series that diverges for all values of $x$ except the even integers. 
+
+It was apparent contradictions such as this that created such a stir among the contemporaries of Fourier, and meant his 1807 paper was never accepted for publication. As modern mathematicians, we have access to subtle ideas like uniform and absolute convergence (not to mention a functioning definition of differentiability) that allow us to make sense of the strange behaviour exhibited by this series. Mathematicians of the early 19th century could not reconcile the obvious usefulness of the method Fourier had showcased with everything they knew or believed to be true about functions, series and derivatives. 
+
+Following these events was a huge collective effort of the whole mathematical community to properly understand and develop rigorous foundations for calculus --- or as it came to be known, real analysis.
+
+**Disclaimer:** I am not a historian. For more on this fascinating subject, I recommend reading Chapter 1 of [A Radical Approach to Real Analysis by Bressoud](https://find.shef.ac.uk/permalink/f/1lephdb/44SFD_ALMA_DS21193257230001441).
+````
+
 ## 6. Integration
 
-[65.](65) Let $f:[1,4]\to\mathbb{R}$; $f(x)=\frac{1}{x}$, and let $P=\{1,\frac{3}{2},2,4\}$.1. 
+[66.](66) Let $f:[1,4]\to\mathbb{R}$; $f(x)=\frac{1}{x}$, and let $P=\{1,\frac{3}{2},2,4\}$.1. 
 
 (i) Here is a sketch of the graph of $f$, the partition $P$, and the associated upper and lower Riemann sums.
 
@@ -1509,7 +1593,7 @@ width: 600px
 name: q64i
 ---
 $y=\frac{1}{x}$, with upper and lower sums. 
-``` 
+```
 
 We have $U(f,P) = \sum_{k=1}^4M_k(x_k-x_{k-1})$, where $x_0=1$, $x_1=\frac{3}{2}$, $x_2=2$, $x_3=4$, and
 
@@ -1619,7 +1703,7 @@ A partition for which $U(f,P)-L(f,P)<\frac{2}{5}$.
 
 ---
 
-[66.](66) Let $g:[0,1]\to\mathbb{R}$; $\displaystyle g(x)=\left\{\begin{array}{cc} 1 & \text{for } 0\leq x<1 \\ 2 &\text{for } x=1 \end{array}\right.$.
+[67.](67) Let $g:[0,1]\to\mathbb{R}$; $\displaystyle g(x)=\left\{\begin{array}{cc} 1 & \text{for } 0\leq x<1 \\ 2 &\text{for } x=1 \end{array}\right.$.
   
 (i) Let $P=\{x_0,x_1,\ldots x_n\}$ be any partition $[0,1]$, with $0=x_0<x_1<\ldots<x_n=1$. Then for $k=1,\ldots n$,
 
@@ -1667,7 +1751,7 @@ $$
 
 ---
 
-[67.](67) 
+[68.](68) 
 (i) By Proposition 5.3.1(ii) ,
 $$
 \int_0^3 r(t)\, dt = \int_0^11dt+\int_1^2edt+\int_2^3e^4dt = 1+e+e^4,
@@ -1687,7 +1771,7 @@ $$
 
 ---
 
-[68.](68) Let $f,g:[a,b]\to\mathbb{R}$ be integrable functions.
+[69.](69) Let $f,g:[a,b]\to\mathbb{R}$ be integrable functions.
 
 (i) For any subset $A\subset[a,b]$,
 
@@ -1791,7 +1875,7 @@ $$
 
 ---
 
-[69.](69) Let $P$ be the partition $a=x_0<x_1<\ldots<x_n=b$. If $k\geq 0$, then
+[70.](70) Let $P$ be the partition $a=x_0<x_1<\ldots<x_n=b$. If $k\geq 0$, then
 
 $$
 \sup_{x\in[x_{k-1},x_k]}kf(x) = k\sup_{x\in[x_{k-1},x_k]}f(x)
@@ -1845,7 +1929,7 @@ $$
 
 ---
 
-[70.](70) We have $M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}$, and $M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}$.
+[71.](71) We have $M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}$, and $M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}$.
 
 (i) If $m\geq 0$, then $f$ is a non-negative function, so $M=M'$, $m=m'$, and $M-m=M'-m'$.
 
@@ -1891,7 +1975,7 @@ $$
 
 ---
 
-[71.](71) We have
+[72.](72) We have
 
 $$
 \int_{a(x)}^{b(x)} f(t)dt =  \int_0^{b(x)} f(t)dt - \int_0^{a(x)} f(t)\ dt.
@@ -1925,7 +2009,7 @@ as required.
 
 ---
 
-[72.](72) 
+[73.](73) 
 (i) It follows immediately from the fundamental theorem of calculus that $l$ is differentiable, with $l'(x)=\frac{1}{x}$.
  
 (ii) By Proposition 6.2 in the lecture notes,
@@ -1951,7 +2035,7 @@ and $l(xy)=l(x)+l(y)$ follows.
 
 ---
 
-[73.](73) Define $G\colon [a,b]\rightarrow \mathbb{R}$ by
+[74.](74) Define $G\colon [a,b]\rightarrow \mathbb{R}$ by
 
 $$
 G(x) = \int_a^x f(t)\, dt
@@ -1989,7 +2073,7 @@ $$
 
 ---
 
-[74.](74) 
+[75.](75) 
 (i) Consider the step functions $m\mathbf{1}_{[a,b]}$ and $M\mathbf{1}_{[a,b]}$ with $m\mathbf{1}_{[a,b]}(x)\leq f(x)\leq M\mathbf{1}_{[a,b]}(x)$ for all $x\in[a,b]$. Thus we have
 
 $$
@@ -2012,7 +2096,7 @@ $$
 
 ---
 
-[75.](74) Let  $m = \inf \{ f(x) : x\in [a,b] \}$ and $M = \sup \{ f(x) : x\in [a,b] \}$. Then $m\leq f(x)\leq M$ for all $x\in [a,b]$. As $g(x)\geq 0$, we have
+[76.](76) Let  $m = \inf \{ f(x) : x\in [a,b] \}$ and $M = \sup \{ f(x) : x\in [a,b] \}$. Then $m\leq f(x)\leq M$ for all $x\in [a,b]$. As $g(x)\geq 0$, we have
 
 $$
 mg(x)\leq f(x)g(x)\leq Mg(x)
