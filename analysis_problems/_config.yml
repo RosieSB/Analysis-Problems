@@ -14,7 +14,8 @@ execute:
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
-    targetname: book.tex
+    targetname: analysis-problems.tex
+    latex_toplevel_sectioning: 'section'
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.13.3/dist/katex.min.js

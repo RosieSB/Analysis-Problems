@@ -1,8 +1,10 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 
-format: jb-book
+format: jb-article
 root: intro
-chapters:
+options:
+  numbered: true
+sections:
 - file: Problems
 - file: Solutions

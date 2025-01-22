@@ -1,7 +1,7 @@
 (sol)=
 # Solutions
 
-## 1. Preliminary problems
+## Preliminary problems
 
 [P1.](P1)
 The correct statements are (ii) and (v). 
@@ -166,7 +166,7 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 
 (v) True. Let $s=\max\{\sup A,\sup B\}$. Then $s\geq \sup A$ and $s\geq \sup B$, so $s$ is an upper bound for both $A$ and $B$. Therefore, $s$ is an upper bound for $A\cup B$. But $\sup(A\cup B)$ is the least upper bound of $A\cup B$, and so $s\geq\sup(A\cup B)$. Also, since $A$ and $B$ are both subsets of $A\cup B$, we have by statement (iii) that $s=\max\{\sup A,\sup B)\leq\sup(A\cup B)$. Hence $\max\{\sup A,\sup B)=\sup(A\cup B)$.
 
-## 2. Limits of functions
+## Limits of functions
 
 [1.](1) One has to identify the real numbers where the given formula does not make sense, usually because of a zero in a denominator somewhere, and exclude them.
 
@@ -514,7 +514,7 @@ $$
 If $n$ is odd, $\lim_{x \rightarrow \infty}p(x) = \infty$, but $\lim_{x \rightarrow -\infty}p(x) = -\infty$.
 
 
-## 3. Continuity
+## Continuity
 
 
 [13.](13) For each of (i) to (v), the function is continuous at each point of its domain. For (i), (ii) and (iii), we have rational functions, which are continuous on all points of $A$ (which is the subset of $\mathbb{R}$ where the denominator is non-zero). For (iv) and (v), we have compositions of rational functions with the exponential and cosine functions, which are continuous on the whole of $\mathbb{R}$. Again, the functions are continuous on all points of $A$ (which is the subset of $\mathbb{R}$ where the denominator of the rational function is non-zero).
@@ -838,14 +838,14 @@ $$
 
 and we have shown that $f(x)=f(1)$ for all $x\in\mathbb{R}$.
 
-## 4. Differentiation
+## Differentiation
 
 [37.](37) This is Definition 2.2 in the notes:
 <br>
 The function $f$ has limit $l$ at the point $a$ if for every $\varepsilon>0$ there exists $\delta>0$ such that for all $x\in X$, 
 
 $$
-0<|x-a|<\delta \; \text{ implies } \; $|f(x)-l|<\varepsilon.
+0<|x-a|<\delta \; \text{ implies } \; |f(x)-l|<\varepsilon.
 $$
 
 We write $\lim_{x\to a}f(x)=l$.
@@ -887,12 +887,10 @@ The extended function (where we define its value at $x=0$ to be zero) is not con
 
 [40.](40) As in the hint, let $g(h) = e^{kh} - 1 - kh $. Then
 
-$$
 \begin{align*}
 \frac{f(x + h) -f(x)}{h} &= \frac{1}{h}(e^{k(x +h)} - e^{kx})\\
 &= e^{kx}\frac{1}{h}(e^{kh} - 1) = e^{kx}\left(k + \frac{g(h)}{h}\right) \rightarrow ke^{kx},~\mbox{as}~h \rightarrow 0,
 \end{align*}
-$$
 
 using the given fact that  $\lim_{h \rightarrow 0}\frac{g(h)}{h} = 0$. Thus $f$ is differentiable at each $x\in\mathbb{R}$ and $f'(x)=ke^{kx}$.
 
@@ -1089,7 +1087,7 @@ In particular, $f^{\prime \prime}_{+}(a) = \lim_{h \rightarrow 0^+}\frac{f'(a + 
 
 
 
-## 5. Sequences and series of functions
+## Sequences and series of functions
 
 [54.](54) For $x\in [0,\pi ]$ we have $0\leq \sin x<1$ except when $x=\frac{\pi}{2}$, where $\sin x=1$. Thus $f_n(x)$ converges pointwise to the function $f\colon [0, \pi ]\rightarrow \mathbb{R}$ defined by
 
@@ -1581,9 +1579,9 @@ Following these events was a huge collective effort of the whole mathematical co
 **Disclaimer:** I am not a historian. For more on this fascinating subject, I recommend reading Chapter 1 of [A Radical Approach to Real Analysis by Bressoud](https://find.shef.ac.uk/permalink/f/1lephdb/44SFD_ALMA_DS21193257230001441).
 ````
 
-## 6. Integration
+## Integration
 
-[66.](66) Let $f:[1,4]\to\mathbb{R}$; $f(x)=\frac{1}{x}$, and let $P=\{1,\frac{3}{2},2,4\}$.1. 
+[66.](66) Let $f:[1,4]\to\mathbb{R}$; $f(x)=\frac{1}{x}$, and let $P=\{1,\frac{3}{2},2,4\}$.
 
 (i) Here is a sketch of the graph of $f$, the partition $P$, and the associated upper and lower Riemann sums.
 

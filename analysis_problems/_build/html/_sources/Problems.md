@@ -1,6 +1,6 @@
 (prob)=
 # Problems
-## 1. Preliminary problems
+## Preliminary problems
 
 (P1)=
 P1. Which of the following statements is the correct definition of convergence of a real sequence $(x_n)$ to a limit $l\in\mathbb{R}$? How would you correct the incorrect statements?
@@ -78,7 +78,7 @@ P7. Let $A$ and $B$ be bounded and non-empty subsets of $\mathbb{R}$. Which of t
 
 <br>
 
-## 2. Limits of functions
+## Limits of functions
 (1)=
 1. For each of the following formulas, what is the largest subset $X$ of $\mathbb{R}$  which may be taken as the domain of a function with that formula?
 
@@ -183,7 +183,7 @@ Show that both the left and right limits exist at $x=0$, and find their values.
     
     (iii) Let $p: \mathbb{R} \rightarrow \mathbb{R}$ be an even polynomial of degree $m$, where the leading coefficient (i.e. the coefficient of $x^{m}$) is positive. Show that $\displaystyle\lim_{x \rightarrow \infty}p(x) = \lim_{x \rightarrow -\infty}p(x) = \infty$. What happens when $m$ is odd?
 
-## 3. Continuity
+## Continuity
 
 (13)=
 13. Return to [Problem 1](#1). Consider each function there, defined on the largest subset $A$ of $\mathbb{R}$
@@ -317,7 +317,7 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 
     (ii) Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function for which $f(x) = f(x^{2})$ for all $x \in \mathbb{R}$. Use the result of (i) to show that $f$ is constant.
 
-## 4. Differentiation
+## Differentiation
 
 (37)=
 37. Let $f:A\to\mathbb{R}$ and let $a\in\mathbb{R}$ be such that there is some sequence $(x_n)$ in $A$ with
@@ -440,7 +440,7 @@ $$
 (53)=
 53. Let $f:\mathbb{R} \rightarrow \mathbb{R}$ be twice differentiable at $a$ with $f'(a) = 0$. If $f^{\prime \prime}(a) < 0$, show that $f$ has a local maximum at $a$, while if $f^{\prime \prime}(a) > 0$, show that $f$ has a local minimum at $a$.
 
-## 5. Sequences and series of functions
+## Sequences and series of functions
 
 (54)=
 54. Consider the sequence of functions  $(f_n)$, where $f_n:[0,\pi ]\to \mathbb{R}$ is defined by $f_n(x) = \sin^n (x)$ for each $n\in\mathbb{N}$. Show that the sequence $(f_n)$ converges pointwise. Does the sequence $(f_n)$  converge uniformly? Justify your answer.
@@ -564,7 +564,7 @@ While a perfectly good series, mathematical understanding in europe at the time 
 
 (iv) Now differentiate the series [](fourier) term by term. Does this series converge pointwise for any values of $x$? You may find Desmos or a similar graphing tool helpful for this part.
 
-## 6. Integration
+## Integration
 
 (66)=
 66. Let $f:[1,4]\to\mathbb{R}$; $\displaystyle f(x)=\frac{1}{x}$. Let $P$ be the partition consisting of points $\left\{1,\frac{3}{2},2,4\right\}$.
