@@ -803,7 +803,7 @@ Finally, applying our initial result to $f|_{[a, y]}$, we see that if $a<x<y<b$,
 
 ---
 
-[35.](35) First observe that $f+g$ is monotonic increasing since both $f$ and $g$ are. Choose $a \in \mathbb{R}$. Given $\varepsilon > 0$, there exists $\delta > 0$ so that if $x > a + \delta$ then
+[35.*](35) First observe that $f+g$ is monotonic increasing since both $f$ and $g$ are. Choose $a \in \mathbb{R}$. Given $\varepsilon > 0$, there exists $\delta > 0$ so that if $x > a + \delta$ then
 
 $$
 |f(x) + g(x) - f(a) - g(a)|  =  f(x) + g(x) - f(a) - g(a) < \varepsilon,
@@ -819,7 +819,7 @@ as $g$ is increasing. This proves that $g$ is right--continuous at $a$. A simila
 
 ---
 
-[36.](36) 
+[36.*](36) 
 (i) If $0<a<1$, then $0<a<\sqrt{a}<1$. So $(x_n)$ is monotonic increasing and bounded above by $1$, and hence converges to some limit $0\leq l\leq 1$. By continuity of the square root function, $\sqrt{l}=\lim_{n\rightarrow\infty}\sqrt{x_n}$. But $\sqrt{x_n}=x_{n+1}\rightarrow l$ as $n\rightarrow\infty$. By uniqueness of limits, $\sqrt{l}=l$, and so $l=1$.
 <br>
 If instead $a>1$, then $a>\sqrt{a}>1$, and so $(x_n)$ is monotonic decreasing and bounded below by $1$. So the sequences converges to a limit, and by an identical argument to above, this limit has to be $1$.
@@ -1496,7 +1496,7 @@ converges.
 Hence, by the Weierstrass $M$-test, the series $\sum_{n=1}^\infty f_n (x )$ converges uniformly for $x \in [0,2\pi]$. The uniform limit of a series of continuous functions is continuous, so $f$ is therefore continuous.
 
 (65sol)=
-[65.](65)* Note this question is starred, meaning it is intended more for interest and deviates more from the standard benchmark of question for this module
+[65.*](65) Note this question is starred, meaning it is intended more for interest and deviates more from the standard benchmark of question for this module
 
 (i) Entering the series partial sums $\frac{4}{\pi}\sum_{k=0}^N\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$ into [Desmos](https://www.desmos.com/calculator/bd3xikfhb0) for a large value of $N$ yields the following:
 
@@ -2033,7 +2033,7 @@ and $l(xy)=l(x)+l(y)$ follows.
 
 ---
 
-[74.](74) Define $G\colon [a,b]\rightarrow \mathbb{R}$ by
+[74.*](74) Define $G\colon [a,b]\rightarrow \mathbb{R}$ by
 
 $$
 G(x) = \int_a^x f(t)\, dt

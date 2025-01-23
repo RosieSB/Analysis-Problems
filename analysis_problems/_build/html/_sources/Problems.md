@@ -3,7 +3,8 @@
 ## Preliminary problems
 
 (P1)=
-P1. Which of the following statements is the correct definition of convergence of a real sequence $(x_n)$ to a limit $l\in\mathbb{R}$? How would you correct the incorrect statements?
+P1. 
+    Which of the following statements is the correct definition of convergence of a real sequence $(x_n)$ to a limit $l\in\mathbb{R}$? How would you correct the incorrect statements?
 <br>
 [Note: There is more than one correct answer.]
 

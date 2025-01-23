@@ -3,7 +3,8 @@
 ## Preliminary problems
 
 (P1)=
-P1. Which of the following statements is the correct definition of convergence of a real sequence $(x_n)$ to a limit $l\in\mathbb{R}$? How would you correct the incorrect statements?
+P1. 
+    Which of the following statements is the correct definition of convergence of a real sequence $(x_n)$ to a limit $l\in\mathbb{R}$? How would you correct the incorrect statements?
 <br>
 [Note: There is more than one correct answer.]
 
@@ -308,10 +309,10 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 34. If $f:[a, b] \rightarrow \mathbb{R}$ is continuous and bijective, and $f(a) < f(b)$, show that $f$ is strictly monotonic increasing.
 
 (35)=
-35. $^*$ Show that if $f, g: \mathbb{R} \rightarrow \mathbb{R}$  are monotonic increasing, with $f+g$ continuous, then both $f$ and $g$ are continuous.
+35.* Show that if $f, g: \mathbb{R} \rightarrow \mathbb{R}$  are monotonic increasing, with $f+g$ continuous, then both $f$ and $g$ are continuous.
 
 (36)=
-36. $^*$ 
+36.* 
 
     (i) Let $(x_{n})$ be a sequence in $\mathbb{R}$ for which $x_{1} = a > 0$ and $x_{n+1} = \sqrt{x_{n}}$, for all $n\in\mathbb{N}$. Show that $\displaystyle\lim_{n \rightarrow \infty} x_{n} = 1$.
 
@@ -699,7 +700,7 @@ Show the following directly from the definition of $l$ via an integral (that is,
     (ii) $l(xy) = l(x)+l(y)$ for all $x,y >0$.
 
 (74)=
-74.$^*$ Let $f\colon [a,b]\rightarrow \mathbb{R}$ be Riemann integrable. Prove that there is a number $x\in [a,b]$ such that
+74.* Let $f\colon [a,b]\rightarrow \mathbb{R}$ be Riemann integrable. Prove that there is a number $x\in [a,b]$ such that
 
 $$
 \int_a^x f(t)dt = \int_x^b f(t)dt.
