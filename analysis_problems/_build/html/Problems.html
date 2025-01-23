@@ -66,7 +66,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Problems';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="2. Solutions" href="Solutions.html" />
+    <link rel="next" title="2. Solutions" href="Solutions-full.html" />
     <link rel="prev" title="MAS2004/9 Analysis Problem Booklet" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -173,7 +173,7 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Problems</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Solutions.html">2. Solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Solutions-full.html">2. Solutions</a></li>
 </ul>
 
     </div>
@@ -628,15 +628,13 @@ Begin by considering <span class="math notranslate nohighlight">\(f: \mathbb{R} 
 <ol class="arabic simple" id="id34" start="34">
 <li><p>If <span class="math notranslate nohighlight">\(f:[a, b] \rightarrow \mathbb{R}\)</span> is continuous and bijective, and <span class="math notranslate nohighlight">\(f(a) &lt; f(b)\)</span>, show that <span class="math notranslate nohighlight">\(f\)</span> is strictly monotonic increasing.</p></li>
 </ol>
-<ol class="arabic simple" id="id35" start="35">
-<li><p><span class="math notranslate nohighlight">\(^*\)</span> Show that if <span class="math notranslate nohighlight">\(f, g: \mathbb{R} \rightarrow \mathbb{R}\)</span>  are monotonic increasing, with <span class="math notranslate nohighlight">\(f+g\)</span> continuous, then both <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(g\)</span> are continuous.</p></li>
-</ol>
-<ol class="arabic" id="id36" start="36">
-<li><p><span class="math notranslate nohighlight">\(^*\)</span></p>
-<p>(i) Let <span class="math notranslate nohighlight">\((x_{n})\)</span> be a sequence in <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> for which <span class="math notranslate nohighlight">\(x_{1} = a &gt; 0\)</span> and <span class="math notranslate nohighlight">\(x_{n+1} = \sqrt{x_{n}}\)</span>, for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>. Show that <span class="math notranslate nohighlight">\(\displaystyle\lim_{n \rightarrow \infty} x_{n} = 1\)</span>.</p>
-<p>(ii) Let <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span> be a continuous function for which <span class="math notranslate nohighlight">\(f(x) = f(x^{2})\)</span> for all <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>. Use the result of (i) to show that <span class="math notranslate nohighlight">\(f\)</span> is constant.</p>
-</li>
-</ol>
+<p id="id35">35.* Show that if <span class="math notranslate nohighlight">\(f, g: \mathbb{R} \rightarrow \mathbb{R}\)</span>  are monotonic increasing, with <span class="math notranslate nohighlight">\(f+g\)</span> continuous, then both <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(g\)</span> are continuous.</p>
+<p id="id36">36.*</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(i) Let $(x_{n})$ be a sequence in $\mathbb{R}$ for which $x_{1} = a &gt; 0$ and $x_{n+1} = \sqrt{x_{n}}$, for all $n\in\mathbb{N}$. Show that $\displaystyle\lim_{n \rightarrow \infty} x_{n} = 1$.
+
+(ii) Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function for which $f(x) = f(x^{2})$ for all $x \in \mathbb{R}$. Use the result of (i) to show that $f$ is constant.
+</pre></div>
+</div>
 </section>
 <section id="differentiation">
 <h2><span class="section-number">1.4. </span>Differentiation<a class="headerlink" href="#differentiation" title="Link to this heading">#</a></h2>
@@ -849,7 +847,7 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
 <li><p>Let <span class="math notranslate nohighlight">\(f:[1,4]\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(\displaystyle f(x)=\frac{1}{x}\)</span>. Let <span class="math notranslate nohighlight">\(P\)</span> be the partition consisting of points <span class="math notranslate nohighlight">\(\left\{1,\frac{3}{2},2,4\right\}\)</span>.</p>
 <p>(i) Compute <span class="math notranslate nohighlight">\(L(f,P)\)</span>, <span class="math notranslate nohighlight">\(U(f,P)\)</span> and <span class="math notranslate nohighlight">\(U(f,P)-L(f,P)\)</span>.</p>
 <p>(ii) What happens to the value of <span class="math notranslate nohighlight">\(U(f,P)-L(f,P)\)</span> when we add the point <span class="math notranslate nohighlight">\(3\)</span> to the partition?</p>
-<p>(iii) Find a partition <span class="math notranslate nohighlight">\(P'\)</span> of <span class="math notranslate nohighlight">\([1,4]\)</span> for which <span class="math notranslate nohighlight">\(U(f,P')-L(f,P')&lt;\frac{2}{5}\)</span>.</p>
+<p>(iii) Find a partition <span class="math notranslate nohighlight">\(P'\)</span> of <span class="math notranslate nohighlight">\([1,4]\)</span> for which <span class="math notranslate nohighlight">\(U(f,P')-L(f,P')&lt;\frac{2}{5}\)</span>. [Hint: Mimick the proof of <a class="reference external" href="https://rosiesb.github.io/Analysis-Notes/6Int.html#thm:mono">Theorem 6.1</a>.]</p>
 </li>
 </ol>
 <ol class="arabic" id="id67" start="67">
@@ -859,7 +857,14 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
 <p>(iii) Given <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>, construct a partition <span class="math notranslate nohighlight">\(P_\varepsilon\)</span> such that <span class="math notranslate nohighlight">\(U(g,P_\varepsilon)&lt;1+\varepsilon\)</span>.</p>
 </li>
 </ol>
-<ol class="arabic" id="id68" start="68">
+<ol class="arabic simple" id="id68" start="68">
+<li><p>Complete the proof of <a class="reference external" href="https://rosiesb.github.io/Analysis-Notes/6Int.html#int-ind">Proposition 6.1</a>. That is, show that for any closed, bounded interval <span class="math notranslate nohighlight">\([a,b]\)</span>, <span class="math notranslate nohighlight">\(\mathbb{1}_{[a,b]}\)</span>, <span class="math notranslate nohighlight">\(\mathbb{1}_{[a,b]}\)</span>, <span class="math notranslate nohighlight">\(\mathbb{1}_{[a,b]}\)</span> and <span class="math notranslate nohighlight">\(\mathbb{1}_{[a,b]}\)</span> are all Riemann intergrable functions, with</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\int_a^b\mathbb{1}_{[a,b]}(x)dx = \int_a^b\mathbb{1}_{(a,b)}(x)dx = \int_a^b\mathbb{1}_{[a,b)}(x)dx = \int_a^b\mathbb{1}_{(a,b]}(x)dx = b-a.
+\]</div>
+<ol class="arabic" id="id69" start="69">
 <li><p>(Exam question)</p>
 <p>(i) Define step functions <span class="math notranslate nohighlight">\(r,s\colon \mathbb{R} \rightarrow \mathbb{R}\)</span> by</p>
 <div class="math notranslate nohighlight">
@@ -880,7 +885,7 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
 <p>[Hint: there’s no need to calculate the integral in the middle; use the previous parts to prove the inequalities.]</p>
 </li>
 </ol>
-<ol class="arabic" id="id69" start="69">
+<ol class="arabic" id="id70" start="70">
 <li><p>Let <span class="math notranslate nohighlight">\(f,g:[a,b]\to\mathbb{R}\)</span> be integrable functions.</p>
 <p>(i) Show that if <span class="math notranslate nohighlight">\(P\)</span> is a partition of <span class="math notranslate nohighlight">\([a,b]\)</span>, then</p>
 <div class="math notranslate nohighlight">
@@ -921,7 +926,7 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
     \]</div>
 </li>
 </ol>
-<ol class="arabic simple" id="id70" start="70">
+<ol class="arabic simple" id="id71" start="71">
 <li><p>Show that if <span class="math notranslate nohighlight">\(k\in\mathbb{R}\)</span> and <span class="math notranslate nohighlight">\(f:[a,b]\to\mathbb{R}\)</span> is integrable, then so is <span class="math notranslate nohighlight">\(kf:[a,b]\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(x\mapsto kf(x)\)</span>, and</p></li>
 </ol>
 <div class="math notranslate nohighlight">
@@ -929,7 +934,7 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
 \int_a^b kf(x)dx = k\int_a^bf(x).
 \]</div>
 <p>[Hint: It may help to treat the cases <span class="math notranslate nohighlight">\(k\geq 0\)</span> and <span class="math notranslate nohighlight">\(k&lt;0\)</span> separately.]</p>
-<ol class="arabic" id="id71" start="71">
+<ol class="arabic" id="id72" start="72">
 <li><p>Let <span class="math notranslate nohighlight">\(f\)</span> be bounded on a set <span class="math notranslate nohighlight">\(A\subseteq\mathbb{R}\)</span>, let <span class="math notranslate nohighlight">\(M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}\)</span>, and let <span class="math notranslate nohighlight">\(M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}\)</span>.</p>
 <p>(i) Show that <span class="math notranslate nohighlight">\(M-m\geq M'-m'\)</span>.</p>
 <p>(ii) Show that if <span class="math notranslate nohighlight">\(f\)</span> is integrable <span class="math notranslate nohighlight">\([a,b]\)</span>, then</p>
@@ -941,14 +946,14 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
 <p>(iii) Complete the proof of Proposition 6.3(iii) that is, show that <span class="math notranslate nohighlight">\(|f|\)</span> is integrable whenever <span class="math notranslate nohighlight">\(f\)</span> is.</p>
 </li>
 </ol>
-<ol class="arabic simple" id="id72" start="72">
+<ol class="arabic simple" id="id73" start="73">
 <li><p>Let <span class="math notranslate nohighlight">\(f\colon \mathbb{R} \rightarrow \mathbb{R}\)</span> be a continuous function, and let <span class="math notranslate nohighlight">\(a,b\colon \mathbb{R} \rightarrow \mathbb{R}\)</span> be differentiable functions. Prove that</p></li>
 </ol>
 <div class="math notranslate nohighlight">
 \[
 \frac{d}{dx} \int_{a(x)}^{b(x)} f(t)dt = b'(x)f(b(x))-a'(x)f(a(x)).
 \]</div>
-<ol class="arabic" id="id73" start="73">
+<ol class="arabic" id="id74" start="74">
 <li><p>Define a function <span class="math notranslate nohighlight">\(l:(0,\infty ) \rightarrow \mathbb{R}\)</span> by <span class="math notranslate nohighlight">\(l(x) = \int_1^x \frac{1}{t}dt\)</span>.
 <br>
 Show the following directly from the definition of <span class="math notranslate nohighlight">\(l\)</span> via an integral (that is, <em>without</em> using any properties of the function <span class="math notranslate nohighlight">\(\ln\)</span>).</p>
@@ -956,7 +961,7 @@ Show the following directly from the definition of <span class="math notranslate
 <p>(ii) <span class="math notranslate nohighlight">\(l(xy) = l(x)+l(y)\)</span> for all <span class="math notranslate nohighlight">\(x,y &gt;0\)</span>.</p>
 </li>
 </ol>
-<p id="id74">74.<span class="math notranslate nohighlight">\(^*\)</span> Let <span class="math notranslate nohighlight">\(f\colon [a,b]\rightarrow \mathbb{R}\)</span> be Riemann integrable. Prove that there is a number <span class="math notranslate nohighlight">\(x\in [a,b]\)</span> such that</p>
+<p id="id75">75.* Let <span class="math notranslate nohighlight">\(f\colon [a,b]\rightarrow \mathbb{R}\)</span> be Riemann integrable. Prove that there is a number <span class="math notranslate nohighlight">\(x\in [a,b]\)</span> such that</p>
 <div class="math notranslate nohighlight">
 \[
 \int_a^x f(t)dt = \int_x^b f(t)dt.
@@ -966,7 +971,7 @@ Show the following directly from the definition of <span class="math notranslate
 \[
 F(x) = \int_a^x f(t)dt - \int_x^b f(t)dt .\qquad ]
 \]</div>
-<ol class="arabic" id="id75" start="75">
+<ol class="arabic" id="id76" start="76">
 <li><p>(i) Let <span class="math notranslate nohighlight">\(f\colon [a,b]\rightarrow \mathbb{R}\)</span> be Riemann integrable. Suppose there are <span class="math notranslate nohighlight">\(m,M\in \mathbb{R}\)</span> such that <span class="math notranslate nohighlight">\(m\leq f(x)\leq M\)</span> for all <span class="math notranslate nohighlight">\(x\in [a,b]\)</span>. Prove that there is a number <span class="math notranslate nohighlight">\(\mu \in [m,M]\)</span> such that</p>
 <div class="math notranslate nohighlight">
 \[
@@ -980,7 +985,7 @@ F(x) = \int_a^x f(t)dt - \int_x^b f(t)dt .\qquad ]
 <p>[Hint: The intermediate value theorem is useful.]</p>
 </li>
 </ol>
-<ol class="arabic simple" id="id76" start="76">
+<ol class="arabic simple" id="id77" start="77">
 <li><p>Let <span class="math notranslate nohighlight">\(f\colon [a,b]\rightarrow \mathbb{R}\)</span> be continuous, and let <span class="math notranslate nohighlight">\(g\colon [a,b]\rightarrow [0,\infty )\)</span> be integrable. Prove that there is some <span class="math notranslate nohighlight">\(c \in [a,b]\)</span> such that</p></li>
 </ol>
 <div class="math notranslate nohighlight">
@@ -1031,7 +1036,7 @@ F(x) = \int_a^x f(t)dt - \int_x^b f(t)dt .\qquad ]
       </div>
     </a>
     <a class="right-next"
-       href="Solutions.html"
+       href="Solutions-full.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
