@@ -595,7 +595,7 @@ $$
 (69)=
 69. (Exam question)
 
-    (i) Define step functions $r,s\colon \mathbb{R} \rightarrow \mathbb{R}$ by
+    (i) Define step functions $r,s\colon \mathbb{R} \rightarrow \mathbb{R}$ by 
    
     $$
     r = {\bf{1}}_{[0,1)} + e {\bf{1}}_{[1,2)} + e^4 {\bf{1}}_{[2,3]}, \qquad  s = e {\bf{1}}_{[0,1]} + e^4 {\bf{1}}_{(1,2]} + e^9 {\bf{1}}_{(2,3]}.
