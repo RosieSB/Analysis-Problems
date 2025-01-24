@@ -1715,7 +1715,9 @@ $$
 L(g,P) = \sum_{k=1}^n(x_k-x_{k-1}) = x_n-x_0 = 1.
 $$
 
-(ii) Since $g$ is constant on $[0,1)$, we may as well take a partition of the form $P=\{0,1-\delta,1\}$. 
+(ii) Since $g$ is constant on $[0,1)$, we may as well take a partition consisting of 3 points --- the end points and a single point in the middle.
+
+Let $\delta>0$ and consider the partition $P=\{0,1-\delta,1\}$ of $[0,1]. 
 
 ```{figure} ../analysis_problems/figs/q67.png
 ---
@@ -1815,19 +1817,21 @@ and since this is true for all $\varepsilon>0$, we must have $\int_a^b\mathbb{1}
 ---
 
 [69.](69) 
-(i) By [Proposition 6.3](https://rosiesb.github.io/Analysis-Notes/6Int.html#propsint)(ii),
+(i) By results from the course (specifically, [Propositions 6.2](https://rosiesb.github.io/Analysis-Notes/6Int.html#int-ind) and [Proposition 6.3](https://rosiesb.github.io/Analysis-Notes/6Int.html#propsint)(ii)), $r$ and $s$ are both linear combinations of integrable functions, and hence are integrable with
 
 $$
 \int_0^3 r(x) dx = \int_0^11dx+\int_1^2edx+\int_2^3e^4dx = 1+e+e^4,
 $$
 
-and similarly
+and
 
 $$
 \int_0^3 s(t)\, dt = \int_0^1edt+\int_1^2e^4dt+\int_2^3e^9dt = e+e^4+e^9.
 $$
 
-(ii) 
+(ii) Continuous functions are integrable, by another result from the course (specifically, by [Theorem 6.2](https://rosiesb.github.io/Analysis-Notes/6Int.html#thm:ctsint)). So $f\colon [0,3]\rightarrow \mathbb{R}$ defined by $f(x)=e^{x^2}$ is integrable since it is a continuous function.
+
+[Alternative answer: by the fact $f$ is monotonic increasing (c.f. [Theorem 6.1](https://rosiesb.github.io/Analysis-Notes/6Int.html#thm:mono)).]
 
 (iii) Note that $r(t)\leq f(t)\leq s(t)$ for all $t$, and so by Proposition 5.3.1(i),
 
@@ -1837,7 +1841,7 @@ $$
 
 ---
 
-[70.](69) Let $f,g:[a,b]\to\mathbb{R}$ be integrable functions.
+[70.](70) Let $f,g:[a,b]\to\mathbb{R}$ be integrable functions.
 
 (i) For any subset $A\subset[a,b]$,
 
@@ -1863,7 +1867,7 @@ $$
 L(f+g,P) \geq L(f,P)+L(g,P).
 $$
 
-For the example where this is strict, a good strategy is to look for functions with features that ``cancel out'' in some sense. For example, you could take
+For the example where this is strict, a good strategy is to look for functions with features that "cancel out" in some sense. For example, you could take
 
 $$
 f(x) = \left\{\begin{array}{cc} 1 & \text{ if } 0\leq x\leq 1 \\  -1 & \text{ if } 1\leq x\leq 2\end{array}\right.
@@ -1889,15 +1893,29 @@ $$
 
 (ii) Let $P_1$ and $P_2$ be partitions of $[a,b]$. Then
 \begin{align*}
-U(f+g) &\leq U(f+g,P_1\cup P_2) \\
-&\leq U(f,P_1\cup P_2) + U(g,P_1\cup P_2) \\
+U(f+g) &\leq U(f+g,P_1\cup P_2) & \text{ (by definition of $U(f+g)$)}\\
+&\leq U(f,P_1\cup P_2) + U(g,P_1\cup P_2) & \text{ (by part (i))}\\
 &\leq U(f,P_1) + U(g,P_2),
 \end{align*}
-since $P_1\cup P_2$ is a refinement of both partitions $P_1$ and $P_2$.
+by [Lemma 6.1](https://rosiesb.github.io/Analysis-Notes/6Int.html#lem:ref), since $P_1\cup P_2$ is a refinement of both partitions $P_1$ and $P_2$.
 
-The proof of the lower sum statement is similar.
+The proof of the lower sum statement is similar:
+\begin{align*}
+L(f+g) &\leq L(f+g,P_1\cup P_2) & \text{ (definition of $L(f+g)$)}\\
+&\geq L(f,P_1\cup P_2) + L(g,P_1\cup P_2) & \text{ (part (i))}\\
+&\leq L(f,P_1) + L(g,P_2) & \text{(Lemma 6.1).}
+\end{align*}
 
-(iii) Taking $\inf$ over $P_1$,
+
+(iii) We just proved
+
+$$
+U(f+g,P_1\cup P_2) \leq U(f,P_1) + U(g,P_2),
+$$
+
+for all partitions $P_1$ and $P_2$ of $[a,b]$.
+
+Taking $\inf$ over $P_1$,
 
 $$
 U(f+g) \leq U(f) + U(g,P_2),
@@ -1909,7 +1927,7 @@ $$
 U(f+g) \leq U(f)+U(g).
 $$
 
-Since $f$ and $g$ are integrable, this shows that
+Since $f$ and $g$ are integrable, $\int_a^bf(x)dx=U(f)$ and $\int_a^bg(x)dx=U(g)$. This shows that
 
 $$
 U(f+g) \leq \int_a^bf(x)dx + \int_a^bg(x)dx.

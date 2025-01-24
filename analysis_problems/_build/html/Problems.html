@@ -858,24 +858,19 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
 </li>
 </ol>
 <ol class="arabic simple" id="id68" start="68">
-<li><p>Complete the proof of <a class="reference external" href="https://rosiesb.github.io/Analysis-Notes/6Int.html#int-ind">Proposition 6.1</a>. That is, show that for any closed, bounded interval <span class="math notranslate nohighlight">\([a,b]\)</span>, <span class="math notranslate nohighlight">\(\mathbb{1}_{[a,b]}\)</span>, <span class="math notranslate nohighlight">\(\mathbb{1}_{[a,b]}\)</span>, <span class="math notranslate nohighlight">\(\mathbb{1}_{[a,b]}\)</span> and <span class="math notranslate nohighlight">\(\mathbb{1}_{[a,b]}\)</span> are all Riemann intergrable functions, with</p></li>
+<li><p>Complete the proof of <a class="reference external" href="https://rosiesb.github.io/Analysis-Notes/6Int.html#int-ind">Proposition 6.1</a>. That is, show that for any closed, bounded interval <span class="math notranslate nohighlight">\([a,b]\)</span>, the functions <span class="math notranslate nohighlight">\(\mathbb{1}_{[a,b]}\)</span>, <span class="math notranslate nohighlight">\(\mathbb{1}_{[a,b]}\)</span>, <span class="math notranslate nohighlight">\(\mathbb{1}_{[a,b]}\)</span> and <span class="math notranslate nohighlight">\(\mathbb{1}_{[a,b]}\)</span> are Riemann integrable, and</p></li>
 </ol>
 <div class="math notranslate nohighlight">
 \[
 \int_a^b\mathbb{1}_{[a,b]}(x)dx = \int_a^b\mathbb{1}_{(a,b)}(x)dx = \int_a^b\mathbb{1}_{[a,b)}(x)dx = \int_a^b\mathbb{1}_{(a,b]}(x)dx = b-a.
 \]</div>
 <ol class="arabic" id="id69" start="69">
-<li><p>(Exam question)</p>
-<p>(i) Define step functions <span class="math notranslate nohighlight">\(r,s\colon \mathbb{R} \rightarrow \mathbb{R}\)</span> by</p>
+<li><p><em>(Exam question)</em> Define step functions <span class="math notranslate nohighlight">\(r,s\colon \mathbb{R} \rightarrow \mathbb{R}\)</span> by</p>
 <div class="math notranslate nohighlight">
 \[
-    r = {\bf{1}}_{[0,1)} + e {\bf{1}}_{[1,2)} + e^4 {\bf{1}}_{[2,3]}, \qquad  s = e {\bf{1}}_{[0,1]} + e^4 {\bf{1}}_{(1,2]} + e^9 {\bf{1}}_{(2,3]}.
+    r = \mathbb{1}_{[0,1)} + e \mathbb{1}_{[1,2)} + e^4 \mathbb{1}_{[2,3]}, \qquad  s = e \mathbb{1}_{[0,1]} + e^4 \mathbb{1}_{(1,2]} + e^9 \mathbb{1}_{(2,3]}.
     \]</div>
-<p>Evaluate the integrals</p>
-<div class="math notranslate nohighlight">
-\[
-    \int_0^3 r(x)dx, \qquad \int_0^3 s(x)dx.
-    \]</div>
+<p>(i) Evaluate the integrals <span class="math notranslate nohighlight">\(\displaystyle\int_0^3 r(x)dx\)</span> and <span class="math notranslate nohighlight">\(\displaystyle\int_0^3 s(x)dx\)</span>. <br><br> You may use results from the course to help you, but should indicate clearly when doing so.</p>
 <p>(ii) Why is the function <span class="math notranslate nohighlight">\(f\colon [0,3]\rightarrow \mathbb{R}\)</span> defined by <span class="math notranslate nohighlight">\(f(x)=e^{x^2}\)</span> Riemann integrable?</p>
 <p>(iii) Prove that</p>
 <div class="math notranslate nohighlight">
@@ -908,7 +903,7 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
 \[
     L(f+g,P_1\cup P_2) \geq L(f,P_1) + L(g,P_2)
     \]</div>
-<p>[Hint: Lemma 6.1 may be helpful.]</p>
+<p>[Hint: <a class="reference external" href="https://rosiesb.github.io/Analysis-Notes/6Int.html#lem:ref">Lemma 6.1</a> may be helpful.]</p>
 <p>(iii) Deduce that</p>
 <div class="math notranslate nohighlight">
 \[

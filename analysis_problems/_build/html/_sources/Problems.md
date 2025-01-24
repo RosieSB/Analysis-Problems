@@ -586,26 +586,20 @@ While a perfectly good series, mathematical understanding in europe at the time 
     (iii) Given $\varepsilon>0$, construct a partition $P_\varepsilon$ such that $U(g,P_\varepsilon)<1+\varepsilon$.
 
 (68)=
-68. Complete the proof of [Proposition 6.1](https://rosiesb.github.io/Analysis-Notes/6Int.html#int-ind). That is, show that for any closed, bounded interval $[a,b]$, $\mathbb{1}_{[a,b]}$, $\mathbb{1}_{[a,b]}$, $\mathbb{1}_{[a,b]}$ and $\mathbb{1}_{[a,b]}$ are all Riemann intergrable functions, with 
+68. Complete the proof of [Proposition 6.1](https://rosiesb.github.io/Analysis-Notes/6Int.html#int-ind). That is, show that for any closed, bounded interval $[a,b]$, the functions $\mathbb{1}_{[a,b]}$, $\mathbb{1}_{[a,b]}$, $\mathbb{1}_{[a,b]}$ and $\mathbb{1}_{[a,b]}$ are Riemann integrable, and 
 
 $$
 \int_a^b\mathbb{1}_{[a,b]}(x)dx = \int_a^b\mathbb{1}_{(a,b)}(x)dx = \int_a^b\mathbb{1}_{[a,b)}(x)dx = \int_a^b\mathbb{1}_{(a,b]}(x)dx = b-a.
 $$
 
 (69)=
-69. (Exam question)
-
-    (i) Define step functions $r,s\colon \mathbb{R} \rightarrow \mathbb{R}$ by 
+69. *(Exam question)* Define step functions $r,s\colon \mathbb{R} \rightarrow \mathbb{R}$ by 
    
     $$
-    r = {\bf{1}}_{[0,1)} + e {\bf{1}}_{[1,2)} + e^4 {\bf{1}}_{[2,3]}, \qquad  s = e {\bf{1}}_{[0,1]} + e^4 {\bf{1}}_{(1,2]} + e^9 {\bf{1}}_{(2,3]}.
+    r = \mathbb{1}_{[0,1)} + e \mathbb{1}_{[1,2)} + e^4 \mathbb{1}_{[2,3]}, \qquad  s = e \mathbb{1}_{[0,1]} + e^4 \mathbb{1}_{(1,2]} + e^9 \mathbb{1}_{(2,3]}.
     $$
 
-    Evaluate the integrals
-
-    $$
-    \int_0^3 r(x)dx, \qquad \int_0^3 s(x)dx.
-    $$
+    (i) Evaluate the integrals $\displaystyle\int_0^3 r(x)dx$ and $\displaystyle\int_0^3 s(x)dx$. <br><br> You may use results from the course to help you, but should indicate clearly when doing so.
 
     (ii) Why is the function $f\colon [0,3]\rightarrow \mathbb{R}$ defined by $f(x)=e^{x^2}$ Riemann integrable?
 
@@ -646,7 +640,7 @@ $$
     L(f+g,P_1\cup P_2) \geq L(f,P_1) + L(g,P_2)
     $$
     
-    [Hint: Lemma 6.1 may be helpful.]
+    [Hint: [Lemma 6.1](https://rosiesb.github.io/Analysis-Notes/6Int.html#lem:ref) may be helpful.]
     
     (iii) Deduce that
     
