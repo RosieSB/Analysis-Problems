@@ -674,15 +674,13 @@ $$
 
     (i) Show that $M-m\geq M'-m'$.
 
-    (ii) Show that if $f$ is integrable $[a,b]$, then
+    (ii) Show that if $f$ is integrable on $[a,b]$, then for any partition $P$ of $[a,b]$, 
     
     $$
-    U(|f|,P)-L(|f|,P) \leq U(f,P) - L(f,P)
+    U(|f|,P)-L(|f|,P) \leq U(f,P) - L(f,P).
     $$
-
-    for any partition $P$ of $[a,b]$.
     
-    (iii) Complete the proof of Proposition 6.3(iii) that is, show that $|f|$ is integrable whenever $f$ is.
+    (iii) Complete the proof of [Proposition 6.3](https://rosiesb.github.io/Analysis-Notes/6Int.html#propsint)(iv) that is, show that $|f|$ is integrable whenever $f$ is.
 
 (73)=
 73.  Let $f\colon \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function, and let $a,b\colon \mathbb{R} \rightarrow \mathbb{R}$ be differentiable functions. Prove that
@@ -692,7 +690,7 @@ $$
 $$
 
 (74)=
-74. Define a function $l:(0,\infty ) \rightarrow \mathbb{R}$ by $l(x) = \int_1^x \frac{1}{t}dt$.
+74. Define a function $l:(0,\infty ) \rightarrow \mathbb{R}$ by $\displaystyle l(x) = \int_1^x \frac{1}{t}dt$.
 <br>
 Show the following directly from the definition of $l$ via an integral (that is, *without* using any properties of the function $\ln$).
     
@@ -707,7 +705,7 @@ $$
 \int_a^x f(t)dt = \int_x^b f(t)dt.
 $$
 
-[Hint: apply the intermediate value theorem to the function $F$ given by
+[Hint: apply the intermediate value theorem to the function $F:[a,b]\to\mathbb{R}$ given by
 
 $$
 F(x) = \int_a^x f(t)dt - \int_x^b f(t)dt .\qquad ]

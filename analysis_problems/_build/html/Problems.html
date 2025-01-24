@@ -932,13 +932,12 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
 <ol class="arabic" id="id72" start="72">
 <li><p>Let <span class="math notranslate nohighlight">\(f\)</span> be bounded on a set <span class="math notranslate nohighlight">\(A\subseteq\mathbb{R}\)</span>, let <span class="math notranslate nohighlight">\(M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}\)</span>, and let <span class="math notranslate nohighlight">\(M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}\)</span>.</p>
 <p>(i) Show that <span class="math notranslate nohighlight">\(M-m\geq M'-m'\)</span>.</p>
-<p>(ii) Show that if <span class="math notranslate nohighlight">\(f\)</span> is integrable <span class="math notranslate nohighlight">\([a,b]\)</span>, then</p>
+<p>(ii) Show that if <span class="math notranslate nohighlight">\(f\)</span> is integrable on <span class="math notranslate nohighlight">\([a,b]\)</span>, then for any partition <span class="math notranslate nohighlight">\(P\)</span> of <span class="math notranslate nohighlight">\([a,b]\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[
-    U(|f|,P)-L(|f|,P) \leq U(f,P) - L(f,P)
+    U(|f|,P)-L(|f|,P) \leq U(f,P) - L(f,P).
     \]</div>
-<p>for any partition <span class="math notranslate nohighlight">\(P\)</span> of <span class="math notranslate nohighlight">\([a,b]\)</span>.</p>
-<p>(iii) Complete the proof of Proposition 6.3(iii) that is, show that <span class="math notranslate nohighlight">\(|f|\)</span> is integrable whenever <span class="math notranslate nohighlight">\(f\)</span> is.</p>
+<p>(iii) Complete the proof of <a class="reference external" href="https://rosiesb.github.io/Analysis-Notes/6Int.html#propsint">Proposition 6.3</a>(iv) that is, show that <span class="math notranslate nohighlight">\(|f|\)</span> is integrable whenever <span class="math notranslate nohighlight">\(f\)</span> is.</p>
 </li>
 </ol>
 <ol class="arabic simple" id="id73" start="73">
@@ -949,7 +948,7 @@ f(x) = \sum_{n=1}^\infty \frac{\sin n x }{n^2}
 \frac{d}{dx} \int_{a(x)}^{b(x)} f(t)dt = b'(x)f(b(x))-a'(x)f(a(x)).
 \]</div>
 <ol class="arabic" id="id74" start="74">
-<li><p>Define a function <span class="math notranslate nohighlight">\(l:(0,\infty ) \rightarrow \mathbb{R}\)</span> by <span class="math notranslate nohighlight">\(l(x) = \int_1^x \frac{1}{t}dt\)</span>.
+<li><p>Define a function <span class="math notranslate nohighlight">\(l:(0,\infty ) \rightarrow \mathbb{R}\)</span> by <span class="math notranslate nohighlight">\(\displaystyle l(x) = \int_1^x \frac{1}{t}dt\)</span>.
 <br>
 Show the following directly from the definition of <span class="math notranslate nohighlight">\(l\)</span> via an integral (that is, <em>without</em> using any properties of the function <span class="math notranslate nohighlight">\(\ln\)</span>).</p>
 <p>(i) <span class="math notranslate nohighlight">\(l\)</span> is differentiable, and <span class="math notranslate nohighlight">\(l'(x) = \frac{1}{x}\)</span>.</p>
@@ -961,7 +960,7 @@ Show the following directly from the definition of <span class="math notranslate
 \[
 \int_a^x f(t)dt = \int_x^b f(t)dt.
 \]</div>
-<p>[Hint: apply the intermediate value theorem to the function <span class="math notranslate nohighlight">\(F\)</span> given by</p>
+<p>[Hint: apply the intermediate value theorem to the function <span class="math notranslate nohighlight">\(F:[a,b]\to\mathbb{R}\)</span> given by</p>
 <div class="math notranslate nohighlight">
 \[
 F(x) = \int_a^x f(t)dt - \int_x^b f(t)dt .\qquad ]

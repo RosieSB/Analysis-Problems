@@ -1833,7 +1833,7 @@ $$
 
 [Alternative answer: by the fact $f$ is monotonic increasing (c.f. [Theorem 6.1](https://rosiesb.github.io/Analysis-Notes/6Int.html#thm:mono)).]
 
-(iii) Note that $r(t)\leq f(t)\leq s(t)$ for all $t$, and so by Proposition 5.3.1(i),
+(iii) Note that $r(t)\leq f(t)\leq s(t)$ for all $t$, and so by [Proposition 6.3](https://rosiesb.github.io/Analysis-Notes/6Int.html#propsint)(i),
 
 $$
 1+e+e^4  = \int_0^3 r(t)\, dt \leq \int_0^3 f(t)\, dt \leq \int_0^3 s(t)\, dt = e+e^4+e^9.
@@ -2013,19 +2013,21 @@ $$
 
 ---
 
-[72.](72) We have $M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}$, and $M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}$.
+[72.](72) We have: $M=\sup\{f(x):x\in A\}, \; m=\inf\{f(x):x\in A\}$, and $M'=\sup\{|f(x)|:x\in A\}, \; \text{ and } \; m'=\inf\{|f(x)|:x\in A\}$.
 
-(i) If $m\geq 0$, then $f$ is a non-negative function, so $M=M'$, $m=m'$, and $M-m=M'-m'$.
+(i) Case 1: $m\geq 0$. Then $f$ is a non-negative function, so $M=M'$, $m=m'$, and $M-m=M'-m'$.
 
-If $m\leq M\leq 0$ then $M'=-m$, $m'=-M$, and so again $M'-m'=M-m$.
+Case 2: $m\leq M\leq 0$. Then $M'=-m$, $m'=-M$, and so again $M'-m'=M-m$.
 
-If $m<0<M$, then $M'=\max\{M,-m\}\leq M+(-m)$, since both $M$ and $-m$ are positive numbers. Then,
+Case 3: $m<0<M$. Then $M'=\max\{M,-m\}\leq M+(-m)$, since both $M$ and $-m$ are positive numbers. Then,
+
 $$
 M'-m' \leq M' \leq M-m,
 $$
+
 since $m'\geq 0$.
 
-(ii) Let $f:[a,b]\to\mathbb{R}$ be integrable, and let $P$ be the partition $a=x_0<x_1<\ldots<x_n=b$. for $k=1,\ldots,n$. let
+(ii) Let $f:[a,b]\to\mathbb{R}$ be integrable, and let $P$ be the partition $a=x_0<x_1<\ldots<x_n=b$. For $k=1,\ldots,n$. let
 
 $$
 M_k=\sup_{x\in[x_{k-1},x_k]}f(x), \; m_k=\inf{x\in[x_{k-1},x_k]}f(x),
@@ -2035,17 +2037,15 @@ $$
 M_k'=\sup_{x\in[x_{k-1},x_k]}|f(x)|, \; \text{ and } \; m_k'=\inf{x\in[x_{k-1},x_k]}|f(x)|.
 $$
 
-Then by part (i), $M_k-m_k\geq M_k'-m_k'$ for each $k$.
-
-Therefore,
-
-$$
-U(|f|,P) - L(|f|,P) = \sum_{k=1}^n(M_k'-m_k')(x_k-x_{k-1}) \leq \sum_{k=1}^n(M_k-m_k)(x_k-x_{k-1}) = U(f,P)-L(f,P).
-$$
+Then by part (i), $M_k-m_k\geq M_k'-m_k'$ for each $k$. Therefore,
+\begin{align*}
+U(|f|,P) - L(|f|,P) &= \sum_{k=1}^n(M_k'-m_k')(x_k-x_{k-1}) \\
+&\leq \sum_{k=1}^n(M_k-m_k)(x_k-x_{k-1}) = U(f,P)-L(f,P).
+\end{align*}
 
 (iii) Since $f$ is integrable, for all $\varepsilon>0$, we can choose the a partition $P$ so that $U(f,P)-L(f,P)<\varepsilon$. Using the result of part (ii). it follows that $U(|f|,P)-L(|f|,P)<\varepsilon$ for this partition, and so $|f|$ is integrable.
 
-Since $-|f(x)|\leq f(x)\leq |f(x)|$ for all $x\in[a,b]$, Proposition 6.3(iii) imply that
+Since $-|f(x)|\leq f(x)\leq |f(x)|$ for all $x\in[a,b]$, [Proposition 6.3](https://rosiesb.github.io/Analysis-Notes/6Int.html#propsint)(iii) implies that
 
 $$
 -\int_a^b|f(x)|dx \leq \int_a^b f(x)dx \leq \int_a^b|f(x)|dx.
@@ -2065,19 +2065,19 @@ $$
 \int_{a(x)}^{b(x)} f(t)dt =  \int_0^{b(x)} f(t)dt - \int_0^{a(x)} f(t)\ dt.
 $$
 
-Write $F(x)=\int_0^x f(t)dt.$ Then by the fundamental theorem of calculus, $ F'(t)=f(t)$. Then
+Write $F:\mathbb{R}\to\mathbb{R}$; $F(x)=\int_0^x f(t)dt.$ Then by the fundamental theorem of calculus ([Theorem 6.3](https://rosiesb.github.io/Analysis-Notes/6Int.html#ftc)), $F$ is differentiable, and $ F'(x)=f(x)$ for all $x\in\mathbb{R}$. Also, 
 
 $$
-\int_0^{b(x)} f(t)dt=F(b(x)),
+(F\circ b)(x) = F(b(x)) = \int_0^{b(x)} f(t)dt=F(b(x)),
 $$
 
-and using the chain rule
+and $b$ is differentiable. Therefore, by the chain rule ([Theorem 4.4](https://rosiesb.github.io/Analysis-Notes/4Diff.html#chain)), $F\circ b$ is also differentiable, with
 
 $$
-\frac{d}{dx}\int_0^{b(x)} f(t)dt =F'(b(t))b'(t)=f(b(t))b'(t).
+(F\circ b)'(x) = \frac{d}{dx}\int_0^{b(x)} f(t)dt =F'(b(x))b'(x)=f(b(x))b'(x),
 $$
 
-Similarly,
+for all $x\in\mathbb{R}$. Similarly,
 
 $$
 \frac{d}{dx}\int_0^{a(x)} f(y)dt =f(a(x))a'(x).
@@ -2158,21 +2158,29 @@ $$
 ---
 
 [76.](76) 
-(i) Consider the step functions $m\mathbf{1}_{[a,b]}$ and $M\mathbf{1}_{[a,b]}$ with $m\mathbf{1}_{[a,b]}(x)\leq f(x)\leq M\mathbf{1}_{[a,b]}(x)$ for all $x\in[a,b]$. Thus we have
+(i) Let $\mu = \frac{1}{b-a} \int_a^b f(x)\, dx$. Then $\int_a^b f(x)\, dx=(b-a)\mu$, and we need only show that $\mu\in[m,M]$.
+
+Consider the step functions $m\mathbf{1}_{[a,b]}$ and $M\mathbf{1}_{[a,b]}$ with $m\mathbf{1}_{[a,b]}(x)\leq f(x)\leq M\mathbf{1}_{[a,b]}(x)$ for all $x\in[a,b]$. Thus we have
 
 $$
 m(b-a)=\int_a^b m\mathbf{1}_{[a,b]}(x)\, dx \leq \int_a^b f(x)\, dx \leq \int_a^b M\mathbf{1}_{[a,b]}(x)\, dx= M(b-a).
 $$
 
-Let $\mu = \frac{1}{b-a} \int_a^b f(x)\, dx$. Then $\int_a^b f(x)\, dx=(b-a)\mu$ and $m\leq \mu\leq M$, so $\mu \in [m,M]$.
+But $\int_a^b f(x)\, dx=(b-a)\mu$, and so $\mu \in [m,M]$.
 
-(ii) Let $m = \inf \{ f(x) : x\in [a,b] \}$ and $M = \sup \{ f(x) : x\in [a,b] \}$. Then by part (i) we have $\mu \in [m,M]$ where
+(ii) We are now given that $f:[a,b]\to\mathbb{R}$ is continuous. By [Corollary 3.3](https://rosiesb.github.io/Analysis-Notes/3Cty.html#interval), $f([a,b])=[m,M]$, where 
 
 $$
-\int_a^b f(x)\, dx =(b-a)\mu.
+m = \inf \{ f(x) : x\in [a,b] \} \; \text{ and } \; M = \sup \{ f(x) : x\in [a,b] \}.
 $$
 
-But as $f$ is a continuous function on a closed bounded interval, $m$ is the minimum value of $f$, and $M$ is the maximum value. As $\mu\in [m,M]$ and $f$ is continuous, by the intermediate value theorem there is some $\xi \in [a,b]$ such that $f(\xi ) = \mu$. Hence
+In particular, $m<f(x)<M$ for all $x\in[a,b]$, and so by part (i),
+
+$$
+\int_a^b f(x)\, dx =(b-a)\mu,
+$$
+
+for some $\mu \in [m,M]$. As $\mu\in [m,M]=f([a,b])$ and $f$ is continuous, there is some $\xi \in [a,b]$ such that $f(\xi ) = \mu$. Hence
 
 $$
 \int_a^b f(x)\, dx =(b-a)f(\xi ).
@@ -2180,13 +2188,13 @@ $$
 
 ---
 
-[77.](77) Let  $m = \inf \{ f(x) : x\in [a,b] \}$ and $M = \sup \{ f(x) : x\in [a,b] \}$. Then $m\leq f(x)\leq M$ for all $x\in [a,b]$. As $g(x)\geq 0$, we have
+[77.](77) Let $f:[a,b]\to\mathbb{R}$ be continuous, and  $m = \inf \{ f(x) : x\in [a,b] \}$ and $M = \sup \{ f(x) : x\in [a,b] \}$ as before. Then $m\leq f(x)\leq M$ for all $x\in [a,b]$. As $g(x)\geq 0$, we have
 
 $$
 mg(x)\leq f(x)g(x)\leq Mg(x)
 $$
 
-for all $x\in [a,b]$, and so
+for all $x\in [a,b]$. By [Proposition 6.3](https://rosiesb.github.io/Analysis-Notes/6Int.html#propsint)(i),
 
 $$
 m \int_a^b g(x)\, dx \leq \int_a^b f(x)g(x)\, dx \leq M\int_a^b g(x)\, dx.
@@ -2198,7 +2206,7 @@ $$
 I= \int_a^b g(x)\, dx.
 $$
 
-If $I=0$, then the above tells us that
+Either $I=0$ or $I>0$. If $I=0$, then the above tells us that
 
 $$
 \int_a^b f(x)g(x)\, dx =0
@@ -2210,13 +2218,13 @@ $$
 \int_a^b f(x)g(x)\, dx = f(\xi ) \int_a^b g(x)\, dx .
 $$
 
-As $g(x)\geq 0$, we need to prove the result when $I>0$. Then
+If $I>0$, then
 
 $$
 m \leq \frac{1}{I} \int_a^b f(x)g(x)\, dx \leq M.
 $$
 
-By the intermediate value theorem, as in the solution to Q121(ii), we have $\xi \in [m,M]$ such that
+By [Corollary 3.3](https://rosiesb.github.io/Analysis-Notes/3Cty.html#interval), $f([a,b])=[m,M]$, and so there is $\xi \in [m,M]$ such that
 
 $$
 f(\xi ) = \frac{1}{I}  \int_a^b f(x)g(x)\, dx
@@ -2228,7 +2236,7 @@ $$
 \int_a^b f(x)g(x)\, dx = f(\xi ) \int_a^b g(x)\, dx .
 $$
 
-We do need the assumption $g(x)\geq 0$. To see this, consider the function $g(x) = x$ for $x\in [-1,1]$. Then
+**We do need the assumption $g(x)\geq 0$.** To see this, consider the function $g(x) = x$ for $x\in [-1,1]$. Then
 
 $$
 \int_{-1}^1 g(x)\, dx =0,
