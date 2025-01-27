@@ -313,10 +313,9 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 
 (36)=
 36.* 
-
     (i) Let $(x_{n})$ be a sequence in $\mathbb{R}$ for which $x_{1} = a > 0$ and $x_{n+1} = \sqrt{x_{n}}$, for all $n\in\mathbb{N}$. Show that $\displaystyle\lim_{n \rightarrow \infty} x_{n} = 1$.
 
-    (ii) Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function for which $f(x) = f(x^{2})$ for all $x \in \mathbb{R}$. Use the result of (i) to show that $f$ is constant.
+(ii) Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function for which $f(x) = f(x^{2})$ for all $x \in \mathbb{R}$. Use the result of (i) to show that $f$ is constant.
 
 ## Differentiation
 

@@ -48,6 +48,7 @@ If $(x_n)$ is a bounded sequence, then it has a monotone subsequence, $(x_{n_k})
 ---
 
 [P4.](P4)(i) Let $a, b \geq 0$. Then,
+
 $$
 \left(\sqrt{a+b}\right)^2 = a+b,
 $$
@@ -348,7 +349,7 @@ then by the first part $\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1}{x^{2
 
 ---
 
-[7.](7) (Homework 2 question)
+[7.](7) (Homework 2 question?)
 <br>
 When $x > 0, \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|} = \displaystyle\frac{x}{x} = 1 = \text{sgn}(x)$,
 <br>
@@ -362,9 +363,10 @@ Since the left and right limits are different, $\displaystyle\lim_{x \rightarrow
 
 ---
 
-[8.](8) (Homework 2 question)
+[8.](8) (Homework 2 question?)
    
 (i) For $a\neq 1$, the left and right limits exist and are both equal to $f(a)$, using the algebra of limits. The only point at which left and right limits disagree is $a = 1$, with
+
 $$
 \lim_{x \rightarrow 1-}f(x) = 0, \; \text{ and } \; \lim_{x \rightarrow 1+}f(x) = 1.
 $$
@@ -372,9 +374,11 @@ $$
 (ii) In this case, left and right limits disagree at every $n \in \mathbb{Z}$, with $\lim_{x \rightarrow a-}[x] = n-1, \lim_{x \rightarrow n+}[x] = n$. At every other real number, the left and right limits exist and are both equal to the value of the function there.
 
 (iii) Here, left and right limits disagree at $x = 0, 1$ and $2$. We have
+
 $$
 \lim_{x \rightarrow 0^-}h(x) = 3, \hspace{1em} \lim_{x \rightarrow 1-}h(x) = -2, \hspace{1em}  \lim_{x \rightarrow 2-}h(x) = 10,
 $$
+
 $$
 \lim_{x \rightarrow 0^+}h(x) = -2, \hspace{1em} \lim_{x \rightarrow 1+}h(x) = 10, \hspace{1em}  \lim_{x \rightarrow 2+}h(x) = 3.
 $$
@@ -409,14 +413,14 @@ $$
 
 So $\lim_{n\rightarrow\infty} f(x_{n}) = 1$, but $\lim_{n\rightarrow\infty} f(y_n) = -1$. Since these limits are not equal, $\lim_{x\to 0} f(x)$ does not exist.
 <br>
-Of course, we could have chosen any values of $\theta$ we liked, and constructed a sequence $(x_n)$ with limit $0$ for which $\lim_{n\rightarrow\infty}f(x_n)$ is equal to any real number we liked in the interval $[-1,1]$. The graph of this function below may give some intuition as to how this is possible.
+Of course, we could have chosen any values of $\theta$ we liked, and constructed a sequence $(x_n)$ with limit $0$ for which $\lim_{n\rightarrow\infty}f(x_n)$ is equal to any real number we liked in the interval $[-1,1]$. The graph of this function ({numref}`s1x`) may give some intuition as to how this is possible.
 
 ```{figure} ../analysis_problems/figs/sin(1,x).png
 ---
 width: 700px
 name: s1x
 ---
-Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=\sin\left(\frac{1}{x}\right)$.
+Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=\sin\left(\frac{1}{x}\right)$ (Problem 9).
 ```
 
 
@@ -442,7 +446,7 @@ for all $n\in\mathbb{N}$. Since $\displaystyle\lim_{n\to \infty} x_n=0$, we have
 <br>
 Since $(x_n)$ was arbitrary, $\displaystyle\lim_{x \rightarrow 0} x \sin\left(\frac{1}{x}\right) = 0$.
 <br>
-You should contrast the picture below with that for the previous question.
+You should contrast {numref}`xs1x` with {numref}`s1x` that for the previous question.
 
 
 ```{figure} ../analysis_problems/figs/xsin(1,x).png
@@ -450,7 +454,7 @@ You should contrast the picture below with that for the previous question.
 width: 700px
 name: xs1x
 ---
-Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=x\sin\left(\frac{1}{x}\right)$.
+Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=x\sin\left(\frac{1}{x}\right)$ (Problem 10).
 ```
 
 ---
@@ -479,23 +483,31 @@ The other cases are similar.
 (ii) Let $f:\mathbb{R}\to[0,\infty)$, $g:\mathbb{R}\to[0,\infty)$, and suppose $\displaystyle\lim_{x\rightarrow\infty}f(x)=\infty$ and $\displaystyle\lim_{x\rightarrow\infty}g(x)=l$, where $l>0$.
 <br>
 Let $M > 0$. Since $\lim_{x\rightarrow\infty}f(x)=\infty$, there exists $K_1 > 0$ such that
+
 $$
 f(x)>\frac{2M}{l} \hspace{2em} \forall x > K_1.
 $$
+
 Since $\lim_{x\rightarrow\infty}g(x)=l$, for all $\varepsilon>0$ we can find $K_2>0$ such that $x>K_2$ implies $|g(x)-l|<\varepsilon$. In other words,
+
 $$
 l-\varepsilon < g(x) < l+\varepsilon, \hspace{2em} \forall x>K_2.
 $$
+
 This is true for all $\varepsilon$. We apply it specifically to $\varepsilon = \frac{l}{2}$. Then, there is $K_2>0$ such that
+
 $$
 \frac{l}{2} < g(x) < \frac{3l}{2}, \hspace{2em} \forall x>K_2.
 $$
+
 Let $K=\max\{K_1,K_2\}$. If $x>K$, then $x>K_1$ and $x>K_2$, so $f(x)>\frac{2M}{l}$ and $\frac{l}{2} < g(x) < \frac{3l}{2}$.
 <br>
 Hence for $x>K$,
+
 $$
 f(x)g(x) > \frac{2M}{l}\frac{l}{2} = M.
 $$
+
 That is, $\lim_{x\rightarrow\infty}f(x)g(x) = \infty$.
 
 (iii) Let $p:\mathbb{R}\to\mathbb{R}$ be a polynomial of even degree $m$, with positive leading coefficient. Write $m = 2n$ and let
@@ -550,7 +562,7 @@ $g \circ f:\mathbb{R} \setminus \{0\} \to \mathbb{R} \setminus \{0\}$ given by $
 
 ---
 
-[18.](18) HW2 question
+[18.](18) (Homework 2 question?)
    
 (i) For $x \neq 0, f(x) = x+2$. Since $\lim_{x \rightarrow 0}f(x) = 2$, the required continuous extension is $\tilde{f}$ where
 
@@ -588,14 +600,14 @@ $$
 \tilde{f}:\mathbb{R} \setminus \{-2\}\to\mathbb{R}; \hspace{1em} \tilde{f}(x) = \frac{x^2+2x+4}{x+2}.
 $$
 
-We can see this behaviour in the graph of the function:
+We can see this behaviour in the graph of the function ({numref}`q18`)
 
 ```{figure} ../analysis_problems/figs/(x2+2x+4),(x+2).png
 ---
 width: 500px
 name: q18
 ---
-Graph of the function $\tilde{f}:\mathbb{R}\setminus\{-2\}\to\mathbb{R}$; $f(x)=\frac{x^2+2x+4}{x+2}$.
+Graph of the function $\tilde{f}:\mathbb{R}\setminus\{-2\}\to\mathbb{R}$; $f(x)=\frac{x^2+2x+4}{x+2}$ (Problem 18).
 ```
 
 ---
@@ -612,21 +624,27 @@ which is a contradiction.
 
 [20.](20)
 (i) 
+
 $$
 \max\{a, b\} = \left\{\begin{array}{c c} a & ~\mbox{if}~a \geq b\\
 b & ~\mbox{if}~a < b.\\ \end{array} \right.
 $$
+
 On the other hand,
+
 $$
 \frac{1}{2}( a+b) + \frac{1}{2}|a-b| = \left\{\begin{array}{c c c} \frac{1}{2}(a+b) + \frac{1}{2}(a- b) & = a & ~\mbox{if}~a \geq b\\[.5em]
 \frac{1}{2}(a+b) + \frac{1}{2}(b- a) &=  b & ~\mbox{if}~a < b,\\ \end{array} \right.
 $$
+
 and the result follows.
 
 Then for all $x \in A\cap B,$
+
 $$
 \max\{f, g\}(x) = \frac{1}{2}(f(x) + g(x)) + \frac{1}{2}|f(x) - g(x)|,
 $$
+
 and continuity follows by Theorem  3.2(i) and (iii) and [Problem 14](14).
 
 (ii) Check that for all $a, b \in \mathbb{R}$,
@@ -647,6 +665,7 @@ Alternatively, one could derive (ii) from (i) by using $\min\{f,g\} = - \max\{-f
 (ii) By (i), $0 = f(0) = f(x + -x) = f(x) + f(-x)$. So $f(-x)=-f(x)$.
 
 (iii) If $a \neq 0$ then any sequence $(x_{n})$ which converges to $a$ can be written as $x_{n} = a + y_{n}$ where $(y_{n})$ converges to zero. If $f$ is continuous at $0$, then $ \lim_{n\rightarrow\infty} f(y_{n})$ exists and equals $f(0)$, which is $0$ by part (i). So
+
 $$
 \lim_{n\rightarrow\infty} f(x_{n}) = \lim_{n\rightarrow\infty} f(a + y_{n}) = f(a) + \lim_{n\rightarrow\infty} f(y_{n}) = f(a) + f(0) = f(a).
 $$
@@ -661,9 +680,12 @@ So by induction, the result holds for all $n\in\mathbb{N}$.
 Combine this with part (ii), to extend to all $n\in \mathbb{Z}$.
 
 (v) Consider $\frac{p}{q}\in\mathbb{Q}$, where $p\in \mathbb{Z}$ and $q\in \mathbb{N}$. By (iv),
+
 $$
 pk = f(p) = f\left(q\cdot \frac{p}{q}\right) = qf\left(\frac{p}{q}\right),
-$$ and the result follows.
+$$
+
+and the result follows.
 
 (vi) We have already proved this for rational $x$, so suppose that $x$ is irrational. Then we can find a sequence $\left(\frac{p_{n}}{q_{n}}\right)$ of rational numbers that converges to $x$ (as we did in the solution to Example 3.7). Then using (iii), (v) and algebra of limits, we have
 
@@ -683,7 +705,7 @@ and so $g$ is not continuous at $x$.
 
 ---
 
-[23.](23) HW2 question
+[23.](23) (Homework 2 question?)
 <br>
 The function ${\bf 1}_{(a, b)}$ is left continuous at $a$ (but not right continuous), and right continuous at $b$ (but not left continuous).
 To prove the left continuity at $a$, let $(x_{n})$ be any sequence in $\mathbb{R}$ which converges to $a$ with $x_{n} < a$ for all $n\in\mathbb{N}$. Then $\lim_{n\rightarrow\infty} {\bf 1}_{(a, b)}(x_{n}) = 0 = {\bf 1}_{(a, b)}(a).$ On the other hand to see that it is not right continuous at $a$, let $(y_{n})$ be any sequence in $\mathbb{R}$ which converges to $a$ with $a < y_{n} < b$ for all $n\in\mathbb{N}$. Then
@@ -703,7 +725,7 @@ $ \lim_{n\rightarrow\infty} {\bf 1}_{(a, b)}(y_{n}) = 1 \neq {\bf 1}_{(a, b)}(a)
 
 ---
 
-[26.](26) (Homework 3 question)
+[26.](26) (Homework 3 question?)
 <br>
 *Something* is $x$. That is, define $g:[a,b]\to\mathbb{R}$ given by $g(x) = f(x) - x$. Then $g$ is continuous (because $f$ is and the function $h(x)=x$ is, and using algebra of limits). Since the range of $f$ is contained in $(a, b)$, we have $f(a) > a$ and $f(b) < b$, and so $g(a) = f(a) - a > 0$ and $g(b) = f(b) - b < 0$. So we can apply the intermediate value theorem to the function $g$ on $[a,b]$. This says that there exists $c \in (a, b)$ such that $g(c) = 0$, i.e. $f(c) = c$.
 <br>
@@ -719,7 +741,7 @@ For the counter--example, consider $f(x) = x^2$. It is continuous on $(0, 1)$ bu
 
 ---
 
-[29.](29) (Homework 3 question)
+[29.](29) (Homework 3 question?)
 <br>
 If $f$ is continuous on $[0, 1]$, then it is bounded by Theorem 3.5, and so there exists $L \geq 0$ such that $|f(x)| \leq L$ for all $x \in [0, 1]$. Hence the range of $f$ is a subset of  $[-L, L]$ and cannot be all of $\mathbb{R}$.
 
@@ -852,8 +874,9 @@ We write $\lim_{x\to a}f(x)=l$.
 
 ---
 
-[38.](38) (Homework 4 question)
-(i) This is Definition 4.1 in the notes: we say that $f$ is {\it differentiable} at $a \in A$ if $ \lim_{x \rightarrow a}\frac{f(x) - f(a)}{x - a}$ exists. Or, equivalently, $ \lim_{h \rightarrow 0}\frac{f(a +h) - f(a)}{h}$ exists.
+[38.](38) (Homework 4 question?)
+
+(i) This is Definition 4.1 in the notes: we say that $f$ is *differentiable* at $a \in A$ if $ \lim_{x \rightarrow a}\frac{f(x) - f(a)}{x - a}$ exists. Or, equivalently, $ \lim_{h \rightarrow 0}\frac{f(a +h) - f(a)}{h}$ exists.
 <br>
 That is, we fix $a\in A$ and we consider the function $g$ given by $g(h)=\frac{f(a +h) - f(a)}{h}$. Then $f$ is differentiable at $a$ if the limit of $g$ as $h$ goes to zero exists.
 
@@ -867,7 +890,8 @@ $$
 
 (iii) This is asking for the equivalent description of limit of a function given by the $(\varepsilon - \delta)$ criterion (Theorem 2.1). Again it needs to be applied to $g$ as above not $f$ itself:
 <br>
-We say $f$ is differentiable at $a$ if there exists a number $f'(a)$ for which, given $\varepsilon>0$, there exists $\delta > 0$ such that if $0<|h| < \delta$, then 	
+We say $f$ is differentiable at $a$ if there exists a number $f'(a)$ for which, given $\varepsilon>0$, there exists $\delta > 0$ such that if $0<|h| < \delta$, then
+
 $$
 \left|\displaystyle\frac{f(a+h) - f(a)}{h} - f'(a)\right| < \varepsilon.
 $$
@@ -923,36 +947,36 @@ But $f^{\prime \prime}$ doesn't exist at $x = 0$, as in [Problem 41](41).
 
 [43.](43) We give sketches of simple examples of functions as described. There should be some kind of "corner" or "cusp" at the relevant points, so that there is clearly no well-defined gradient there. But the functions are required to be continuous, so there should be no jump or other discontinuity.
 
-(i)
+(i) {numref}`q43i`
 
 ```{figure} ../analysis_problems/figs/nondiff1,2.png
 ---
 width: 500px
 name: q43i
 ---
-Graph of a function $f:[0,1]\to\mathbb{R}$ that is not differentiable at $\frac{1}{2}$, but is everywhere else.
+Graph of a function $f:[0,1]\to\mathbb{R}$ that is not differentiable at $\frac{1}{2}$, but is everywhere else (Problem 43(i)).
 ```
 
-(ii)
+(ii) {numref}`q43ii`
 
 ```{figure} ../analysis_problems/figs/nondiff1,3_2,3.png
 ---
 width: 500px
 name: q43ii
 ---
-Graph of a function $f:[0,1]\to\mathbb{R}$ that is differentiable at all points in its domain apart from $\frac{1}{3}$ and $\frac{2}{3}$.
+Graph of a function $f:[0,1]\to\mathbb{R}$ that is differentiable at all points in its domain apart from $\frac{1}{3}$ and $\frac{2}{3}$ (Problem 43(ii)).
 ```
 
 ---
 
-[44.](44) It helps to sketch the graph. On the interval $[0,1]$, we have $[x]=0$ and so the graph resembles $y=x$. This pattern then repeats, and we have the following graph for $f(x)=x-[x]$:
+[44.](44) It helps to sketch the graph. On the interval $[0,1]$, we have $[x]=0$ and so the graph resembles $y=x$. This pattern then repeats, and we have the following graph for $f(x)=x-[x]$ --- see {numref}`q44`
 
 ```{figure} ../analysis_problems/figs/x-[x].png
 ---
 width: 500px
 name: q44
 ---
-Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=x-[x]$.
+Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=x-[x]$ (Problem 44).
 ``` 
 
 The function $f$ is differentiable for all $x \in \mathbb{R} \setminus \mathbb{Z}$. For such points, taking $h>0$ sufficiently small, we have
@@ -1216,6 +1240,7 @@ On the other hand the above pointwise limit $g$ is not continuous on $[0,\infty 
 So $(h_n)$ converges pointwise to the constant function $h:[0,1]\to\mathbb{R}$, $h(x)=1$ for all $x$.
 
 Let
+
 $$
 M_n = \sup \{ |h_n(x)-1| : x\in [0,1] \} = 1 - \left(1-\frac{1}{n}\right)^2 =\frac{1}{n^2}-\frac{2}{n}.
 $$
@@ -1404,6 +1429,7 @@ Using rearrangement, we have for each $x\in\mathbb{R}$,
 
 [62.](62)
 (i) Let $M_n =\frac{1}{n}^2$. Note that
+
 $$
 \frac{1}{n^2+x^2} \leq \frac{1}{n^2}
 $$
@@ -1445,10 +1471,12 @@ On the other hand,
 \end{align*}
 
 As $ N\to \infty$, this has limit
+
 $$
 \lim_{N\to\infty} \frac{1}{N}\left(\frac{\sin(\frac{\left(1+\frac{1}{N}\right)\pi}{2})}{\sin(\frac{\pi}{2N})}\right)
 =\lim_{x\to 0}\frac{2}{\pi}\frac{x}{\sin(x)}=\frac{2}{\pi},
 $$
+
 giving a contradiction.
 
 ---
@@ -1459,11 +1487,13 @@ giving a contradiction.
 Hence, by the Weierstrass $M$-test, the series converges uniformly for $x\in [0,a]$.
 
 (ii) Let
+
 $$
 S_n(x) = 1+x+x^2+\cdots + x^n.
 $$
 
 Let
+
 $$
 A_n = \sup \{ S_n (x) : x\in [0,1 ) \} = S_n(1) =1+1 + \cdots + 1 = n.
 $$
@@ -1498,36 +1528,36 @@ Hence, by the Weierstrass $M$-test, the series $\sum_{n=1}^\infty f_n (x )$ conv
 (65sol)=
 [65.*](65) Note this question is starred, meaning it is intended more for interest and deviates more from the standard benchmark of question for this module
 
-(i) Entering the series partial sums $\frac{4}{\pi}\sum_{k=0}^N\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$ into [Desmos](https://www.desmos.com/calculator/bd3xikfhb0) for a large value of $N$ yields the following:
+(i) Entering the series partial sums $\frac{4}{\pi}\sum_{k=0}^N\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$ into [Desmos](https://www.desmos.com/calculator/bd3xikfhb0) for a large value of $N$ yields the following (see {numref}`fourier1`).
 
 ```{figure} ../analysis_problems/figs/fourier1.png
 ---
 width: 400px
 name: fourier1
 ---
-Desmos graph for $\frac{4}{\pi}\sum_{k=0}^100\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$
+Desmos graph for $\frac{4}{\pi}\sum_{k=0}^100\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$ (Problem 65).
 ```
 
 This graph was created with $N=100$, but any $N>50$ looks similar.
 
-The graph suggests that the infinite series $\frac{4}{\pi}\sum_{k=0}^\infty\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$ is the Fourier series of the following square wave:
+The graph suggests that the infinite series $\frac{4}{\pi}\sum_{k=0}^\infty\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$ is the Fourier series of the following square wave (see {numref}`fourier2`).
 
 ```{figure} ../analysis_problems/figs/fourier2.png
 ---
 width: 600px
 name: fourier2
 ---
-Square wave $f(x)=\frac{4}{\pi}\sum_{k=0}^\infty\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$.
+Square wave $f(x)=\frac{4}{\pi}\sum_{k=0}^\infty\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$ (Problem 65).
 ```
 
-In {numref}`fourier2`, we have been deliberately vague about the value of $f(x)$ when $x$ is an odd integer. In fact, direct calculation using the series shows that $f(x)=0$ for all odd integer values of $x$.
+In {numref}`fourier2`, we have been deliberately vague about the value of $f(x)$ when $x$ is an odd integer. In fact, direct calculation using the series shows that $f(x)=0$ for all odd integer values of $x$. 
 
 ```{figure} ../analysis_problems/figs/fourier3.png
 ---
 width: 600px
 name: fourier3
 ---
-Improved graph of the square wave $f(x)=\frac{4}{\pi}\sum_{k=0}^\infty\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$.
+Improved graph of the square wave $f(x)=\frac{4}{\pi}\sum_{k=0}^\infty\frac{(-1)^k}{2k+1}\cos\left(\frac{(2k+1)\pi x}{2}\right)$ (Problem 65).
 ```
 
 In particular, 
@@ -1583,14 +1613,14 @@ Following these events was a huge collective effort of the whole mathematical co
 
 [66.](66) Let $f:[1,4]\to\mathbb{R}$; $f(x)=\frac{1}{x}$, and let $P=\{1,\frac{3}{2},2,4\}$.
 
-(i) Here is a sketch of the graph of $f$, the partition $P$, and the associated upper and lower Riemann sums.
+(i) Below ({numref}`q64i`) is a sketch of the graph of $f$, the partition $P$, and the associated upper and lower Riemann sums.
 
 ```{figure} ../analysis_problems/figs/int1i.png
 ---
-width: 600px
+width: 500px
 name: q64i
 ---
-$y=\frac{1}{x}$, with upper and lower sums. 
+$y=\frac{1}{x}$, with upper and lower sums (Problem 66(i)). 
 ```
 
 We have $U(f,P) = \sum_{k=1}^4M_k(x_k-x_{k-1})$, where $x_0=1$, $x_1=\frac{3}{2}$, $x_2=2$, $x_3=4$, and
@@ -1631,14 +1661,14 @@ $$
 U(f,P)-L(f,P) = \frac{11}{6}-\frac{13}{12} = \frac{9}{12} = \frac{3}{4}.
 $$
 
-(ii) Adding the point $P$ has the following effect:
+(ii) Adding the point $P$ has the following effect ({numref}`q64ii`)
 
 ```{figure} ../analysis_problems/figs/int1ii.png
 ---
-width: 600px
+width: 500px
 name: q64ii
 ---
-Upper and lower sums with additional point $3$.
+Upper and lower sums with additional point $3$ (Problem 66(ii)).
 ``` 
 
 We now have $x_0=1$, $x_1=\frac{3}{2}$, $x_2=2$, $x_3=3$ and $x_4=4$. $M_1$, $M_2$, $m_1$ and $m_2$ are not affected by the additional point, while
@@ -1693,10 +1723,10 @@ So $x_k=1+\frac{1}{2}k$ for $k=0,\ldots,6$, and $P=\left\{1,\frac{3}{2},2,\frac{
 
 ```{figure} ../analysis_problems/figs/int1iii.png
 ---
-width: 600px
+width: 500px
 name: q64iii
 ---
-A partition for which $U(f,P)-L(f,P)<\frac{2}{5}$.
+Q66: A partition for which $U(f,P)-L(f,P)<\frac{2}{5}$ (Problem 66(iii)).
 ``` 
 
 ---
@@ -1717,14 +1747,15 @@ $$
 
 (ii) Since $g$ is constant on $[0,1)$, we may as well take a partition consisting of 3 points --- the end points and a single point in the middle.
 
-Let $\delta>0$ and consider the partition $P=\{0,1-\delta,1\}$ of $[0,1]. 
+Let $\delta>0$ and consider the partition $P=\{0,1-\delta,1\}$ of $[0,1]$ (see {numref}`q67`).  
 
 ```{figure} ../analysis_problems/figs/q67.png
 ---
 width: 600px
+align: center
 name: q67
 ---
-Graph of $g$ with partition $P=\{0,1-\delta,1\}$.
+Graph of $g$ with partition $P=\{0,1-\delta,1\}$ (Problem 67).
 ```
 
 Making $\delta$ smaller should reduce the size of $U(g,P)$. We have
@@ -1758,14 +1789,14 @@ $$
 
 This is because each of these functions have supremum $1$ on any subinterval of $[a,b]$.
 
-For the lower integrals, let's first consider $\mathbb{1}_{(a,b]}$. Consider the partition $P=\{a,a+\delta,b\}$.
+For the lower integrals, let's first consider $\mathbb{1}_{(a,b]}$. Consider the partition $P=\{a,a+\delta,b\}$  (see {numref}`q68`).
 
 ```{figure} ../analysis_problems/figs/q68.png
 ---
 width: 500px
 name: q68
 ---
-Graph  of $\mathbb{1}_{(a,b]}$, with partition $P=\{a,a+\delta,b\}$
+Graph  of $\mathbb{1}_{(a,b]}$, with partition $P=\{a,a+\delta,b\}$ (Problem 68).
 ```
 
 Then $U(\mathbb{1}_{(a,b]},P) = b-a$ as before, while
