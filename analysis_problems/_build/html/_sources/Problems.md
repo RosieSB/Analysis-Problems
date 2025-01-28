@@ -122,7 +122,7 @@ $$
 \lim_{x \rightarrow 1}g_{2}(x), \hspace{3em} \lim_{x \rightarrow -2}g_{2}(x) \hspace{2em} \text{ and } \hspace{2em} \lim_{x \rightarrow -3}g_{2}(x).
 $$
 
-Use the sequential criterion ([Theorem 2.10](https://rosiesb.github.io/Analysis-Notes/2LoF.html#ed)) to prove you are right.
+Use the sequential criterion ([Theorem 2.1](https://rosiesb.github.io/Analysis-Notes/2LoF.html#ed)) to prove you are right.
 
 (5)=
 5. If $f: \mathbb{R} \rightarrow [0, \infty)$ satisfies $\displaystyle\lim_{x \rightarrow a} f(x) = l$, where $l > 0$, show that 
@@ -139,7 +139,7 @@ Hence calculate $\displaystyle\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1
 6. Why are limits of functions unique? 
 
 (7)=
-7. Verify that $\text{sgn}(x) = \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|}$, for $x \neq 0$ (see Example 2.3  in the notes for the definition).
+7. Verify that $\text{sgn}(x) = \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|}$, for $x \neq 0$ (see [Example 2.3](https://rosiesb.github.io/Analysis-Notes/2LoF.html#sgn)  in the notes for the definition).
 <br>
 Show that $\displaystyle\lim_{x \rightarrow 0}\text{sgn}(x)$ does not exist. [Hint: Use a well-chosen sequence and [Theorem 2.1](https://rosiesb.github.io/Analysis-Notes/2LoF.html#ed).]
 <br>
@@ -157,7 +157,7 @@ Show that both the left and right limits exist at $x=0$, and find their values.
     ```
     denotes the integer part of $x$.
     
-    (iii) $h(x) =3 - 5{\bf 1}_{(0, 1]}(x) + 7{\bf 1}_{(1, 2]}(x)$. [Here we have used the notation for indicator functions --- see Example 2.4 in the notes.]
+    (iii) $h(x) =3 - 5{\bf 1}_{(0, 1]}(x) + 7{\bf 1}_{(1, 2]}(x)$. [Here we have used the notation for indicator functions --- see [Example 2.4](https://rosiesb.github.io/Analysis-Notes/2LoF.html#indicatorfn) in the notes.]
 
 (9)=
 9. What is the largest subset $A$ of $\mathbb{R}$ for which we can specify a function by $f(x) = \sin\left(\frac{1}{x}\right)$? Does $f:A\to\mathbb{R}$ have a limit at $x = 0$? [Hint: Consider sequences whose $n$th term is $\frac{1}{\theta + 2n\pi}$, and think about good choices for $\theta$.]
@@ -172,7 +172,7 @@ Show that both the left and right limits exist at $x=0$, and find their values.
     <br>
     [Hint: For the analogue of $(\varepsilon-\delta)$, think very carefully about how you are going to control the behaviour of $x$. Remember that you cannot treat $\infty$ as if it were a number!]
 
-    (ii) Find an analogue of the sequential criterion for this case, and prove the analogous result to Theorem 2.1. 
+    (ii) Find an analogue of the sequential criterion for this case, and prove the analogous result to [Theorem 2.1](https://rosiesb.github.io/Analysis-Notes/2LoF.html#ed). 
 
     (iii) Check that you can prove that $\displaystyle\lim_{x \rightarrow \infty}\frac{1}{x} = \lim_{x \rightarrow -\infty}\frac{1}{x} = 0$, using your criterion.
 
@@ -194,10 +194,10 @@ which can be taken as its domain, as found in that problem. For each function, w
 14. Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be continuous at a point $a$.
 Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \mathbb{R}$.
 <br>
-[Hint: Use the formulation of continuity with sequences (Theorem 3.1(ii)) and Corollary 1.1 from the [notes](https://rosiesb.github.io/Analysis-Notes).]
+[Hint: Use the formulation of continuity with sequences ([Theorem 3.1(ii)](https://rosiesb.github.io/Analysis-Notes/3Cty.html#cont1)) and [Corollary 1.1](https://rosiesb.github.io/Analysis-Notes/1Rev.html#tri) from the notes.]
 
 (15)=
-15. Prove Theorem 3.3 in the notes (i.e. that composition of continuous functions is continuous). [Hint: Use sequences.]
+15. Prove [Theorem 3.3](https://rosiesb.github.io/Analysis-Notes/3Cty.html#fof) in the notes (i.e. that composition of continuous functions is continuous). [Hint: Use sequences.]
 
 (16)=
 16. Define $f:\mathbb{R} \setminus \{0\}\to \mathbb{R}$ and $g: \mathbb{R} \rightarrow \mathbb{R}\setminus \{0\}$ by $f(x) = \frac{1}{x}$, and $g(x) = 1 + x^{2}$. Write down the functions $f \circ g$, and $g \circ f$, giving their domains explicitly. What can you say about continuity of these functions?
@@ -264,34 +264,34 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
     (vi) If $f(1) = k$ and $f$ is continuous at zero, prove that $f(x) =kx$ for all $x \in \mathbb{R}$.
 
 (22)=
-22. Show that Dirichlet's "other" function, as discussed in Example 3.8 in the notes, is discontinuous at every rational point in its domain.
+22. Show that Dirichlet's "other" function, as discussed in [Example 3.8](https://rosiesb.github.io/Analysis-Notes/3Cty.html#eg-lrcont) in the notes, is discontinuous at every rational point in its domain.
 
 (23)=
 23. What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:\mathbb{R}\to\mathbb{R}$ at the points $a$ and $b$?
 
 (24)=
-24. Prove Corollary 3.1. [Hint: Apply the intermediate value theorem to the function $g(x) = f(x) - \gamma$, for $x \in [a, b]$.]
+24. Prove [Corollary 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt2). [Hint: Apply the intermediate value theorem to the function $g(x) = f(x) - \gamma$, for $x \in [a, b]$.]
 
 (25)=
-25. Use Corollary 3.1
+25. Use [Corollary 3.3](https://rosiesb.github.io/Analysis-Notes/3Cty.html#interval) to prove each of the following statements.
 
     (i) Every continuous function from $\mathbb{R}$ to $\mathbb{Z}$ is constant.
 
     (ii) Every continuous function from $\mathbb{R}$ to $\mathbb{Q}$ is constant.
 
 (26)=
-26. Prove the following {\it fixed point theorem}: if $f:[a,b] \rightarrow (a,b)$ is continuous, then there exists $c \in (a, b)$ such that $f(c) = c$.
+26. Prove the following *fixed point theorem*: if $f:[a,b] \rightarrow (a,b)$ is continuous, then there exists $c \in (a, b)$ such that $f(c) = c$.
 <br>
 [Hint: This is a similar proof to that of [Problem 24](#24). This time you need to consider a function of the form $g(x) = f(x) - $ (*something*). What is *something*?] Give a counter-example to demonstrate that the claim is false if the domain of $f$ is restricted to $(0, 1)$.
 
 (27)=
-27. Complete the proof of the extreme value theorem (Theorem 3.5), i.e. prove that a continuous function $f:[a,b]\to\mathbb{R}$ attains its infimum.
+27. Complete the proof of the extreme value theorem ([Theorem 3.5](https://rosiesb.github.io/Analysis-Notes/3Cty.html#thm:evt)), i.e. prove that a continuous function $f:[a,b]\to\mathbb{R}$ attains its infimum.
 
 (28)=
 28. Show that if $f:[0,1] \rightarrow \mathbb{R}$ is continuous and $0$ is not in the range of  $f$, then the function $\frac{1}{f}:[0,1]\to \mathbb{R}$ is bounded, where for each $x \in [0,1], \left(\frac{1}{f}\right)(x) = \frac{1}{f(x)}$.
 
 (29)=
-29. Explain why there are no continuous functions having domain $[0, 1]$ and range $\mathbb{R}$. [Hint: Use Theorem 3.5.]
+29. Explain why there are no continuous functions having domain $[0, 1]$ and range $\mathbb{R}$. [Hint: Use [Theorem 3.5](https://rosiesb.github.io/Analysis-Notes/3Cty.html#thm:evt).]
 
 (30)=
 30. Suppose that the function $f:[0,1] \rightarrow [0,1]$ is continuous, and fix $0 < r < 1$. Suppose that we are given a sequence $(x_{n})$ in $[0,1]$ such that $f(x_{n+1}) \leq rf(x_{n})$ for all $n\in\mathbb{N}$. Show that there exists $c \in [0, 1]$ for which $f(c) = 0$. [Hint: Use the Bolzano-Weierstrass theorem.]
@@ -324,7 +324,7 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 $x_n\neq a$ for all $n$ and $\displaystyle\lim_{n\to\infty} x_n=a$. What does it mean to say that
 the function $f$ has limit $l$ at the point $a$? What notation do we use to write this?
 <br>
-[This question is asking you to recall (or revise if you can't recall) Definition 2.2 from the lecture notes.That's a key definition and we build on it when we define what it means to be differentiable --- see the next question.]
+[This question is asking you to recall (or revise if you can't recall) [Definition 2.2](https://rosiesb.github.io/Analysis-Notes/2LoF.html#functionlimit) from the lecture notes.That's a key definition and we build on it when we define what it means to be differentiable --- see the next question.]
 
 (38)=
 38. 
@@ -333,9 +333,9 @@ the function $f$ has limit $l$ at the point $a$? What notation do we use to writ
     (ii) State carefully what this means in terms of limits of sequences.
    
     (iii) State carefully what this means in terms of the $\varepsilon-\delta$ criterion.
-    [The first part is just asking you to give Definition 4.1 and the other parts are checking that you know what this means.
+    [The first part is just asking you to give [Definition 4.1](https://rosiesb.github.io/Analysis-Notes/4Diff.html#def:diff) and the other parts are checking that you know what this means.
     <br>
-    The key points from Chapter 2 are `Definition `2.2 of a limit of a function and Theorem 2.1 giving the sequential criterion. But you need to see how to apply these, not just copy them out. Here they have to be applied to the relevant function for the definition of differentiability, not $f$ itself. ]
+    The key points from Chapter 2 are [Definition 2.2](https://rosiesb.github.io/Analysis-Notes/2LoF.html#functionlimit) of a limit of a function and [Theorem 2.1](https://rosiesb.github.io/Analysis-Notes/2LoF.html#ed) giving the sequential criterion. But you need to see how to apply these, not just copy them out. Here they have to be applied to the relevant function for the definition of differentiability, not $f$ itself. ]
 
 (39)=
 39. Give a rigorous proof that the function $f:\mathbb{R}\setminus\{0\}\to \mathbb{R}$ given by
@@ -428,7 +428,7 @@ $$
 
 (51)=
 51. If $r > 0$ and $q \in \mathbb{R}$ show that the polynomial $p(x) = x^{3} + rx + q$ has exactly one real zero.
-[ You may assume the result of Corollary 3.2: $p$ has at least one real root. So you need to show that there can't be more than one. ]
+[ You may assume the result of [Corollary 3.2](https://rosiesb.github.io/Analysis-Notes/3Cty.html#pol): $p$ has at least one real root. So you need to show that there can't be more than one. ]
 
 (52)=
 52. Let $r>1$ and fix $y\in (0,1)$. By applying the mean value theorem to the function $f(x)=x^r$ on $[y,1]$, show that
@@ -483,7 +483,7 @@ $$
 
     (ii) Show that the sequence $(f_n)$ converges uniformly.
 
-    (iii) Calculate $f_n'$ and show that $f'(x) = \lim_{n\rightarrow \infty} f_n'(x)$. Does $(f_n)$ satisfy the conditions of Theorem 5.2?
+    (iii) Calculate $f_n'$ and show that $f'(x) = \lim_{n\rightarrow \infty} f_n'(x)$. Does $(f_n)$ satisfy the conditions of [Theorem 5.2](https://rosiesb.github.io/Analysis-Notes/5SSF.html#udiff)?
 
 (59)=
 59.
@@ -514,11 +514,11 @@ $$
     (ii) Show that when restricted to a closed bounded interval $[-R,R]$, where $R>0$, both series' converge uniformly.
 
     (iii) Prove that $s$ and $c$ are differentiable everywhere, with $s'(x)=c(x)$ and $c'(x)=-s(x)$.
-    [Hint: Mimic the approach of Example 5.7 in the notes.]
+    [Hint: Mimic the approach of [Example 5.7](https://rosiesb.github.io/Analysis-Notes/5SSF.html#eg:exp) in the notes.]
     
     (iv) Prove that $c^2+s^2=1$. [Hint: Differentiate the function $f:\mathbb{R}\to\mathbb{R}$ given by $f(x)=c(x)^2+s(x)^2$ for each $x$.]
     
-    (v)* Show that $\exp(ix)=c(x)+is(x)$ for all $x\in\mathbb{R}$, where $\exp$ is the function from Example 5.7. You should justify any rearrangements of terms in infinite series (MAS107 Theorem 4.18 may help).
+    (v)* Show that $\exp(ix)=c(x)+is(x)$ for all $x\in\mathbb{R}$, where $\exp$ is the function from [Example 5.7](https://rosiesb.github.io/Analysis-Notes/5SSF.html#eg:exp). You should justify any rearrangements of terms in infinite series (MAS107 Theorem 4.18 may help).
 
 (62)=
 62. By using the Weierstrass $M$-test or otherwise, for each of the following series, determine whether it  converges uniformly on $\mathbb{R}$ and  whether it converges uniformly on $[0,1]$.

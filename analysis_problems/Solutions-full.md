@@ -715,12 +715,19 @@ $ \lim_{n\rightarrow\infty} {\bf 1}_{(a, b)}(y_{n}) = 1 \neq {\bf 1}_{(a, b)}(a)
 
 ---
 
-[24.](24) Since $f$ is continuous on $[a, b]$, so is $g$. We have $g(a) = f(a) - \gamma < 0$ and $g(b) = f(b) - \gamma > 0$. Hence by the intermediate value theorem (Theorem 3.4), there exists $c \in (a, b)$ with $g(c) = 0$, i.e. $f(c) = \gamma$, as was required.
+[24.](24) Since $f$ is continuous on $[a, b]$, so is $g$. We have $g(a) = f(a) - \gamma < 0$ and $g(b) = f(b) - \gamma > 0$. Hence by the intermediate value theorem ([Theorem 3.4](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt)), there exists $c \in (a, b)$ with $g(c) = 0$, i.e. $f(c) = \gamma$, as was required.
 
 ---
 
 [25.](25)
-(i) If $f$ is continuous on $\mathbb{R}$ it is continuous on $[a, b]$ for each $a < b$. If $f$ is not a constant, we must be able to find $a, b$ such that $f(a) \neq f(b)$. Now either $f(a) < f(b)$ or $f(a) > f(b)$. Assume the former (without loss of generality). Then there exists $m, n \in \mathbb{Z}$ with $m < n$ such that $f(a) = m$ and $f(b) = n$. Hence by Corollary 3.1, there exists $c \in (a, b)$ so that $f(c) = m + \frac{1}{2} \notin\mathbb{Z}$, and that is the desired contradiction.
+(i) Let $f:\mathbb{R}\to\mathbb{Z}$ be continuous, and suppose $f$ is not a constant function.
+
+Then there must be $a,b\in\mathbb{R}$ such that $a\neq b$ and $f(a)\neq f(b)$. Without loss of generality, assume $a<b$. 
+
+Then $f$ is continuous on $[a,b]$, and since $f(a)\neq f(b)$, $f$ is also non-constant on $[a,b]$. By [Corollary 3.3](https://rosiesb.github.io/Analysis-Notes/3Cty.html#interval), $f([a,b]])=[m,M]$. This contradicts $f$$ having codeomain $\mathbb{Z}$.
+
+It follows that $f$ must be a constant function.
+
 (ii) Argue as in (i), using the fact that between any two rational numbers, we can find an irrational number.
 
 ---
@@ -819,7 +826,7 @@ by continuity of $g\circ f$.
 <br>
 If $f(a)=f(x)$, then $f$ cannot be bijective, which is a contradiction. 
 <br>
-Suppose that $f(a)>f(x)$. Applying Corollary 3.3 to $f|_{[x,b]}$, the image of $[x,b]$ under $f$ must an interval, $[m,M]$, say. Note that $f(a)\in(m,M)$: indeed, $f(a)>f(x)>M$, and $f(a)<f(b)<m$. Therefore, by the intermediate value theorem (or Corollary 3.1 more specifically), there exists $c \in (x, b)$ such that $f(c) = f(a)$, and this again violates the injectivity of the mapping $f$. A similar argument can be used to show that we cannot have $f(b) \leq f(x)$.
+Suppose that $f(a)>f(x)$. Applying [Corollary 3.3](https://rosiesb.github.io/Analysis-Notes/3Cty.html#interval) to $f|_{[x,b]}$, the image of $[x,b]$ under $f$ must an interval, $[m,M]$, say. Note that $f(a)\in(m,M)$: indeed, $f(a)>f(x)>M$, and $f(a)<f(b)<m$. Therefore, by the intermediate value theorem (or [Corollary 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt2) more specifically), there exists $c \in (x, b)$ such that $f(c) = f(a)$, and this again violates the injectivity of the mapping $f$. A similar argument can be used to show that we cannot have $f(b) \leq f(x)$.
 <br>
 Finally, applying our initial result to $f|_{[a, y]}$, we see that if $a<x<y<b$, then $f(a) < f(x) < f(y)$. Hence $f$ is strictly monotonic increasing.
 
@@ -1083,7 +1090,7 @@ $$
 
 ---
 
-[51.](51) The polynomial $p$ is of odd degree so it has at least one real root by Corollary 3.2. Also $p$ is differentiable with $p'(x) = 3x^{2} + r > 0$, for all $x \in \mathbb{R}$, so $p$ is strictly monotonic increasing on any closed interval $[a, b]$, and hence on the whole of $\mathbb{R}$, by Corollary 4.1. Then by the inverse function theorem (Theorem 3.6), $p$ is invertible and hence injective, and so there is exactly one zero.
+[51.](51) The polynomial $p$ is of odd degree so it has at least one real root by [Corollary 3.2](https://rosiesb.github.io/Analysis-Notes/3Cty.html#pol). Also $p$ is differentiable with $p'(x) = 3x^{2} + r > 0$, for all $x \in \mathbb{R}$, so $p$ is strictly monotonic increasing on any closed interval $[a, b]$, and hence on the whole of $\mathbb{R}$, by Corollary 4.1. Then by the inverse function theorem (Theorem 3.6), $p$ is invertible and hence injective, and so there is exactly one zero.
 
 ---
 
