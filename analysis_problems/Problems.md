@@ -65,7 +65,7 @@ P6. Compute, without proof, the suprema and infima (if they exist) of the follow
 <br>
 
 (P7)=
-P7. Let $A$ and $B$ be bounded and non-empty subsets of $\mathbb{R}$. Which of the following statements are true, and which are false?
+P7. Let $A$ and $B$ be bounded and non-empty subsets of $\mathbb{R}$. Which of the following statements are true, and which are false? Prove or supply counter-examples, as appropriate.
   
   (i) $\inf A < \sup A$.
     

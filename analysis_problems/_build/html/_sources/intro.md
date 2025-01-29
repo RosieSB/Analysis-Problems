@@ -4,7 +4,7 @@ Maths is best learned by doing many problems.
 
 This problem booklet serves 3 purposes: 
 
-1. **Problems of the Week.** Each week, I will circulate a selection of problems from this booklet that relate most closely to the material covered in lectures that week. I recommend working on these steadily throughout the semester, and keeping a record of any you would like help with (e.g. in tutorials or [office hours](https://calendar.app.google/1LFwxG3HSMFM8pC17)).
+1. **Problems of the Week.** Each week, I will circulate a selection of problems from this booklet that relate most closely to the material covered in lectures that week. I recommend working on these steadily throughout the semester, and keeping a record of any you would like [help](https://rosiesb.github.io/Analysis-Notes/0Intro.html#where-to-get-help) with.
 
 2. **Tutorials.** The problem set for each tutorial will come from this booklet.
 
