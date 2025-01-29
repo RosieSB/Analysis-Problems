@@ -1,20 +1,18 @@
-# MAS2004-9Sem2Notes/
-Running Jupyter-Book v1.0.3
-How to use this problem booklet
+# How to use this booklet
 
 Maths is best learned by doing many problems. 
 
 This problem booklet serves 3 purposes: 
 
 (PoW)=
-## 1. Problems of the Week.
-Each week, I will circulate a selection of problems from this booklet that relate most closely to the material covered in lectures that week. I recommend working on these steadily throughout the semester, and keeping a record of any you would like [help](https://rosiesb.github.io/Analysis-Notes/0Intro.html#where-to-get-help) with.
+1. **Problems of the Week.** <br>
+Each week, I will circulate a selection of problems from this booklet that relate most closely to the material covered in lectures that week. I recommend working on these steadily throughout the semester, and keeping a record of any you would like [help](https://rosiesb.github.io/Analysis-Notes/0Intro.html#where-to-get-help) with.<br>
 
-## 2. Tutorials.
-The problem set for each tutorial will come from this booklet.
+2. **Tutorials.** <br>
+The problem set for each tutorial will come from this booklet.<br>
 
-## 3. Homework. 
-Written homework will be a selection of problems from the problem booklet. 
+3. **Homework.** <br>
+Written homework will be a selection of problems from the problem booklet. <br>
 
 See Blackboard[^links] for more information.
 
