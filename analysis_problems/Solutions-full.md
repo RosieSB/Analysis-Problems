@@ -241,7 +241,7 @@ $$
 
 (Here, we have used the fact that $|x+2| = x+2 \leq 5$, for $x\in\{0\}\cup[1,3]$.) 
 
-Hence we can let $\delta:=\frac{1}{15}$ and conclude that if $x\in\{0\}\cup[1,3]$ and $|x-2|<\frac{1}{15}$, then 
+Hence we can let $\delta:=\frac{1}{15}$ and conclude that if $x\in\{0\}\cup[1,3]$ and $0<|x-2|<\frac{1}{15}$, then 
 
 $$
 |f(x)-11|<15\cdot\frac{\varepsilon}{15} =\varepsilon.
@@ -256,10 +256,10 @@ For this $f$, $\lim_{x\rightarrow 0}f(x)$ is not defined, since $0$ is not a lim
 Let $\varepsilon>0$, and consider
 
 $$
-\left|f(x)-\frac{5}{2}\right| = \left|x+\frac{1}{x}-\frac{5}{2}\right| = \left|\frac{2x^2+2-5x}{2x}\right| = \left(\frac{(x-2)(2x-1)}{2x}\right) = |x-2|\left|1-\frac{1}{2x}\right|.
+\left|f(x)-\frac{5}{2}\right| = \left|x+\frac{1}{x}-\frac{5}{2}\right| = \left|\frac{2x^2+2-5x}{2x}\right| = \left|\frac{(x-2)(2x-1)}{2x}\right| = |x-2|\left|1-\frac{1}{2x}\right|.
 $$
 
-Now, for $x>0$, $0<1-\frac{2x}<1$, and so 
+Now, for $x\in(0,\infty)$, we have $0<1-\frac{1}{2x}<1$, and so 
 
 $$
 \left|f(x)-\frac{5}{2}\right| = |x-2|\left|1-\frac{1}{2x}\right| < |x-2|.
@@ -724,7 +724,7 @@ $ \lim_{n\rightarrow\infty} {\bf 1}_{(a, b)}(y_{n}) = 1 \neq {\bf 1}_{(a, b)}(a)
 
 Then there must be $a,b\in\mathbb{R}$ such that $a\neq b$ and $f(a)\neq f(b)$. Without loss of generality, assume $a<b$. 
 
-Then $f$ is continuous on $[a,b]$, and since $f(a)\neq f(b)$, $f$ is also non-constant on $[a,b]$. By [Corollary 3.3](https://rosiesb.github.io/Analysis-Notes/3Cty.html#interval), $f([a,b]])=[m,M]$. This contradicts $f$$ having codeomain $\mathbb{Z}$.
+Then $f$ is continuous on $[a,b]$, and since $f(a)\neq f(b)$, $f$ is also non-constant on $[a,b]$. By [Corollary 3.3](https://rosiesb.github.io/Analysis-Notes/3Cty.html#interval), $f([a,b]])=[m,M]$. This contradicts $f$ having codeomain $\mathbb{Z}$.
 
 It follows that $f$ must be a constant function.
 
