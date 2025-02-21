@@ -146,7 +146,8 @@ Show that $\displaystyle\lim_{x \rightarrow 0}\text{sgn}(x)$ does not exist. [Hi
 Show that both the left and right limits exist at $x=0$, and find their values. 
 
 (8)=
-8. For the following functions, each of which is defined on the whole of $\mathbb{R}$, find every point at which both the left and right limits exist, but are different from each other, and find the values of these limits. Prove you are right using [Definition 2.4](https://rosiesb.github.io/Analysis-Notes/2LoF.html#marg).
+8. For the following functions, each of which is defined on the whole of $\mathbb{R}$, find every point at which both the left and right limits exist, but are different from each other, and find the values of these limits. <br>
+Prove you are right using [Definition 2.4](https://rosiesb.github.io/Analysis-Notes/2LoF.html#marg), or the equivalent definitions involving sequences.
 
     (i) $f(x) = \begin{cases} 1 -x & \text{if }x < 1\\ x^{2}& \text{if }x \geq 1. \end{cases}$
 
