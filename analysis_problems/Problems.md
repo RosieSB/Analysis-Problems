@@ -158,7 +158,7 @@ Prove you are right using [Definition 2.4](https://rosiesb.github.io/Analysis-No
     ```
     denotes the integer part of $x$.
     
-    (iii) $h(x) =3 - 5{\bf 1}_{(0, 1]}(x) + 7{\bf 1}_{(1, 2]}(x)$. [Here we have used the notation for indicator functions --- see [Example 2.4](https://rosiesb.github.io/Analysis-Notes/2LoF.html#indicatorfn) in the notes.]
+    (iii) $h(x) =3 - 5\mathbb{1}_{(0, 1]}(x) + 7\mathbb{1}_{(1, 2]}(x)$. [Here we have used the notation for indicator functions --- see [Example 2.4](https://rosiesb.github.io/Analysis-Notes/2LoF.html#indicatorfn) in the notes.]
 
 (9)=
 9. What is the largest subset $A$ of $\mathbb{R}$ for which we can specify a function by $f(x) = \sin\left(\frac{1}{x}\right)$? Does $f:A\to\mathbb{R}$ have a limit at $x = 0$? [Hint: Consider sequences whose $n$th term is $\frac{1}{\theta + 2n\pi}$, and think about good choices for $\theta$.]
@@ -268,7 +268,7 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 22. Show that Dirichlet's "other" function, as discussed in [Example 3.8](https://rosiesb.github.io/Analysis-Notes/3Cty.html#eg-lrcont) in the notes, is discontinuous at every rational point in its domain.
 
 (23)=
-23. What can you say about left/right continuity of the function  ${\bf 1}_{(a, b)}:\mathbb{R}\to\mathbb{R}$ at the points $a$ and $b$?
+23. What can you say about left/right continuity of the function  $\mathbb{1}_{(a, b)}:\mathbb{R}\to\mathbb{R}$ at the points $a$ and $b$?
 
 (24)=
 24. Prove [Corollary 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt2). [Hint: Apply the intermediate value theorem to the function $g(x) = f(x) - \gamma$, for $x \in [a, b]$.]
