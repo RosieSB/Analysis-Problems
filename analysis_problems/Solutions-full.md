@@ -203,7 +203,7 @@ $$
 \lim_{x\rightarrow 2}f(x) = 4\cdot 2+7 = 15.
 $$
 
-To prove this, let $\varepsilon>0$. We seek $\delta>0$ such that $|x-2|<\delta$ implies $|f(x)-15|<\varepsilon$.
+To prove this, let $\varepsilon>0$. We seek $\delta>0$ such that $0<|x-2|<\delta$ implies $|f(x)-15|<\varepsilon$.
 
 Note that
 
@@ -211,13 +211,13 @@ $$
 |f(x)-15| = |4x+7-15| = |4x-8| = 4|x-2|.
 $$
 
-Therefore, putting $\delta=\frac{\varepsilon}{4}$, we get that whenever $|x-2|<\delta$, 
+Therefore, putting $\delta=\frac{\varepsilon}{4}$, we get that whenever $0<|x-2|<\delta$, 
 
 $$
 |f(x)-17| = 4|x-2| < 4\cdot\frac{\varepsilon}{4} = \varepsilon.
 $$
 
-For the limit as $x\rightarrow 0$, we claim that $\lim_{x\rightarrow 0}f(x)=7$. To prove this, note that $|f(x)-7|=4|x|$. This means that given $\varepsilon>0$, if $|x|<\frac{\varepsilon}{4}$ then 
+For the limit as $x\rightarrow 0$, we claim that $\lim_{x\rightarrow 0}f(x)=7$. To prove this, note that $|f(x)-7|=4|x|$. This means that given $\varepsilon>0$, if $0<|x|<\frac{\varepsilon}{4}$ then 
 
 $$
 |f(x)-7|<4\cdot\frac{\varepsilon}{4} = \varepsilon.
@@ -230,7 +230,7 @@ It follows that $\lim_{x\rightarrow 0}f(x)$ exists and is equal to $7$.
 Let $\varepsilon>0$. We seek $\delta>0$ such that for all $x\in\{0\}\cup[1,3]$, 
 
 $$
-|x-2|<\delta \; \Rightarrow \; |f(x)-11|<\varepsilon.
+0<|x-2|<\delta \; \Rightarrow \; |f(x)-11|<\varepsilon.
 $$
 
 Now, for $x\in\{0\}\cup[1,3]$,
@@ -268,7 +268,7 @@ $$
 Therefore, we can take $\delta:=\varepsilon$ in this case to get that
 
 $$
-|x-2|<\delta \; \Rightarrow \; \left|f(x)-\frac{5}{2}\right|<\varepsilon.
+0<|x-2|<\delta \; \Rightarrow \; \left|f(x)-\frac{5}{2}\right|<\varepsilon.
 $$
 
 So $\lim_{x\rightarrow 2}f(x)=\frac{5}{2}$ in this case.
@@ -328,7 +328,7 @@ $$
 \left|f_2(x)-\frac{5}{12}\right| =|x-1|\cdot\frac{|5x+18|}{|x+2||x+3|} < |x-1| \frac{5(2)+18}{(2)(3)} = \frac{14}{3}|x-1|.
 $$
 
-Finally, we choose $\delta:= \frac{3}{14}\varepsilon$. Then, for $|x-1|< \delta$,
+Finally, we choose $\delta:= \frac{3}{14}\varepsilon$. Then, for $0<|x-1|< \delta$,
 
 $$
 \left|f_2(x)-\frac{5}{12}\right| <  \frac{14}{3}|x-1| <  \frac{14}{3}\cdot \frac{3}{14}\varepsilon = \varepsilon.
