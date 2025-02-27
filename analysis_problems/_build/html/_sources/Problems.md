@@ -21,12 +21,12 @@ P1.
 <br>
 
 (P2)=
-P2. Prove using the $(\varepsilon-N)$-definition of convergence that the sequence $(x_n)$ given by $x_n = \frac{2n}{3n-1}$ converges to $\frac{2}{3}$ as $n\rightarrow\infty$.
+P2. *(Homework 1 question).* Prove using the $(\varepsilon-N)$-definition of convergence that the sequence $(x_n)$ given by $x_n = \frac{2n}{3n-1}$ converges to $\frac{2}{3}$ as $n\rightarrow\infty$.
 
 <br>
 
 (P3)=
-P3. Using your MAS107 notes or another resource, look up and carefully state the Bolzano--Weierstrass theorem.
+P3. *(Homework 1 question).* Using your MAS107 notes or another resource, look up and carefully state the Bolzano--Weierstrass theorem.
 <br>
 Its proof combines two other important results about sequences from MAS107. What do these results say?
 <br>
@@ -94,7 +94,7 @@ P7. Let $A$ and $B$ be bounded and non-empty subsets of $\mathbb{R}$. Which of t
     (v) $g_{5}(x) = \cos\left(\displaystyle\frac{1}{\pi x}\right)$.
 
 (2)=
-2. For each of the sets $X\subseteq\mathbb{R}$ below, calculate the associated set $L$ of its limit points. 
+2. *(Homework 1 question).* For each of the sets $X\subseteq\mathbb{R}$ below, calculate the associated set $L$ of its limit points. 
 
     (i) $X=(0,1)\cup[2,3)\cup\{4,5\}$,
     
@@ -107,7 +107,7 @@ P7. Let $A$ and $B$ be bounded and non-empty subsets of $\mathbb{R}$. Which of t
     (v) $X=\displaystyle\left\{\frac{1}{n}:n\in\mathbb{N}\right\}$.
 
 (3)=
-3. For each of the following functions $f$, calculate $\lim_{x\rightarrow 2}f(x)$, and prove your calculation is correct using the $(\varepsilon-\delta)$ criterion ([Definition 2.2](https://rosiesb.github.io/Analysis-Notes/2LoF.html#functionlimit)). Does $f$ converge to a limit as $x\rightarrow 0$?
+3. *(Homework 1 question).* For each of the following functions $f$, calculate $\lim_{x\rightarrow 2}f(x)$, and prove your calculation is correct using the $(\varepsilon-\delta)$ criterion ([Definition 2.2](https://rosiesb.github.io/Analysis-Notes/2LoF.html#functionlimit)). Does $f$ converge to a limit as $x\rightarrow 0$?
     
     (i) $f:\mathbb{R}\to\mathbb{R}$; $f(x)=4x+7$.
 
@@ -146,7 +146,7 @@ Show that $\displaystyle\lim_{x \rightarrow 0}\text{sgn}(x)$ does not exist. [Hi
 Show that both the left and right limits exist at $x=0$, and find their values. 
 
 (8)=
-8. For the following functions, each of which is defined on the whole of $\mathbb{R}$, find every point at which both the left and right limits exist, but are different from each other, and find the values of these limits. <br>
+8. *(Homework 2 question).* For the following functions, each of which is defined on the whole of $\mathbb{R}$, find every point at which both the left and right limits exist, but are different from each other, and find the values of these limits. <br>
 Prove you are right using [Definition 2.4](https://rosiesb.github.io/Analysis-Notes/2LoF.html#marg), or the equivalent definitions involving sequences.
 
     (i) $f(x) = \begin{cases} 1 -x & \text{if }x < 1\\ x^{2}& \text{if }x \geq 1. \end{cases}$
@@ -161,7 +161,7 @@ Prove you are right using [Definition 2.4](https://rosiesb.github.io/Analysis-No
     (iii) $h(x) =3 - 5\mathbb{1}_{(0, 1]}(x) + 7\mathbb{1}_{(1, 2]}(x)$. [Here we have used the notation for indicator functions --- see [Example 2.4](https://rosiesb.github.io/Analysis-Notes/2LoF.html#indicatorfn) in the notes.]
 
 (9)=
-9. What is the largest subset $A$ of $\mathbb{R}$ for which we can specify a function by $f(x) = \sin\left(\frac{1}{x}\right)$? Does $f:A\to\mathbb{R}$ have a limit at $x = 0$? [Hint: Consider sequences whose $n$th term is $\frac{1}{\theta + 2n\pi}$, and think about good choices for $\theta$.]
+9. *(Homework 2 question).* What is the largest subset $A$ of $\mathbb{R}$ for which we can specify a function by $f(x) = \sin\left(\frac{1}{x}\right)$? Does $f:A\to\mathbb{R}$ have a limit at $x = 0$? [Hint: Consider sequences whose $n$th term is $\frac{1}{\theta + 2n\pi}$, and think about good choices for $\theta$.]
 
 (10)=
 10. What is the largest subset $A$ of $\mathbb{R}$ for which we can specify a function by $f(x) = x\sin\left(\frac{1}{x}\right)$? Does $f:A\to\mathbb{R}$  have a limit at $x = 0$?
@@ -195,7 +195,7 @@ which can be taken as its domain, as found in that problem. For each function, w
 14. Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be continuous at a point $a$.
 Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \mathbb{R}$.
 <br>
-[Hint: Use the formulation of continuity with sequences ([Theorem 3.1(ii)](https://rosiesb.github.io/Analysis-Notes/3Cty.html#cont1)) and [Corollary 1.1](https://rosiesb.github.io/Analysis-Notes/1Rev.html#tri) from the notes.]
+[Hint: Use the formulation of continuity with sequences ([Theorem 3.1(ii)](https://rosiesb.github.io/Analysis-Notes/3Cty.html#cont1) and [Corollary 1.1](https://rosiesb.github.io/Analysis-Notes/1Rev.html#tri) in the notes).]
 
 (15)=
 15. Prove [Theorem 3.3](https://rosiesb.github.io/Analysis-Notes/3Cty.html#fof) in the notes (i.e. that composition of continuous functions is continuous). [Hint: Use sequences.]
@@ -229,10 +229,11 @@ Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \
     and explain why $f$ is continuous at every point of $A$. The complement $A^{c}$ of $A$ in $\mathbb{R}$ comprises two points. Show that $f$ may be extended to be continuous at only one of these points, and write down this continuous extension.
 
 (19)=
-19. Suppose that the function $g: \mathbb{R} \rightarrow \mathbb{R}$ is continuous at $a$ with $g(a) > 0$. Show that there exists $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. [Hint: Assume $g(a) > 0$ and try a proof by contradiction.]
+19. *(Homework 2 question).* Suppose that the function $g: \mathbb{R} \rightarrow \mathbb{R}$ is continuous at $a$ with $g(a) > 0$. Show that there exists $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. [Hint: Assume $g(a) > 0$ and try a proof by contradiction.]
 
 (20)=
-20.
+20. *(Homework 2 question).* 
+
     (i) For any $x, y \in \mathbb{R}$ show that
     
     $$
@@ -593,7 +594,7 @@ $$
 $$
 
 (69)=
-69. *(Exam question)* Define step functions $r,s\colon \mathbb{R} \rightarrow \mathbb{R}$ by 
+69. *(Exam question).* Define step functions $r,s\colon \mathbb{R} \rightarrow \mathbb{R}$ by 
    
     $$
     r = \mathbb{1}_{[0,1)} + e \mathbb{1}_{[1,2)} + e^4 \mathbb{1}_{[2,3]}, \qquad  s = e \mathbb{1}_{[0,1]} + e^4 \mathbb{1}_{(1,2]} + e^9 \mathbb{1}_{(2,3]}.

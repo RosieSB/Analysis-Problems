@@ -12,7 +12,7 @@ Bonus exercise: prove that (iv) holds if and only if $(x_n)$ is the constant seq
 
 ---
 
-[P2.](P2) (Homework 1 question)
+[P2.](P2) *(Homework 1 question).*
 
 Let $\varepsilon>0$. According to the definition, we must prove there is an $N\in\mathbb{N}$ for which $\left|\frac{2n}{3n-1}-\frac{2}{3}\right|<\varepsilon$ whenever $n\geq N$.
 
@@ -33,7 +33,7 @@ Let $N$ be any integer greater than $\frac{2+3\varepsilon}{9\varepsilon}$. Then 
 
 ---
 
-[P3.](P3) (Homework 1 question)
+[P3.](P3) *(Homework 1 question).*
 
 The Bolzano--Weierstrass theorem states that every bounded sequence has a convergent subsequence. Its proof combines the following two results:
 
@@ -183,7 +183,7 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 
 ---
 
-[2.](2) (Homework 1 question)
+[2.](2) *(Homework 1 question).*
    
 (i) $L=[0,1]\cup[2,3]$.
    
@@ -197,7 +197,9 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 
 ---
 
-[3.](3) (i) We are given $f:\mathbb{R}\to\mathbb{R}$; $f(x)=4x+7$. Intuition tells us that 
+[3.](3) *(Homework 1 question).*
+
+(i) We are given $f:\mathbb{R}\to\mathbb{R}$; $f(x)=4x+7$. Intuition tells us that 
 
 $$
 \lim_{x\rightarrow 2}f(x) = 4\cdot 2+7 = 15.
@@ -349,7 +351,7 @@ then by the first part $\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1}{x^{2
 
 ---
 
-[7.](7) (Homework 2 question?)
+[7.](7) 
 <br>
 When $x > 0, \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|} = \displaystyle\frac{x}{x} = 1 = \text{sgn}(x)$,
 <br>
@@ -363,7 +365,7 @@ Since the left and right limits are different, $\displaystyle\lim_{x \rightarrow
 
 ---
 
-[8.](8) (Homework 2 question?)
+[8.](8) *(Homework 2 question).* 
    
 (i) For $a\neq 1$, the left and right limits exist and are both equal to $f(a)$, using the algebra of limits. The only point at which left and right limits disagree is $a = 1$, with
 
@@ -385,7 +387,7 @@ $$
 
 ---
 
-[9.](9) The largest subset of $\mathbb{R}$ for which the formula $f(x)=\sin\left(\frac{1}{x}\right)$ makes sense is $A = \mathbb{R} \setminus \{0\}$.
+[9.](9) *(Homework 2 question).* The largest subset of $\mathbb{R}$ for which the formula $f(x)=\sin\left(\frac{1}{x}\right)$ makes sense is $A = \mathbb{R} \setminus \{0\}$.
 <br>
 Observe that for any real number $\theta\in\mathbb{R}$,
 
@@ -562,7 +564,7 @@ $g \circ f:\mathbb{R} \setminus \{0\} \to \mathbb{R} \setminus \{0\}$ given by $
 
 ---
 
-[18.](18) (Homework 2 question?)
+[18.](18) 
    
 (i) For $x \neq 0, f(x) = x+2$. Since $\lim_{x \rightarrow 0}f(x) = 2$, the required continuous extension is $\tilde{f}$ where
 
@@ -612,7 +614,7 @@ Graph of the function $\tilde{f}:\mathbb{R}\setminus\{-2\}\to\mathbb{R}$; $f(x)=
 
 ---
 
-[19.](19) Assume $g$ is continuous and $g(a) > 0$. Suppose, for a contradiction, that  there is no  $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. Then, in particular, for all $n\in\mathbb{N}$ there exists $x_{n} \in \left(a - \frac{1}{n}, a + \frac{1}{n}\right)$ such that $g(x_{n}) \leq 0$. By the sandwich rule, we have $\lim_{n\rightarrow\infty} x_{n} = a$. So, by continuity of $g$ at $a$, we have $\lim_{n\rightarrow\infty} g(x_{n})$ exists and equals $g(a)$. But $g(x_n)\leq 0$ for all $n\in\mathbb{N}$, and so
+[19.](19) *(Homework 2 question).* Assume $g$ is continuous and $g(a) > 0$. Suppose, for a contradiction, that  there is no  $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. Then, in particular, for all $n\in\mathbb{N}$ there exists $x_{n} \in \left(a - \frac{1}{n}, a + \frac{1}{n}\right)$ such that $g(x_{n}) \leq 0$. By the sandwich rule, we have $\lim_{n\rightarrow\infty} x_{n} = a$. So, by continuity of $g$ at $a$, we have $\lim_{n\rightarrow\infty} g(x_{n})$ exists and equals $g(a)$. But $g(x_n)\leq 0$ for all $n\in\mathbb{N}$, and so
 
 $$
 g(a)=\lim_{n\rightarrow\infty} g(x_{n}) \leq 0,
@@ -622,7 +624,7 @@ which is a contradiction.
 
 ---
 
-[20.](20)
+[20.](20) *(Homework 2 question).* 
 (i) 
 
 $$
@@ -705,7 +707,7 @@ and so $g$ is not continuous at $x$.
 
 ---
 
-[23.](23) (Homework 2 question?)
+[23.](23) 
 <br>
 The function $\mathbb{1}_{(a, b)}$ is left continuous at $a$ (but not right continuous), and right continuous at $b$ (but not left continuous).
 To prove the left continuity at $a$, let $(x_{n})$ be any sequence in $\mathbb{R}$ which converges to $a$ with $x_{n} < a$ for all $n\in\mathbb{N}$. Then $\lim_{n\rightarrow\infty} \mathbb{1}_{(a, b)}(x_{n}) = 0 = \mathbb{1}_{(a, b)}(a).$ On the other hand to see that it is not right continuous at $a$, let $(y_{n})$ be any sequence in $\mathbb{R}$ which converges to $a$ with $a < y_{n} < b$ for all $n\in\mathbb{N}$. Then
