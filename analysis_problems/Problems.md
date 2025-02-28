@@ -179,7 +179,9 @@ Prove you are right using [Definition 2.4](https://rosiesb.github.io/Analysis-No
 
 (12)=
 12.
-    (i) Formulate a rigorous definition for $\displaystyle\lim_{x \rightarrow \infty}f(x) = \infty$ in terms of sequences  and write down an analogue of the $(\varepsilon-\delta)$ criterion. [The cases  $\displaystyle\lim_{x \rightarrow \infty}f(x) = -\infty$ and $\displaystyle\lim_{x \rightarrow -\infty}f(x) = \pm \infty$ can be treated similarly.]
+    (i) Formulate a rigorous $(\varepsilon-\delta)$ definition for $\displaystyle\lim_{x \rightarrow \infty}f(x) = \infty$ and write down an analogue of the  sequential criterion.
+    
+    [The cases $\displaystyle\lim_{x \rightarrow \infty}f(x) = -\infty$ and $\displaystyle\lim_{x \rightarrow -\infty}f(x) = \pm \infty$ can be treated similarly.]
     
     (ii) Let $f:\mathbb{R} \rightarrow [0, \infty)$ and $g:\mathbb{R} \rightarrow [0, \infty)$, and suppose that $\displaystyle\lim_{x \rightarrow \infty}f(x) = \infty$ and $\displaystyle\lim_{x \rightarrow \infty}g(x) = l$, where $l > 0$. Define $h(x) = f(x)g(x)$ for all $x \in \mathbb{R}$. Show that $\displaystyle\lim_{x \rightarrow \infty}h(x) = \infty$.
     
@@ -266,7 +268,7 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
     (vi) If $f(1) = k$ and $f$ is continuous at zero, prove that $f(x) =kx$ for all $x \in \mathbb{R}$.
 
 (22)=
-22. Show that Dirichlet's "other" function, as discussed in [Example 3.8](https://rosiesb.github.io/Analysis-Notes/3Cty.html#eg-lrcont) in the notes, is discontinuous at every rational point in its domain.
+22. Show that Dirichlet's "other" function, as discussed in [Example 3.10](https://rosiesb.github.io/Analysis-Notes/3Cty.html#eg:dirichlet2) in the notes, is discontinuous at every rational point in its domain.
 
 (23)=
 23. What can you say about left/right continuity of the function  $\mathbb{1}_{(a, b)}:\mathbb{R}\to\mathbb{R}$ at the points $a$ and $b$?
