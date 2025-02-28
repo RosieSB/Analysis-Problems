@@ -234,8 +234,7 @@ Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \
 19. *(Homework 2 question).* Suppose that the function $g: \mathbb{R} \rightarrow \mathbb{R}$ is continuous at $a$ with $g(a) > 0$. Show that there exists $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. [Hint: Assume $g(a) > 0$ and try a proof by contradiction.]
 
 (20)=
-20. *(Homework 2 question).* 
-
+20.
     (i) For any $x, y \in \mathbb{R}$ show that
     
     $$
@@ -268,7 +267,7 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
     (vi) If $f(1) = k$ and $f$ is continuous at zero, prove that $f(x) =kx$ for all $x \in \mathbb{R}$.
 
 (22)=
-22. Show that Dirichlet's "other" function, as discussed in [Example 3.10](https://rosiesb.github.io/Analysis-Notes/3Cty.html#eg:dirichlet2) in the notes, is discontinuous at every rational point in its domain.
+22.  *(Homework 2 question).* Show that Dirichlet's "other" function, as discussed in [Example 3.10](https://rosiesb.github.io/Analysis-Notes/3Cty.html#eg:dirichlet2) in the notes, is discontinuous at every rational point in its domain.
 
 (23)=
 23. What can you say about left/right continuity of the function  $\mathbb{1}_{(a, b)}:\mathbb{R}\to\mathbb{R}$ at the points $a$ and $b$?
