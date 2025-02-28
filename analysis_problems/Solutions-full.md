@@ -1,6 +1,7 @@
 (sol)=
 # Solutions
 
+(ch1sol)=
 ## Preliminary problems
 
 [P1.](P1)
@@ -167,6 +168,7 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 
 (v) True. Let $s=\max\{\sup A,\sup B\}$. Then $s\geq \sup A$ and $s\geq \sup B$, so $s$ is an upper bound for both $A$ and $B$. Therefore, $s$ is an upper bound for $A\cup B$. But $\sup(A\cup B)$ is the least upper bound of $A\cup B$, and so $s\geq\sup(A\cup B)$. Also, since $A$ and $B$ are both subsets of $A\cup B$, we have by statement (iii) that $s=\max\{\sup A,\sup B)\leq\sup(A\cup B)$. Hence $\max\{\sup A,\sup B)=\sup(A\cup B)$.
 
+(ch2sol)=
 ## Limits of functions
 
 [1.](1) One has to identify the real numbers where the given formula does not make sense, usually because of a zero in a denominator somewhere, and exclude them.
@@ -528,6 +530,7 @@ $$
 If $n$ is odd, $\lim_{x \rightarrow \infty}p(x) = \infty$, but $\lim_{x \rightarrow -\infty}p(x) = -\infty$.
 
 
+(ch3sol)=
 ## Continuity
 
 
@@ -869,6 +872,7 @@ $$
 
 and we have shown that $f(x)=f(1)$ for all $x\in\mathbb{R}$.
 
+(ch4sol)=
 ## Differentiation
 
 [37.](37) This is Definition 2.2 in the notes:
@@ -1120,6 +1124,7 @@ In particular, $f^{\prime \prime}_{+}(a) = \lim_{h \rightarrow 0^+}\frac{f'(a + 
 
 
 
+(ch5sol)=
 ## Sequences and series of functions
 
 [54.](54) For $x\in [0,\pi ]$ we have $0\leq \sin x<1$ except when $x=\frac{\pi}{2}$, where $\sin x=1$. Thus $f_n(x)$ converges pointwise to the function $f\colon [0, \pi ]\rightarrow \mathbb{R}$ defined by
@@ -1618,6 +1623,7 @@ Following these events was a huge collective effort of the whole mathematical co
 **Disclaimer:** I am not a historian. For more on this fascinating subject, I recommend reading Chapter 1 of [A Radical Approach to Real Analysis by Bressoud](https://find.shef.ac.uk/permalink/f/1lephdb/44SFD_ALMA_DS21193257230001441).
 ````
 
+(ch6sol)=
 ## Integration
 
 [66.](66) Let $f:[1,4]\to\mathbb{R}$; $f(x)=\frac{1}{x}$, and let $P=\{1,\frac{3}{2},2,4\}$.

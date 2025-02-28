@@ -344,7 +344,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -360,6 +362,14 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -382,7 +392,23 @@ The problem set for each tutorial will come from this booklet.<br></p></li>
 Written homework will be a selection of problems from the problem booklet. <br></p></li>
 </ol>
 <p>See Blackboard<a class="footnote-reference brackets" href="#links" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> for more information.</p>
-<p><a class="reference internal" href="Solutions-upto6.html#sol"><span class="std std-ref">Solutions</span></a> will be made available in installments throughout the semester..</p>
+<!--[Solutions](#sol) will be made available in installments throughout the semester.-->
+<section id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="Problems.html#prob"><span class="std std-ref">1 Problems</span></a> <br>
+  <a class="reference internal" href="Problems.html#ch1prob"><span class="std std-ref">1.1 Preliminary problems</span></a> <br>
+  <a class="reference internal" href="Problems.html#ch2prob"><span class="std std-ref">1.2. Limits of functions</span></a> <br>
+  <a class="reference internal" href="Problems.html#ch3prob"><span class="std std-ref">1.3. Continuity</span></a> <br>
+  <a class="reference internal" href="Problems.html#ch4prob"><span class="std std-ref">1.4. Differentiation</span></a> <br>
+  <a class="reference internal" href="Problems.html#ch5prob"><span class="std std-ref">1.5. Sequences and series of functions</span></a> <br>
+  <a class="reference internal" href="Problems.html#ch6prob"><span class="std std-ref">1.6. Integration</span></a></p>
+<p><a class="reference internal" href="Solutions-upto6.html#sol"><span class="std std-ref">2 Solutions up to Q6</span></a> (more to appear in due course) <br>
+  <a class="reference internal" href="Solutions-upto6.html#ch1sol"><span class="std std-ref">2.1 Preliminary problems</span></a> <br>
+  <a class="reference internal" href="Solutions-upto6.html#ch2sol"><span class="std std-ref">2.2. Limits of functions</span></a> <br></p>
+<!--&emsp;&emsp;[2.3. Continuity](#ch3sol) <br>
+&emsp;&emsp;[2.4. Differentiation](#ch4sol) <br>
+&emsp;&emsp;[2.5. Sequences and series of functions](#ch5sol) <br>
+&emsp;&emsp;[2.6. Integration](#ch6sol)-->
 <hr class="footnotes docutils" />
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="links" role="doc-footnote">
@@ -390,6 +416,7 @@ Written homework will be a selection of problems from the problem booklet. <br><
 <p>Links: <a class="reference external" href="https://vle.shef.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_7918618_1&amp;amp;course_id=_119813_1&amp;amp;mode=reset">MAS2004</a>; <a class="reference external" href="https://vle.shef.ac.uk/ultra/courses/_119818_1/cl/outline">MAS2009</a></p>
 </aside>
 </aside>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -439,6 +466,22 @@ Written homework will be a selection of problems from the problem booklet. <br><
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -1,6 +1,9 @@
 (prob)=
 # Problems
+
+(ch1prob)=
 ## Preliminary problems
+
 
 (P1)=
 P1. 
@@ -79,6 +82,7 @@ P7. Let $A$ and $B$ be bounded and non-empty subsets of $\mathbb{R}$. Which of t
 
 <br>
 
+(ch2prob)=
 ## Limits of functions
 (1)=
 1. For each of the following formulas, what is the largest subset $X$ of $\mathbb{R}$  which may be taken as the domain of a function with that formula?
@@ -187,6 +191,7 @@ Prove you are right using [Definition 2.4](https://rosiesb.github.io/Analysis-No
     
     (iii) Let $p: \mathbb{R} \rightarrow \mathbb{R}$ be an even polynomial of degree $m$, where the leading coefficient (i.e. the coefficient of $x^{m}$) is positive. Show that $\displaystyle\lim_{x \rightarrow \infty}p(x) = \lim_{x \rightarrow -\infty}p(x) = \infty$. What happens when $m$ is odd?
 
+(ch3prob)=
 ## Continuity
 
 (13)=
@@ -320,6 +325,7 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 
 (ii) Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function for which $f(x) = f(x^{2})$ for all $x \in \mathbb{R}$. Use the result of (i) to show that $f$ is constant.
 
+(ch4prob)=
 ## Differentiation
 
 (37)=
@@ -443,6 +449,7 @@ $$
 (53)=
 53. Let $f:\mathbb{R} \rightarrow \mathbb{R}$ be twice differentiable at $a$ with $f'(a) = 0$. If $f^{\prime \prime}(a) < 0$, show that $f$ has a local maximum at $a$, while if $f^{\prime \prime}(a) > 0$, show that $f$ has a local minimum at $a$.
 
+(ch5prob)=
 ## Sequences and series of functions
 
 (54)=
@@ -567,6 +574,7 @@ While a perfectly good series, mathematical understanding in europe at the time 
 
 (iv) Now differentiate the series [](fourier) term by term. Does this series converge pointwise for any values of $x$? You may find Desmos or a similar graphing tool helpful for this part.
 
+(ch6prob)=
 ## Integration
 
 (66)=

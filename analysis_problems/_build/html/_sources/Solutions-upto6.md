@@ -1,6 +1,7 @@
 (sol)=
 # Solutions
 
+(ch1sol)=
 ## Preliminary problems
 
 [P1.](P1)
@@ -141,6 +142,7 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 
 (v) True. Let $s=\max\{\sup A,\sup B\}$. Then $s\geq \sup A$ and $s\geq \sup B$, so $s$ is an upper bound for both $A$ and $B$. Therefore, $s$ is an upper bound for $A\cup B$. But $\sup(A\cup B)$ is the least upper bound of $A\cup B$, and so $s\geq\sup(A\cup B)$. Also, since $A$ and $B$ are both subsets of $A\cup B$, we have by statement (iii) that $s=\max\{\sup A,\sup B)\leq\sup(A\cup B)$. Hence $\max\{\sup A,\sup B)=\sup(A\cup B)$.
 
+(ch2sol)=
 ## Limits of functions
 
 [1.](1) One has to identify the real numbers where the given formula does not make sense, usually because of a zero in a denominator somewhere, and exclude them.
