@@ -179,7 +179,7 @@ Prove you are right using [Definition 2.4](https://rosiesb.github.io/Analysis-No
 
     (ii) Find an analogue of the sequential criterion for this case, and prove the analogous result to [Theorem 2.1](https://rosiesb.github.io/Analysis-Notes/2LoF.html#ed). 
 
-    (iii) Check that you can prove that $\displaystyle\lim_{x \rightarrow \infty}\frac{1}{x} = \lim_{x \rightarrow -\infty}\frac{1}{x} = 0$, using your criterion.
+    (iii) Check that you can prove that $\displaystyle\lim_{x \rightarrow \infty}\frac{1}{x} = \lim_{x \rightarrow -\infty}\frac{1}{x} = 0$, using either your definition or sequential criterion.
 
 (12)=
 12.
@@ -236,7 +236,7 @@ Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \
     and explain why $f$ is continuous at every point of $A$. The complement $A^{c}$ of $A$ in $\mathbb{R}$ comprises two points. Show that $f$ may be extended to be continuous at only one of these points, and write down this continuous extension.
 
 (19)=
-19. *(Homework 2 question).* Suppose that the function $g: \mathbb{R} \rightarrow \mathbb{R}$ is continuous at $a$ with $g(a) > 0$. Show that there exists $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. [Hint: Assume $g(a) > 0$ and try a proof by contradiction.]
+19. *(Homework 2 question).* Suppose that the function $g: \mathbb{R} \rightarrow \mathbb{R}$ is continuous at $a$ with $g(a) > 0$. Show that there exists $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. [Hint: Use the $\varepsilon-\\delta$ criterion for continuity.]
 
 (20)=
 20.

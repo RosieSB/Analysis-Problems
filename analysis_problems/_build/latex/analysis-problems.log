@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.4)  6 MAR 2025 11:44
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.4)  6 MAR 2025 15:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1725,10 +1725,50 @@ on input line 1146.
 
 [9] [10] [11] [12]
 
-LaTeX Warning: Hyper reference `Solutions-upto6:equation-eq-sqrta-sqrtb' on pag
-e 13 undefined on input line 1508.
+LaTeX Warning: Hyper reference `Solutions-full:equation-eq-sqrta-sqrtb' on page
+ 13 undefined on input line 1545.
 
-[13] [14] (./analysis-problems.ind) [15] (./analysis-problems.aux)
+[13] [14] [15] [16] [17]
+File: sin(1,x).png Graphic file (type bmp)
+<sin(1,x).png>
+ [18]
+File: xsin(1,x).png Graphic file (type bmp)
+<xsin(1,x).png>
+ [19] [20] [21]
+File: (x2+2x+4),(x+2).png Graphic file (type bmp)
+<(x2+2x+4),(x+2).png>
+ [22] [23] [24] [25] [26] [27]
+[28]
+File: nondiff1,2.png Graphic file (type bmp)
+<nondiff1,2.png>
+File: nondiff1,3_2,3.png Graphic file (type bmp)
+<nondiff1,3_2,3.png>
+File: x-[x].png Graphic file (type bmp)
+<x-[x].png>
+ [29] [30] [31] [32] [33] [34] [35] [36] [37] [38]
+File: fourier1.png Graphic file (type bmp)
+<fourier1.png>
+File: fourier2.png Graphic file (type bmp)
+<fourier2.png>
+File: fourier3.png Graphic file (type bmp)
+<fourier3.png>
+ [39] [40]
+File: int1i.png Graphic file (type bmp)
+<int1i.png>
+ [41]
+File: int1ii.png Graphic file (type bmp)
+<int1ii.png>
+ [42]
+File: int1iii.png Graphic file (type bmp)
+<int1iii.png>
+
+[43]
+File: q67.png Graphic file (type bmp)
+<q67.png>
+File: q68.png Graphic file (type bmp)
+<q68.png>
+ [44] [45] [46] [47] [48] [49] [50] [51] (./analysis-problems.ind) [52]
+(./analysis-problems.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1738,15 +1778,15 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `analysis-problems.out' has not changed.
-(rerunfilecheck)             Checksum: D70FE114EEC1E4CBCEA0DD3934E8D7C0;693.
+(rerunfilecheck)             Checksum: AD8A35A163337054655E8F69FA7905F7;990.
  ) 
 Here is how much of TeX's memory you used:
- 46153 strings out of 474878
- 1047775 string characters out of 5762516
- 1950627 words of memory out of 5000000
- 67366 multiletter control sequences out of 15000+600000
- 567049 words of font info for 128 fonts, out of 8000000 for 9000
+ 46344 strings out of 474878
+ 1051594 string characters out of 5762516
+ 1963627 words of memory out of 5000000
+ 67538 multiletter control sequences out of 15000+600000
+ 567130 words of font info for 131 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  99i,24n,114p,755b,2115s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on analysis-problems.pdf (19 pages).
+Output written on analysis-problems.pdf (56 pages).

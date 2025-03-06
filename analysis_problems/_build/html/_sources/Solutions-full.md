@@ -370,7 +370,7 @@ $$
 \lim_{n\rightarrow\infty}\text{sgn}(x_n)=1\neq-1=\lim_{n\rightarrow\infty}\text{sgn}(y_n).
 $$
 
-So $\text{sgn}(x)$ does not have a limit at $x=0$.
+So $\text{sgn}$ does not converge as $x\rightarrow 0$.
 
 For the left and right limits at $0$:
 
@@ -480,26 +480,29 @@ Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=x\sin\left(\frac{1}{x}\
 
 (i) Let $X\subset\mathbb{R}$ and $f:X\to\mathbb{R}$. We say that $\lim_{x \rightarrow \infty}f(x) = l$ if for all $\varepsilon>0$ there exists $K>0$ such that for all $x\in X$, $x>K$ implies $|f(x)-l|<\varepsilon$.
 
-(ii) The analogue of the sequential criterion is: $\lim_{x \rightarrow \infty}f(x) = l$ if for $(x_{n})$ is a sequence in $X$ that diverges to infinity, then $\lim_{x \rightarrow \infty}f(x_{n}) = l$.
+(ii) The analogue of the sequential criterion is: 
+>$\lim_{x \rightarrow \infty}f(x) = l$ if for any sequence $(x_{n})$ in $X$ that diverges to infinity, we have $\lim_{x \rightarrow \infty}f(x_{n}) = l$.
 
-<br>
-For the proof, suppose the $(\varepsilon- K)$ criterion stated in part (i) holds. Let $\varepsilon>0$, and choose $K>0$ for which $x\in X$, $x>K$ implies $|f(x)-l|<\varepsilon$.  Let $(x_n)$ be a sequence in $X$ that diverges to infinity. Then using the same $K>0$, there exists $N\in\mathbb{N}$ such that if $n\geq N$, we have $x_{n} > K$.  But then, for all $n\geq N, |f(x_{n}) - l| < \varepsilon$. Hence $\lim_{x \rightarrow \infty}f(x_{n}) = l$, as required.
-<br>
-For the converse, we again imitate the proof of Theorem 2.1. So suppose the $(\varepsilon-K)$ criterion does not hold. This time choose successively $K = 1, 2, \ldots$ and construct $x_{n}$ in the domain $X$ of $f$ such that $x_{n} > n$, and $|f(x_{n}) - l| \geq \varepsilon$ for each $n\in\mathbb{N}$. This shows that the sequential criterion fails.
+For the proof,  imitate the proof of [Theorem 2.1](https://rosiesb.github.io/Analysis-Notes/2LoF.html#ed). Suppose the $(\varepsilon- K)$ criterion stated in part (i) holds. Let $\varepsilon>0$, and choose $K>0$ such that for all $x\in X$, $x>K$ implies $|f(x)-l|<\varepsilon$.  Let $(x_n)$ be any sequence in $X$ that diverges to infinity. Then using the same $K>0$, there exists $N\in\mathbb{N}$ such that if $n\geq N$, then $x_{n} > K$.  But then, for all $n\geq N$, $x_n>K$, which in turn implies $|f(x_{n}) - l| < \varepsilon$. Hence $\lim_{x \rightarrow \infty}f(x_{n}) = l$, as required.
 
-(iii) Given any $\varepsilon > 0$, choose $K = \frac{1}{\varepsilon}$. Then $x > K \Rightarrow \frac{1}{x} < \varepsilon$, and so $\lim_{x\to\infty} \frac{1}{x}=0$. The case where $x\to-\infty$ is similar.
+For the converse, we prove by contrapositive. Suppose the $(\varepsilon-K)$ criterion does not hold. Then there exists $\varepsilon>0$ such that for all $K>0$, there is $x\in X$ for which $x>K$ and $|f(x)-l|\geq \varepsilon$. Apply this successively to $K = 1, 2, 3, \ldots$. For $K=n$, we get $x_n\in X$ with $x_{n} > n$, and $|f(x_{n}) - l| \geq \varepsilon$ for each $n\in\mathbb{N}$. But then, $(x_n)$ is a sequence in $X$ diverging to infinity, and such that $f(x_n)\nrightarrow l$. This shows that the sequential criterion fails. 
+
+(iii) Using the definition: Given any $\varepsilon > 0$, choose $K = \frac{1}{\varepsilon}$. Then $x > K \Rightarrow \frac{1}{x} < \varepsilon$, and so $\lim_{x\to\infty} \frac{1}{x}=0$.
+
+Using sequences: Let $(x_n)$ be any sequence in $\mathbb{R}\setminus\{0\}$ diverging to infinity as $n\rightarrow\infty$. Then, by algebra of limits, $\frac{1}{x_n}\rightarrow 0$. Since the sequence was chosen arbitrarily, it follows that $\lim_{x\rightarrow\infty}\frac{1}{x}=0$.
+
+The case where $x\to-\infty$ is similar.
 
 ---
 
 [12.](12)
-(i) Let $f:X\to\mathbb{R}$ be a function, where $X\subseteq\mathbb{R}$. We say that $\lim_{x \rightarrow \infty} f(x) = \infty$ if:
+(i) Let $f:X\to\mathbb{R}$ be a function, where $X\subseteq\mathbb{R}$. We say that $\lim_{x \rightarrow \infty} f(x) = \infty$ if: 
 >Given any $M > 0$, there exists $K > 0$ such that $x > K$ implies $f(x) > M$.
-The other cases are similar.
 
 The analogue of the sequential criterion is:
 >For any sequence $(x_{n})$ in $X$ which diverges to infinity, we also have that $(f(x_{n}))$ diverges to infinity.
-<br>
 
+The other cases are similar.
 
 (ii) Let $f:\mathbb{R}\to[0,\infty)$, $g:\mathbb{R}\to[0,\infty)$, and suppose $\displaystyle\lim_{x\rightarrow\infty}f(x)=\infty$ and $\displaystyle\lim_{x\rightarrow\infty}g(x)=l$, where $l>0$.
 <br>
@@ -634,7 +637,10 @@ Graph of the function $\tilde{f}:\mathbb{R}\setminus\{-2\}\to\mathbb{R}$; $f(x)=
 
 ---
 
-[19.](19) *(Homework 2 question).* Assume $g$ is continuous and $g(a) > 0$. Suppose, for a contradiction, that  there is no  $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. Then, in particular, for all $n\in\mathbb{N}$ there exists $x_{n} \in \left(a - \frac{1}{n}, a + \frac{1}{n}\right)$ such that $g(x_{n}) \leq 0$. By the sandwich rule, we have $\lim_{n\rightarrow\infty} x_{n} = a$. So, by continuity of $g$ at $a$, we have $\lim_{n\rightarrow\infty} g(x_{n})$ exists and equals $g(a)$. But $g(x_n)\leq 0$ for all $n\in\mathbb{N}$, and so
+[19.](19) *(Homework 2 question).* Assume $g$ is continuous and $g(a) > 0$. Then for all $\varepsilon>0$ there exists $\delta>0$ such that for all $x\in\mathbb{R}$, $|x-a|<\delta$ implies $|g(x)-g(a)|<\varepsilon$. Let $\varepsilon=\frac{g(a)}{2}$. Then for some $\delta>0$, we have $|g(x)-g(a)|<\frac{g(a)}{2}$. But then $\frac{g(a)}{2}<g(x)<\frac{3g(a)}{2}$, and in particular, $g(x)>\frac{g(a)}{2}>0$.
+
+**Alternate solution using sequences:**<br>
+Suppose, for a contradiction, that  there is no  $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. Then, in particular, for all $n\in\mathbb{N}$ there exists $x_{n} \in \left(a - \frac{1}{n}, a + \frac{1}{n}\right)$ such that $g(x_{n}) \leq 0$. By the sandwich rule, we have $\lim_{n\rightarrow\infty} x_{n} = a$. So, by continuity of $g$ at $a$, we have $\lim_{n\rightarrow\infty} g(x_{n})$ exists and equals $g(a)$. But $g(x_n)\leq 0$ for all $n\in\mathbb{N}$, and so
 
 $$
 g(a)=\lim_{n\rightarrow\infty} g(x_{n}) \leq 0,
