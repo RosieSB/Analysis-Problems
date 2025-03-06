@@ -356,16 +356,27 @@ then by the first part $\lim_{x \rightarrow 1}\sqrt{\displaystyle\frac{x+1}{x^{2
 ---
 
 [7.](7) 
+When $x > 0, \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|} = \displaystyle\frac{x}{x} = 1 = \text{sgn}(x)$, and when $x < 0, \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|} = -\displaystyle\frac{x}{x} = -1 = \text{sgn}(x)$. So $\text{sgn}(x) = \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|}$, when $x\neq 0$.
 <br>
-When $x > 0, \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|} = \displaystyle\frac{x}{x} = 1 = \text{sgn}(x)$,
-<br>
-when $x < 0, \displaystyle\frac{|x|}{x} = \displaystyle\frac{x}{|x|} = -\displaystyle\frac{x}{x} = -1 = \text{sgn}(x)$.
-<br>
-The left limit is $\displaystyle\lim_{x \rightarrow 0^-} \text{sgn}(x) = -1$, since for any sequence $(x_n)$ approaching $0$ from the left, we have $\text{sgn}(x_n) = -1$ for all $n$.
-<br>
-Similarly, the right limit is $\displaystyle\lim_{x \rightarrow 0^+} \text{sgn}(x) = 1$,  since for any sequence $(x_n)$ approaching $0$ from the right, we have $\text{sgn}(x_n) = 1$ for all $n$.
-<br>
-Since the left and right limits are different, $\displaystyle\lim_{x \rightarrow 0}\text{sgn}(x)$ does not exist.
+Consider the sequences $x_n=\frac{1}{n}$ and $y_n=-\frac{1}{n}$. If $\lim_{x\rightarrow 0}\text{sgn}(x)$ existed, then we would have
+
+$$
+\lim_{n\rightarrow\infty}\text{sgn}(x_n)=\lim_{n\rightarrow\infty}\text{sgn}(y_n)=\lim_{x\rightarrow 0}\text{sgn}(x).
+$$
+
+But in fact, $\text{sgn}(x_n)=1$ and $\text{sgn}(y_n)=-1$ for all $n\in\mathbb{N}$, so
+
+$$
+\lim_{n\rightarrow\infty}\text{sgn}(x_n)=1\neq-1=\lim_{n\rightarrow\infty}\text{sgn}(y_n).
+$$
+
+So $\text{sgn}(x)$ does not have a limit at $x=0$.
+
+For the left and right limits at $0$:
+
+- The left limit is $\displaystyle\lim_{x \rightarrow 0^-} \text{sgn}(x) = -1$, since for any sequence $(x_n)$ approaching $0$ from the left, we have $\text{sgn}(x_n) = -1$ for all $n$.
+
+- The right limit is $\displaystyle\lim_{x \rightarrow 0^+} \text{sgn}(x) = 1$,  since for any sequence $(x_n)$ approaching $0$ from the right, we have $\text{sgn}(x_n) = 1$ for all $n$.
 
 ---
 
@@ -467,24 +478,28 @@ Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=x\sin\left(\frac{1}{x}\
 
 [11.](11) We'll just do $\displaystyle\lim_{x \rightarrow \infty}f(x)$ here, as $\displaystyle\lim_{x \rightarrow -\infty}f(x)$ is so similar.
 
-(i) Let $X\subset\mathbb{R}$ and $f:X\to\mathbb{R}$. We say that $\lim_{x \rightarrow \infty}f(x) = l$ if whenever $(x_{n})$ is a sequence that diverges to infinity, with $x_{n}\in X$ for all $n\in\mathbb{N}$, then $\lim_{x \rightarrow \infty}f(x_{n}) = l$.
+(i) Let $X\subset\mathbb{R}$ and $f:X\to\mathbb{R}$. We say that $\lim_{x \rightarrow \infty}f(x) = l$ if for all $\varepsilon>0$ there exists $K>0$ such that for all $x\in X$, $x>K$ implies $|f(x)-l|<\varepsilon$.
 
-(ii) The analogue of the $(\varepsilon- \delta)$ criterion is $(\varepsilon-K)$: given any $\varepsilon > 0$, there exists $K > 0$ such that if $x > K$ then $|f(x) -l| < \varepsilon$.
+(ii) The analogue of the sequential criterion is: $\lim_{x \rightarrow \infty}f(x) = l$ if for $(x_{n})$ is a sequence in $X$ that diverges to infinity, then $\lim_{x \rightarrow \infty}f(x_{n}) = l$.
+
 <br>
-For the proof, suppose the $(\varepsilon- K)$ criterion holds and $\lim_{n\rightarrow\infty} x_{n} = \infty$. Then given any $L > 0$, there exists $N\in\mathbb{N}$ such that if $n\geq N$, we have $x_{n} > L$. Now take $L$ to be $K$ from the criterion and we get that for all $n\geq N, |f(x_{n}) - l| < \varepsilon$. Hence $\lim_{x \rightarrow \infty}f(x_{n}) = l$, as required.
+For the proof, suppose the $(\varepsilon- K)$ criterion stated in part (i) holds. Let $\varepsilon>0$, and choose $K>0$ for which $x\in X$, $x>K$ implies $|f(x)-l|<\varepsilon$.  Let $(x_n)$ be a sequence in $X$ that diverges to infinity. Then using the same $K>0$, there exists $N\in\mathbb{N}$ such that if $n\geq N$, we have $x_{n} > K$.  But then, for all $n\geq N, |f(x_{n}) - l| < \varepsilon$. Hence $\lim_{x \rightarrow \infty}f(x_{n}) = l$, as required.
 <br>
-For the converse, we again imitate the proof of Theorem 2.1. So suppose the $(\varepsilon-K)$ criterion does not hold. This time choose successively $K = 1, 2, \ldots$ and construct $x_{n}$ in the domain $X$ of $f$ such that $x_{n} > n$, and $|f(x_{n}) - l| \geq \varepsilon$ for each $n\in\mathbb{N}$. So $f$ does not converge to $l$ as $x\to\infty$.
+For the converse, we again imitate the proof of Theorem 2.1. So suppose the $(\varepsilon-K)$ criterion does not hold. This time choose successively $K = 1, 2, \ldots$ and construct $x_{n}$ in the domain $X$ of $f$ such that $x_{n} > n$, and $|f(x_{n}) - l| \geq \varepsilon$ for each $n\in\mathbb{N}$. This shows that the sequential criterion fails.
 
 (iii) Given any $\varepsilon > 0$, choose $K = \frac{1}{\varepsilon}$. Then $x > K \Rightarrow \frac{1}{x} < \varepsilon$, and so $\lim_{x\to\infty} \frac{1}{x}=0$. The case where $x\to-\infty$ is similar.
 
 ---
 
 [12.](12)
-(i) Let $f:X\to\mathbb{R}$ be a function, where $X\subseteq\mathbb{R}$. We say that $\lim_{x \rightarrow \infty} f(x) = \infty$ if for any sequence $(x_{n})$ in $X$ which diverges to infinity, we also have that $(f(x_{n}))$ diverges to infinity.
-<br>
-The analogue of $(\varepsilon - \delta)$ is:
+(i) Let $f:X\to\mathbb{R}$ be a function, where $X\subseteq\mathbb{R}$. We say that $\lim_{x \rightarrow \infty} f(x) = \infty$ if:
 >Given any $M > 0$, there exists $K > 0$ such that $x > K$ implies $f(x) > M$.
 The other cases are similar.
+
+The analogue of the sequential criterion is:
+>For any sequence $(x_{n})$ in $X$ which diverges to infinity, we also have that $(f(x_{n}))$ diverges to infinity.
+<br>
+
 
 (ii) Let $f:\mathbb{R}\to[0,\infty)$, $g:\mathbb{R}\to[0,\infty)$, and suppose $\displaystyle\lim_{x\rightarrow\infty}f(x)=\infty$ and $\displaystyle\lim_{x\rightarrow\infty}g(x)=l$, where $l>0$.
 <br>

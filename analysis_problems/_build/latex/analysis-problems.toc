@@ -9,9 +9,5 @@
 \contentsline {subsection}{\numberline {0.1.6}Integration}{10}{subsection.0.1.6}%
 \contentsline {section}{\numberline {0.2}Solutions}{12}{section.0.2}%
 \contentsline {subsection}{\numberline {0.2.1}Preliminary problems}{12}{subsection.0.2.1}%
-\contentsline {subsection}{\numberline {0.2.2}Limits of functions}{15}{subsection.0.2.2}%
-\contentsline {subsection}{\numberline {0.2.3}Continuity}{21}{subsection.0.2.3}%
-\contentsline {subsection}{\numberline {0.2.4}Differentiation}{27}{subsection.0.2.4}%
-\contentsline {subsection}{\numberline {0.2.5}Sequences and series of functions}{32}{subsection.0.2.5}%
-\contentsline {subsection}{\numberline {0.2.6}Integration}{40}{subsection.0.2.6}%
+\contentsline {subsection}{\numberline {0.2.2}Limits of functions}{14}{subsection.0.2.2}%
 \xpginauxfilefalse 

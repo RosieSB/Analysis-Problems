@@ -173,7 +173,7 @@ Prove you are right using [Definition 2.4](https://rosiesb.github.io/Analysis-No
 (11)=
 11. In the notes, we gave meaning to $\displaystyle\lim_{x \rightarrow a} f(x)$ where $f:\mathbb{R} \rightarrow \mathbb{R}$ is a function and $a \in \mathbb{R}$. In this question, you can investigate what happens when $x$ tends to $\infty$ or $-\infty$.
 
-    (i) Formulate a rigorous definition, in terms of $\varepsilon$'s and $\delta$'s, of what it means for $\displaystyle\lim_{x \rightarrow \infty}f(x)$ and $\displaystyle\lim_{x \rightarrow -\infty}f(x)$ to exist. 
+    (i) Formulate a rigorous definition, similar to Definition 2.2, of what it means for $\displaystyle\lim_{x \rightarrow \infty}f(x)$ and $\displaystyle\lim_{x \rightarrow -\infty}f(x)$ to exist. 
     <br>
     [Hint: For the analogue of $(\varepsilon-\delta)$, think very carefully about how you are going to control the behaviour of $x$. Remember that you cannot treat $\infty$ as if it were a number!]
 
