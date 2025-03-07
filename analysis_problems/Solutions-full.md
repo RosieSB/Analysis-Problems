@@ -13,6 +13,7 @@ Bonus exercise: prove that (iv) holds if and only if $(x_n)$ is the constant seq
 
 ---
 
+(P2sol)=
 [P2.](P2) *(Homework 1 question).*
 
 Let $\varepsilon>0$. According to the definition, we must prove there is an $N\in\mathbb{N}$ for which $\left|\frac{2n}{3n-1}-\frac{2}{3}\right|<\varepsilon$ whenever $n\geq N$.
@@ -34,6 +35,7 @@ Let $N$ be any integer greater than $\frac{2+3\varepsilon}{9\varepsilon}$. Then 
 
 ---
 
+(P3sol)=
 [P3.](P3) *(Homework 1 question).*
 
 The Bolzano--Weierstrass theorem states that every bounded sequence has a convergent subsequence. Its proof combines the following two results:
@@ -185,6 +187,7 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 
 ---
 
+(2sol)=
 [2.](2) *(Homework 1 question).*
    
 (i) $L=[0,1]\cup[2,3]$.
@@ -199,6 +202,7 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 
 ---
 
+(3sol)=
 [3.](3) *(Homework 1 question).*
 
 (i) We are given $f:\mathbb{R}\to\mathbb{R}$; $f(x)=4x+7$. Intuition tells us that 
@@ -254,7 +258,7 @@ $$
 For this $f$, $\lim_{x\rightarrow 0}f(x)$ is not defined, since $0$ is not a limit point of the domain of $f$.
 
 
-
+(3iiisol)=
 (iii) Finally, let $f:(0,\infty)\to\mathbb{R}$; $f(x)=x+\frac{1}{x}$. The limit of $f(x)$ as $x\rightarrow 2$ ought to be $2+\frac{1}{2}=\frac{5}{2}$.
 
 Let $\varepsilon>0$, and consider

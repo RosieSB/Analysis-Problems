@@ -15,12 +15,12 @@ In statement (iv), the quantifiers $\forall$ and $\exists$ are the wrong way rou
 Bonus exercise: prove that (iv) holds if and only if $(x_n)$ is the constant sequence $x_n=l$ for all $n\in\mathbb{N}$.
 
 ---
-
+(P2sol)=
 [P2.](P2) To appear (Homework 1 question)
 
 
 ---
-
+(P3sol)=
 [P3.](P3) To appear (Homework 1 question)
 
 ---
@@ -162,10 +162,12 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 
 ---
 
+(2sol)=
 [2.](2) To appear (Homework 1 question)
    
 ---
 
+(3sol)=
 [3.](3) To appear (Homework 1 question)
 
 ---
