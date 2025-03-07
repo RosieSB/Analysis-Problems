@@ -225,7 +225,7 @@ Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \
     f(x) = \displaystyle\frac{(1 + x)^{2} - 1}{x}.
     $$
 
-    Find an extension of $f$ to the whole of $\mathbb{R}$ that is continuous there.
+    Prove that $f$ has a continuous extension to the whole of $\mathbb{R}$, and give its formula.
    
     (ii) Write down the largest subset of $\mathbb{R}$ which can be taken as the domain $A$ of the function $f$ given by
     
@@ -233,7 +233,9 @@ Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \
     f(x) = \displaystyle\frac{x^{3}-8}{x^{2} - 4}
     $$
 
-    and explain why $f$ is continuous at every point of $A$. The complement $A^{c}$ of $A$ in $\mathbb{R}$ comprises two points. Show that $f$ may be extended to be continuous at only one of these points, and write down this continuous extension.
+    and explain why $f$ is continuous at every point of $A$ (you may find it helpful to reference theorems/examples from the lecture notes). 
+    
+    The complement $A^{c}$ of $A$ in $\mathbb{R}$ comprises two points. Show that $f$ may be extended to be continuous at only one of these points, and write down this continuous extension.
 
 (19)=
 19. *(Homework 2 question).* Suppose that the function $g: \mathbb{R} \rightarrow \mathbb{R}$ is continuous at $a$ with $g(a) > 0$. Show that there exists $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. [Hint: Use the $\varepsilon-\delta$ criterion for continuity.]
