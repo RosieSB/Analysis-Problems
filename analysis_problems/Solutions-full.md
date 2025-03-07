@@ -752,6 +752,15 @@ $ \lim_{n\rightarrow\infty} \mathbb{1}_{(a, b)}(y_{n}) = 1 \neq \mathbb{1}_{(a, 
 ---
 
 [25.](25)
+(Homework 3 question?)
+<br>
+*Something* is $x$. That is, define $g:[a,b]\to\mathbb{R}$ given by $g(x) = f(x) - x$. Then $g$ is continuous (because $f$ is and the function $h(x)=x$ is, and using algebra of limits). Since the range of $f$ is contained in $(a, b)$, we have $f(a) > a$ and $f(b) < b$, and so $g(a) = f(a) - a > 0$ and $g(b) = f(b) - b < 0$. So we can apply the intermediate value theorem to the function $g$ on $[a,b]$. This says that there exists $c \in (a, b)$ such that $g(c) = 0$, i.e. $f(c) = c$.
+<br>
+For the counter--example, consider $f(x) = x^2$. It is continuous on $(0, 1)$ but there is no $c \in (0, 1)$ for which $c^2 = c$.
+
+---
+
+[26.](26) 
 (i) Let $f:\mathbb{R}\to\mathbb{Z}$ be continuous, and suppose $f$ is not a constant function.
 
 Then there must be $a,b\in\mathbb{R}$ such that $a\neq b$ and $f(a)\neq f(b)$. Without loss of generality, assume $a<b$. 
@@ -761,14 +770,6 @@ Then $f$ is continuous on $[a,b]$, and since $f(a)\neq f(b)$, $f$ is also non-co
 It follows that $f$ must be a constant function.
 
 (ii) Argue as in (i), using the fact that between any two rational numbers, we can find an irrational number.
-
----
-
-[26.](26) (Homework 3 question?)
-<br>
-*Something* is $x$. That is, define $g:[a,b]\to\mathbb{R}$ given by $g(x) = f(x) - x$. Then $g$ is continuous (because $f$ is and the function $h(x)=x$ is, and using algebra of limits). Since the range of $f$ is contained in $(a, b)$, we have $f(a) > a$ and $f(b) < b$, and so $g(a) = f(a) - a > 0$ and $g(b) = f(b) - b < 0$. So we can apply the intermediate value theorem to the function $g$ on $[a,b]$. This says that there exists $c \in (a, b)$ such that $g(c) = 0$, i.e. $f(c) = c$.
-<br>
-For the counter--example, consider $f(x) = x^2$. It is continuous on $(0, 1)$ but there is no $c \in (0, 1)$ for which $c^2 = c$.
 
 ---
 
