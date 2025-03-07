@@ -288,14 +288,14 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 [Hint: This is a similar proof to that of [Problem 24](#24). This time you need to consider a function of the form $g(x) = f(x) - $ (*something*). What is *something*?] Give a counter-example to demonstrate that the claim is false if the domain of $f$ is restricted to $(0, 1)$.
 
 (26)=
-26. Use [Corollary 3.3](https://rosiesb.github.io/Analysis-Notes/3Cty.html#interval) to prove each of the following statements.
+26. Complete the proof of the extreme value theorem ([Theorem 3.5](https://rosiesb.github.io/Analysis-Notes/3Cty.html#thm:evt)), i.e. prove that a continuous function $f:[a,b]\to\mathbb{R}$ attains its infimum.
+
+(27)=
+27. Use [Corollary 3.3](https://rosiesb.github.io/Analysis-Notes/3Cty.html#interval) to prove each of the following statements.
 
     (i) Every continuous function from $\mathbb{R}$ to $\mathbb{Z}$ is constant.
 
     (ii) Every continuous function from $\mathbb{R}$ to $\mathbb{Q}$ is constant.
-
-(27)=
-27. Complete the proof of the extreme value theorem ([Theorem 3.5](https://rosiesb.github.io/Analysis-Notes/3Cty.html#thm:evt)), i.e. prove that a continuous function $f:[a,b]\to\mathbb{R}$ attains its infimum.
 
 (28)=
 28. Show that if $f:[0,1] \rightarrow \mathbb{R}$ is continuous and $0$ is not in the range of  $f$, then the function $\frac{1}{f}:[0,1]\to \mathbb{R}$ is bounded, where for each $x \in [0,1], \left(\frac{1}{f}\right)(x) = \frac{1}{f(x)}$.
