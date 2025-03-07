@@ -1,5 +1,8 @@
 (sol)=
 # Solutions
+Complete up to Q16, excluding homework questions. 
+
+Homework solutions will be released alongside the return of each piece of work.
 
 (ch1sol)=
 ## Preliminary problems
