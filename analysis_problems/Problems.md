@@ -273,6 +273,8 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 
 (22)=
 22.  *(Homework 2 question).* Show that Dirichlet's "other" function, as discussed in [Example 3.10](https://rosiesb.github.io/Analysis-Notes/3Cty.html#eg:dirichlet2) in the notes, is discontinuous at every rational point in its domain.
+<br>
+[Hint: Let $a\in[0,1)\cap\mathbb{Q}$, and use the fact that for all $n\in\mathbb{N}$, there is an irrational number $x_n$ lying strictly between $a$ and $a+\frac{1}{n}$. (See also Cor 2.14 on page 42 of the [MAS107/117 Sem 2 lecture notes](https://drive.google.com/file/d/1r9b3XqA1u-dzkbnGjPPBxIyj6YF1TE_C/view?usp=sharing).) ]
 
 (23)=
 23. What can you say about left/right continuity of the function  $\mathbb{1}_{(a, b)}:\mathbb{R}\to\mathbb{R}$ at the points $a$ and $b$?
