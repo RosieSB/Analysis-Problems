@@ -760,8 +760,11 @@ For the counter--example, consider $f(x) = x^2$. It is continuous on $(0, 1)$ bu
 
 ---
 
-[26.](26) 
-(i) Let $f:\mathbb{R}\to\mathbb{Z}$ be continuous, and suppose $f$ is not a constant function.
+[26.](26) Define $\gamma = \inf_{x \in [a, b]}f(x)$ and assume that it is not attained, so $\gamma < f(x)$ for all $x \in [a,b]$. Then consider the function $h:[a,b]\to \mathbb{R}$ given by $h(x) = \displaystyle\frac{1}{f(x) - \gamma}$. This is continuous, and hence bounded on $[a, b]$. So there exists $K \geq 0$ such that $|h(x)| \leq K$ for all $x \in [a, b]$. By Problem 16(ii), given any $\varepsilon > 0$, there exists $x \in [a, b]$ such that $f(x) < \gamma + \varepsilon$. Now take $\varepsilon = \frac{1}{K}$ to deduce that $h(x) > K$, which yields the required contradiction.
+
+---
+
+[27.](27) (i) Let $f:\mathbb{R}\to\mathbb{Z}$ be continuous, and suppose $f$ is not a constant function.
 
 Then there must be $a,b\in\mathbb{R}$ such that $a\neq b$ and $f(a)\neq f(b)$. Without loss of generality, assume $a<b$. 
 
@@ -770,10 +773,6 @@ Then $f$ is continuous on $[a,b]$, and since $f(a)\neq f(b)$, $f$ is also non-co
 It follows that $f$ must be a constant function.
 
 (ii) Argue as in (i), using the fact that between any two rational numbers, we can find an irrational number.
-
----
-
-[27.](27) Define $\gamma = \inf_{x \in [a, b]}f(x)$ and assume that it is not attained, so $\gamma < f(x)$ for all $x \in [a,b]$. Then consider the function $h:[a,b]\to \mathbb{R}$ given by $h(x) = \displaystyle\frac{1}{f(x) - \gamma}$. This is continuous, and hence bounded on $[a, b]$. So there exists $K \geq 0$ such that $|h(x)| \leq K$ for all $x \in [a, b]$. By Problem 16(ii), given any $\varepsilon > 0$, there exists $x \in [a, b]$ such that $f(x) < \gamma + \varepsilon$. Now take $\varepsilon = \frac{1}{K}$ to deduce that $h(x) > K$, which yields the required contradiction.
 
 ---
 

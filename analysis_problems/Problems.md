@@ -211,7 +211,7 @@ Prove that $|f|$ is continuous at $a$, where $|f|(x) = |f(x)|$, for all $x \in \
 16. Define $f:\mathbb{R} \setminus \{0\}\to \mathbb{R}$ and $g: \mathbb{R} \rightarrow \mathbb{R}\setminus \{0\}$ by $f(x) = \frac{1}{x}$, and $g(x) = 1 + x^{2}$. Write down the functions $f \circ g$, and $g \circ f$, giving their domains explicitly. What can you say about continuity of these functions?
 
 (17)=
-17. For each of the functions in [Problem 7](#7):
+17. For each of the functions in [Problem 8](#8):
 
     (i) Find the maximum subset of $\mathbb{R}$ on which it is continuous.
     
