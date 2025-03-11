@@ -28,7 +28,7 @@ In [P2](#P2), there were some issues with mathematical writing, so make sure you
 For this question, it's fine to just write down what the limit points are, but of course we like proofs in this module. If you did include a proof, well done! And take a look for comments about its structure and presentation. The [solutions](#2sol) do not currently include proofs, but I hope to add these in soon --- check back in a few days if you would like to see how they might go.
 
 ### Problem 3
-The three parts of this question were not of equal difficulty, and this was intentional. I would say part (iii) is definitely the hardest, so well done if you got that one out. If you didn't, take a look at the indidual feedback and see if you can make some progress, and/or, bring it to an office hour. You may find it easier to tackle now you have had more time to practice.
+The three parts of this question were not of equal difficulty, and this was intentional. I would say part (iii) is definitely the hardest, so well done if you got that one out. If you didn't, take a look at the individual feedback and see if you can make some progress, and/or, bring it to an office hour. You may find it easier to tackle now you have had more time to practise.
 
 One of the more common issues people had in [Problem 3(iii)](#3) was defining a $\delta$ that depended on $x$ as well as $\varepsilon$. This is an understandable error: once you get to the stage
 ```{math}
