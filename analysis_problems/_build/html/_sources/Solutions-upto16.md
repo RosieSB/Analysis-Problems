@@ -15,13 +15,40 @@ In statement (iv), the quantifiers $\forall$ and $\exists$ are the wrong way rou
 Bonus exercise: prove that (iv) holds if and only if $(x_n)$ is the constant sequence $x_n=l$ for all $n\in\mathbb{N}$.
 
 ---
+
 (P2sol)=
-[P2.](P2) To appear (Homework 1 question)
+[P2.](P2) *(Homework 1 question).*
+
+Let $\varepsilon>0$. According to the definition, we must prove there is an $N\in\mathbb{N}$ for which $\left|\frac{2n}{3n-1}-\frac{2}{3}\right|<\varepsilon$ whenever $n\geq N$.
+
+Now,
+
+$$
+\left|x_n-\frac{2}{3}\right| = \left|\frac{2n}{3n-1}-\frac{2}{3}\right| = \frac{6n-(6n-2)}{3(3n-1)} = \frac{2}{3(3n-1)}.
+$$
+
+This will be strictly less than $\varepsilon$ whenever $3n-1>\frac{2}{3\varepsilon}$., or in other words, whenever
+
+$$
+n>\frac{1}{3}\left(\frac{2}{3\varepsilon}+1\right)=\frac{2+3\varepsilon}{9\varepsilon}.
+$$
+
+Let $N$ be any integer greater than $\frac{2+3\varepsilon}{9\varepsilon}$. Then $\left|x_n-\frac{2}{3}\right|<\varepsilon$ for all $n\geq N$, and we have proven that $x_n\rightarrow\frac{2}{3}$ as $n\rightarrow\infty$ using the definition.
 
 
 ---
+
 (P3sol)=
-[P3.](P3) To appear (Homework 1 question)
+[P3.](P3) *(Homework 1 question).*
+
+The Bolzano--Weierstrass theorem states that every bounded sequence has a convergent subsequence. Its proof combines the following two results:
+
+- The monotone convergence theorem (Theorem 3.10 in the MAS107 notes), which states that bounded monotone sequences must converge. <br> More specifically, every monotone increasing sequence that is bounded above converges to its supremum, and every monotone decreasing sequence bounded below converges to its infimum.
+
+- Theorem 3.13 from MAS107: Every sequence has a monotone subsequence.
+
+**Proof of Bolzano--Weierstrass:** <br>
+If $(x_n)$ is a bounded sequence, then it has a monotone subsequence, $(x_{n_k})$, by Theorem 3.13. This subsequence must also be bounded since $(x_n)$ is bounded, and hence it converges by the monotone convergence theorem.
 
 ---
 
@@ -163,12 +190,114 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 ---
 
 (2sol)=
-[2.](2) To appear (Homework 1 question)
+[2.](2) *(Homework 1 question).*
    
+(i) $L=[0,1]\cup[2,3]$.
+   
+(ii) $L=\emptyset$.  (All convergent sequences in $\mathbb{Z}$ are eventually constant.)
+   
+(iii) $L=\mathbb{R}$.
+   
+(iv) $L=[0,1]$
+   
+(v) $L=\{0\}$
+
 ---
 
 (3sol)=
-[3.](3) To appear (Homework 1 question)
+[3.](3) *(Homework 1 question).*
+
+(i) We are given $f:\mathbb{R}\to\mathbb{R}$; $f(x)=4x+7$. Intuition tells us that 
+
+$$
+\lim_{x\rightarrow 2}f(x) = 4\cdot 2+7 = 15.
+$$
+
+To prove this, let $\varepsilon>0$. We seek $\delta>0$ such that $0<|x-2|<\delta$ implies $|f(x)-15|<\varepsilon$.
+
+Note that
+
+$$
+|f(x)-15| = |4x+7-15| = |4x-8| = 4|x-2|.
+$$
+
+Therefore, putting $\delta=\frac{\varepsilon}{4}$, we get that whenever $0<|x-2|<\delta$, 
+
+$$
+|f(x)-17| = 4|x-2| < 4\cdot\frac{\varepsilon}{4} = \varepsilon.
+$$
+
+For the limit as $x\rightarrow 0$, we claim that $\lim_{x\rightarrow 0}f(x)=7$. To prove this, note that $|f(x)-7|=4|x|$. This means that given $\varepsilon>0$, if $0<|x|<\frac{\varepsilon}{4}$ then 
+
+$$
+|f(x)-7|<4\cdot\frac{\varepsilon}{4} = \varepsilon.
+$$
+
+It follows that $\lim_{x\rightarrow 0}f(x)$ exists and is equal to $7$.
+
+(ii) We have $f:\{0\}\cup[1,3]\to\mathbb{R}$; $f(x)=3x^2-1$, so using intuition only, $\lim_{x\rightarrow 2} f(x)=3\cdot 4-1=11$.
+
+Let $\varepsilon>0$. We seek $\delta>0$ such that for all $x\in\{0\}\cup[1,3]$, 
+
+$$
+0<|x-2|<\delta \; \Rightarrow \; |f(x)-11|<\varepsilon.
+$$
+
+Now, for $x\in\{0\}\cup[1,3]$,
+
+$$
+|f(x)-11| = |3x^2-12| = 3|x^2-4| = 3|x-2||x+2| \leq 15|x-2|.
+$$    
+
+(Here, we have used the fact that $|x+2| = x+2 \leq 5$, for $x\in\{0\}\cup[1,3]$.) 
+
+Hence we can let $\delta:=\frac{\varepsilon}{15}$ and conclude that if $x\in\{0\}\cup[1,3]$ and $0<|x-2|<\frac{1}{15}$, then 
+
+$$
+|f(x)-11|<15\cdot\frac{\varepsilon}{15} =\varepsilon.
+$$
+
+For this $f$, $\lim_{x\rightarrow 0}f(x)$ is not defined, since $0$ is not a limit point of the domain of $f$.
+
+
+(3iiisol)=
+(iii) Finally, let $f:(0,\infty)\to\mathbb{R}$; $f(x)=x+\frac{1}{x}$. The limit of $f(x)$ as $x\rightarrow 2$ ought to be $2+\frac{1}{2}=\frac{5}{2}$.
+
+Let $\varepsilon>0$, and consider
+
+$$
+\left|f(x)-\frac{5}{2}\right| = \left|x+\frac{1}{x}-\frac{5}{2}\right| = \left|\frac{2x^2+2-5x}{2x}\right| = \left|\frac{(x-2)(2x-1)}{2x}\right| = |x-2|\left|1-\frac{1}{2x}\right|.
+$$
+
+Observe that if $x\in(0,\infty)$ and $|x-2|<1$, then $0<1-\frac{1}{2x}<1$, and so 
+
+$$
+\left|f(x)-\frac{5}{2}\right| = |x-2|\left|1-\frac{1}{2x}\right| < |x-2|.
+$$
+
+To make sure the above inequality holds **and** is bounded above by $\varepsilon$, let $\delta:=\min\{\varepsilon,1\}$. 
+
+Suppose that $x\in(0,\infty)$ with $0<|x-2|<\delta$. Then by our choice of $\delta$, $0<|x-2|<1$ and $0<|x-2|<\varepsilon$ both hold simultaneously. It follows that 
+
+$$
+\left|f(x)-\frac{5}{2}\right|<|x-2|<\varepsilon,
+$$
+
+and hence $\lim_{x\rightarrow 2}f(x)=\frac{5}{2}$ is proved.
+
+For the last part, note that $f(x)=x+\frac{1}{x}$ does not converge to a finite limit as $x\rightarrow 0$. In fact, $\lim_{x\rightarrow 0}f(x)=\infty$. One way to prove this is to show that $f(x)$ surpasses any possible bound as $x\rightarrow 0$. Note that
+
+$$
+f(x) = x+\frac{1}{x} > \frac{1}{x}.
+$$
+
+Therefore, given an arbitrary number $K>0$, we can take $0<x<\frac{1}{K}$ to ensure that 
+
+$$
+f(x) = x+\frac{1}{x} > \frac{1}{x} > K.
+$$
+
+This proves that $\lim_{x\rightarrow 0} f(x) = \infty$, for this choice of $f$.
 
 ---
 

@@ -66,6 +66,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Solutions-upto16';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3. Homework feedback" href="HW-feedback.html" />
     <link rel="prev" title="1. Problems" href="Problems.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -173,6 +174,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problems.html">1. Problems</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HW-feedback.html">3. Homework feedback</a></li>
 </ul>
 
     </div>
@@ -390,9 +392,28 @@ The correct statements are (ii) and (v).</p>
 <p>In statement (iv), the quantifiers <span class="math notranslate nohighlight">\(\forall\)</span> and <span class="math notranslate nohighlight">\(\exists\)</span> are the wrong way round, while in (i) they are missing altogether. Statement (iii) asserts that last part, <span class="math notranslate nohighlight">\(|x_n-l|&lt;\varepsilon\)</span> <span class="math notranslate nohighlight">\(\forall n\geq N\)</span>, should hold for all <span class="math notranslate nohighlight">\(\varepsilon\)</span> and for all <span class="math notranslate nohighlight">\(N\)</span> — so again, there is an issue with the quantifiers.</p>
 <p>Bonus exercise: prove that (iv) holds if and only if <span class="math notranslate nohighlight">\((x_n)\)</span> is the constant sequence <span class="math notranslate nohighlight">\(x_n=l\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>.</p>
 <hr class="docutils" />
-<p id="p2sol"><a class="reference internal" href="Problems.html#p2"><span class="std std-ref">P2.</span></a> To appear (Homework 1 question)</p>
+<p id="p2sol"><a class="reference internal" href="Problems.html#p2"><span class="std std-ref">P2.</span></a> <em>(Homework 1 question).</em></p>
+<p>Let <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>. According to the definition, we must prove there is an <span class="math notranslate nohighlight">\(N\in\mathbb{N}\)</span> for which <span class="math notranslate nohighlight">\(\left|\frac{2n}{3n-1}-\frac{2}{3}\right|&lt;\varepsilon\)</span> whenever <span class="math notranslate nohighlight">\(n\geq N\)</span>.</p>
+<p>Now,</p>
+<div class="math notranslate nohighlight">
+\[
+\left|x_n-\frac{2}{3}\right| = \left|\frac{2n}{3n-1}-\frac{2}{3}\right| = \frac{6n-(6n-2)}{3(3n-1)} = \frac{2}{3(3n-1)}.
+\]</div>
+<p>This will be strictly less than <span class="math notranslate nohighlight">\(\varepsilon\)</span> whenever <span class="math notranslate nohighlight">\(3n-1&gt;\frac{2}{3\varepsilon}\)</span>., or in other words, whenever</p>
+<div class="math notranslate nohighlight">
+\[
+n&gt;\frac{1}{3}\left(\frac{2}{3\varepsilon}+1\right)=\frac{2+3\varepsilon}{9\varepsilon}.
+\]</div>
+<p>Let <span class="math notranslate nohighlight">\(N\)</span> be any integer greater than <span class="math notranslate nohighlight">\(\frac{2+3\varepsilon}{9\varepsilon}\)</span>. Then <span class="math notranslate nohighlight">\(\left|x_n-\frac{2}{3}\right|&lt;\varepsilon\)</span> for all <span class="math notranslate nohighlight">\(n\geq N\)</span>, and we have proven that <span class="math notranslate nohighlight">\(x_n\rightarrow\frac{2}{3}\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow\infty\)</span> using the definition.</p>
 <hr class="docutils" />
-<p id="p3sol"><a class="reference internal" href="Problems.html#p3"><span class="std std-ref">P3.</span></a> To appear (Homework 1 question)</p>
+<p id="p3sol"><a class="reference internal" href="Problems.html#p3"><span class="std std-ref">P3.</span></a> <em>(Homework 1 question).</em></p>
+<p>The Bolzano–Weierstrass theorem states that every bounded sequence has a convergent subsequence. Its proof combines the following two results:</p>
+<ul class="simple">
+<li><p>The monotone convergence theorem (Theorem 3.10 in the MAS107 notes), which states that bounded monotone sequences must converge. <br> More specifically, every monotone increasing sequence that is bounded above converges to its supremum, and every monotone decreasing sequence bounded below converges to its infimum.</p></li>
+<li><p>Theorem 3.13 from MAS107: Every sequence has a monotone subsequence.</p></li>
+</ul>
+<p><strong>Proof of Bolzano–Weierstrass:</strong> <br>
+If <span class="math notranslate nohighlight">\((x_n)\)</span> is a bounded sequence, then it has a monotone subsequence, <span class="math notranslate nohighlight">\((x_{n_k})\)</span>, by Theorem 3.13. This subsequence must also be bounded since <span class="math notranslate nohighlight">\((x_n)\)</span> is bounded, and hence it converges by the monotone convergence theorem.</p>
 <hr class="docutils" />
 <p><a class="reference internal" href="Problems.html#p4"><span class="std std-ref">P4.</span></a>(i) Let <span class="math notranslate nohighlight">\(a, b \geq 0\)</span>. Then,</p>
 <div class="math notranslate nohighlight">
@@ -486,9 +507,83 @@ The correct statements are (ii) and (v).</p>
 <p>(iv) <span class="math notranslate nohighlight">\(A=\mathbb{R} \setminus \{1\}\)</span>.</p>
 <p>(v) <span class="math notranslate nohighlight">\(A=\mathbb{R} \setminus \{0\}\)</span>.</p>
 <hr class="docutils" />
-<p id="id1"><a class="reference internal" href="Problems.html#id2"><span class="std std-ref">2.</span></a> To appear (Homework 1 question)</p>
+<p id="id1"><a class="reference internal" href="Problems.html#id2"><span class="std std-ref">2.</span></a> <em>(Homework 1 question).</em></p>
+<p>(i) <span class="math notranslate nohighlight">\(L=[0,1]\cup[2,3]\)</span>.</p>
+<p>(ii) <span class="math notranslate nohighlight">\(L=\emptyset\)</span>.  (All convergent sequences in <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span> are eventually constant.)</p>
+<p>(iii) <span class="math notranslate nohighlight">\(L=\mathbb{R}\)</span>.</p>
+<p>(iv) <span class="math notranslate nohighlight">\(L=[0,1]\)</span></p>
+<p>(v) <span class="math notranslate nohighlight">\(L=\{0\}\)</span></p>
 <hr class="docutils" />
-<p id="id2"><a class="reference internal" href="Problems.html#id3"><span class="std std-ref">3.</span></a> To appear (Homework 1 question)</p>
+<p id="id2"><a class="reference internal" href="Problems.html#id3"><span class="std std-ref">3.</span></a> <em>(Homework 1 question).</em></p>
+<p>(i) We are given <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x)=4x+7\)</span>. Intuition tells us that</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{x\rightarrow 2}f(x) = 4\cdot 2+7 = 15.
+\]</div>
+<p>To prove this, let <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>. We seek <span class="math notranslate nohighlight">\(\delta&gt;0\)</span> such that <span class="math notranslate nohighlight">\(0&lt;|x-2|&lt;\delta\)</span> implies <span class="math notranslate nohighlight">\(|f(x)-15|&lt;\varepsilon\)</span>.</p>
+<p>Note that</p>
+<div class="math notranslate nohighlight">
+\[
+|f(x)-15| = |4x+7-15| = |4x-8| = 4|x-2|.
+\]</div>
+<p>Therefore, putting <span class="math notranslate nohighlight">\(\delta=\frac{\varepsilon}{4}\)</span>, we get that whenever <span class="math notranslate nohighlight">\(0&lt;|x-2|&lt;\delta\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+|f(x)-17| = 4|x-2| &lt; 4\cdot\frac{\varepsilon}{4} = \varepsilon.
+\]</div>
+<p>For the limit as <span class="math notranslate nohighlight">\(x\rightarrow 0\)</span>, we claim that <span class="math notranslate nohighlight">\(\lim_{x\rightarrow 0}f(x)=7\)</span>. To prove this, note that <span class="math notranslate nohighlight">\(|f(x)-7|=4|x|\)</span>. This means that given <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>, if <span class="math notranslate nohighlight">\(0&lt;|x|&lt;\frac{\varepsilon}{4}\)</span> then</p>
+<div class="math notranslate nohighlight">
+\[
+|f(x)-7|&lt;4\cdot\frac{\varepsilon}{4} = \varepsilon.
+\]</div>
+<p>It follows that <span class="math notranslate nohighlight">\(\lim_{x\rightarrow 0}f(x)\)</span> exists and is equal to <span class="math notranslate nohighlight">\(7\)</span>.</p>
+<p>(ii) We have <span class="math notranslate nohighlight">\(f:\{0\}\cup[1,3]\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x)=3x^2-1\)</span>, so using intuition only, <span class="math notranslate nohighlight">\(\lim_{x\rightarrow 2} f(x)=3\cdot 4-1=11\)</span>.</p>
+<p>Let <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>. We seek <span class="math notranslate nohighlight">\(\delta&gt;0\)</span> such that for all <span class="math notranslate nohighlight">\(x\in\{0\}\cup[1,3]\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+0&lt;|x-2|&lt;\delta \; \Rightarrow \; |f(x)-11|&lt;\varepsilon.
+\]</div>
+<p>Now, for <span class="math notranslate nohighlight">\(x\in\{0\}\cup[1,3]\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+|f(x)-11| = |3x^2-12| = 3|x^2-4| = 3|x-2||x+2| \leq 15|x-2|.
+\]</div>
+<p>(Here, we have used the fact that <span class="math notranslate nohighlight">\(|x+2| = x+2 \leq 5\)</span>, for <span class="math notranslate nohighlight">\(x\in\{0\}\cup[1,3]\)</span>.)</p>
+<p>Hence we can let <span class="math notranslate nohighlight">\(\delta:=\frac{\varepsilon}{15}\)</span> and conclude that if <span class="math notranslate nohighlight">\(x\in\{0\}\cup[1,3]\)</span> and <span class="math notranslate nohighlight">\(0&lt;|x-2|&lt;\frac{1}{15}\)</span>, then</p>
+<div class="math notranslate nohighlight">
+\[
+|f(x)-11|&lt;15\cdot\frac{\varepsilon}{15} =\varepsilon.
+\]</div>
+<p>For this <span class="math notranslate nohighlight">\(f\)</span>, <span class="math notranslate nohighlight">\(\lim_{x\rightarrow 0}f(x)\)</span> is not defined, since <span class="math notranslate nohighlight">\(0\)</span> is not a limit point of the domain of <span class="math notranslate nohighlight">\(f\)</span>.</p>
+<p id="iiisol">(iii) Finally, let <span class="math notranslate nohighlight">\(f:(0,\infty)\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x)=x+\frac{1}{x}\)</span>. The limit of <span class="math notranslate nohighlight">\(f(x)\)</span> as <span class="math notranslate nohighlight">\(x\rightarrow 2\)</span> ought to be <span class="math notranslate nohighlight">\(2+\frac{1}{2}=\frac{5}{2}\)</span>.</p>
+<p>Let <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>, and consider</p>
+<div class="math notranslate nohighlight">
+\[
+\left|f(x)-\frac{5}{2}\right| = \left|x+\frac{1}{x}-\frac{5}{2}\right| = \left|\frac{2x^2+2-5x}{2x}\right| = \left|\frac{(x-2)(2x-1)}{2x}\right| = |x-2|\left|1-\frac{1}{2x}\right|.
+\]</div>
+<p>Observe that if <span class="math notranslate nohighlight">\(x\in(0,\infty)\)</span> and <span class="math notranslate nohighlight">\(|x-2|&lt;1\)</span>, then <span class="math notranslate nohighlight">\(0&lt;1-\frac{1}{2x}&lt;1\)</span>, and so</p>
+<div class="math notranslate nohighlight">
+\[
+\left|f(x)-\frac{5}{2}\right| = |x-2|\left|1-\frac{1}{2x}\right| &lt; |x-2|.
+\]</div>
+<p>To make sure the above inequality holds <strong>and</strong> is bounded above by <span class="math notranslate nohighlight">\(\varepsilon\)</span>, let <span class="math notranslate nohighlight">\(\delta:=\min\{\varepsilon,1\}\)</span>.</p>
+<p>Suppose that <span class="math notranslate nohighlight">\(x\in(0,\infty)\)</span> with <span class="math notranslate nohighlight">\(0&lt;|x-2|&lt;\delta\)</span>. Then by our choice of <span class="math notranslate nohighlight">\(\delta\)</span>, <span class="math notranslate nohighlight">\(0&lt;|x-2|&lt;1\)</span> and <span class="math notranslate nohighlight">\(0&lt;|x-2|&lt;\varepsilon\)</span> both hold simultaneously. It follows that</p>
+<div class="math notranslate nohighlight">
+\[
+\left|f(x)-\frac{5}{2}\right|&lt;|x-2|&lt;\varepsilon,
+\]</div>
+<p>and hence <span class="math notranslate nohighlight">\(\lim_{x\rightarrow 2}f(x)=\frac{5}{2}\)</span> is proved.</p>
+<p>For the last part, note that <span class="math notranslate nohighlight">\(f(x)=x+\frac{1}{x}\)</span> does not converge to a finite limit as <span class="math notranslate nohighlight">\(x\rightarrow 0\)</span>. In fact, <span class="math notranslate nohighlight">\(\lim_{x\rightarrow 0}f(x)=\infty\)</span>. One way to prove this is to show that <span class="math notranslate nohighlight">\(f(x)\)</span> surpasses any possible bound as <span class="math notranslate nohighlight">\(x\rightarrow 0\)</span>. Note that</p>
+<div class="math notranslate nohighlight">
+\[
+f(x) = x+\frac{1}{x} &gt; \frac{1}{x}.
+\]</div>
+<p>Therefore, given an arbitrary number <span class="math notranslate nohighlight">\(K&gt;0\)</span>, we can take <span class="math notranslate nohighlight">\(0&lt;x&lt;\frac{1}{K}\)</span> to ensure that</p>
+<div class="math notranslate nohighlight">
+\[
+f(x) = x+\frac{1}{x} &gt; \frac{1}{x} &gt; K.
+\]</div>
+<p>This proves that <span class="math notranslate nohighlight">\(\lim_{x\rightarrow 0} f(x) = \infty\)</span>, for this choice of <span class="math notranslate nohighlight">\(f\)</span>.</p>
 <hr class="docutils" />
 <p><a class="reference internal" href="Problems.html#id4"><span class="std std-ref">4.</span></a> We had <span class="math notranslate nohighlight">\(A= \mathbb{R} \setminus \{1, -2, -3\}\)</span>, and <span class="math notranslate nohighlight">\(f_2:A\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(\displaystyle g_{2}(x)= \frac{(x + 4)}{(x + 2)(x + 3)}\)</span>.</p>
 <p>It is considerably easier to use the sequential criterion for functional limits (Theorem 2.1) than it is to proceed directly using the Definition 2.1. We include both methods, for completeness.</p>
@@ -706,6 +801,15 @@ By Corollary 1.1, if <span class="math notranslate nohighlight">\((x_{n})\)</spa
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title"><span class="section-number">1. </span>Problems</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="HW-feedback.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Homework feedback</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
