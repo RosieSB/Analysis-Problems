@@ -87,7 +87,7 @@
         
 
 \title{MAS2004/9 Semester 2 Problems}
-\date{Mar 07, 2025}
+\date{Mar 13, 2025}
 \release{}
 \author{Rosie Shewell Brockway}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -498,7 +498,7 @@ Define \(f:\mathbb{R} \setminus \{0\}\to \mathbb{R}\) and \(g: \mathbb{R} \right
 \setcounter{enumi}{16}
 \item {} 
 \sphinxAtStartPar
-For each of the functions in {\hyperref[\detokenize{Problems:id7}]{\sphinxcrossref{Problem 7}}}:
+For each of the functions in {\hyperref[\detokenize{Problems:id8}]{\sphinxcrossref{Problem 8}}}:
 
 \sphinxAtStartPar
 (i) Find the maximum subset of \(\mathbb{R}\) on which it is continuous.
@@ -519,7 +519,7 @@ For each of the functions in {\hyperref[\detokenize{Problems:id7}]{\sphinxcrossr
     \end{split}
 \end{equation*}
 \sphinxAtStartPar
-Find an extension of \(f\) to the whole of \(\mathbb{R}\) that is continuous there.
+Prove that \(f\) has a continuous extension to the whole of \(\mathbb{R}\), and give its formula.
 
 \sphinxAtStartPar
 (ii) Write down the largest subset of \(\mathbb{R}\) which can be taken as the domain \(A\) of the function \(f\) given by
@@ -529,7 +529,10 @@ Find an extension of \(f\) to the whole of \(\mathbb{R}\) that is continuous the
     \end{split}
 \end{equation*}
 \sphinxAtStartPar
-and explain why \(f\) is continuous at every point of \(A\). The complement \(A^{c}\) of \(A\) in \(\mathbb{R}\) comprises two points. Show that \(f\) may be extended to be continuous at only one of these points, and write down this continuous extension.
+and explain why \(f\) is continuous at every point of \(A\) (you may find it helpful to reference theorems/examples from the lecture notes).
+
+\sphinxAtStartPar
+The complement \(A^{c}\) of \(A\) in \(\mathbb{R}\) comprises two points. Show that \(f\) may be extended to be continuous at only one of these points, and write down this continuous extension.
 
 \end{enumerate}
 \phantomsection\label{\detokenize{Problems:id19}}\begin{enumerate}
@@ -1919,31 +1922,118 @@ The right limit is \(\displaystyle\lim_{x \rightarrow 0^+} \text{sgn}(x) = 1\), 
 
 \bigskip\hrule\bigskip
 
-
+\phantomsection\label{\detokenize{Solutions-full:id3}}
 \sphinxAtStartPar
 {\hyperref[\detokenize{Problems:id8}]{\sphinxcrossref{\DUrole{std,std-ref}{8.}}}} \sphinxstyleemphasis{(Homework 2 question).}
 
 \sphinxAtStartPar
-(i) For \(a\neq 1\), the left and right limits exist and are both equal to \(f(a)\), using the algebra of limits. The only point at which left and right limits disagree is \(a = 1\), with
+(i) We are given \(f:\mathbb{R}\to\mathbb{R}\); \(f(x) = \begin{cases} 1 -x & \text{if }x < 1\\ x^{2}& \text{if }x \geq 1. \end{cases}\)
+
+\sphinxAtStartPar
+For \(a\neq 1\), the left and right limits exist and are both equal to \(f(a)\), using the algebra of limits. The only point at which left and right limits disagree is \(a = 1\), with
 \begin{equation*}
 \begin{split}
-\lim_{x \rightarrow 1-}f(x) = 0, \; \text{ and } \; \lim_{x \rightarrow 1+}f(x) = 1.
+\lim_{x \rightarrow 1^-}f(x) = 0, \; \text{ and } \; \lim_{x \rightarrow 1^+}f(x) = 1.
 \end{split}
 \end{equation*}
 \sphinxAtStartPar
-(ii) In this case, left and right limits disagree at every \(n \in \mathbb{Z}\), with \(\lim_{x \rightarrow a-}[x] = n-1, \lim_{x \rightarrow n+}[x] = n\). At every other real number, the left and right limits exist and are both equal to the value of the function there.
+To prove the left limit, let \(\varepsilon>0\). For \(x<1\), \(f(x)=1-x\). Therefore, if \(-\varepsilon<x-1<0\), we have \(0<1-x<\varepsilon\), and hence \(|f(x)|=|1-x|<\varepsilon\).
 
 \sphinxAtStartPar
-(iii) Here, left and right limits disagree at \(x = 0, 1\) and \(2\). We have
+For the right limit: We know that if \(x>1\), \(f(x)=x^2\). Given \(\varepsilon>0\), we seek \(\delta>0\) such that if \(0<x<\delta\), then \(|f(x)-1|<\varepsilon\). Now,
 \begin{equation*}
 \begin{split}
-\lim_{x \rightarrow 0^-}h(x) = 3, \hspace{1em} \lim_{x \rightarrow 1-}h(x) = -2, \hspace{1em}  \lim_{x \rightarrow 2-}h(x) = 10,
+|f(x)-1|=|x^2-1|=|x+1|\cdot|x+1|.
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+We can bound the \(|x+1|\) factor above by \(4\) provided we choose a \(\delta\) that is at most \(1\). Indeed: if \(0<x-1<1\), then \(3<x+1<4\), so \(|x+1|<4\).
+
+\sphinxAtStartPar
+We choose \(\delta=\min\left\{1,\frac{\varepsilon}{4}\right\}\). Then, for \(0<x-1<\delta\), we have \(0<x-1<1\) and \(0<|x-1|<\frac{\varepsilon}{4}\). So,
+\begin{equation*}
+\begin{split}
+|f(x)-1|=|x+1|\cdot|x-1| < 4\cdot\frac{\varepsilon}{4}=\varepsilon.
+\end{split}
+\end{equation*}
+\begin{sphinxadmonition}{note}{Note:}
+\sphinxAtStartPar
+We could have also used algebra of limits to prove/evaluate the left\sphinxhyphen{} and right\sphinxhyphen{}limits here. For example, to show \(\lim_{x\rightarrow 1^-}f(x)=1\), apply algebra of limits to the function \(x^2\) (domain \(\mathbb{R}\)). This tells us that \(\lim_{x\rightarrow 1}x^2=1\). Therefore, by Proposition 2.1, \(\lim_{x\rightarrow 1^-}x^2=1\). But then, since \(f(x)=x^2\) for all \(x<1\), we must have that \(\lim_{x\rightarrow 1^-}f(x)=\lim_{x\rightarrow 1^-}x^2=1\).
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+(ii) Consider \(g:\mathbb{R}\to\mathbb{R}\), \(g(x) = [x] = \left\{\begin{array}{cl} \lfloor x\rfloor & \text{ if } x\geq 0 \\ \lceil x \rceil & \text{ if } x<0 \end{array}\right.\).
+
+\sphinxAtStartPar
+A quick think about how \([x]\) behaves for positive and negative \(x\) gives the graph \hyperref[\detokenize{Solutions-full:intx}]{Fig.\@ \ref{\detokenize{Solutions-full:intx}}}.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=400\sphinxpxdimen]{{[x]}.png}
+\caption{Graph of the function \(g:\mathbb{R}\to\mathbb{R}\); \(g(x)=[x]\) (Problem 8).}\label{\detokenize{Solutions-full:intx}}\end{figure}
+
+\sphinxAtStartPar
+In this case, left and right limits disagree at every \(n \in \mathbb{Z}\setminus\{0\}\). In fact, if \(n\in\mathbb{N}\), then \hyperref[\detokenize{Solutions-full:intx}]{Fig.\@ \ref{\detokenize{Solutions-full:intx}}} suggests that
+\begin{equation*}
+\begin{split}
+\lim_{x\rightarrow n^+}[x]=n, \;\lim_{x\rightarrow n^-}[x]=n-1, \; \lim_{x\rightarrow -n^+}[x]= -n+1, \text{ and } \lim_{x\rightarrow -n^-}[x]=-n.
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+At every other real number, the left and right limits exist and are both equal to the value of the function there.
+
+\sphinxAtStartPar
+Here some proofs:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+To prove \(\lim_{x \rightarrow n^+}[x] = n\): Note that if \(0<x-n<\frac{1}{2}\), we have \([x]=n\), and so \(|[x]-n|=0\). In particular, if \(\varepsilon>0\), then \(0<x-n<\frac{1}{2}\) implies \(|[x]-n|<\varepsilon\).
+
+\item {} 
+\sphinxAtStartPar
+To prove \(\lim_{x\rightarrow n^-}[x]=n-1\): By the same principle, if \(-\frac{1}{2}<x-n<0\), then \([x]=n-1\), and so \(|[x]-(n-1)|=0\). In particular, for all \(\varepsilon>0\), we have that \(-\frac{1}{2}<x-n<0\) implies \(|[x]-(n-1)|<\varepsilon\).
+
+\item {} 
+\sphinxAtStartPar
+The proofs of \(\lim_{x\rightarrow -n^+}[x]= -n+1\) and \(\lim_{x\rightarrow -n^-}[x]=-n\) are very similar — or you could just note that \([-x]=-[x]\) and apply algebra of limits.
+
+\end{itemize}
+
+\sphinxAtStartPar
+(iii) We are given \(h:\mathbb{R}\to\mathbb{R}\), \(h(x) =3 - 5\mathbb{1}_{(0, 1]}(x) + 7\mathbb{1}_{(1, 2]}(x)\). Again, it helps to draw a graph first — see \hyperref[\detokenize{Solutions-full:iii}]{Fig.\@ \ref{\detokenize{Solutions-full:iii}}}.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=500\sphinxpxdimen]{{8iii}.png}
+\caption{Graph of the function \(h=3 - 5\mathbb{1}_{(0, 1]} + 7\mathbb{1}_{(1, 2]}\) (Problem 8).}\label{\detokenize{Solutions-full:iii}}\end{figure}
+
+\sphinxAtStartPar
+Here, left and right limits disagree at \(x = 0, 1\) and \(2\). We have
+\begin{equation*}
+\begin{split}
+\lim_{x \rightarrow 0^-}h(x) = 3, \hspace{1em} \lim_{x \rightarrow 1^-}h(x) = -2, \hspace{1em}  \lim_{x \rightarrow 2^-}h(x) = 10,
 \end{split}
 \end{equation*}\begin{equation*}
 \begin{split}
-\lim_{x \rightarrow 0^+}h(x) = -2, \hspace{1em} \lim_{x \rightarrow 1+}h(x) = 10, \hspace{1em}  \lim_{x \rightarrow 2+}h(x) = 3.
+\lim_{x \rightarrow 0^+}h(x) = -2, \hspace{1em} \lim_{x \rightarrow 1^+}h(x) = 10, \hspace{1em}  \lim_{x \rightarrow 2^+}h(x) = 3.
 \end{split}
 \end{equation*}
+\sphinxAtStartPar
+To prove \(\lim_{x \rightarrow 0^-}h(x) = 3\) using \sphinxhref{https://rosiesb.github.io/Analysis-Notes/2LoF.html\#marg}{Definition 2.4}, note that for any \(x<0\), \(h(x)=3\) and so \(|h(x)-3|=0\). So for any \(\varepsilon>0\) and any choice of \(\delta>0\), we have that \(-\delta<x<0\) implies \(|h(x)-3|=0<\varepsilon\).
+
+\sphinxAtStartPar
+The proof of \(\lim_{x \rightarrow 1^-}h(x) = -2\) is very similar: let \(\varepsilon>0\), and note that if \(-\frac{1}{2}<x-1<0\), then \(\frac{1}{2}<x<1\), and so \(h(x)=-2\). But then, \(|h(x)-(-2)|=0<\varepsilon\).
+
+\sphinxAtStartPar
+The proof of \(\lim_{x \rightarrow 2^-}h(x) = 10\) is exactly the same, just take \(-\frac{1}{2}<x-2<0\) and note \(h(x)=10\), instead.
+
+\sphinxAtStartPar
+The right limit proofs are similar.
+
 
 \bigskip\hrule\bigskip
 
@@ -2357,14 +2447,28 @@ f(x) = \lim_{n\rightarrow\infty} f\left(\frac{p_n}{q_n}\right) =   \lim_{n\right
 
 
 \sphinxAtStartPar
-{\hyperref[\detokenize{Problems:id22}]{\sphinxcrossref{\DUrole{std,std-ref}{22.}}}} Suppose that \(x \in \mathbb{Q}\). Then as in the solution to Example 3.7 we can find a sequence \((x_{n})\) of irrationals that converges to \(x\) and then
+{\hyperref[\detokenize{Problems:id22}]{\sphinxcrossref{\DUrole{std,std-ref}{22.}}}} Recall from \sphinxhref{https://rosiesb.github.io/Analysis-Notes/3Cty.html\#eg:dirichlet2}{Example 3.10} in the notes that Dirichlet’s “other” function (AKA Thomae’s function) is defined  \(g:[0, 1)\rightarrow \mathbb{R}\) defined by
 \begin{equation*}
 \begin{split}
-\lim_{n\rightarrow\infty} g(x_{n}) = 0 \neq g(x),
+g(x) =\begin{cases}
+	1 &\text{if $x = 0$},\\
+	\displaystyle\frac{1}{n}& \text{if $x = m/n \in \mathbb{Q}\cap[0,1)$, and $\text{gcd}(m,n)=1$.}\\
+	0&\text{if $x \in [0,1)\setminus \mathbb{Q}$}.
+\end{cases}
 \end{split}
 \end{equation*}
 \sphinxAtStartPar
-and so \(g\) is not continuous at \(x\).
+Suppose that \(a \in \mathbb{Q}\cap[0,1)\). Then \(g(a)=\frac{1}{k}\), for some fixed \(k\in\mathbb{N}\). Every real number is the limit of a sequence of irrational numbers%
+\begin{footnote}[1]\sphinxAtStartFootnote
+This, and other related properties of (ir)rational numbers, was a focus of study in MAS107/117 Semester 2.
+%
+\end{footnote}. Therefore, there is a sequence \((x_{n})\) of irrational numbers that converges to \(a\). Since \(a\in[0,1)\), we may assume (removing some initial terms if necessary) that \(x_n\in[0,1)\setminus\mathbb{Q}\) for all \(n\in\mathbb{N}\).
+
+\sphinxAtStartPar
+If \(g\) was continuous at \(a\), we would have \(\lim_{n\rightarrow\infty}g(x_n)=g(a)\). But in fact, \(g(x_n)=0\) for all \(n\in\mathbb{N}\), so \(\lim_{n\rightarrow\infty}g(x_n)=0\neq \frac{1}{k}=g(a)\).
+
+\sphinxAtStartPar
+It follows that \(g\) is discontinuous at every rational point of its domain.
 
 
 \bigskip\hrule\bigskip
@@ -3417,7 +3521,7 @@ converges.
 \sphinxAtStartPar
 Hence, by the Weierstrass \(M\)\sphinxhyphen{}test, the series \(\sum_{n=1}^\infty f_n (x )\) converges uniformly for \(x \in [0,2\pi]\). The uniform limit of a series of continuous functions is continuous, so \(f\) is therefore continuous.
 
-\phantomsection\label{\detokenize{Solutions-full:id3}}
+\phantomsection\label{\detokenize{Solutions-full:id5}}
 \sphinxAtStartPar
 {\hyperref[\detokenize{Problems:id65}]{\sphinxcrossref{\DUrole{std,std-ref}{65.*}}}} Note this question is starred, meaning it is intended more for interest and deviates more from the standard benchmark of question for this module
 
@@ -3495,7 +3599,7 @@ When \(x\) is an even integer, this series converges and equals \(0\). A quick p
 \begin{sphinxadmonition}{note}{Historical note}
 
 \sphinxAtStartPar
-In {\hyperref[\detokenize{Solutions-full:id3}]{\sphinxcrossref{Problem 65}}}, we found that at all points aside from the odd integers, the function
+In {\hyperref[\detokenize{Solutions-full:id5}]{\sphinxcrossref{Problem 65}}}, we found that at all points aside from the odd integers, the function
 \begin{equation*}
 \begin{split}
 f(x)=
@@ -4323,6 +4427,86 @@ so the result would say that for any continuous function \(f\colon [-1,1]\righta
 \end{equation*}
 \sphinxAtStartPar
 But this is clearly not the case, taking for example \(f(x)=x\).
+
+
+\bigskip\hrule\bigskip
+
+
+\sphinxstepscope
+
+
+\section{Homework feedback}
+\label{\detokenize{HW-feedback:homework-feedback}}\label{\detokenize{HW-feedback:hw-feedback}}\label{\detokenize{HW-feedback::doc}}
+\sphinxAtStartPar
+Here is some general feedback comments about each piece of homework for MAS2004/9. Individual feedback can be viewed on Crowdmark — let me know if you have any difficulty finding it.
+
+\sphinxAtStartPar
+Responding to individual feedback is the fastest way to improve as a mathematician. Hopefully your feedback will feel useful and make sense to you, but if it ever doesn’t, please get in touch and I am more than happy to look at it with you.
+
+
+\subsection{Feedback for Homework 1}
+\label{\detokenize{HW-feedback:feedback-for-homework-1}}
+\sphinxAtStartPar
+\sphinxstylestrong{Problems:} {\hyperref[\detokenize{Problems:p2}]{\sphinxcrossref{\DUrole{std,std-ref}{P2}}}}, {\hyperref[\detokenize{Problems:p3}]{\sphinxcrossref{\DUrole{std,std-ref}{P3}}}}, {\hyperref[\detokenize{Problems:id2}]{\sphinxcrossref{\DUrole{std,std-ref}{2}}}}, {\hyperref[\detokenize{Problems:id3}]{\sphinxcrossref{\DUrole{std,std-ref}{3}}}};  \sphinxstylestrong{Solutions:} {\hyperref[\detokenize{Solutions-full:p2sol}]{\sphinxcrossref{\DUrole{std,std-ref}{P2}}}}, {\hyperref[\detokenize{Solutions-full:p3sol}]{\sphinxcrossref{\DUrole{std,std-ref}{P3}}}}, {\hyperref[\detokenize{Solutions-full:id1}]{\sphinxcrossref{\DUrole{std,std-ref}{2}}}}, {\hyperref[\detokenize{Solutions-full:id2}]{\sphinxcrossref{\DUrole{std,std-ref}{3}}}}.
+
+\sphinxAtStartPar
+Well done for completing the first analysis homework! Here are some general comments.
+
+
+\subsubsection{General comments on mathematical writing}
+\label{\detokenize{HW-feedback:general-comments-on-mathematical-writing}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+The absolute best thing you can do is look at the individual comments on your work on Crowdmark, and \sphinxhref{https://calendar.app.google/vqdgru29fnbycVoY6}{get help} interpreting them as needed. Analysis proofs are notoriously picky, and all mathematicians go through this at some stage or other, so please don’t feel embarassed about needing help with your proof writing.
+
+\item {} 
+\sphinxAtStartPar
+When using a definition to solve a problem, it’s fine to write out the general definition, but make sure you also explicitly link it to the question at hand. So, for example, when solving {\hyperref[\detokenize{Problems:id3}]{\sphinxcrossref{\DUrole{std,std-ref}{Problem 3}}}}, you could (though don’t have to) begin by copying out \sphinxhref{https://rosiesb.github.io/Analysis-Notes/2LoF.html\#functionlimit}{Definition 2.2} from the notes. If you do that, make sure you then say something like “Therefore, given \(\varepsilon>0\), we seek \(\delta>0\) such that …” and link it to the specific functions and limits you are working with.
+
+\item {} 
+\sphinxAtStartPar
+Remember to only use notation/variables after you have introduced them. This sometimes relates to the above point — Definition 2.2 has a general limit \(L\) in it, but there’s no need to carry it around in your solution if you know the actual numerical limit you’re aiming for (e.g. \(5/2\)).
+
+\end{itemize}
+
+
+\subsubsection{Problems P2 and P3}
+\label{\detokenize{HW-feedback:problems-p2-and-p3}}
+\sphinxAtStartPar
+These were generally answered well, and most people were able to find the intended theorems from their MAS107/MAS117 notes in order to re\sphinxhyphen{}prove the Bolzano\sphinxhyphen{}Weierstrass theorem. We’ll be using this theorem more than once this semester, so this revision will come in handy.
+
+\sphinxAtStartPar
+In {\hyperref[\detokenize{Problems:p2}]{\sphinxcrossref{\DUrole{std,std-ref}{P2}}}}, there were some issues with mathematical writing, so make sure you go and look at the individual comments on your work and see what comments you can use to improve this.
+
+
+\subsubsection{Problem 2}
+\label{\detokenize{HW-feedback:problem-2}}
+\sphinxAtStartPar
+For this question, it’s fine to just write down what the limit points are, but of course we like proofs in this module. If you did include a proof, well done! And take a look for comments about its structure and presentation. The {\hyperref[\detokenize{Solutions-full:id1}]{\sphinxcrossref{\DUrole{std,std-ref}{solutions}}}} do not currently include proofs, but I hope to add these in soon — check back in a few days if you would like to see how they might go.
+
+
+\subsubsection{Problem 3}
+\label{\detokenize{HW-feedback:problem-3}}
+\sphinxAtStartPar
+The three parts of this question were not of equal difficulty, and this was intentional. I would say part (iii) is definitely the hardest, so well done if you got that one out. If you didn’t, take a look at the individual feedback and see if you can make some progress, and/or, bring it to an office hour. You may find it easier to tackle now you have had more time to practise.
+
+\sphinxAtStartPar
+One of the more common issues people had in {\hyperref[\detokenize{Problems:id3}]{\sphinxcrossref{\DUrole{std,std-ref}{Problem 3(iii)}}}} was defining a \(\delta\) that depended on \(x\) as well as \(\varepsilon\). This is an understandable error: once you get to the stage
+\begin{equation}\label{equation:HW-feedback:hw1}
+\begin{split}\left|f(x)-\frac{5}{2}\right|=\left|1-\frac{1}{2x}\right||x-2|\end{split}
+\end{equation}
+\sphinxAtStartPar
+it can be hard to know how to deal with the \(\left|1-\frac{1}{2x}\right|\) factor. However, letting \(\delta=\frac{\varepsilon}{|1-\frac{1}{2x}|}\) does \sphinxstylestrong{not} work here — we need a \(\delta\) that is independent of \(x\) (though it is allowed to depend on \(\varepsilon\)). One way to see why is to look at the order that different variables appear in the definition of the limit:
+\begin{equation*}
+\begin{split}
+\forall\varepsilon>0\;\exists\delta>0\;\text{s.t. }\forall x\in X \; |x-a|<\delta\Rightarrow|f(x)-L|<\varepsilon.
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Here, \(\varepsilon\) appears first, and so cannot depend on anything, and \(\delta\) appears second, so can only depend on \(\varepsilon\). In particular, \(\varepsilon\) and \(\delta\) appear \sphinxstyleemphasis{before} \(x\), so neither are allowed to depend on \(x\).
+
+\sphinxAtStartPar
+To progress past the point of {\hyperref[\detokenize{HW-feedback:equation-hw1}]{\sphinxcrossref{(3.1)}}} with a \(\delta\) \sphinxstylestrong{independent} of \(x\), the thing to do take a \(\delta\) that is the minimum of two values, with on value controlling each factor. For example, if \(|x-2|<1\), then \(0<1-\frac{1}{2x}<1\), so put \(\delta=\min\{1,\text{?}\}\). Now find “\(\text{?}\)” (or have a look at the {\hyperref[\detokenize{Solutions-full:iiisol}]{\sphinxcrossref{\DUrole{std,std-ref}{solutions}}}}).
 
 
 

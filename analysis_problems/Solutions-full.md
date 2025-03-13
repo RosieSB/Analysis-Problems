@@ -384,25 +384,94 @@ For the left and right limits at $0$:
 
 ---
 
+(8sol)=
 [8.](8) *(Homework 2 question).* 
    
-(i) For $a\neq 1$, the left and right limits exist and are both equal to $f(a)$, using the algebra of limits. The only point at which left and right limits disagree is $a = 1$, with
+(i) We are given $f:\mathbb{R}\to\mathbb{R}$; $f(x) = \begin{cases} 1 -x & \text{if }x < 1\\ x^{2}& \text{if }x \geq 1. \end{cases}$
+
+For $a\neq 1$, the left and right limits exist and are both equal to $f(a)$, using the algebra of limits. The only point at which left and right limits disagree is $a = 1$, with
 
 $$
-\lim_{x \rightarrow 1-}f(x) = 0, \; \text{ and } \; \lim_{x \rightarrow 1+}f(x) = 1.
+\lim_{x \rightarrow 1^-}f(x) = 0, \; \text{ and } \; \lim_{x \rightarrow 1^+}f(x) = 1.
 $$
 
-(ii) In this case, left and right limits disagree at every $n \in \mathbb{Z}$, with $\lim_{x \rightarrow a-}[x] = n-1, \lim_{x \rightarrow n+}[x] = n$. At every other real number, the left and right limits exist and are both equal to the value of the function there.
+To prove the left limit, let $\varepsilon>0$. For $x<1$, $f(x)=1-x$. Therefore, if $-\varepsilon<x-1<0$, we have $0<1-x<\varepsilon$, and hence $|f(x)|=|1-x|<\varepsilon$.
 
-(iii) Here, left and right limits disagree at $x = 0, 1$ and $2$. We have
-
-$$
-\lim_{x \rightarrow 0^-}h(x) = 3, \hspace{1em} \lim_{x \rightarrow 1-}h(x) = -2, \hspace{1em}  \lim_{x \rightarrow 2-}h(x) = 10,
-$$
+For the right limit: We know that if $x>1$, $f(x)=x^2$. Given $\varepsilon>0$, we seek $\delta>0$ such that if $0<x<\delta$, then $|f(x)-1|<\varepsilon$. Now,
 
 $$
-\lim_{x \rightarrow 0^+}h(x) = -2, \hspace{1em} \lim_{x \rightarrow 1+}h(x) = 10, \hspace{1em}  \lim_{x \rightarrow 2+}h(x) = 3.
+|f(x)-1|=|x^2-1|=|x+1|\cdot|x+1|.
 $$
+
+We can bound the $|x+1|$ factor above by $4$ provided we choose a $\delta$ that is at most $1$. Indeed: if $0<x-1<1$, then $3<x+1<4$, so $|x+1|<4$.  
+
+We choose $\delta=\min\left\{1,\frac{\varepsilon}{4}\right\}$. Then, for $0<x-1<\delta$, we have $0<x-1<1$ and $0<|x-1|<\frac{\varepsilon}{4}$. So,
+
+$$
+|f(x)-1|=|x+1|\cdot|x-1| < 4\cdot\frac{\varepsilon}{4}=\varepsilon.
+$$
+
+````{note}
+We could have also used algebra of limits to prove/evaluate the left- and right-limits here. For example, to show $\lim_{x\rightarrow 1^-}f(x)=1$, apply algebra of limits to the function $x^2$ (domain $\mathbb{R}$). This tells us that $\lim_{x\rightarrow 1}x^2=1$. Therefore, by Proposition 2.1, $\lim_{x\rightarrow 1^-}x^2=1$. But then, since $f(x)=x^2$ for all $x<1$, we must have that $\lim_{x\rightarrow 1^-}f(x)=\lim_{x\rightarrow 1^-}x^2=1$.
+````
+
+(ii) Consider $g:\mathbb{R}\to\mathbb{R}$, $g(x) = [x] = \left\{\begin{array}{cl} \lfloor x\rfloor & \text{ if } x\geq 0 \\ \lceil x \rceil & \text{ if } x<0 \end{array}\right.$. 
+
+A quick think about how $[x]$ behaves for positive and negative $x$ gives the graph {numref}`intx`.
+
+```{figure} ../analysis_problems/figs/[x].png
+---
+width: 400px
+name: intx
+---
+Graph of the function $g:\mathbb{R}\to\mathbb{R}$; $g(x)=[x]$ (Problem 8).
+```
+
+In this case, left and right limits disagree at every $n \in \mathbb{Z}\setminus\{0\}$. In fact, if $n\in\mathbb{N}$, then {numref}`intx` suggests that 
+
+$$
+\lim_{x\rightarrow n^+}[x]=n, \;\lim_{x\rightarrow n^-}[x]=n-1, \; \lim_{x\rightarrow -n^+}[x]= -n+1, \text{ and } \lim_{x\rightarrow -n^-}[x]=-n.
+$$ 
+
+At every other real number, the left and right limits exist and are both equal to the value of the function there.
+
+Here some proofs: 
+
+- To prove $\lim_{x \rightarrow n^+}[x] = n$: Note that if $0<x-n<\frac{1}{2}$, we have $[x]=n$, and so $|[x]-n|=0$. In particular, if $\varepsilon>0$, then $0<x-n<\frac{1}{2}$ implies $|[x]-n|<\varepsilon$.
+
+- To prove $\lim_{x\rightarrow n^-}[x]=n-1$: By the same principle, if $-\frac{1}{2}<x-n<0$, then $[x]=n-1$, and so $|[x]-(n-1)|=0$. In particular, for all $\varepsilon>0$, we have that $-\frac{1}{2}<x-n<0$ implies $|[x]-(n-1)|<\varepsilon$.
+
+- The proofs of $\lim_{x\rightarrow -n^+}[x]= -n+1$ and $\lim_{x\rightarrow -n^-}[x]=-n$ are very similar --- or you could just note that $[-x]=-[x]$ and apply algebra of limits.
+
+(iii) We are given $h:\mathbb{R}\to\mathbb{R}$, $h(x) =3 - 5\mathbb{1}_{(0, 1]}(x) + 7\mathbb{1}_{(1, 2]}(x)$. Again, it helps to draw a graph first --- see {numref}`8iii`.
+
+
+```{figure} ../analysis_problems/figs/8iii.png
+---
+width: 500px
+name: 8iii
+---
+Graph of the function $h=3 - 5\mathbb{1}_{(0, 1]} + 7\mathbb{1}_{(1, 2]}$ (Problem 8).
+```
+
+Here, left and right limits disagree at $x = 0, 1$ and $2$. We have
+
+$$
+\lim_{x \rightarrow 0^-}h(x) = 3, \hspace{1em} \lim_{x \rightarrow 1^-}h(x) = -2, \hspace{1em}  \lim_{x \rightarrow 2^-}h(x) = 10,
+$$
+
+$$
+\lim_{x \rightarrow 0^+}h(x) = -2, \hspace{1em} \lim_{x \rightarrow 1^+}h(x) = 10, \hspace{1em}  \lim_{x \rightarrow 2^+}h(x) = 3.
+$$
+
+To prove $\lim_{x \rightarrow 0^-}h(x) = 3$ using [Definition 2.4](https://rosiesb.github.io/Analysis-Notes/2LoF.html#marg), note that for any $x<0$, $h(x)=3$ and so $|h(x)-3|=0$. So for any $\varepsilon>0$ and any choice of $\delta>0$, we have that $-\delta<x<0$ implies $|h(x)-3|=0<\varepsilon$. 
+
+The proof of $\lim_{x \rightarrow 1^-}h(x) = -2$ is very similar: let $\varepsilon>0$, and note that if $-\frac{1}{2}<x-1<0$, then $\frac{1}{2}<x<1$, and so $h(x)=-2$. But then, $|h(x)-(-2)|=0<\varepsilon$.
+
+The proof of $\lim_{x \rightarrow 2^-}h(x) = 10$ is exactly the same, just take $-\frac{1}{2}<x-2<0$ and note $h(x)=10$, instead.
+
+The right limit proofs are similar. 
+
 
 ---
 
@@ -727,13 +796,25 @@ $$
 
 ---
 
-[22.](22) Suppose that $x \in \mathbb{Q}$. Then as in the solution to Example 3.7 we can find a sequence $(x_{n})$ of irrationals that converges to $x$ and then
+[22.](22) Recall from [Example 3.10](https://rosiesb.github.io/Analysis-Notes/3Cty.html#eg:dirichlet2) in the notes that Dirichlet's "other" function (AKA Thomae's function) is defined  $g:[0, 1)\rightarrow \mathbb{R}$ defined by
 
 $$
-\lim_{n\rightarrow\infty} g(x_{n}) = 0 \neq g(x),
+g(x) =\begin{cases}
+	1 &\text{if $x = 0$},\\
+	\displaystyle\frac{1}{n}& \text{if $x = m/n \in \mathbb{Q}\cap[0,1)$, and $\text{gcd}(m,n)=1$.}\\
+	0&\text{if $x \in [0,1)\setminus \mathbb{Q}$}.
+\end{cases}
 $$
 
-and so $g$ is not continuous at $x$.
+Suppose that $a \in \mathbb{Q}\cap[0,1)$. Then $g(a)=\frac{1}{k}$, for some fixed $k\in\mathbb{N}$. Every real number is the limit of a sequence of irrational numbers[^note]. Therefore, there is a sequence $(x_{n})$ of irrational numbers that converges to $a$. Since $a\in[0,1)$, we may assume (removing some initial terms if necessary) that $x_n\in[0,1)\setminus\mathbb{Q}$ for all $n\in\mathbb{N}$. 
+
+[^note]:This, and other related properties of (ir)rational numbers, was a focus of study in MAS107/117 Semester 2. 
+
+If $g$ was continuous at $a$, we would have $\lim_{n\rightarrow\infty}g(x_n)=g(a)$. But in fact, $g(x_n)=0$ for all $n\in\mathbb{N}$, so $\lim_{n\rightarrow\infty}g(x_n)=0\neq \frac{1}{k}=g(a)$.
+
+It follows that $g$ is discontinuous at every rational point of its domain.
+
+
 
 ---
 
