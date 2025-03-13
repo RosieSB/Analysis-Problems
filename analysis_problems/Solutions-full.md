@@ -189,16 +189,29 @@ A correct version of the statement would be $\inf A \leq \sup A$.
 
 (2sol)=
 [2.](2) *(Homework 1 question).*
+The question did not necessarily require a proofs, but below are some anyway, in case you are interested. 
+
+(i) $X=(0,1)\cup[2,3)\cup\{4,5\}$, $L=[0,1]\cup[2,3]$.
+
+ 
+Proof: If $a\in\mathbb{R}$ is a limit point of $X=(0,1)\cup[2,3)\cup\{4,5\}$, then there is a sequence $(x_n)$ in $X\setminus\{a\}$, with $a=\lim_{n\rightarrow\infty}x_n$. Since $(x_n)$ converges, it must be a Cauchy sequence. This means we can choose $N\in\mathbb{N}$ such that
+```{math}
+:label: Cauchy
+|x_m-x_n|<\frac{1}{2} \hspace{3em} \forall m,n\geq N.
+```
+We argue that $(x_n)_{n\geq N}$ is a sequence lying entirely in one of the intervals $(0,1)$ or $[2,3]$ by considering where the term $x_N$ lies.
+
+We know that $x_N\in =(0,1)\cup[2,3)\cup\{4,5\}$. If $x_N\in\{4,5\}$, then [](#Cauchy) implies $x_n\in\{4,5\}$ for all $n\geq N$. But all convergent sequences of this kind are eventually constant. This is impossible, because $x_n\neq a$ for all $n\in\mathbb{N}$. 
+
+If $x_N\in(0,1)$ then [](#Cauchy) implies $(x_n)_{n\geq N}$ lies entirely within $(0,1)$, and hence $a\in[0,1]$. By the same argument, if $x_N\in[2,3)$, then by [](#Cauchy), $(x_n)_{n\geq N}$ lies entirely within $[2,3)$, and so $a\in[2,3]$.
    
-(i) $L=[0,1]\cup[2,3]$.
+(ii)  $X=\mathbb{Z}$,  $L=\emptyset$.  (All convergent sequences in $\mathbb{Z}$ are eventually constant.)
    
-(ii) $L=\emptyset$.  (All convergent sequences in $\mathbb{Z}$ are eventually constant.)
+(iii)$X=\mathbb{R}\setminus\mathbb{Z}$,  $L=\mathbb{R}$.
    
-(iii) $L=\mathbb{R}$.
+(iv)$X=\{x\in\mathbb{Q}:0<x<1\}$, $L=[0,1]$
    
-(iv) $L=[0,1]$
-   
-(v) $L=\{0\}$
+(v)$X=\displaystyle\left\{\frac{1}{n}:n\in\mathbb{N}\right\}$.  $L=\{0\}$
 
 ---
 
