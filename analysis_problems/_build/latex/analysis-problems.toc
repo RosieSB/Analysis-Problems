@@ -10,14 +10,11 @@
 \contentsline {section}{\numberline {0.2}Solutions}{12}{section.0.2}%
 \contentsline {subsection}{\numberline {0.2.1}Preliminary problems}{12}{subsection.0.2.1}%
 \contentsline {subsection}{\numberline {0.2.2}Limits of functions}{15}{subsection.0.2.2}%
-\contentsline {subsection}{\numberline {0.2.3}Continuity}{23}{subsection.0.2.3}%
-\contentsline {subsection}{\numberline {0.2.4}Differentiation}{30}{subsection.0.2.4}%
-\contentsline {subsection}{\numberline {0.2.5}Sequences and series of functions}{35}{subsection.0.2.5}%
-\contentsline {subsection}{\numberline {0.2.6}Integration}{44}{subsection.0.2.6}%
-\contentsline {section}{\numberline {0.3}Homework feedback}{55}{section.0.3}%
-\contentsline {subsection}{\numberline {0.3.1}Feedback for Homework 1}{55}{subsection.0.3.1}%
-\contentsline {subsubsection}{General comments on mathematical writing}{55}{subsubsection*.97}%
-\contentsline {subsubsection}{Problems P2 and P3}{55}{subsubsection*.98}%
-\contentsline {subsubsection}{Problem 2}{55}{subsubsection*.99}%
-\contentsline {subsubsection}{Problem 3}{56}{subsubsection*.100}%
+\contentsline {subsection}{\numberline {0.2.3}Continuity}{22}{subsection.0.2.3}%
+\contentsline {section}{\numberline {0.3}Homework feedback}{22}{section.0.3}%
+\contentsline {subsection}{\numberline {0.3.1}Feedback for Homework 1}{22}{subsection.0.3.1}%
+\contentsline {subsubsection}{General comments on mathematical writing}{22}{subsubsection*.94}%
+\contentsline {subsubsection}{Problems P2 and P3}{23}{subsubsection*.95}%
+\contentsline {subsubsection}{Problem 2}{23}{subsubsection*.96}%
+\contentsline {subsubsection}{Problem 3}{23}{subsubsection*.97}%
 \xpginauxfilefalse 
