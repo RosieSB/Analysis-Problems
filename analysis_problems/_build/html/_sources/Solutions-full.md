@@ -194,7 +194,7 @@ This question was ambiguous about whether or not proofs are required. Strictly s
 ````
 (i) $X=(0,1)\cup[2,3)\cup\{4,5\}$. Set of limit points: $L=[0,1]\cup[2,3]$.
 
-````{dropdown} Proof (click)
+````{dropdown} Proof (dropdown)
 Let $L$ be the set of all limit points of $X$. We prove that $L=[0,1]\cup[2,3]$ by proving $L\subseteq[0,1]\cup[2,3]$ and $L\supseteq[0,1]\cup[2,3]$. 
 
 $(\supseteq)$ Let $a\in[0,1]\cup[2,3]$. We prove $a$ is a limit point of $X=(0,1)\cup[2,3)\cup\{4,5\}$ by explicitly writing down a sequence $(x_n)$ in $X\setminus\{a\}$ with limit $a$. In fact, $x_n=a+\frac{1}{n+3}$ works for any choice $a\in[0,1)\cup[2,3)$. If $a=0$ or $a=3$, then use $x_n=a-\frac{1}{n}$ instead. Either way, we have shown that $a\in L$.
@@ -210,13 +210,13 @@ It follows that $a\in[0,1]\cup[2,3]$.<span style="float:right;">$\square$</span>
    
 (ii)  $X=\mathbb{Z}$. Set of limit points: $L=\emptyset$.  
 
-````{dropdown} Proof (click)
+````{dropdown} Proof (dropdown)
 If $a$ is a limit point of $\mathbb{Z}$, then there is a sequence $(x_n)$ in $\mathbb{Z}$, with $x_n\neq a$ for all $n\in\mathbb{N}$, and $\lim_{n\rightarrow\infty}x_n=a$. But all convergent sequences in $\mathbb{Z}$ are eventually constant, so this is impossible.  <span style="float:right;">$\square$</span>
 ````
 
 (iii)$X=\mathbb{R}\setminus\mathbb{Z}$. Set of limit points:  $L=\mathbb{R}$.
 
-````{dropdown} Proof (click)
+````{dropdown} Proof (dropdown)
 If $a\in\mathbb{Z}$, then $x_n:=a+\frac{1}{2n}$ defines a sequence in $X$ with limit $a$, and clearly $x_n\neq a$ for all $n\in\mathbb{N}$. This shows $\mathbb{Z}\subseteq L$. If $a\in\mathbb{R}\setminus\mathbb{Z}$, then $a$ must lie in some open interval $(k,k+1)$, where $k\in\mathbb{Z}$ (in fact $k=\lfloor x\rfloor$). 
 
 ```{figure} ../analysis_problems/figs/2iii.png
@@ -232,7 +232,7 @@ Let $\delta=\min\{x-a,k+1-a\}$ (this choice is strongly motivated by a sketch --
 
 (iv) $X=\{x\in\mathbb{Q}:0<x<1\}$. Set of limit points: $L=[0,1]$
 
-````{dropdown} Proof (click)
+````{dropdown} Proof (dropdown)
 If $(x_n)$ is a convergent sequence in $X$, then $0<x_n<1$ for all $n\in\mathbb{N}$, and so $0\leq\lim_{n\rightarrow\infty}x_n\leq 1$. This shows that $L\subseteq [0,1]$. On the other hand, if $a\in[0,1]$, then by density of the rationals, for all $n\in\mathbb{N}$ there is a rational number $x_n$ satisfying $a<x_n<a+\frac{1}{n}$. Then, $x_n\neq a$ for all $n\in\mathbb{N}$, and by the squeeze theorem, $x_n\rightarrow a$ as $n\rightarrow\infty$. Also, since $a\in[0,1]$, with the exception of the case $a=1$ (treated separately below), we will eventually have $0<x_n<1$ for all $n\in\mathbb{N}$ sufficiently large. In other words, removing a finite number of initial terms if necessary, we have found a sequence in $X\setminus\{a\}$ with limit $a$.
 
 For the case $a=1$, use the same argument, but with sequence $(x_n)$ of rational numbers chosen so that  $1-\frac{1}{n}<x_n<1$, for each $n\in\mathbb{N}$.<span style="float:right;">$\square$</span>
@@ -240,7 +240,7 @@ For the case $a=1$, use the same argument, but with sequence $(x_n)$ of rational
 
 (v) $X=\displaystyle\left\{\frac{1}{n}:n\in\mathbb{N}\right\}$.  $L=\{0\}$
 
-````{dropdown} Proof (click)
+````{dropdown} Proof (dropdown)
 That $0\in L$ follows by taking the sequence $x_n=\frac{1}{n}$. On the other hand, if $a\in L$, then there is a sequence $(x_n)$ in $X\setminus\{a\}$ with limit $a$. All elements of $X$ are strictly positive, so $x_n>0$ for all $n\in\mathbb{N}$, and hence $a\geq 0$. Suppose that $a>0$. Then by definition of convergence, there is $N\in\mathbb{N}$ such that $|x_n-a|<\frac{a}{2}$ for all $n\geq N$. But then $x_n\in\left(\frac{a}{2},\frac{3a}{2}\right)$ for all $n\geq N$. There are only finitely many elements of $X$ that lie in this interval, and we know $(x_n)$ converges to $a$. So, the only option is that $(x_n)$ is eventually constant and equal to $a$. This is a contradiction, since $(x_n)$ is a sequence in $X\setminus\{a\}$. It follows that $a=0$.<span style="float:right;">$\square$</span>
 ````
 ---
