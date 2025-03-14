@@ -25,7 +25,7 @@ These were generally answered well, and most people were able to find the intend
 In [P2](#P2), there were some issues with mathematical writing, so make sure you go and look at the individual comments on your work and see what comments you can use to improve this.
 
 ### Problem 2
-For this question, it's fine to just write down what the limit points are, but of course we like proofs in this module. If you did include a proof, well done! And take a look for comments about its structure and presentation. The [solutions](#2sol) do not currently include proofs, but I hope to add these in soon --- check back in a few days if you would like to see how they might go.
+For this question, it's fine to just write down what the limit points are, but of course we like proofs in this module. If you did include a proof, well done! And take a look for comments about its structure and presentation. The [solutions](#2sol) do now include proofs, if you would like to see how they go.
 
 ### Problem 3
 The three parts of this question were not of equal difficulty, and this was intentional. I would say part (iii) is definitely the hardest, so well done if you got that one out. If you didn't, take a look at the individual feedback and see if you can make some progress, and/or, bring it to an office hour. You may find it easier to tackle now you have had more time to practise.
