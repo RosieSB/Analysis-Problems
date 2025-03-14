@@ -283,7 +283,7 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 23. What can you say about left/right continuity of the function  $\mathbb{1}_{(a, b)}:\mathbb{R}\to\mathbb{R}$ at the points $a$ and $b$?
 
 (24)=
-24. Prove [Corollary 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt2). [Hint: Apply the intermediate value theorem to the function $g(x) = f(x) - \gamma$, for $x \in [a, b]$.]
+24. Finish the proof of the intermediate value theorem ([Theorem 3.4](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt2)). [Hint: Apply the special case [Proposition 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt) to the function $g(x) = f(x) - \gamma$, for $x \in [a, b]$.]
 
 (25)=
 25. *(Homework 2 question).* Prove the following *fixed point theorem*: if $f:[a,b] \rightarrow (a,b)$ is continuous, then there exists $c \in (a, b)$ such that $f(c) = c$.
