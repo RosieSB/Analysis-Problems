@@ -703,7 +703,7 @@ $g \circ f:\mathbb{R} \setminus \{0\} \to \mathbb{R} \setminus \{0\}$ given by $
 
 ---
 
-[18.](18) 
+[18.](18) *(Homework 3 question).*
    
 (i) For $x \neq 0, f(x) = x+2$. Since $\lim_{x \rightarrow 0}f(x) = 2$, the required continuous extension is $\tilde{f}$ where
 
@@ -766,7 +766,7 @@ which is a contradiction.
 
 ---
 
-[20.](20) *(Homework 2 question).* 
+[20.](20) 
 (i) 
 
 $$
@@ -839,7 +839,8 @@ $$
 
 ---
 
-[22.](22) Recall from [Example 3.10](https://rosiesb.github.io/Analysis-Notes/3Cty.html#eg:dirichlet2) in the notes that Dirichlet's "other" function (AKA Thomae's function) is defined  $g:[0, 1)\rightarrow \mathbb{R}$ defined by
+[22.](22) *(Homework 2 question).* 
+Recall from [Example 3.10](https://rosiesb.github.io/Analysis-Notes/3Cty.html#eg:dirichlet2) in the notes that Dirichlet's "other" function (AKA Thomae's function) is defined  $g:[0, 1)\rightarrow \mathbb{R}$ defined by
 
 $$
 g(x) =\begin{cases}
@@ -871,12 +872,12 @@ $ \lim_{n\rightarrow\infty} \mathbb{1}_{(a, b)}(y_{n}) = 1 \neq \mathbb{1}_{(a, 
 
 ---
 
-[24.](24) Since $f$ is continuous on $[a, b]$, so is $g$. We have $g(a) = f(a) - \gamma < 0$ and $g(b) = f(b) - \gamma > 0$. Hence by the intermediate value theorem ([Theorem 3.4](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt)), there exists $c \in (a, b)$ with $g(c) = 0$, i.e. $f(c) = \gamma$, as was required.
+[24.](24) Since $f$ is continuous on $[a, b]$, so is $g$. We have $g(a) = f(a) - \gamma < 0$ and $g(b) = f(b) - \gamma > 0$. Hence by [Proposition 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt-sc), there exists $c \in (a, b)$ with $g(c) = 0$, i.e. $f(c) = \gamma$, as was required.
 
 ---
 
 [25.](25)
-(Homework 3 question?)
+*(Homework 3 question).*
 <br>
 *Something* is $x$. That is, define $g:[a,b]\to\mathbb{R}$ given by $g(x) = f(x) - x$. Then $g$ is continuous (because $f$ is and the function $h(x)=x$ is, and using algebra of limits). Since the range of $f$ is contained in $(a, b)$, we have $f(a) > a$ and $f(b) < b$, and so $g(a) = f(a) - a > 0$ and $g(b) = f(b) - b < 0$. So we can apply the intermediate value theorem to the function $g$ on $[a,b]$. This says that there exists $c \in (a, b)$ such that $g(c) = 0$, i.e. $f(c) = c$.
 <br>
@@ -904,7 +905,7 @@ It follows that $f$ must be a constant function.
 
 ---
 
-[29.](29) (Homework 3 question?)
+[29.](29) 
 <br>
 If $f$ is continuous on $[0, 1]$, then it is bounded by Theorem 3.5, and so there exists $L \geq 0$ such that $|f(x)| \leq L$ for all $x \in [0, 1]$. Hence the range of $f$ is a subset of  $[-L, L]$ and cannot be all of $\mathbb{R}$.
 

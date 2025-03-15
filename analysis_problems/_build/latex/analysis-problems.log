@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.3)  14 MAR 2025 10:26
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.4)  14 MAR 2025 18:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1712,22 +1712,22 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
  [1] [2] [3] [4] [5] [6]
 
 LaTeX Warning: Hyper reference `Problems:equation-eq-x' on page 7 undefined on 
-input line 821.
+input line 824.
 
 [7] [8]
 
 LaTeX Warning: Hyper reference `Problems:equation-fourier' on page 9 undefined 
-on input line 1142.
+on input line 1145.
 
 [9]
 
 LaTeX Warning: Hyper reference `Problems:equation-fourier' on page 10 undefined
- on input line 1151.
+ on input line 1154.
 
 [10] [11] [12]
 
 LaTeX Warning: Hyper reference `Solutions-full:equation-eq-sqrta-sqrtb' on page
- 13 undefined on input line 1550.
+ 13 undefined on input line 1553.
 
 [13] [14] [15]
 File: 2iii.png Graphic file (type bmp)
@@ -1778,7 +1778,7 @@ File: q68.png Graphic file (type bmp)
  [48] [49] [50] [51] [52] [53] [54] [55] [56]
 
 LaTeX Warning: Hyper reference `HW-feedback:equation-hw1' on page 57 undefined 
-on input line 4562.
+on input line 4566.
 
 (./analysis-problems.ind) [57] (./analysis-problems.aux)
  ***********
@@ -1799,6 +1799,6 @@ Here is how much of TeX's memory you used:
  67589 multiletter control sequences out of 15000+600000
  567130 words of font info for 131 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 99i,28n,114p,861b,2125s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,28n,114p,861b,2115s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on analysis-problems.pdf (61 pages).
