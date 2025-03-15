@@ -585,6 +585,7 @@ $g \circ f:\mathbb{R} \setminus \{0\} \to \mathbb{R} \setminus \{0\}$ given by $
 ---
 
 [18.](18) To appear (Homework 3 question)  
+
 ---
 
 [19.](19) To appear (Homework 2 question).
