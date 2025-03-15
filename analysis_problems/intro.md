@@ -32,7 +32,7 @@ See Blackboard[^links] for more information.
 [2 Solutions up to 23](#sol) (more to appear in due course) <br>
 &emsp;&emsp;[2.1 Preliminary problems](#ch1sol) <br>
 &emsp;&emsp;[2.2. Limits of functions](#ch2sol) <br>
-<!--&emsp;&emsp;[2.3. Continuity](#ch3sol) <br>
-&emsp;&emsp;[2.4. Differentiation](#ch4sol) <br>
+&emsp;&emsp;[2.3. Continuity](#ch3sol) <br>
+<!--&emsp;&emsp;[2.4. Differentiation](#ch4sol) <br>
 &emsp;&emsp;[2.5. Sequences and series of functions](#ch5sol) <br>
 &emsp;&emsp;[2.6. Integration](#ch6sol)-->
