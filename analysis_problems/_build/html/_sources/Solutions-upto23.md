@@ -1,6 +1,6 @@
 (sol)=
 # Solutions
-Complete up to Q16, excluding homework questions. 
+Complete up to Q23, excluding some homework questions. 
 
 Homework solutions will be released alongside the return of each piece of work.
 

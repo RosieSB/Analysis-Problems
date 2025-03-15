@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.4)  14 MAR 2025 18:48
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.4)  15 MAR 2025 11:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1747,40 +1747,45 @@ File: xsin(1,x).png Graphic file (type bmp)
 File: (x2+2x+4),(x+2).png Graphic file (type bmp)
 <(x2+2x+4),(x+2).png>
  [26] [27]
-[28] [29] [30] [31]
+
+LaTeX Warning: Hyper reference `Solutions-full:equation-linear' on page 28 unde
+fined on input line 2497.
+
+[28] [29] [30] [31] [32]
 File: nondiff1,2.png Graphic file (type bmp)
 <nondiff1,2.png>
 File: nondiff1,3_2,3.png Graphic file (type bmp)
 <nondiff1,3_2,3.png>
 File: x-[x].png Graphic file (type bmp)
 <x-[x].png>
- [32] [33] [34] [35] [36] [37] [38] [39] [40] [41]
+ [33] [34] [35] [36] [37] [38] [39] [40] [41] [42]
 File: fourier1.png Graphic file (type bmp)
 <fourier1.png>
 File: fourier2.png Graphic file (type bmp)
 <fourier2.png>
 File: fourier3.png Graphic file (type bmp)
 <fourier3.png>
- [42]
+
 [43] [44]
 File: int1i.png Graphic file (type bmp)
 <int1i.png>
+ [45]
 File: int1ii.png Graphic file (type bmp)
 <int1ii.png>
- [45] [46]
+ [46]
 File: int1iii.png Graphic file (type bmp)
 <int1iii.png>
+ [47]
 File: q67.png Graphic file (type bmp)
 <q67.png>
- [47]
 File: q68.png Graphic file (type bmp)
 <q68.png>
- [48] [49] [50] [51] [52] [53] [54] [55] [56]
+ [48] [49] [50] [51] [52] [53] [54] [55] [56] [57]
 
-LaTeX Warning: Hyper reference `HW-feedback:equation-hw1' on page 57 undefined 
-on input line 4566.
+LaTeX Warning: Hyper reference `HW-feedback:equation-hw1' on page 58 undefined 
+on input line 4588.
 
-(./analysis-problems.ind) [57] (./analysis-problems.aux)
+(./analysis-problems.ind) [58] (./analysis-problems.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1793,12 +1798,12 @@ Package rerunfilecheck Info: File `analysis-problems.out' has not changed.
 (rerunfilecheck)             Checksum: F16792E9F391DF3D0CC0022AA74BE21C;1478.
  ) 
 Here is how much of TeX's memory you used:
- 46398 strings out of 474878
- 1052580 string characters out of 5762516
+ 46400 strings out of 474878
+ 1052644 string characters out of 5762516
  1965627 words of memory out of 5000000
- 67589 multiletter control sequences out of 15000+600000
+ 67591 multiletter control sequences out of 15000+600000
  567130 words of font info for 131 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  99i,28n,114p,861b,2115s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on analysis-problems.pdf (61 pages).
+Output written on analysis-problems.pdf (62 pages).
