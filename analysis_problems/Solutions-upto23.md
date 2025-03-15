@@ -429,10 +429,12 @@ For the left and right limits at $0$:
 
 ---
 
+(8sol)=
 [8.](8) To appear (Homework 2 question)
 
 ---
 
+(9sol)=
 [9.](9) To appear (Homework 2 question)
 
 
@@ -553,8 +555,7 @@ If $n$ is odd, $\lim_{x \rightarrow \infty}p(x) = \infty$, but $\lim_{x \rightar
 
 ---
 
-[14.](14) If $(x_{n})$ is any sequence that converges to $a$, we know that $f(x_n)$ converges to $f(a)$ as $f$ is continuous at $a$, and
-we need to show that $(|f|(x_n))$ converges to $|f|(a)$.
+[14.](14) If $(x_{n})$ is any sequence that converges to $a$, we know that $f(x_n)$ converges to $f(a)$ as $f$ is continuous at $a$, and we need to show that $(|f|(x_n))$ converges to $|f|(a)$.
 <br>
 By Corollary 1.1, if $(x_{n})$ is any sequence that converges to $a$,
 \begin{align*}
@@ -592,10 +593,12 @@ This is continuous at $\mathbb{R} \setminus \{0,1,2\}$, with jump discontinuitie
 
 ---
 
+(18sol)=
 [18.](18) To appear (Homework 3 question)  
 
 ---
 
+(19sol)=
 [19.](19) To appear (Homework 2 question).
 
 ---
@@ -678,6 +681,7 @@ $$
 
 ---
 
+(22sol)=
 [22.](22) To appear (Homework 2 question).
 
 ---

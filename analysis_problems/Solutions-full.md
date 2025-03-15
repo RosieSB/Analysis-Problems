@@ -518,6 +518,7 @@ The right limit proofs are similar.
 
 ---
 
+(9sol)=
 [9.](9) *(Homework 2 question).* The largest subset of $\mathbb{R}$ for which the formula $f(x)=\sin\left(\frac{1}{x}\right)$ makes sense is $A = \mathbb{R} \setminus \{0\}$.
 <br>
 Observe that for any real number $\theta\in\mathbb{R}$,
@@ -713,6 +714,7 @@ This is continuous at $\mathbb{R} \setminus \{0,1,2\}$, with jump discontinuitie
 
 ---
 
+(18sol)=
 [18.](18) *(Homework 3 question).*
    
 (i) For $x \neq 0, f(x) = x+2$. Since $\lim_{x \rightarrow 0}f(x) = 2$, the required continuous extension is $\tilde{f}$ where
@@ -763,6 +765,7 @@ Graph of the function $\tilde{f}:\mathbb{R}\setminus\{-2\}\to\mathbb{R}$; $f(x)=
 
 ---
 
+(19sol)=
 [19.](19) *(Homework 2 question).* Assume $g$ is continuous and $g(a) > 0$. Then for all $\varepsilon>0$ there exists $\delta>0$ such that for all $x\in\mathbb{R}$, $|x-a|<\delta$ implies $|g(x)-g(a)|<\varepsilon$. Let $\varepsilon=\frac{g(a)}{2}$. Then for some $\delta>0$, we have $|g(x)-g(a)|<\frac{g(a)}{2}$. But then $\frac{g(a)}{2}<g(x)<\frac{3g(a)}{2}$, and in particular, $g(x)>\frac{g(a)}{2}>0$.
 
 **Alternate solution using sequences:**<br>
@@ -856,6 +859,7 @@ $$
 
 ---
 
+(22sol)=
 [22.](22) *(Homework 2 question).* 
 Recall from [Example 3.10](https://rosiesb.github.io/Analysis-Notes/3Cty.html#eg:dirichlet2) in the notes that Dirichlet's "other" function (AKA Thomae's function) is defined  $g:[0, 1)\rightarrow \mathbb{R}$ defined by
 
@@ -892,6 +896,7 @@ $ \lim_{n\rightarrow\infty} \mathbb{1}_{(a, b)}(y_{n}) = 1 \neq \mathbb{1}_{(a, 
 
 ---
 
+(25sol)=
 [25.](25)
 *(Homework 3 question).*
 <br>
