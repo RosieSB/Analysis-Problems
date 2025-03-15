@@ -670,7 +670,7 @@ $$
 
 and the result follows.
 
-(vi) Finally, let $k=f(1), and assume $f$ is continuous at $0$, and let $x\in\mathbb{R}$. If $x\in\mathbb{Q}$, then we have already shown $f(x)=kx$ in part (v)$. So assume $x$ is irrational. By denseness of the rationals, there is a sequence $(r_n)$ of rational numbers converging to $x$. By (v), $f(r_n)=kr_n$ for all $n\in\mathbb{N}}$. By (iii), $f$ is continuous at $x$, so using algebra of limits, we have
+(vi) Finally, let $k=f(1)$, and assume $f$ is continuous at $0$, and let $x\in\mathbb{R}$. If $x\in\mathbb{Q}$, then we have already shown $f(x)=kx$ in part (v)$. So assume $x$ is irrational. By denseness of the rationals, there is a sequence $(r_n)$ of rational numbers converging to $x$. By (v), $f(r_n)=kr_n$ for all $n\in\mathbb{N}}$. By (iii), $f$ is continuous at $x$, so using algebra of limits, we have
 
 $$
 f(x) = \lim_{n\rightarrow\infty} f(r_n) =   \lim_{n\rightarrow\infty} kr_n=k \lim_{n\rightarrow\infty} r_n = kx.
