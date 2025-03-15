@@ -804,9 +804,13 @@ By Corollary 1.1, if <span class="math notranslate nohighlight">\((x_{n})\)</spa
 <span class="math notranslate nohighlight">\(g \circ f:\mathbb{R} \setminus \{0\} \to \mathbb{R} \setminus \{0\}\)</span> given by <span class="math notranslate nohighlight">\((g \circ f)(x) = {1  + \frac{1}{x^2}}\)</span>. It is continuous on <span class="math notranslate nohighlight">\(\mathbb{R} \setminus \{0\}\)</span> by Theorem 3.2(iv).</p>
 <hr class="docutils" />
 <p><a class="reference internal" href="Problems.html#id17"><span class="std std-ref">17.</span></a>
-(i) Continuous on <span class="math notranslate nohighlight">\(\mathbb{R} \setminus \{1\}\)</span>. Jump discontinuity at <span class="math notranslate nohighlight">\(1\)</span> with <span class="math notranslate nohighlight">\(J_{f}(1) = 1\)</span>.</p>
-<p>(ii) Continuous on <span class="math notranslate nohighlight">\(\mathbb{R} \setminus \mathbb{Z}\)</span>. Jump discontinuity at <span class="math notranslate nohighlight">\(n\)</span> with <span class="math notranslate nohighlight">\(J_{g}(n) = 1\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{Z}_+\)</span>.</p>
-<p>(iii) Continuous at <span class="math notranslate nohighlight">\(\mathbb{R} \setminus \{0,1,2\}\)</span>. Each of <span class="math notranslate nohighlight">\(0, 1, 2\)</span> is a jump discontinuity and we have <span class="math notranslate nohighlight">\(J_{h}(0) =-5, J_{h}(1) = 12, J_{h}(2) = -7.\)</span></p>
+The proofs for each of these answers are immediate by <a class="reference internal" href="Problems.html#id8"><span class="std std-ref">Problem 8</span></a>.</p>
+<p>(i) <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x) = \begin{cases} 1 -x &amp; \text{if }x &lt; 1\\ x^{2}&amp; \text{if }x \geq 1. \end{cases}\)</span></p>
+<p>This function is continuous on <span class="math notranslate nohighlight">\(\mathbb{R} \setminus \{1\}\)</span>, with a jump discontinuity at <span class="math notranslate nohighlight">\(x=1\)</span> of size <span class="math notranslate nohighlight">\(1\)</span>.</p>
+<p>(ii) <span class="math notranslate nohighlight">\(g:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(g(x) = [x] = \left\{\begin{array}{cl} \lfloor x\rfloor &amp; \text{ if } x\geq 0 \\ \lceil x \rceil &amp; \text{ if } x&lt;0 \end{array}\right.\)</span></p>
+<p>This function is continuous on <span class="math notranslate nohighlight">\(\mathbb{R}\setminus\{\pm k: k\in\mathbb{N}\}\)</span>. Jump discontinuity at <span class="math notranslate nohighlight">\(n\)</span> with size <span class="math notranslate nohighlight">\(1\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{Z}_+\)</span>.</p>
+<p>(iii) <span class="math notranslate nohighlight">\(h:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(h(x) =3 - 5\mathbb{1}_{(0, 1]}(x) + 7\mathbb{1}_{(1, 2]}(x)\)</span></p>
+<p>This is continuous at <span class="math notranslate nohighlight">\(\mathbb{R} \setminus \{0,1,2\}\)</span>, with jump discontinuities at <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(1\)</span>, and <span class="math notranslate nohighlight">\(2\)</span>. The jump sizes are, respectively, <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(-5\)</span>, and <span class="math notranslate nohighlight">\(-7\)</span>.</p>
 <hr class="docutils" />
 <p><a class="reference internal" href="Problems.html#id18"><span class="std std-ref">18.</span></a> To appear (Homework 3 question)</p>
 <hr class="docutils" />
@@ -832,7 +836,7 @@ b &amp; ~\mbox{if}~a &lt; b.\\ \end{array} \right.
 \max\{f, g\}(x) = \frac{1}{2}(f(x) + g(x)) + \frac{1}{2}|f(x) - g(x)|,
 \]</div>
 <p>and continuity follows by Theorem  3.2(i) and (iii) and <a class="reference internal" href="Problems.html#id14"><span class="std std-ref">Problem 14</span></a>.</p>
-<p>(ii) Check that for all <span class="math notranslate nohighlight">\(a, b \in \mathbb{R}\)</span>,</p>
+<p>(ii) You can check that for all <span class="math notranslate nohighlight">\(a, b \in \mathbb{R}\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[
 \min\{a, b\} = \frac{1}{2}(a + b) - \frac{1}{2}|a - b|,
@@ -840,31 +844,33 @@ b &amp; ~\mbox{if}~a &lt; b.\\ \end{array} \right.
 <p>and then argue as in (i).</p>
 <p>Alternatively, one could derive (ii) from (i) by using <span class="math notranslate nohighlight">\(\min\{f,g\} = - \max\{-f, -g\}\)</span>.</p>
 <hr class="docutils" />
-<p><a class="reference internal" href="Problems.html#id21"><span class="std std-ref">21.</span></a>
-(i) <span class="math notranslate nohighlight">\(f(0) = f(0 + 0) = f(0) + f(0) = 2f(0)\)</span>, hence <span class="math notranslate nohighlight">\(f(0) = 0\)</span>.</p>
-<p>(ii) By (i), <span class="math notranslate nohighlight">\(0 = f(0) = f(x + -x) = f(x) + f(-x)\)</span>. So <span class="math notranslate nohighlight">\(f(-x)=-f(x)\)</span>.</p>
-<p>(iii) If <span class="math notranslate nohighlight">\(a \neq 0\)</span> then any sequence <span class="math notranslate nohighlight">\((x_{n})\)</span> which converges to <span class="math notranslate nohighlight">\(a\)</span> can be written as <span class="math notranslate nohighlight">\(x_{n} = a + y_{n}\)</span> where <span class="math notranslate nohighlight">\((y_{n})\)</span> converges to zero. If <span class="math notranslate nohighlight">\(f\)</span> is continuous at <span class="math notranslate nohighlight">\(0\)</span>, then <span class="math notranslate nohighlight">\( \lim_{n\rightarrow\infty} f(y_{n})\)</span> exists and equals <span class="math notranslate nohighlight">\(f(0)\)</span>, which is <span class="math notranslate nohighlight">\(0\)</span> by part (i). So</p>
+<p><a class="reference internal" href="Problems.html#id21"><span class="std std-ref">21.</span></a> Let <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span> be such that</p>
+<div class="math notranslate nohighlight" id="equation-linear">
+<span class="eqno">(2.2)<a class="headerlink" href="#equation-linear" title="Link to this equation">#</a></span>\[f(x+y) = f(x) + f(y) \; \forall x,y \in \mathbb{R}.\]</div>
+<p>Then:</p>
+<p>(i) <span class="math notranslate nohighlight">\(f(0) = f(0 + 0) = f(0) + f(0) = 2f(0)\)</span>, hence <span class="math notranslate nohighlight">\(f(0) = 0\)</span>.</p>
+<p>(ii) For all <span class="math notranslate nohighlight">\(x\in\mathbb{R}\)</span>, we have by (i), <span class="math notranslate nohighlight">\(0 = f(0) = f(x + -x) = f(x) + f(-x)\)</span>. So <span class="math notranslate nohighlight">\(f(-x)=-f(x)\)</span>.</p>
+<p>(iii) Suppose <span class="math notranslate nohighlight">\(f\)</span> is continuous at zero. Then, if <span class="math notranslate nohighlight">\(x \neq 0\)</span> then any sequence <span class="math notranslate nohighlight">\((x_{n})\)</span> which converges to <span class="math notranslate nohighlight">\(x\)</span> can be written as <span class="math notranslate nohighlight">\(x_{n} = x + y_{n}\)</span> where <span class="math notranslate nohighlight">\((y_{n})\)</span> converges to zero. Since <span class="math notranslate nohighlight">\(f\)</span> is assumed to be continuous at <span class="math notranslate nohighlight">\(0\)</span>, we have that <span class="math notranslate nohighlight">\( \lim_{n\rightarrow\infty} f(y_{n})\)</span> exists and equals <span class="math notranslate nohighlight">\(f(0)\)</span>. By (i), <span class="math notranslate nohighlight">\(f(0)=0\)</span>, hence</p>
 <div class="math notranslate nohighlight">
 \[
-\lim_{n\rightarrow\infty} f(x_{n}) = \lim_{n\rightarrow\infty} f(a + y_{n}) = f(a) + \lim_{n\rightarrow\infty} f(y_{n}) = f(a) + f(0) = f(a).
+\lim_{n\rightarrow\infty} f(x_{n}) = \lim_{n\rightarrow\infty} f(a + y_{n}) = f(a) + \lim_{n\rightarrow\infty} f(y_{n}) = f(a) + f(0) = f(a)+0 = f(a).
 \]</div>
-<p>(iv) Firstly, assume <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span> and use induction. It is true for <span class="math notranslate nohighlight">\(n = 1\)</span>. Assume it holds for some <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>, then</p>
+<p>(iv) Let <span class="math notranslate nohighlight">\(k=f(1)\)</span>. We use induction on <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>. If <span class="math notranslate nohighlight">\(n=1\)</span>, then <span class="math notranslate nohighlight">\(f(n)=f(1)=k=k\cdot 1\)</span>, so the statement holds. Assume it holds for some <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>. Then by <a class="reference internal" href="#equation-linear">(2.2)</a>,</p>
 <div class="math notranslate nohighlight">
 \[
 f(n+1) = f(n) + f(1) = nk + k = (n+1)k.
 \]</div>
-<p>So by induction, the result holds for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>.
-Combine this with part (ii), to extend to all <span class="math notranslate nohighlight">\(n\in \mathbb{Z}\)</span>.</p>
-<p>(v) Consider <span class="math notranslate nohighlight">\(\frac{p}{q}\in\mathbb{Q}\)</span>, where <span class="math notranslate nohighlight">\(p\in \mathbb{Z}\)</span> and <span class="math notranslate nohighlight">\(q\in \mathbb{N}\)</span>. By (iv),</p>
+<p>Hence by induction, <span class="math notranslate nohighlight">\(f(n)=nk\)</span>, for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>. Combine this with part (ii) to extend to all <span class="math notranslate nohighlight">\(n\in \mathbb{Z}\)</span>.</p>
+<p>(v) Still writing <span class="math notranslate nohighlight">\(k=f(1)\)</span>, consider <span class="math notranslate nohighlight">\(\frac{p}{q}\in\mathbb{Q}\)</span>, where <span class="math notranslate nohighlight">\(p\in \mathbb{Z}\)</span> and <span class="math notranslate nohighlight">\(q\in \mathbb{N}\)</span>. By (iv),</p>
 <div class="math notranslate nohighlight">
 \[
 pk = f(p) = f\left(q\cdot \frac{p}{q}\right) = qf\left(\frac{p}{q}\right),
 \]</div>
 <p>and the result follows.</p>
-<p>(vi) We have already proved this for rational <span class="math notranslate nohighlight">\(x\)</span>, so suppose that <span class="math notranslate nohighlight">\(x\)</span> is irrational. Then we can find a sequence <span class="math notranslate nohighlight">\(\left(\frac{p_{n}}{q_{n}}\right)\)</span> of rational numbers that converges to <span class="math notranslate nohighlight">\(x\)</span> (as we did in the solution to Example 3.7). Then using (iii), (v) and algebra of limits, we have</p>
+<p>(vi) Finally, let <span class="math notranslate nohighlight">\(k=f(1), and assume \)</span>f<span class="math notranslate nohighlight">\( is continuous at \)</span>0<span class="math notranslate nohighlight">\(, and let \)</span>x\in\mathbb{R}<span class="math notranslate nohighlight">\(. If \)</span>x\in\mathbb{Q}<span class="math notranslate nohighlight">\(, then we have already shown \)</span>f(x)=kx<span class="math notranslate nohighlight">\( in part (v)\)</span>. So assume <span class="math notranslate nohighlight">\(x\)</span> is irrational. By denseness of the rationals, there is a sequence <span class="math notranslate nohighlight">\((r_n)\)</span> of rational numbers converging to <span class="math notranslate nohighlight">\(x\)</span>. By (v), <span class="math notranslate nohighlight">\(f(r_n)=kr_n\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}}\)</span>. By (iii), <span class="math notranslate nohighlight">\(f\)</span> is continuous at <span class="math notranslate nohighlight">\(x\)</span>, so using algebra of limits, we have</p>
 <div class="math notranslate nohighlight">
 \[
-f(x) = \lim_{n\rightarrow\infty} f\left(\frac{p_n}{q_n}\right) =   \lim_{n\rightarrow\infty} k \frac{p_n}{q_n}=k \lim_{n\rightarrow\infty} \frac{p_n}{q_n} = kx.
+f(x) = \lim_{n\rightarrow\infty} f(r_n) =   \lim_{n\rightarrow\infty} kr_n=k \lim_{n\rightarrow\infty} r_n = kx.
 \]</div>
 <hr class="docutils" />
 <p><a class="reference internal" href="Problems.html#id22"><span class="std std-ref">22.</span></a> To appear (Homework 2 question).</p>

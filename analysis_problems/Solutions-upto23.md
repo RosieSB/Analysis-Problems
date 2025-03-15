@@ -576,11 +576,19 @@ $g \circ f:\mathbb{R} \setminus \{0\} \to \mathbb{R} \setminus \{0\}$ given by $
 ---
 
 [17.](17)
-(i) Continuous on $\mathbb{R} \setminus \{1\}$. Jump discontinuity at $1$ with $J_{f}(1) = 1$.
+The proofs for each of these answers are immediate by [Problem 8](#8).
 
-(ii) Continuous on $\mathbb{R} \setminus \mathbb{Z}$. Jump discontinuity at $n$ with $J_{g}(n) = 1$ for all $n\in\mathbb{Z}_+$.
+(i) $f:\mathbb{R}\to\mathbb{R}$; $f(x) = \begin{cases} 1 -x & \text{if }x < 1\\ x^{2}& \text{if }x \geq 1. \end{cases}$ 
 
-(iii) Continuous at $\mathbb{R} \setminus \{0,1,2\}$. Each of $0, 1, 2$ is a jump discontinuity and we have $J_{h}(0) =-5, J_{h}(1) = 12, J_{h}(2) = -7.$
+This function is continuous on $\mathbb{R} \setminus \{1\}$, with a jump discontinuity at $x=1$ of size $1$.
+
+(ii) $g:\mathbb{R}\to\mathbb{R}$; $g(x) = [x] = \left\{\begin{array}{cl} \lfloor x\rfloor & \text{ if } x\geq 0 \\ \lceil x \rceil & \text{ if } x<0 \end{array}\right.$ 
+
+This function is continuous on $\mathbb{R}\setminus\{\pm k: k\in\mathbb{N}\}$. Jump discontinuity at $n$ with size $1$ for all $n\in\mathbb{Z}_+$.
+
+(iii) $h:\mathbb{R}\to\mathbb{R}$; $h(x) =3 - 5\mathbb{1}_{(0, 1]}(x) + 7\mathbb{1}_{(1, 2]}(x)$ 
+
+This is continuous at $\mathbb{R} \setminus \{0,1,2\}$, with jump discontinuities at $0$, $1$, and $2$. The jump sizes are, respectively, $0$, $-5$, and $-7$.  
 
 ---
 
@@ -617,7 +625,7 @@ $$
 
 and continuity follows by Theorem  3.2(i) and (iii) and [Problem 14](14).
 
-(ii) Check that for all $a, b \in \mathbb{R}$,
+(ii) You can check that for all $a, b \in \mathbb{R}$,
 
 $$
 \min\{a, b\} = \frac{1}{2}(a + b) - \frac{1}{2}|a - b|,
@@ -629,27 +637,32 @@ Alternatively, one could derive (ii) from (i) by using $\min\{f,g\} = - \max\{-f
 
 ---
 
-[21.](21)
+[21.](21) Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be such that 
+```{math}
+:label: linear
+f(x+y) = f(x) + f(y) \; \forall x,y \in \mathbb{R}.
+```
+Then:
+
 (i) $f(0) = f(0 + 0) = f(0) + f(0) = 2f(0)$, hence $f(0) = 0$.
 
-(ii) By (i), $0 = f(0) = f(x + -x) = f(x) + f(-x)$. So $f(-x)=-f(x)$.
+(ii) For all $x\in\mathbb{R}$, we have by (i), $0 = f(0) = f(x + -x) = f(x) + f(-x)$. So $f(-x)=-f(x)$.
 
-(iii) If $a \neq 0$ then any sequence $(x_{n})$ which converges to $a$ can be written as $x_{n} = a + y_{n}$ where $(y_{n})$ converges to zero. If $f$ is continuous at $0$, then $ \lim_{n\rightarrow\infty} f(y_{n})$ exists and equals $f(0)$, which is $0$ by part (i). So
+(iii) Suppose $f$ is continuous at zero. Then, if $x \neq 0$ then any sequence $(x_{n})$ which converges to $x$ can be written as $x_{n} = x + y_{n}$ where $(y_{n})$ converges to zero. Since $f$ is assumed to be continuous at $0$, we have that $ \lim_{n\rightarrow\infty} f(y_{n})$ exists and equals $f(0)$. By (i), $f(0)=0$, hence 
 
 $$
-\lim_{n\rightarrow\infty} f(x_{n}) = \lim_{n\rightarrow\infty} f(a + y_{n}) = f(a) + \lim_{n\rightarrow\infty} f(y_{n}) = f(a) + f(0) = f(a).
+\lim_{n\rightarrow\infty} f(x_{n}) = \lim_{n\rightarrow\infty} f(a + y_{n}) = f(a) + \lim_{n\rightarrow\infty} f(y_{n}) = f(a) + f(0) = f(a)+0 = f(a).
 $$
 
-(iv) Firstly, assume $n\in\mathbb{N}$ and use induction. It is true for $n = 1$. Assume it holds for some $n\in\mathbb{N}$, then
+(iv) Let $k=f(1)$. We use induction on $n\in\mathbb{N}$. If $n=1$, then $f(n)=f(1)=k=k\cdot 1$, so the statement holds. Assume it holds for some $n\in\mathbb{N}$. Then by [](#linear),
 
 $$
 f(n+1) = f(n) + f(1) = nk + k = (n+1)k.
 $$
 
-So by induction, the result holds for all $n\in\mathbb{N}$.
-Combine this with part (ii), to extend to all $n\in \mathbb{Z}$.
+Hence by induction, $f(n)=nk$, for all $n\in\mathbb{N}$. Combine this with part (ii) to extend to all $n\in \mathbb{Z}$.
 
-(v) Consider $\frac{p}{q}\in\mathbb{Q}$, where $p\in \mathbb{Z}$ and $q\in \mathbb{N}$. By (iv),
+(v) Still writing $k=f(1)$, consider $\frac{p}{q}\in\mathbb{Q}$, where $p\in \mathbb{Z}$ and $q\in \mathbb{N}$. By (iv),
 
 $$
 pk = f(p) = f\left(q\cdot \frac{p}{q}\right) = qf\left(\frac{p}{q}\right),
@@ -657,10 +670,10 @@ $$
 
 and the result follows.
 
-(vi) We have already proved this for rational $x$, so suppose that $x$ is irrational. Then we can find a sequence $\left(\frac{p_{n}}{q_{n}}\right)$ of rational numbers that converges to $x$ (as we did in the solution to Example 3.7). Then using (iii), (v) and algebra of limits, we have
+(vi) Finally, let $k=f(1), and assume $f$ is continuous at $0$, and let $x\in\mathbb{R}$. If $x\in\mathbb{Q}$, then we have already shown $f(x)=kx$ in part (v)$. So assume $x$ is irrational. By denseness of the rationals, there is a sequence $(r_n)$ of rational numbers converging to $x$. By (v), $f(r_n)=kr_n$ for all $n\in\mathbb{N}}$. By (iii), $f$ is continuous at $x$, so using algebra of limits, we have
 
 $$
-f(x) = \lim_{n\rightarrow\infty} f\left(\frac{p_n}{q_n}\right) =   \lim_{n\rightarrow\infty} k \frac{p_n}{q_n}=k \lim_{n\rightarrow\infty} \frac{p_n}{q_n} = kx.
+f(x) = \lim_{n\rightarrow\infty} f(r_n) =   \lim_{n\rightarrow\infty} kr_n=k \lim_{n\rightarrow\infty} r_n = kx.
 $$
 
 ---
