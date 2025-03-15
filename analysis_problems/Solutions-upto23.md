@@ -572,3 +572,106 @@ as $f$ is continuous. So by the sandwich rule, $\lim_{n\rightarrow\infty} |f|(x_
 [16.](16) $f \circ g:\mathbb{R}\to \mathbb{R}$ given by $(f \circ g)(x) = \frac{1}{1  + x^{2}}$. It is continuous on $\mathbb{R}$ by Theorem 3.2(iv).
 <br>
 $g \circ f:\mathbb{R} \setminus \{0\} \to \mathbb{R} \setminus \{0\}$ given by $(g \circ f)(x) = {1  + \frac{1}{x^2}}$. It is continuous on $\mathbb{R} \setminus \{0\}$ by Theorem 3.2(iv).
+
+---
+
+[17.](17)
+(i) Continuous on $\mathbb{R} \setminus \{1\}$. Jump discontinuity at $1$ with $J_{f}(1) = 1$.
+
+(ii) Continuous on $\mathbb{R} \setminus \mathbb{Z}$. Jump discontinuity at $n$ with $J_{g}(n) = 1$ for all $n\in\mathbb{Z}_+$.
+
+(iii) Continuous at $\mathbb{R} \setminus \{0,1,2\}$. Each of $0, 1, 2$ is a jump discontinuity and we have $J_{h}(0) =-5, J_{h}(1) = 12, J_{h}(2) = -7.$
+
+---
+
+[18.](18) To appear (Homework 3 question)  
+---
+
+[19.](19) To appear (Homework 2 question).
+
+---
+
+[20.](20) 
+(i) 
+
+$$
+\max\{a, b\} = \left\{\begin{array}{c c} a & ~\mbox{if}~a \geq b\\
+b & ~\mbox{if}~a < b.\\ \end{array} \right.
+$$
+
+On the other hand,
+
+$$
+\frac{1}{2}( a+b) + \frac{1}{2}|a-b| = \left\{\begin{array}{c c c} \frac{1}{2}(a+b) + \frac{1}{2}(a- b) & = a & ~\mbox{if}~a \geq b\\[.5em]
+\frac{1}{2}(a+b) + \frac{1}{2}(b- a) &=  b & ~\mbox{if}~a < b,\\ \end{array} \right.
+$$
+
+and the result follows.
+
+Then for all $x \in A\cap B,$
+
+$$
+\max\{f, g\}(x) = \frac{1}{2}(f(x) + g(x)) + \frac{1}{2}|f(x) - g(x)|,
+$$
+
+and continuity follows by Theorem  3.2(i) and (iii) and [Problem 14](14).
+
+(ii) Check that for all $a, b \in \mathbb{R}$,
+
+$$
+\min\{a, b\} = \frac{1}{2}(a + b) - \frac{1}{2}|a - b|,
+$$
+
+and then argue as in (i).
+
+Alternatively, one could derive (ii) from (i) by using $\min\{f,g\} = - \max\{-f, -g\}$.
+
+---
+
+[21.](21)
+(i) $f(0) = f(0 + 0) = f(0) + f(0) = 2f(0)$, hence $f(0) = 0$.
+
+(ii) By (i), $0 = f(0) = f(x + -x) = f(x) + f(-x)$. So $f(-x)=-f(x)$.
+
+(iii) If $a \neq 0$ then any sequence $(x_{n})$ which converges to $a$ can be written as $x_{n} = a + y_{n}$ where $(y_{n})$ converges to zero. If $f$ is continuous at $0$, then $ \lim_{n\rightarrow\infty} f(y_{n})$ exists and equals $f(0)$, which is $0$ by part (i). So
+
+$$
+\lim_{n\rightarrow\infty} f(x_{n}) = \lim_{n\rightarrow\infty} f(a + y_{n}) = f(a) + \lim_{n\rightarrow\infty} f(y_{n}) = f(a) + f(0) = f(a).
+$$
+
+(iv) Firstly, assume $n\in\mathbb{N}$ and use induction. It is true for $n = 1$. Assume it holds for some $n\in\mathbb{N}$, then
+
+$$
+f(n+1) = f(n) + f(1) = nk + k = (n+1)k.
+$$
+
+So by induction, the result holds for all $n\in\mathbb{N}$.
+Combine this with part (ii), to extend to all $n\in \mathbb{Z}$.
+
+(v) Consider $\frac{p}{q}\in\mathbb{Q}$, where $p\in \mathbb{Z}$ and $q\in \mathbb{N}$. By (iv),
+
+$$
+pk = f(p) = f\left(q\cdot \frac{p}{q}\right) = qf\left(\frac{p}{q}\right),
+$$
+
+and the result follows.
+
+(vi) We have already proved this for rational $x$, so suppose that $x$ is irrational. Then we can find a sequence $\left(\frac{p_{n}}{q_{n}}\right)$ of rational numbers that converges to $x$ (as we did in the solution to Example 3.7). Then using (iii), (v) and algebra of limits, we have
+
+$$
+f(x) = \lim_{n\rightarrow\infty} f\left(\frac{p_n}{q_n}\right) =   \lim_{n\rightarrow\infty} k \frac{p_n}{q_n}=k \lim_{n\rightarrow\infty} \frac{p_n}{q_n} = kx.
+$$
+
+---
+
+[22.](22) To appear (Homework 2 question).
+
+---
+
+[23.](23) 
+<br>
+The function $\mathbb{1}_{(a, b)}$ is left continuous at $a$ (but not right continuous), and right continuous at $b$ (but not left continuous).
+To prove the left continuity at $a$, let $(x_{n})$ be any sequence in $\mathbb{R}$ which converges to $a$ with $x_{n} < a$ for all $n\in\mathbb{N}$. Then $\lim_{n\rightarrow\infty} \mathbb{1}_{(a, b)}(x_{n}) = 0 = \mathbb{1}_{(a, b)}(a).$ On the other hand to see that it is not right continuous at $a$, let $(y_{n})$ be any sequence in $\mathbb{R}$ which converges to $a$ with $a < y_{n} < b$ for all $n\in\mathbb{N}$. Then
+$ \lim_{n\rightarrow\infty} \mathbb{1}_{(a, b)}(y_{n}) = 1 \neq \mathbb{1}_{(a, b)}(a). $ The other assertion is proved similarly.
+<br>
+[Contrast this with $\mathbb{1}_{[a, b]}$, which was discussed in the notes.]
