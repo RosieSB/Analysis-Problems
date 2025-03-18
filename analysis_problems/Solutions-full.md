@@ -446,12 +446,12 @@ $$
 |f(x)-1|=|x^2-1|=|x+1|\cdot|x+1|.
 $$
 
-We can bound the $|x+1|$ factor above by $4$ provided we choose a $\delta$ that is at most $1$. Indeed: if $0<x-1<1$, then $3<x+1<4$, so $|x+1|<4$.  
+We can bound the $|x+1|$ factor above by $3$ provided we choose a $\delta$ that is at most $1$. Indeed: if $0<x-1<1$, then $2<x+1<3$, so $|x+1|<3$.  
 
-We choose $\delta=\min\left\{1,\frac{\varepsilon}{4}\right\}$. Then, for $0<x-1<\delta$, we have $0<x-1<1$ and $0<|x-1|<\frac{\varepsilon}{4}$. So,
+We choose $\delta=\min\left\{1,\frac{\varepsilon}{3}\right\}$. Then, for $0<x-1<\delta$, we have $0<x-1<1$ and $0<|x-1|<\frac{\varepsilon}{3}$. So,
 
 $$
-|f(x)-1|=|x+1|\cdot|x-1| < 4\cdot\frac{\varepsilon}{4}=\varepsilon.
+|f(x)-1|=|x+1|\cdot|x-1| < 3\cdot\frac{\varepsilon}{3}=\varepsilon.
 $$
 
 ````{note}
