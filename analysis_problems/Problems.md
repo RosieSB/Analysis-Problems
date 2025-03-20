@@ -294,7 +294,7 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 26. Complete the proof of the extreme value theorem ([Theorem 3.5](https://rosiesb.github.io/Analysis-Notes/3Cty.html#thm:evt)), i.e. prove that a continuous function $f:[a,b]\to\mathbb{R}$ attains its infimum.
 
 (27)=
-27. Use [Corollary 3.2](https://rosiesb.github.io/Analysis-Notes/3Cty.html#interval) to prove each of the following statements.
+27. Use [Corollary 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#interval) to prove each of the following statements.
 
     (i) Every continuous function from $\mathbb{R}$ to $\mathbb{Z}$ is constant.
 
