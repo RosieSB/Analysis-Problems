@@ -13,8 +13,8 @@
 \contentsline {subsection}{\numberline {0.2.3}Continuity}{22}{subsection.0.2.3}%
 \contentsline {section}{\numberline {0.3}Homework feedback}{24}{section.0.3}%
 \contentsline {subsection}{\numberline {0.3.1}Feedback for Homework 1}{24}{subsection.0.3.1}%
-\contentsline {subsubsection}{General comments on mathematical writing}{24}{subsubsection*.99}%
-\contentsline {subsubsection}{Problems P2 and P3}{25}{subsubsection*.100}%
-\contentsline {subsubsection}{Problem 2}{25}{subsubsection*.101}%
-\contentsline {subsubsection}{Problem 3}{25}{subsubsection*.102}%
+\contentsline {subsubsection}{General comments on mathematical writing}{24}{subsubsection*.100}%
+\contentsline {subsubsection}{Problems P2 and P3}{25}{subsubsection*.101}%
+\contentsline {subsubsection}{Problem 2}{25}{subsubsection*.102}%
+\contentsline {subsubsection}{Problem 3}{25}{subsubsection*.103}%
 \xpginauxfilefalse 

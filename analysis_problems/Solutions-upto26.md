@@ -1,6 +1,6 @@
 (sol)=
 # Solutions
-Complete up to Q23, excluding some homework questions. 
+Complete up to Q26, excluding some homework questions. 
 
 Homework solutions will be released alongside the return of each piece of work.
 
@@ -692,3 +692,17 @@ To prove the left continuity at $a$, let $(x_{n})$ be any sequence in $\mathbb{R
 $ \lim_{n\rightarrow\infty} \mathbb{1}_{(a, b)}(y_{n}) = 1 \neq \mathbb{1}_{(a, b)}(a). $ The other assertion is proved similarly.
 <br>
 [Contrast this with $\mathbb{1}_{[a, b]}$, which was discussed in the notes.]
+
+---
+
+[24.](24) Since $f$ is continuous on $[a, b]$, so is $g$. We have $g(a) = f(a) - \gamma < 0$ and $g(b) = f(b) - \gamma > 0$. Hence by [Proposition 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt-sc), there exists $c \in (a, b)$ with $g(c) = 0$, i.e. $f(c) = \gamma$, as was required.
+
+---
+
+(25sol)=
+[25.](25) To appear (Homework 3 question).
+
+---
+
+[26.](26) Define $\gamma = \inf_{x \in [a, b]}f(x)$ and assume that it is not attained, so $\gamma < f(x)$ for all $x \in [a,b]$. Then consider the function $h:[a,b]\to \mathbb{R}$ given by $h(x) = \displaystyle\frac{1}{f(x) - \gamma}$. This is continuous, and hence bounded on $[a, b]$. So there exists $K \geq 0$ such that $|h(x)| \leq K$ for all $x \in [a, b]$. By Problem 16(ii), given any $\varepsilon > 0$, there exists $x \in [a, b]$ such that $f(x) < \gamma + \varepsilon$. Now take $\varepsilon = \frac{1}{K}$ to deduce that $h(x) > K$, which yields the required contradiction.
+

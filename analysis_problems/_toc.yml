@@ -7,5 +7,5 @@ options:
   numbered: 2
 sections:
 - file: Problems
-- file: Solutions-upto23
+- file: Solutions-upto26
 - file: HW-feedback

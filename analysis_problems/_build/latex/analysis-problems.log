@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.4)  24 MAR 2025 10:08
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.4)  24 MAR 2025 10:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1726,7 +1726,7 @@ LaTeX Warning: Hyper reference `Problems:equation-fourier' on page 10 undefined
 
 [10] [11] [12]
 
-LaTeX Warning: Hyper reference `Solutions-upto23:equation-eq-sqrta-sqrtb' on pa
+LaTeX Warning: Hyper reference `Solutions-upto26:equation-eq-sqrta-sqrtb' on pa
 ge 13 undefined on input line 1560.
 
 [13] [14] [15]
@@ -1737,13 +1737,13 @@ File: xsin(1,x).png Graphic file (type bmp)
 <xsin(1,x).png>
  [20] [21] [22]
 
-LaTeX Warning: Hyper reference `Solutions-upto23:equation-linear' on page 23 un
+LaTeX Warning: Hyper reference `Solutions-upto26:equation-linear' on page 23 un
 defined on input line 2295.
 
 [23] [24]
 
 LaTeX Warning: Hyper reference `HW-feedback:equation-hw1' on page 25 undefined 
-on input line 2415.
+on input line 2436.
 
 (./analysis-problems.ind) [25] (./analysis-problems.aux)
  ***********
@@ -1755,13 +1755,13 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `analysis-problems.out' has not changed.
-(rerunfilecheck)             Checksum: 98E4ACD3B72692AEE02DFF1CCAE0CD6F;1247.
+(rerunfilecheck)             Checksum: A190AC4A5B26D031F19D297625BD5154;1248.
  ) 
 Here is how much of TeX's memory you used:
- 46227 strings out of 474878
- 1049496 string characters out of 5762516
+ 46228 strings out of 474878
+ 1049518 string characters out of 5762516
  1954627 words of memory out of 5000000
- 67435 multiletter control sequences out of 15000+600000
+ 67436 multiletter control sequences out of 15000+600000
  567114 words of font info for 129 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  99i,24n,114p,861b,2115s stack positions out of 10000i,1000n,20000p,200000b,200000s
