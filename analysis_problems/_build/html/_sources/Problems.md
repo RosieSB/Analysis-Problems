@@ -286,7 +286,7 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 24. Finish the proof of the intermediate value theorem ([Theorem 3.4](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt)). [Hint: Apply the special case [Proposition 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt-sc) to the function $g(x) = f(x) - \gamma$, for $x \in [a, b]$.]
 
 (25)=
-25. *(Homework 3 question).* Prove the following *fixed point theorem*: if $f:[a,b] \rightarrow (a,b)$ is continuous, then there exists $c \in (a, b)$ such that $f(c) = c$.
+25. *(Homework 3 question).* Prove the following *fixed point theorem*: if $f:[a,b] \rightarrow (a,b)$ is continuous, then there exists $c \in [a, b]$ such that $f(c) = c$.
 <br>
 [Hint: This is a similar proof to that of [Problem 24](#24). This time you need to consider a function of the form $g(x) = f(x) - $ (*something*). What is *something*?] Give a counter-example to demonstrate that the claim is false if the domain of $f$ is restricted to $(0, 1)$.
 
