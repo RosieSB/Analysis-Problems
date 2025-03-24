@@ -286,7 +286,7 @@ Begin by considering $f: \mathbb{R} \rightarrow \mathbb{R}$, such that $f(x+y) =
 24. Finish the proof of the intermediate value theorem ([Theorem 3.4](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt)). [Hint: Apply the special case [Proposition 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt-sc) to the function $g(x) = f(x) - \gamma$, for $x \in [a, b]$.]
 
 (25)=
-25. *(Homework 3 question).* Prove the following *fixed point theorem*: if $f:[a,b] \rightarrow (a,b)$ is continuous, then there exists $c \in [a, b]$ such that $f(c) = c$.
+25. *(Homework 3 question).* Prove the following *fixed point theorem*: if $f:[a,b] \rightarrow (a,b)$ is continuous, then there exists $c \in (a,b)$ such that $f(c) = c$.
 <br>
 [Hint: This is a similar proof to that of [Problem 24](#24). This time you need to consider a function of the form $g(x) = f(x) - $ (*something*). What is *something*?] Give a counter-example to demonstrate that the claim is false if the domain of $f$ is restricted to $(0, 1)$.
 
@@ -344,9 +344,9 @@ the function $f$ has limit $l$ at the point $a$? What notation do we use to writ
 38. 
     (i) Give the definition of what it means for a function $f:A\to\mathbb{R}$ to be differentiable at $a \in A$.
    
-    (ii) State carefully what this means in terms of limits of sequences.
+    (ii) State carefully what this means in terms of the $\varepsilon-\delta$ criterion.
    
-    (iii) State carefully what this means in terms of the $\varepsilon-\delta$ criterion.
+    (iii) State carefully what this means in terms of limits of sequences.
     [The first part is just asking you to give [Definition 4.1](https://rosiesb.github.io/Analysis-Notes/4Diff.html#def:diff) and the other parts are checking that you know what this means.
     <br>
     The key points from Chapter 2 are [Definition 2.2](https://rosiesb.github.io/Analysis-Notes/2LoF.html#functionlimit) of a limit of a function and [Theorem 2.1](https://rosiesb.github.io/Analysis-Notes/2LoF.html#ed) giving the sequential criterion. But you need to see how to apply these, not just copy them out. Here they have to be applied to the relevant function for the definition of differentiability, not $f$ itself. ]

@@ -1,11 +1,11 @@
 # Fdb version 4
-["makeindex analysis-problems.idx"] 1741363200.95864 "analysis-problems.idx" "analysis-problems.ind" "analysis-problems" 1742465715.56296 0
-  "analysis-problems.idx" 1742465713.97675 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex analysis-problems.idx"] 1741363200.95864 "analysis-problems.idx" "analysis-problems.ind" "analysis-problems" 1742809971.70192 0
+  "analysis-problems.idx" 1742809970.11119 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "analysis-problems.ilg"
   "analysis-problems.ind"
   (rewritten before read)
-["pdflatex"] 1742465712.59104 "analysis-problems.tex" "analysis-problems.pdf" "analysis-problems" 1742465715.56307 0
+["pdflatex"] 1742809968.90751 "analysis-problems.tex" "analysis-problems.pdf" "analysis-problems" 1742809971.70203 0
   "/etc/texmf/web2c/texmf.cnf" 1727092416.96397 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -251,14 +251,14 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1728037326 10844859 761694256497039d9d63bb0a9c8f7745 ""
   "2iii.png" 1741975023.37178 26190 2d411e69be4907e9cacaaad45b545b56 ""
-  "analysis-problems.aux" 1742465715.39375 13391 7a141d46bb375f44ccd1ca2325ea1fa1 "pdflatex"
+  "analysis-problems.aux" 1742809971.54619 13391 7a141d46bb375f44ccd1ca2325ea1fa1 "pdflatex"
   "analysis-problems.ind" 1741013665.93874 0 d41d8cd98f00b204e9800998ecf8427e "makeindex analysis-problems.idx"
-  "analysis-problems.out" 1742465715.39475 1247 98e4acd3b72692aee02dff1ccae0cd6f "pdflatex"
-  "analysis-problems.tex" 1742465712.28875 113743 226390297c4970e324dd8360d815c237 ""
-  "analysis-problems.toc" 1742465715.39475 1470 c2a3155d0aa6b093ee504ad30bf418db "pdflatex"
+  "analysis-problems.out" 1742809971.54719 1247 98e4acd3b72692aee02dff1ccae0cd6f "pdflatex"
+  "analysis-problems.tex" 1742809968.68219 113743 f6731709f0f9abb1507bf024de428e16 ""
+  "analysis-problems.toc" 1742809971.54719 1470 c2a3155d0aa6b093ee504ad30bf418db "pdflatex"
   "jupyterBook.cls" 1734793761.72056 2881 d7be52eb557699167c5a8617d29c1b64 ""
   "sphinx.sty" 1734793760.4802 50659 6d393be3f369a7862f0b19a359f1ab89 ""
-  "sphinxhighlight.sty" 1742465711.87675 7553 83fb52292c17957d9f4aadcb28c57a87 ""
+  "sphinxhighlight.sty" 1742809968.43419 7553 83fb52292c17957d9f4aadcb28c57a87 ""
   "sphinxlatexadmonitions.sty" 1734793760.4802 18222 f3bfd316b630ed188fcc20bf320acafe ""
   "sphinxlatexcontainers.sty" 1734793760.4802 901 d3a3a1b7b2547f47ade2499350b5c420 ""
   "sphinxlatexgraphics.sty" 1734793760.4812 4840 a9578332b6f3b35e198751fb632c9b79 ""
@@ -273,7 +273,7 @@
   "sphinxlatexstyletext.sty" 1734793760.4822 6881 543f3cecccc7dccac396b5720cccf443 ""
   "sphinxlatextables.sty" 1734793760.4822 57644 2253ce149b29042948a000d2dbf50b50 ""
   "sphinxmanual.cls" 1734793760.4822 4241 7b0d7a37df7b5715fb0dbd585c52ecdb ""
-  "sphinxmessages.sty" 1742465712.30075 745 3f5fcd6cdd7964ed608767954a8ced6f ""
+  "sphinxmessages.sty" 1742809968.69519 745 3f5fcd6cdd7964ed608767954a8ced6f ""
   "sphinxoptionsgeometry.sty" 1734793760.4822 2061 47bb34b8ed8a78823eb0c886abfb9f4d ""
   "sphinxoptionshyperref.sty" 1734793760.4822 1094 79beb8b8a3f10784f8cce804e0f9d3aa ""
   "sphinxpackageboxes.sty" 1734793760.4832 36106 1be2053eb1cb9b083b3a75e3657bcb24 ""
