@@ -56,7 +56,7 @@
 
 
 \usepackage[Bjarne]{fncychap}
-\usepackage[,numfigreset=2,mathnumfig]{sphinx}
+\usepackage[,numfigreset=1,mathnumfig]{sphinx}
 
 \fvset{fontsize=\small}
 \usepackage{geometry}
@@ -87,7 +87,7 @@
         
 
 \title{MAS2004/9 Semester 2 Problems}
-\date{Mar 24, 2025}
+\date{Mar 27, 2025}
 \release{}
 \author{Rosie Shewell Brockway}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -165,10 +165,15 @@ Links: \sphinxhref{https://vle.shef.ac.uk/webapps/blackboard/content/listContent
 \sphinxstepscope
 
 
-\section{Problems}
+\part{Part}
+
+\sphinxstepscope
+
+
+\chapter{Problems}
 \label{\detokenize{Problems:problems}}\label{\detokenize{Problems:prob}}\label{\detokenize{Problems::doc}}
 
-\subsection{Preliminary problems}
+\section{Preliminary problems}
 \label{\detokenize{Problems:preliminary-problems}}\label{\detokenize{Problems:ch1prob}}\phantomsection\label{\detokenize{Problems:p1}}
 \sphinxAtStartPar
 P1.
@@ -263,7 +268,7 @@ P7. Let \(A\) and \(B\) be bounded and non\sphinxhyphen{}empty subsets of \(\mat
 
 
 
-\subsection{Limits of functions}
+\section{Limits of functions}
 \label{\detokenize{Problems:limits-of-functions}}\label{\detokenize{Problems:ch2prob}}\phantomsection\label{\detokenize{Problems:id1}}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
@@ -457,7 +462,7 @@ In the notes, we gave meaning to \(\displaystyle\lim_{x \rightarrow a} f(x)\) wh
 \end{enumerate}
 
 
-\subsection{Continuity}
+\section{Continuity}
 \label{\detokenize{Problems:continuity}}\label{\detokenize{Problems:ch3prob}}\phantomsection\label{\detokenize{Problems:id13}}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{12}
@@ -724,7 +729,7 @@ If \(f:[a, b] \rightarrow \mathbb{R}\) is continuous and bijective, and \(f(a) <
 (ii) Let \(f: \mathbb{R} \rightarrow \mathbb{R}\) be a continuous function for which \(f(x) = f(x^{2})\) for all \(x \in \mathbb{R}\). Use the result of (i) to show that \(f\) is constant.
 
 
-\subsection{Differentiation}
+\section{Differentiation}
 \label{\detokenize{Problems:differentiation}}\label{\detokenize{Problems:ch4prob}}\phantomsection\label{\detokenize{Problems:id37}}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{36}
@@ -822,7 +827,7 @@ is differentiable at every \(x \in \mathbb{R}\). What can you say about its seco
 \setcounter{enumi}{43}
 \item {} 
 \sphinxAtStartPar
-Let \(f:\mathbb{R}\to \mathbb{R}\) be given by \(f(x) = x - [x]\) for all \(x \in \mathbb{R}\), where \([x]\) denotes the integer part of \(f\) (see {\hyperref[\detokenize{Problems:equation-eq-x}]{\sphinxcrossref{(1.1)}}}).
+Let \(f:\mathbb{R}\to \mathbb{R}\) be given by \(f(x) = x - [x]\) for all \(x \in \mathbb{R}\), where \([x]\) denotes the integer part of \(f\) (see {\hyperref[\detokenize{Problems:equation-eq-x}]{\sphinxcrossref{(1.2.1)}}}).
 
 Explain carefully at which points \(f\)  is differentiable, and find the value of its derivative there. {[}It will probably help to sketch the graph!{]}
 
@@ -946,7 +951,7 @@ Let \(f:\mathbb{R} \rightarrow \mathbb{R}\) be twice differentiable at \(a\) wit
 \end{enumerate}
 
 
-\subsection{Sequences and series of functions}
+\section{Sequences and series of functions}
 \label{\detokenize{Problems:sequences-and-series-of-functions}}\label{\detokenize{Problems:ch5prob}}\phantomsection\label{\detokenize{Problems:id54}}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{53}
@@ -1143,7 +1148,7 @@ While a perfectly good series, mathematical understanding in europe at the time 
 \sphinxstylestrong{Disclaimer:} I am not a historian. For more on this fascinating subject, I recommend reading Chapter 1 of \sphinxhref{https://find.shef.ac.uk/permalink/f/1lephdb/44SFD\_ALMA\_DS21193257230001441}{A Radical Approach to Real Analysis by Bressoud}.
 
 \sphinxAtStartPar
-(i) Using \sphinxhref{https://www.desmos.com/calculator/bd3xikfhb0}{Desmos} or otherwise, determine (or make an educated guess) what function \(f:\mathbb{R}\to\mathbb{R}\) is represented by the Fourier series {\hyperref[\detokenize{Problems:equation-fourier}]{\sphinxcrossref{(1.2)}}}, and sketch its graph. What is its period?
+(i) Using \sphinxhref{https://www.desmos.com/calculator/bd3xikfhb0}{Desmos} or otherwise, determine (or make an educated guess) what function \(f:\mathbb{R}\to\mathbb{R}\) is represented by the Fourier series {\hyperref[\detokenize{Problems:equation-fourier}]{\sphinxcrossref{(1.5.1)}}}, and sketch its graph. What is its period?
 
 \sphinxAtStartPar
 (ii) Evaluate the series when \(x\) is an odd integer. What do you notice? Do you need to adjust your answer to (i)?
@@ -1152,10 +1157,10 @@ While a perfectly good series, mathematical understanding in europe at the time 
 (iii) Calculate \(\text{Dom}(f')\), and write down a formula for \(f'\).
 
 \sphinxAtStartPar
-(iv) Now differentiate the series {\hyperref[\detokenize{Problems:equation-fourier}]{\sphinxcrossref{(1.2)}}} term by term. Does this series converge pointwise for any values of \(x\)? You may find Desmos or a similar graphing tool helpful for this part.
+(iv) Now differentiate the series {\hyperref[\detokenize{Problems:equation-fourier}]{\sphinxcrossref{(1.5.1)}}} term by term. Does this series converge pointwise for any values of \(x\)? You may find Desmos or a similar graphing tool helpful for this part.
 
 
-\subsection{Integration}
+\section{Integration}
 \label{\detokenize{Problems:integration}}\label{\detokenize{Problems:ch6prob}}\phantomsection\label{\detokenize{Problems:id66}}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{65}
@@ -1413,7 +1418,7 @@ Do we need the assumption \(g(x)\geq 0\)? Justify your answer.
 \sphinxstepscope
 
 
-\section{Solutions}
+\chapter{Solutions}
 \label{\detokenize{Solutions-upto26:solutions}}\label{\detokenize{Solutions-upto26:sol}}\label{\detokenize{Solutions-upto26::doc}}
 \sphinxAtStartPar
 Complete up to Q26, excluding some homework questions.
@@ -1422,7 +1427,7 @@ Complete up to Q26, excluding some homework questions.
 Homework solutions will be released alongside the return of each piece of work.
 
 
-\subsection{Preliminary problems}
+\section{Preliminary problems}
 \label{\detokenize{Solutions-upto26:preliminary-problems}}\label{\detokenize{Solutions-upto26:ch1sol}}
 \sphinxAtStartPar
 {\hyperref[\detokenize{Problems:p1}]{\sphinxcrossref{\DUrole{std,std-ref}{P1.}}}}
@@ -1557,7 +1562,7 @@ Applying the result from (i) to the right\sphinxhyphen{}hand side, it follows th
 \end{split}
 \end{equation*}
 \sphinxAtStartPar
-Equation {\hyperref[\detokenize{Solutions-upto26:equation-eq-sqrta-sqrtb}]{\sphinxcrossref{(2.1)}}} now follows by subtracting \(\sqrt{|b|}\) from both sides.
+Equation {\hyperref[\detokenize{Solutions-upto26:equation-eq-sqrta-sqrtb}]{\sphinxcrossref{(2.1.1)}}} now follows by subtracting \(\sqrt{|b|}\) from both sides.
 
 \sphinxAtStartPar
 (iii) Let \((a_n)\) be a real sequence converging to \(l\in\mathbb{R}\). By (ii),
@@ -1653,7 +1658,7 @@ A correct version of the statement would be \(\inf A \leq \sup A\).
 (v) True. Let \(s=\max\{\sup A,\sup B\}\). Then \(s\geq \sup A\) and \(s\geq \sup B\), so \(s\) is an upper bound for both \(A\) and \(B\). Therefore, \(s\) is an upper bound for \(A\cup B\). But \(\sup(A\cup B)\) is the least upper bound of \(A\cup B\), and so \(s\geq\sup(A\cup B)\). Also, since \(A\) and \(B\) are both subsets of \(A\cup B\), we have by statement (iii) that \(s=\max\{\sup A,\sup B)\leq\sup(A\cup B)\). Hence \(\max\{\sup A,\sup B)=\sup(A\cup B)\).
 
 
-\subsection{Limits of functions}
+\section{Limits of functions}
 \label{\detokenize{Solutions-upto26:limits-of-functions}}\label{\detokenize{Solutions-upto26:ch2sol}}
 \sphinxAtStartPar
 {\hyperref[\detokenize{Problems:id1}]{\sphinxcrossref{\DUrole{std,std-ref}{1.}}}} One has to identify the real numbers where the given formula does not make sense, usually because of a zero in a denominator somewhere, and exclude them.
@@ -1987,14 +1992,160 @@ The right limit is \(\displaystyle\lim_{x \rightarrow 0^+} \text{sgn}(x) = 1\), 
 
 \phantomsection\label{\detokenize{Solutions-upto26:id3}}
 \sphinxAtStartPar
-{\hyperref[\detokenize{Problems:id8}]{\sphinxcrossref{\DUrole{std,std-ref}{8.}}}} To appear (Homework 2 question)
+{\hyperref[\detokenize{Problems:id8}]{\sphinxcrossref{\DUrole{std,std-ref}{8.}}}} \sphinxstyleemphasis{(Homework 2 question).}
+
+\sphinxAtStartPar
+(i) We are given \(f:\mathbb{R}\to\mathbb{R}\); \(f(x) = \begin{cases} 1 -x & \text{if }x < 1\\ x^{2}& \text{if }x \geq 1. \end{cases}\)
+
+\sphinxAtStartPar
+For \(a\neq 1\), the left and right limits exist and are both equal to \(f(a)\), using the algebra of limits. The only point at which left and right limits disagree is \(a = 1\), with
+\begin{equation*}
+\begin{split}
+\lim_{x \rightarrow 1^-}f(x) = 0, \; \text{ and } \; \lim_{x \rightarrow 1^+}f(x) = 1.
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+To prove the left limit, let \(\varepsilon>0\). For \(x<1\), \(f(x)=1-x\). Therefore, if \(-\varepsilon<x-1<0\), we have \(0<1-x<\varepsilon\), and hence \(|f(x)|=|1-x|<\varepsilon\).
+
+\sphinxAtStartPar
+For the right limit: We know that if \(x>1\), \(f(x)=x^2\). Given \(\varepsilon>0\), we seek \(\delta>0\) such that if \(0<x<\delta\), then \(|f(x)-1|<\varepsilon\). Now,
+\begin{equation*}
+\begin{split}
+|f(x)-1|=|x^2-1|=|x+1|\cdot|x+1|.
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+We can bound the \(|x+1|\) factor above by \(3\) provided we choose a \(\delta\) that is at most \(1\). Indeed: if \(0<x-1<1\), then \(2<x+1<3\), so \(|x+1|<3\).
+
+\sphinxAtStartPar
+We choose \(\delta=\min\left\{1,\frac{\varepsilon}{3}\right\}\). Then, for \(0<x-1<\delta\), we have \(0<x-1<1\) and \(0<|x-1|<\frac{\varepsilon}{3}\). So,
+\begin{equation*}
+\begin{split}
+|f(x)-1|=|x+1|\cdot|x-1| < 3\cdot\frac{\varepsilon}{3}=\varepsilon.
+\end{split}
+\end{equation*}
+\begin{sphinxadmonition}{note}{Note:}
+\sphinxAtStartPar
+We could have also used algebra of limits to prove/evaluate the left\sphinxhyphen{} and right\sphinxhyphen{}limits here. For example, to show \(\lim_{x\rightarrow 1^-}f(x)=1\), apply algebra of limits to the function \(x^2\) (domain \(\mathbb{R}\)). This tells us that \(\lim_{x\rightarrow 1}x^2=1\). Therefore, by Proposition 2.1, \(\lim_{x\rightarrow 1^-}x^2=1\). But then, since \(f(x)=x^2\) for all \(x<1\), we must have that \(\lim_{x\rightarrow 1^-}f(x)=\lim_{x\rightarrow 1^-}x^2=1\).
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+(ii) Consider \(g:\mathbb{R}\to\mathbb{R}\), \(g(x) = [x] = \left\{\begin{array}{cl} \lfloor x\rfloor & \text{ if } x\geq 0 \\ \lceil x \rceil & \text{ if } x<0 \end{array}\right.\).
+
+\sphinxAtStartPar
+A quick think about how \([x]\) behaves for positive and negative \(x\) gives the graph \hyperref[\detokenize{Solutions-upto26:intx}]{Fig.\@ \ref{\detokenize{Solutions-upto26:intx}}}.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=400\sphinxpxdimen]{{[x]}.png}
+\caption{Graph of the function \(g:\mathbb{R}\to\mathbb{R}\); \(g(x)=[x]\) (Problem 8).}\label{\detokenize{Solutions-upto26:intx}}\end{figure}
+
+\sphinxAtStartPar
+In this case, left and right limits disagree at every \(n \in \mathbb{Z}\setminus\{0\}\). In fact, if \(n\in\mathbb{N}\), then \hyperref[\detokenize{Solutions-upto26:intx}]{Fig.\@ \ref{\detokenize{Solutions-upto26:intx}}} suggests that
+\begin{equation*}
+\begin{split}
+\lim_{x\rightarrow n^+}[x]=n, \;\lim_{x\rightarrow n^-}[x]=n-1, \; \lim_{x\rightarrow -n^+}[x]= -n+1, \text{ and } \lim_{x\rightarrow -n^-}[x]=-n.
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+At every other real number, the left and right limits exist and are both equal to the value of the function there.
+
+\sphinxAtStartPar
+Here some proofs:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+To prove \(\lim_{x \rightarrow n^+}[x] = n\): Note that if \(0<x-n<\frac{1}{2}\), we have \([x]=n\), and so \(|[x]-n|=0\). In particular, if \(\varepsilon>0\), then \(0<x-n<\frac{1}{2}\) implies \(|[x]-n|<\varepsilon\).
+
+\item {} 
+\sphinxAtStartPar
+To prove \(\lim_{x\rightarrow n^-}[x]=n-1\): By the same principle, if \(-\frac{1}{2}<x-n<0\), then \([x]=n-1\), and so \(|[x]-(n-1)|=0\). In particular, for all \(\varepsilon>0\), we have that \(-\frac{1}{2}<x-n<0\) implies \(|[x]-(n-1)|<\varepsilon\).
+
+\item {} 
+\sphinxAtStartPar
+The proofs of \(\lim_{x\rightarrow -n^+}[x]= -n+1\) and \(\lim_{x\rightarrow -n^-}[x]=-n\) are very similar — or you could just note that \([-x]=-[x]\) and apply algebra of limits.
+
+\end{itemize}
+
+\sphinxAtStartPar
+(iii) We are given \(h:\mathbb{R}\to\mathbb{R}\), \(h(x) =3 - 5\mathbb{1}_{(0, 1]}(x) + 7\mathbb{1}_{(1, 2]}(x)\). Again, it helps to draw a graph first — see \hyperref[\detokenize{Solutions-upto26:id4}]{Fig.\@ \ref{\detokenize{Solutions-upto26:id4}}}.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=500\sphinxpxdimen]{{8iii}.png}
+\caption{Graph of the function \(h=3 - 5\mathbb{1}_{(0, 1]} + 7\mathbb{1}_{(1, 2]}\) (Problem 8).}\label{\detokenize{Solutions-upto26:id4}}\end{figure}
+
+\sphinxAtStartPar
+Here, left and right limits disagree at \(x = 0, 1\) and \(2\). We have
+\begin{equation*}
+\begin{split}
+\lim_{x \rightarrow 0^-}h(x) = 3, \hspace{1em} \lim_{x \rightarrow 1^-}h(x) = -2, \hspace{1em}  \lim_{x \rightarrow 2^-}h(x) = 10,
+\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}
+\lim_{x \rightarrow 0^+}h(x) = -2, \hspace{1em} \lim_{x \rightarrow 1^+}h(x) = 10, \hspace{1em}  \lim_{x \rightarrow 2^+}h(x) = 3.
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+To prove \(\lim_{x \rightarrow 0^-}h(x) = 3\) using \sphinxhref{https://rosiesb.github.io/Analysis-Notes/2LoF.html\#marg}{Definition 2.4}, note that for any \(x<0\), \(h(x)=3\) and so \(|h(x)-3|=0\). So for any \(\varepsilon>0\) and any choice of \(\delta>0\), we have that \(-\delta<x<0\) implies \(|h(x)-3|=0<\varepsilon\).
+
+\sphinxAtStartPar
+The proof of \(\lim_{x \rightarrow 1^-}h(x) = -2\) is very similar: let \(\varepsilon>0\), and note that if \(-\frac{1}{2}<x-1<0\), then \(\frac{1}{2}<x<1\), and so \(h(x)=-2\). But then, \(|h(x)-(-2)|=0<\varepsilon\).
+
+\sphinxAtStartPar
+The proof of \(\lim_{x \rightarrow 2^-}h(x) = 10\) is exactly the same, just take \(-\frac{1}{2}<x-2<0\) and note \(h(x)=10\), instead.
+
+\sphinxAtStartPar
+The right limit proofs are similar.
 
 
 \bigskip\hrule\bigskip
 
-\phantomsection\label{\detokenize{Solutions-upto26:id4}}
+\phantomsection\label{\detokenize{Solutions-upto26:id5}}
 \sphinxAtStartPar
-{\hyperref[\detokenize{Problems:id9}]{\sphinxcrossref{\DUrole{std,std-ref}{9.}}}} To appear (Homework 2 question)
+{\hyperref[\detokenize{Problems:id9}]{\sphinxcrossref{\DUrole{std,std-ref}{9.}}}} \sphinxstyleemphasis{(Homework 2 question).} The largest subset of \(\mathbb{R}\) for which the formula \(f(x)=\sin\left(\frac{1}{x}\right)\) makes sense is \(A = \mathbb{R} \setminus \{0\}\).
+
+Observe that for any real number \(\theta\in\mathbb{R}\),
+\begin{equation*}
+\begin{split}
+f\left(\frac{1}{\theta+2\pi n}\right) = \sin(\theta+2\pi n) = \sin(\theta).
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+To prove \(f\) has no limit at \(0\), we need only choose two values of \(\theta\) for which sine takes distinct values. We choose \(\theta=\frac{\pi}{2}\) and \(\theta=\frac{3\pi}{2}\).
+
+By choosing the right values for \(\theta\), we can use this to construct two distinct sequences \((x_n)\) and \((y_n)\) that both converge to \(0\), but for which \(\sin(x_n)\) and \(\sin(y_n)\) have different limits.
+
+We use \(\theta=\frac{\pi}{2}\) and \(\theta=\frac{3\pi}{2}\) (other choices possible).
+
+For each \(n\in\mathbb{N}\), let \(x_n=\frac{1}{\frac{\pi}{2} + 2\pi n}\) and \(y_n=\frac{1}{3\frac{\pi}{2} + 2\pi n}\). Then
+\begin{equation*}
+\begin{split}
+\lim_{n\rightarrow\infty} x_{n} =\lim_{n\rightarrow\infty} y_n= 0,
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+while for all \(n\in\mathbb{N}\),
+\begin{equation*}
+\begin{split}
+f(x_n) = \sin\left(\frac{\pi}{2}\right) =1 \hspace{2em} \text{ and } \hspace{2em} f(y_n)=\sin\left(\frac{3\pi}{2}\right)=-1.
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+So \(\lim_{n\rightarrow\infty} f(x_{n}) = 1\), but \(\lim_{n\rightarrow\infty} f(y_n) = -1\). Since these limits are not equal, \(\lim_{x\to 0} f(x)\) does not exist.
+
+Of course, we could have chosen any values of \(\theta\) we liked, and constructed a sequence \((x_n)\) with limit \(0\) for which \(\lim_{n\rightarrow\infty}f(x_n)\) is equal to any real number we liked in the interval \([-1,1]\). The graph of this function (\hyperref[\detokenize{Solutions-upto26:s1x}]{Fig.\@ \ref{\detokenize{Solutions-upto26:s1x}}}) may give some intuition as to how this is possible.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=700\sphinxpxdimen]{{sin(1,x)}.png}
+\caption{Graph of the function \(f:\mathbb{R}\to\mathbb{R}\); \(f(x)=\sin\left(\frac{1}{x}\right)\) (Problem 9).}\label{\detokenize{Solutions-upto26:s1x}}\end{figure}
 
 
 \bigskip\hrule\bigskip
@@ -2023,7 +2174,7 @@ for all \(n\in\mathbb{N}\). Since \(\displaystyle\lim_{n\to \infty} x_n=0\), we 
 
 Since \((x_n)\) was arbitrary, \(\displaystyle\lim_{x \rightarrow 0} x \sin\left(\frac{1}{x}\right) = 0\).
 
-You should contrast \hyperref[\detokenize{Solutions-upto26:xs1x}]{Fig.\@ \ref{\detokenize{Solutions-upto26:xs1x}}} with \sphinxcode{\sphinxupquote{s1x}} that for the previous question.
+You should contrast \hyperref[\detokenize{Solutions-upto26:xs1x}]{Fig.\@ \ref{\detokenize{Solutions-upto26:xs1x}}} with \hyperref[\detokenize{Solutions-upto26:s1x}]{Fig.\@ \ref{\detokenize{Solutions-upto26:s1x}}} that for the previous question.
 
 \begin{figure}[htbp]
 \centering
@@ -2143,7 +2294,7 @@ Observe that \(\displaystyle\lim_{x \rightarrow \infty}f(x) = \infty\) and \(\di
 If \(n\) is odd, \(\lim_{x \rightarrow \infty}p(x) = \infty\), but \(\lim_{x \rightarrow -\infty}p(x) = -\infty\).
 
 
-\subsection{Continuity}
+\section{Continuity}
 \label{\detokenize{Solutions-upto26:continuity}}\label{\detokenize{Solutions-upto26:ch3sol}}
 \sphinxAtStartPar
 {\hyperref[\detokenize{Problems:id13}]{\sphinxcrossref{\DUrole{std,std-ref}{13.}}}} For each of (i) to (v), the function is continuous at each point of its domain. For (i), (ii) and (iii), we have rational functions, which are continuous on all points of \(A\) (which is the subset of \(\mathbb{R}\) where the denominator is non\sphinxhyphen{}zero). For (iv) and (v), we have compositions of rational functions with the exponential and cosine functions, which are continuous on the whole of \(\mathbb{R}\). Again, the functions are continuous on all points of \(A\) (which is the subset of \(\mathbb{R}\) where the denominator of the rational function is non\sphinxhyphen{}zero).
@@ -2208,16 +2359,27 @@ This is continuous at \(\mathbb{R} \setminus \{0,1,2\}\), with jump discontinuit
 
 \bigskip\hrule\bigskip
 
-\phantomsection\label{\detokenize{Solutions-upto26:id5}}
+\phantomsection\label{\detokenize{Solutions-upto26:id6}}
 \sphinxAtStartPar
 {\hyperref[\detokenize{Problems:id18}]{\sphinxcrossref{\DUrole{std,std-ref}{18.}}}} To appear (Homework 3 question)
 
 
 \bigskip\hrule\bigskip
 
-\phantomsection\label{\detokenize{Solutions-upto26:id6}}
+\phantomsection\label{\detokenize{Solutions-upto26:id7}}
 \sphinxAtStartPar
-{\hyperref[\detokenize{Problems:id19}]{\sphinxcrossref{\DUrole{std,std-ref}{19.}}}} To appear (Homework 2 question).
+{\hyperref[\detokenize{Problems:id19}]{\sphinxcrossref{\DUrole{std,std-ref}{19.}}}} \sphinxstyleemphasis{(Homework 2 question).} Assume \(g\) is continuous and \(g(a) > 0\). Then for all \(\varepsilon>0\) there exists \(\delta>0\) such that for all \(x\in\mathbb{R}\), \(|x-a|<\delta\) implies \(|g(x)-g(a)|<\varepsilon\). Let \(\varepsilon=\frac{g(a)}{2}\). Then for some \(\delta>0\), we have \(|g(x)-g(a)|<\frac{g(a)}{2}\). But then \(\frac{g(a)}{2}<g(x)<\frac{3g(a)}{2}\), and in particular, \(g(x)>\frac{g(a)}{2}>0\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{Alternate solution using sequences:}
+Suppose, for a contradiction, that  there is no  \(\delta > 0\) such that \(g(x) > 0\)  for all \( x \in (a - \delta, a + \delta)\). Then, in particular, for all \(n\in\mathbb{N}\) there exists \(x_{n} \in \left(a - \frac{1}{n}, a + \frac{1}{n}\right)\) such that \(g(x_{n}) \leq 0\). By the sandwich rule, we have \(\lim_{n\rightarrow\infty} x_{n} = a\). So, by continuity of \(g\) at \(a\), we have \(\lim_{n\rightarrow\infty} g(x_{n})\) exists and equals \(g(a)\). But \(g(x_n)\leq 0\) for all \(n\in\mathbb{N}\), and so
+\begin{equation*}
+\begin{split}
+g(a)=\lim_{n\rightarrow\infty} g(x_{n}) \leq 0,
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+which is a contradiction.
 
 
 \bigskip\hrule\bigskip
@@ -2292,7 +2454,7 @@ Then:
 \end{split}
 \end{equation*}
 \sphinxAtStartPar
-(iv) Let \(k=f(1)\). We use induction on \(n\in\mathbb{N}\). If \(n=1\), then \(f(n)=f(1)=k=k\cdot 1\), so the statement holds. Assume it holds for some \(n\in\mathbb{N}\). Then by {\hyperref[\detokenize{Solutions-upto26:equation-linear}]{\sphinxcrossref{(2.2)}}},
+(iv) Let \(k=f(1)\). We use induction on \(n\in\mathbb{N}\). If \(n=1\), then \(f(n)=f(1)=k=k\cdot 1\), so the statement holds. Assume it holds for some \(n\in\mathbb{N}\). Then by {\hyperref[\detokenize{Solutions-upto26:equation-linear}]{\sphinxcrossref{(2.3.1)}}},
 \begin{equation*}
 \begin{split}
 f(n+1) = f(n) + f(1) = nk + k = (n+1)k.
@@ -2321,9 +2483,31 @@ f(x) = \lim_{n\rightarrow\infty} f(r_n) =   \lim_{n\rightarrow\infty} kr_n=k \li
 
 \bigskip\hrule\bigskip
 
-\phantomsection\label{\detokenize{Solutions-upto26:id7}}
+\phantomsection\label{\detokenize{Solutions-upto26:id8}}
 \sphinxAtStartPar
-{\hyperref[\detokenize{Problems:id22}]{\sphinxcrossref{\DUrole{std,std-ref}{22.}}}} To appear (Homework 2 question).
+{\hyperref[\detokenize{Problems:id22}]{\sphinxcrossref{\DUrole{std,std-ref}{22.}}}} \sphinxstyleemphasis{(Homework 2 question).}
+Recall from \sphinxhref{https://rosiesb.github.io/Analysis-Notes/3Cty.html\#eg:dirichlet2}{Example 3.10} in the notes that Dirichlet’s “other” function (AKA Thomae’s function) is defined  \(g:[0, 1)\rightarrow \mathbb{R}\) defined by
+\begin{equation*}
+\begin{split}
+g(x) =\begin{cases}
+	1 &\text{if $x = 0$},\\
+	\displaystyle\frac{1}{n}& \text{if $x = m/n \in \mathbb{Q}\cap[0,1)$, and $\text{gcd}(m,n)=1$.}\\
+	0&\text{if $x \in [0,1)\setminus \mathbb{Q}$}.
+\end{cases}
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Suppose that \(a \in \mathbb{Q}\cap[0,1)\). Then \(g(a)=\frac{1}{k}\), for some fixed \(k\in\mathbb{N}\). Every real number is the limit of a sequence of irrational numbers%
+\begin{footnote}[1]\sphinxAtStartFootnote
+This, and other related properties of (ir)rational numbers, was a focus of study in MAS107/117 Semester 2.
+%
+\end{footnote}. Therefore, there is a sequence \((x_{n})\) of irrational numbers that converges to \(a\). Since \(a\in[0,1)\), we may assume (removing some initial terms if necessary) that \(x_n\in[0,1)\setminus\mathbb{Q}\) for all \(n\in\mathbb{N}\).
+
+\sphinxAtStartPar
+If \(g\) was continuous at \(a\), we would have \(\lim_{n\rightarrow\infty}g(x_n)=g(a)\). But in fact, \(g(x_n)=0\) for all \(n\in\mathbb{N}\), so \(\lim_{n\rightarrow\infty}g(x_n)=0\neq \frac{1}{k}=g(a)\).
+
+\sphinxAtStartPar
+It follows that \(g\) is discontinuous at every rational point of its domain.
 
 
 \bigskip\hrule\bigskip
@@ -2348,7 +2532,7 @@ To prove the left continuity at \(a\), let \((x_{n})\) be any sequence in \(\mat
 
 \bigskip\hrule\bigskip
 
-\phantomsection\label{\detokenize{Solutions-upto26:id8}}
+\phantomsection\label{\detokenize{Solutions-upto26:id10}}
 \sphinxAtStartPar
 {\hyperref[\detokenize{Problems:id25}]{\sphinxcrossref{\DUrole{std,std-ref}{25.}}}} To appear (Homework 3 question).
 
@@ -2359,10 +2543,19 @@ To prove the left continuity at \(a\), let \((x_{n})\) be any sequence in \(\mat
 \sphinxAtStartPar
 {\hyperref[\detokenize{Problems:id26}]{\sphinxcrossref{\DUrole{std,std-ref}{26.}}}} Define \(\gamma = \inf_{x \in [a, b]}f(x)\) and assume that it is not attained, so \(\gamma < f(x)\) for all \(x \in [a,b]\). Then consider the function \(h:[a,b]\to \mathbb{R}\) given by \(h(x) = \displaystyle\frac{1}{f(x) - \gamma}\). This is continuous, and hence bounded on \([a, b]\). So there exists \(K \geq 0\) such that \(|h(x)| \leq K\) for all \(x \in [a, b]\). By Problem 16(ii), given any \(\varepsilon > 0\), there exists \(x \in [a, b]\) such that \(f(x) < \gamma + \varepsilon\). Now take \(\varepsilon = \frac{1}{K}\) to deduce that \(h(x) > K\), which yields the required contradiction.
 
+
+\bigskip\hrule\bigskip
+
+
 \sphinxstepscope
 
 
-\section{Homework feedback}
+\part{Part}
+
+\sphinxstepscope
+
+
+\chapter{Homework feedback}
 \label{\detokenize{HW-feedback:homework-feedback}}\label{\detokenize{HW-feedback:hw-feedback}}\label{\detokenize{HW-feedback::doc}}
 \sphinxAtStartPar
 Here is some general feedback comments about each piece of homework for MAS2004/9. Individual feedback can be viewed on Crowdmark — let me know if you have any difficulty finding it.
@@ -2371,7 +2564,82 @@ Here is some general feedback comments about each piece of homework for MAS2004/
 Responding to individual feedback is the fastest way to improve as a mathematician. Hopefully your feedback will feel useful and make sense to you, but if it ever doesn’t, please get in touch and I am more than happy to look at it with you.
 
 
-\subsection{Feedback for Homework 1}
+\section{Feedback for Homework 2}
+\label{\detokenize{HW-feedback:feedback-for-homework-2}}
+\sphinxAtStartPar
+\sphinxstylestrong{Problems:} {\hyperref[\detokenize{Problems:id8}]{\sphinxcrossref{\DUrole{std,std-ref}{8}}}}, {\hyperref[\detokenize{Problems:id9}]{\sphinxcrossref{\DUrole{std,std-ref}{9}}}}, {\hyperref[\detokenize{Problems:id19}]{\sphinxcrossref{\DUrole{std,std-ref}{19}}}}, {\hyperref[\detokenize{Problems:id22}]{\sphinxcrossref{\DUrole{std,std-ref}{22}}}} ;  \sphinxstylestrong{Solutions:} {\hyperref[\detokenize{Solutions-upto26:id3}]{\sphinxcrossref{\DUrole{std,std-ref}{8}}}}, {\hyperref[\detokenize{Solutions-upto26:id5}]{\sphinxcrossref{\DUrole{std,std-ref}{9}}}}, {\hyperref[\detokenize{Solutions-upto26:id7}]{\sphinxcrossref{\DUrole{std,std-ref}{19}}}}, {\hyperref[\detokenize{Solutions-upto26:id8}]{\sphinxcrossref{\DUrole{std,std-ref}{22}}}}
+
+\sphinxAtStartPar
+Thank you for your hard work completing this rather long set of exercises.
+
+\sphinxAtStartPar
+Remember to take the time to carefully review the feedback your work has received on Crowdmark, and attend \sphinxhref{https://rosiesb.github.io/Analysis-Notes/0Intro.html\#where-to-get-help}{office hours} if you would like help interpreting or following the advice you are given.
+
+\sphinxAtStartPar
+General presentation remarks
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+It’s fine to write out definitions, but be clear that’s what you are doing by clearly delineating it from your proofs. If it is an \(\varepsilon-\delta\) definition that you are trying to prove is true, try to convert it into a goal (e.g. “Given \(\varepsilon>0\), we need to find \(\delta>0\) such that…”) rather than just rewriting the definition — you haven’t proven it applies yet!
+
+\item {} 
+\sphinxAtStartPar
+Make sure you introduce variables before using them (\(\varepsilon\), \(\delta\), \(x\), \(n\), etc.). This was a common issue in 8(b) — see below.
+
+\item {} 
+\sphinxAtStartPar
+If you skipped questions because you were stuck or short of time, I’m happy to still look at them with you in office hours.
+
+\item {} 
+\sphinxAtStartPar
+There were still a few instances of people defining \(\delta>0\) dependent on \(x\). {\hyperref[\detokenize{HW-feedback:iiifeedback}]{\sphinxcrossref{See above}}} for why this doesn’t work! And/or ask me about it.
+
+\end{itemize}
+
+
+\subsection{Problem 8}
+\label{\detokenize{HW-feedback:problem-8}}
+\sphinxAtStartPar
+In this question, you had to compute left and right limits of the given functions and comment on when they disagreed. You then had to prove you were right using \sphinxhref{https://rosiesb.github.io/Analysis-Notes/2LoF.html\#marg}{Definition 2.4}, or the equivalent definitions involving sequences.
+
+\sphinxAtStartPar
+Nearly everyone was able to compute the limits in parts (a) and (c). For part (b), a lot of people looked at \(\lim_{x\rightarrow n^+}g(x)\) and \(\lim_{x\rightarrow n^-}g(x)\) without saying what \(n\) is. If you are assuming \(n\) is an integer, make sure you say so first. In fact, you get different answers depending on whether \(n\) is a positive integer or a negative integer.
+
+\sphinxAtStartPar
+In the examples given, all functions had jump discontinuities (either a finite or countably infinite number of them). Proving that a function has a jump discontinuity requires more work than proving it is discontinuous at a point. For the former, you need to prove that two marginal limits exist, but disagree. If you are using sequences to do this, they need to be general — picking a couple of specific sequences isn’t enough. On the other hand, if all you aim to show is that a function is discontinuous somewhere, then you don’t need a general sequence — you just need one (or occasionally, two) examples that show the definition of continuity fails.
+
+\sphinxAtStartPar
+In some cases, people had computed limits without any attempt at proving them. Be careful here! We already know you can compute limits: this was core syllabus at Level 1. The “new” content in this module is all about formal proofs — make sure seek out help with this as much as you need.
+
+\sphinxAtStartPar
+Finally, many people made this question unecessarily hard for themselves by not drawing pictures. I especially recommend doing so for parts (b) and (c)!
+
+
+\subsection{Problem 9}
+\label{\detokenize{HW-feedback:problem-9}}
+\sphinxAtStartPar
+This question was answered well on the whole, so well done! Presentation was also generally better for the question than the \(\varepsilon-\delta\) proofs. I think the main cases where people didn’t get the question out are because they didn’t follow the hint. Please come to office hours for help with this if you struggled with this bit.
+
+
+\subsection{Problem 19}
+\label{\detokenize{HW-feedback:problem-19}}
+\sphinxAtStartPar
+Here, nearly everyone I saw who attempted the question knew they needed to put something like \(\varepsilon=\frac{g(a)}{2}\) into the definition of continuity of \(g\) at \(a\), which shows good intuition! However, many struggled to turn this into a mathematical argument.
+
+\sphinxAtStartPar
+Remember, an inequality calculation on its own does not constitute a proof, you need to explicitly connect it in some way to the assumptions of the question (in this case, that \(g\) is continuous and positive at \(a\)). In fact, most people did have the bare bones of what they needed to complete the question correctly. Remember, you can always ask for help with this. Once you get the trick for turning this kind of working out into a proof, it is the same nearly every time, but it does take most people some time for it to “click” (ask anyone).
+
+\sphinxAtStartPar
+If you are getting comments like “there is no argument here” or similar, that is a sign that you may need to come to an office hour for more support with your proof writing.
+
+
+\subsection{Problem 22}
+\label{\detokenize{HW-feedback:problem-22}}
+\sphinxAtStartPar
+Those who attempted this generally got it out, so well done! In future, if a “weird” question like this one is assigned as homework like this one, I’d much prefer you come and get some help with it than leave it blank. But I also appreciate that this time around, there was a lot to do.
+
+
+\section{Feedback for Homework 1}
 \label{\detokenize{HW-feedback:feedback-for-homework-1}}
 \sphinxAtStartPar
 \sphinxstylestrong{Problems:} {\hyperref[\detokenize{Problems:p2}]{\sphinxcrossref{\DUrole{std,std-ref}{P2}}}}, {\hyperref[\detokenize{Problems:p3}]{\sphinxcrossref{\DUrole{std,std-ref}{P3}}}}, {\hyperref[\detokenize{Problems:id2}]{\sphinxcrossref{\DUrole{std,std-ref}{2}}}}, {\hyperref[\detokenize{Problems:id3}]{\sphinxcrossref{\DUrole{std,std-ref}{3}}}};  \sphinxstylestrong{Solutions:} {\hyperref[\detokenize{Solutions-upto26:p2sol}]{\sphinxcrossref{\DUrole{std,std-ref}{P2}}}}, {\hyperref[\detokenize{Solutions-upto26:p3sol}]{\sphinxcrossref{\DUrole{std,std-ref}{P3}}}}, {\hyperref[\detokenize{Solutions-upto26:id1}]{\sphinxcrossref{\DUrole{std,std-ref}{2}}}}, {\hyperref[\detokenize{Solutions-upto26:id2}]{\sphinxcrossref{\DUrole{std,std-ref}{3}}}}.
@@ -2380,7 +2648,7 @@ Responding to individual feedback is the fastest way to improve as a mathematici
 Well done for completing the first analysis homework! Here are some general comments.
 
 
-\subsubsection{General comments on mathematical writing}
+\subsection{General comments on mathematical writing}
 \label{\detokenize{HW-feedback:general-comments-on-mathematical-writing}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -2397,7 +2665,7 @@ Remember to only use notation/variables after you have introduced them. This som
 \end{itemize}
 
 
-\subsubsection{Problems P2 and P3}
+\subsection{Problems P2 and P3}
 \label{\detokenize{HW-feedback:problems-p2-and-p3}}
 \sphinxAtStartPar
 These were generally answered well, and most people were able to find the intended theorems from their MAS107/MAS117 notes in order to re\sphinxhyphen{}prove the Bolzano\sphinxhyphen{}Weierstrass theorem. We’ll be using this theorem more than once this semester, so this revision will come in handy.
@@ -2406,17 +2674,18 @@ These were generally answered well, and most people were able to find the intend
 In {\hyperref[\detokenize{Problems:p2}]{\sphinxcrossref{\DUrole{std,std-ref}{P2}}}}, there were some issues with mathematical writing, so make sure you go and look at the individual comments on your work and see what comments you can use to improve this.
 
 
-\subsubsection{Problem 2}
+\subsection{Problem 2}
 \label{\detokenize{HW-feedback:problem-2}}
 \sphinxAtStartPar
 For this question, it’s fine to just write down what the limit points are, but of course we like proofs in this module. If you did include a proof, well done! And take a look for comments about its structure and presentation. The {\hyperref[\detokenize{Solutions-upto26:id1}]{\sphinxcrossref{\DUrole{std,std-ref}{solutions}}}} do now include proofs, if you would like to see how they go.
 
 
-\subsubsection{Problem 3}
+\subsection{Problem 3}
 \label{\detokenize{HW-feedback:problem-3}}
 \sphinxAtStartPar
-The three parts of this question were not of equal difficulty, and this was intentional. I would say part (iii) is definitely the hardest, so well done if you got that one out. If you didn’t, take a look at the individual feedback and see if you can make some progress, and/or, bring it to an office hour. You may find it easier to tackle now you have had more time to practise.
+The three parts of this question were not of equal difficulty, and this was intentional. I would say part (iii) is definitely the hardest, so well done if you got that one out. If you didn’t, take a look at the individual feedback and see if you can make some progress, and/or, bring it to an \sphinxhref{https://rosiesb.github.io/Analysis-Notes/0Intro.html\#where-to-get-help}{office hour}. You may find it easier to tackle now you have had more time to practise.
 
+\phantomsection\label{\detokenize{HW-feedback:iiifeedback}}
 \sphinxAtStartPar
 One of the more common issues people had in {\hyperref[\detokenize{Problems:id3}]{\sphinxcrossref{\DUrole{std,std-ref}{Problem 3(iii)}}}} was defining a \(\delta\) that depended on \(x\) as well as \(\varepsilon\). This is an understandable error: once you get to the stage
 \begin{equation}\label{equation:HW-feedback:hw1}

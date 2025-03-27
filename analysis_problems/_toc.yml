@@ -1,11 +1,18 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 
-format: jb-article
+format: jb-book
 root: intro
 options:
-  numbered: 2
-sections:
-- file: Problems
-- file: Solutions-upto26
-- file: HW-feedback
+#  numbered: 2
+parts:
+  - :caption: Problems and Solutions
+    numbered: 2  # Only applies to chapters in Part 1.
+    chapters:
+    - file: Problems
+    - file: Solutions-upto26
+
+  - :caption: Homework feedback
+    numbered: 1
+    chapters:
+    - file: HW-feedback
