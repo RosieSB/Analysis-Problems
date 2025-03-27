@@ -30,7 +30,7 @@
   <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -690,9 +690,102 @@ Consider the sequences <span class="math notranslate nohighlight">\(x_n=\frac{1}
 <li><p>The right limit is <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow 0^+} \text{sgn}(x) = 1\)</span>,  since for any sequence <span class="math notranslate nohighlight">\((x_n)\)</span> approaching <span class="math notranslate nohighlight">\(0\)</span> from the right, we have <span class="math notranslate nohighlight">\(\text{sgn}(x_n) = 1\)</span> for all <span class="math notranslate nohighlight">\(n\)</span>.</p></li>
 </ul>
 <hr class="docutils" />
-<p id="id3"><a class="reference internal" href="Problems.html#id8"><span class="std std-ref">8.</span></a> To appear (Homework 2 question)</p>
+<p id="id3"><a class="reference internal" href="Problems.html#id8"><span class="std std-ref">8.</span></a> <em>(Homework 2 question).</em></p>
+<p>(i) We are given <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x) = \begin{cases} 1 -x &amp; \text{if }x &lt; 1\\ x^{2}&amp; \text{if }x \geq 1. \end{cases}\)</span></p>
+<p>For <span class="math notranslate nohighlight">\(a\neq 1\)</span>, the left and right limits exist and are both equal to <span class="math notranslate nohighlight">\(f(a)\)</span>, using the algebra of limits. The only point at which left and right limits disagree is <span class="math notranslate nohighlight">\(a = 1\)</span>, with</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{x \rightarrow 1^-}f(x) = 0, \; \text{ and } \; \lim_{x \rightarrow 1^+}f(x) = 1.
+\]</div>
+<p>To prove the left limit, let <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>. For <span class="math notranslate nohighlight">\(x&lt;1\)</span>, <span class="math notranslate nohighlight">\(f(x)=1-x\)</span>. Therefore, if <span class="math notranslate nohighlight">\(-\varepsilon&lt;x-1&lt;0\)</span>, we have <span class="math notranslate nohighlight">\(0&lt;1-x&lt;\varepsilon\)</span>, and hence <span class="math notranslate nohighlight">\(|f(x)|=|1-x|&lt;\varepsilon\)</span>.</p>
+<p>For the right limit: We know that if <span class="math notranslate nohighlight">\(x&gt;1\)</span>, <span class="math notranslate nohighlight">\(f(x)=x^2\)</span>. Given <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>, we seek <span class="math notranslate nohighlight">\(\delta&gt;0\)</span> such that if <span class="math notranslate nohighlight">\(0&lt;x&lt;\delta\)</span>, then <span class="math notranslate nohighlight">\(|f(x)-1|&lt;\varepsilon\)</span>. Now,</p>
+<div class="math notranslate nohighlight">
+\[
+|f(x)-1|=|x^2-1|=|x+1|\cdot|x+1|.
+\]</div>
+<p>We can bound the <span class="math notranslate nohighlight">\(|x+1|\)</span> factor above by <span class="math notranslate nohighlight">\(3\)</span> provided we choose a <span class="math notranslate nohighlight">\(\delta\)</span> that is at most <span class="math notranslate nohighlight">\(1\)</span>. Indeed: if <span class="math notranslate nohighlight">\(0&lt;x-1&lt;1\)</span>, then <span class="math notranslate nohighlight">\(2&lt;x+1&lt;3\)</span>, so <span class="math notranslate nohighlight">\(|x+1|&lt;3\)</span>.</p>
+<p>We choose <span class="math notranslate nohighlight">\(\delta=\min\left\{1,\frac{\varepsilon}{3}\right\}\)</span>. Then, for <span class="math notranslate nohighlight">\(0&lt;x-1&lt;\delta\)</span>, we have <span class="math notranslate nohighlight">\(0&lt;x-1&lt;1\)</span> and <span class="math notranslate nohighlight">\(0&lt;|x-1|&lt;\frac{\varepsilon}{3}\)</span>. So,</p>
+<div class="math notranslate nohighlight">
+\[
+|f(x)-1|=|x+1|\cdot|x-1| &lt; 3\cdot\frac{\varepsilon}{3}=\varepsilon.
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We could have also used algebra of limits to prove/evaluate the left- and right-limits here. For example, to show <span class="math notranslate nohighlight">\(\lim_{x\rightarrow 1^-}f(x)=1\)</span>, apply algebra of limits to the function <span class="math notranslate nohighlight">\(x^2\)</span> (domain <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>). This tells us that <span class="math notranslate nohighlight">\(\lim_{x\rightarrow 1}x^2=1\)</span>. Therefore, by Proposition 2.1, <span class="math notranslate nohighlight">\(\lim_{x\rightarrow 1^-}x^2=1\)</span>. But then, since <span class="math notranslate nohighlight">\(f(x)=x^2\)</span> for all <span class="math notranslate nohighlight">\(x&lt;1\)</span>, we must have that <span class="math notranslate nohighlight">\(\lim_{x\rightarrow 1^-}f(x)=\lim_{x\rightarrow 1^-}x^2=1\)</span>.</p>
+</div>
+<p>(ii) Consider <span class="math notranslate nohighlight">\(g:\mathbb{R}\to\mathbb{R}\)</span>, <span class="math notranslate nohighlight">\(g(x) = [x] = \left\{\begin{array}{cl} \lfloor x\rfloor &amp; \text{ if } x\geq 0 \\ \lceil x \rceil &amp; \text{ if } x&lt;0 \end{array}\right.\)</span>.</p>
+<p>A quick think about how <span class="math notranslate nohighlight">\([x]\)</span> behaves for positive and negative <span class="math notranslate nohighlight">\(x\)</span> gives the graph <a class="reference internal" href="#intx"><span class="std std-numref">Fig. 2.2</span></a>.</p>
+<figure class="align-default" id="intx">
+<a class="reference internal image-reference" href="_images/[x].png"><img alt="_images/%5Bx%5D.png" src="_images/%5Bx%5D.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.2 </span><span class="caption-text">Graph of the function <span class="math notranslate nohighlight">\(g:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(g(x)=[x]\)</span> (Problem 8).</span><a class="headerlink" href="#intx" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In this case, left and right limits disagree at every <span class="math notranslate nohighlight">\(n \in \mathbb{Z}\setminus\{0\}\)</span>. In fact, if <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>, then <a class="reference internal" href="#intx"><span class="std std-numref">Fig. 2.2</span></a> suggests that</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{x\rightarrow n^+}[x]=n, \;\lim_{x\rightarrow n^-}[x]=n-1, \; \lim_{x\rightarrow -n^+}[x]= -n+1, \text{ and } \lim_{x\rightarrow -n^-}[x]=-n.
+\]</div>
+<p>At every other real number, the left and right limits exist and are both equal to the value of the function there.</p>
+<p>Here some proofs:</p>
+<ul class="simple">
+<li><p>To prove <span class="math notranslate nohighlight">\(\lim_{x \rightarrow n^+}[x] = n\)</span>: Note that if <span class="math notranslate nohighlight">\(0&lt;x-n&lt;\frac{1}{2}\)</span>, we have <span class="math notranslate nohighlight">\([x]=n\)</span>, and so <span class="math notranslate nohighlight">\(|[x]-n|=0\)</span>. In particular, if <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>, then <span class="math notranslate nohighlight">\(0&lt;x-n&lt;\frac{1}{2}\)</span> implies <span class="math notranslate nohighlight">\(|[x]-n|&lt;\varepsilon\)</span>.</p></li>
+<li><p>To prove <span class="math notranslate nohighlight">\(\lim_{x\rightarrow n^-}[x]=n-1\)</span>: By the same principle, if <span class="math notranslate nohighlight">\(-\frac{1}{2}&lt;x-n&lt;0\)</span>, then <span class="math notranslate nohighlight">\([x]=n-1\)</span>, and so <span class="math notranslate nohighlight">\(|[x]-(n-1)|=0\)</span>. In particular, for all <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>, we have that <span class="math notranslate nohighlight">\(-\frac{1}{2}&lt;x-n&lt;0\)</span> implies <span class="math notranslate nohighlight">\(|[x]-(n-1)|&lt;\varepsilon\)</span>.</p></li>
+<li><p>The proofs of <span class="math notranslate nohighlight">\(\lim_{x\rightarrow -n^+}[x]= -n+1\)</span> and <span class="math notranslate nohighlight">\(\lim_{x\rightarrow -n^-}[x]=-n\)</span> are very similar — or you could just note that <span class="math notranslate nohighlight">\([-x]=-[x]\)</span> and apply algebra of limits.</p></li>
+</ul>
+<p>(iii) We are given <span class="math notranslate nohighlight">\(h:\mathbb{R}\to\mathbb{R}\)</span>, <span class="math notranslate nohighlight">\(h(x) =3 - 5\mathbb{1}_{(0, 1]}(x) + 7\mathbb{1}_{(1, 2]}(x)\)</span>. Again, it helps to draw a graph first — see <a class="reference internal" href="#id4"><span class="std std-numref">Fig. 2.3</span></a>.</p>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="_images/8iii.png"><img alt="_images/8iii.png" src="_images/8iii.png" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.3 </span><span class="caption-text">Graph of the function <span class="math notranslate nohighlight">\(h=3 - 5\mathbb{1}_{(0, 1]} + 7\mathbb{1}_{(1, 2]}\)</span> (Problem 8).</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Here, left and right limits disagree at <span class="math notranslate nohighlight">\(x = 0, 1\)</span> and <span class="math notranslate nohighlight">\(2\)</span>. We have</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{x \rightarrow 0^-}h(x) = 3, \hspace{1em} \lim_{x \rightarrow 1^-}h(x) = -2, \hspace{1em}  \lim_{x \rightarrow 2^-}h(x) = 10,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lim_{x \rightarrow 0^+}h(x) = -2, \hspace{1em} \lim_{x \rightarrow 1^+}h(x) = 10, \hspace{1em}  \lim_{x \rightarrow 2^+}h(x) = 3.
+\]</div>
+<p>To prove <span class="math notranslate nohighlight">\(\lim_{x \rightarrow 0^-}h(x) = 3\)</span> using <a class="reference external" href="https://rosiesb.github.io/Analysis-Notes/2LoF.html#marg">Definition 2.4</a>, note that for any <span class="math notranslate nohighlight">\(x&lt;0\)</span>, <span class="math notranslate nohighlight">\(h(x)=3\)</span> and so <span class="math notranslate nohighlight">\(|h(x)-3|=0\)</span>. So for any <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span> and any choice of <span class="math notranslate nohighlight">\(\delta&gt;0\)</span>, we have that <span class="math notranslate nohighlight">\(-\delta&lt;x&lt;0\)</span> implies <span class="math notranslate nohighlight">\(|h(x)-3|=0&lt;\varepsilon\)</span>.</p>
+<p>The proof of <span class="math notranslate nohighlight">\(\lim_{x \rightarrow 1^-}h(x) = -2\)</span> is very similar: let <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>, and note that if <span class="math notranslate nohighlight">\(-\frac{1}{2}&lt;x-1&lt;0\)</span>, then <span class="math notranslate nohighlight">\(\frac{1}{2}&lt;x&lt;1\)</span>, and so <span class="math notranslate nohighlight">\(h(x)=-2\)</span>. But then, <span class="math notranslate nohighlight">\(|h(x)-(-2)|=0&lt;\varepsilon\)</span>.</p>
+<p>The proof of <span class="math notranslate nohighlight">\(\lim_{x \rightarrow 2^-}h(x) = 10\)</span> is exactly the same, just take <span class="math notranslate nohighlight">\(-\frac{1}{2}&lt;x-2&lt;0\)</span> and note <span class="math notranslate nohighlight">\(h(x)=10\)</span>, instead.</p>
+<p>The right limit proofs are similar.</p>
 <hr class="docutils" />
-<p id="id4"><a class="reference internal" href="Problems.html#id9"><span class="std std-ref">9.</span></a> To appear (Homework 2 question)</p>
+<p id="id5"><a class="reference internal" href="Problems.html#id9"><span class="std std-ref">9.</span></a> <em>(Homework 2 question).</em> The largest subset of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> for which the formula <span class="math notranslate nohighlight">\(f(x)=\sin\left(\frac{1}{x}\right)\)</span> makes sense is <span class="math notranslate nohighlight">\(A = \mathbb{R} \setminus \{0\}\)</span>.
+<br>
+Observe that for any real number <span class="math notranslate nohighlight">\(\theta\in\mathbb{R}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+f\left(\frac{1}{\theta+2\pi n}\right) = \sin(\theta+2\pi n) = \sin(\theta).
+\]</div>
+<p>To prove <span class="math notranslate nohighlight">\(f\)</span> has no limit at <span class="math notranslate nohighlight">\(0\)</span>, we need only choose two values of <span class="math notranslate nohighlight">\(\theta\)</span> for which sine takes distinct values. We choose <span class="math notranslate nohighlight">\(\theta=\frac{\pi}{2}\)</span> and <span class="math notranslate nohighlight">\(\theta=\frac{3\pi}{2}\)</span>.
+<br>
+By choosing the right values for <span class="math notranslate nohighlight">\(\theta\)</span>, we can use this to construct two distinct sequences <span class="math notranslate nohighlight">\((x_n)\)</span> and <span class="math notranslate nohighlight">\((y_n)\)</span> that both converge to <span class="math notranslate nohighlight">\(0\)</span>, but for which <span class="math notranslate nohighlight">\(\sin(x_n)\)</span> and <span class="math notranslate nohighlight">\(\sin(y_n)\)</span> have different limits.
+<br>
+We use <span class="math notranslate nohighlight">\(\theta=\frac{\pi}{2}\)</span> and <span class="math notranslate nohighlight">\(\theta=\frac{3\pi}{2}\)</span> (other choices possible).
+<br>
+For each <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>, let <span class="math notranslate nohighlight">\(x_n=\frac{1}{\frac{\pi}{2} + 2\pi n}\)</span> and <span class="math notranslate nohighlight">\(y_n=\frac{1}{3\frac{\pi}{2} + 2\pi n}\)</span>. Then</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{n\rightarrow\infty} x_{n} =\lim_{n\rightarrow\infty} y_n= 0,
+\]</div>
+<p>while for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+f(x_n) = \sin\left(\frac{\pi}{2}\right) =1 \hspace{2em} \text{ and } \hspace{2em} f(y_n)=\sin\left(\frac{3\pi}{2}\right)=-1.
+\]</div>
+<p>So <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} f(x_{n}) = 1\)</span>, but <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} f(y_n) = -1\)</span>. Since these limits are not equal, <span class="math notranslate nohighlight">\(\lim_{x\to 0} f(x)\)</span> does not exist.
+<br>
+Of course, we could have chosen any values of <span class="math notranslate nohighlight">\(\theta\)</span> we liked, and constructed a sequence <span class="math notranslate nohighlight">\((x_n)\)</span> with limit <span class="math notranslate nohighlight">\(0\)</span> for which <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty}f(x_n)\)</span> is equal to any real number we liked in the interval <span class="math notranslate nohighlight">\([-1,1]\)</span>. The graph of this function (<a class="reference internal" href="#s1x"><span class="std std-numref">Fig. 2.4</span></a>) may give some intuition as to how this is possible.</p>
+<figure class="align-default" id="s1x">
+<a class="reference internal image-reference" href="_images/sin(1,x).png"><img alt="_images/sin%281%2Cx%29.png" src="_images/sin%281%2Cx%29.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.4 </span><span class="caption-text">Graph of the function <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x)=\sin\left(\frac{1}{x}\right)\)</span> (Problem 9).</span><a class="headerlink" href="#s1x" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <hr class="docutils" />
 <p><a class="reference internal" href="Problems.html#id10"><span class="std std-ref">10.</span></a> The largest subset of <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> for which the formula <span class="math notranslate nohighlight">\(f(x)=x\sin\left(\frac{1}{x}\right)\)</span> makes sense is <span class="math notranslate nohighlight">\(A = \mathbb{R} \setminus \{0\}\)</span>.
 <br>
@@ -712,11 +805,11 @@ To see this, let <span class="math notranslate nohighlight">\((x_{n})\)</span> b
 <br>
 Since <span class="math notranslate nohighlight">\((x_n)\)</span> was arbitrary, <span class="math notranslate nohighlight">\(\displaystyle\lim_{x \rightarrow 0} x \sin\left(\frac{1}{x}\right) = 0\)</span>.
 <br>
-You should contrast <a class="reference internal" href="#xs1x"><span class="std std-numref">Fig. 2.2</span></a> with <code class="xref std std-numref docutils literal notranslate"><span class="pre">s1x</span></code> that for the previous question.</p>
+You should contrast <a class="reference internal" href="#xs1x"><span class="std std-numref">Fig. 2.5</span></a> with <a class="reference internal" href="#s1x"><span class="std std-numref">Fig. 2.4</span></a> that for the previous question.</p>
 <figure class="align-default" id="xs1x">
 <a class="reference internal image-reference" href="_images/xsin(1,x).png"><img alt="_images/xsin%281%2Cx%29.png" src="_images/xsin%281%2Cx%29.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.2 </span><span class="caption-text">Graph of the function <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x)=x\sin\left(\frac{1}{x}\right)\)</span> (Problem 10).</span><a class="headerlink" href="#xs1x" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.5 </span><span class="caption-text">Graph of the function <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(f(x)=x\sin\left(\frac{1}{x}\right)\)</span> (Problem 10).</span><a class="headerlink" href="#xs1x" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -811,9 +904,16 @@ The proofs for each of these answers are immediate by <a class="reference intern
 <p>(iii) <span class="math notranslate nohighlight">\(h:\mathbb{R}\to\mathbb{R}\)</span>; <span class="math notranslate nohighlight">\(h(x) =3 - 5\mathbb{1}_{(0, 1]}(x) + 7\mathbb{1}_{(1, 2]}(x)\)</span></p>
 <p>This is continuous at <span class="math notranslate nohighlight">\(\mathbb{R} \setminus \{0,1,2\}\)</span>, with jump discontinuities at <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(1\)</span>, and <span class="math notranslate nohighlight">\(2\)</span>. The jump sizes are, respectively, <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(-5\)</span>, and <span class="math notranslate nohighlight">\(-7\)</span>.</p>
 <hr class="docutils" />
-<p id="id5"><a class="reference internal" href="Problems.html#id18"><span class="std std-ref">18.</span></a> To appear (Homework 3 question)</p>
+<p id="id6"><a class="reference internal" href="Problems.html#id18"><span class="std std-ref">18.</span></a> To appear (Homework 3 question)</p>
 <hr class="docutils" />
-<p id="id6"><a class="reference internal" href="Problems.html#id19"><span class="std std-ref">19.</span></a> To appear (Homework 2 question).</p>
+<p id="id7"><a class="reference internal" href="Problems.html#id19"><span class="std std-ref">19.</span></a> <em>(Homework 2 question).</em> Assume <span class="math notranslate nohighlight">\(g\)</span> is continuous and <span class="math notranslate nohighlight">\(g(a) &gt; 0\)</span>. Then for all <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span> there exists <span class="math notranslate nohighlight">\(\delta&gt;0\)</span> such that for all <span class="math notranslate nohighlight">\(x\in\mathbb{R}\)</span>, <span class="math notranslate nohighlight">\(|x-a|&lt;\delta\)</span> implies <span class="math notranslate nohighlight">\(|g(x)-g(a)|&lt;\varepsilon\)</span>. Let <span class="math notranslate nohighlight">\(\varepsilon=\frac{g(a)}{2}\)</span>. Then for some <span class="math notranslate nohighlight">\(\delta&gt;0\)</span>, we have <span class="math notranslate nohighlight">\(|g(x)-g(a)|&lt;\frac{g(a)}{2}\)</span>. But then <span class="math notranslate nohighlight">\(\frac{g(a)}{2}&lt;g(x)&lt;\frac{3g(a)}{2}\)</span>, and in particular, <span class="math notranslate nohighlight">\(g(x)&gt;\frac{g(a)}{2}&gt;0\)</span>.</p>
+<p><strong>Alternate solution using sequences:</strong><br>
+Suppose, for a contradiction, that  there is no  <span class="math notranslate nohighlight">\(\delta &gt; 0\)</span> such that <span class="math notranslate nohighlight">\(g(x) &gt; 0\)</span>  for all <span class="math notranslate nohighlight">\( x \in (a - \delta, a + \delta)\)</span>. Then, in particular, for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span> there exists <span class="math notranslate nohighlight">\(x_{n} \in \left(a - \frac{1}{n}, a + \frac{1}{n}\right)\)</span> such that <span class="math notranslate nohighlight">\(g(x_{n}) \leq 0\)</span>. By the sandwich rule, we have <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} x_{n} = a\)</span>. So, by continuity of <span class="math notranslate nohighlight">\(g\)</span> at <span class="math notranslate nohighlight">\(a\)</span>, we have <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} g(x_{n})\)</span> exists and equals <span class="math notranslate nohighlight">\(g(a)\)</span>. But <span class="math notranslate nohighlight">\(g(x_n)\leq 0\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>, and so</p>
+<div class="math notranslate nohighlight">
+\[
+g(a)=\lim_{n\rightarrow\infty} g(x_{n}) \leq 0,
+\]</div>
+<p>which is a contradiction.</p>
 <hr class="docutils" />
 <p><a class="reference internal" href="Problems.html#id20"><span class="std std-ref">20.</span></a>
 (i)</p>
@@ -872,7 +972,19 @@ pk = f(p) = f\left(q\cdot \frac{p}{q}\right) = qf\left(\frac{p}{q}\right),
 f(x) = \lim_{n\rightarrow\infty} f(r_n) =   \lim_{n\rightarrow\infty} kr_n=k \lim_{n\rightarrow\infty} r_n = kx.
 \]</div>
 <hr class="docutils" />
-<p id="id7"><a class="reference internal" href="Problems.html#id22"><span class="std std-ref">22.</span></a> To appear (Homework 2 question).</p>
+<p id="id8"><a class="reference internal" href="Problems.html#id22"><span class="std std-ref">22.</span></a> <em>(Homework 2 question).</em>
+Recall from <a class="reference external" href="https://rosiesb.github.io/Analysis-Notes/3Cty.html#eg:dirichlet2">Example 3.10</a> in the notes that Dirichlet’s “other” function (AKA Thomae’s function) is defined  <span class="math notranslate nohighlight">\(g:[0, 1)\rightarrow \mathbb{R}\)</span> defined by</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+g(x) =\begin{cases}
+	1 &amp;\text{if $x = 0$},\\
+	\displaystyle\frac{1}{n}&amp; \text{if $x = m/n \in \mathbb{Q}\cap[0,1)$, and $\text{gcd}(m,n)=1$.}\\
+	0&amp;\text{if $x \in [0,1)\setminus \mathbb{Q}$}.
+\end{cases}
+\end{split}\]</div>
+<p>Suppose that <span class="math notranslate nohighlight">\(a \in \mathbb{Q}\cap[0,1)\)</span>. Then <span class="math notranslate nohighlight">\(g(a)=\frac{1}{k}\)</span>, for some fixed <span class="math notranslate nohighlight">\(k\in\mathbb{N}\)</span>. Every real number is the limit of a sequence of irrational numbers<a class="footnote-reference brackets" href="#note" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. Therefore, there is a sequence <span class="math notranslate nohighlight">\((x_{n})\)</span> of irrational numbers that converges to <span class="math notranslate nohighlight">\(a\)</span>. Since <span class="math notranslate nohighlight">\(a\in[0,1)\)</span>, we may assume (removing some initial terms if necessary) that <span class="math notranslate nohighlight">\(x_n\in[0,1)\setminus\mathbb{Q}\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>.</p>
+<p>If <span class="math notranslate nohighlight">\(g\)</span> was continuous at <span class="math notranslate nohighlight">\(a\)</span>, we would have <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty}g(x_n)=g(a)\)</span>. But in fact, <span class="math notranslate nohighlight">\(g(x_n)=0\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>, so <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty}g(x_n)=0\neq \frac{1}{k}=g(a)\)</span>.</p>
+<p>It follows that <span class="math notranslate nohighlight">\(g\)</span> is discontinuous at every rational point of its domain.</p>
 <hr class="docutils" />
 <p><a class="reference internal" href="Problems.html#id23"><span class="std std-ref">23.</span></a> The function <span class="math notranslate nohighlight">\(\mathbb{1}_{(a, b)}\)</span> is left continuous at <span class="math notranslate nohighlight">\(a\)</span> (but not right continuous), and right continuous at <span class="math notranslate nohighlight">\(b\)</span> (but not left continuous).</p>
 <p>To prove the left continuity at <span class="math notranslate nohighlight">\(a\)</span>, let <span class="math notranslate nohighlight">\((x_{n})\)</span> be any sequence in <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> which converges to <span class="math notranslate nohighlight">\(a\)</span> with <span class="math notranslate nohighlight">\(x_{n} &lt; a\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>. Then <span class="math notranslate nohighlight">\(\lim_{n\rightarrow\infty} \mathbb{1}_{(a, b)}(x_{n}) = 0 = \mathbb{1}_{(a, b)}(a).\)</span> On the other hand to see that it is not right continuous at <span class="math notranslate nohighlight">\(a\)</span>, let <span class="math notranslate nohighlight">\((y_{n})\)</span> be any sequence in <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> which converges to <span class="math notranslate nohighlight">\(a\)</span> with <span class="math notranslate nohighlight">\(a &lt; y_{n} &lt; b\)</span> for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>. Then
@@ -882,9 +994,16 @@ f(x) = \lim_{n\rightarrow\infty} f(r_n) =   \lim_{n\rightarrow\infty} kr_n=k \li
 <hr class="docutils" />
 <p><a class="reference internal" href="Problems.html#id24"><span class="std std-ref">24.</span></a> Since <span class="math notranslate nohighlight">\(f\)</span> is continuous on <span class="math notranslate nohighlight">\([a, b]\)</span>, so is <span class="math notranslate nohighlight">\(g\)</span>. We have <span class="math notranslate nohighlight">\(g(a) = f(a) - \gamma &lt; 0\)</span> and <span class="math notranslate nohighlight">\(g(b) = f(b) - \gamma &gt; 0\)</span>. Hence by <a class="reference external" href="https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt-sc">Proposition 3.1</a>, there exists <span class="math notranslate nohighlight">\(c \in (a, b)\)</span> with <span class="math notranslate nohighlight">\(g(c) = 0\)</span>, i.e. <span class="math notranslate nohighlight">\(f(c) = \gamma\)</span>, as was required.</p>
 <hr class="docutils" />
-<p id="id8"><a class="reference internal" href="Problems.html#id25"><span class="std std-ref">25.</span></a> To appear (Homework 3 question).</p>
+<p id="id10"><a class="reference internal" href="Problems.html#id25"><span class="std std-ref">25.</span></a> To appear (Homework 3 question).</p>
 <hr class="docutils" />
 <p><a class="reference internal" href="Problems.html#id26"><span class="std std-ref">26.</span></a> Define <span class="math notranslate nohighlight">\(\gamma = \inf_{x \in [a, b]}f(x)\)</span> and assume that it is not attained, so <span class="math notranslate nohighlight">\(\gamma &lt; f(x)\)</span> for all <span class="math notranslate nohighlight">\(x \in [a,b]\)</span>. Then consider the function <span class="math notranslate nohighlight">\(h:[a,b]\to \mathbb{R}\)</span> given by <span class="math notranslate nohighlight">\(h(x) = \displaystyle\frac{1}{f(x) - \gamma}\)</span>. This is continuous, and hence bounded on <span class="math notranslate nohighlight">\([a, b]\)</span>. So there exists <span class="math notranslate nohighlight">\(K \geq 0\)</span> such that <span class="math notranslate nohighlight">\(|h(x)| \leq K\)</span> for all <span class="math notranslate nohighlight">\(x \in [a, b]\)</span>. By Problem 16(ii), given any <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span>, there exists <span class="math notranslate nohighlight">\(x \in [a, b]\)</span> such that <span class="math notranslate nohighlight">\(f(x) &lt; \gamma + \varepsilon\)</span>. Now take <span class="math notranslate nohighlight">\(\varepsilon = \frac{1}{K}\)</span> to deduce that <span class="math notranslate nohighlight">\(h(x) &gt; K\)</span>, which yields the required contradiction.</p>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="note" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">1</a><span class="fn-bracket">]</span></span>
+<p>This, and other related properties of (ir)rational numbers, was a focus of study in MAS107/117 Semester 2.</p>
+</aside>
+</aside>
 </section>
 </section>
 

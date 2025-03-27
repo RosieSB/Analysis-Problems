@@ -430,13 +430,133 @@ For the left and right limits at $0$:
 ---
 
 (8sol)=
-[8.](8) To appear (Homework 2 question)
+[8.](8) *(Homework 2 question).* 
+   
+(i) We are given $f:\mathbb{R}\to\mathbb{R}$; $f(x) = \begin{cases} 1 -x & \text{if }x < 1\\ x^{2}& \text{if }x \geq 1. \end{cases}$
+
+For $a\neq 1$, the left and right limits exist and are both equal to $f(a)$, using the algebra of limits. The only point at which left and right limits disagree is $a = 1$, with
+
+$$
+\lim_{x \rightarrow 1^-}f(x) = 0, \; \text{ and } \; \lim_{x \rightarrow 1^+}f(x) = 1.
+$$
+
+To prove the left limit, let $\varepsilon>0$. For $x<1$, $f(x)=1-x$. Therefore, if $-\varepsilon<x-1<0$, we have $0<1-x<\varepsilon$, and hence $|f(x)|=|1-x|<\varepsilon$.
+
+For the right limit: We know that if $x>1$, $f(x)=x^2$. Given $\varepsilon>0$, we seek $\delta>0$ such that if $0<x<\delta$, then $|f(x)-1|<\varepsilon$. Now,
+
+$$
+|f(x)-1|=|x^2-1|=|x+1|\cdot|x+1|.
+$$
+
+We can bound the $|x+1|$ factor above by $3$ provided we choose a $\delta$ that is at most $1$. Indeed: if $0<x-1<1$, then $2<x+1<3$, so $|x+1|<3$.  
+
+We choose $\delta=\min\left\{1,\frac{\varepsilon}{3}\right\}$. Then, for $0<x-1<\delta$, we have $0<x-1<1$ and $0<|x-1|<\frac{\varepsilon}{3}$. So,
+
+$$
+|f(x)-1|=|x+1|\cdot|x-1| < 3\cdot\frac{\varepsilon}{3}=\varepsilon.
+$$
+
+````{note}
+We could have also used algebra of limits to prove/evaluate the left- and right-limits here. For example, to show $\lim_{x\rightarrow 1^-}f(x)=1$, apply algebra of limits to the function $x^2$ (domain $\mathbb{R}$). This tells us that $\lim_{x\rightarrow 1}x^2=1$. Therefore, by Proposition 2.1, $\lim_{x\rightarrow 1^-}x^2=1$. But then, since $f(x)=x^2$ for all $x<1$, we must have that $\lim_{x\rightarrow 1^-}f(x)=\lim_{x\rightarrow 1^-}x^2=1$.
+````
+
+(ii) Consider $g:\mathbb{R}\to\mathbb{R}$, $g(x) = [x] = \left\{\begin{array}{cl} \lfloor x\rfloor & \text{ if } x\geq 0 \\ \lceil x \rceil & \text{ if } x<0 \end{array}\right.$. 
+
+A quick think about how $[x]$ behaves for positive and negative $x$ gives the graph {numref}`intx`.
+
+```{figure} ../analysis_problems/figs/[x].png
+---
+width: 400px
+name: intx
+---
+Graph of the function $g:\mathbb{R}\to\mathbb{R}$; $g(x)=[x]$ (Problem 8).
+```
+
+In this case, left and right limits disagree at every $n \in \mathbb{Z}\setminus\{0\}$. In fact, if $n\in\mathbb{N}$, then {numref}`intx` suggests that 
+
+$$
+\lim_{x\rightarrow n^+}[x]=n, \;\lim_{x\rightarrow n^-}[x]=n-1, \; \lim_{x\rightarrow -n^+}[x]= -n+1, \text{ and } \lim_{x\rightarrow -n^-}[x]=-n.
+$$ 
+
+At every other real number, the left and right limits exist and are both equal to the value of the function there.
+
+Here some proofs: 
+
+- To prove $\lim_{x \rightarrow n^+}[x] = n$: Note that if $0<x-n<\frac{1}{2}$, we have $[x]=n$, and so $|[x]-n|=0$. In particular, if $\varepsilon>0$, then $0<x-n<\frac{1}{2}$ implies $|[x]-n|<\varepsilon$.
+
+- To prove $\lim_{x\rightarrow n^-}[x]=n-1$: By the same principle, if $-\frac{1}{2}<x-n<0$, then $[x]=n-1$, and so $|[x]-(n-1)|=0$. In particular, for all $\varepsilon>0$, we have that $-\frac{1}{2}<x-n<0$ implies $|[x]-(n-1)|<\varepsilon$.
+
+- The proofs of $\lim_{x\rightarrow -n^+}[x]= -n+1$ and $\lim_{x\rightarrow -n^-}[x]=-n$ are very similar --- or you could just note that $[-x]=-[x]$ and apply algebra of limits.
+
+(iii) We are given $h:\mathbb{R}\to\mathbb{R}$, $h(x) =3 - 5\mathbb{1}_{(0, 1]}(x) + 7\mathbb{1}_{(1, 2]}(x)$. Again, it helps to draw a graph first --- see {numref}`8iii`.
+
+
+```{figure} ../analysis_problems/figs/8iii.png
+---
+width: 500px
+name: 8iii
+---
+Graph of the function $h=3 - 5\mathbb{1}_{(0, 1]} + 7\mathbb{1}_{(1, 2]}$ (Problem 8).
+```
+
+Here, left and right limits disagree at $x = 0, 1$ and $2$. We have
+
+$$
+\lim_{x \rightarrow 0^-}h(x) = 3, \hspace{1em} \lim_{x \rightarrow 1^-}h(x) = -2, \hspace{1em}  \lim_{x \rightarrow 2^-}h(x) = 10,
+$$
+
+$$
+\lim_{x \rightarrow 0^+}h(x) = -2, \hspace{1em} \lim_{x \rightarrow 1^+}h(x) = 10, \hspace{1em}  \lim_{x \rightarrow 2^+}h(x) = 3.
+$$
+
+To prove $\lim_{x \rightarrow 0^-}h(x) = 3$ using [Definition 2.4](https://rosiesb.github.io/Analysis-Notes/2LoF.html#marg), note that for any $x<0$, $h(x)=3$ and so $|h(x)-3|=0$. So for any $\varepsilon>0$ and any choice of $\delta>0$, we have that $-\delta<x<0$ implies $|h(x)-3|=0<\varepsilon$. 
+
+The proof of $\lim_{x \rightarrow 1^-}h(x) = -2$ is very similar: let $\varepsilon>0$, and note that if $-\frac{1}{2}<x-1<0$, then $\frac{1}{2}<x<1$, and so $h(x)=-2$. But then, $|h(x)-(-2)|=0<\varepsilon$.
+
+The proof of $\lim_{x \rightarrow 2^-}h(x) = 10$ is exactly the same, just take $-\frac{1}{2}<x-2<0$ and note $h(x)=10$, instead.
+
+The right limit proofs are similar. 
 
 ---
 
 (9sol)=
-[9.](9) To appear (Homework 2 question)
+[9.](9) *(Homework 2 question).* The largest subset of $\mathbb{R}$ for which the formula $f(x)=\sin\left(\frac{1}{x}\right)$ makes sense is $A = \mathbb{R} \setminus \{0\}$.
+<br>
+Observe that for any real number $\theta\in\mathbb{R}$,
 
+$$
+f\left(\frac{1}{\theta+2\pi n}\right) = \sin(\theta+2\pi n) = \sin(\theta).
+$$
+
+To prove $f$ has no limit at $0$, we need only choose two values of $\theta$ for which sine takes distinct values. We choose $\theta=\frac{\pi}{2}$ and $\theta=\frac{3\pi}{2}$.
+<br>
+By choosing the right values for $\theta$, we can use this to construct two distinct sequences $(x_n)$ and $(y_n)$ that both converge to $0$, but for which $\sin(x_n)$ and $\sin(y_n)$ have different limits.
+<br>
+We use $\theta=\frac{\pi}{2}$ and $\theta=\frac{3\pi}{2}$ (other choices possible).
+<br>
+For each $n\in\mathbb{N}$, let $x_n=\frac{1}{\frac{\pi}{2} + 2\pi n}$ and $y_n=\frac{1}{3\frac{\pi}{2} + 2\pi n}$. Then
+
+$$
+\lim_{n\rightarrow\infty} x_{n} =\lim_{n\rightarrow\infty} y_n= 0,
+$$
+
+while for all $n\in\mathbb{N}$,
+
+$$
+f(x_n) = \sin\left(\frac{\pi}{2}\right) =1 \hspace{2em} \text{ and } \hspace{2em} f(y_n)=\sin\left(\frac{3\pi}{2}\right)=-1.
+$$
+
+So $\lim_{n\rightarrow\infty} f(x_{n}) = 1$, but $\lim_{n\rightarrow\infty} f(y_n) = -1$. Since these limits are not equal, $\lim_{x\to 0} f(x)$ does not exist.
+<br>
+Of course, we could have chosen any values of $\theta$ we liked, and constructed a sequence $(x_n)$ with limit $0$ for which $\lim_{n\rightarrow\infty}f(x_n)$ is equal to any real number we liked in the interval $[-1,1]$. The graph of this function ({numref}`s1x`) may give some intuition as to how this is possible.
+
+```{figure} ../analysis_problems/figs/sin(1,x).png
+---
+width: 700px
+name: s1x
+---
+Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=\sin\left(\frac{1}{x}\right)$ (Problem 9).
+```
 
 ---
 
@@ -599,7 +719,16 @@ This is continuous at $\mathbb{R} \setminus \{0,1,2\}$, with jump discontinuitie
 ---
 
 (19sol)=
-[19.](19) To appear (Homework 2 question).
+[19.](19) *(Homework 2 question).* Assume $g$ is continuous and $g(a) > 0$. Then for all $\varepsilon>0$ there exists $\delta>0$ such that for all $x\in\mathbb{R}$, $|x-a|<\delta$ implies $|g(x)-g(a)|<\varepsilon$. Let $\varepsilon=\frac{g(a)}{2}$. Then for some $\delta>0$, we have $|g(x)-g(a)|<\frac{g(a)}{2}$. But then $\frac{g(a)}{2}<g(x)<\frac{3g(a)}{2}$, and in particular, $g(x)>\frac{g(a)}{2}>0$.
+
+**Alternate solution using sequences:**<br>
+Suppose, for a contradiction, that  there is no  $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. Then, in particular, for all $n\in\mathbb{N}$ there exists $x_{n} \in \left(a - \frac{1}{n}, a + \frac{1}{n}\right)$ such that $g(x_{n}) \leq 0$. By the sandwich rule, we have $\lim_{n\rightarrow\infty} x_{n} = a$. So, by continuity of $g$ at $a$, we have $\lim_{n\rightarrow\infty} g(x_{n})$ exists and equals $g(a)$. But $g(x_n)\leq 0$ for all $n\in\mathbb{N}$, and so
+
+$$
+g(a)=\lim_{n\rightarrow\infty} g(x_{n}) \leq 0,
+$$
+
+which is a contradiction.
 
 ---
 
@@ -682,7 +811,26 @@ $$
 ---
 
 (22sol)=
-[22.](22) To appear (Homework 2 question).
+[22.](22) *(Homework 2 question).* 
+Recall from [Example 3.10](https://rosiesb.github.io/Analysis-Notes/3Cty.html#eg:dirichlet2) in the notes that Dirichlet's "other" function (AKA Thomae's function) is defined  $g:[0, 1)\rightarrow \mathbb{R}$ defined by
+
+$$
+g(x) =\begin{cases}
+	1 &\text{if $x = 0$},\\
+	\displaystyle\frac{1}{n}& \text{if $x = m/n \in \mathbb{Q}\cap[0,1)$, and $\text{gcd}(m,n)=1$.}\\
+	0&\text{if $x \in [0,1)\setminus \mathbb{Q}$}.
+\end{cases}
+$$
+
+Suppose that $a \in \mathbb{Q}\cap[0,1)$. Then $g(a)=\frac{1}{k}$, for some fixed $k\in\mathbb{N}$. Every real number is the limit of a sequence of irrational numbers[^note]. Therefore, there is a sequence $(x_{n})$ of irrational numbers that converges to $a$. Since $a\in[0,1)$, we may assume (removing some initial terms if necessary) that $x_n\in[0,1)\setminus\mathbb{Q}$ for all $n\in\mathbb{N}$. 
+
+[^note]:This, and other related properties of (ir)rational numbers, was a focus of study in MAS107/117 Semester 2. 
+
+If $g$ was continuous at $a$, we would have $\lim_{n\rightarrow\infty}g(x_n)=g(a)$. But in fact, $g(x_n)=0$ for all $n\in\mathbb{N}$, so $\lim_{n\rightarrow\infty}g(x_n)=0\neq \frac{1}{k}=g(a)$.
+
+It follows that $g$ is discontinuous at every rational point of its domain.
+
+
 
 ---
 
