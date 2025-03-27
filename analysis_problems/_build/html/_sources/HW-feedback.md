@@ -5,6 +5,10 @@ Here is some general feedback comments about each piece of homework for MAS2004/
 
 Responding to individual feedback is the fastest way to improve as a mathematician. Hopefully your feedback will feel useful and make sense to you, but if it ever doesn't, please get in touch and I am more than happy to look at it with you. 
 
+```{contents} Jump to...
+:local:
+:depth: 1
+```
 
 ## Feedback for Homework 2
 
@@ -24,7 +28,7 @@ Remember to take the time to carefully review the feedback your work has receive
 
 - There were still a few instances of people defining $\delta>0$ dependent on $x$. [See above](#3iiifeedback) for why this doesn't work! And/or ask me about it.
 
-### [Problem 8](#8)
+### Problem 8
 
 In this question, you had to compute left and right limits of the given functions and comment on when they disagreed. You then had to prove you were right using [Definition 2.4](https://rosiesb.github.io/Analysis-Notes/2LoF.html#marg), or the equivalent definitions involving sequences. 
 
@@ -36,20 +40,20 @@ In some cases, people had computed limits without any attempt at proving them. B
 
 Finally, many people made this question unecessarily hard for themselves by not drawing pictures. I especially recommend doing so for parts (b) and (c)! 
 
-### [Problem 9](#9)
+### Problem 9
 
 This question was answered well on the whole, so well done! Presentation was also generally better for the question than the $\varepsilon-\delta$ proofs. I think the main cases where people didn't get the question out are because they didn't follow the hint. Please come to office hours for help with this if you struggled with this bit.
 
-### [Problem 19](#19)
+### Problem 19
 
 Here, nearly everyone I saw who attempted the question knew they needed to put something like $\varepsilon=\frac{g(a)}{2}$ into the definition of continuity of $g$ at $a$, which shows good intuition! However, many struggled to turn this into a mathematical argument.
 
-Remember, an inequality calculation on its own does not constitute a proof, you need to explicitly connect it in some way to the assumptions of the question (in this case, that $g$ is continuous and positive at $a$). In fact, most people did have the bare bones of what they needed to complete the question correctly. Remember, you can always ask for help with this. Once you get the trick for turning this kind of working out into a proof, it is the same nearly every time, but it does take most people some time for it to click (ask anyone).
+Remember, an inequality calculation on its own does not constitute a proof, you need to explicitly connect it in some way to the assumptions of the question (in this case, that $g$ is continuous and positive at $a$). In fact, most people did have the bare bones of what they needed to complete the question correctly. Remember, you can always ask for help with this. Once you get the trick for turning this kind of working out into a proof, it is the same nearly every time, but it does take most people some time for it to "click" (ask anyone).
 
 If you are getting comments like "there is no argument here" or similar, that is a sign that you may need to come to an office hour for more support with your proof writing.
 
 
-### [Problem 22](#22)
+### Problem 22
 
 Those who attempted this generally got it out, so well done! In future, if a "weird" question like this one is assigned as homework like this one, I'd much prefer you come and get some help with it than leave it blank. But I also appreciate that this time around, there was a lot to do.
 
@@ -69,15 +73,15 @@ Well done for completing the first analysis homework! Here are some general comm
 
 - Remember to only use notation/variables after you have introduced them. This sometimes relates to the above point --- Definition 2.2 has a general limit $L$ in it, but there's no need to carry it around in your solution if you know the actual numerical limit you're aiming for (e.g. $5/2$).
 
-### Problems [P2](#P2) and [P3](#P3)
+### Problems P2 and P3
 These were generally answered well, and most people were able to find the intended theorems from their MAS107/MAS117 notes in order to re-prove the Bolzano-Weierstrass theorem. We'll be using this theorem more than once this semester, so this revision will come in handy. 
 
 In [P2](#P2), there were some issues with mathematical writing, so make sure you go and look at the individual comments on your work and see what comments you can use to improve this.
 
-### [Problem 2](#2)
+### Problem 2
 For this question, it's fine to just write down what the limit points are, but of course we like proofs in this module. If you did include a proof, well done! And take a look for comments about its structure and presentation. The [solutions](#2sol) do now include proofs, if you would like to see how they go.
 
-### [Problem 3](#3)
+### Problem 3
 The three parts of this question were not of equal difficulty, and this was intentional. I would say part (iii) is definitely the hardest, so well done if you got that one out. If you didn't, take a look at the individual feedback and see if you can make some progress, and/or, bring it to an [office hour](https://rosiesb.github.io/Analysis-Notes/0Intro.html#where-to-get-help). You may find it easier to tackle now you have had more time to practise.
 
 (3iiifeedback)=
