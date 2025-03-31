@@ -1269,7 +1269,7 @@ $$
 
 ---
 
-[51.](51) The polynomial $p$ is of odd degree so it has at least one real root by [Corollary 3.2](https://rosiesb.github.io/Analysis-Notes/3Cty.html#pol). Also $p$ is differentiable with $p'(x) = 3x^{2} + r > 0$, for all $x \in \mathbb{R}$, so $p$ is strictly monotonic increasing on any closed interval $[a, b]$, and hence on the whole of $\mathbb{R}$, by Corollary 4.1. Then by the inverse function theorem (Theorem 3.6), $p$ is invertible and hence injective, and so there is exactly one zero.
+[51.](51) The polynomial $p$ is of odd degree so it has at least one real root by [Example 3.12](https://rosiesb.github.io/Analysis-Notes/3Cty.html#pol). Also $p$ is differentiable with $p'(x) = 3x^{2} + r > 0$, for all $x \in \mathbb{R}$, so $p$ is strictly monotonic increasing on any closed interval $[a, b]$, and hence on the whole of $\mathbb{R}$, by [Corollary 4.1](https://rosiesb.github.io/Analysis-Notes/4Diff.html#mond). Then by the inverse function theorem ([Theorem 3.6](https://rosiesb.github.io/Analysis-Notes/3Cty.html#thm:IFT)), $p$ is invertible and hence injective, and so there is exactly one zero.
 
 ---
 
@@ -1293,7 +1293,7 @@ $$
 f''(a) = \lim_{h \rightarrow 0}\frac{f'(a + h) - f'(a)}{h} =  \lim_{h \rightarrow 0}\frac{f'(a + h)}{h} < 0.
 $$
 
-In particular, $f^{\prime \prime}_{+}(a) = \lim_{h \rightarrow 0^+}\frac{f'(a + h)}{h} < 0$, and so $f'(a + h) < 0$ for sufficiently small positive $h$, (say $0 < h < \delta$), in which case, by Corollary 4.1, $f$ is strictly decreasing on $[a,  a + \delta]$. We also have $f^{\prime \prime}_{-}(a) = \lim_{h \rightarrow 0^-}\frac{f'(a + h)}{h} < 0$, and so $f'(a + h) > 0$ for sufficiently small negative $h$, (say $-\delta_{1} < h < 0$), in which case, by Corollary 4.1, $f$ is strictly increasing on $[a- \delta_{1}, a]$. Then it follows that $f$ has a local minimum at $a$. The other case is similar.
+In particular, $f^{\prime \prime}_{+}(a) = \lim_{h \rightarrow 0^+}\frac{f'(a + h)}{h} < 0$, and so $f'(a + h) < 0$ for sufficiently small positive $h$, (say $0 < h < \delta$), in which case, by [Corollary 4.1](https://rosiesb.github.io/Analysis-Notes/4Diff.html#mond), $f$ is strictly decreasing on $[a,  a + \delta]$. We also have $f^{\prime \prime}_{-}(a) = \lim_{h \rightarrow 0^-}\frac{f'(a + h)}{h} < 0$, and so $f'(a + h) > 0$ for sufficiently small negative $h$, (say $-\delta_{1} < h < 0$), in which case, by Corollary 4.1, $f$ is strictly increasing on $[a- \delta_{1}, a]$. Then it follows that $f$ has a local minimum at $a$. The other case is similar.
 
 
 
@@ -1797,7 +1797,7 @@ Following these events was a huge collective effort of the whole mathematical co
 ````
 
 (ch6sol)=
-## Integration
+## Integration --- Non-examinable 2024--25
 
 [66.](66) Let $f:[1,4]\to\mathbb{R}$; $f(x)=\frac{1}{x}$, and let $P=\{1,\frac{3}{2},2,4\}$.
 

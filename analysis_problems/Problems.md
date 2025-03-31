@@ -580,7 +580,7 @@ While a perfectly good series, mathematical understanding in europe at the time 
 (iv) Now differentiate the series [](fourier) term by term. Does this series converge pointwise for any values of $x$? You may find Desmos or a similar graphing tool helpful for this part.
 
 (ch6prob)=
-## Integration
+## Integration --- Non-examinable 2024--25
 
 (66)=
 66. Let $f:[1,4]\to\mathbb{R}$; $\displaystyle f(x)=\frac{1}{x}$. Let $P$ be the partition consisting of points $\left\{1,\frac{3}{2},2,4\right\}$.
