@@ -87,7 +87,7 @@
         
 
 \title{MAS2004/9 Semester 2 Problems}
-\date{Mar 27, 2025}
+\date{Apr 01, 2025}
 \release{}
 \author{Rosie Shewell Brockway}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -926,7 +926,7 @@ f(a) + m(b - a) \leq f(b) \leq f(a) + M(b-a).
 \item {} 
 \sphinxAtStartPar
 If \(r > 0\) and \(q \in \mathbb{R}\) show that the polynomial \(p(x) = x^{3} + rx + q\) has exactly one real zero.
-{[} You may assume the result of \sphinxhref{https://rosiesb.github.io/Analysis-Notes/3Cty.html\#pol}{Corollary 3.2}: \(p\) has at least one real root. So you need to show that there can’t be more than one. {]}
+{[} You may assume the result of \sphinxhref{https://rosiesb.github.io/Analysis-Notes/3Cty.html\#pol}{Example 3.12}: \(p\) has at least one real root. So you need to show that there can’t be more than one. {]}
 
 \end{enumerate}
 \phantomsection\label{\detokenize{Problems:id52}}\begin{enumerate}
@@ -1160,8 +1160,8 @@ While a perfectly good series, mathematical understanding in europe at the time 
 (iv) Now differentiate the series {\hyperref[\detokenize{Problems:equation-fourier}]{\sphinxcrossref{(1.5.1)}}} term by term. Does this series converge pointwise for any values of \(x\)? You may find Desmos or a similar graphing tool helpful for this part.
 
 
-\section{Integration}
-\label{\detokenize{Problems:integration}}\label{\detokenize{Problems:ch6prob}}\phantomsection\label{\detokenize{Problems:id66}}\begin{enumerate}
+\section{Integration — Non\sphinxhyphen{}examinable 2024–25}
+\label{\detokenize{Problems:integration-non-examinable-2024-25}}\label{\detokenize{Problems:ch6prob}}\phantomsection\label{\detokenize{Problems:id66}}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{65}
 \item {} 
@@ -1936,7 +1936,7 @@ Finally, we choose \(\delta:= \frac{3}{14}\varepsilon\). Then, for \(0<|x-1|< \d
 
 
 \sphinxAtStartPar
-{\hyperref[\detokenize{Problems:id5}]{\sphinxcrossref{\DUrole{std,std-ref}{5.}}}} The first part follows by using the definition of the limit of a function in terms of limits of sequences, and then applying the result of {\hyperref[\detokenize{Problems:p4}]{\sphinxcrossref{\DUrole{std,std-ref}{P4 (iii)}}}}..
+{\hyperref[\detokenize{Problems:id5}]{\sphinxcrossref{\DUrole{std,std-ref}{5.}}}} The first part follows by using the sequential criterion for a limit of a function, and then applying the result of {\hyperref[\detokenize{Problems:p4}]{\sphinxcrossref{\DUrole{std,std-ref}{P4 (iii)}}}}..
 
 To be precise let \((x_{n})\) be any sequence in \(\mathbb{R} \setminus \{a\}\) that converges to \(a\). Then since we are given that \(\lim_{x \rightarrow a} f(x) = l\), we must have that \(\lim_{n\rightarrow\infty} f(x_{n}) = l\). But then by {\hyperref[\detokenize{Problems:p4}]{\sphinxcrossref{\DUrole{std,std-ref}{P4 (iii)}}}}., we have \(\lim_{n\rightarrow\infty} \sqrt{f(x_{n}}) = \sqrt{l}\). So by definition of the limit of a function, \(\lim_{x \rightarrow a} \sqrt{f(x)} = \sqrt{l}\).
 
@@ -2170,7 +2170,7 @@ for each \(n\in\mathbb{N}\). Put another way,
 \end{split}
 \end{equation*}
 \sphinxAtStartPar
-for all \(n\in\mathbb{N}\). Since \(\displaystyle\lim_{n\to \infty} x_n=0\), we have \( \displaystyle\lim_{n\to \infty} |x_n| =0\). Therefore, but the sandwich rule, \(\displaystyle\lim_{n\rightarrow 0}x_n\sin\left(\frac{1}{x_n}\right) = 0\).
+for all \(n\in\mathbb{N}\). Since \(\displaystyle\lim_{n\to \infty} x_n=0\), we have \( \displaystyle\lim_{n\to \infty} |x_n| =0\). Therefore, but the squeeze theorem, \(\displaystyle\lim_{n\rightarrow 0}x_n\sin\left(\frac{1}{x_n}\right) = 0\).
 
 Since \((x_n)\) was arbitrary, \(\displaystyle\lim_{x \rightarrow 0} x \sin\left(\frac{1}{x}\right) = 0\).
 
@@ -2312,7 +2312,7 @@ By Corollary 1.1, if \((x_{n})\) is any sequence that converges to \(a\),
 &\leq |f(a) - f(x_{n})| \rightarrow 0~\mbox{as}~n \rightarrow \infty, 
 \end{align*}
 \sphinxAtStartPar
-as \(f\) is continuous. So by the sandwich rule, \(\lim_{n\rightarrow\infty} |f|(x_{n}) = |f|(a)\), and so \(f\) is continuous at \(a\).
+as \(f\) is continuous. So by the squeeze theorem, \(\lim_{n\rightarrow\infty} |f|(x_{n}) = |f|(a)\), and so \(f\) is continuous at \(a\).
 
 
 \bigskip\hrule\bigskip
@@ -2372,7 +2372,7 @@ This is continuous at \(\mathbb{R} \setminus \{0,1,2\}\), with jump discontinuit
 
 \sphinxAtStartPar
 \sphinxstylestrong{Alternate solution using sequences:}
-Suppose, for a contradiction, that  there is no  \(\delta > 0\) such that \(g(x) > 0\)  for all \( x \in (a - \delta, a + \delta)\). Then, in particular, for all \(n\in\mathbb{N}\) there exists \(x_{n} \in \left(a - \frac{1}{n}, a + \frac{1}{n}\right)\) such that \(g(x_{n}) \leq 0\). By the sandwich rule, we have \(\lim_{n\rightarrow\infty} x_{n} = a\). So, by continuity of \(g\) at \(a\), we have \(\lim_{n\rightarrow\infty} g(x_{n})\) exists and equals \(g(a)\). But \(g(x_n)\leq 0\) for all \(n\in\mathbb{N}\), and so
+Suppose, for a contradiction, that  there is no  \(\delta > 0\) such that \(g(x) > 0\)  for all \( x \in (a - \delta, a + \delta)\). Then, in particular, for all \(n\in\mathbb{N}\) there exists \(x_{n} \in \left(a - \frac{1}{n}, a + \frac{1}{n}\right)\) such that \(g(x_{n}) \leq 0\). By the squeeze theorem, we have \(\lim_{n\rightarrow\infty} x_{n} = a\). So, by continuity of \(g\) at \(a\), we have \(\lim_{n\rightarrow\infty} g(x_{n})\) exists and equals \(g(a)\). But \(g(x_n)\leq 0\) for all \(n\in\mathbb{N}\), and so
 \begin{equation*}
 \begin{split}
 g(a)=\lim_{n\rightarrow\infty} g(x_{n}) \leq 0,
