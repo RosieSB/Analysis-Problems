@@ -998,12 +998,27 @@ g(x) =\begin{cases}
 <hr class="docutils" />
 <p id="id10"><a class="reference internal" href="Problems.html#id25"><span class="std std-ref">25.</span></a> To appear (Homework 3 question).</p>
 <hr class="docutils" />
-<p><a class="reference internal" href="Problems.html#id26"><span class="std std-ref">26.</span></a> Define <span class="math notranslate nohighlight">\(\gamma = \inf_{x \in [a, b]}f(x)\)</span> and assume that it is not attained, so <span class="math notranslate nohighlight">\(\gamma &lt; f(x)\)</span> for all <span class="math notranslate nohighlight">\(x \in [a,b]\)</span>. Then consider the function <span class="math notranslate nohighlight">\(h:[a,b]\to \mathbb{R}\)</span> given by <span class="math notranslate nohighlight">\(h(x) = \displaystyle\frac{1}{f(x) - \gamma}\)</span>. This is continuous, and hence bounded on <span class="math notranslate nohighlight">\([a, b]\)</span>. So there exists <span class="math notranslate nohighlight">\(K \geq 0\)</span> such that <span class="math notranslate nohighlight">\(|h(x)| \leq K\)</span> for all <span class="math notranslate nohighlight">\(x \in [a, b]\)</span>. By Problem 16(ii), given any <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span>, there exists <span class="math notranslate nohighlight">\(x \in [a, b]\)</span> such that <span class="math notranslate nohighlight">\(f(x) &lt; \gamma + \varepsilon\)</span>. Now take <span class="math notranslate nohighlight">\(\varepsilon = \frac{1}{K}\)</span> to deduce that <span class="math notranslate nohighlight">\(h(x) &gt; K\)</span>, which yields the required contradiction.</p>
+<p><a class="reference internal" href="Problems.html#id26"><span class="std std-ref">26.</span></a> Define <span class="math notranslate nohighlight">\(\gamma = \inf_{x \in [a, b]}f(x)\)</span> and assume that it is not attained, so <span class="math notranslate nohighlight">\(\gamma &lt; f(x)\)</span> for all <span class="math notranslate nohighlight">\(x \in [a,b]\)</span>. Then consider the function</p>
+<div class="math notranslate nohighlight">
+\[
+h:[a,b]\to \mathbb{R}; \; h(x) = \displaystyle\frac{1}{f(x) - \gamma}.
+\]</div>
+<p>This is continuous, and hence bounded on <span class="math notranslate nohighlight">\([a, b]\)</span>. So there exists <span class="math notranslate nohighlight">\(K \geq 0\)</span> such that <span class="math notranslate nohighlight">\(|h(x)| \leq K\)</span> for all <span class="math notranslate nohighlight">\(x \in [a, b]\)</span>. Since <span class="math notranslate nohighlight">\(\gamma=\inf_{x\in[a,b]}f(x)\)</span>, given any <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span>, there exists <span class="math notranslate nohighlight">\(x \in [a, b]\)</span> such that <span class="math notranslate nohighlight">\(f(x) &lt; \gamma + \varepsilon\)</span>. Now take <span class="math notranslate nohighlight">\(\varepsilon = \frac{1}{K}\)</span> to deduce that <span class="math notranslate nohighlight">\(h(x) &gt; K\)</span>, which yields the required contradiction.</p>
+<p>[<strong>Alternatively:</strong> We proved in lectures that continuous functions on <span class="math notranslate nohighlight">\([a,b]\)</span> are bounded and attain a maximum value. Since <span class="math notranslate nohighlight">\(f\)</span> is continuous on <span class="math notranslate nohighlight">\([a,b]\)</span>, so is <span class="math notranslate nohighlight">\(-f\)</span>, and hence <span class="math notranslate nohighlight">\(-f\)</span> attains a maximum: say <span class="math notranslate nohighlight">\(k\in[a,b]\)</span> is such that <span class="math notranslate nohighlight">\(-f(k)=\sup_{x\in[a,b]}(-f(x))\)</span>. Then, using a standard property<a class="footnote-reference brackets" href="#infsup" id="id11" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> of sup’s and inf’s,</p>
+<div class="math notranslate nohighlight">
+\[
+f(k)=-\sup_{x\in[a,b]}(-f(x)) = \inf_{x\in[a,b]}f(x).
+\]</div>
+<p>In other words, <span class="math notranslate nohighlight">\(f\)</span> attains its minimum.]</p>
 <hr class="footnotes docutils" />
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="note" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">1</a><span class="fn-bracket">]</span></span>
 <p>This, and other related properties of (ir)rational numbers, was a focus of study in MAS107/117 Semester 2.</p>
+</aside>
+<aside class="footnote brackets" id="infsup" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id11">2</a><span class="fn-bracket">]</span></span>
+<p>More generally, for any bounded set <span class="math notranslate nohighlight">\(A\subseteq\mathbb{R}\)</span>, <span class="math notranslate nohighlight">\(\sup(A)=-\inf(-A)\)</span> and <span class="math notranslate nohighlight">\(\inf(A)=-\sup(-A)\)</span>, where we write <span class="math notranslate nohighlight">\(-A:=\{-x:x\in A\}\)</span> (standard notation). For a proof, see Theorem 2.7 on page 33 of the <a class="reference external" href="https://drive.google.com/file/d/1r9b3XqA1u-dzkbnGjPPBxIyj6YF1TE_C/view?usp=sharing">MAS107 Sem 2 notes</a>.</p>
 </aside>
 </aside>
 </section>
