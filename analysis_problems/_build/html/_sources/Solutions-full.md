@@ -389,7 +389,7 @@ $$
 
 ---
 
-[5.](5) The first part follows by using the definition of the limit of a function in terms of limits of sequences, and then applying the result of [P4 (iii)](#P4)..
+[5.](5) The first part follows by using the sequential criterion for a limit of a function, and then applying the result of [P4 (iii)](#P4)..
 <br>
 To be precise let $(x_{n})$ be any sequence in $\mathbb{R} \setminus \{a\}$ that converges to $a$. Then since we are given that $\lim_{x \rightarrow a} f(x) = l$, we must have that $\lim_{n\rightarrow\infty} f(x_{n}) = l$. But then by [P4 (iii)](#P4)., we have $\lim_{n\rightarrow\infty} \sqrt{f(x_{n}}) = \sqrt{l}$. So by definition of the limit of a function, $\lim_{x \rightarrow a} \sqrt{f(x)} = \sqrt{l}$.
 <br>
@@ -576,7 +576,7 @@ $$
 -|x_{n}| \leq x_{n}\sin\left(\frac{1}{x_n}\right) \leq |x_{n}|
 $$
 
-for all $n\in\mathbb{N}$. Since $\displaystyle\lim_{n\to \infty} x_n=0$, we have $ \displaystyle\lim_{n\to \infty} |x_n| =0$. Therefore, but the sandwich rule, $\displaystyle\lim_{n\rightarrow 0}x_n\sin\left(\frac{1}{x_n}\right) = 0$.
+for all $n\in\mathbb{N}$. Since $\displaystyle\lim_{n\to \infty} x_n=0$, we have $ \displaystyle\lim_{n\to \infty} |x_n| =0$. Therefore, but the squeeze theorem, $\displaystyle\lim_{n\rightarrow 0}x_n\sin\left(\frac{1}{x_n}\right) = 0$.
 <br>
 Since $(x_n)$ was arbitrary, $\displaystyle\lim_{x \rightarrow 0} x \sin\left(\frac{1}{x}\right) = 0$.
 <br>
@@ -683,7 +683,7 @@ By Corollary 1.1, if $(x_{n})$ is any sequence that converges to $a$,
 0 \leq ||f|(a)| -|f|(x_{n})| &= ||f(a) - |f(x_{n})|| \\
 &\leq |f(a) - f(x_{n})| \rightarrow 0~\mbox{as}~n \rightarrow \infty, 
 \end{align*}
-as $f$ is continuous. So by the sandwich rule, $\lim_{n\rightarrow\infty} |f|(x_{n}) = |f|(a)$, and so $f$ is continuous at $a$.
+as $f$ is continuous. So by the squeeze theorem, $\lim_{n\rightarrow\infty} |f|(x_{n}) = |f|(a)$, and so $f$ is continuous at $a$.
 
 ---
 
@@ -717,40 +717,45 @@ This is continuous at $\mathbb{R} \setminus \{0,1,2\}$, with jump discontinuitie
 (18sol)=
 [18.](18) *(Homework 3 question).*
    
-(i) For $x \neq 0, f(x) = x+2$. Since $\lim_{x \rightarrow 0}f(x) = 2$, the required continuous extension is $\tilde{f}$ where
+(i) We are given $f:\mathbb{R} \setminus \{0\} \rightarrow \mathbb{R}$; $f(x) = \frac{(1 + x)^{2} - 1}{x}$, a continuous function (since it is a rational function).
+
+For $x \neq 0, f(x) = x+2$, and so $\lim_{x \rightarrow 0}f(x) = 2$. Therefore the required continuous extension of $f$ is 
 
 $$
-\tilde{f}(x) = \left\{\begin{array}{c c} \displaystyle\frac{(1 + x)^{2} - 1}{x} & ~\mbox{if}~x \neq 0\\ 
+\tilde{f}:\mathbb{R}\to\mathbb{R}; \; \tilde{f}(x) = \left\{\begin{array}{c c} \displaystyle\frac{(1 + x)^{2} - 1}{x} & ~\mbox{if}~x \neq 0\\ 
 & \\
 2 & ~\mbox{if}~x = 0. \end{array} \right.
 $$
 
-(ii) The largest domain is $A=\mathbb{R} \setminus \{-2, 2\}$ (the set where the denominator is non-zero). For $x \neq 2, -2$,
+(ii) Let now $f(x) = \frac{(x-2)(x^{2} + 2x + 4)}{(x-2)(x+2)}$. The largest possible domain for $f$ is $A=\mathbb{R} \setminus \{-2, 2\}$ (the set where the denominator is non-zero). For $x \neq 2, -2$,
 
 $$
-f(x) = \frac{(x-2)(x^{2} + 2x + 4)}{(x-2)(x+2)}=\frac{x^{2} + 2x + 4}{x + 2}.
+f(x) = \frac{(x-2)(x^{2} + 2x + 4)}{(x-2)(x+2)}=\frac{x^{2} + 2x + 4}{x + 2}=x+\frac{4}{x+2}.
 $$
 
-This is a rational function, and hence continuous everywhere the denominator is non-zero by Theorem 3.2(iv).
-<br>
-We claim that $\lim_{x \rightarrow -2}f(x)$ does not exist. To see this, consider the sequence $(x_{n})$, whose $n$\textsuperscript{th} term is $-2 + \frac{1}{n}$, and check that
+This is a rational function, and hence continuous everywhere the denominator is non-zero by [Theorem 3.2(iv)](https://rosiesb.github.io/Analysis-Notes/3Cty.html#AOL3).
+
+We claim that $\lim_{x \rightarrow -2}f(x)$ does not exist. To see this, consider the sequence $(x_{n})$ given by $x_n=-2 + \frac{1}{n}$. Then,
 
 $$
-f(x_{n}) = n\left(-4 -\frac{2}{n} + \frac{1}{n^2}\right) \rightarrow -\infty~\mbox{when}~n \rightarrow \infty.
+f(x_{n}) = -2 + \frac{1}{n}+4n \rightarrow -\infty \; \text{ as } \; n \rightarrow \infty.
 $$
 
 Thus $f$ has no continuous extension to the point $x =-2$.
-<br>
-But on the other hand,
+
+[**Note:** Here, we have proven that $f(x)$ does not converge as $x\rightarrow-2$. We have *not* proven that $\lim_{x\rightarrow -2} f(x)=-\infty$. To show this, we would have had to choose an arbitrary sequence $(x_n)$ in $A$ with limit $-2$ and proven that for this **general** sequence, $\lim_{n\rightarrow\infty}f(x_n)=-\infty$ (or constructed an $K-\delta$ argument using [Definition 2.3](https://rosiesb.github.io/Analysis-Notes/2LoF.html#div+-infty)). ]
+
+
+On the other hand, $f$ does have a continuous extension to $\mathbb{R}\setminus\{-2\}$. Indeed, by algebra of limits we have
 
 $$
-\lim_{x \rightarrow 2}f(x) = \lim_{x\rightarrow 2}  \frac{x^{2} + 2x + 4}{x + 2} = \frac{12}{4} = 3,
+\lim_{x \rightarrow 2}f(x) = \lim_{x\rightarrow 2}\left(x+\frac{4}{x+2}\right) = 3,
 $$
 
 and so $f$ has a continuous extension
 
 $$
-\tilde{f}:\mathbb{R} \setminus \{-2\}\to\mathbb{R}; \hspace{1em} \tilde{f}(x) = \frac{x^2+2x+4}{x+2}.
+\tilde{f}:\mathbb{R} \setminus \{-2\}\to\mathbb{R}; \hspace{1em} \tilde{f}(x) = x+\frac{4}{x+2}.
 $$
 
 We can see this behaviour in the graph of the function ({numref}`q18`)
@@ -760,7 +765,7 @@ We can see this behaviour in the graph of the function ({numref}`q18`)
 width: 500px
 name: q18
 ---
-Graph of the function $\tilde{f}:\mathbb{R}\setminus\{-2\}\to\mathbb{R}$; $f(x)=\frac{x^2+2x+4}{x+2}$ (Problem 18).
+Graph of the function $\tilde{f}:\mathbb{R}\setminus\{-2\}\to\mathbb{R}$; $f(x)=x+\frac{4}{x+2}$ (Problem 18).
 ```
 
 ---
@@ -769,7 +774,7 @@ Graph of the function $\tilde{f}:\mathbb{R}\setminus\{-2\}\to\mathbb{R}$; $f(x)=
 [19.](19) *(Homework 2 question).* Assume $g$ is continuous and $g(a) > 0$. Then for all $\varepsilon>0$ there exists $\delta>0$ such that for all $x\in\mathbb{R}$, $|x-a|<\delta$ implies $|g(x)-g(a)|<\varepsilon$. Let $\varepsilon=\frac{g(a)}{2}$. Then for some $\delta>0$, we have $|g(x)-g(a)|<\frac{g(a)}{2}$. But then $\frac{g(a)}{2}<g(x)<\frac{3g(a)}{2}$, and in particular, $g(x)>\frac{g(a)}{2}>0$.
 
 **Alternate solution using sequences:**<br>
-Suppose, for a contradiction, that  there is no  $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. Then, in particular, for all $n\in\mathbb{N}$ there exists $x_{n} \in \left(a - \frac{1}{n}, a + \frac{1}{n}\right)$ such that $g(x_{n}) \leq 0$. By the sandwich rule, we have $\lim_{n\rightarrow\infty} x_{n} = a$. So, by continuity of $g$ at $a$, we have $\lim_{n\rightarrow\infty} g(x_{n})$ exists and equals $g(a)$. But $g(x_n)\leq 0$ for all $n\in\mathbb{N}$, and so
+Suppose, for a contradiction, that  there is no  $\delta > 0$ such that $g(x) > 0$  for all $ x \in (a - \delta, a + \delta)$. Then, in particular, for all $n\in\mathbb{N}$ there exists $x_{n} \in \left(a - \frac{1}{n}, a + \frac{1}{n}\right)$ such that $g(x_{n}) \leq 0$. By the squeeze theorem, we have $\lim_{n\rightarrow\infty} x_{n} = a$. So, by continuity of $g$ at $a$, we have $\lim_{n\rightarrow\infty} g(x_{n})$ exists and equals $g(a)$. But $g(x_n)\leq 0$ for all $n\in\mathbb{N}$, and so
 
 $$
 g(a)=\lim_{n\rightarrow\infty} g(x_{n}) \leq 0,
@@ -899,14 +904,33 @@ $ \lim_{n\rightarrow\infty} \mathbb{1}_{(a, b)}(y_{n}) = 1 \neq \mathbb{1}_{(a, 
 (25sol)=
 [25.](25)
 *(Homework 3 question).*
-<br>
-*Something* is $x$. That is, define $g:[a,b]\to\mathbb{R}$ given by $g(x) = f(x) - x$. Then $g$ is continuous (because $f$ is and the function $h(x)=x$ is, and using algebra of limits). Since the range of $f$ is contained in $(a, b)$, we have $f(a) > a$ and $f(b) < b$, and so $g(a) = f(a) - a > 0$ and $g(b) = f(b) - b < 0$. So we can apply the intermediate value theorem to the function $g$ on $[a,b]$. This says that there exists $c \in (a, b)$ such that $g(c) = 0$, i.e. $f(c) = c$.
-<br>
-For the counter--example, consider $f(x) = x^2$. It is continuous on $(0, 1)$ but there is no $c \in (0, 1)$ for which $c^2 = c$.
+Let $a,b\in\mathbb{R}$, $a<b$, and suppose $f:[a,b] \rightarrow (a,b)$ is a continuous function.
+
+The question suggests we consider a function of the form $g(x) = f(x) - $ (*something*), and apply the intermediate value theorem. Since we seek a point $c\in(a,b)$ for which $f(c)=c$, we try $g(x)=f(x)-x$. This is a continuous function on $[a,b]$, since $f$ is. Moreover, any zero of $g$ will be a fixed point of $f$.
+
+Since the range of $f$ is contained in $(a, b)$, we have $a<f(x)<b$ for all $x\in[a,b]$. In particular, $f(a) > a$ and $f(b) < b$, and so $g(a) = f(a) - a > 0$ and $g(b) = f(b) - b < 0$. In other words, $0\in(g(a),g(b))$. By the intermediate value theorem (or by [Proposition 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt-sc), the special case where $\gamma=0$), there exists $c \in (a, b)$ such that $g(c) = 0$, i.e., such that $f(c) = c$.
+
+For the counter--example, consider $f:(0,1)\to(0,1)$, $f(x) = x^2$. It is continuous on $(0, 1)$ but there is no $c \in (0, 1)$ for which $c^2 = c$.
 
 ---
 
-[26.](26) Define $\gamma = \inf_{x \in [a, b]}f(x)$ and assume that it is not attained, so $\gamma < f(x)$ for all $x \in [a,b]$. Then consider the function $h:[a,b]\to \mathbb{R}$ given by $h(x) = \displaystyle\frac{1}{f(x) - \gamma}$. This is continuous, and hence bounded on $[a, b]$. So there exists $K \geq 0$ such that $|h(x)| \leq K$ for all $x \in [a, b]$. By Problem 16(ii), given any $\varepsilon > 0$, there exists $x \in [a, b]$ such that $f(x) < \gamma + \varepsilon$. Now take $\varepsilon = \frac{1}{K}$ to deduce that $h(x) > K$, which yields the required contradiction.
+[26.](26) Define $\gamma = \inf_{x \in [a, b]}f(x)$ and assume that it is not attained, so $\gamma < f(x)$ for all $x \in [a,b]$. Then consider the function 
+
+$$
+h:[a,b]\to \mathbb{R}; \; h(x) = \displaystyle\frac{1}{f(x) - \gamma}.
+$$
+
+This is continuous, and hence bounded on $[a, b]$. So there exists $K \geq 0$ such that $|h(x)| \leq K$ for all $x \in [a, b]$. Since $\gamma=\inf_{x\in[a,b]}f(x)$, given any $\varepsilon > 0$, there exists $x \in [a, b]$ such that $f(x) < \gamma + \varepsilon$. Now take $\varepsilon = \frac{1}{K}$ to deduce that $h(x) > K$, which yields the required contradiction.
+
+[**Alternatively:** We proved in lectures that continuous functions on $[a,b]$ are bounded and attain a maximum value. Since $f$ is continuous on $[a,b]$, so is $-f$, and hence $-f$ attains a maximum: say $k\in[a,b]$ is such that $-f(k)=\sup_{x\in[a,b]}(-f(x))$. Then, using a standard property[^infsup] of sup's and inf's,
+
+$$
+f(k)=-\sup_{x\in[a,b]}(-f(x)) = \inf_{x\in[a,b]}f(x).
+$$
+
+In other words, $f$ attains its minimum.]
+
+[^infsup]: More generally, for any bounded set $A\subseteq\mathbb{R}$, $\sup(A)=-\inf(-A)$ and $\inf(A)=-\sup(-A)$, where we write $-A:=\{-x:x\in A\}$ (standard notation). For a proof, see Theorem 2.7 on page 33 of the [MAS107 Sem 2 notes](https://drive.google.com/file/d/1r9b3XqA1u-dzkbnGjPPBxIyj6YF1TE_C/view?usp=sharing).
 
 ---
 
@@ -940,7 +964,7 @@ $$
 0 \leq f(x_{n_{k}}) \leq r^{n_{k}-1}
 $$
 
-for all $k\in\mathbb{N}$. Since $r < 1$, $\lim_{k\to\infty} r^{n_k-1} =0$. By the sandwich rule, $ \lim_{k \rightarrow \infty}f(x_{n_{k}}) = 0$ and by continuity of $f$ at $c$, $f(c) = \lim_{k \rightarrow \infty}f(x_{n_{k}})$, so $f(c)=0$.
+for all $k\in\mathbb{N}$. Since $r < 1$, $\lim_{k\to\infty} r^{n_k-1} =0$. By the squeeze theorem, $ \lim_{k \rightarrow \infty}f(x_{n_{k}}) = 0$ and by continuity of $f$ at $c$, $f(c) = \lim_{k \rightarrow \infty}f(x_{n_{k}})$, so $f(c)=0$.
 
 ---
 
@@ -1269,7 +1293,7 @@ $$
 
 ---
 
-[51.](51) The polynomial $p$ is of odd degree so it has at least one real root by [Corollary 3.2](https://rosiesb.github.io/Analysis-Notes/3Cty.html#pol). Also $p$ is differentiable with $p'(x) = 3x^{2} + r > 0$, for all $x \in \mathbb{R}$, so $p$ is strictly monotonic increasing on any closed interval $[a, b]$, and hence on the whole of $\mathbb{R}$, by Corollary 4.1. Then by the inverse function theorem (Theorem 3.6), $p$ is invertible and hence injective, and so there is exactly one zero.
+[51.](51) The polynomial $p$ is of odd degree so it has at least one real root by [Example 3.12](https://rosiesb.github.io/Analysis-Notes/3Cty.html#pol). Also $p$ is differentiable with $p'(x) = 3x^{2} + r > 0$, for all $x \in \mathbb{R}$, so $p$ is strictly monotonic increasing on any closed interval $[a, b]$, and hence on the whole of $\mathbb{R}$, by [Corollary 4.1](https://rosiesb.github.io/Analysis-Notes/4Diff.html#mond). Then by the inverse function theorem ([Theorem 3.6](https://rosiesb.github.io/Analysis-Notes/3Cty.html#thm:IFT)), $p$ is invertible and hence injective, and so there is exactly one zero.
 
 ---
 
@@ -1293,7 +1317,7 @@ $$
 f''(a) = \lim_{h \rightarrow 0}\frac{f'(a + h) - f'(a)}{h} =  \lim_{h \rightarrow 0}\frac{f'(a + h)}{h} < 0.
 $$
 
-In particular, $f^{\prime \prime}_{+}(a) = \lim_{h \rightarrow 0^+}\frac{f'(a + h)}{h} < 0$, and so $f'(a + h) < 0$ for sufficiently small positive $h$, (say $0 < h < \delta$), in which case, by Corollary 4.1, $f$ is strictly decreasing on $[a,  a + \delta]$. We also have $f^{\prime \prime}_{-}(a) = \lim_{h \rightarrow 0^-}\frac{f'(a + h)}{h} < 0$, and so $f'(a + h) > 0$ for sufficiently small negative $h$, (say $-\delta_{1} < h < 0$), in which case, by Corollary 4.1, $f$ is strictly increasing on $[a- \delta_{1}, a]$. Then it follows that $f$ has a local minimum at $a$. The other case is similar.
+In particular, $f^{\prime \prime}_{+}(a) = \lim_{h \rightarrow 0^+}\frac{f'(a + h)}{h} < 0$, and so $f'(a + h) < 0$ for sufficiently small positive $h$, (say $0 < h < \delta$), in which case, by [Corollary 4.1](https://rosiesb.github.io/Analysis-Notes/4Diff.html#mond), $f$ is strictly decreasing on $[a,  a + \delta]$. We also have $f^{\prime \prime}_{-}(a) = \lim_{h \rightarrow 0^-}\frac{f'(a + h)}{h} < 0$, and so $f'(a + h) > 0$ for sufficiently small negative $h$, (say $-\delta_{1} < h < 0$), in which case, by Corollary 4.1, $f$ is strictly increasing on $[a- \delta_{1}, a]$. Then it follows that $f$ has a local minimum at $a$. The other case is similar.
 
 
 
@@ -1797,7 +1821,7 @@ Following these events was a huge collective effort of the whole mathematical co
 ````
 
 (ch6sol)=
-## Integration
+## Integration --- Non-examinable 2024--25
 
 [66.](66) Let $f:[1,4]\to\mathbb{R}$; $f(x)=\frac{1}{x}$, and let $P=\{1,\frac{3}{2},2,4\}$.
 

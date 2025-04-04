@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.3)  27 MAR 2025 13:31
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.4)  1 APR 2025 07:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1765,7 +1765,7 @@ Chapter 3.
 ] [36] [37]
 
 LaTeX Warning: Hyper reference `HW-feedback:equation-hw1' on page 38 undefined 
-on input line 2719.
+on input line 2740.
 
 (./analysis-problems.ind) [38] (./analysis-problems.aux)
  ***********
@@ -1777,13 +1777,13 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `analysis-problems.out' has not changed.
-(rerunfilecheck)             Checksum: F121040C296D9715B33C3BFF1C3666EB;1682.
+(rerunfilecheck)             Checksum: AE66DD8D832589967637838657C5BBFC;1874.
  ) 
 Here is how much of TeX's memory you used:
- 46284 strings out of 474878
- 1050665 string characters out of 5762516
+ 46285 strings out of 474878
+ 1050702 string characters out of 5762516
  1954627 words of memory out of 5000000
- 67485 multiletter control sequences out of 15000+600000
+ 67486 multiletter control sequences out of 15000+600000
  567203 words of font info for 133 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  99i,28n,114p,861b,2113s stack positions out of 10000i,1000n,20000p,200000b,200000s

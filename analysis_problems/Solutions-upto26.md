@@ -852,5 +852,20 @@ $ \lim_{n\rightarrow\infty} \mathbb{1}_{(a, b)}(y_{n}) = 1 \neq \mathbb{1}_{(a, 
 
 ---
 
-[26.](26) Define $\gamma = \inf_{x \in [a, b]}f(x)$ and assume that it is not attained, so $\gamma < f(x)$ for all $x \in [a,b]$. Then consider the function $h:[a,b]\to \mathbb{R}$ given by $h(x) = \displaystyle\frac{1}{f(x) - \gamma}$. This is continuous, and hence bounded on $[a, b]$. So there exists $K \geq 0$ such that $|h(x)| \leq K$ for all $x \in [a, b]$. By Problem 16(ii), given any $\varepsilon > 0$, there exists $x \in [a, b]$ such that $f(x) < \gamma + \varepsilon$. Now take $\varepsilon = \frac{1}{K}$ to deduce that $h(x) > K$, which yields the required contradiction.
+[26.](26) Define $\gamma = \inf_{x \in [a, b]}f(x)$ and assume that it is not attained, so $\gamma < f(x)$ for all $x \in [a,b]$. Then consider the function 
 
+$$
+h:[a,b]\to \mathbb{R}; \; h(x) = \displaystyle\frac{1}{f(x) - \gamma}.
+$$
+
+This is continuous, and hence bounded on $[a, b]$. So there exists $K \geq 0$ such that $|h(x)| \leq K$ for all $x \in [a, b]$. Since $\gamma=\inf_{x\in[a,b]}f(x)$, given any $\varepsilon > 0$, there exists $x \in [a, b]$ such that $f(x) < \gamma + \varepsilon$. Now take $\varepsilon = \frac{1}{K}$ to deduce that $h(x) > K$, which yields the required contradiction.
+
+[**Alternatively:** We proved in lectures that continuous functions on $[a,b]$ are bounded and attain a maximum value. Since $f$ is continuous on $[a,b]$, so is $-f$, and hence $-f$ attains a maximum: say $k\in[a,b]$ is such that $-f(k)=\sup_{x\in[a,b]}(-f(x))$. Then, using a standard property[^infsup] of sup's and inf's,
+
+$$
+f(k)=-\sup_{x\in[a,b]}(-f(x)) = \inf_{x\in[a,b]}f(x).
+$$
+
+In other words, $f$ attains its minimum.]
+
+[^infsup]: More generally, for any bounded set $A\subseteq\mathbb{R}$, $\sup(A)=-\inf(-A)$ and $\inf(A)=-\sup(-A)$, where we write $-A:=\{-x:x\in A\}$ (standard notation). For a proof, see Theorem 2.7 on page 33 of the [MAS107 Sem 2 notes](https://drive.google.com/file/d/1r9b3XqA1u-dzkbnGjPPBxIyj6YF1TE_C/view?usp=sharing).

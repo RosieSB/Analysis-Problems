@@ -442,7 +442,7 @@ $$
 
 (51)=
 51. If $r > 0$ and $q \in \mathbb{R}$ show that the polynomial $p(x) = x^{3} + rx + q$ has exactly one real zero.
-[ You may assume the result of [Corollary 3.2](https://rosiesb.github.io/Analysis-Notes/3Cty.html#pol): $p$ has at least one real root. So you need to show that there can't be more than one. ]
+[ You may assume the result of [Example 3.12](https://rosiesb.github.io/Analysis-Notes/3Cty.html#pol): $p$ has at least one real root. So you need to show that there can't be more than one. ]
 
 (52)=
 52. Let $r>1$ and fix $y\in (0,1)$. By applying the mean value theorem to the function $f(x)=x^r$ on $[y,1]$, show that
@@ -580,7 +580,7 @@ While a perfectly good series, mathematical understanding in europe at the time 
 (iv) Now differentiate the series [](fourier) term by term. Does this series converge pointwise for any values of $x$? You may find Desmos or a similar graphing tool helpful for this part.
 
 (ch6prob)=
-## Integration
+## Integration --- Non-examinable 2024--25
 
 (66)=
 66. Let $f:[1,4]\to\mathbb{R}$; $\displaystyle f(x)=\frac{1}{x}$. Let $P$ be the partition consisting of points $\left\{1,\frac{3}{2},2,4\right\}$.
