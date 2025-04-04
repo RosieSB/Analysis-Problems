@@ -362,7 +362,7 @@ $f(x) = \frac{1}{x}$ is differentiable for all $x \in \mathbb{R} \setminus \{0\}
 You may use the fact that  $\displaystyle\lim_{h \rightarrow 0}\frac{g(h)}{h} = 0$. (This follows from the series expansion of the exponential function, which you already know, and we will study more later.) ]
 
 (41)=
-41. Consider the function  $f:\mathbb{R}\to \mathbb{R}$ given by $f(x) = \begin{cases} x\sin\left(\frac{1}{x}\right) & \text{if }x \neq 0,\\ 0 & \text{if }x = 0.\end{cases}$
+41. *(Homework 5 question).* Consider the function  $f:\mathbb{R}\to \mathbb{R}$ given by $f(x) = \begin{cases} x\sin\left(\frac{1}{x}\right) & \text{if }x \neq 0,\\ 0 & \text{if }x = 0.\end{cases}$
 
     (i) Show that $f$ is differentiable at every $x \neq 0$. (You can use standard derivatives and facts about derivatives, such as the product and chain rules.)
     
@@ -413,7 +413,8 @@ Determine whether each of the following is true or false. Justify your answers.
     (iv) $f^{\prime \prime}(0)$ exists.
 
 (47)=
-47.
+47. *(Homework 5 question).* 
+
     (i) Must any differentiable function $f:[a, b] \rightarrow \mathbb{R}$ have a maximum and minimum value? Why?
    
     (ii) If $f:[a, b] \rightarrow \mathbb{R}$ is differentiable  and $f(a) = f(b)$, must $f$ have a maximum and minimum value in $(a, b)$?

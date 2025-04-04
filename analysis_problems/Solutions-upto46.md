@@ -714,7 +714,59 @@ This is continuous at $\mathbb{R} \setminus \{0,1,2\}$, with jump discontinuitie
 ---
 
 (18sol)=
-[18.](18) To appear (Homework 3 question)  
+[18.](18) *(Homework 3 question).*
+   
+(i) We are given $f:\mathbb{R} \setminus \{0\} \rightarrow \mathbb{R}$; $f(x) = \frac{(1 + x)^{2} - 1}{x}$, a continuous function (since it is a rational function).
+
+For $x \neq 0, f(x) = x+2$, and so $\lim_{x \rightarrow 0}f(x) = 2$. Therefore the required continuous extension of $f$ is 
+
+$$
+\tilde{f}:\mathbb{R}\to\mathbb{R}; \; \tilde{f}(x) = \left\{\begin{array}{c c} \displaystyle\frac{(1 + x)^{2} - 1}{x} & ~\mbox{if}~x \neq 0\\ 
+& \\
+2 & ~\mbox{if}~x = 0. \end{array} \right.
+$$
+
+(ii) Let now $f(x) = \frac{(x-2)(x^{2} + 2x + 4)}{(x-2)(x+2)}$. The largest possible domain for $f$ is $A=\mathbb{R} \setminus \{-2, 2\}$ (the set where the denominator is non-zero). For $x \neq 2, -2$,
+
+$$
+f(x) = \frac{(x-2)(x^{2} + 2x + 4)}{(x-2)(x+2)}=\frac{x^{2} + 2x + 4}{x + 2}=x+\frac{4}{x+2}.
+$$
+
+This is a rational function, and hence continuous everywhere the denominator is non-zero by [Theorem 3.2(iv)](https://rosiesb.github.io/Analysis-Notes/3Cty.html#AOL3).
+
+We claim that $\lim_{x \rightarrow -2}f(x)$ does not exist. To see this, consider the sequence $(x_{n})$ given by $x_n=-2 + \frac{1}{n}$. Then,
+
+$$
+f(x_{n}) = -2 + \frac{1}{n}+4n \rightarrow -\infty \; \text{ as } \; n \rightarrow \infty.
+$$
+
+Thus $f$ has no continuous extension to the point $x =-2$.
+
+[**Note:** Here, we have proven that $f(x)$ does not converge as $x\rightarrow-2$. We have *not* proven that $\lim_{x\rightarrow -2} f(x)=-\infty$. To show this, we would have had to choose an arbitrary sequence $(x_n)$ in $A$ with limit $-2$ and proven that for this **general** sequence, $\lim_{n\rightarrow\infty}f(x_n)=-\infty$ (or constructed an $K-\delta$ argument using [Definition 2.3](https://rosiesb.github.io/Analysis-Notes/2LoF.html#div+-infty)). ]
+
+
+On the other hand, $f$ does have a continuous extension to $\mathbb{R}\setminus\{-2\}$. Indeed, by algebra of limits we have
+
+$$
+\lim_{x \rightarrow 2}f(x) = \lim_{x\rightarrow 2}\left(x+\frac{4}{x+2}\right) = 3,
+$$
+
+and so $f$ has a continuous extension
+
+$$
+\tilde{f}:\mathbb{R} \setminus \{-2\}\to\mathbb{R}; \hspace{1em} \tilde{f}(x) = x+\frac{4}{x+2}.
+$$
+
+We can see this behaviour in the graph of the function ({numref}`q18`)
+
+```{figure} ../analysis_problems/figs/(x2+2x+4),(x+2).png
+---
+width: 500px
+name: q18
+---
+Graph of the function $\tilde{f}:\mathbb{R}\setminus\{-2\}\to\mathbb{R}$; $f(x)=x+\frac{4}{x+2}$ (Problem 18).
+```
+
 
 ---
 
@@ -848,7 +900,15 @@ $ \lim_{n\rightarrow\infty} \mathbb{1}_{(a, b)}(y_{n}) = 1 \neq \mathbb{1}_{(a, 
 ---
 
 (25sol)=
-[25.](25) To appear (Homework 3 question).
+[25.](25) 
+*(Homework 3 question).*
+Let $a,b\in\mathbb{R}$, $a<b$, and suppose $f:[a,b] \rightarrow (a,b)$ is a continuous function.
+
+The question suggests we consider a function of the form $g(x) = f(x) - $ (*something*), and apply the intermediate value theorem. Since we seek a point $c\in(a,b)$ for which $f(c)=c$, we try $g(x)=f(x)-x$. This is a continuous function on $[a,b]$, since $f$ is. Moreover, any zero of $g$ will be a fixed point of $f$.
+
+Since the range of $f$ is contained in $(a, b)$, we have $a<f(x)<b$ for all $x\in[a,b]$. In particular, $f(a) > a$ and $f(b) < b$, and so $g(a) = f(a) - a > 0$ and $g(b) = f(b) - b < 0$. In other words, $0\in(g(a),g(b))$. By the intermediate value theorem (or by [Proposition 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt-sc), the special case where $\gamma=0$), there exists $c \in (a, b)$ such that $g(c) = 0$, i.e., such that $f(c) = c$.
+
+For the counter--example, consider $f:(0,1)\to(0,1)$, $f(x) = x^2$. It is continuous on $(0, 1)$ but there is no $c \in (0, 1)$ for which $c^2 = c$.
 
 ---
 
@@ -869,3 +929,315 @@ $$
 In other words, $f$ attains its minimum.]
 
 [^infsup]: More generally, for any bounded set $A\subseteq\mathbb{R}$, $\sup(A)=-\inf(-A)$ and $\inf(A)=-\sup(-A)$, where we write $-A:=\{-x:x\in A\}$ (standard notation). For a proof, see Theorem 2.7 on page 33 of the [MAS107 Sem 2 notes](https://drive.google.com/file/d/1r9b3XqA1u-dzkbnGjPPBxIyj6YF1TE_C/view?usp=sharing).
+
+---
+
+[27.](27) (i) Let $f:\mathbb{R}\to\mathbb{Z}$ be continuous, and suppose $f$ is not a constant function.
+
+Then there must be $a,b\in\mathbb{R}$ such that $a\neq b$ and $f(a)\neq f(b)$. Without loss of generality, assume $a<b$. 
+
+Then $f$ is continuous on $[a,b]$, and since $f(a)\neq f(b)$, $f$ is also non-constant on $[a,b]$. By [Corollary 3.3](https://rosiesb.github.io/Analysis-Notes/3Cty.html#interval), $f([a,b]])=[m,M]$. This contradicts $f$ having codeomain $\mathbb{Z}$.
+
+It follows that $f$ must be a constant function.
+
+(ii) Argue as in (i), using the fact that between any two rational numbers, we can find an irrational number.
+
+---
+
+[28.](28) By algebra of limits, $\frac{1}{f}$ is continuous on $[0, 1]$ and so is bounded by Theorem 3.5.
+
+---
+
+[29.](29) 
+<br>
+If $f$ is continuous on $[0, 1]$, then it is bounded by Theorem 3.5, and so there exists $L \geq 0$ such that $|f(x)| \leq L$ for all $x \in [0, 1]$. Hence the range of $f$ is a subset of  $[-L, L]$ and cannot be all of $\mathbb{R}$.
+
+---
+
+[30.](30) Since $(x_{n})$ is bounded, by the Bolzano--Weierstrass theorem it has a convergent subsequence $(x_{n_{k}})$. Let $c=\lim_{k \rightarrow \infty}x_{n_{k}}$ and note that $c \in [0, 1]$, since $x_{n_k}\in[0,1]$ for all $k$.
+<br>
+A straight-forward induction argument shows that $f(x_{n_{k}}) \leq r^{n_{k}-1}f(x_{n_{1}})$ for all $k\in\mathbb{N}$. But then, since the range of $f$ is contained in $[0,1]$, we have
+
+$$
+0 \leq f(x_{n_{k}}) \leq r^{n_{k}-1}
+$$
+
+for all $k\in\mathbb{N}$. Since $r < 1$, $\lim_{k\to\infty} r^{n_k-1} =0$. By the squeeze theorem, $ \lim_{k \rightarrow \infty}f(x_{n_{k}}) = 0$ and by continuity of $f$ at $c$, $f(c) = \lim_{k \rightarrow \infty}f(x_{n_{k}})$, so $f(c)=0$.
+
+---
+
+[31.](31) For all $x > y$,
+
+$$
+x^{n} - y^{n} = (x - y)(x^{n-1} + x^{n-2}y + \cdots + xy^{n-1} + y^{n-1}) > 0.
+$$
+
+---
+
+[32.](32) For all $-\frac{\pi}{2} \leq x < y \leq \frac{\pi}{2}$,
+
+$$
+\sin(y) - \sin(x) = 2\sin\left(\frac{y - x}{2}\right)\cos\left(\frac{y + x}{2}\right) > 0,
+$$
+
+so the function is strictly monotonic increasing on this interval. It is also continuous (stated in notes), and so by Theorem 3.6, it is has a continuous inverse $f^{-1}(x) = \arcsin(x)$ (or $\sin^{-1}(x)$) defined on $[-1, 1]$. Outside the interval $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$, the function $f$ might fail to be strictly increasing. In fact it is strictly decreasing on each interval of the form $\left((4n+1)\frac{\pi}{2}, (4n + 3)\frac{\pi}{2}\right)$, and strictly increasing on each interval of the form $\left((4n-1)\frac{\pi}{2}, (4n + 1)\frac{\pi}{2}\right)$, where $n\in\mathbb{Z}_+$.
+
+---
+
+[33.](33) We seek a continuous extension of the mapping $x\mapsto \frac{1-x}{1-x^{\frac{m}{n}}}$ to a domain that includes $1$. Then, we can use continuity to evaluate the limit as $x\rightarrow 1$.
+<br>
+Observe that, if we write $y = x^{\frac{1}{n}}$, then
+
+$$
+\frac{1 - x}{1 - x^{\frac{m}{n}}} = \frac{1 - y^{n}}{1 - y^{m}} = \frac{\;\frac{1}{1-y^m}\;}{\;\frac{1}{1-y^n}\;} = \frac{1+y+y^2+\ldots+y^{m-1}}{1+y+y^2+\ldots+y^{n-1}},
+$$
+
+by the geometric sum formula. Note that the left hand side is not defined at $x=1$, but the right hand side is.
+<br>
+Let $f:[0,\infty)\to[0,\infty)$; $f(x)=x^{\frac{1}{n}}$, and let
+
+$$
+g:\mathbb{R}\to\mathbb{R};\hspace{1em} g(y)=\frac{1+y+y^2+\ldots+y^m}{1+y+y^2+\ldots+y^m}.
+$$
+
+Both $f$ and $g$ are continuous at every point in their domain (for $f$, this was proven in Example 3.9). Hence by the composition theorem for continuous functions (Theorem 3.3), the map
+
+$$
+g\circ f:[0,\infty)\to\mathbb{R}; \hspace{1em} g\circ f(x) = \frac{1+x^{\frac{1}{n}}+x^{\frac{2}{n}}+\ldots+x^{\frac{m-1}{n}}}{1+x^{\frac{1}{n}}+x^{\frac{2}{n}}+\ldots+x^{\frac{n-1}{n}}}
+$$
+
+is continuous. Also, by our initial calculation,
+
+$$
+g\circ f(x) = \frac{1 - x}{1 - x^{\frac{m}{n}}}
+$$
+
+whenever $x\geq 0$ and $x^{\frac{m}{n}}\neq 1$. Therefore,
+
+$$
+\lim_{x\rightarrow 1}\frac{1 - x}{1 - x^{\frac{m}{n}}} = \lim_{x\rightarrow 1}g\circ f(x) = g\circ f(1) = \frac{1+1+\ldots+1}{1+1+\ldots+1} = \frac{m}{n},
+$$
+
+by continuity of $g\circ f$.
+
+---
+
+[34.](34) We claim that if $a < x < b$, we have $f(a) < f(x) < f(b)$. To see this, note that if $f(a) \geq f(x)$ then either $f(a) = f(x)$, or $f(a) > f(x)$.
+<br>
+If $f(a)=f(x)$, then $f$ cannot be bijective, which is a contradiction. 
+<br>
+Suppose that $f(a)>f(x)$. Applying [Corollary 3.3](https://rosiesb.github.io/Analysis-Notes/3Cty.html#interval) to $f|_{[x,b]}$, the image of $[x,b]$ under $f$ must an interval, $[m,M]$, say. Note that $f(a)\in(m,M)$: indeed, $f(a)>f(x)>M$, and $f(a)<f(b)<m$. Therefore, by the intermediate value theorem (or [Corollary 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt2) more specifically), there exists $c \in (x, b)$ such that $f(c) = f(a)$, and this again violates the injectivity of the mapping $f$. A similar argument can be used to show that we cannot have $f(b) \leq f(x)$.
+<br>
+Finally, applying our initial result to $f|_{[a, y]}$, we see that if $a<x<y<b$, then $f(a) < f(x) < f(y)$. Hence $f$ is strictly monotonic increasing.
+
+---
+
+[35.*](35) First observe that $f+g$ is monotonic increasing since both $f$ and $g$ are. Choose $a \in \mathbb{R}$. Given $\varepsilon > 0$, there exists $\delta > 0$ so that if $x > a + \delta$ then
+
+$$
+|f(x) + g(x) - f(a) - g(a)|  =  f(x) + g(x) - f(a) - g(a) < \varepsilon,
+$$
+
+and so
+
+$$
+|f(x) - f(a)| = f(x) - f(a) < \varepsilon +g(a) - g(x) < \varepsilon,
+$$
+
+as $g$ is increasing. This proves that $g$ is right--continuous at $a$. A similar argument (interchanging the roles of $a$ and $x$) proves that it is left--continuous, and hence continuous at $a$. Then $g = (f + g) - f$ is the difference of two continuous functions, and hence is itself continuous.
+
+---
+
+[36.*](36) 
+(i) If $0<a<1$, then $0<a<\sqrt{a}<1$. So $(x_n)$ is monotonic increasing and bounded above by $1$, and hence converges to some limit $0\leq l\leq 1$. By continuity of the square root function, $\sqrt{l}=\lim_{n\rightarrow\infty}\sqrt{x_n}$. But $\sqrt{x_n}=x_{n+1}\rightarrow l$ as $n\rightarrow\infty$. By uniqueness of limits, $\sqrt{l}=l$, and so $l=1$.
+<br>
+If instead $a>1$, then $a>\sqrt{a}>1$, and so $(x_n)$ is monotonic decreasing and bounded below by $1$. So the sequences converges to a limit, and by an identical argument to above, this limit has to be $1$.
+
+(ii) For all $a>0, n\in\mathbb{N}, f(a) = f\left(a^{\frac{1}{2}}\right) = \cdots = f\left(a^{\frac{1}{2^{n-1}}}\right)$. That is, $f(a)=f(x_n)$ for all $n\in\mathbb{N}$. By continuity,
+
+$$
+f(a) = \lim_{n\rightarrow\infty} f(x_n) = f\left(\lim_{n\rightarrow\infty} x_n\right) = f(1).
+$$
+
+If $a<0$, then $a^2>0$ and so $f(a)=f\left(a^2\right)=f(1)$. Finally, by continuity,
+
+$$
+f(0)=\lim_{x\rightarrow 0}f(x) = \lim_{x\rightarrow 0}f(1) = f(1),
+$$
+
+and we have shown that $f(x)=f(1)$ for all $x\in\mathbb{R}$.
+
+(ch4sol)=
+## Differentiation
+
+[37.](37) This is Definition 2.2 in the notes:
+<br>
+The function $f$ has limit $l$ at the point $a$ if for every $\varepsilon>0$ there exists $\delta>0$ such that for all $x\in X$, 
+
+$$
+0<|x-a|<\delta \; \text{ implies } \; |f(x)-l|<\varepsilon.
+$$
+
+We write $\lim_{x\to a}f(x)=l$.
+
+---
+
+[38.](38)
+
+(i) This is Definition 4.1 in the notes: we say that $f$ is *differentiable* at $a \in A$ if $ \lim_{x \rightarrow a}\frac{f(x) - f(a)}{x - a}$ exists. Or, equivalently, $ \lim_{h \rightarrow 0}\frac{f(a +h) - f(a)}{h}$ exists.
+<br>
+That is, we fix $a\in A$ and we consider the function $g$ given by $g(h)=\frac{f(a +h) - f(a)}{h}$. Then $f$ is differentiable at $a$ if the limit of $g$ as $h$ goes to zero exists.
+
+(ii) Using the sequential criterion (Theorem 2.1 in the notes):
+<br>
+$f$ is differentiable at $a$ if there exists some number $f'(a) \in \mathbb{R}$ for which, given any sequence $(h_{n})$ that converges to $0$, with $h_n\neq 0$ for all $n$, we have
+
+$$
+\frac{f(a + h_{n}) - f(a)}{h_{n}} \rightarrow f'(a) \hspace{1em} \text{ as } \hspace{1em} n\rightarrow\infty.
+$$
+
+(iii) This is asking for the equivalent description of limit of a function given by the $(\varepsilon - \delta)$ criterion (Theorem 2.1). Again it needs to be applied to $g$ as above not $f$ itself:
+<br>
+We say $f$ is differentiable at $a$ if there exists a number $f'(a)$ for which, given $\varepsilon>0$, there exists $\delta > 0$ such that if $0<|h| < \delta$, then
+
+$$
+\left|\displaystyle\frac{f(a+h) - f(a)}{h} - f'(a)\right| < \varepsilon.
+$$
+
+---
+
+[39.](39) Let $x\in\mathbb{R}\setminus\{0\}$. Then
+\begin{align*}
+\frac{f(x + h) -f(x)}{h} &= \frac{1}{h}\left(\frac{1}{x+ h} -\frac{1}{x}\right)\\
+&= -\frac{1}{x(x+h)} \rightarrow -\frac{1}{x^{2}},~\mbox{as}~h \rightarrow 0. 
+\end{align*}
+Thus $f$ is differentiable at all $x\in\mathbb{R}\setminus\{0\}$ and $f'(x)=-\frac{1}{x^2}$ for all $x\in\mathbb{R}\setminus\{0\}$.
+<br>
+The extended function (where we define its value at $x=0$ to be zero) is not continuous at $x=0$, since $\lim_{x \rightarrow 0^+}\frac{1}{x} =\infty$. Therefore it is not differentiable at $x=0$, by Theorem 4.1.
+
+---
+
+[40.](40) As in the hint, let $g(h) = e^{kh} - 1 - kh $. Then
+
+\begin{align*}
+\frac{f(x + h) -f(x)}{h} &= \frac{1}{h}(e^{k(x +h)} - e^{kx})\\
+&= e^{kx}\frac{1}{h}(e^{kh} - 1) = e^{kx}\left(k + \frac{g(h)}{h}\right) \rightarrow ke^{kx},~\mbox{as}~h \rightarrow 0,
+\end{align*}
+
+using the given fact that  $\lim_{h \rightarrow 0}\frac{g(h)}{h} = 0$. Thus $f$ is differentiable at each $x\in\mathbb{R}$ and $f'(x)=ke^{kx}$.
+
+---
+
+[41.](41) To appear (Homework 5 question)  
+
+---
+
+[42.](42) Again using the product and chain rules and standard derivatives,
+for $x \neq 0$, $f$ is differentiable at $x$ with $f'(x) = 2x\sin\left(\frac{1}{x}\right) - \cos\left(\frac{1}{x}\right)$. At $x = 0,$
+
+$$
+\lim_{x \rightarrow 0}\frac{f(x) - f(0)}{x} = \lim_{x \rightarrow 0}x\sin\left(\frac{1}{x}\right) = 0,
+$$
+
+by [Problem 10](10). So $f$ is differentiable at $0$ with $f'(0) = 0$. For the second derivative, with $x \neq 0$, we have
+
+$$
+f^{\prime \prime}(x) = 2\sin\left(\frac{1}{x}\right) - \frac{2}{x}\cos\left(\frac{1}{x}\right) - \frac{1}{x^{2}}\sin\left(\frac{1}{x}\right).
+$$
+
+But $f^{\prime \prime}$ doesn't exist at $x = 0$, as in [Problem 41](41).
+
+---
+
+[43.](43) We give sketches of simple examples of functions as described. There should be some kind of "corner" or "cusp" at the relevant points, so that there is clearly no well-defined gradient there. But the functions are required to be continuous, so there should be no jump or other discontinuity.
+
+(i) {numref}`q43i`
+
+```{figure} ../analysis_problems/figs/nondiff1,2.png
+---
+width: 500px
+name: q43i
+---
+Graph of a function $f:[0,1]\to\mathbb{R}$ that is not differentiable at $\frac{1}{2}$, but is everywhere else (Problem 43(i)).
+```
+
+(ii) {numref}`q43ii`
+
+```{figure} ../analysis_problems/figs/nondiff1,3_2,3.png
+---
+width: 500px
+name: q43ii
+---
+Graph of a function $f:[0,1]\to\mathbb{R}$ that is differentiable at all points in its domain apart from $\frac{1}{3}$ and $\frac{2}{3}$ (Problem 43(ii)).
+```
+
+---
+
+[44.](44) It helps to sketch the graph. On the interval $[0,1]$, we have $[x]=0$ and so the graph resembles $y=x$. This pattern then repeats, and we have the following graph for $f(x)=x-[x]$ --- see {numref}`q44`
+
+```{figure} ../analysis_problems/figs/x-[x].png
+---
+width: 500px
+name: q44
+---
+Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=x-[x]$ (Problem 44).
+``` 
+
+The function $f$ is differentiable for all $x \in \mathbb{R} \setminus \mathbb{Z}$. For such points, taking $h>0$ sufficiently small, we have
+$[x+h]=[x]$ and so
+
+$$
+\frac{f(x+h)-f(x)}{h} = \frac{(x + h)- [x + h] - x + [x]}{h} = \frac{h}{h}=1.
+$$
+
+Thus $f'(x) = 1$  for all $x \in \mathbb{R} \setminus \mathbb{Z}$. If $x \in \mathbb{Z}$, then $f$ is not continuous at $x$  (it has a jump discontinuity of $-1$ there) and so cannot be differentiable there (by Theorem  4.1).
+
+
+---
+
+[45.](45) First observe that if $f$ is differentiable at $a$, then
+
+$$
+f'(a) = \lim_{h \rightarrow 0}\frac{f(a + h) - f(a)}{h} = \lim_{h \rightarrow 0}\frac{f(a - h) - f(a)}{-h} = \lim_{h \rightarrow 0}\frac{f(a) - f(a-h)}{h}.
+$$
+
+So
+\begin{align*}
+\frac{f(a+ h) - f(a - h)}{2h} &=  \frac{1}{2}\left(\frac{f(a + h) - f(a)}{h} +  \frac{f(a) - f(a-h)}{h}\right) \\
+&\hspace{7em}\rightarrow  \frac{1}{2}2f'(a) = f'(a),~\mbox{as}~h \rightarrow 0. 
+\end{align*}
+
+On the other hand, by Example 5.2.5, $f:\mathbb{R}\to\mathbb{R}$ given by
+$f(x)=|x|$ is not differentiable at $x=0$. But
+
+$$
+\lim_{h \rightarrow 0^+} \displaystyle\frac{|h|-|{}-h|}{2h} =0.
+$$
+
+---
+
+[46.](46)
+(i) True: $f$ is continuous at zero as $f(0) = 0= \lim_{x \rightarrow 0^-}f(x) = \lim_{x \rightarrow 0^+}f(x)$.
+   
+(ii) True: $f'(0)$ exists and is zero. To see this compute
+
+$$
+f'_{+}(0) = \lim_{h \rightarrow 0^+}\frac{h^{2}}{h} = \lim_{h \rightarrow 0^+} h= 0.
+$$
+
+and
+
+$$
+f'_{-}(0)= \lim_{h \rightarrow 0^-}\frac{-h^{2}}{h} = \lim_{h \rightarrow 0^-} -h =0.
+$$
+
+(iii) True: $f'$ is continuous at zero since $f':\mathbb{R}\to\mathbb{R}$ is given by
+
+$$
+f'(x) = \left\{\begin{array}{c c} -2x & ~\mbox{if}~x < 0\\ 0& ~\mbox{if}~x =0 \\ 2x & ~\mbox{if}~x > 0 \end{array} \right.,
+$$
+
+so $f'(0) = \lim_{x \rightarrow 0^-} f'(x) = \lim_{x \rightarrow 0^+}f'(x) = 0$.
+
+(iv) False:  $f^{\prime \prime}_{+}(0) = \lim_{h \rightarrow 0^+}\frac{2h - 0}{h} = 2, f^{\prime \prime}_{-}(0) = \lim_{h \rightarrow 0^-}\frac{-2h - 0}{h} = -2$, and so $f^{\prime \prime}(0)$ does not exist.
+

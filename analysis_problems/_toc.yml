@@ -10,7 +10,7 @@ parts:
     numbered: 2  # Only applies to chapters in Part 1.
     chapters:
     - file: Problems
-    - file: Solutions-upto26
+    - file: Solutions-upto46
 
   - :caption: Homework feedback
     numbered: 1

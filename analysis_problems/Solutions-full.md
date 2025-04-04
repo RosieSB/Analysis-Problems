@@ -1084,7 +1084,7 @@ We write $\lim_{x\to a}f(x)=l$.
 
 ---
 
-[38.](38) (Homework 4 question?)
+[38.](38)
 
 (i) This is Definition 4.1 in the notes: we say that $f$ is *differentiable* at $a \in A$ if $ \lim_{x \rightarrow a}\frac{f(x) - f(a)}{x - a}$ exists. Or, equivalently, $ \lim_{h \rightarrow 0}\frac{f(a +h) - f(a)}{h}$ exists.
 <br>
@@ -1130,7 +1130,7 @@ using the given fact that  $\lim_{h \rightarrow 0}\frac{g(h)}{h} = 0$. Thus $f$ 
 
 ---
 
-[41.](41) 
+[41.](41) *(Homework 5 question).* <br>
 (i) Using the product and chain rules for differentiation, and that $\sin$ is differentiable with derivative $\cos$,
 if $x \neq 0$, $f$ is differentiable at $x$ with $f'(x) = \sin\left(\frac{1}{x}\right) - \frac{1}{x}\cos\left(\frac{1}{x}\right)$.
 (ii) But
@@ -1249,7 +1249,7 @@ so $f'(0) = \lim_{x \rightarrow 0^-} f'(x) = \lim_{x \rightarrow 0^+}f'(x) = 0$.
 
 ---
 
-[47.](47)
+[47.](47) *(Homework 5 question).* <br>
 (i) Yes: $f$ is differentiable on $[a, b]$ and hence continuous on $[a, b]$ by Theorem  4.1, so it attains its sup and inf on $[a, b]$ by the extreme value theorem, Theorem 3.5, and these are the maximum and minimum (respectively).
 
 (ii) No: the maximum or minimum could be $f(a)=f(b)$.
