@@ -5,10 +5,6 @@ Here is some general feedback comments about each piece of homework for MAS2004/
 
 Responding to individual feedback is the fastest way to improve as a mathematician. Hopefully your feedback will feel useful and make sense to you, but if it ever doesn't, please get in touch and I am more than happy to look at it with you. 
 
-```{contents} Jump to...
-:local:
-:depth: 1
-```
 
 ## Feedback for Homework 2
 

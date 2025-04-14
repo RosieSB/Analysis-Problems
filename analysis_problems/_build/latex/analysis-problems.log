@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.4)  14 APR 2025 08:04
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.4)  14 APR 2025 18:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1773,12 +1773,12 @@ File: x-[x].png Graphic file (type bmp)
 Chapter 3.
 [43
 
-] [44] [45]
+] [44]
 
-LaTeX Warning: Hyper reference `HW-feedback:equation-hw1' on page 46 undefined 
-on input line 3217.
+LaTeX Warning: Hyper reference `HW-feedback:equation-hw1' on page 45 undefined 
+on input line 3203.
 
-(./analysis-problems.ind) [46] (./analysis-problems.aux)
+(./analysis-problems.ind) [45] (./analysis-problems.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1791,12 +1791,12 @@ Package rerunfilecheck Info: File `analysis-problems.out' has not changed.
 (rerunfilecheck)             Checksum: 02C2FDFF13D5B097AE8AE03083C1D87D;1936.
  ) 
 Here is how much of TeX's memory you used:
- 46331 strings out of 474878
- 1051700 string characters out of 5762516
+ 46326 strings out of 474878
+ 1051564 string characters out of 5762516
  1957627 words of memory out of 5000000
- 67528 multiletter control sequences out of 15000+600000
+ 67523 multiletter control sequences out of 15000+600000
  567203 words of font info for 133 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  99i,28n,114p,861b,2113s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on analysis-problems.pdf (50 pages).
+Output written on analysis-problems.pdf (49 pages).
