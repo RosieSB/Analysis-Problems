@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.4)  1 APR 2025 07:37
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.4)  14 APR 2025 08:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1718,16 +1718,16 @@ Chapter 1.
 ] [6] [7] [8] [9] [10]
 
 LaTeX Warning: Hyper reference `Problems:equation-eq-x' on page 11 undefined on
- input line 830.
+ input line 831.
 
 [11] [12]
 
 LaTeX Warning: Hyper reference `Problems:equation-fourier' on page 13 undefined
- on input line 1151.
+ on input line 1155.
 
 
 LaTeX Warning: Hyper reference `Problems:equation-fourier' on page 13 undefined
- on input line 1160.
+ on input line 1164.
 
 [13] [14] [15] [16]
 Chapter 2.
@@ -1735,8 +1735,8 @@ Chapter 2.
 
 ]
 
-LaTeX Warning: Hyper reference `Solutions-upto26:equation-eq-sqrta-sqrtb' on pa
-ge 18 undefined on input line 1565.
+LaTeX Warning: Hyper reference `Solutions-upto46:equation-eq-sqrta-sqrtb' on pa
+ge 18 undefined on input line 1569.
 
 [18] [19] [20]
 File: 2iii.png Graphic file (type bmp)
@@ -1751,23 +1751,33 @@ File: sin(1,x).png Graphic file (type bmp)
 <sin(1,x).png>
 File: xsin(1,x).png Graphic file (type bmp)
 <xsin(1,x).png>
- [27] [28] [29] [30]
+ [27] [28] [29]
+File: (x2+2x+4),(x+2).png Graphic file (type bmp)
+<(x2+2x+4),(x+2).png>
+ [30] [31]
 
-LaTeX Warning: Hyper reference `Solutions-upto26:equation-linear' on page 31 un
-defined on input line 2457.
+LaTeX Warning: Hyper reference `Solutions-upto46:equation-linear' on page 32 un
+defined on input line 2520.
 
-[31] [32] [33
+[32] [33] [34] [35] [36] [37]
+File: nondiff1,2.png Graphic file (type bmp)
+<nondiff1,2.png>
+File: nondiff1,3_2,3.png Graphic file (type bmp)
+<nondiff1,3_2,3.png>
+File: x-[x].png Graphic file (type bmp)
+<x-[x].png>
+ [38] [39] [40] [41
 
-] [34]
+] [42]
 Chapter 3.
-[35
+[43
 
-] [36] [37]
+] [44] [45]
 
-LaTeX Warning: Hyper reference `HW-feedback:equation-hw1' on page 38 undefined 
-on input line 2740.
+LaTeX Warning: Hyper reference `HW-feedback:equation-hw1' on page 46 undefined 
+on input line 3217.
 
-(./analysis-problems.ind) [38] (./analysis-problems.aux)
+(./analysis-problems.ind) [46] (./analysis-problems.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1777,15 +1787,15 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `analysis-problems.out' has not changed.
-(rerunfilecheck)             Checksum: AE66DD8D832589967637838657C5BBFC;1874.
+(rerunfilecheck)             Checksum: 02C2FDFF13D5B097AE8AE03083C1D87D;1936.
  ) 
 Here is how much of TeX's memory you used:
- 46285 strings out of 474878
- 1050702 string characters out of 5762516
- 1954627 words of memory out of 5000000
- 67486 multiletter control sequences out of 15000+600000
+ 46331 strings out of 474878
+ 1051700 string characters out of 5762516
+ 1957627 words of memory out of 5000000
+ 67528 multiletter control sequences out of 15000+600000
  567203 words of font info for 133 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  99i,28n,114p,861b,2113s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on analysis-problems.pdf (42 pages).
+Output written on analysis-problems.pdf (50 pages).

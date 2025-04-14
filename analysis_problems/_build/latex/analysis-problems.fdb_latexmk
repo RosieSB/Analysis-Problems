@@ -1,11 +1,12 @@
 # Fdb version 4
-["makeindex analysis-problems.idx"] 1741363200.95864 "analysis-problems.idx" "analysis-problems.ind" "analysis-problems" 1743489439.08821 0
-  "analysis-problems.idx" 1743489436.49617 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex analysis-problems.idx"] 1741363200.95864 "analysis-problems.idx" "analysis-problems.ind" "analysis-problems" 1744614063.61091 0
+  "analysis-problems.idx" 1744614061.46118 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "analysis-problems.ilg"
   "analysis-problems.ind"
   (rewritten before read)
-["pdflatex"] 1743489435.15798 "analysis-problems.tex" "analysis-problems.pdf" "analysis-problems" 1743489439.08837 0
+["pdflatex"] 1744614060.57414 "analysis-problems.tex" "analysis-problems.pdf" "analysis-problems" 1744614063.61102 0
+  "(x2+2x+4),(x+2).png" 1740558877.47679 40307 d590acb1b49821c2ee405777cb3e57c9 ""
   "/etc/texmf/web2c/texmf.cnf" 1727092416.96397 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -253,15 +254,17 @@
   "2iii.png" 1741975023.37178 26190 2d411e69be4907e9cacaaad45b545b56 ""
   "8iii.png" 1741880957.87127 21805 2fd16ce04ee87170319b14b8125279d2 ""
   "[x].png" 1741879100.07371 30021 cae8312349a8cc7b7f682225d33077e2 ""
-  "analysis-problems.aux" 1743489438.84916 17177 5469ebde668baa5f043f20533afae12f "pdflatex"
+  "analysis-problems.aux" 1744614063.44816 19544 97a84e905c795c2bf2d85148c2b7b0eb "pdflatex"
   "analysis-problems.ind" 1741013665.93874 0 d41d8cd98f00b204e9800998ecf8427e "makeindex analysis-problems.idx"
-  "analysis-problems.out" 1743489438.85016 1874 ae66dd8d832589967637838657c5bbfc "pdflatex"
-  "analysis-problems.tex" 1743489431.17121 134017 3a47ff1a00a7262353e9cd01720e8f82 ""
-  "analysis-problems.toc" 1743489438.85116 2074 5c041fc3a0c54aabb35fa537280bd98c "pdflatex"
+  "analysis-problems.out" 1744614063.45016 1936 02c2fdff13d5b097ae8ae03083c1d87d "pdflatex"
+  "analysis-problems.tex" 1744614057.24124 157498 16899a6f09db0104f37d3cd936b976a2 ""
+  "analysis-problems.toc" 1744614063.45016 2150 4f5abc22c5d28dfb3949fe769053f8d4 "pdflatex"
   "jupyterBook.cls" 1734793761.72056 2881 d7be52eb557699167c5a8617d29c1b64 ""
+  "nondiff1,2.png" 1740558877.47779 24138 13805d50cb58d2e1e303dc70d212c069 ""
+  "nondiff1,3_2,3.png" 1740558877.47779 33642 b7e123638a20f4ae06400bfcfb58fd46 ""
   "sin(1,x).png" 1740558877.47879 50946 b1646fad2d70d7b71bc9293cf0dfd1d3 ""
   "sphinx.sty" 1734793760.4802 50659 6d393be3f369a7862f0b19a359f1ab89 ""
-  "sphinxhighlight.sty" 1743489430.61521 7553 83fb52292c17957d9f4aadcb28c57a87 ""
+  "sphinxhighlight.sty" 1744614056.59024 7553 83fb52292c17957d9f4aadcb28c57a87 ""
   "sphinxlatexadmonitions.sty" 1734793760.4802 18222 f3bfd316b630ed188fcc20bf320acafe ""
   "sphinxlatexcontainers.sty" 1734793760.4802 901 d3a3a1b7b2547f47ade2499350b5c420 ""
   "sphinxlatexgraphics.sty" 1734793760.4812 4840 a9578332b6f3b35e198751fb632c9b79 ""
@@ -276,11 +279,12 @@
   "sphinxlatexstyletext.sty" 1734793760.4822 6881 543f3cecccc7dccac396b5720cccf443 ""
   "sphinxlatextables.sty" 1734793760.4822 57644 2253ce149b29042948a000d2dbf50b50 ""
   "sphinxmanual.cls" 1734793760.4822 4241 7b0d7a37df7b5715fb0dbd585c52ecdb ""
-  "sphinxmessages.sty" 1743489431.17921 745 3f5fcd6cdd7964ed608767954a8ced6f ""
+  "sphinxmessages.sty" 1744614057.24924 745 3f5fcd6cdd7964ed608767954a8ced6f ""
   "sphinxoptionsgeometry.sty" 1734793760.4822 2061 47bb34b8ed8a78823eb0c886abfb9f4d ""
   "sphinxoptionshyperref.sty" 1734793760.4822 1094 79beb8b8a3f10784f8cce804e0f9d3aa ""
   "sphinxpackageboxes.sty" 1734793760.4832 36106 1be2053eb1cb9b083b3a75e3657bcb24 ""
   "sphinxpackagefootnote.sty" 1734793760.4832 15330 2fb656b6ce8cd1f6aba2d1c508fb51e5 ""
+  "x-[x].png" 1740558877.47879 31576 e85452d95a1b634cb3a0a98a811f574a ""
   "xsin(1,x).png" 1740558877.47879 32081 71248392baa807192bf0d58d201e7a26 ""
   (generated)
   "analysis-problems.aux"

@@ -1138,8 +1138,13 @@ $\frac{f(x) - f(0)}{x} = \sin\left(\frac{1}{x}\right)$ has no limit as $x \right
 
 ---
 
-[42.](42) Again using the product and chain rules and standard derivatives,
-for $x \neq 0$, $f$ is differentiable at $x$ with $f'(x) = 2x\sin\left(\frac{1}{x}\right) - \cos\left(\frac{1}{x}\right)$. At $x = 0,$
+[42.](42) Let  $f:\mathbb{R}\to \mathbb{R}$ given by 
+
+$$
+f(x) = \begin{cases} x^2\sin\left(\frac{1}{x}\right) & \text{if }x \neq 0,\\ 0 & \text{if }x = 0.\end{cases}
+$$
+
+Using the product and chain rules and standard derivatives, for $x \neq 0$, $f$ is differentiable at $x$ with $f'(x) = 2x\sin\left(\frac{1}{x}\right) - \cos\left(\frac{1}{x}\right)$. At $x = 0,$
 
 $$
 \lim_{x \rightarrow 0}\frac{f(x) - f(0)}{x} = \lim_{x \rightarrow 0}x\sin\left(\frac{1}{x}\right) = 0,
