@@ -369,13 +369,13 @@ You may use the fact that  $\displaystyle\lim_{h \rightarrow 0}\frac{g(h)}{h} = 
     (ii) Show that $f$ is not differentiable at $x = 0$. (Use the definition of the derivative as a limit. You may assume that $\sin\left(\frac{1}{x}\right)$ has no limit as $x$ tends to $0$. This was [Problem 8](#8).)
 
 (42)=
-42. Show that the function  $f:\mathbb{R}\to \mathbb{R}$ given by 
+42. Show that the function $f:\mathbb{R}\to \mathbb{R}$ given by 
 
 $$
 f(x) = \begin{cases} x^2\sin\left(\frac{1}{x}\right) & \text{if }x \neq 0,\\ 0 & \text{if }x = 0.\end{cases}
 $$
 
-is differentiable at every $x \in \mathbb{R}$. What can you say about its second derivative?
+is differentiable at every $x \in \mathbb{R}$. You may use standard derivatives and facts about derivatives, such as the product and chain rules. What can you say about its second derivative? 
 <br>
 [Hint: You will need to consider the case $x=0$ separately from $x\in\mathbb{R}\setminus\{0\}$. You may assume that the limit as $x$ tends to $0$ of $x\sin\left(\frac{1}{x}\right)$ exists and equals $0$. This was studied in [Problem 10](10).]
 

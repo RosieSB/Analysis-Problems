@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.4)  14 APR 2025 08:01
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.10.4)  14 APR 2025 08:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1725,11 +1725,12 @@ LaTeX Warning: Hyper reference `Problems:equation-eq-x' on page 11 undefined on
 LaTeX Warning: Hyper reference `Problems:equation-fourier' on page 13 undefined
  on input line 1155.
 
+[13]
 
-LaTeX Warning: Hyper reference `Problems:equation-fourier' on page 13 undefined
+LaTeX Warning: Hyper reference `Problems:equation-fourier' on page 14 undefined
  on input line 1164.
 
-[13] [14] [15] [16]
+[14] [15] [16]
 Chapter 2.
 [17
 
