@@ -6,47 +6,6 @@ Here is some general feedback comments about each piece of homework for MAS2004/
 Responding to individual feedback is the fastest way to improve as a mathematician. Hopefully your feedback will feel useful and make sense to you, but if it ever doesn't, please get in touch and I am more than happy to look at it with you. 
 
 
-## Feedback for Homework 3
-
-**Problems:** [18](#18), [25](#25) ; &ensp;**Solutions:** [18](#18sol), [25](#25sol)
-
-This homework was generally answered well, which is great to see. I'm particularly pleased to see proofs and mathematical presentation improving, so well done for your hard work there.
-
-Remember to take the time to carefully review the feedback your work has received on Crowdmark, and attend [office hours](https://rosiesb.github.io/Analysis-Notes/0Intro.html#where-to-get-help) if you would like help interpreting or following the advice you are given.
-
-### General presentation remarks
-
-As I say, presentation is definitely getting better, which is great. Where there were issues, it's largely the same comments as previous times: 
-
-- Remember to use words/short sentences to express a mathematical argument, not just equations. 
-
-- Always introduce variables/functions *before* referring to them in a proof
-
-- If you introduce a function, say what the domain is, as well as the rule. Different domains mean different functions, even when the rule is the same.
-
-- If you are still getting significant comments on your work about presentation, it is probably worth your while to come to office hour and we can look over things together. I won't judge --- these things are just easier to explain in person.
-
-### Problem 18
-
-This question was generally answered well. The most frequent comments are below:
-
-- It isn't essential to use $\varepsilon-\delta$ arguments every time now, as we have proven so many functions are continuous, and have results like [Theorem 3.2](https://rosiesb.github.io/Analysis-Notes/3Cty.html#AOL3) to combine them. Generally speaking, unless the question specifies differently, you can use results proved in the module, provided you indicate clearly that that is what you are doing. <br>
-<br>
-So for example, in 18(i), saying "We assume $f$ is continuous on $\mathbb{R}\setminus\{0\}$" is no good, but saying "Note that $f$ is continuous since it is a rational function" does constitute a valid proof at this stage --- even though it is brief and doesn't involve any $\varepsilon$s or $\delta$s.<br>
-<br>
-You will need to be able to do $\varepsilon-\delta$ arguments sometimes, though (e.g. in the exam).<br><br>
-
-- In 18(ii), a few people fell into the trap of claiming $f$ can be defined on $A=\mathbb{R}\setminus\{-2\}$, because of the simplification $f(x)=\frac{x^3-8}{x^2-4}=\frac{x^2+2x+4}{x+2}$. However, this simplification is **only** valid on $\mathbb{R}\setminus\{\pm 2\}$, and this needs to be the set $A$. We have to use the formula for $f$ that we are given, and so $f(2)$ is not meaningful.
-<br><br>
-Unfortunately, if you made this mistake, the rest of 18 generally didn't work out. The progression of ideas is: $f$ has domain $A:=\mathbb{R}\setminus\{\pm 2\}$, has a continuous extension to $\mathbb{R}\setminus\{-2\}$, but cannot be extended to any continuous function with domain $\mathbb{R}$. In particular, $f$ does **not** have a discontinuity at $-2$, because $-2$ does not belong to the domain of $f$.
-
-### Problem 25
-
-Most people worked out that they needed to put $g:[a,b]\to\mathbb{R}$, $g(x)=f(x)-x$, but quite a few forgot to say what the domain of $g$ is. This is important, since [Proposition 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt-sc) only applies to functions with certain kinds of domain. Once you have what $g$ needs to be, the solution is a straightforward application of Proposition 3.1 --- just make sure you write out your arguments as clearly as possible. 
-
-This question was quite all or nothing, in that there was a trick to spot before you could really get anywhere. The good news is, there are only so many of these analysis "tricks" you need to know. And this is one of them! Similar things come up from time to time --- we already had one in Q24, and there will be more once we get to Rolle's theorem and the mean value theorem (see for example questions 3 and 5 in the [extra analysis exam-style questions](https://vle.shef.ac.uk/webapps/blackboard/content/launchLink.jsp?course_id=_119813_1&content_id=_8251522_1&mode=cpview), for example).
-
-If you didn't get the trick for this question, have another go now you know what function $g$ to pick. The solutions are also available for when you are ready to see the full argument and check your answers.
 
 ## Feedback for Homework 2
 
