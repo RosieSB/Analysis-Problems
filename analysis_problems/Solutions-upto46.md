@@ -718,7 +718,7 @@ This is continuous at $\mathbb{R} \setminus \{0,1,2\}$, with jump discontinuitie
    
 (i) We are given $f:\mathbb{R} \setminus \{0\} \rightarrow \mathbb{R}$; $f(x) = \frac{(1 + x)^{2} - 1}{x}$, a continuous function (since it is a rational function).
 
-For $x \neq 0, f(x) = x+2$, and so $\lim_{x \rightarrow 0}f(x) = 2$. Therefore the required continuous extension of $f$ is 
+For $x \neq 0, f(x) = x+2$, and so $\lim_{x \rightarrow 0}f(x) = 2$, by algebra of limits. Therefore the required continuous extension of $f$ is 
 
 $$
 \tilde{f}:\mathbb{R}\to\mathbb{R}; \; \tilde{f}(x) = \left\{\begin{array}{c c} \displaystyle\frac{(1 + x)^{2} - 1}{x} & ~\mbox{if}~x \neq 0\\ 
