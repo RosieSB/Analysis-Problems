@@ -32,7 +32,7 @@ This question was generally answered well. The most frequent comments are below:
 
 - It isn't essential to use $\varepsilon-\delta$ arguments every time now, as we have proven so many functions are continuous, and have results like [Theorem 3.2](https://rosiesb.github.io/Analysis-Notes/3Cty.html#AOL3) to combine them. Generally speaking, unless the question specifies differently, you can use results proved in the module, provided you indicate clearly that that is what you are doing. <br>
 <br>
-So for example, in 18(i), saying "We assume $f$ is continuous on $\mathbb{R}\setminus\{0\}$" is no good, but saying something like "Note that away from $0$, $f$ coincides with a rational function on an open interval, and so is continuous on $\mathbb{R}\setminus\{0\}$" does constitute a valid proof --- even though it doesn't involve an $\varepsilon$s or $\delta$s.<br>
+So for example, in 18(i), saying "We assume $f$ is continuous on $\mathbb{R}\setminus\{0\}$" is no good, but saying "Note that $f$ is continuous since it is a rational function" does constitute a valid proof at this stage --- even though it is brief and doesn't involve any $\varepsilon$s or $\delta$s.<br>
 <br>
 You will need to be able to do $\varepsilon-\delta$ arguments sometimes, though (e.g. in the exam).<br><br>
 
