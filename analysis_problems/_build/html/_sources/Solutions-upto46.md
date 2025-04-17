@@ -726,6 +726,8 @@ $$
 2 & ~\mbox{if}~x = 0. \end{array} \right.
 $$
 
+Or, put more simply: $\tilde{f}(x)=x+2$ for all $x\in\mathbb{R}$. 
+
 (ii) Let now $f(x) = \frac{(x-2)(x^{2} + 2x + 4)}{(x-2)(x+2)}$. The largest possible domain for $f$ is $A=\mathbb{R} \setminus \{-2, 2\}$ (the set where the denominator is non-zero). For $x \neq 2, -2$,
 
 $$

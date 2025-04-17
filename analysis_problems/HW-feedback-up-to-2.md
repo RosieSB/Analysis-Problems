@@ -5,8 +5,6 @@ Here is some general feedback comments about each piece of homework for MAS2004/
 
 Responding to individual feedback is the fastest way to improve as a mathematician. Hopefully your feedback will feel useful and make sense to you, but if it ever doesn't, please get in touch and I am more than happy to look at it with you. 
 
-
-
 ## Feedback for Homework 2
 
 **Problems:** [8](#8), [9](#9), [19](#19), [22](#22) ; &ensp;**Solutions:** [8](#8sol), [9](#9sol), [19](#19sol), [22](#22sol)

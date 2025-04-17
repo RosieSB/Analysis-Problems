@@ -5,55 +5,6 @@ Here is some general feedback comments about each piece of homework for MAS2004/
 
 Responding to individual feedback is the fastest way to improve as a mathematician. Hopefully your feedback will feel useful and make sense to you, but if it ever doesn't, please get in touch and I am more than happy to look at it with you. 
 
-
-## Feedback for Homework 3
-
-**Problems:** [18](#18), [25](#25) ; &ensp;**Solutions:** [18](#18sol), [25](#25sol)
-
-This homework was generally answered well. I'm particularly pleased to see proofs and mathematical presentation improving, so well done for your hard work there.
-
-Remember to take the time to carefully review the feedback your work has received on Crowdmark, and attend [office hours](https://rosiesb.github.io/Analysis-Notes/0Intro.html#where-to-get-help) if you would like help interpreting or following the advice you are given.
-
-### General presentation remarks
-
-As I say, presentation is definitely getting better, which is great! Where there were issues, it's largely the same comments as previous times: 
-
-- Remember to use words/short sentences to express a mathematical argument, not just equations.
-
-- Always introduce variables/functions *before* referring to them in a proof.
-
-- If you introduce a function, remember to say what the domain is, as well as the rule. Different domains mean different functions, even when the rule is the same.
-
-- If you use a theorem, check all the conditions explicitly (e.g. continuity of $g$ in Q25). 
-
-- If you are still getting comments on your work about presentation, it is probably worth your while to come to office hour and we can look over things together. I won't judge --- these things are just easier to explain in person.
-
-**Exam-related reminder:** You don't really get marks for equations in analysis, only mathematical arguments. So it will benefit you materially to seek [help](https://rosiesb.github.io/Analysis-Notes/0Intro.html#where-to-get-help) with this if you need it.
-
-### Problem 18
-
-This question was generally answered well. The most frequent comments are below:
-
-- Please give justification for limits --- don't just write them down. This can be brief, e.g.  "by continuity" or "by algebra of limits" (as appropriate). 
-<br<br>
-In particular, it isn't necessary to use $\varepsilon-\delta$ arguments every time now, as we have proven so many functions are continuous, and have results like [Theorem 3.2](https://rosiesb.github.io/Analysis-Notes/3Cty.html#AOL3) to combine them. 
-
-- **L'Hôpital's rule:** I'm afraid we can't use it at this stage, as we haven't proved it. But you shouldn't need it, either --- for example, in Q18(i), you can simplify $f(x)=\frac{(1+x)^2-1}{x}=x+2$  and then send $x$ to zero (using continuity of $x+2$). No need for L'Hôpital.
-
-- More generally: unless explicitly stated otherwise, you are welcome to use any result that has been proven rigorously in this module or previously, provided you indicate clearly that this is what you are doing. Mathematical rigour is like building a house. We can only put bricks (proofs) on top of bricks already laid underneath.
-
-- In 18(ii), a few people fell into the trap of claiming $f$ can be defined on $A=\mathbb{R}\setminus\{-2\}$, because of the simplification $f(x)=\frac{x^3-8}{x^2-4}=\frac{x^2+2x+4}{x+2}$. However, this simplification is only valid on $\mathbb{R}\setminus\{\pm 2\}$, and this needs to be the set $A$. We have to use the formula for $f$ that we are given, and so $f(2)$ is not meaningful.
-
-- Unfortunately, if you made this mistake, the rest of 18 generally didn't work out. The progression of ideas is: $f$ has domain $A:=\mathbb{R}\setminus\{\pm 2\}$, has a continuous extension to $\mathbb{R}\setminus\{-2\}$, but cannot be extended to any continuous function with domain $\mathbb{R}$. In particular, $f$ does **not** have a discontinuity at $-2$, because $-2$ does not belong to the domain of $f$.
-
-### Problem 25
-
-Most people worked out that they needed to put $g:[a,b]\to\mathbb{R}$, $g(x)=f(x)-x$, but quite a few forgot to say what the domain of $g$ is. This is important, since [Proposition 3.1](https://rosiesb.github.io/Analysis-Notes/3Cty.html#ivt-sc) only applies to functions with certain kinds of domain. Once you have what $g$ needs to be, the solution is a straightforward application of Proposition 3.1 --- just make sure you check all the conditions hold. 
-
-This question was quite all or nothing, in that there was a trick to spot before you could really get anywhere. The good news is, there are only so many of these analysis "tricks" you need to know. And this is one of them! Similar things come up from time to time --- see for example question [24](#24), and questions 3 and 5 in the [extra analysis exam-style questions](https://vle.shef.ac.uk/webapps/blackboard/content/launchLink.jsp?course_id=_119813_1&content_id=_8251522_1&mode=cpview) (these last two require Rolle's theorem or the mean value theorem, so hold off until we've done those in lectures).
-
-If you didn't get the trick for this question, have another go now you know what function $g$ to pick. The solutions are also available for when you are ready to see the full argument and check your answers.
-
 ## Feedback for Homework 2
 
 **Problems:** [8](#8), [9](#9), [19](#19), [22](#22) ; &ensp;**Solutions:** [8](#8sol), [9](#9sol), [19](#19sol), [22](#22sol)
