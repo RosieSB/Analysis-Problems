@@ -10,9 +10,9 @@ parts:
     numbered: 2  # Only applies to chapters in Part 1.
     chapters:
     - file: Problems
-    - file: Solutions-upto46
+    - file: Solutions-upto48
 
   - :caption: Homework feedback
     numbered: 1
     chapters:
-    - file: HW-feedback-up-to-2
+    - file: HW-feedback-up-to-3

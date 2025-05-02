@@ -1,6 +1,6 @@
 (sol)=
 # Solutions
-Complete up to Q26, excluding some homework questions. 
+Complete up to Q48, excluding some homework questions. 
 
 Homework solutions will be released alongside the return of each piece of work.
 
@@ -1247,4 +1247,18 @@ $$
 so $f'(0) = \lim_{x \rightarrow 0^-} f'(x) = \lim_{x \rightarrow 0^+}f'(x) = 0$.
 
 (iv) False:  $f^{\prime \prime}_{+}(0) = \lim_{h \rightarrow 0^+}\frac{2h - 0}{h} = 2, f^{\prime \prime}_{-}(0) = \lim_{h \rightarrow 0^-}\frac{-2h - 0}{h} = -2$, and so $f^{\prime \prime}(0)$ does not exist.
+
+---
+
+[47.](47) To appear (Homework 5 question)  
+
+---
+
+[48.](48) Following the hint, define $g:\mathbb{R}\rightarrow \mathbb{R}$ by
+
+$$
+g(x) = a_{0}x + \frac{a_{1}}{2}x^{2} + \frac{a_{2}}{3}x^{3}  + \cdots + \frac{a_{n}}{n+1}x^{n}.
+$$
+
+Then $g$ is a polynomial, so it is differentiable on $[0, 1]$ and using standard derivatives, $g'(x)=f(x)$. Also $g(0) = g(1) = 0$. So by Rolle's theorem, there exists $c \in (0, 1)$ such that $g'(c) = 0$, i.e.$f(c) = 0$.
 

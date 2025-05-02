@@ -29,7 +29,7 @@ See Blackboard[^links] for more information.
 &emsp;&emsp;[1.5. Sequences and series of functions](#ch5prob) <br>
 &emsp;&emsp;[1.6. Integration](#ch6prob)
 
-[2 Solutions up to 46](#sol) (more to appear in due course) <br>
+[2 Solutions up to 48](#sol) (more to appear in due course) <br>
 &emsp;&emsp;[2.1 Preliminary problems](#ch1sol) <br>
 &emsp;&emsp;[2.2. Limits of functions](#ch2sol) <br>
 &emsp;&emsp;[2.3. Continuity](#ch3sol) <br>
