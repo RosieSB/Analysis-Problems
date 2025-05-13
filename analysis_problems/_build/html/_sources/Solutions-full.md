@@ -1,6 +1,7 @@
 (sol)=
 # Solutions
 
+
 (ch1sol)=
 ## Preliminary problems
 
@@ -46,7 +47,6 @@ The Bolzano--Weierstrass theorem states that every bounded sequence has a conver
 
 **Proof of Bolzano--Weierstrass:** <br>
 If $(x_n)$ is a bounded sequence, then it has a monotone subsequence, $(x_{n_k})$, by Theorem 3.13. This subsequence must also be bounded since $(x_n)$ is bounded, and hence it converges by the monotone convergence theorem.
-
 
 ---
 
@@ -515,7 +515,6 @@ The proof of $\lim_{x \rightarrow 2^-}h(x) = 10$ is exactly the same, just take 
 
 The right limit proofs are similar. 
 
-
 ---
 
 (9sol)=
@@ -557,7 +556,6 @@ name: s1x
 Graph of the function $f:\mathbb{R}\to\mathbb{R}$; $f(x)=\sin\left(\frac{1}{x}\right)$ (Problem 9).
 ```
 
-
 ---
 
 [10.](10) The largest subset of $\mathbb{R}$ for which the formula $f(x)=x\sin\left(\frac{1}{x}\right)$ makes sense is $A = \mathbb{R} \setminus \{0\}$.
@@ -576,7 +574,7 @@ $$
 -|x_{n}| \leq x_{n}\sin\left(\frac{1}{x_n}\right) \leq |x_{n}|
 $$
 
-for all $n\in\mathbb{N}$. Since $\displaystyle\lim_{n\to \infty} x_n=0$, we have $ \displaystyle\lim_{n\to \infty} |x_n| =0$. Therefore, but the squeeze theorem, $\displaystyle\lim_{n\rightarrow 0}x_n\sin\left(\frac{1}{x_n}\right) = 0$.
+for all $n\in\mathbb{N}$. Since $\displaystyle\lim_{n\to \infty} x_n=0$, we have $ \displaystyle\lim_{n\to \infty} |x_n| =0$. Therefore, by the squeeze theorem, $\displaystyle\lim_{n\rightarrow 0}x_n\sin\left(\frac{1}{x_n}\right) = 0$.
 <br>
 Since $(x_n)$ was arbitrary, $\displaystyle\lim_{x \rightarrow 0} x \sin\left(\frac{1}{x}\right) = 0$.
 <br>
@@ -675,8 +673,7 @@ If $n$ is odd, $\lim_{x \rightarrow \infty}p(x) = \infty$, but $\lim_{x \rightar
 
 ---
 
-[14.](14) If $(x_{n})$ is any sequence that converges to $a$, we know that $f(x_n)$ converges to $f(a)$ as $f$ is continuous at $a$, and
-we need to show that $(|f|(x_n))$ converges to $|f|(a)$.
+[14.](14) If $(x_{n})$ is any sequence that converges to $a$, we know that $f(x_n)$ converges to $f(a)$ as $f$ is continuous at $a$, and we need to show that $(|f|(x_n))$ converges to $|f|(a)$.
 <br>
 By Corollary 1.1, if $(x_{n})$ is any sequence that converges to $a$,
 \begin{align*}
@@ -719,13 +716,15 @@ This is continuous at $\mathbb{R} \setminus \{0,1,2\}$, with jump discontinuitie
    
 (i) We are given $f:\mathbb{R} \setminus \{0\} \rightarrow \mathbb{R}$; $f(x) = \frac{(1 + x)^{2} - 1}{x}$, a continuous function (since it is a rational function).
 
-For $x \neq 0, f(x) = x+2$, and so $\lim_{x \rightarrow 0}f(x) = 2$. Therefore the required continuous extension of $f$ is 
+For $x \neq 0, f(x) = x+2$, and so $\lim_{x \rightarrow 0}f(x) = 2$, by algebra of limits. Therefore the required continuous extension of $f$ is 
 
 $$
 \tilde{f}:\mathbb{R}\to\mathbb{R}; \; \tilde{f}(x) = \left\{\begin{array}{c c} \displaystyle\frac{(1 + x)^{2} - 1}{x} & ~\mbox{if}~x \neq 0\\ 
 & \\
 2 & ~\mbox{if}~x = 0. \end{array} \right.
 $$
+
+Or, put more simply: $\tilde{f}(x)=x+2$ for all $x\in\mathbb{R}$. 
 
 (ii) Let now $f(x) = \frac{(x-2)(x^{2} + 2x + 4)}{(x-2)(x+2)}$. The largest possible domain for $f$ is $A=\mathbb{R} \setminus \{-2, 2\}$ (the set where the denominator is non-zero). For $x \neq 2, -2$,
 
@@ -767,6 +766,7 @@ name: q18
 ---
 Graph of the function $\tilde{f}:\mathbb{R}\setminus\{-2\}\to\mathbb{R}$; $f(x)=x+\frac{4}{x+2}$ (Problem 18).
 ```
+
 
 ---
 
@@ -821,7 +821,6 @@ Alternatively, one could derive (ii) from (i) by using $\min\{f,g\} = - \max\{-f
 
 ---
 
-
 [21.](21) Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be such that 
 ```{math}
 :label: linear
@@ -855,12 +854,11 @@ $$
 
 and the result follows.
 
-(vi) Finally, let $k=f(1)$, and assume $f$ is continuous at $0$, and let $x\in\mathbb{R}$. If $x\in\mathbb{Q}$, then we have already shown $f(x)=kx$ in part (v). So assume $x$ is irrational. By denseness of the rationals, there is a sequence $(r_n)$ of rational numbers converging to $x$. By (v), $f(r_n)=kr_n$, for all $n\in\mathbb{N}$. By (iii), $f$ is continuous at $x$, so using algebra of limits, we have
+(vi) Finally, let $k=f(1)$, and assume $f$ is continuous at $0$, and let $x\in\mathbb{R}$. If $x\in\mathbb{Q}$, then we have already shown $f(x)=kx$ in part (v). So assume $x$ is irrational. By denseness of the rationals, there is a sequence $(r_n)$ of rational numbers converging to $x$. By (v), $f(r_n)=kr_n$ for all $n\in\mathbb{N}$. By (iii), $f$ is continuous at $x$, so using algebra of limits, we have
 
 $$
 f(x) = \lim_{n\rightarrow\infty} f(r_n) =   \lim_{n\rightarrow\infty} kr_n=k \lim_{n\rightarrow\infty} r_n = kx.
 $$
-
 
 ---
 
@@ -902,7 +900,7 @@ $ \lim_{n\rightarrow\infty} \mathbb{1}_{(a, b)}(y_{n}) = 1 \neq \mathbb{1}_{(a, 
 ---
 
 (25sol)=
-[25.](25)
+[25.](25) 
 *(Homework 3 question).*
 Let $a,b\in\mathbb{R}$, $a<b$, and suppose $f:[a,b] \rightarrow (a,b)$ is a continuous function.
 
@@ -1084,7 +1082,7 @@ We write $\lim_{x\to a}f(x)=l$.
 
 ---
 
-[38.](38) (Homework 4 question?)
+[38.](38)
 
 (i) This is Definition 4.1 in the notes: we say that $f$ is *differentiable* at $a \in A$ if $ \lim_{x \rightarrow a}\frac{f(x) - f(a)}{x - a}$ exists. Or, equivalently, $ \lim_{h \rightarrow 0}\frac{f(a +h) - f(a)}{h}$ exists.
 <br>
@@ -1130,16 +1128,23 @@ using the given fact that  $\lim_{h \rightarrow 0}\frac{g(h)}{h} = 0$. Thus $f$ 
 
 ---
 
-[41.](41) 
+[41.](41) *(Homework 5 question).* 
+
 (i) Using the product and chain rules for differentiation, and that $\sin$ is differentiable with derivative $\cos$,
 if $x \neq 0$, $f$ is differentiable at $x$ with $f'(x) = \sin\left(\frac{1}{x}\right) - \frac{1}{x}\cos\left(\frac{1}{x}\right)$.
+
 (ii) But
 $\frac{f(x) - f(0)}{x} = \sin\left(\frac{1}{x}\right)$ has no limit as $x \rightarrow 0$ (see [Problem 9](9)), so $f$ is not differentiable at $0$.
 
 ---
 
-[42.](42) Again using the product and chain rules and standard derivatives,
-for $x \neq 0$, $f$ is differentiable at $x$ with $f'(x) = 2x\sin\left(\frac{1}{x}\right) - \cos\left(\frac{1}{x}\right)$. At $x = 0,$
+[42.](42) Let  $f:\mathbb{R}\to \mathbb{R}$ given by 
+
+$$
+f(x) = \begin{cases} x^2\sin\left(\frac{1}{x}\right) & \text{if }x \neq 0,\\ 0 & \text{if }x = 0.\end{cases}
+$$
+
+Using the product and chain rules and standard derivatives, for $x \neq 0$, $f$ is differentiable at $x$ with $f'(x) = 2x\sin\left(\frac{1}{x}\right) - \cos\left(\frac{1}{x}\right)$. At $x = 0,$
 
 $$
 \lim_{x \rightarrow 0}\frac{f(x) - f(0)}{x} = \lim_{x \rightarrow 0}x\sin\left(\frac{1}{x}\right) = 0,
@@ -1249,7 +1254,8 @@ so $f'(0) = \lim_{x \rightarrow 0^-} f'(x) = \lim_{x \rightarrow 0^+}f'(x) = 0$.
 
 ---
 
-[47.](47)
+[47.](47) [47.](47) *(Homework 5 question).* 
+
 (i) Yes: $f$ is differentiable on $[a, b]$ and hence continuous on $[a, b]$ by Theorem  4.1, so it attains its sup and inf on $[a, b]$ by the extreme value theorem, Theorem 3.5, and these are the maximum and minimum (respectively).
 
 (ii) No: the maximum or minimum could be $f(a)=f(b)$.

@@ -1130,7 +1130,13 @@ using the given fact that  $\lim_{h \rightarrow 0}\frac{g(h)}{h} = 0$. Thus $f$ 
 
 ---
 
-[41.](41) To appear (Homework 5 question)  
+[41.](41) *(Homework 5 question).* 
+
+(i) Using the product and chain rules for differentiation, and that $\sin$ is differentiable with derivative $\cos$,
+if $x \neq 0$, $f$ is differentiable at $x$ with $f'(x) = \sin\left(\frac{1}{x}\right) - \frac{1}{x}\cos\left(\frac{1}{x}\right)$.
+
+(ii) But
+$\frac{f(x) - f(0)}{x} = \sin\left(\frac{1}{x}\right)$ has no limit as $x \rightarrow 0$ (see [Problem 9](9)), so $f$ is not differentiable at $0$.
 
 ---
 
@@ -1250,7 +1256,12 @@ so $f'(0) = \lim_{x \rightarrow 0^-} f'(x) = \lim_{x \rightarrow 0^+}f'(x) = 0$.
 
 ---
 
-[47.](47) To appear (Homework 5 question)  
+[47.](47) [47.](47) *(Homework 5 question).* 
+
+(i) Yes: $f$ is differentiable on $[a, b]$ and hence continuous on $[a, b]$ by Theorem  4.1, so it attains its sup and inf on $[a, b]$ by the extreme value theorem, Theorem 3.5, and these are the maximum and minimum (respectively).
+
+(ii) No: the maximum or minimum could be $f(a)=f(b)$.
+If $f(a)$ is not the maximum value, then this must occur in $(a, b)$. Similarly for the minimum. If $f(a) = f(b)$ is both the maximum and minimum value, then $f$ is constant, and the value occurs in $(a, b)$.
 
 ---
 
@@ -1261,4 +1272,3 @@ g(x) = a_{0}x + \frac{a_{1}}{2}x^{2} + \frac{a_{2}}{3}x^{3}  + \cdots + \frac{a_
 $$
 
 Then $g$ is a polynomial, so it is differentiable on $[0, 1]$ and using standard derivatives, $g'(x)=f(x)$. Also $g(0) = g(1) = 0$. So by Rolle's theorem, there exists $c \in (0, 1)$ such that $g'(c) = 0$, i.e.$f(c) = 0$.
-
