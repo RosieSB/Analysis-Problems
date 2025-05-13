@@ -1328,7 +1328,7 @@ In particular, $f^{\prime \prime}_{+}(a) = \lim_{h \rightarrow 0^+}\frac{f'(a + 
 
 
 (ch5sol)=
-## Sequences and series of functions
+## Sequences and series of functions --- Non-examinable 2024--25
 
 [54.](54) For $x\in [0,\pi ]$ we have $0\leq \sin x<1$ except when $x=\frac{\pi}{2}$, where $\sin x=1$. Thus $f_n(x)$ converges pointwise to the function $f\colon [0, \pi ]\rightarrow \mathbb{R}$ defined by
 

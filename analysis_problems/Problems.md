@@ -456,7 +456,7 @@ $$
 53. Let $f:\mathbb{R} \rightarrow \mathbb{R}$ be twice differentiable at $a$ with $f'(a) = 0$. If $f^{\prime \prime}(a) < 0$, show that $f$ has a local maximum at $a$, while if $f^{\prime \prime}(a) > 0$, show that $f$ has a local minimum at $a$.
 
 (ch5prob)=
-## Sequences and series of functions
+## Sequences and series of functions --- Non-examinable 2024--25
 
 (54)=
 54. Consider the sequence of functions  $(f_n)$, where $f_n:[0,\pi ]\to \mathbb{R}$ is defined by $f_n(x) = \sin^n (x)$ for each $n\in\mathbb{N}$. Show that the sequence $(f_n)$ converges pointwise. Does the sequence $(f_n)$  converge uniformly? Justify your answer.
