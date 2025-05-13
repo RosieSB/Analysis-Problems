@@ -29,10 +29,10 @@ See Blackboard[^links] for more information.
 &emsp;&emsp;[1.5. Sequences and series of functions](#ch5prob) <br>
 &emsp;&emsp;[1.6. Integration](#ch6prob)
 
-[2 Solutions up to 48](#sol) (more to appear in due course) <br>
+[2 Solutions](#sol)  <br>
 &emsp;&emsp;[2.1 Preliminary problems](#ch1sol) <br>
 &emsp;&emsp;[2.2. Limits of functions](#ch2sol) <br>
 &emsp;&emsp;[2.3. Continuity](#ch3sol) <br>
 &emsp;&emsp;[2.4. Differentiation](#ch4sol) <br>
-<!--&emsp;&emsp;[2.5. Sequences and series of functions](#ch5sol) <br>
-&emsp;&emsp;[2.6. Integration](#ch6sol)-->
+&emsp;&emsp;[2.5. Sequences and series of functions --- Non-examinable 2024--25](#ch5sol) <br>
+&emsp;&emsp;[2.6. Integration --- Non-examinable 2024--25](#ch6sol)

@@ -1,6 +1,8 @@
 (prob)=
 # Problems
 
+[Solutions](#sol) are now complete. See Blackboard for information about non-examinable topics and instructions for the exam.
+
 (ch1prob)=
 ## Preliminary problems
 

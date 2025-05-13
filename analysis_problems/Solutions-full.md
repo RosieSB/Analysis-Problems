@@ -1,6 +1,7 @@
 (sol)=
 # Solutions
 
+Solutions are now complete. See Blackboard for information about non-examinable topics and instructions for the exam.
 
 (ch1sol)=
 ## Preliminary problems
