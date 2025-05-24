@@ -1129,6 +1129,7 @@ using the given fact that  $\lim_{h \rightarrow 0}\frac{g(h)}{h} = 0$. Thus $f$ 
 
 ---
 
+(41sol)=
 [41.](41) *(Homework 5 question).* 
 
 (i) Using the product and chain rules for differentiation, and that $\sin$ is differentiable with derivative $\cos$,
@@ -1255,6 +1256,7 @@ so $f'(0) = \lim_{x \rightarrow 0^-} f'(x) = \lim_{x \rightarrow 0^+}f'(x) = 0$.
 
 ---
 
+(47sol)=
 [47.](47) [47.](47) *(Homework 5 question).* 
 
 (i) Yes: $f$ is differentiable on $[a, b]$ and hence continuous on $[a, b]$ by Theorem  4.1, so it attains its sup and inf on $[a, b]$ by the extreme value theorem, Theorem 3.5, and these are the maximum and minimum (respectively).
