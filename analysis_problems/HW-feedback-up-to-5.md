@@ -11,29 +11,31 @@ Responding to individual feedback is the fastest way to improve as a mathematici
 **Problems:** [41](#41), [47](#47), 4 from ESQs --- see Blackboard ([MAS2004](), [MAS2009](https://vle.shef.ac.uk/webapps/blackboard/content/launchLink.jsp?course_id=_119818_1&content_id=_8251543_1&mode=cpview)) ; &ensp;**Solutions:** [41](#41sol), [47](#47sol), 4 from ESQs --- see Blackboard.
 
 
-### Problem 41(i)
+### Problem 41
 
-To be clear, the formula you can find for $f'(x)$ does not itself imply anything about where $f$ is differentiable. Instead, the order of ideas is:
+This question led you through a proof that the function $f:\mathbb{R}\to \mathbb{R}$ given by $f(x) = \begin{cases} x\sin\left(\frac{1}{x}\right) & \text{if }x \neq 0,\\ 0 & \text{if }x = 0.\end{cases}$ is differentiable on the whole of $\mathbb{R}$.
 
-- $1/x$, $\sin(x)$ and $x$ are all differentiable at every $x\neq 0$ by standard derivative facts. 
+**Part (i).** A common error with this part was to argue that because you can calculate a formula for $f'(x)$ at every $x\in\mathbb{R}\setminus\{0\}$ using the chain and product rules, $f$ must be differentiable on $\mathbb{R}\setminus\{0\}$. In fact, the logic should flow as follows:
 
-- Therefore, by the chain & product rules, $f$ is differentiable at every $x\neq 0$. 
+1. Note that $1/x$, $\sin(x)$ and $x$ are all differentiable at every $x\neq 0$ by standard derivative facts. 
 
-- If you want, you can also write down a formula for $f'(x)$ when $x\neq 0$. But this doesn't directly contribute to the proof that $f$ is differentiable on $\mathbb{R}\setminus\{0\}$.
+2. Therefore, by the chain & product rules, $f$ is differentiable at every $x\neq 0$. 
 
-This is an important distinction as sometimes you will get a formula for $f$ that looks like it has a standard derivative. For example, even in this question, we have $f(x)=0$ when $x=0$, from which you could (incorrectly) conclude that f'(x)=0 when x=0. But $f$ is not differentiable at $x=0$, because $\frac{f(h)-f(0)}{h}$ has no limit as $h\rightarrow 0$.
+3. If you want, you can also write down a formula for $f'(x)$ when $x\neq 0$. But this doesn't directly contribute to the proof that $f$ is differentiable on $\mathbb{R}\setminus\{0\}$.
+
+This is an important distinction as sometimes you will get a formula for $f$ that looks like it has a standard derivative. For example, even in this question, we have $f(x)=0$ when $x=0$, from which you could (incorrectly) conclude that f'(x)=0 when x=0. But $f$ is *not* differentiable at $x=0$, for reasons explored in part (ii).
 
 Another place this kind of error often creeps in is piecewise-defined functions. For example the modulus function has domain $\mathbb{R}$ and rule
 
 $$
-|x|=\begin{cases} x & x\geq 0 \\ -x & x< 0 \end{cases}
+|x|=\begin{cases} x & x\geq 0 \\ -x & x< 0. \end{cases}
 $$
 
 Applying standard derivatives to each formula might lead you to think this function has derivative $1$ for $x\geq 0$ and $-1$ for$ x<0$. But of course, we know that the modulus function is NOT differentiable at $0$ (too pointy).
 
-### Problem 41(ii)
+**Part (ii).** Most people had the underlying idea for how to solve this problem, but there were a couple of recurring issues, as follows:
 
-Try to avoid writing $f'(0)$ or $\lim_{h\rightarrow 0}...$ unless you know these limits exist. In 41(ii), you actually know they don't exist, so you definitely shouldn't write them out this way. This is similar to the principle that you shouldn't go around writing $\frac{1}{0}$ or $\ln(0)$ --- it isn't mathematically meaningful. 
+- Try to avoid writing $f'(0)$ or $\lim_{h\rightarrow 0}...$ unless you know these limits exist. In 41(ii), you actually know they don't exist, so you definitely shouldn't write them out this way. This is similar to the principle that you should avoid writing $\frac{1}{0}$ or $\ln(0)$ --- these expressions  isn't mathematically meaningful. 
 
 Instead: manipulate $\frac{f(h)-f(0)}{h}$ on its own, without the $\lim$'s, and then show that the limit doesn't exist as $h\rightarrow 0$.
 
