@@ -11,40 +11,47 @@ Responding to individual feedback is the fastest way to improve as a mathematici
 **Problems:** [41](#41), [47](#47), 4 from ESQs --- see Blackboard ([MAS2004](), [MAS2009](https://vle.shef.ac.uk/webapps/blackboard/content/launchLink.jsp?course_id=_119818_1&content_id=_8251543_1&mode=cpview)) ; &ensp;**Solutions:** [41](#41sol), [47](#47sol), 4 from ESQs --- see Blackboard.
 
 
-### Problem 41(i)
+### Problem 41
 
-To be clear, the formula you can find for $f'(x)$ does not itself imply anything about where $f$ is differentiable. Instead, the order of ideas is:
+This question led you through a proof that the function $f:\mathbb{R}\to \mathbb{R}$ given by $f(x) = \begin{cases} x\sin\left(\frac{1}{x}\right) & \text{if }x \neq 0,\\ 0 & \text{if }x = 0.\end{cases}$ is differentiable on the whole of $\mathbb{R}$.
 
-- $1/x$, $\sin(x)$ and $x$ are all differentiable at every $x\neq 0$ by standard derivative facts. 
+**Part (i).** <br> A common error with this part was to argue that because you can calculate a formula for $f'(x)$ at every $x\neq 0$ using the chain and product rules, $f$ must be differentiable on $\mathbb{R}\setminus\{0\}$. In fact, the logic should flow as follows:
 
-- Therefore, by the chain & product rules, $f$ is differentiable at every $x\neq 0$. 
+1. Note that $1/x$, $\sin(x)$ and $x$ are all differentiable at every $x\neq 0$ by standard derivative facts. 
 
-- If you want, you can also write down a formula for $f'(x)$ when $x\neq 0$. But this doesn't directly contribute to the proof that $f$ is differentiable on $\mathbb{R}\setminus\{0\}$.
+2. Therefore, by the chain & product rules (Theorems [4.3(ii)](https://rosiesb.github.io/Analysis-Notes/4Diff.html#rules) and [4.4](https://rosiesb.github.io/Analysis-Notes/4Diff.html#chain) in the notes) $f$ is differentiable at every $x\neq 0$. 
 
-This is an important distinction as sometimes you will get a formula for $f$ that looks like it has a standard derivative. For example, even in this question, we have $f(x)=0$ when $x=0$, from which you could (incorrectly) conclude that f'(x)=0 when x=0. But $f$ is not differentiable at $x=0$, because $\frac{f(h)-f(0)}{h}$ has no limit as $h\rightarrow 0$.
+3. If you want, you can also write down a formula for $f'(x)$ when $x\neq 0$. But this doesn't directly contribute to the proof that $f$ is differentiable on $\mathbb{R}\setminus\{0\}$.
+
+This is an important distinction as sometimes you will get a formula for $f$ that looks like it has a standard derivative. For example, even in this question, we have $f(x)=0$ when $x=0$, from which you could (incorrectly) conclude that f'(x)=0 when x=0. But $f$ is *not* differentiable at $x=0$, for reasons explored in part (ii).
 
 Another place this kind of error often creeps in is piecewise-defined functions. For example the modulus function has domain $\mathbb{R}$ and rule
 
 $$
-|x|=\begin{cases} x & x\geq 0 \\ -x & x< 0 \end{cases}
+|x|=\begin{cases} x & x\geq 0 \\ -x & x< 0. \end{cases}
 $$
 
 Applying standard derivatives to each formula might lead you to think this function has derivative $1$ for $x\geq 0$ and $-1$ for$ x<0$. But of course, we know that the modulus function is NOT differentiable at $0$ (too pointy).
 
-### Problem 41(ii)
+**Part (ii).** <br> Most people had the underlying idea for how to solve this problem, but there were a couple of recurring issues, as follows:
 
-Try to avoid writing $f'(0)$ or $\lim_{h\rightarrow 0}...$ unless you know these limits exist. In 41(ii), you actually know they don't exist, so you definitely shouldn't write them out this way. This is similar to the principle that you shouldn't go around writing $\frac{1}{0}$ or $\ln(0)$ --- it isn't mathematically meaningful. 
+- Try to avoid writing $f'(0)$ or $\displaystyle\lim_{h\rightarrow 0}(...)$ unless you know these limits exist. In 41(ii), you actually know they don't exist, so you definitely shouldn't write them out this way. This is similar to the principle that you should avoid writing $\frac{1}{0}$ or $\ln(0)$ --- these expressions  aren't mathematically meaningful. 
 
-Instead: manipulate $\frac{f(h)-f(0)}{h}$ on its own, without the $\lim$'s, and then show that the limit doesn't exist as $h\rightarrow 0$.
+- Instead: manipulate $\frac{f(h)-f(0)}{h}$ on its own, without the $\lim$'s, and then show that the limit doesn't exist as $h\rightarrow 0$.
 
-For a rigorous proof that $\sin(1/h)$ does not converge as $h\rightarrow 0$, you should quote (or write out again) the solution to [Problem 9](#9).
+- For a rigorous proof that $\sin(1/h)$ does not converge as $h\rightarrow 0$, you should quote (or write out again) the solution to [Problem 9](#9).
 
 ### Problem 47
 
-- 47(i) was answered well. :-)
+**Part (i).**<br>
+This was generally answered well. :-)
 
-- 47(ii) A few people misread the "and" in the statement of the question, which has quite a big impact on the answer. In fact, while EVT guaruntees max and min values are attained in $[a,b]$, they may not lie on the interior $(a,b)$. But since $f(a)=f(b)$, they also can't both be at the end points. So one max/min value is guarunteed inside $(a,b)$, but they may not both be (counter-example: $f:[-1,1]\to\mathbb{R}$; $f(x)=x^2$ does not attain its maximum value inside the open interval $(-1,1)$). 
+**Part (ii).** <br>
+A few people misread the "and" in the statement of the question, which has quite a big impact on the answer. In fact, the statement is false, and the quickest way to prove it is by counter-example (e.g. $f:[-1,1]\to\mathbb{R}$; $f(x)=x^2$ does not attain its maximum value inside the open interval $(-1,1)$, but is differentiable, with $f(-1)=f(1)$.).
 
+While the extreme value theorem ([Theorem 3.5](https://rosiesb.github.io/Analysis-Notes/3Cty.html#thm:evt)) guaruntees maximum and mininimum values of $f$ are attained in $[a,b]$, they may lie at the end points and not the interior $(a,b)$. But, since $f(a)=f(b)$, either $f$ is a constant function, or max and min cannot both be at the end points. In either case, $f$ has a maximum *or* minimum value attained inside $(a,b)$.
+
+Some people tried to use Rolle's theorem for 47(ii), which requires some care. Remember, finding a point $c\in(a,b)$ such that $f'(c)=0$ does not guaruntee $(c,f(c))$ is a turning point --- it may be a point of inflection. Even if it is a turning point, this only tells us about a local behaviour of $f$, and the question asked about global extreme values. If you want to use Rolle's theorem at all, it's its proof that is the most use here --- have another read [here](https://rosiesb.github.io/Analysis-Notes/4Diff.html#Roll) to see what I mean.
 
 ### Q4 from ESQs
 
@@ -52,8 +59,7 @@ For a rigorous proof that $\sin(1/h)$ does not converge as $h\rightarrow 0$, you
  
  - 	In 4(ii), a concerning number of people wrote something like "$f'(x)=\begin{cases} 2 & x\leq 1 \\ 2x & x>1 \end{cases}$. This doesn't work. Differentiability requires a 2-sided limit to exist, and the formula for $f(x)$ is different depending on whether $x\geq 1$ or $x<1$. So to decide if $f$ is differentiable at $x=1$, you need consider convergence from both sides of $x=1$ --- using the $x\leq 1$ formula on its own is not enough.
  
-- Some people made the opposite mistake: they considered behaviour at $x=1$ but forgot consider differentiability/continuity when $x\neq 1$. This can often be brief --- e.g. "Note the restrictions $f|_{(-\infty,1)}$ and $f|_{(1,\infty)}$ are both polynomial functions, so are continuous/differentiable.".
-
+- Some people made the opposite mistake: they considered behaviour at $x=1$ but forgot consider differentiability/continuity when $x\neq 1$. This can often be brief --- e.g. "Note the restrictions $f|_{(-\infty,1)}$ and $f|_{(1,\infty)}$ are both polynomial functions, so are continuous/differentiable." is plenty.
 
 
 ## Feedback for Homework 3
