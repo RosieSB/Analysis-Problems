@@ -38,7 +38,7 @@ Applying standard derivatives to each formula might lead you to think this funct
 - Try to avoid writing $f'(0)$ or $\displaystyle\lim_{h\rightarrow 0}(...)$ unless you know these limits exist. In 41(ii), you actually know they don't exist, so you definitely shouldn't write them out this way. This is similar to the principle that you should avoid writing $\frac{1}{0}$ or $\ln(0)$ --- these expressions  aren't mathematically meaningful. 
 
 - Instead: manipulate $\frac{f(h)-f(0)}{h}$ on its own, without the $\lim$'s, and then show that the limit doesn't exist as $h\rightarrow 0$.
-
+ 
 - For a rigorous proof that $\sin(1/h)$ does not converge as $h\rightarrow 0$, you should quote (or write out again) the solution to [Problem 9](#9).
 
 ### Problem 47
