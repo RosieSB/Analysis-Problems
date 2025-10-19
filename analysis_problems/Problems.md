@@ -525,7 +525,7 @@ $$
 
 
 (61)=
-61. The functions $c,s:\mathbb{R}\to\mathbb{R}$ are defined by the infinite series $s(x) = \sum_{n=0}^\infty\frac{(-1)^nx^{2n+1}}{(2n+1)!}$, $c(x) = \sum_{n=0}^\infty\frac{(-1)^kx^{2n}}{(2n)!}$.
+61. The functions $c,s:\mathbb{R}\to\mathbb{R}$ are defined by the infinite series $s(x) = \sum_{n=0}^\infty\frac{(-1)^nx^{2n+1}}{(2n+1)!}$, $c(x) = \sum_{n=0}^\infty\frac{(-1)^nx^{2n}}{(2n)!}$.
 
     (i) Prove that these functions are well-defined as pointwise limits, and that their series converge absolutely.
 
